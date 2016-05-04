@@ -61,7 +61,8 @@ cdef class SuchTree :
     def __init__( self, tree_file ) :
         tree = Tree.get( file=open(tree_file), 
                          schema='newick',
-                         preserve_underscores=True )
+                         preserve_underscores=True,
+                         suppress_internal_node_taxa=True )
         tree.resolve_polytomies()
         size = len( tree.nodes() )
         # allocate some memory
