@@ -33,8 +33,8 @@ doing your statistics on a matrix of patristic distances.
 Unfortunately, distance matrixes scale quadratically with the number
 of taxa in your tree. A distance matrix for a tree of 100,000 taxa
 will consume about 20GB of RAM. If your statistical method performs
-any sort of sampling, then almost every single operation will be a
-cache miss. Even if you have the RAM, it will be painfully slow.
+sampling, then almost every operation will be a cache miss. Even if
+you have the RAM, it will be painfully slow.
 
 ### Much solution
 
