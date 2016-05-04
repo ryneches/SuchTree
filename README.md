@@ -3,6 +3,9 @@
 A Python library for doing fast, thread-safe computations with
 phylogenetic trees.
 
+[![Build
+Status](https://travis-ci.org/ryneches/SuchTree.svg?branch=master)](https://travis-ci.org/ryneches/SuchTree)
+
 ### So problem
 
 You have a phylogenetic tree, and you want to do some statistics with
