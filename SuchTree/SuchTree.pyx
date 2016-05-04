@@ -126,7 +126,7 @@ cdef class SuchTree :
          
     def distances_by_name( self, id_pairs ) :
         shape = ( len(id_pairs), len(id_pairs[0]) )
-        ids = np.zeros( shape, dtype=float )
+        ids = np.zeros( shape, dtype=int )
         for n,(a,b) in enumerate(id_pairs) :
             ids[n][0] = self.leafs[a]
             ids[n][1] = self.leafs[b]
