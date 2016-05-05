@@ -51,4 +51,19 @@ def test_distances() :
             d1.append( d )
     result = T.distances( numpy.array( ids, dtype=numpy.int64 ) )
     for D1,D2 in zip( d1,result ) :
-        assert_almost_equal( D1, D2, places=2 )
+        assert_almost_equal( D1, D2, places=4 )
+
+def test_distances_by_name() :
+    T = SuchTree( test_tree )
+    pairs = []
+    d1 = []
+    for leaf_a in dpt.leaf_node_iter() :
+        for leaf_b in dpt.leaf_node_iter() :
+            pairs.append( ( leaf_a.taxon.label, leaf_b.taxon.label ) )
+            d = abs( leaf_a.distance_from_root() 
+                   - leaf_b.distance_from_root() )
+            d1.append( d )
+    result = T.distances_by_name( pairs )
+    for D1,D2 in zip( d1, result ) :
+        assert_almost_equal( D1, D2, places=4 )
+    
