@@ -26,7 +26,7 @@ install:
 # Run test
 script:
   #- nosetests --with-cov --cov SuchTree --cov-config .coveragerc --logging-level=INFO
-  - python setpy.py test
+  - python setup.py test
 
 # Calculate coverage
 #after_success:
