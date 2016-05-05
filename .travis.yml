@@ -24,12 +24,12 @@ install:
   - pip install dendropy
   - conda update pip
   - easy_install --upgrade distribute
+  - python setup.py install
 
 # Run test
 script:
-  #- nosetests --with-cov --cov SuchTree --cov-config .coveragerc --logging-level=INFO
-  - python setup.py test
+  - nosetests --with-cov --cov SuchTree --cov-config .coveragerc --logging-level=INFO
 
 # Calculate coverage
-#after_success:
-#  - coveralls --config_file .coveragerc
+after_success:
+  - coveralls --config_file .coveragerc
