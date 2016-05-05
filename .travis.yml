@@ -28,7 +28,7 @@ install:
 
 # Run test
 script:
-  - nosetests --with-cov --cov SuchTree --cov-config .coveragerc --logging-level=INFO
+  - nosetests --with-cov --cover-test SuchTree --cov-config .coveragerc --logging-level=INFO
 
 # Calculate coverage
 after_success:
