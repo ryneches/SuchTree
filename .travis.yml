@@ -25,11 +25,11 @@ install:
   - pip install dendropy
   - conda update pip
   - easy_install --upgrade distribute
-  - python setup.py install
+  - python setup.py build_ext -i
 
 # Run test
 script:
-  - nosetests --with-cov --cover-test
+  - nosetests --with-cov --cover-test SuchTree
 
 # Calculate coverage
 after_success:
