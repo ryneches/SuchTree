@@ -23,6 +23,7 @@ install:
   - conda install --yes -c dan_blanchard python-coveralls nose-cov
   - pip install dendropy
   - conda update pip
+  - easy_install --upgrade distribute
 
 # Run test
 script:
