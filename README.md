@@ -56,5 +56,6 @@ and other optimizations available in modern CPUs.
 
 ### Wow
 
-Special thanks to @camillescott and @pmarkowsky for their many helpful
-suggestions and for their patience.
+Special thanks to [@camillescott](https://github.com/camillescott) and 
+[@pmarkowsky](https://github.com/pmarkowsky) for their many helpful
+suggestions (and for their patience).
