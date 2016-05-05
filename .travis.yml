@@ -11,7 +11,8 @@ before_install:
   - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
   - chmod +x miniconda.sh
   - ./miniconda.sh -b
-  - export PATH=/home/travis/miniconda2/bin:$PATH
+  #- export PATH=/home/travis/miniconda2/bin:$PATH
+  - source /home/travis/miniconda2/bin/activate root
   - conda update --yes conda
   # The next couple lines fix a crash with multiprocessing on Travis and are not specific to using Miniconda
   - sudo rm -rf /dev/shm
@@ -23,7 +24,6 @@ install:
   - conda install --yes -c dan_blanchard python-coveralls nose-cov
   - pip install dendropy
   - conda update pip
-  - source /home/travis/miniconda2/bin/activate
   - easy_install --upgrade distribute
   - python setup.py install
 
