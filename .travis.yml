@@ -6,7 +6,6 @@ notifications:
   email: false
 env:
   - CPATH=/home/travis/miniconda2/lib/python2.7/site-packages/numpy/core/include
-  - PYTHON_PATH=/home/travis/miniconda2/lib/python2.7/site-packages
 # Setup anaconda
 before_install:
   - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
@@ -24,6 +23,7 @@ install:
   - conda install --yes -c dan_blanchard python-coveralls nose-cov
   - pip install dendropy
   - conda update pip
+  - source /home/travis/miniconda2/bin
   - easy_install --upgrade distribute
   - python setup.py install
 
