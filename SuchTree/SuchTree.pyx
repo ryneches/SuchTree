@@ -4,6 +4,9 @@ from dendropy import Tree
 import numpy as np
 cimport numpy as np
 
+# Trees are built from arrays of Node structs. 'parent', 'left_child'
+# and 'right_child' attributes represent integer offsets within the
+# array that specify other Node structs.
 cdef struct Node :
     int parent
     int left_child
@@ -11,6 +14,10 @@ cdef struct Node :
     float distance
 
 cdef float _get_distance_to_root( Node* data, id ) :
+    """
+    Calculate the distance from a node of a given id to the root node.
+    Will work for both leaf and internal nodes. Private cdef method.
+    """
     cdef float d = 0.0
     cdef float d_i = 0.0
     cdef int i = id
@@ -23,6 +30,13 @@ cdef float _get_distance_to_root( Node* data, id ) :
 
 @cython.boundscheck(False)
 cdef void _distances( Node* data, long[:,:] ids, double[:] result ) :
+    """
+    For each pair of node ids in the given (n,2) array, calculate the
+    distance to the root node for each pair and store their differece
+    in the given (1,n) result array. Calculations are performed within
+    a 'nogil' context, allowing the interpreter to perform other tasks
+    concurrently if desired. Private cdef method.
+    """
     cdef int a
     cdef int b
     cdef int i
@@ -59,12 +73,43 @@ cdef class SuchTree :
     cdef object leafs
     
     def __init__( self, tree_file ) :
-        tree = Tree.get( file=open(tree_file), 
-                         schema='newick',
-                         preserve_underscores=True,
-                         suppress_internal_node_taxa=True )
-        tree.resolve_polytomies()
-        size = len( tree.nodes() )
+        """
+        Initialize a new SuchTree extention type. The constructor
+        accepts a filesystem path or URL to a file that describes
+        the tree in NEWICK format. For now, SuchTree uses dendropy
+        to parse the NEWICK file.
+        
+        An array of type Node is allocated, and freed when
+        SuchTree.__dealloc__ is invoked.
+        
+        Node.parent, Node.left_child and Node.right_child are integer
+        offsets within this array, describing the tree structure.
+        Nodes where left_child and right_child are -1 are leaf nodes,
+        Nodes where the parent attribute is -1 are the root nodes
+        (there should be only one of these in any given tree).
+        
+        SuchTree expects trees to be strictly bifrucating. There
+        should not be any nodes that have only one child.
+        
+        SuchTrees are immutable; they cannot be modified once
+        initialized. If you need to manipulate your tree before
+        performing computations, you will need to use a different tool
+        to perform those manipulations first.
+        """
+        url_strings = [ 'http://', 'https://', 'ftp://' ]
+
+        if filter( lambda x : tree_file.startswith(x), url_strings ) :
+            t = Tree.get( url=tree_file,
+                          schema='newick',
+                          preserve_underscores=True,
+                          suppress_internal_node_taxa=True )
+        else :
+            t = Tree.get( file=open(tree_file),
+                          schema='newick',
+                          preserve_underscores=True,
+                          suppress_internal_node_taxa=True )
+        t.resolve_polytomies()
+        size = len( t.nodes() )
         # allocate some memory
         self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )
         self.length = size
@@ -72,12 +117,12 @@ cdef class SuchTree :
             raise MemoryError()
         
         self.leafs = {}
-        for id,node in enumerate( tree.inorder_node_iter() ) :
+        for id,node in enumerate( t.inorder_node_iter() ) :
             node.label = id
             if node.taxon :
                 self.leafs[ node.taxon.label ] = id
                 
-        for id,node in enumerate( tree.inorder_node_iter() ) :
+        for id,node in enumerate( t.inorder_node_iter() ) :
             if not node.parent_node :
                 distance = -1
                 parent   = -1
@@ -105,17 +150,53 @@ cdef class SuchTree :
             return self.leafs
     
     def get_children( self, id ) :
+        """
+        Return the ids of child nodes of given node. Will accept node
+        id or a leaf name.
+        """
+        if type(id) is str :
+            try :
+                id = self.leafs( id )
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + id )
         return ( self.data[id].left_child, self.data[id].right_child )
 
     def get_distance_to_root( self, id ) :
+        """
+        Return distance to root for a given node. Will accept node id
+        or a leaf name.
+        """
+        if type(id) is str :
+            try :
+                id = self.leafs( id )
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + id )
         return _get_distance_to_root( self.data, id )
         
     def distance( self, a, b ) :
+        """
+        Return distnace between a pair of nodes. Will accelt node ids
+        or leaf names.
+        """
+        if type(a) is str :
+            try :
+                a = self.leafs( a )
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + a )
+        if type(b) is str :
+            try :
+                b = self.leafs( b )
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + b )
         cdef float d_a = self.get_distance_to_root( a )
         cdef float d_b = self.get_distance_to_root( b )
         return abs( d_a - d_b ) 
 
     def distances( self, long[:,:] ids ) :
+        """
+        Returns an array of distances between pairs of node ids in a
+        given (n,2) array. Accepts only node ids.
+        """
         if not ids.shape[1] == 2 : 
             raise Exception( 'expected (n,2) array', 
                              ids.shape[0], ids.shape[1] )
@@ -125,6 +206,10 @@ cdef class SuchTree :
         return result
          
     def distances_by_name( self, id_pairs ) :
+        """
+        Returns an array of distances between pairs of leaf names in a
+        given (n,2) list of lists. Accepts only leaf names.
+        """
         shape = ( len(id_pairs), len(id_pairs[0]) )
         ids = np.zeros( shape, dtype=int )
         for n,(a,b) in enumerate(id_pairs) :
@@ -133,6 +218,9 @@ cdef class SuchTree :
         return self.distances( ids )
 
     def dump_array( self ) :
+        """
+        Print the whole array. WARNING : may be huge and useless.
+        """
         for n in range(self.length) :
             print 'id : %d ->' % n
             print '   distance    : %0.3f' % self.data[n].distance
