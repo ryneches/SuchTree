@@ -21,12 +21,49 @@ cdef float _get_distance_to_root( Node* data, id ) :
     cdef float d = 0.0
     cdef float d_i = 0.0
     cdef int i = id
+    cdef int a_depth = 0
+    cdef int mrca = -1
+    
     while True :
         d_i = data[i].distance
         if d_i == -1 : break
         d = d + d_i
         i = data[i].parent
     return d
+
+cdef int _mrca( Node* data, int depth, int a, int b ) :
+    cdef int n
+    cdef int i
+    # allocate some memory for visited node array
+    visited = <int*> PyMem_Malloc( depth * sizeof(int) )
+    
+    n = a
+    i = 0
+    while True :
+        visited[i] = n
+        n = data[n].parent
+        i += 1
+        if n == -1 : break
+    a_depth = i
+    
+    n = b
+    while True :
+        i = 0
+        while True :
+            if i >= a_depth : break
+            if visited[i] == n :
+                mrca = visited[i]
+                break
+            i += 1
+        if not mrca == -1 : break
+        n = data[n].parent
+        if n == -1 :
+            mrca = n
+            break
+    
+    # free the visited node array (no-op if NULL)
+    PyMem_Free(visited_ids)
+    return mrca
 
 @cython.boundscheck(False)
 cdef void _distances( Node* data, long[:,:] ids, double[:] result ) :
@@ -70,6 +107,7 @@ cdef class SuchTree :
 
     cdef Node* data
     cdef int length
+    cdef int depth
     cdef object leafs
     
     def __init__( self, tree_file ) :
@@ -96,8 +134,11 @@ cdef class SuchTree :
         performing computations, you will need to use a different tool
         to perform those manipulations first.
         """
+        cdef int n
+        cdef int id
+        
         url_strings = [ 'http://', 'https://', 'ftp://' ]
-
+        
         if filter( lambda x : tree_file.startswith(x), url_strings ) :
             t = Tree.get( url=tree_file,
                           schema='newick',
@@ -140,10 +181,23 @@ cdef class SuchTree :
             self.data[id].left_child  = left_child
             self.data[id].right_child = right_child
             self.data[id].distance    = distance
-   
+        
+        for id in self.leafs.values() :
+            n = 0
+            while True :
+                if self.data[id].parent == -1 : break
+                id = self.data[id].parent
+                n += 1
+            if n > self.depth :
+                self.depth = n
+                
     property length :
         def __get__( self ) :
             return self.length
+    
+    property depth :
+        def __get__( self ) :
+            return self.depth
 
     property leafs :
         def __get__( self ) :
@@ -172,6 +226,13 @@ cdef class SuchTree :
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
         return _get_distance_to_root( self.data, id )
+    
+    def mrca( self, a, b ) :
+        """
+        Return the id of the most recent common ancestor of two nodes
+        if given ids.
+        """
+        return _mrca( self.data, self.depth, a, b )
         
     def distance( self, a, b ) :
         """

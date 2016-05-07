@@ -53,7 +53,6 @@ and other optimizations available in modern CPUs.
 ### Nice benchmark
 
 
-
 ### Wow
 
 Special thanks to [@camillescott](https://github.com/camillescott) and 
