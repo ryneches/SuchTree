@@ -1,6 +1,7 @@
 from nose.tools import assert_equal, assert_almost_equal
 from SuchTree import SuchTree
 from dendropy import Tree
+from itertools import combinations
 import numpy
 
 test_tree = 'SuchTree/tests/test.tree'
@@ -32,38 +33,36 @@ def test_get_distance_to_root() :
 
 def test_distance() :
     T = SuchTree( test_tree )
-    for leaf_a in dpt.leaf_node_iter() :
-        for leaf_b in dpt.leaf_node_iter() :
-            d1 = T.distance( leaf_a.label, leaf_b.label )
-            d2 = abs( leaf_a.distance_from_root() 
-                    - leaf_b.distance_from_root() )
-            assert_almost_equal( d1, d2, places=4 )
-   
+    for line in open( 'SuchTree/tests/test.matrix' ) :
+        a,b,d1 = line.split()
+        d1 = float(d1)
+        d2 = T.distance( a, b )
+        assert_almost_equal( d1, d2, places=4 )   
+
 def test_distances() :
     T = SuchTree( test_tree )
     ids = []
     d1 = []
-    for leaf_a in dpt.leaf_node_iter() :
-        for leaf_b in dpt.leaf_node_iter() :
-            d = abs( leaf_a.distance_from_root() 
-                   - leaf_b.distance_from_root() )
-            ids.append( [leaf_a.label, leaf_b.label] )
-            d1.append( d )
+    for line in open( 'SuchTree/tests/test.matrix' ) :
+        a,b,d = line.split()
+        d1.append( float(d) )
+        A = T.leafs[a]
+        B = T.leafs[b]
+        ids.append( (A,B) )
     result = T.distances( numpy.array( ids, dtype=numpy.int64 ) )
     for D1,D2 in zip( d1,result ) :
         assert_almost_equal( D1, D2, places=4 )
 
 def test_distances_by_name() :
     T = SuchTree( test_tree )
-    pairs = []
+    ids = []
     d1 = []
-    for leaf_a in dpt.leaf_node_iter() :
-        for leaf_b in dpt.leaf_node_iter() :
-            pairs.append( ( leaf_a.taxon.label, leaf_b.taxon.label ) )
-            d = abs( leaf_a.distance_from_root() 
-                   - leaf_b.distance_from_root() )
-            d1.append( d )
-    result = T.distances_by_name( pairs )
-    for D1,D2 in zip( d1, result ) :
+    for line in open( 'SuchTree/tests/test.matrix' ) :
+        a,b,d = line.split()
+        d1.append( float(d) )
+        ids.append( (a,b) )
+    result = T.distances_by_name( ids )
+    for D1,D2 in zip( d1,result ) :
         assert_almost_equal( D1, D2, places=4 )
-    
+
+

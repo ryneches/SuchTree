@@ -34,6 +34,8 @@ cdef float _get_distance_to_root( Node* data, id ) :
 cdef int _mrca( Node* data, int depth, int a, int b ) :
     cdef int n
     cdef int i
+    cdef int mrca = -1
+    cdef int a_depth
     # allocate some memory for visited node array
     visited = <int*> PyMem_Malloc( depth * sizeof(int) )
     
@@ -56,7 +58,7 @@ cdef int _mrca( Node* data, int depth, int a, int b ) :
                     mrca = visited[i]
                     break
                 i += 1
-            if not mrca == -1 : break
+            if mrca != -1 : break
             n = data[n].parent
             if n == -1 :
                 mrca = n
@@ -66,8 +68,25 @@ cdef int _mrca( Node* data, int depth, int a, int b ) :
     PyMem_Free(visited)
     return mrca
 
+cdef float _distance( Node* data, int depth, int a, int b ) :
+    cdef int mrca
+    cdef float d = 0
+    cdef int n
+    
+    mrca = _mrca( data, depth, a, b )
+   
+    n = a
+    while n != mrca :
+        d += data[n].distance
+        n = data[n].parent
+    n = b
+    while n != mrca :
+        d += data[n].distance
+        n = data[n].parent
+    return d
+
 @cython.boundscheck(False)
-cdef void _distances( Node* data, long[:,:] ids, double[:] result ) :
+cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:] result ) :
     """
     For each pair of node ids in the given (n,2) array, calculate the
     distance to the root node for each pair and store their differece
@@ -77,40 +96,73 @@ cdef void _distances( Node* data, long[:,:] ids, double[:] result ) :
     """
     cdef int a
     cdef int b
+    cdef int j
+    cdef int n
     cdef int i
-    cdef float d_a = 0.0
-    cdef float d_b = 0.0
-    cdef float d_i = 0.0
+    cdef int mrca
+    cdef int a_depth
+    cdef float d = 0
+    cdef bint fail = False
+    # allocate some memory for visited node array
+    visited = <int*> PyMem_Malloc( depth * sizeof(int) )
+   
+    with nogil : 
+        for j in range( ids.shape[0] ) :
+            d = 0
+            a = ids[j][0]
+            b = ids[j][1]
+            if a > length or b > length :
+                fail = True
+                break
+            if a == b :
+                result[j] = 0.0
+                continue
+            n = a
+            i = 0
+            while True :
+                visited[i] = n
+                n = data[n].parent
+                i += 1
+                if n == -1 : break
+            a_depth = i
+            
+            mrca = -1
+            n = b
+            while True :
+                i = 0
+                while True :
+                    if i >= a_depth : break
+                    if visited[i] == n :
+                        mrca = visited[i]
+                        break
+                    i += 1
+                if mrca != -1 : break
+                d += data[n].distance
+                n = data[n].parent
+                if n == -1 :
+                    mrca = n
+                    break
+            
+            n = b
+            while n != mrca :
+                d += data[n].distance
+                n = data[n].parent
+            
+            result[j] = d
+     
+    # free the visited node array (no-op if NULL)
+    PyMem_Free(visited)
     
-    with nogil :
-           
-        for i in range( ids.shape[0] ) :
-            a = ids[i][0]
-            b = ids[i][1]
-            d_a = 0.0
-            d_b = 0.0
-            while True :
-                d_i = data[a].distance
-                if d_i == -1 : break
-                d_a += d_i
-                a = data[a].parent
-            while True :
-                d_i = data[b].distance
-                if d_i == -1 : break
-                d_b += d_i
-                b = data[b].parent
-            if d_a > d_b :
-                result[i] = d_a - d_b
-            else :
-                result[i] = d_b - d_a
+    if fail :
+        raise Exception( 'query contains out of bounds id' )
 
 cdef class SuchTree :
 
     cdef Node* data
     cdef int length
     cdef int depth
-    cdef object leafs
-    
+    cdef object leafs   
+ 
     def __init__( self, tree_file ) :
         """
         Initialize a new SuchTree extention type. The constructor
@@ -160,7 +212,7 @@ cdef class SuchTree :
         
         self.leafs = {}
         for id,node in enumerate( t.inorder_node_iter() ) :
-            node.label = id
+            node.label = id 
             if node.taxon :
                 self.leafs[ node.taxon.label ] = id
                 
@@ -211,7 +263,7 @@ cdef class SuchTree :
         """
         if type(id) is str :
             try :
-                id = self.leafs( id )
+                id = self.leafs[ id ]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
         return self.data[id].parent
@@ -223,7 +275,7 @@ cdef class SuchTree :
         """
         if type(id) is str :
             try :
-                id = self.leafs( id )
+                id = self.leafs[ id ]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
         return ( self.data[id].left_child, self.data[id].right_child )
@@ -235,7 +287,7 @@ cdef class SuchTree :
         """
         if type(id) is str :
             try :
-                id = self.leafs( id )
+                id = self.leafs[ id ]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
         return _get_distance_to_root( self.data, id )
@@ -254,17 +306,15 @@ cdef class SuchTree :
         """
         if type(a) is str :
             try :
-                a = self.leafs( a )
+                a = self.leafs[a]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + a )
         if type(b) is str :
             try :
-                b = self.leafs( b )
+                b = self.leafs[b]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + b )
-        cdef float d_a = self.get_distance_to_root( a )
-        cdef float d_b = self.get_distance_to_root( b )
-        return abs( d_a - d_b ) 
+        return _distance( self.data, self.depth, a, b ) 
 
     def distances( self, long[:,:] ids ) :
         """
@@ -276,7 +326,7 @@ cdef class SuchTree :
                              ids.shape[0], ids.shape[1] )
         
         result = np.zeros( ids.shape[0], dtype=float )
-        _distances( self.data, ids, result )
+        _distances( self.data, self.length, self.depth, ids, result )
         return result
          
     def distances_by_name( self, id_pairs ) :
