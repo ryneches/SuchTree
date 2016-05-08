@@ -37,32 +37,33 @@ cdef int _mrca( Node* data, int depth, int a, int b ) :
     # allocate some memory for visited node array
     visited = <int*> PyMem_Malloc( depth * sizeof(int) )
     
-    n = a
-    i = 0
-    while True :
-        visited[i] = n
-        n = data[n].parent
-        i += 1
-        if n == -1 : break
-    a_depth = i
-    
-    n = b
-    while True :
+    with nogil :
+        n = a
         i = 0
         while True :
-            if i >= a_depth : break
-            if visited[i] == n :
-                mrca = visited[i]
-                break
+            visited[i] = n
+            n = data[n].parent
             i += 1
-        if not mrca == -1 : break
-        n = data[n].parent
-        if n == -1 :
-            mrca = n
-            break
+            if n == -1 : break
+        a_depth = i
+        
+        n = b
+        while True :
+            i = 0
+            while True :
+                if i >= a_depth : break
+                if visited[i] == n :
+                    mrca = visited[i]
+                    break
+                i += 1
+            if not mrca == -1 : break
+            n = data[n].parent
+            if n == -1 :
+                mrca = n
+                break
     
     # free the visited node array (no-op if NULL)
-    PyMem_Free(visited_ids)
+    PyMem_Free(visited)
     return mrca
 
 @cython.boundscheck(False)
@@ -202,6 +203,18 @@ cdef class SuchTree :
     property leafs :
         def __get__( self ) :
             return self.leafs
+    
+    def get_parent( self, id ) :
+        """
+        Return the id of the parent of a given node. Will accept node
+        id or leaf name.
+        """
+        if type(id) is str :
+            try :
+                id = self.leafs( id )
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + id )
+        return self.data[id].parent
     
     def get_children( self, id ) :
         """
