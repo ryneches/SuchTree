@@ -39,6 +39,9 @@ cdef int _mrca( Node* data, int depth, int a, int b ) :
     # allocate some memory for visited node array
     visited = <int*> PyMem_Malloc( depth * sizeof(int) )
     
+    if visited == NULL :
+        raise Exception( '_mrca could not allocate memmory' )
+     
     with nogil :
         n = a
         i = 0
@@ -105,13 +108,16 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
     cdef bint fail = False
     # allocate some memory for visited node array
     visited = <int*> PyMem_Malloc( depth * sizeof(int) )
-   
+    
+    if visited == NULL :
+        raise Exception( '_distances could not allocate memory' )
+    
     with nogil : 
         for j in range( ids.shape[0] ) :
             d = 0
             a = ids[j][0]
             b = ids[j][1]
-            if a > length or b > length :
+            if a >= length or b >= length :
                 fail = True
                 break
             if a == b :
@@ -120,6 +126,8 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
             n = a
             i = 0
             while True :
+                if i >= depth : fail = True
+                if n >= length : fail = True
                 visited[i] = n
                 n = data[n].parent
                 i += 1
@@ -139,6 +147,7 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
                 if mrca != -1 : break
                 d += data[n].distance
                 n = data[n].parent
+                if n >= length : fail = True
                 if n == -1 :
                     mrca = n
                     break
@@ -206,13 +215,18 @@ cdef class SuchTree :
         size = len( t.nodes() )
         # allocate some memory
         self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )
+        if self.data == NULL :
+            raise Exception( 'SuchTree could not allocate memory' )
+        
         self.length = size
         if not self.data :
             raise MemoryError()
         
         self.leafs = {}
         for id,node in enumerate( t.inorder_node_iter() ) :
-            node.label = id 
+            node.label = id
+            if id >= size :
+                raise Exception( 'node label out of bounds : ' + str(id) ) 
             if node.taxon :
                 self.leafs[ node.taxon.label ] = id
                 
@@ -230,11 +244,14 @@ cdef class SuchTree :
                 left_child  = l_child.label
                 right_child = r_child.label
             
+            if id >= size :
+                raise Exception( 'node label out of bounds : ' + str(id) ) 
+        
             self.data[id].parent      = parent
             self.data[id].left_child  = left_child
             self.data[id].right_child = right_child
             self.data[id].distance    = distance
-        
+            
         for id in self.leafs.values() :
             n = 0
             while True :
