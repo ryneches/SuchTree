@@ -3,6 +3,8 @@ from setuptools import setup, Extension
 from Cython.Distutils import build_ext
 from Cython.Build import cythonize
 
+extensions = [Extension( 'source', ['SuchTree/SuchTree.pyx'] ) ]
+
 setup(
     name='SuchTree',
     version='0.1',
@@ -18,6 +20,6 @@ setup(
         'cython'
     ],
     zip_safe=False,
-    ext_modules = cythonize( 'SuchTree/SuchTree.pyx' ),
+    ext_modules = cythonize( extensions ),
     test_suite = 'nose.collector'
 )
