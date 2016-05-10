@@ -126,12 +126,10 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
             n = a
             i = 0
             while True :
-                if i >= depth : fail = True
-                if n >= length : fail = True
+                if n == -1 : break
                 visited[i] = n
                 n = data[n].parent
                 i += 1
-                if n == -1 : break
             a_depth = i
             
             mrca = -1
@@ -147,7 +145,6 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
                 if mrca != -1 : break
                 d += data[n].distance
                 n = data[n].parent
-                if n >= length : fail = True
                 if n == -1 :
                     mrca = n
                     break
@@ -171,7 +168,7 @@ cdef class SuchTree :
     cdef int length
     cdef int depth
     cdef object leafs   
- 
+    
     def __init__( self, tree_file ) :
         """
         Initialize a new SuchTree extention type. The constructor
@@ -253,7 +250,7 @@ cdef class SuchTree :
             self.data[id].distance    = distance
             
         for id in self.leafs.values() :
-            n = 0
+            n = 1
             while True :
                 if self.data[id].parent == -1 : break
                 id = self.data[id].parent
