@@ -53,6 +53,43 @@ and other optimizations available in modern CPUs.
 ### Nice benchmark
 
 
+### How usage
+
+`SuchTree` will accept either a URL or a file path :
+
+```python
+from SuchTre import SuchTree
+
+T = SuchTree( 'test.tree' )
+T = SuchTree( 'http://litoria.eeb.yale.edu/bird-tree/archives/PatchClade/Stage2/set1/Spheniscidae.tre' )
+```
+
+The available properties are :
+
+* `length` : the number of nodes in the tree
+* `depth` : the maximum depth of the tree
+* `root` : the id of the root node
+* `leafs` : a dictionary mapping leaf names to their ids
+
+The available methods are :
+
+* `get_parent` : for a given node id or leaf name, return the parent id
+* `get_children` : for a given node id or leaf name, return the ids of
+the child nodes (leaf nodes have no children, so their child node ids will
+always be -1)
+* `get_distance_to_root` : for a given node id or leaf name, return
+the integrated phylogenetic distance to the root node
+* `mrca` : for a given pair of node ids or leaf names, return the id
+of the nearest node that is parent to both
+* `distance` : for a given pair of node ids or leaf names, return the
+patristic distance between the pair
+* `distances` : for an (n,2) aray of pairs of node ids, return an (n)
+array of patristic distances between the pairs
+* `distances_by_name` for an (n,2) list of pairs of leaf names, return
+an (n) list of patristic distances between each pair
+* `dump_array` : print out the entire tree (for debugging only! May
+produce pathologically gigantic output.)
+
 ### Wow
 
 Special thanks to [@camillescott](https://github.com/camillescott) and 
