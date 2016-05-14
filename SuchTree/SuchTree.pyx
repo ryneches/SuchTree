@@ -167,6 +167,7 @@ cdef class SuchTree :
     cdef Node* data
     cdef int length
     cdef int depth
+    cdef int root
     cdef object leafs   
     
     def __init__( self, tree_file ) :
@@ -231,6 +232,7 @@ cdef class SuchTree :
             if not node.parent_node :
                 distance = -1
                 parent   = -1
+                self.root = id
             else :
                 distance = node.edge_length
                 parent   = node.parent_node.label
@@ -265,10 +267,14 @@ cdef class SuchTree :
     property depth :
         def __get__( self ) :
             return self.depth
-
+    
     property leafs :
         def __get__( self ) :
             return self.leafs
+    
+    property root :
+        def __get__( self ) :
+            return self.root
     
     def get_parent( self, id ) :
         """

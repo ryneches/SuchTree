@@ -67,4 +67,4 @@ def test_distances_by_name() :
 
 def test_get_leafs() :
     T = SuchTree( test_tree )
-    assert_equal( set( list(T.get_leafs( 21 )) ), set( T.leafs.values() ) )
+    assert_equal( set( list(T.get_leafs( T.root )) ), set( T.leafs.values() ) )
