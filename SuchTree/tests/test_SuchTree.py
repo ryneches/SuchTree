@@ -65,4 +65,6 @@ def test_distances_by_name() :
     for D1,D2 in zip( d1,result ) :
         assert_almost_equal( D1, D2, places=4 )
 
-
+def test_get_leafs() :
+    T = SuchTree( test_tree )
+    assert_equal( set( list(T.get_leafs( 21 )) ), set( T.leafs.values() ) )
