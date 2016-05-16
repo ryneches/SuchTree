@@ -163,6 +163,28 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
         raise Exception( 'query contains out of bounds id' )
 
 cdef class SuchTree :
+    """
+    SuchTree extention type. The constructor accepts a filesystem 
+    path or URL to a file that describes the tree in NEWICK format.
+    For now, SuchTree uses dendropy to parse the NEWICK file.
+
+    An array of type Node is allocated, and freed when
+    SuchTree.__dealloc__ is invoked.
+
+    Node.parent, Node.left_child and Node.right_child are integer
+    offsets within this array, describing the tree structure.
+    Nodes where left_child and right_child are -1 are leaf nodes,
+    Nodes where the parent attribute is -1 are the root nodes
+    (there should be only one of these in any given tree).
+
+    SuchTree expects trees to be strictly bifrucating. There
+    should not be any nodes that have only one child.
+
+    SuchTrees are immutable; they cannot be modified once
+    initialized. If you need to manipulate your tree before
+    performing computations, you will need to use a different tool
+    to perform those manipulations first.
+    """
 
     cdef Node* data
     cdef int length
@@ -172,27 +194,7 @@ cdef class SuchTree :
     
     def __init__( self, tree_file ) :
         """
-        Initialize a new SuchTree extention type. The constructor
-        accepts a filesystem path or URL to a file that describes
-        the tree in NEWICK format. For now, SuchTree uses dendropy
-        to parse the NEWICK file.
-        
-        An array of type Node is allocated, and freed when
-        SuchTree.__dealloc__ is invoked.
-        
-        Node.parent, Node.left_child and Node.right_child are integer
-        offsets within this array, describing the tree structure.
-        Nodes where left_child and right_child are -1 are leaf nodes,
-        Nodes where the parent attribute is -1 are the root nodes
-        (there should be only one of these in any given tree).
-        
-        SuchTree expects trees to be strictly bifrucating. There
-        should not be any nodes that have only one child.
-        
-        SuchTrees are immutable; they cannot be modified once
-        initialized. If you need to manipulate your tree before
-        performing computations, you will need to use a different tool
-        to perform those manipulations first.
+        SuchTree constructor.
         """
         cdef int n
         cdef int id
@@ -261,18 +263,22 @@ cdef class SuchTree :
                 self.depth = n
                 
     property length :
+        'The number of nodes in the tree.'
         def __get__( self ) :
             return self.length
     
     property depth :
+        'The maximum depth of the tree.'
         def __get__( self ) :
             return self.depth
     
     property leafs :
+        'A dictionary mapping leaf names to leaf node ids.'
         def __get__( self ) :
             return self.leafs
     
     property root :
+        'The id of the root node.'
         def __get__( self ) :
             return self.root
     
@@ -376,7 +382,7 @@ cdef class SuchTree :
 
     def dump_array( self ) :
         """
-        Print the whole array. WARNING : may be huge and useless.
+        Print the whole tree. (WARNING : may be huge and useless.)
         """
         for n in range(self.length) :
             print 'id : %d ->' % n

@@ -52,6 +52,25 @@ and other optimizations available in modern CPUs.
 
 ### Nice benchmark
 
+```python
+import random
+
+N = 1000000
+v = T1.leafs.keys()
+
+pairs = []
+for i in range(N) :
+    pairs.append( ( random.choice( v ), random.choice( v ) ) )
+
+%time D1 = T1.distances_by_name( pairs ); D2 = T2.distances_by_name( pairs )
+```
+
+```
+CPU times: user 10.1 s, sys: 0 ns, total: 10.1 s
+Wall time: 10.1 s
+```
+
+![neighbor joining vs. maximum likelihood](docs/nj_vs_ml.png)
 
 ### How usage
 
