@@ -52,9 +52,34 @@ and other optimizations available in modern CPUs.
 
 ### Nice benchmark
 
+Here, we use `SuchTree` to compare the topology of two trees built
+from the same 54,327 sequences using two methods : neighbor joining
+and Morgan Price's `[FastTree](http://www.microbesonline.org/fasttree/)` 
+approximate maximum likelihood algorithm. Using a million randomly
+chosen pairs of leaf nodes, we look at the patristic distances in each
+of the two trees, plot them against one another, and compute
+correlation coefficients.
+
+On an Intel i7-3770S, `SuchTree` completes the two million distance
+calculations in a little more than ten seconds.
+
 ```python
+from SuchTree import SuchTree
 import random
 
+T1 = SuchTree( 'ml.tree' )
+T2 = SuchTree( 'nj.tree' )
+
+print 'nodes : %d, leafs : %d' % ( T1.length, len(T1.leafs) )
+print 'nodes : %d, leafs : %d' % ( T2.length, len(T2.leafs) )
+```
+
+```
+nodes : 108653, leafs : 54327
+nodes : 108653, leafs : 54327
+```
+
+```python
 N = 1000000
 v = T1.leafs.keys()
 
@@ -71,6 +96,17 @@ Wall time: 10.1 s
 ```
 
 ![neighbor joining vs. maximum likelihood](docs/nj_vs_ml.png)
+
+```python
+from scipy.stats import kendalltau, pearsonr
+
+print 'Kendall\'s tau : %0.3f' % kendalltau( D1, D2 )[0]
+print 'Pearson\'s r   : %0.3f' % pearsonr( D1, D2 )[0]
+```
+```
+Kendall's tau : 0.709
+Pearson's r   : 0.969
+```
 
 ### How usage
 
