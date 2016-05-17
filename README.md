@@ -54,7 +54,7 @@ and other optimizations available in modern CPUs.
 
 Here, we use `SuchTree` to compare the topology of two trees built
 from the same 54,327 sequences using two methods : neighbor joining
-and Morgan Price's `[FastTree](http://www.microbesonline.org/fasttree/)` 
+and Morgan Price's [`FastTree`](http://www.microbesonline.org/fasttree/)
 approximate maximum likelihood algorithm. Using a million randomly
 chosen pairs of leaf nodes, we look at the patristic distances in each
 of the two trees, plot them against one another, and compute
