@@ -308,7 +308,7 @@ cdef class SuchTree :
 
     def get_leafs( self, id ) :
         """
-        Return the ids of all leaf nodes descendent from a given node.
+        Yield the ids of all leaf nodes descendent from a given node.
         """
         to_visit = [id]
         for i in to_visit :
@@ -318,7 +318,21 @@ cdef class SuchTree :
             else :
                 to_visit.append( l )
                 to_visit.append( r )   
- 
+    
+    def get_internal_nodes( self ) :
+        """
+        Yield the ids of all internal nodes.
+        """
+        to_visit = [self.root]
+        for i in to_visit :
+            l,r = self.get_children( i )
+            if l == -1 :
+                continue
+            else :
+                to_visit.append( l )
+                to_visit.append( r )
+                yield i
+    
     def get_distance_to_root( self, id ) :
         """
         Return distance to root for a given node. Will accept node id
