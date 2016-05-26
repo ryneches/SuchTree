@@ -6,6 +6,9 @@ phylogenetic trees.
 [![Build
 Status](https://travis-ci.org/ryneches/SuchTree.svg?branch=master)](https://travis-ci.org/ryneches/SuchTree)
 
+[![Coverage
+Status](https://coveralls.io/repos/github/ryneches/SuchTree/badge.svg?branch=master)](https://coveralls.io/github/ryneches/SuchTree?branch=master)
+
 ### So problem
 
 You have a phylogenetic tree, and you want to do some statistics with
