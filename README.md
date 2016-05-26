@@ -4,10 +4,9 @@ A Python library for doing fast, thread-safe computations with
 phylogenetic trees.
 
 [![Build
-Status](https://travis-ci.org/ryneches/SuchTree.svg?branch=master)](https://travis-ci.org/ryneches/SuchTree)
-
-[![Coverage
+Status](https://travis-ci.org/ryneches/SuchTree.svg?branch=master)](https://travis-ci.org/ryneches/SuchTree) [![Coverage
 Status](https://coveralls.io/repos/github/ryneches/SuchTree/badge.svg?branch=master)](https://coveralls.io/github/ryneches/SuchTree?branch=master)
+[![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE)
 
 ### So problem
 
