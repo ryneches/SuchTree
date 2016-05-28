@@ -13,6 +13,32 @@ cdef struct Node :
     int right_child
     float distance
 
+@cython.boundscheck(False)
+cdef double _pearson( double[:] x, double[:] y ) :
+    cdef unsigned int n = len(x)
+    cdef unsigned long j
+    cdef float yt,xt,t,df
+    cdef float syy=0.0,sxy=0.0,sxx=0.0,ay=0.0,ax=0.0
+    with nogil :
+        for j in xrange(n) :
+            ax += x[j]
+            ay += y[j]
+        ax /= n
+        ay /= n
+        for j in xrange(n) :
+            xt=x[j]-ax
+            yt=y[j]-ay
+            sxx += xt*xt
+            syy += yt*yt
+            sxy += xt*yt
+        return sxy/((sxx*syy)+1.0e-20)**(0.5)
+
+def pearson( double[:] x, double[:] y ) :
+    try :
+        return _pearson( x, y )
+    except ZeroDivisionError :
+        return 0.0
+
 cdef float _get_distance_to_root( Node* data, id ) :
     """
     Calculate the distance from a node of a given id to the root node.
@@ -407,3 +433,68 @@ cdef class SuchTree :
     
     def __dealloc__(self):
         PyMem_Free(self.data)     # no-op if self.data is NULL
+
+cdef struct Link :
+    unsigned int a
+    unsigned int b
+
+cdef class SuchLinkedTrees :
+    """
+    The links argument can be an (n,2) numpy array of ids or a (n,2)
+    list of tuples of leaf names. 
+    """
+    cdef Link* links
+    cdef unsigned int n_links
+    
+    def __init__( self, tree_file_a, tree_file_b, link_list ) :
+        
+        cdef unsigned int i
+        cdef unsigned int a_id
+        cdef unsigned int b_id
+        
+        if type(link_list) != list or type(link_list) != np.ndarray :
+            raise Exception( 'unsupported type for links', type(link_list) )
+        
+        if np.shape(link_list)[1] != 2 :
+            raise Exception( 'links argument must be shape (n,2)' )
+        
+        self.TreeA = SuchTree( tree_file_a )
+        self.TreeB = SuchTree( tree_file_b )
+        
+        self.n_links = len(link_list)
+        
+        # allocate some memory for links
+        self.links = <Link*> PyMem_Malloc( self.n_links * sizeof(Link) )
+        if self.links == NULL :
+            raise Exception( 'SuchTree could not allocate memory' )
+        
+        if type(link_list) == list :
+            for i,(a,b) in enumerate( link_list ) :
+                a_id = self.TreeA.leafs[a]
+                b_id = self.TreeB.leafs[b]
+                self.links[i].a = a_id
+                self.links[i].b = b_id
+        
+        if type(link_list) == np.ndarray :
+            for i,(a,b) in enumerate( link_list ) :
+                self.links[i].a = a
+                self.links[i].b = b
+
+    def __dealloc__( self ):
+        PyMem_Free(self.links)     # no-op if self.data is NULL
+
+    property TreeA :
+        def __get__( self ) :
+            return self.TreeA
+
+    property TreeB :
+        def __get__( self ) :
+            return self.TreeB
+    
+    property links :
+        def __get__( self ) :
+            cdef unsigned int i
+            link_array = np.ndarray( (self.n_links, 2), dtype=int )
+            for i in xrange( self.n_links ) :
+                link_array[ i, : ] = self.links.a, self.links.b
+            return link_array

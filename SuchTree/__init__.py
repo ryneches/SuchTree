@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 
-from SuchTree import SuchTree
+from SuchTree import SuchTree, SuchLinkedTrees
