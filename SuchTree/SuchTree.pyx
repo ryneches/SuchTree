@@ -445,22 +445,39 @@ cdef class SuchLinkedTrees :
     """
     cdef Link* links
     cdef unsigned int n_links
-    
+    cdef object TreeA
+    cdef object TreeB
+         
     def __init__( self, tree_file_a, tree_file_b, link_list ) :
         
         cdef unsigned int i
         cdef unsigned int a_id
         cdef unsigned int b_id
         
-        if type(link_list) != list or type(link_list) != np.ndarray :
+        if not type(link_list) in [ list, np.ndarray ] :
             raise Exception( 'unsupported type for links', type(link_list) )
         
         if np.shape(link_list)[1] != 2 :
             raise Exception( 'links argument must be shape (n,2)' )
         
-        self.TreeA = SuchTree( tree_file_a )
-        self.TreeB = SuchTree( tree_file_b )
+        # build trees from newick files, URLs to newick files or 
+        # from existing SuchTrees
+        if type( tree_file_a ) == str : 
+            self.TreeA = SuchTree( tree_file_a )
+        elif type( tree_file_a ) == SuchTree :
+            self.TreeA = tree_file_a
+        else :
+            raise Exception( 'unknown input for tree', type(tree_file_a) )
         
+        # build trees from newick files, URLs to newick files or 
+        # from existing SuchTrees
+        if type( tree_file_b ) == str : 
+            self.TreeB = SuchTree( tree_file_b )
+        elif type( tree_file_b ) == SuchTree :
+            self.TreeB = tree_file_b
+        else :
+            raise Exception( 'unknown input for tree', type(tree_file_b) )
+
         self.n_links = len(link_list)
         
         # allocate some memory for links
