@@ -45,3 +45,15 @@ def test_init_both_trees_by_file() :
     SLT = SuchLinkedTrees( test_tree, test_tree, links )
     assert_equal( type(SLT), SuchLinkedTrees )
 
+def test_link_property() :
+    T = SuchTree( test_tree )
+    names_a = T.leafs.values()
+    names_b = T.leafs.values()
+    numpy.random.shuffle( names_b )
+    links = numpy.array( zip( names_a, names_b ), dtype=int )
+    SLT = SuchLinkedTrees( T, T, links )
+    L = SLT.links
+    for (a,b),(c,d) in zip(links,L) :
+        assert_equal( a, c )
+        assert_equal( b, d )
+

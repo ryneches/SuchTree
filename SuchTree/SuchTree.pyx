@@ -447,7 +447,7 @@ cdef class SuchLinkedTrees :
     cdef unsigned int n_links
     cdef object TreeA
     cdef object TreeB
-         
+    
     def __init__( self, tree_file_a, tree_file_b, link_list ) :
         
         cdef unsigned int i
@@ -477,13 +477,13 @@ cdef class SuchLinkedTrees :
             self.TreeB = tree_file_b
         else :
             raise Exception( 'unknown input for tree', type(tree_file_b) )
-
+        
         self.n_links = len(link_list)
         
         # allocate some memory for links
         self.links = <Link*> PyMem_Malloc( self.n_links * sizeof(Link) )
         if self.links == NULL :
-            raise Exception( 'SuchTree could not allocate memory' )
+            raise Exception( 'SuchLinkedTrees could not allocate memory' )
         
         if type(link_list) == list :
             for i,(a,b) in enumerate( link_list ) :
@@ -496,14 +496,14 @@ cdef class SuchLinkedTrees :
             for i,(a,b) in enumerate( link_list ) :
                 self.links[i].a = a
                 self.links[i].b = b
-
+    
     def __dealloc__( self ):
         PyMem_Free(self.links)     # no-op if self.data is NULL
-
+    
     property TreeA :
         def __get__( self ) :
             return self.TreeA
-
+    
     property TreeB :
         def __get__( self ) :
             return self.TreeB
@@ -513,5 +513,55 @@ cdef class SuchLinkedTrees :
             cdef unsigned int i
             link_array = np.ndarray( (self.n_links, 2), dtype=int )
             for i in xrange( self.n_links ) :
-                link_array[ i, : ] = self.links.a, self.links.b
+                link_array[ i, : ] = self.links[i].a, self.links[i].b
             return link_array
+    
+    property n_links :
+        def __get__( self ) :
+            return self.n_links   
+    
+    def linked_distances( self ) :
+        cdef unsigned int i
+        cdef unsigned int j
+        for i in xrange( self.n_links ) :
+            ids_a = np.ndarray( ( i+1, 2 ), dtype=int )
+            ids_b = np.ndarray( ( i+1, 2 ), dtype=int )
+            for j in xrange( i+1 ) :
+                ids_a[ j, : ] = self.links[ i ].a, self.links[ j ].a
+                ids_b[ j, : ] = self.links[ i ].b, self.links[ j ].b
+            yield ( self.TreeA.distances( ids_a ),
+                    self.TreeB.distances( ids_b ) )
+
+    def sample_linked_distances( self, sigma=0.001, buckets=64, n=4096 ) :
+        ids_a = np.ndarray( (n,2), dtype=int )
+        ids_b = np.ndarray( (n,2), dtype=int )
+        a_buckets = []
+        b_buckets = []
+        for i in xrange(buckets) :
+            a_buckets.append( np.array([]) )
+            b_buckets.append( np.array([]) )
+        s_a = 10e10
+        s_b = 10e10
+        a_sigmas = []
+        b_sigmas = []
+        while True :
+            for i in xrange(buckets) :
+                l1 = np.random.randint( 0, self.n_links, n )
+                l2 = np.random.randint( 0, self.n_links, n )
+                for j in xrange(n) :
+                    ids_a[ j, : ] = self.links[ l1[j] ].a, self.links[ l2[j] ].a
+                    ids_b[ j, : ] = self.links[ l1[j] ].b, self.links[ l2[j] ].b
+                a_result = self.TreeA.distances( ids_a )
+                b_result = self.TreeB.distances( ids_b )
+                a_buckets[i] = np.append( a_buckets[i], a_result )
+                b_buckets[i] = np.append( b_buckets[i], b_result )
+            a_sigmas.append( np.std( a_buckets ) )
+            b_sigmas.append( np.std( b_buckets ) )
+            if len( a_sigmas ) == 1 : continue
+            s_a = np.std( a_sigmas )
+            s_b = np.std( b_sigmas )
+            if s_a < sigma and s_b < sigma : break
+        return { 'TreeA' : reduce( np.append, a_buckets ),
+                 'TreeB' : reduce( np.append, b_buckets ),
+                 'sigma_a' : s_a,
+                 'sigma_b' : s_b }
