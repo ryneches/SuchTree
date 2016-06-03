@@ -30,7 +30,7 @@ install:
 # Run test
 script:
   - nosetests --with-cov --cover-test SuchTree
-  - coverage run --source=SuchTree setup.py test
+#  - coverage run --source=SuchTree setup.py test
 
 # Calculate coverage
 after_success:
