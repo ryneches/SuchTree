@@ -99,13 +99,13 @@ def test_n_rows() :
     SLT = SuchLinkedTrees( T, T, links )
     assert_equal( SLT.n_rows, T.n_leafs )
 
-def test_link_property() :
+def test_linkmatrix_property() :
     T = SuchTree( test_tree )
     links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
     SLT = SuchLinkedTrees( T, T, links )
-    L = SLT.links
+    L = SLT.linkmatrix
     LL = pd.DataFrame( L, columns=SLT.col_names, index=SLT.row_names )
     b_links = links.applymap( lambda x : bool(x) )
     for row in SLT.row_names :
