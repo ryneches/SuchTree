@@ -362,7 +362,7 @@ cdef class SuchTree :
             else :
                 to_visit.append( l )
                 to_visit.append( r )   
-        return self.np_buffer[:n]    
+        return np.array(self.np_buffer[:n])
 
     def get_internal_nodes( self ) :
         """
@@ -384,7 +384,7 @@ cdef class SuchTree :
                 to_visit.append( r )
                 self.np_buffer[n] = i
                 n += 1
-        return self.np_buffer[:n]
+        return np.array(self.np_buffer[:n])
         
     def get_distance_to_root( self, id ) :
         """
