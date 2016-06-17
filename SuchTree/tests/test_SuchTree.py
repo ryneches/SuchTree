@@ -1,4 +1,4 @@
-from nose.tools import assert_equal, assert_almost_equal
+from nose.tools import assert_equal, assert_almost_equal, assert_true
 from SuchTree import SuchTree
 from dendropy import Tree
 from itertools import combinations
@@ -68,3 +68,11 @@ def test_distances_by_name() :
 def test_get_leafs() :
     T = SuchTree( test_tree )
     assert_equal( set( list(T.get_leafs( T.root )) ), set( T.leafs.values() ) )
+
+def test_hierarchy() :
+    T = SuchTree( test_tree )
+    all_leafs = set( T.get_leafs( T.root ) )
+    for i in T.get_internal_nodes() :
+        some_leafs = set( T.get_leafs( i ) )
+        assert_true( some_leafs in all_leafs )
+    

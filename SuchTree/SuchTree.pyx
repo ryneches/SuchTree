@@ -455,6 +455,8 @@ cdef class SuchTree :
             raise Exception( 'Cannot link non-leaf node.', leaf_id )
         if not self.data[leaf_id].left_child == -1 :
             raise Exception( 'Cannot link non-leaf node.', leaf_id )
+        if not leaf_id in set( self.leafs.values() ) :
+            raise Exception( 'Unknown leaf id.', leaf_id )
         # we only use the left child to identify a node as a leaf, so
         # the right child is avalable to store the column index
         self.data[leaf_id].right_child = col_id
@@ -463,8 +465,10 @@ cdef class SuchTree :
         """
         Returns an array of column ids for an array of leaf ids.
         """
+        if not set( leaf_ids ) <= set( self.leafs.values() ) :
+            raise Exception( 'Unknown leaf id(s).', leaf_ids )
         col_ids = np.ndarray( len(leaf_ids), dtype=int )
-        for n,leaf in enumerate(leaf_ids) :
+        for n,leaf in enumerate( leaf_ids ) :
             col_ids[n] = self.data[ leaf ].right_child
         return col_ids
     
@@ -479,8 +483,8 @@ cdef class SuchTree :
             print '   left child  : %d'    % self.data[n].left_child
             print '   right child : %d'    % self.data[n].right_child
     
-    def __dealloc__(self):
-        PyMem_Free(self.data)     # no-op if self.data is NULL
+    def __dealloc__( self ) :
+        PyMem_Free( self.data )     # no-op if self.data is NULL
 
 cdef struct Link :
     unsigned int a
@@ -499,11 +503,12 @@ cdef unsigned int _subset_guest_tree( long[:] col_ids,
     cdef unsigned int i
     cdef unsigned int j
     cdef unsigned int col
+    print 'address check 1 :', <unsigned int>&linkmatrix
     with nogil :
         for i in xrange( n_leafs ) :
             col = col_ids[i]
             for j in xrange( linkmatrix[col].length ) :
-                linklist[n].a = linkmatrix[i].links[j]
+                linklist[n].a = linkmatrix[col].links[j]
                 linklist[n].b = col 
                 n += 1
     return n
@@ -540,6 +545,7 @@ cdef class SuchLinkedTrees :
         
         cdef unsigned int i
         cdef unsigned int j
+        cdef unsigned int link       
         
         # these objects are constructed only when first accessed
         self.np_linkmatrix = None
@@ -606,15 +612,22 @@ cdef class SuchLinkedTrees :
             for j,link in enumerate(l) :
                 self.linkmatrix[i].links[j] = link
         
+        print 'address check 0 :', <unsigned int>&self.linkmatrix
         # allocate memory for link list
         self.linklist = <Link*> PyMem_Malloc( self.n_links * sizeof( Link ) )
         self.subset_guest_tree( self.TreeB.root )
     
-    def __dealloc__( self ):
+    def __dealloc__( self ) :
+        print 'address check 3 :', <unsigned int>&self.linkmatrix
+        print 'check 0'
         for i in xrange( self.n_cols ) :
+            print 'check 1', i
             PyMem_Free( self.linkmatrix[i].links )
+        print 'check 2'
         PyMem_Free( self.linkmatrix )
+        print 'check 3'
         PyMem_Free( self.linklist )
+        print 'check 4'
         
     property TreeA :
         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
@@ -709,6 +722,7 @@ cdef class SuchLinkedTrees :
             return self.subset_n_links
     
     def subset_guest_tree( self, node_id ) :
+        print 'address check 2 :', <unsigned int>&self.linkmatrix
         leafs = self.TreeA.get_leafs( node_id )
         col_ids = self.TreeA.get_links( leafs )
         n = _subset_guest_tree( col_ids, self.linkmatrix, self.linklist )
