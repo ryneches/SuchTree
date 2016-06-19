@@ -189,6 +189,7 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
     if fail :
         raise Exception( 'query contains out of bounds id' )
 
+@cython.no_gc_clear
 cdef class SuchTree :
     """
     SuchTree extention type. The constructor accepts a filesystem 
@@ -486,33 +487,34 @@ cdef class SuchTree :
     def __dealloc__( self ) :
         PyMem_Free( self.data )     # no-op if self.data is NULL
 
-cdef struct Link :
-    unsigned int a
-    unsigned int b
-
 cdef struct LinkColumn :
     unsigned int length
     unsigned int* links
 
 @cython.boundscheck(False)
 cdef unsigned int _subset_guest_tree( long[:] col_ids, 
-                                      LinkColumn* linkmatrix, 
-                                      Link* linklist ) :
+                                      long[:,:] linklist,
+                                      LinkColumn* linkmatrix ) :
     cdef unsigned int n = 0
     cdef unsigned int n_leafs = len( col_ids )
     cdef unsigned int i
     cdef unsigned int j
     cdef unsigned int col
     print 'address check 1 :', <unsigned int>&linkmatrix
-    with nogil :
-        for i in xrange( n_leafs ) :
-            col = col_ids[i]
-            for j in xrange( linkmatrix[col].length ) :
-                linklist[n].a = linkmatrix[col].links[j]
-                linklist[n].b = col 
-                n += 1
+    for i in xrange( n_leafs ) :
+        col = col_ids[i]
+        for j in xrange( linkmatrix[col].length ) :
+            #assert( n < 135 )
+            print n, i, col
+            assert( col < 14 )
+            assert( j < linkmatrix[col].length )
+            assert( i < 14 )
+            linklist[n,0] = linkmatrix[col].links[j]
+            linklist[n,1] = col
+            n += 1
     return n
-  
+
+@cython.no_gc_clear
 cdef class SuchLinkedTrees :
     """
     The links argument can be an (n,2) numpy array of ids or a (n,2)
@@ -523,7 +525,6 @@ cdef class SuchLinkedTrees :
     matrix (column names).
     """
     cdef LinkColumn* linkmatrix
-    cdef Link* linklist
     cdef unsigned int n_cols
     cdef unsigned int n_rows
     cdef unsigned int n_links
@@ -531,7 +532,7 @@ cdef class SuchLinkedTrees :
     cdef unsigned int subset_n_leafs
     cdef unsigned int subset_n_links
     cdef object np_linkmatrix
-    cdef object np_linklist
+    cdef object linklist
     cdef object TreeA
     cdef object TreeB
     cdef object linked_leafsA
@@ -540,7 +541,8 @@ cdef class SuchLinkedTrees :
     cdef object row_ids
     cdef object col_names
     cdef object row_names    
-    
+    cdef object debug_lengths
+     
     def __init__( self, tree_file_a, tree_file_b, link_matrix ) :
         
         cdef unsigned int i
@@ -549,7 +551,6 @@ cdef class SuchLinkedTrees :
         
         # these objects are constructed only when first accessed
         self.np_linkmatrix = None
-        self.np_linklist = None
         self.linked_leafsA = None
         self.linked_leafsB = None
         self.col_ids = None
@@ -594,6 +595,8 @@ cdef class SuchLinkedTrees :
         self.col_ids = self.TreeB.leafs.values()
         self.col_names = self.TreeB.leafs.keys()
         
+        # FIXME
+        self.debug_lengths = []
         # allocate memory for link columns
         self.n_rows, self.n_cols = self.TreeA.n_leafs, self.TreeB.n_leafs
         self.n_links = 0
@@ -605,19 +608,24 @@ cdef class SuchLinkedTrees :
             s = link_matrix[ col ]
             l = map( lambda x : self.TreeA.leafs[x], s[ s > 0 ].to_dict().keys() )
             size = len(l)
+            self.debug_lengths.append(size)
             self.n_links += size
             # allocate memory for links in this column
             self.linkmatrix[i].length = size
             self.linkmatrix[i].links = <unsigned int*> PyMem_Malloc( size * sizeof( unsigned int ) )
+            print size, len(l), l
             for j,link in enumerate(l) :
                 self.linkmatrix[i].links[j] = link
         
         print 'address check 0 :', <unsigned int>&self.linkmatrix
-        # allocate memory for link list
-        self.linklist = <Link*> PyMem_Malloc( self.n_links * sizeof( Link ) )
-        self.subset_guest_tree( self.TreeB.root )
-    
-    def __dealloc__( self ) :
+        
+        # create empty link list
+        self.linklist = np.ndarray( (self.n_links,2), dtype=int )
+        #self.subset_guest_tree( self.TreeB.root )
+        self.subset_node = self.TreeB.root
+        self.subset_n_leafs = self.TreeB.n_leafs
+        
+    def destroy( self ) :
         print 'address check 3 :', <unsigned int>&self.linkmatrix
         print 'check 0'
         for i in xrange( self.n_cols ) :
@@ -626,9 +634,18 @@ cdef class SuchLinkedTrees :
         print 'check 2'
         PyMem_Free( self.linkmatrix )
         print 'check 3'
-        PyMem_Free( self.linklist )
-        print 'check 4'
         
+    def __dealloc__( self ) :
+        
+        print 'address check 3 :', <unsigned int>&self.linkmatrix
+        #print 'check 0'
+        #for i in xrange( self.n_cols ) :
+        #    print 'check 1', i
+        #    PyMem_Free( self.linkmatrix[i].links )
+        #print 'check 2'
+        #PyMem_Free( self.linkmatrix )
+        #print 'check 3'
+ 
     property TreeA :
         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
         def __get__( self ) :
@@ -656,12 +673,7 @@ cdef class SuchLinkedTrees :
     
     property linklist :
         def __get__( self ) :
-            cdef unsigned int i
-            if self.np_linklist is None :
-                self.np_linklist = np.ndarray( (self.subset_n_links, 2), dtype=int )
-                for i in xrange( self.subset_n_links ) :
-                    self.np_linklist[ i, : ] = self.linklist[i].a, self.linklist[i].b
-            return self.np_linklist
+            return np.array(self.linklist[:self.subset_n_links])
             
     property n_links :
         'size of the link list'
@@ -725,11 +737,27 @@ cdef class SuchLinkedTrees :
         print 'address check 2 :', <unsigned int>&self.linkmatrix
         leafs = self.TreeA.get_leafs( node_id )
         col_ids = self.TreeA.get_links( leafs )
-        n = _subset_guest_tree( col_ids, self.linkmatrix, self.linklist )
+        #n = _subset_guest_tree( col_ids, self.linklist, self.linkmatrix )
+        
+        n = 0
+        for i in xrange( self.TreeB.n_leafs ) :
+            col = col_ids[i]
+            for j in xrange( self.linkmatrix[col].length ) :
+                assert( n < self.n_links )
+                assert( self.n_links == self.linklist.shape[0] )
+                assert( col < 14 )
+                assert( j < self.linkmatrix[col].length )
+                print self.linkmatrix[col].length, self.debug_lengths[col] 
+                print  self.linkmatrix[col].length == self.debug_lengths[col] 
+                assert( self.linkmatrix[col].length == self.debug_lengths[col] ) 
+                assert( i < 14 )
+                self.linklist[n,0] = self.linkmatrix[col].links[j]
+                self.linklist[n,1] = col
+                n += 1
+
         self.subset_node = node_id
         self.subset_n_leafs = len(leafs)
         self.subset_n_links = n
-        self.np_linklist = None
         
     #broken
     def linked_distances( self ) :
