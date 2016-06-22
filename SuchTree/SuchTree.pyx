@@ -452,8 +452,6 @@ cdef class SuchTree :
         """
         Attaches a leaf node to SuchLinkedTrees link matrix column.
         """
-        if not self.data[leaf_id].right_child == -1 :
-            raise Exception( 'Cannot link non-leaf node.', leaf_id )
         if not self.data[leaf_id].left_child == -1 :
             raise Exception( 'Cannot link non-leaf node.', leaf_id )
         if not leaf_id in set( self.leafs.values() ) :
@@ -541,13 +539,11 @@ cdef class SuchLinkedTrees :
     cdef object row_ids
     cdef object col_names
     cdef object row_names    
-    cdef object debug_lengths
-     
-    def __init__( self, tree_file_a, tree_file_b, link_matrix ) :
-        
-        cdef unsigned int i
-        cdef unsigned int j
-        cdef unsigned int link       
+    
+    def __cinit__( self, tree_a, tree_b, link_matrix ) :
+        # make sure the link matrix is a DataFrame
+        if not type(link_matrix) is pd.DataFrame :
+            raise Exception( 'unsupported type for link matrix', type(link_matrix) )
         
         # these objects are constructed only when first accessed
         self.np_linkmatrix = None
@@ -556,28 +552,35 @@ cdef class SuchLinkedTrees :
         self.col_ids = None
         self.row_ids = None
         self.col_names = None
-        self.row_names = None    
-    
-        if not type(link_matrix) is pd.DataFrame :
-            raise Exception( 'unsupported type for link matrix', type(link_matrix) )
-               
-        # build trees from newick files, URLs to newick files or 
-        # from existing SuchTrees
-        if type( tree_file_a ) == str : 
-            self.TreeA = SuchTree( tree_file_a )
-        elif type( tree_file_a ) == SuchTree :
-            self.TreeA = tree_file_a
-        else :
-            raise Exception( 'unknown input for tree', type(tree_file_a) )
+        self.row_names = None
+        
+        # allocate memory for link columns
+        self.n_cols = link_matrix.shape[1]
+        self.linkmatrix = <LinkColumn*> PyMem_Malloc( self.n_cols * sizeof( LinkColumn ) )
+     
+    def __init__( self, tree_a, tree_b, link_matrix ) :
+        
+        cdef unsigned int i
+        cdef unsigned int j
+        cdef unsigned int link   
         
         # build trees from newick files, URLs to newick files or 
         # from existing SuchTrees
-        if type( tree_file_b ) == str : 
-            self.TreeB = SuchTree( tree_file_b )
-        elif type( tree_file_b ) == SuchTree :
-            self.TreeB = tree_file_b
+        if type( tree_a ) == str : 
+            self.TreeA = SuchTree( tree_a )
+        elif type( tree_a ) == SuchTree :
+            self.TreeA = tree_a
         else :
-            raise Exception( 'unknown input for tree', type(tree_file_b) )
+            raise Exception( 'unknown input for tree', type(tree_a) )
+        
+        # build trees from newick files, URLs to newick files or 
+        # from existing SuchTrees
+        if type( tree_b ) == str : 
+            self.TreeB = SuchTree( tree_b )
+        elif type( tree_b ) == SuchTree :
+            self.TreeB = tree_b
+        else :
+            raise Exception( 'unknown input for tree', type(tree_b) )
         
         # make sure the link matrix connects the trees
         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :
@@ -595,12 +598,9 @@ cdef class SuchLinkedTrees :
         self.col_ids = self.TreeB.leafs.values()
         self.col_names = self.TreeB.leafs.keys()
         
-        # FIXME
-        self.debug_lengths = []
-        # allocate memory for link columns
         self.n_rows, self.n_cols = self.TreeA.n_leafs, self.TreeB.n_leafs
+        
         self.n_links = 0
-        self.linkmatrix = <LinkColumn*> PyMem_Malloc( self.n_cols * sizeof( LinkColumn ) )
         for i,col in enumerate( self.col_names ) :
             # link the guest tree leaf to the link matrix column
             col_id = self.TreeB.leafs[ col ]
@@ -621,11 +621,12 @@ cdef class SuchLinkedTrees :
         
         # create empty link list
         self.linklist = np.ndarray( (self.n_links,2), dtype=int )
-        #self.subset_guest_tree( self.TreeB.root )
+        self.subset_guest_tree( self.TreeB.root )
         self.subset_node = self.TreeB.root
         self.subset_n_leafs = self.TreeB.n_leafs
         
-    def destroy( self ) :
+    def __dealloc__( self ) :
+        
         print 'address check 3 :', <unsigned int>&self.linkmatrix
         print 'check 0'
         for i in xrange( self.n_cols ) :
@@ -634,17 +635,6 @@ cdef class SuchLinkedTrees :
         print 'check 2'
         PyMem_Free( self.linkmatrix )
         print 'check 3'
-        
-    def __dealloc__( self ) :
-        
-        print 'address check 3 :', <unsigned int>&self.linkmatrix
-        #print 'check 0'
-        #for i in xrange( self.n_cols ) :
-        #    print 'check 1', i
-        #    PyMem_Free( self.linkmatrix[i].links )
-        #print 'check 2'
-        #PyMem_Free( self.linkmatrix )
-        #print 'check 3'
  
     property TreeA :
         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
