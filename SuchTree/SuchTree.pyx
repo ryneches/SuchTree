@@ -485,84 +485,62 @@ cdef class SuchTree :
     def __dealloc__( self ) :
         PyMem_Free( self.data )     # no-op if self.data is NULL
 
-cdef struct LinkColumn :
+
+cdef struct Column :
     unsigned int length
+    unsigned int leaf_id
     unsigned int* links
 
-@cython.boundscheck(False)
-cdef unsigned int _subset_guest_tree( long[:] col_ids, 
-                                      long[:,:] linklist,
-                                      LinkColumn* linkmatrix ) :
-    cdef unsigned int n = 0
-    cdef unsigned int n_leafs = len( col_ids )
-    cdef unsigned int i
-    cdef unsigned int j
-    cdef unsigned int col
-    print 'address check 1 :', <unsigned int>&linkmatrix
-    for i in xrange( n_leafs ) :
-        col = col_ids[i]
-        for j in xrange( linkmatrix[col].length ) :
-            #assert( n < 135 )
-            print n, i, col
-            assert( col < 14 )
-            assert( j < linkmatrix[col].length )
-            assert( i < 14 )
-            linklist[n,0] = linkmatrix[col].links[j]
-            linklist[n,1] = col
-            n += 1
-    return n
-
-@cython.no_gc_clear
 cdef class SuchLinkedTrees :
-    """
-    The links argument can be an (n,2) numpy array of ids or a (n,2)
-    list of tuples of leaf names.
     
-    The leafs of TreeA correspond to axis 0 of the link matrix (row
-    names), and the leafs of TreeB correspond to axis 1 of the link 
-    matrix (column names).
-    """
-    cdef LinkColumn* linkmatrix
-    cdef unsigned int n_cols
-    cdef unsigned int n_rows
-    cdef unsigned int n_links
-    cdef unsigned int subset_node
-    cdef unsigned int subset_n_leafs
-    cdef unsigned int subset_n_links
-    cdef object np_linkmatrix
-    cdef object linklist
+    cdef Column* table
+    cdef unsigned int table_size
+    
     cdef object TreeA
     cdef object TreeB
+    
+    cdef object row_ids
+    cdef object row_names
+    cdef object col_ids
+    cdef object col_names
+    
+    cdef unsigned int n_rows
+    cdef unsigned int n_cols
+    cdef unsigned int n_links
+    
+    cdef object np_table
+    cdef object np_linklist
+    
     cdef object linked_leafsA
     cdef object linked_leafsB
-    cdef object col_ids
-    cdef object row_ids
-    cdef object col_names
-    cdef object row_names    
+    
+    cdef object subset_columns
+    cdef object subset_leafs
+    cdef unsigned int subset_size
+    cdef unsigned int subset_n_links
     
     def __cinit__( self, tree_a, tree_b, link_matrix ) :
-        # make sure the link matrix is a DataFrame
-        if not type(link_matrix) is pd.DataFrame :
-            raise Exception( 'unsupported type for link matrix', type(link_matrix) )
+        cdef unsigned int i
+        self.table_size = link_matrix.shape[1]
+        self.table = <Column*> PyMem_Malloc( self.table_size * sizeof( Column ) )
+        for i in xrange( self.table_size ) :
+            self.table[i].length = 0
+            self.table[i].leaf_id = 0
+            self.table[i].links = NULL
+    
+    def __init__( self, tree_a, tree_b, link_matrix ) :
         
         # these objects are constructed only when first accessed
-        self.np_linkmatrix = None
+        self.np_table = None
+        self.np_linklist = None
         self.linked_leafsA = None
         self.linked_leafsB = None
         self.col_ids = None
         self.row_ids = None
         self.col_names = None
         self.row_names = None
-        
-        # allocate memory for link columns
-        self.n_cols = link_matrix.shape[1]
-        self.linkmatrix = <LinkColumn*> PyMem_Malloc( self.n_cols * sizeof( LinkColumn ) )
-     
-    def __init__( self, tree_a, tree_b, link_matrix ) :
-        
-        cdef unsigned int i
-        cdef unsigned int j
-        cdef unsigned int link   
+        self.subset_columns = None
+        self.subset_leafs = None
         
         # build trees from newick files, URLs to newick files or 
         # from existing SuchTrees
@@ -581,7 +559,7 @@ cdef class SuchLinkedTrees :
             self.TreeB = tree_b
         else :
             raise Exception( 'unknown input for tree', type(tree_b) )
-        
+            
         # make sure the link matrix connects the trees
         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :
             raise Exception( 'link_matrix shape must match tree leaf counts' )
@@ -591,51 +569,53 @@ cdef class SuchLinkedTrees :
         
         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :
             raise Exception( 'axis[1] does not match TreeB leaf names' )
-        
+
         # set row and column indexes
-        self.row_ids = self.TreeA.leafs.values()
+        self.row_ids = np.array( self.TreeA.leafs.values() )
+        self.col_ids = np.array( self.TreeB.leafs.values() )
         self.row_names = self.TreeA.leafs.keys()
-        self.col_ids = self.TreeB.leafs.values()
         self.col_names = self.TreeB.leafs.keys()
         
-        self.n_rows, self.n_cols = self.TreeA.n_leafs, self.TreeB.n_leafs
+        self.n_rows = self.TreeA.n_leafs
+        self.n_cols = self.TreeB.n_leafs
         
+        print id(self), 'allocating columns in', <unsigned int> &self.table
         self.n_links = 0
-        for i,col in enumerate( self.col_names ) :
-            # link the guest tree leaf to the link matrix column
-            col_id = self.TreeB.leafs[ col ]
-            self.TreeB.link_leaf( col_id, i )
-            s = link_matrix[ col ]
+        for i in xrange( self.table_size ) :
+            self.TreeB.link_leaf( self.col_ids[i], i )
+            s = link_matrix[ link_matrix.columns[i] ]
             l = map( lambda x : self.TreeA.leafs[x], s[ s > 0 ].to_dict().keys() )
-            size = len(l)
-            self.debug_lengths.append(size)
-            self.n_links += size
-            # allocate memory for links in this column
-            self.linkmatrix[i].length = size
-            self.linkmatrix[i].links = <unsigned int*> PyMem_Malloc( size * sizeof( unsigned int ) )
-            print size, len(l), l
-            for j,link in enumerate(l) :
-                self.linkmatrix[i].links[j] = link
+            col_size = len(l)
+            if self.table[i].links == NULL :
+                self.table[i].leaf_id = self.col_ids[i]
+                self.n_links += col_size
+                self.table[i].length = col_size
+                self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
+                for j in xrange( col_size ) :
+                    self.table[i].links[j] = l[j]
+    
+        # by default, the subset is the whole table
+        self.subset_size = len( self.col_ids )
+        self.subset_n_links = self.n_links
+        self.subset_columns = np.array( range( self.subset_size ) )
+        self.subset_leafs = self.col_ids
         
-        print 'address check 0 :', <unsigned int>&self.linkmatrix
-        
-        # create empty link list
-        self.linklist = np.ndarray( (self.n_links,2), dtype=int )
-        self.subset_guest_tree( self.TreeB.root )
-        self.subset_node = self.TreeB.root
-        self.subset_n_leafs = self.TreeB.n_leafs
-        
+        # make np_linklist
+        self.np_linklist = np.ndarray( ( self.n_links, 2 ), dtype=int )
+        self._build_linklist()
+    
     def __dealloc__( self ) :
         
-        print 'address check 3 :', <unsigned int>&self.linkmatrix
-        print 'check 0'
-        for i in xrange( self.n_cols ) :
-            print 'check 1', i
-            PyMem_Free( self.linkmatrix[i].links )
-        print 'check 2'
-        PyMem_Free( self.linkmatrix )
-        print 'check 3'
- 
+        print id(self), 'freeing columns in', <unsigned int> &self.table
+        
+        for i in xrange( self.table_size ) :
+            if not self.table[i].links == NULL :
+                PyMem_Free( self.table[i].links ) 
+        
+        print id(self), 'freeing table', <unsigned int> &self.table
+        
+        PyMem_Free( self.table )
+    
     property TreeA :
         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
         def __get__( self ) :
@@ -645,26 +625,7 @@ cdef class SuchLinkedTrees :
         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
         def __get__( self ) :
             return self.TreeB
-    
-    property linkmatrix :
-        'numpy representation of link list (generated only on access)'
-        def __get__( self ) :
-            cdef unsigned int i
-            cdef unsigned int j
-            cdef unsigned int l
-            if self.np_linkmatrix is None :
-                self.np_linkmatrix = np.zeros( (self.n_rows,self.n_cols), dtype=bool )
-                row_ids = self.TreeA.leafs.values()
-                for i in xrange( self.n_cols ) :
-                    for j in xrange( self.linkmatrix[i].length ) :
-                        l = self.linkmatrix[i].links[j]
-                        self.np_linkmatrix[ row_ids.index( l ), i ] = True
-            return self.np_linkmatrix
-    
-    property linklist :
-        def __get__( self ) :
-            return np.array(self.linklist[:self.subset_n_links])
-            
+
     property n_links :
         'size of the link list'
         def __get__( self ) :
@@ -708,46 +669,108 @@ cdef class SuchLinkedTrees :
                 self.row_names = self.TreeA.leafs.keys()
             return self.row_names
     
-    property subset_node :
-        'id of the current subsettng node (default is root).'
+    property subset_columns :
+        'ids of the current subset columns.'
         def __get__( self ) :
-            return self.subset_node
+            return self.subset_columns
     
-    property subset_n_leafs :
-        'Number of leafs in the current subset.'
+    property subset_leafs :
+        'ids of the current subset columns.'
         def __get__( self ) :
-            return self.subset_n_leafs
+            return self.subset_leafs
     
+    property subset_size :
+        'Number of columns in the current subset.'
+        def __get__( self ) :
+            return self.subset_size
+        
     property subset_n_links :
-        'Number of links in the current subset.'
+        'Number of columns in the current subset.'
         def __get__( self ) :
             return self.subset_n_links
     
-    def subset_guest_tree( self, node_id ) :
-        print 'address check 2 :', <unsigned int>&self.linkmatrix
-        leafs = self.TreeA.get_leafs( node_id )
-        col_ids = self.TreeA.get_links( leafs )
-        #n = _subset_guest_tree( col_ids, self.linklist, self.linkmatrix )
+    property linkmatrix :
+        'numpy representation of link matrix (generated only on access)'
+        def __get__( self ) :
+            cdef unsigned int i
+            cdef unsigned int j
+            cdef unsigned int row_id
+            
+            if self.np_table is None :
+                
+                self.np_table = np.zeros( (self.n_rows,self.n_cols), dtype=bool )
+                
+                for i in xrange( self.n_cols ) :
+                    for j in xrange( self.table[i].length ) :
+                        row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
+                        self.np_table[ i, row_id ] = True
+                        
+            return self.np_table
         
-        n = 0
-        for i in xrange( self.TreeB.n_leafs ) :
-            col = col_ids[i]
-            for j in xrange( self.linkmatrix[col].length ) :
-                assert( n < self.n_links )
-                assert( self.n_links == self.linklist.shape[0] )
-                assert( col < 14 )
-                assert( j < self.linkmatrix[col].length )
-                print self.linkmatrix[col].length, self.debug_lengths[col] 
-                print  self.linkmatrix[col].length == self.debug_lengths[col] 
-                assert( self.linkmatrix[col].length == self.debug_lengths[col] ) 
-                assert( i < 14 )
-                self.linklist[n,0] = self.linkmatrix[col].links[j]
-                self.linklist[n,1] = col
-                n += 1
+    property linklist :
+        'numpy representation of link list (generated only on access)'
+        def __get__( self ) :
+            # actual length will be shorter when with subsetted link matrixes
+            return self.np_linklist[:self.subset_n_links-1,:]
+        
+    cdef _build_linklist( self ) :
+            cdef unsigned int i
+            cdef unsigned int j
+            cdef unsigned int col
+            cdef unsigned int k = 0
+            
+            for i in xrange( self.subset_size ) :
+                col = self.subset_columns[i]
+                #print i, col 
+                for j in xrange( self.table[col].length ) :
+                    #self.np_linklist[ k, 0 ] = self.table[col].leaf_id
+                    self.np_linklist[ k, 0 ] = self.subset_leafs[i]
+                    self.np_linklist[ k, 1 ] = self.table[col].links[j]
+                    k += 1
+            
+            self.subset_n_links = k
+            
+    def subset( self, node_id ) :
+        'subset the link matrix to leafs desended from node_id'
+        self.subset_leafs = self.TreeB.get_leafs( node_id )
+        self.subset_columns = self.TreeB.get_links( self.subset_leafs )
+        self.subset_size = len( self.subset_columns )
+        self._build_linklist()
+    
+    def linked_distances( self ) :
+        """
+        Compute distances for all pairs of links. For large link
+        tables, this will fail on memory allocation.
+        """
+        cdef unsigned int i
+        cdef unsigned int j
+        cdef unsigned int k = 0
+        cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) / 2 
+        
+        ids_a = np.ndarray( ( size, 2 ), dtype=int )
+        ids_b = np.ndarray( ( size, 2 ), dtype=int )
+                
+        for i in xrange( self.subset_n_links ) :
+            for j in xrange( i ) :
+                ids_a[ k, 0 ] = self.np_linklist[ i, 0 ]
+                ids_a[ k, 1 ] = self.np_linklist[ j, 0 ]
+                ids_b[ k, 0 ] = self.np_linklist[ i, 1 ]
+                ids_b[ k, 1 ] = self.np_linklist[ j, 1 ]
+                k += 1
+        #return ids_a, ids_b
+        return { 'TreeA' : self.TreeA.distances( ids_a ), 
+                 'TreeB' : self.TreeB.distances( ids_b ) }
+    
+    def dump_table( self ) :
+        'Print the link matrix (WARNING : may be huge and useless)'
+        for i in xrange( self.n_cols ) :
+            col = []
+            for j in xrange( self.table[i].length ) :
+                #row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
+                row_id = self.table[i].links[j]
+                col.append( row_id )
+            print 'column', i, ':', ','.join( map( str, col ) )
 
-        self.subset_node = node_id
-        self.subset_n_leafs = len(leafs)
-        self.subset_n_links = n
         
     #broken
     def linked_distances( self ) :
