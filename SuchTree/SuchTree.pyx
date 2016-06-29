@@ -702,6 +702,24 @@ cdef class SuchLinkedTrees :
         def __get__( self ) :
             return self.subset_n_links
     
+    def get_column_by_index( self, col_id, row_ids=False ) :
+        
+        if col_id > self.n_cols :
+            raise Exception( 'col_id out of bounds', col_id )
+        
+        length = self.table[ col_id ].length
+        column = np.ndarray( self.table[ col_id ].length, dtype=int )
+        for i in xrange( length ) :
+            if row_ids :
+                column[i] = self.row_map[ self.table[ col_id ].leafs[i] ]
+            else :
+                column[i] = self.table[ col_id ].leafs[i]
+        
+        return column
+   
+     
+    def get_col_by_name( self ) :
+     
     property linkmatrix :
         'numpy representation of link matrix (generated only on access)'
         def __get__( self ) :
