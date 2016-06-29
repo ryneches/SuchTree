@@ -70,7 +70,11 @@ def test_col_ids() :
                           index=T.leafs.keys() )
 
     SLT = SuchLinkedTrees( T, T, links )
-    assert_equal( SLT.col_ids, T.leafs.values() )
+    col_ids = SLT.col_ids
+    leaf_ids = T.leafs.values()
+    assert_equal( len(col_ids), len(leaf_ids) )
+    for i,j in zip( col_ids, leaf_ids ) :
+        assert_equal( i,j )
 
 def test_row_ids() :
     T = SuchTree( test_tree )
@@ -79,7 +83,11 @@ def test_row_ids() :
                           index=T.leafs.keys() )
 
     SLT = SuchLinkedTrees( T, T, links )
-    assert_equal( SLT.row_ids, T.leafs.values() )
+    row_ids = SLT.row_ids
+    leaf_ids = T.leafs.values()
+    assert_equal( len(row_ids), len(leaf_ids) )
+    for i,j in zip( row_ids, leaf_ids ) :
+        assert_equal( i,j )
 
 def test_n_cols() :
     T = SuchTree( test_tree )
@@ -107,7 +115,7 @@ def test_linkmatrix_property() :
     SLT = SuchLinkedTrees( T, T, links )
     L = SLT.linkmatrix
     LL = pd.DataFrame( L, columns=SLT.col_names, index=SLT.row_names )
-    b_links = links.applymap( lambda x : bool(x) )
     for row in SLT.row_names :
         for col in SLT.col_names :
-            assert_equal( LL[ row ][ col ], b_links[ row ][ col ] )
+            print LL[ col ][ row ], links[ col ][ row ] 
+            assert_equal( LL[ col ][ row ], bool( links[ col ][ row ] ) )

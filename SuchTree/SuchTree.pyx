@@ -133,6 +133,8 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
     cdef int a_depth
     cdef float d = 0
     cdef bint fail = False
+    cdef int fail_id_a
+    cdef int fail_id_b
     # allocate some memory for visited node array
     visited = <int*> PyMem_Malloc( depth * sizeof(int) )
     
@@ -146,6 +148,8 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
             b = ids[j][1]
             if a >= length or b >= length :
                 fail = True
+                fail_id_a = a
+                fail_id_b = b
                 break
             if a == b :
                 result[j] = 0.0
@@ -187,7 +191,7 @@ cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:
     PyMem_Free(visited)
     
     if fail :
-        raise Exception( 'query contains out of bounds id' )
+        raise Exception( 'query contains out of bounds id', (fail_id_a, fail_id_b) )
 
 @cython.no_gc_clear
 cdef class SuchTree :
@@ -492,7 +496,6 @@ cdef struct Column :
     unsigned int* links
 
 cdef class SuchLinkedTrees :
-    
     cdef Column* table
     cdef unsigned int table_size
     
@@ -601,14 +604,16 @@ cdef class SuchLinkedTrees :
                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
                 for j in xrange( col_size ) :
                     self.table[i].links[j] = l[j]
-    
+         
         # by default, the subset is the whole table
+        print 'bulding default subset.'
         self.subset_size = len( self.col_ids )
         self.subset_n_links = self.n_links
         self.subset_columns = np.array( range( self.subset_size ) )
         self.subset_leafs = self.col_ids
         
         # make np_linklist
+        print 'bulding default link list.'
         self.np_linklist = np.ndarray( ( self.n_links, 2 ), dtype=int )
         self._build_linklist()
     
@@ -708,31 +713,37 @@ cdef class SuchLinkedTrees :
         cdef unsigned int j
         cdef unsigned int row_id
         
-        self.np_table = np.zeros( (self.n_rows,self.subset_size), dtype=bool )
+        self.np_table = np.zeros( (self.n_rows, self.subset_size), dtype=bool )
         
         for i in xrange( self.subset_size ) :
             col = self.subset_columns[i] 
             for j in xrange( self.table[col].length ) :
-                row_id = self.row_map[ self.table[col].leafs[j] ]
-                self.np_table[ i, row_id ] = True
+                row_id = self.row_map[ self.table[col].links[j] ]
+                self.np_table[ col, row_id ] = True
         
     property linklist :
         'numpy representation of link list (generated only on access)'
         def __get__( self ) :
             # actual length will be shorter when with subsetted link matrixes
             return self.np_linklist[:self.subset_n_links-1,:]
-        
-    cdef _build_linklist( self ) :
+    
+    @cython.boundscheck(False)
+    cdef void _build_linklist( self ) nogil :
             cdef unsigned int i
             cdef unsigned int j
             cdef unsigned int col
             cdef unsigned int k = 0
+           
+            # Memoryviews into numpy arrays
+            cdef long [:] subset_columns = self.subset_columns
+            cdef long [:] subset_leafs   = self.subset_leafs
+            cdef long [:,:] np_linklist  = self.np_linklist
             
             for i in xrange( self.subset_size ) :
-                col = self.subset_columns[i]
+                col = subset_columns[i]
                 for j in xrange( self.table[col].length ) :
-                    self.np_linklist[ k, 0 ] = self.subset_leafs[i]
-                    self.np_linklist[ k, 1 ] = self.table[col].links[j]
+                    np_linklist[ k, 0 ] = subset_leafs[i]
+                    np_linklist[ k, 1 ] = self.table[col].links[j]
                     k += 1
             
             self.subset_n_links = k
@@ -778,31 +789,6 @@ cdef class SuchLinkedTrees :
                 col.append( row_id )
             print 'column', i, ':', ','.join( map( str, col ) )
 
-        
-    #broken
-    def linked_distances( self ) :
-        """
-        Compute distances for all pairs of links. For large link
-        tables, this will fail on memory allocation.
-        """
-        cdef unsigned int i
-        cdef unsigned int j
-        cdef unsigned int k = 0
-        cdef unsigned int size = ( self.n_links * (self.n_links-1) ) / 2
-        #if self.linklist == NULL :
-            
-            
-        ids_a = np.ndarray( ( size, 2 ), dtype=int )
-        ids_b = np.ndarray( ( size, 2 ), dtype=int )
-        for i in xrange( self.n_cols ) :
-            b = self.col_ids[i]
-            for j in xrange( self.linkmatrix[i].length ) :
-                ids_a[ k, : ] = self.links[ i ].a, self.links[ j ].a
-                ids_b[ k, : ] = self.links[ i ].b, self.links[ j ].b
-                k += 1
-        return { 'TreeA' : self.TreeA.distances( ids_a ), 
-                 'TreeB' : self.TreeB.distances( ids_b ) }
-    
     #broken
     def sample_linked_distances( self, sigma=0.001, buckets=64, n=4096 ) :
         ids_a = np.ndarray( (n,2), dtype=int )

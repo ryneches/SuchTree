@@ -74,5 +74,4 @@ def test_hierarchy() :
     all_leafs = set( T.get_leafs( T.root ) )
     for i in T.get_internal_nodes() :
         some_leafs = set( T.get_leafs( i ) )
-        assert_true( some_leafs in all_leafs )
-    
+        assert_true( some_leafs <= all_leafs )
