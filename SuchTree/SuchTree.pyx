@@ -519,6 +519,8 @@ cdef class SuchLinkedTrees :
     cdef unsigned int subset_size
     cdef unsigned int subset_n_links
     
+    cdef object row_map
+    
     def __cinit__( self, tree_a, tree_b, link_matrix ) :
         cdef unsigned int i
         self.table_size = link_matrix.shape[1]
@@ -541,6 +543,7 @@ cdef class SuchLinkedTrees :
         self.row_names = None
         self.subset_columns = None
         self.subset_leafs = None
+        self.row_map = None        
         
         # build trees from newick files, URLs to newick files or 
         # from existing SuchTrees
@@ -578,6 +581,11 @@ cdef class SuchLinkedTrees :
         
         self.n_rows = self.TreeA.n_leafs
         self.n_cols = self.TreeB.n_leafs
+        
+        # reverse map for row ids
+        self.row_map = np.zeros( self.TreeA.length, dtype=int )
+        for n,i in enumerate(self.row_ids) :
+            self.row_map[i] = n
         
         print id(self), 'allocating columns in', <unsigned int> &self.table
         self.n_links = 0
@@ -692,20 +700,21 @@ cdef class SuchLinkedTrees :
     property linkmatrix :
         'numpy representation of link matrix (generated only on access)'
         def __get__( self ) :
-            cdef unsigned int i
-            cdef unsigned int j
-            cdef unsigned int row_id
-            
-            if self.np_table is None :
-                
-                self.np_table = np.zeros( (self.n_rows,self.n_cols), dtype=bool )
-                
-                for i in xrange( self.n_cols ) :
-                    for j in xrange( self.table[i].length ) :
-                        row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
-                        self.np_table[ i, row_id ] = True
-                        
+            self._build_linkmatrix()                
             return self.np_table
+    
+    cdef _build_linkmatrix( self ) :
+        cdef unsigned int i
+        cdef unsigned int j
+        cdef unsigned int row_id
+        
+        self.np_table = np.zeros( (self.n_rows,self.subset_size), dtype=bool )
+        
+        for i in xrange( self.subset_size ) :
+            col = self.subset_columns[i] 
+            for j in xrange( self.table[col].length ) :
+                row_id = self.row_map[ self.table[col].leafs[j] ]
+                self.np_table[ i, row_id ] = True
         
     property linklist :
         'numpy representation of link list (generated only on access)'
@@ -721,9 +730,7 @@ cdef class SuchLinkedTrees :
             
             for i in xrange( self.subset_size ) :
                 col = self.subset_columns[i]
-                #print i, col 
                 for j in xrange( self.table[col].length ) :
-                    #self.np_linklist[ k, 0 ] = self.table[col].leaf_id
                     self.np_linklist[ k, 0 ] = self.subset_leafs[i]
                     self.np_linklist[ k, 1 ] = self.table[col].links[j]
                     k += 1
