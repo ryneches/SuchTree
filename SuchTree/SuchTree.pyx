@@ -791,7 +791,8 @@ cdef class SuchLinkedTrees :
         self.subset_columns = self.TreeB.get_links( self.subset_leafs )
         self.subset_size = len( self.subset_columns )
         self._build_linklist()
-    
+
+    @cython.boundscheck(False)
     def linked_distances( self ) :
         """
         Compute distances for all pairs of links. For large link
@@ -804,15 +805,20 @@ cdef class SuchLinkedTrees :
         
         ids_a = np.ndarray( ( size, 2 ), dtype=int )
         ids_b = np.ndarray( ( size, 2 ), dtype=int )
-                
-        for i in xrange( self.subset_n_links ) :
-            for j in xrange( i ) :
-                ids_a[ k, 0 ] = self.np_linklist[ i, 0 ]
-                ids_a[ k, 1 ] = self.np_linklist[ j, 0 ]
-                ids_b[ k, 0 ] = self.np_linklist[ i, 1 ]
-                ids_b[ k, 1 ] = self.np_linklist[ j, 1 ]
-                k += 1
-        #return ids_a, ids_b
+        
+        cdef long [:,:] linklist = self.np_linklist
+        cdef long [:,:] IDs_a = ids_a
+        cdef long [:,:] IDs_b = ids_b
+         
+        with nogil :
+            for i in xrange( self.subset_n_links ) :
+                for j in xrange( i ) :
+                    IDs_a[ k, 0 ] = linklist[ i, 1 ]
+                    IDs_a[ k, 1 ] = linklist[ j, 1 ]
+                    IDs_b[ k, 0 ] = linklist[ i, 0 ]
+                    IDs_b[ k, 1 ] = linklist[ j, 0 ]
+                    k += 1
+        
         return { 'TreeA' : self.TreeA.distances( ids_a ), 
                  'TreeB' : self.TreeB.distances( ids_b ) }
     
