@@ -702,7 +702,12 @@ cdef class SuchLinkedTrees :
         def __get__( self ) :
             return self.subset_n_links
     
-    def get_column_by_index( self, col_id, row_ids=False ) :
+    def get_column_leafs( self, col, as_row_ids=False ) :
+        
+        if type(col) is str :
+            col_id = self.col_names.index( col )
+        else :
+            col_id = col
         
         if col_id > self.n_cols :
             raise Exception( 'col_id out of bounds', col_id )
@@ -710,15 +715,29 @@ cdef class SuchLinkedTrees :
         length = self.table[ col_id ].length
         column = np.ndarray( self.table[ col_id ].length, dtype=int )
         for i in xrange( length ) :
-            if row_ids :
-                column[i] = self.row_map[ self.table[ col_id ].leafs[i] ]
+            if as_row_ids :
+                column[i] = self.row_map[ self.table[ col_id ].links[i] ]
             else :
-                column[i] = self.table[ col_id ].leafs[i]
+                column[i] = self.table[ col_id ].links[i]
         
         return column
-   
-     
-    def get_col_by_name( self ) :
+ 
+    def get_column_links( self, col ) :
+        
+        if type(col) is str :
+            col_id = self.col_names.index( col )
+        else :
+            col_id = col
+        
+        if col_id > self.n_cols :
+            raise Exception( 'col_id out of bounds', col_id )
+        
+        length = self.table[ col_id ].length
+        column = np.zeros( self.n_rows, dtype=bool )
+        for i in xrange( length ) :
+            column[ self.row_map[ self.table[ col_id ].links[i] ] ] = True
+        
+        return column
      
     property linkmatrix :
         'numpy representation of link matrix (generated only on access)'
