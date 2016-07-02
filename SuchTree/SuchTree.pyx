@@ -791,7 +791,7 @@ cdef class SuchLinkedTrees :
         self.subset_columns = self.TreeB.get_links( self.subset_leafs )
         self.subset_size = len( self.subset_columns )
         self._build_linklist()
-
+    
     @cython.boundscheck(False)
     def linked_distances( self ) :
         """
@@ -821,6 +821,8 @@ cdef class SuchLinkedTrees :
         
         return { 'TreeA' : self.TreeA.distances( ids_a ), 
                  'TreeB' : self.TreeB.distances( ids_b ) }
+    
+    #def sample_linked_distances( self ) :
     
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'
