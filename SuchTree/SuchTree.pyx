@@ -822,8 +822,26 @@ cdef class SuchLinkedTrees :
         return { 'TreeA' : self.TreeA.distances( ids_a ), 
                  'TreeB' : self.TreeB.distances( ids_b ) }
     
-    #def sample_linked_distances( self ) :
-    
+    def sample_linked_distances( self, sigma=0.001, buckets=64, n=4096 ) :
+        ids_a = np.ndarray( ( n, 2 ), dtype=int )
+        ids_b = np.ndarray( ( n, 2 ), dtype=int )
+        a_buckets = []
+        b_buckets = []
+        for i in xrange( buckets ) :
+            a_buckets.append( np.array([]) )
+            b_buckets.append( np.array([]) )
+        s_a = 10e10
+        s_b = 10e10
+        a_sigmas = []
+        b_sigmas = []
+        while True :
+            for i in xrange( buckets ) :
+                    IDs_a[ k, 0 ] = linklist[ i, 1 ]
+                    IDs_a[ k, 1 ] = linklist[ j, 1 ]
+                    IDs_b[ k, 0 ] = linklist[ i, 0 ]
+                    IDs_b[ k, 1 ] = linklist[ j, 0 ]
+                
+        
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'
         for i in xrange( self.n_cols ) :
