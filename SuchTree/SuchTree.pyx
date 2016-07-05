@@ -541,7 +541,7 @@ cdef class SuchLinkedTrees :
             self.table[i].links = NULL
         
         # initialize random number generator
-        self.seed = numpy.random.randint( UINT64_MAX >> 1 )
+        self.seed = np.random.randint( UINT64_MAX >> 1 )
         self.modulus = 2685821657736338717
         
     def __init__( self, tree_a, tree_b, link_matrix ) :
@@ -868,11 +868,11 @@ cdef class SuchLinkedTrees :
         cdef long  [:,:] query_a = np_query_a
         cdef long  [:,:] query_b = np_query_b
         
-        cdef float distances_a [:,:] = np_distances_a
-        cdef float distances_b [:,:] = np_distances_b
+        cdef float [:,:] distances_a = np_distances_a
+        cdef float [:,:] distances_b = np_distances_b
         
-        cdef float sums_a [:] = np_sums_a
-        cdef float sums_b [:] = np_sums_b
+        cdef float [:] sums_a = np_sums_a
+        cdef float [:] sums_b = np_sums_b
         
         cdef float [:] samples_a = np_samples_a
         cdef float [:] samples_b = np_samples_b
@@ -897,8 +897,8 @@ cdef class SuchLinkedTrees :
         while True :
             for i in xrange( buckets ) :
                 for j in xrange( n ) :
-                    l1 = _random_int( self.subset_n_links )
-                    l2 = _random_int( self.subset_n_links )
+                    l1 = self._random_int( self.subset_n_links )
+                    l2 = self._random_int( self.subset_n_links )
                     a1 = linklist[ l1, 0 ]
                     b1 = linklist[ l1, 1 ]
                     a2 = linklist[ l2, 0 ]
