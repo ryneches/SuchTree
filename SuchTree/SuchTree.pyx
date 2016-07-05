@@ -865,20 +865,20 @@ cdef class SuchLinkedTrees :
         np_deviations_a = np.ndarray( buckets, dtype=float )
         np_deviations_b = np.ndarray( buckets, dtype=float )
         
-        cdef long  [:,:] query_a = np_query_a
-        cdef long  [:,:] query_b = np_query_b
+        cdef long [:,:] query_a = np_query_a
+        cdef long [:,:] query_b = np_query_b
         
-        cdef float [:,:] distances_a = np_distances_a
-        cdef float [:,:] distances_b = np_distances_b
+        cdef double [:,:] distances_a = np_distances_a
+        cdef double [:,:] distances_b = np_distances_b
         
-        cdef float [:] sums_a = np_sums_a
-        cdef float [:] sums_b = np_sums_b
+        cdef double [:] sums_a = np_sums_a
+        cdef double [:] sums_b = np_sums_b
         
-        cdef float [:] samples_a = np_samples_a
-        cdef float [:] samples_b = np_samples_b
+        cdef double [:] samples_a = np_samples_a
+        cdef double [:] samples_b = np_samples_b
         
-        cdef float [:] deviations_a = np_deviations_a
-        cdef float [:] deviations_b = np_deviations_b
+        cdef double [:] deviations_a = np_deviations_a
+        cdef double [:] deviations_b = np_deviations_b
         
         cdef long [:,:] linklist = self.np_linklist
         
@@ -924,9 +924,13 @@ cdef class SuchLinkedTrees :
             deviation_a = ( deviation_a / ( buckets - 1 ) )**(0.5)
             deviation_b = ( deviation_b / ( buckets - 1 ) )**(0.5)
             
+            print deviation_a, deviation_b
+            
+            yield distances_a, distances_b
+               
             if deviation_a < sigma and deviation_b < sigma : break
         
-        return deviation_a, deviation_b # temporary diagnostic
+        #return deviation_a, deviation_b # temporary diagnostic
  
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'
