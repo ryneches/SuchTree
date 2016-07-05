@@ -5,6 +5,10 @@ import numpy as np
 cimport numpy as np
 import pandas as pd
 
+cdef extern from 'stdint.h' :
+    ctypedef unsigned long int uint64_t
+    uint64_t UINT64_MAX
+
 # Trees are built from arrays of Node structs. 'parent', 'left_child'
 # and 'right_child' attributes represent integer offsets within the
 # array that specify other Node structs.
@@ -524,6 +528,9 @@ cdef class SuchLinkedTrees :
     
     cdef object row_map
     
+    cdef uint64_t seed
+    cdef uint64_t modulus
+    
     def __cinit__( self, tree_a, tree_b, link_matrix ) :
         cdef unsigned int i
         self.table_size = link_matrix.shape[1]
@@ -532,7 +539,11 @@ cdef class SuchLinkedTrees :
             self.table[i].length = 0
             self.table[i].leaf_id = 0
             self.table[i].links = NULL
-    
+        
+        # initialize random number generator
+        self.seed = numpy.random.randint( UINT64_MAX >> 1 )
+        self.modulus = 2685821657736338717
+        
     def __init__( self, tree_a, tree_b, link_matrix ) :
         
         # these objects are constructed only when first accessed
@@ -822,26 +833,101 @@ cdef class SuchLinkedTrees :
         return { 'TreeA' : self.TreeA.distances( ids_a ), 
                  'TreeB' : self.TreeB.distances( ids_b ) }
     
+    cdef uint64_t _random_int( self, uint64_t n ) nogil :
+        '''
+        An implementation of the xorshift64star pseudorandom number
+        generator, included here so that we can obtain random numbers
+        outside python's Global Interpreter Lock.
+        
+        Marsaglia, G. (2003). Xorshift RNGs. Journal of Statistical
+        Software, 8(14), 1 - 6. 
+        http://dx.doi.org/10.18637/jss.v008.i14
+        '''
+        self.seed ^= self.seed >> 12 # a
+        self.seed ^= self.seed << 25 # b
+        self.seed ^= self.seed >> 27 # c
+        return ( self.seed * self.modulus ) % n
+     
     def sample_linked_distances( self, sigma=0.001, buckets=64, n=4096 ) :
-        ids_a = np.ndarray( ( n, 2 ), dtype=int )
-        ids_b = np.ndarray( ( n, 2 ), dtype=int )
-        a_buckets = []
-        b_buckets = []
-        for i in xrange( buckets ) :
-            a_buckets.append( np.array([]) )
-            b_buckets.append( np.array([]) )
-        s_a = 10e10
-        s_b = 10e10
-        a_sigmas = []
-        b_sigmas = []
+        
+        np_query_a = np.ndarray( ( n, 2 ), dtype=int )
+        np_query_b = np.ndarray( ( n, 2 ), dtype=int )
+        
+        np_distances_a = np.ndarray( ( buckets, n ), dtype=float )
+        np_distances_b = np.ndarray( ( buckets, n ), dtype=float )
+        
+        np_sums_a = np.zeros( buckets, dtype=float )
+        np_sums_b = np.zeros( buckets, dtype=float )
+        
+        np_samples_a = np.ndarray( buckets, dtype=int )
+        np_samples_b = np.ndarray( buckets, dtype=int )
+        
+        np_deviations_a = np.ndarray( buckets, dtype=float )
+        np_deviations_b = np.ndarray( buckets, dtype=float )
+        
+        cdef long  [:,:] query_a = np_query_a
+        cdef long  [:,:] query_b = np_query_b
+        
+        cdef float distances_a [:,:] = np_distances_a
+        cdef float distances_b [:,:] = np_distances_b
+        
+        cdef float sums_a [:] = np_sums_a
+        cdef float sums_b [:] = np_sums_b
+        
+        cdef float [:] samples_a = np_samples_a
+        cdef float [:] samples_b = np_samples_b
+        
+        cdef float [:] deviations_a = np_deviations_a
+        cdef float [:] deviations_b = np_deviations_b
+        
+        cdef long [:,:] linklist = self.np_linklist
+        
+        cdef int i
+        cdef int j
+        cdef int l1
+        cdef int l2
+        cdef int a1
+        cdef int a2
+        cdef int b1
+        cdef int b2
+        
+        cdef float deviation_a
+        cdef float deviation_b
+        
         while True :
             for i in xrange( buckets ) :
-                    IDs_a[ k, 0 ] = linklist[ i, 1 ]
-                    IDs_a[ k, 1 ] = linklist[ j, 1 ]
-                    IDs_b[ k, 0 ] = linklist[ i, 0 ]
-                    IDs_b[ k, 1 ] = linklist[ j, 0 ]
-                
+                for j in xrange( n ) :
+                    l1 = _random_int( self.subset_n_links )
+                    l2 = _random_int( self.subset_n_links )
+                    a1 = linklist[ l1, 0 ]
+                    b1 = linklist[ l1, 1 ]
+                    a2 = linklist[ l2, 0 ]
+                    b2 = linklist[ l2, 1 ]
+                    query_a[ j, 0 ] = a1
+                    query_a[ j, 1 ] = a2
+                    query_b[ j, 0 ] = b1
+                    query_b[ j, 1 ] = b2
+                distances_a[ i, : ] = self.TreeA.distances( query_a )
+                distances_b[ i, : ] = self.TreeB.distances( query_b )
+                for j in xrange( n ) :
+                    sums_a[i] += distances_a[ i, j ]
+                    sums_b[i] += distances_b[ i, j ]
+                samples_a[i] += n
+                samples_b[i] += n
+                deviations_a[i] = ( sums_a[i] / ( samples_a[i] - 1 ) )**(0.5)
+                deviations_b[i] = ( sums_b[i] / ( samples_b[i] - 1 ) )**(0.5)
+            deviation_a = 0
+            deviation_b = 0
+            for i in xrange( buckets ) :
+                deviation_a += deviations_a[i]
+                deviation_b += deviations_b[i]
+            deviation_a = ( deviation_a / ( buckets - 1 ) )**(0.5)
+            deviation_b = ( deviation_b / ( buckets - 1 ) )**(0.5)
+            
+            if deviation_a < sigma and deviation_b < sigma : break
         
+        return deviation_a, deviation_b # temporary diagnostic
+ 
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'
         for i in xrange( self.n_cols ) :
