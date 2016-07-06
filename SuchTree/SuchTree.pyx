@@ -19,28 +19,29 @@ cdef struct Node :
     float distance
 
 @cython.boundscheck(False)
-cdef double _pearson( double[:] x, double[:] y ) :
-    cdef unsigned int n = len(x)
+cdef double _pearson( double[:] x, double[:] y, unsigned int n ) nogil :
+    #cdef unsigned int n = len(x)
     cdef unsigned long j
-    cdef float yt,xt,t,df
-    cdef float syy=0.0,sxy=0.0,sxx=0.0,ay=0.0,ax=0.0
-    with nogil :
-        for j in xrange(n) :
-            ax += x[j]
-            ay += y[j]
-        ax /= n
-        ay /= n
-        for j in xrange(n) :
-            xt=x[j]-ax
-            yt=y[j]-ay
-            sxx += xt*xt
-            syy += yt*yt
-            sxy += xt*yt
-        return sxy/((sxx*syy)+1.0e-20)**(0.5)
+    cdef float yt, xt, t, df
+    cdef float syy=0.0, sxy=0.0, sxx=0.0, ay=0.0, ax=0.0
+    for j in xrange( n ) :
+        ax += x[j]
+        ay += y[j]
+    ax /= n
+    ay /= n
+    for j in xrange( n ) :
+        xt  =  x[j] - ax
+        yt  =  y[j] - ay
+        sxx += xt * xt
+        syy += yt * yt
+        sxy += xt * yt
+    return sxy / ( ( sxx * syy ) + 1.0e-20 )**(0.5)
 
 def pearson( double[:] x, double[:] y ) :
+    if not len(x) == len(y) :
+        raise Exception( 'vectors must be the same length.', (len(x),len(y)) )
     try :
-        return _pearson( x, y )
+        return _pearson( x, y, len(x) )
     except ZeroDivisionError :
         return 0.0
 
@@ -848,8 +849,12 @@ cdef class SuchLinkedTrees :
         self.seed ^= self.seed << 25 # b
         self.seed ^= self.seed >> 27 # c
         return ( self.seed * self.modulus ) % n
-     
-    def sample_linked_distances( self, sigma=0.001, buckets=64, n=4096 ) :
+    
+    @cython.boundscheck(False)
+    def sample_linked_distances( self, float sigma=0.001, 
+                                       unsigned int buckets=64,
+                                       unsigned int n=4096, 
+                                       unsigned int maxcycles=100 ) :
         
         np_query_a = np.ndarray( ( n, 2 ), dtype=int )
         np_query_b = np.ndarray( ( n, 2 ), dtype=int )
@@ -860,11 +865,17 @@ cdef class SuchLinkedTrees :
         np_sums_a = np.zeros( buckets, dtype=float )
         np_sums_b = np.zeros( buckets, dtype=float )
         
-        np_samples_a = np.ndarray( buckets, dtype=int )
-        np_samples_b = np.ndarray( buckets, dtype=int )
+        np_sumsq_a = np.zeros( buckets, dtype=float )
+        np_sumsq_b = np.zeros( buckets, dtype=float )
+         
+        np_samples_a = np.zeros( buckets, dtype=int )
+        np_samples_b = np.zeros( buckets, dtype=int )
         
         np_deviations_a = np.ndarray( buckets, dtype=float )
         np_deviations_b = np.ndarray( buckets, dtype=float )
+        
+        np_all_distances_a = np.ndarray( buckets * n * maxcycles, dtype=float )
+        np_all_distances_b = np.ndarray( buckets * n * maxcycles, dtype=float )
         
         cdef long [:,:] query_a = np_query_a
         cdef long [:,:] query_b = np_query_b
@@ -872,14 +883,23 @@ cdef class SuchLinkedTrees :
         cdef double [:,:] distances_a = np_distances_a
         cdef double [:,:] distances_b = np_distances_b
         
+        cdef double [:] distances_a_mv
+        cdef double [:] distances_b_mv
+         
         cdef double [:] sums_a = np_sums_a
         cdef double [:] sums_b = np_sums_b
         
-        cdef double [:] samples_a = np_samples_a
-        cdef double [:] samples_b = np_samples_b
+        cdef double [:] sumsq_a = np_sumsq_a
+        cdef double [:] sumsq_b = np_sumsq_b
+        
+        cdef long [:] samples_a = np_samples_a
+        cdef long [:] samples_b = np_samples_b
         
         cdef double [:] deviations_a = np_deviations_a
         cdef double [:] deviations_b = np_deviations_b
+                
+        cdef double [:] all_distances_a = np_all_distances_a
+        cdef double [:] all_distances_b = np_all_distances_b
         
         cdef long [:,:] linklist = self.np_linklist
         
@@ -894,44 +914,64 @@ cdef class SuchLinkedTrees :
         
         cdef float deviation_a
         cdef float deviation_b
+        cdef float sumsq_bucket_a
+        cdef float sumsq_bucket_b
+        
+        cdef unsigned int cycles = 0
         
         while True :
+            cycles += 1
             for i in xrange( buckets ) :
-                for j in xrange( n ) :
-                    l1 = self._random_int( self.subset_n_links )
-                    l2 = self._random_int( self.subset_n_links )
-                    a1 = linklist[ l1, 0 ]
-                    b1 = linklist[ l1, 1 ]
-                    a2 = linklist[ l2, 0 ]
-                    b2 = linklist[ l2, 1 ]
-                    query_a[ j, 0 ] = a1
-                    query_a[ j, 1 ] = a2
-                    query_b[ j, 0 ] = b1
-                    query_b[ j, 1 ] = b2
-                distances_a[ i, : ] = self.TreeA.distances( query_a )
-                distances_b[ i, : ] = self.TreeB.distances( query_b )
-                for j in xrange( n ) :
-                    sums_a[i] += distances_a[ i, j ]
-                    sums_b[i] += distances_b[ i, j ]
+                with nogil :
+                    for j in xrange( n ) :
+                        l1 = self._random_int( self.subset_n_links )
+                        l2 = self._random_int( self.subset_n_links )
+                        a1 = linklist[ l1, 1 ]
+                        b1 = linklist[ l1, 0 ]
+                        a2 = linklist[ l2, 1 ]
+                        b2 = linklist[ l2, 0 ]
+                        query_a[ j, 0 ] = a1
+                        query_a[ j, 1 ] = a2
+                        query_b[ j, 0 ] = b1
+                        query_b[ j, 1 ] = b2
+                distances_a_mv = self.TreeA.distances( query_a )
+                distances_b_mv = self.TreeB.distances( query_b )
+                distances_a[ i, : ] = distances_a_mv
+                distances_b[ i, : ] = distances_b_mv
+                all_distances_a[ n * i * cycles : n * i * cycles + n ] = distances_a_mv
+                all_distances_b[ n * i * cycles : n * i * cycles + n ] = distances_b_mv
+                with nogil :
+                    for j in xrange( n ) :
+                        sums_a[i] += distances_a[ i, j ]
+                        sums_b[i] += distances_b[ i, j ]
+                        sumsq_a[i] += distances_a[ i, j ]**2
+                        sumsq_b[i] += distances_b[ i, j ]**2
                 samples_a[i] += n
                 samples_b[i] += n
-                deviations_a[i] = ( sums_a[i] / ( samples_a[i] - 1 ) )**(0.5)
-                deviations_b[i] = ( sums_b[i] / ( samples_b[i] - 1 ) )**(0.5)
+                deviations_a[i] = ( sumsq_a[i] / samples_a[i]
+                                - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)
+                deviations_b[i] = ( sumsq_b[i] / samples_b[i]
+                                - ( sums_b[i]  / samples_b[i] )**2 )**(0.5)
             deviation_a = 0
             deviation_b = 0
+            sumsq_bucket_a = 0
+            sumsq_bucket_b = 0
             for i in xrange( buckets ) :
                 deviation_a += deviations_a[i]
                 deviation_b += deviations_b[i]
-            deviation_a = ( deviation_a / ( buckets - 1 ) )**(0.5)
-            deviation_b = ( deviation_b / ( buckets - 1 ) )**(0.5)
+                sumsq_bucket_a += deviations_a[i]**2
+                sumsq_bucket_b += deviations_b[i]**2
+            deviation_a = ( sumsq_bucket_a / buckets - ( deviation_a / buckets )**2 )**(0.5)
+            deviation_b = ( sumsq_bucket_b / buckets - ( deviation_b / buckets )**2 )**(0.5)
             
             print deviation_a, deviation_b
             
-            yield distances_a, distances_b
-               
             if deviation_a < sigma and deviation_b < sigma : break
-        
-        #return deviation_a, deviation_b # temporary diagnostic
+            if cycles >= maxcycles : return None
+ 
+        return { 'r' : _pearson( all_distances_a[ : n * buckets * cycles ], 
+                                 all_distances_b[ : n * buckets * cycles ], n*cycles ),
+                 'n' : n * buckets * cycles }
  
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'
@@ -942,38 +982,3 @@ cdef class SuchLinkedTrees :
                 row_id = self.table[i].links[j]
                 col.append( row_id )
             print 'column', i, ':', ','.join( map( str, col ) )
-
-    #broken
-    def sample_linked_distances( self, sigma=0.001, buckets=64, n=4096 ) :
-        ids_a = np.ndarray( (n,2), dtype=int )
-        ids_b = np.ndarray( (n,2), dtype=int )
-        a_buckets = []
-        b_buckets = []
-        for i in xrange(buckets) :
-            a_buckets.append( np.array([]) )
-            b_buckets.append( np.array([]) )
-        s_a = 10e10
-        s_b = 10e10
-        a_sigmas = []
-        b_sigmas = []
-        while True :
-            for i in xrange(buckets) :
-                l1 = np.random.randint( 0, self.n_links, n )
-                l2 = np.random.randint( 0, self.n_links, n )
-                for j in xrange(n) :
-                    ids_a[ j, : ] = self.links[ l1[j] ].a, self.links[ l2[j] ].a
-                    ids_b[ j, : ] = self.links[ l1[j] ].b, self.links[ l2[j] ].b
-                a_result = self.TreeA.distances( ids_a )
-                b_result = self.TreeB.distances( ids_b )
-                a_buckets[i] = np.append( a_buckets[i], a_result )
-                b_buckets[i] = np.append( b_buckets[i], b_result )
-            a_sigmas.append( np.std( a_buckets ) )
-            b_sigmas.append( np.std( b_buckets ) )
-            if len( a_sigmas ) == 1 : continue
-            s_a = np.std( a_sigmas )
-            s_b = np.std( b_sigmas )
-            if s_a < sigma and s_b < sigma : break
-        return { 'TreeA' : reduce( np.append, a_buckets ),
-                 'TreeB' : reduce( np.append, b_buckets ),
-                 'sigma_a' : s_a,
-                 'sigma_b' : s_b }
