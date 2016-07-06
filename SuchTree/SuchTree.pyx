@@ -604,6 +604,7 @@ cdef class SuchLinkedTrees :
         print id(self), 'allocating columns in', <unsigned int> &self.table
         self.n_links = 0
         for i in xrange( self.table_size ) :
+        #for i,s in enumerate( link_matrix.iteritems() ) :
             self.TreeB.link_leaf( self.col_ids[i], i )
             s = link_matrix[ link_matrix.columns[i] ]
             l = map( lambda x : self.TreeA.leafs[x], s[ s > 0 ].to_dict().keys() )
