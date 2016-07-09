@@ -602,11 +602,13 @@ cdef class SuchLinkedTrees :
         for n,i in enumerate(self.row_ids) :
             self.row_map[i] = n
         
+        # populate the link table
         print id(self), 'allocating columns in', <unsigned int> &self.table
         self.n_links = 0
         for i,(colname,s) in enumerate( link_matrix.T.iterrows() ) :
+            # attach leaf nodes in TreeB to corresponding column in
+            # the link table
             self.TreeB.link_leaf( self.col_ids[i], i )
-            #l = map( lambda x : self.TreeA.leafs[x], s[ s > 0 ].to_dict().keys() )
             l = []
             for rowname, value in s.iteritems() :
                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
@@ -652,7 +654,7 @@ cdef class SuchLinkedTrees :
         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
         def __get__( self ) :
             return self.TreeB
-
+    
     property n_links :
         'size of the link list'
         def __get__( self ) :
@@ -773,9 +775,9 @@ cdef class SuchLinkedTrees :
                 self.np_table[ col, row_id ] = True
         
     property linklist :
-        'numpy representation of link list (generated only on access)'
+        'numpy representation of link list'
         def __get__( self ) :
-            # actual length will be shorter when with subsetted link matrixes
+            # length will be shorter with subsetted link matrixes
             return self.np_linklist[:self.subset_n_links-1,:]
     
     @cython.boundscheck(False)
@@ -833,8 +835,12 @@ cdef class SuchLinkedTrees :
                     IDs_b[ k, 1 ] = linklist[ j, 0 ]
                     k += 1
         
-        return { 'TreeA' : self.TreeA.distances( ids_a ), 
-                 'TreeB' : self.TreeB.distances( ids_b ) }
+        return { 'TreeA'       : self.TreeA.distances( ids_a ), 
+                 'TreeB'       : self.TreeB.distances( ids_b ),
+                 'n_pairs'     : size,
+                 'n_samples'   : size,
+                 'deviation_a' : None,
+                 'deviation_b' : None }
     
     cdef uint64_t _random_int( self, uint64_t n ) nogil :
         '''
@@ -862,6 +868,9 @@ cdef class SuchLinkedTrees :
         
         np_distances_a = np.ndarray( ( buckets, n ), dtype=float )
         np_distances_b = np.ndarray( ( buckets, n ), dtype=float )
+       
+        np_dbuffer_a = np.ndarray( n, dtype=float )
+        np_dbuffer_b = np.ndarray( n, dtype=float )
         
         np_sums_a = np.zeros( buckets, dtype=float )
         np_sums_b = np.zeros( buckets, dtype=float )
@@ -884,8 +893,8 @@ cdef class SuchLinkedTrees :
         cdef double [:,:] distances_a = np_distances_a
         cdef double [:,:] distances_b = np_distances_b
         
-        cdef double [:] distances_a_mv
-        cdef double [:] distances_b_mv
+        cdef double [:] distances_a_mv = np_dbuffer_a
+        cdef double [:] distances_b_mv = np_dbuffer_b
          
         cdef double [:] sums_a = np_sums_a
         cdef double [:] sums_b = np_sums_b
@@ -921,26 +930,27 @@ cdef class SuchLinkedTrees :
         cdef unsigned int cycles = 0
         
         while True :
-            cycles += 1
             for i in xrange( buckets ) :
-                with nogil :
-                    for j in xrange( n ) :
-                        l1 = self._random_int( self.subset_n_links )
-                        l2 = self._random_int( self.subset_n_links )
-                        a1 = linklist[ l1, 1 ]
-                        b1 = linklist[ l1, 0 ]
-                        a2 = linklist[ l2, 1 ]
-                        b2 = linklist[ l2, 0 ]
-                        query_a[ j, 0 ] = a1
-                        query_a[ j, 1 ] = a2
-                        query_b[ j, 0 ] = b1
-                        query_b[ j, 1 ] = b2
+                #with nogil :
+                for j in xrange( n ) :
+                    #l1 = self._random_int( self.subset_n_links )
+                    #l2 = self._random_int( self.subset_n_links )
+                    l1 = np.random.randint( self.subset_n_links )
+                    l2 = np.random.randint( self.subset_n_links )
+                    a1 = linklist[ l1, 1 ]
+                    b1 = linklist[ l1, 0 ]
+                    a2 = linklist[ l2, 1 ]
+                    b2 = linklist[ l2, 0 ]
+                    query_a[ j, 0 ] = a1
+                    query_a[ j, 1 ] = a2
+                    query_b[ j, 0 ] = b1
+                    query_b[ j, 1 ] = b2
                 distances_a_mv = self.TreeA.distances( query_a )
                 distances_b_mv = self.TreeB.distances( query_b )
                 distances_a[ i, : ] = distances_a_mv
                 distances_b[ i, : ] = distances_b_mv
-                all_distances_a[ n * i * cycles : n * i * cycles + n ] = distances_a_mv
-                all_distances_b[ n * i * cycles : n * i * cycles + n ] = distances_b_mv
+                all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv
+                all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv
                 with nogil :
                     for j in xrange( n ) :
                         sums_a[i] += distances_a[ i, j ]
@@ -964,16 +974,19 @@ cdef class SuchLinkedTrees :
                 sumsq_bucket_b += deviations_b[i]**2
             deviation_a = ( sumsq_bucket_a / buckets - ( deviation_a / buckets )**2 )**(0.5)
             deviation_b = ( sumsq_bucket_b / buckets - ( deviation_b / buckets )**2 )**(0.5)
-            
-            print deviation_a, deviation_b
+           
+            cycles += 1
             
             if deviation_a < sigma and deviation_b < sigma : break
             if cycles >= maxcycles : return None
- 
-        return { 'r' : _pearson( all_distances_a[ : n * buckets * cycles ], 
-                                 all_distances_b[ : n * buckets * cycles ], n*cycles ),
-                 'n' : n * buckets * cycles }
- 
+             
+        return { 'TreeA'       : np_all_distances_a[ : n * buckets * cycles ],
+                 'TreeB'       : np_all_distances_b[ : n * buckets * cycles ],
+                 'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,
+                 'n_samples'   : n * buckets * cycles,
+                 'deviation_a' : deviation_a,
+                 'deviation_b' : deviation_b } 
+         
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'
         for i in xrange( self.n_cols ) :
