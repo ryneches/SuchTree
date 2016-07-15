@@ -933,10 +933,10 @@ cdef class SuchLinkedTrees :
             for i in xrange( buckets ) :
                 #with nogil :
                 for j in xrange( n ) :
-                    #l1 = self._random_int( self.subset_n_links )
-                    #l2 = self._random_int( self.subset_n_links )
-                    l1 = np.random.randint( self.subset_n_links )
-                    l2 = np.random.randint( self.subset_n_links )
+                    l1 = self._random_int( self.subset_n_links )
+                    l2 = self._random_int( self.subset_n_links )
+                    #l1 = np.random.randint( self.subset_n_links )
+                    #l2 = np.random.randint( self.subset_n_links )
                     a1 = linklist[ l1, 1 ]
                     b1 = linklist[ l1, 0 ]
                     a2 = linklist[ l2, 1 ]
