@@ -523,8 +523,11 @@ cdef class SuchLinkedTrees :
     cdef object linked_leafsB
     
     cdef object subset_columns
-    cdef object subset_leafs
-    cdef unsigned int subset_size
+    cdef object subset_rows
+    cdef object subset_a_leafs
+    cdef object subset_b_leafs
+    cdef unsigned int subset_a_size
+    cdef unsigned int subset_b_size
     cdef unsigned int subset_n_links
     
     cdef object row_map
@@ -557,7 +560,8 @@ cdef class SuchLinkedTrees :
         self.col_names = None
         self.row_names = None
         self.subset_columns = None
-        self.subset_leafs = None
+        self.subset_a_leafs = None
+        self.subset_b_leafs = None
         self.row_map = None        
         
         # build trees from newick files, URLs to newick files or 
@@ -623,10 +627,13 @@ cdef class SuchLinkedTrees :
          
         # by default, the subset is the whole table
         print 'bulding default subset.'
-        self.subset_size = len( self.col_ids )
+        self.subset_a_size = len( self.row_ids )
+        self.subset_b_size = len( self.col_ids )
         self.subset_n_links = self.n_links
-        self.subset_columns = np.array( range( self.subset_size ) )
-        self.subset_leafs = self.col_ids
+        self.subset_rows    = np.array( range( self.subset_a_size ) )
+        self.subset_columns = np.array( range( self.subset_b_size ) )
+        self.subset_a_leafs = self.row_ids
+        self.subset_b_leafs = self.col_ids
         
         # make np_linklist
         print 'bulding default link list.'
@@ -703,18 +710,28 @@ cdef class SuchLinkedTrees :
         def __get__( self ) :
             return self.subset_columns
     
-    property subset_leafs :
+    property subset_a_leafs :
+        'ids of the current subset rows.'
+        def __get__( self ) :
+            return self.subset_a_leafs
+ 
+    property subset_b_leafs :
         'ids of the current subset columns.'
         def __get__( self ) :
-            return self.subset_leafs
+            return self.subset_b_leafs
     
-    property subset_size :
+    property subset_a_size :
+        'Number of rows in the current subset.'
+        def __get__( self ) :
+            return self.subset_a_size
+        
+    property subset_b_size :
         'Number of columns in the current subset.'
         def __get__( self ) :
-            return self.subset_size
-        
+            return self.subset_b_size
+ 
     property subset_n_links :
-        'Number of columns in the current subset.'
+        'Number of links in the current subset.'
         def __get__( self ) :
             return self.subset_n_links
     
@@ -764,50 +781,72 @@ cdef class SuchLinkedTrees :
     cdef _build_linkmatrix( self ) :
         cdef unsigned int i
         cdef unsigned int j
+        cdef unsigned int l
+        cdef unsigned int m
         cdef unsigned int row_id
         
-        self.np_table = np.zeros( (self.n_rows, self.subset_size), dtype=bool )
+        self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )
         
-        for i in xrange( self.subset_size ) :
+        for i in xrange( self.subset_b_size ) :
             col = self.subset_columns[i] 
             for j in xrange( self.table[col].length ) :
-                row_id = self.row_map[ self.table[col].links[j] ]
-                self.np_table[ col, row_id ] = True
+                m = self.table[col].links[j]
+                for l in self.subset_a_leafs :
+                    if l == m :
+                        row_id = self.row_map[ self.table[col].links[j] ]
+                        self.np_table[ col, row_id ] = True
+                        continue
         
     property linklist :
         'numpy representation of link list'
         def __get__( self ) :
             # length will be shorter with subsetted link matrixes
-            return self.np_linklist[:self.subset_n_links-1,:]
+            return self.np_linklist[:self.subset_n_links,:]
     
     @cython.boundscheck(False)
     cdef void _build_linklist( self ) nogil :
-            cdef unsigned int i
-            cdef unsigned int j
-            cdef unsigned int col
-            cdef unsigned int k = 0
-           
-            # Memoryviews into numpy arrays
-            cdef long [:] subset_columns = self.subset_columns
-            cdef long [:] subset_leafs   = self.subset_leafs
-            cdef long [:,:] np_linklist  = self.np_linklist
-            
-            for i in xrange( self.subset_size ) :
-                col = subset_columns[i]
-                for j in xrange( self.table[col].length ) :
-                    np_linklist[ k, 0 ] = subset_leafs[i]
-                    np_linklist[ k, 1 ] = self.table[col].links[j]
-                    k += 1
-            
-            self.subset_n_links = k
-            
-    def subset( self, node_id ) :
-        'subset the link matrix to leafs desended from node_id'
-        self.subset_leafs = self.TreeB.get_leafs( node_id )
-        self.subset_columns = self.TreeB.get_links( self.subset_leafs )
-        self.subset_size = len( self.subset_columns )
+        cdef unsigned int i
+        cdef unsigned int j
+        cdef unsigned int l
+        cdef unsigned int m
+        cdef unsigned int n
+        cdef unsigned int col
+        cdef unsigned int k = 0
+       
+        # Memoryviews into numpy arrays
+        cdef long [:] subset_columns = self.subset_columns
+        cdef long [:] subset_a_leafs = self.subset_a_leafs
+        cdef long [:] subset_b_leafs = self.subset_b_leafs
+        cdef long [:,:] np_linklist  = self.np_linklist
+        
+        for i in xrange( self.subset_b_size ) :
+            col = subset_columns[i]
+            for j in xrange( self.table[col].length ) :
+                m = self.table[col].links[j]
+                for l in xrange( self.subset_a_size ) :
+                    n = subset_a_leafs[l]
+                    if n == m :
+                        np_linklist[ k, 0 ] = subset_b_leafs[i]
+                        np_linklist[ k, 1 ] = self.table[col].links[j]
+                        k += 1
+                        continue
+        
+        self.subset_n_links = k
+        
+    def subset_b( self, node_id ) :
+        'subset the link matrix to leafs desended from node_id in TreeB'
+        self.subset_b_leafs = self.TreeB.get_leafs( node_id )
+        self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )
+        self.subset_b_size = len( self.subset_columns )
         self._build_linklist()
     
+    def subset_a( self, node_id ) :
+        'subset the link matrix to leafs desended from node_id in TreeA'
+        self.subset_a_leafs = self.TreeA.get_leafs( node_id )
+        self.subset_rows = self.TreeA.get_links( self.subset_a_leafs )
+        self.subset_a_size = len( self.subset_rows )
+        self._build_linklist()
+        
     @cython.boundscheck(False)
     def linked_distances( self ) :
         """

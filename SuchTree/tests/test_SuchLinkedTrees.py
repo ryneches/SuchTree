@@ -182,3 +182,53 @@ def test_linkmatrix_property() :
             col_id = SLT.col_names.index(col)
             row_id = SLT.row_names.index(row)
             assert_equal( bool(links[col][row]), SLT.linkmatrix[col_id][row_id] )
+
+def test_linklist_property() :
+    T = SuchTree( test_tree )
+    row_names = T.leafs.keys()
+    numpy.random.shuffle(row_names)
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+                          columns=T.leafs.keys(), 
+                          index=row_names )
+    SLT = SuchLinkedTrees( T, T, links )
+    l = links.unstack()
+    A = set(map( lambda x : (SLT.TreeB.leafs[x[0]], SLT.TreeA.leafs[x[1]]), 
+        list( l[l>0].index ) ))
+    B = set(map( lambda x : (x[0], x[1]),  SLT.linklist ) )
+    assert_equal( A, B )
+
+# test subsetting
+
+def test_subset_a() :
+    T = SuchTree( test_tree )
+    row_names = T.leafs.keys()
+    numpy.random.shuffle(row_names)
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+                          columns=T.leafs.keys(), 
+                          index=row_names )
+    SLT = SuchLinkedTrees( T, T, links )
+    sfeal = dict( zip( SLT.TreeA.leafs.values(), SLT.TreeA.leafs.keys() ) )
+    subset_links = links.loc[ map( lambda x: sfeal[x], SLT.TreeA.get_leafs(1) ) ]
+    l = subset_links.unstack()
+    SLT.subset_a(1)
+    A = set(map( lambda x : (SLT.TreeB.leafs[x[0]], SLT.TreeA.leafs[x[1]]), 
+        list( l[l>0].index ) ))
+    B = set(map( lambda x : (x[0], x[1]),  SLT.linklist ) )
+    assert_equal( A, B )
+
+def test_subset_b() :
+    T = SuchTree( test_tree )
+    row_names = T.leafs.keys()
+    numpy.random.shuffle(row_names)
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+                          columns=T.leafs.keys(), 
+                          index=row_names )
+    SLT = SuchLinkedTrees( T, T, links )
+    sfeal = dict( zip( SLT.TreeB.leafs.values(), SLT.TreeB.leafs.keys() ) )
+    subset_links = links[ map( lambda x: sfeal[x], SLT.TreeB.get_leafs(1) ) ]
+    l = subset_links.unstack()
+    SLT.subset_b(1)
+    A = set(map( lambda x : (SLT.TreeB.leafs[x[0]], SLT.TreeA.leafs[x[1]]), 
+        list( l[l>0].index ) ))
+    B = set(map( lambda x : (x[0], x[1]),  SLT.linklist ) )
+    assert_equal( A, B )
