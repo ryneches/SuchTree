@@ -45,80 +45,7 @@ def pearson( double[:] x, double[:] y ) :
     except ZeroDivisionError :
         return 0.0
 
-cdef float _get_distance_to_root( Node* data, id ) :
-    """
-    Calculate the distance from a node of a given id to the root node.
-    Will work for both leaf and internal nodes. Private cdef method.
-    """
-    cdef float d = 0.0
-    cdef float d_i = 0.0
-    cdef int i = id
-    cdef int a_depth = 0
-    cdef int mrca = -1
-    
-    while True :
-        d_i = data[i].distance
-        if d_i == -1 : break
-        d = d + d_i
-        i = data[i].parent
-    return d
 
-cdef int _mrca( Node* data, int depth, int a, int b ) :
-    cdef int n
-    cdef int i
-    cdef int mrca = -1
-    cdef int a_depth
-    # allocate some memory for visited node array
-    visited = <int*> PyMem_Malloc( depth * sizeof(int) )
-    
-    if visited == NULL :
-        raise Exception( '_mrca could not allocate memmory' )
-     
-    with nogil :
-        n = a
-        i = 0
-        while True :
-            visited[i] = n
-            n = data[n].parent
-            i += 1
-            if n == -1 : break
-        a_depth = i
-        
-        n = b
-        while True :
-            i = 0
-            while True :
-                if i >= a_depth : break
-                if visited[i] == n :
-                    mrca = visited[i]
-                    break
-                i += 1
-            if mrca != -1 : break
-            n = data[n].parent
-            if n == -1 :
-                mrca = n
-                break
-    
-    # free the visited node array (no-op if NULL)
-    PyMem_Free(visited)
-    return mrca
-
-cdef float _distance( Node* data, int depth, int a, int b ) :
-    cdef int mrca
-    cdef float d = 0
-    cdef int n
-    
-    mrca = _mrca( data, depth, a, b )
-   
-    n = a
-    while n != mrca :
-        d += data[n].distance
-        n = data[n].parent
-    n = b
-    while n != mrca :
-        d += data[n].distance
-        n = data[n].parent
-    return d
 
 @cython.boundscheck(False)
 cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:] result ) :
@@ -406,15 +333,73 @@ cdef class SuchTree :
                 id = self.leafs[ id ]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
-        return _get_distance_to_root( self.data, id )
+        return self._get_distance_to_root( id )
+    
+    cdef float _get_distance_to_root( self, id ) :
+        """
+        Calculate the distance from a node of a given id to the root node.
+        Will work for both leaf and internal nodes. Private cdef method.
+        """
+        cdef float d = 0.0
+        cdef float d_i = 0.0
+        cdef int i = id
+        cdef int a_depth = 0
+        cdef int mrca = -1
+        
+        while True :
+            d_i = self.data[i].distance
+            if d_i == -1 : break
+            d = d + d_i
+            i = self.data[i].parent
+        return d
     
     def mrca( self, a, b ) :
         """
         Return the id of the most recent common ancestor of two nodes
         if given ids.
         """
-        return _mrca( self.data, self.depth, a, b )
+        return self._mrca( a, b )
+    
+    cdef int _mrca( self, int a, int b ) :
+        cdef int n
+        cdef int i
+        cdef int mrca = -1
+        cdef int a_depth
+        # allocate some memory for visited node array
+        visited = <int*> PyMem_Malloc( self.depth * sizeof(int) )
         
+        if visited == NULL :
+            raise Exception( '_mrca could not allocate memmory' )
+         
+        with nogil :
+            n = a
+            i = 0
+            while True :
+                visited[i] = n
+                n = self.data[n].parent
+                i += 1
+                if n == -1 : break
+            a_depth = i
+            
+            n = b
+            while True :
+                i = 0
+                while True :
+                    if i >= a_depth : break
+                    if visited[i] == n :
+                        mrca = visited[i]
+                        break
+                    i += 1
+                if mrca != -1 : break
+                n = self.data[n].parent
+                if n == -1 :
+                    mrca = n
+                    break
+        
+        # free the visited node array (no-op if NULL)
+        PyMem_Free(visited)
+        return mrca
+    
     def distance( self, a, b ) :
         """
         Return distnace between a pair of nodes. Will accelt node ids
@@ -430,7 +415,24 @@ cdef class SuchTree :
                 b = self.leafs[b]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + b )
-        return _distance( self.data, self.depth, a, b ) 
+        return self._distance( a, b ) 
+    
+    cdef float _distance( self, int a, int b ) :
+        cdef int mrca
+        cdef float d = 0
+        cdef int n
+        
+        mrca = self._mrca( a, b )
+       
+        n = a
+        while n != mrca :
+            d += self.data[n].distance
+            n =  self.data[n].parent
+        n = b
+        while n != mrca :
+            d += self.data[n].distance
+            n =  self.data[n].parent
+        return d
 
     def distances( self, long[:,:] ids ) :
         """

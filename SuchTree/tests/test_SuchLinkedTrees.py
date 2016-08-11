@@ -7,12 +7,16 @@ import pandas as pd
 
 test_tree = 'SuchTree/tests/test.tree'
 dpt = Tree.get( file=open(test_tree), schema='newick' )
+dpt.resolve_polytomies()
+N = 0
 for n,node in enumerate( dpt.inorder_node_iter() ) :
     node.label = n
+    if node.taxon :
+        N += 1
 
 def test_init_link_by_name() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
 
@@ -21,7 +25,7 @@ def test_init_link_by_name() :
 
 def test_init_link_by_id() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
     SLT = SuchLinkedTrees( T, T, links )
@@ -29,7 +33,7 @@ def test_init_link_by_id() :
 
 def test_init_one_tree_by_file() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
     SLT = SuchLinkedTrees( test_tree, T, links )
@@ -37,7 +41,7 @@ def test_init_one_tree_by_file() :
 
 def test_init_both_trees_by_file() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
     SLT = SuchLinkedTrees( test_tree, test_tree, links )
@@ -47,7 +51,7 @@ def test_init_both_trees_by_file() :
 
 def test_col_names() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
 
@@ -56,7 +60,7 @@ def test_col_names() :
 
 def test_row_names() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
 
@@ -65,7 +69,7 @@ def test_row_names() :
 
 def test_col_ids() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
 
@@ -78,7 +82,7 @@ def test_col_ids() :
 
 def test_row_ids() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
 
@@ -91,7 +95,7 @@ def test_row_ids() :
 
 def test_n_cols() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
 
@@ -100,7 +104,7 @@ def test_n_cols() :
 
 def test_n_rows() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
 
@@ -109,7 +113,7 @@ def test_n_rows() :
 
 def test_get_column_leafs() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
     SLT = SuchLinkedTrees( T, T, links )
@@ -121,7 +125,7 @@ def test_get_column_leafs() :
 
 def test_get_column_leafs_by_name() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
     SLT = SuchLinkedTrees( T, T, links )
@@ -133,7 +137,7 @@ def test_get_column_leafs_by_name() :
 
 def test_get_column_leafs_as_row_ids() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
     SLT = SuchLinkedTrees( T, T, links )
@@ -145,7 +149,7 @@ def test_get_column_leafs_as_row_ids() :
 
 def test_get_column_leafs_by_name_as_row_ids() :
     T = SuchTree( test_tree )
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=T.leafs.keys() )
     SLT = SuchLinkedTrees( T, T, links )
@@ -159,7 +163,7 @@ def test_get_column_links() :
     T = SuchTree( test_tree )
     row_names = T.leafs.keys()
     numpy.random.shuffle(row_names)
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=row_names )
     SLT = SuchLinkedTrees( T, T, links )
@@ -173,7 +177,7 @@ def test_linkmatrix_property() :
     T = SuchTree( test_tree )
     row_names = T.leafs.keys()
     numpy.random.shuffle(row_names)
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=row_names )
     SLT = SuchLinkedTrees( T, T, links )
@@ -187,7 +191,7 @@ def test_linklist_property() :
     T = SuchTree( test_tree )
     row_names = T.leafs.keys()
     numpy.random.shuffle(row_names)
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=row_names )
     SLT = SuchLinkedTrees( T, T, links )
@@ -203,7 +207,7 @@ def test_subset_a() :
     T = SuchTree( test_tree )
     row_names = T.leafs.keys()
     numpy.random.shuffle(row_names)
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=row_names )
     SLT = SuchLinkedTrees( T, T, links )
@@ -220,7 +224,7 @@ def test_subset_b() :
     T = SuchTree( test_tree )
     row_names = T.leafs.keys()
     numpy.random.shuffle(row_names)
-    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(14,14)),
+    links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
                           columns=T.leafs.keys(), 
                           index=row_names )
     SLT = SuchLinkedTrees( T, T, links )

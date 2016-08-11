@@ -6,6 +6,7 @@ import numpy
 
 test_tree = 'SuchTree/tests/test.tree'
 dpt = Tree.get( file=open(test_tree), schema='newick' )
+dpt.resolve_polytomies()
 for n,node in enumerate( dpt.inorder_node_iter() ) :
     node.label = n
 
