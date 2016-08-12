@@ -782,8 +782,6 @@ cdef class SuchLinkedTrees :
                     n = subset_a_leafs[l]
                     if n == m :
                         np_linklist[ k, 0 ] = col_ids[col]
-                        # FIXME : somehow, subset columns and leafs
-                        # are out of sync.
                         np_linklist[ k, 1 ] = m
                         k += 1
                         continue
