@@ -199,7 +199,7 @@ cdef class SuchTree :
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
         return ( self.data[id].left_child, self.data[id].right_child )
-
+    
     def get_leafs( self, id ) :
         """
         Return an array of ids of all leaf nodes descendent from a given node.
@@ -220,7 +220,7 @@ cdef class SuchTree :
                 to_visit.append( l )
                 to_visit.append( r )   
         return np.array(self.np_buffer[:n])
-
+    
     def get_internal_nodes( self ) :
         """
         Return an array of the ids of all internal nodes.
@@ -255,6 +255,7 @@ cdef class SuchTree :
                 raise Exception( 'Leaf name not found : ' + id )
         return self._get_distance_to_root( id )
     
+    @cython.boundscheck(False)
     cdef float _get_distance_to_root( self, id ) :
         """
         Calculate the distance from a node of a given id to the root node.
@@ -281,7 +282,8 @@ cdef class SuchTree :
         visited = np.zeros( self.depth, dtype=int )
         
         return self._mrca( visited, a, b )
-        
+    
+    @cython.boundscheck(False)
     cdef int _mrca( self, long[:] visited, int a, int b ) nogil :
         cdef int n
         cdef int i
@@ -311,7 +313,9 @@ cdef class SuchTree :
             if n == -1 :
                 mrca = n
                 break
-         
+        for i in xrange( self.depth ) : 
+            visited[i] = -1
+        
         return mrca
    
     def distance( self, a, b ) :
@@ -331,6 +335,7 @@ cdef class SuchTree :
                 raise Exception( 'Leaf name not found : ' + b )
         return self._distance( a, b ) 
     
+    @cython.boundscheck(False)
     cdef float _distance( self, int a, int b ) :
         cdef int mrca
         cdef float d = 0
@@ -347,7 +352,7 @@ cdef class SuchTree :
             d += self.data[n].distance
             n =  self.data[n].parent
         return d
-
+    
     def distances( self, long[:,:] ids ) :
         """
         Returns an array of distances between pairs of node ids in a
@@ -392,7 +397,7 @@ cdef class SuchTree :
                 d += self.data[n].distance
                 n =  self.data[n].parent
             result[i] = d
-
+        
     def distances_by_name( self, id_pairs ) :
         """
         Returns an array of distances between pairs of leaf names in a
@@ -557,7 +562,7 @@ cdef class SuchLinkedTrees :
         # populate the link table
         print id(self), 'allocating columns in', <unsigned int> &self.table
         self.n_links = 0
-        for i,(colname,s) in enumerate( link_matrix.T.iterrows() ) :
+        for i,(colname,s) in enumerate( link_matrix.T.reindex( self.col_names ).iterrows() ) :
             # attach leaf nodes in TreeB to corresponding column in
             # the link table
             self.TreeB.link_leaf( self.col_ids[i], i )
@@ -702,7 +707,7 @@ cdef class SuchLinkedTrees :
                 column[i] = self.table[ col_id ].links[i]
         
         return column
- 
+    
     def get_column_links( self, col ) :
         
         if type(col) is str :
@@ -726,6 +731,7 @@ cdef class SuchLinkedTrees :
             self._build_linkmatrix()                
             return self.np_table
     
+    @cython.boundscheck(False) 
     cdef _build_linkmatrix( self ) :
         cdef unsigned int i
         cdef unsigned int j
@@ -742,7 +748,7 @@ cdef class SuchLinkedTrees :
                 for l in self.subset_a_leafs :
                     if l == m :
                         row_id = self.row_map[ self.table[col].links[j] ]
-                        self.np_table[ col, row_id ] = True
+                        self.np_table[ row_id, col ] = True
                         continue
         
     property linklist :
@@ -752,7 +758,7 @@ cdef class SuchLinkedTrees :
             return self.np_linklist[:self.subset_n_links,:]
     
     @cython.boundscheck(False)
-    cdef void _build_linklist( self ) nogil :
+    cdef void _build_linklist( self ) :
         cdef unsigned int i
         cdef unsigned int j
         cdef unsigned int l
@@ -762,6 +768,7 @@ cdef class SuchLinkedTrees :
         cdef unsigned int k = 0
        
         # Memoryviews into numpy arrays
+        cdef long [:] col_ids        = self.col_ids
         cdef long [:] subset_columns = self.subset_columns
         cdef long [:] subset_a_leafs = self.subset_a_leafs
         cdef long [:] subset_b_leafs = self.subset_b_leafs
@@ -774,8 +781,10 @@ cdef class SuchLinkedTrees :
                 for l in xrange( self.subset_a_size ) :
                     n = subset_a_leafs[l]
                     if n == m :
-                        np_linklist[ k, 0 ] = subset_b_leafs[i]
-                        np_linklist[ k, 1 ] = self.table[col].links[j]
+                        np_linklist[ k, 0 ] = col_ids[col]
+                        # FIXME : somehow, subset columns and leafs
+                        # are out of sync.
+                        np_linklist[ k, 1 ] = m
                         k += 1
                         continue
         
@@ -816,19 +825,22 @@ cdef class SuchLinkedTrees :
         with nogil :
             for i in xrange( self.subset_n_links ) :
                 for j in xrange( i ) :
-                    IDs_a[ k, 0 ] = linklist[ i, 1 ]
-                    IDs_a[ k, 1 ] = linklist[ j, 1 ]
-                    IDs_b[ k, 0 ] = linklist[ i, 0 ]
-                    IDs_b[ k, 1 ] = linklist[ j, 0 ]
+                    IDs_a[ k, 1 ] = linklist[ i, 1 ]
+                    IDs_a[ k, 0 ] = linklist[ j, 1 ]
+                    IDs_b[ k, 1 ] = linklist[ i, 0 ]
+                    IDs_b[ k, 0 ] = linklist[ j, 0 ]
                     k += 1
         
         return { 'TreeA'       : self.TreeA.distances( ids_a ), 
                  'TreeB'       : self.TreeB.distances( ids_b ),
+                 'ids_A'       : ids_a,
+                 'ids_B'       : ids_b,
                  'n_pairs'     : size,
                  'n_samples'   : size,
                  'deviation_a' : None,
                  'deviation_b' : None }
     
+    @cython.boundscheck(False) 
     cdef uint64_t _random_int( self, uint64_t n ) nogil :
         '''
         An implementation of the xorshift64star pseudorandom number
@@ -918,20 +930,20 @@ cdef class SuchLinkedTrees :
         
         while True :
             for i in xrange( buckets ) :
-                #with nogil :
-                for j in xrange( n ) :
-                    l1 = self._random_int( self.subset_n_links )
-                    l2 = self._random_int( self.subset_n_links )
-                    #l1 = np.random.randint( self.subset_n_links )
-                    #l2 = np.random.randint( self.subset_n_links )
-                    a1 = linklist[ l1, 1 ]
-                    b1 = linklist[ l1, 0 ]
-                    a2 = linklist[ l2, 1 ]
-                    b2 = linklist[ l2, 0 ]
-                    query_a[ j, 0 ] = a1
-                    query_a[ j, 1 ] = a2
-                    query_b[ j, 0 ] = b1
-                    query_b[ j, 1 ] = b2
+                with nogil :
+                    for j in xrange( n ) :
+                        l1 = self._random_int( self.subset_n_links )
+                        l2 = self._random_int( self.subset_n_links )
+                        #l1 = np.random.randint( self.subset_n_links )
+                        #l2 = np.random.randint( self.subset_n_links )
+                        a1 = linklist[ l1, 1 ]
+                        b1 = linklist[ l1, 0 ]
+                        a2 = linklist[ l2, 1 ]
+                        b2 = linklist[ l2, 0 ]
+                        query_a[ j, 0 ] = a1
+                        query_a[ j, 1 ] = a2
+                        query_b[ j, 0 ] = b1
+                        query_b[ j, 1 ] = b2
                 distances_a_mv = self.TreeA.distances( query_a )
                 distances_b_mv = self.TreeB.distances( query_b )
                 distances_a[ i, : ] = distances_a_mv
@@ -940,8 +952,8 @@ cdef class SuchLinkedTrees :
                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv
                 with nogil :
                     for j in xrange( n ) :
-                        sums_a[i] += distances_a[ i, j ]
-                        sums_b[i] += distances_b[ i, j ]
+                        sums_a[i]  += distances_a[ i, j ]
+                        sums_b[i]  += distances_b[ i, j ]
                         sumsq_a[i] += distances_a[ i, j ]**2
                         sumsq_b[i] += distances_b[ i, j ]**2
                 samples_a[i] += n
