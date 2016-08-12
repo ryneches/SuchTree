@@ -45,86 +45,6 @@ def pearson( double[:] x, double[:] y ) :
     except ZeroDivisionError :
         return 0.0
 
-
-
-@cython.boundscheck(False)
-cdef void _distances( Node* data, int length, int depth, long[:,:] ids, double[:] result ) :
-    """
-    For each pair of node ids in the given (n,2) array, calculate the
-    distance to the root node for each pair and store their differece
-    in the given (1,n) result array. Calculations are performed within
-    a 'nogil' context, allowing the interpreter to perform other tasks
-    concurrently if desired. Private cdef method.
-    """
-    cdef int a
-    cdef int b
-    cdef int j
-    cdef int n
-    cdef int i
-    cdef int mrca
-    cdef int a_depth
-    cdef float d = 0
-    cdef bint fail = False
-    cdef int fail_id_a
-    cdef int fail_id_b
-    # allocate some memory for visited node array
-    visited = <int*> PyMem_Malloc( depth * sizeof(int) )
-    
-    if visited == NULL :
-        raise Exception( '_distances could not allocate memory' )
-    
-    with nogil : 
-        for j in range( ids.shape[0] ) :
-            d = 0
-            a = ids[j][0]
-            b = ids[j][1]
-            if a >= length or b >= length :
-                fail = True
-                fail_id_a = a
-                fail_id_b = b
-                break
-            if a == b :
-                result[j] = 0.0
-                continue
-            n = a
-            i = 0
-            while True :
-                if n == -1 : break
-                visited[i] = n
-                n = data[n].parent
-                i += 1
-            a_depth = i
-            
-            mrca = -1
-            n = b
-            while True :
-                i = 0
-                while True :
-                    if i >= a_depth : break
-                    if visited[i] == n :
-                        mrca = visited[i]
-                        break
-                    i += 1
-                if mrca != -1 : break
-                d += data[n].distance
-                n = data[n].parent
-                if n == -1 :
-                    mrca = n
-                    break
-            
-            n = b
-            while n != mrca :
-                d += data[n].distance
-                n = data[n].parent
-            
-            result[j] = d
-     
-    # free the visited node array (no-op if NULL)
-    PyMem_Free(visited)
-    
-    if fail :
-        raise Exception( 'query contains out of bounds id', (fail_id_a, fail_id_b) )
-
 @cython.no_gc_clear
 cdef class SuchTree :
     """
@@ -358,48 +278,42 @@ cdef class SuchTree :
         Return the id of the most recent common ancestor of two nodes
         if given ids.
         """
-        return self._mrca( a, b )
-    
-    cdef int _mrca( self, int a, int b ) :
+        visited = np.zeros( self.depth, dtype=int )
+        
+        return self._mrca( visited, a, b )
+        
+    cdef int _mrca( self, long[:] visited, int a, int b ) nogil :
         cdef int n
         cdef int i
         cdef int mrca = -1
         cdef int a_depth
-        # allocate some memory for visited node array
-        visited = <int*> PyMem_Malloc( self.depth * sizeof(int) )
         
-        if visited == NULL :
-            raise Exception( '_mrca could not allocate memmory' )
-         
-        with nogil :
-            n = a
+        n = a
+        i = 0
+        while True :
+            visited[i] = n
+            n = self.data[n].parent
+            i += 1
+            if n == -1 : break
+        a_depth = i
+        
+        n = b
+        while True :
             i = 0
             while True :
-                visited[i] = n
-                n = self.data[n].parent
-                i += 1
-                if n == -1 : break
-            a_depth = i
-            
-            n = b
-            while True :
-                i = 0
-                while True :
-                    if i >= a_depth : break
-                    if visited[i] == n :
-                        mrca = visited[i]
-                        break
-                    i += 1
-                if mrca != -1 : break
-                n = self.data[n].parent
-                if n == -1 :
-                    mrca = n
+                if i >= a_depth : break
+                if visited[i] == n :
+                    mrca = visited[i]
                     break
-        
-        # free the visited node array (no-op if NULL)
-        PyMem_Free(visited)
+                i += 1
+            if mrca != -1 : break
+            n = self.data[n].parent
+            if n == -1 :
+                mrca = n
+                break
+         
         return mrca
-    
+   
     def distance( self, a, b ) :
         """
         Return distnace between a pair of nodes. Will accelt node ids
@@ -422,7 +336,7 @@ cdef class SuchTree :
         cdef float d = 0
         cdef int n
         
-        mrca = self._mrca( a, b )
+        mrca = self.mrca( a, b )
        
         n = a
         while n != mrca :
@@ -443,10 +357,42 @@ cdef class SuchTree :
             raise Exception( 'expected (n,2) array', 
                              ids.shape[0], ids.shape[1] )
         
+        visited = np.zeros( self.depth, dtype=int )
         result = np.zeros( ids.shape[0], dtype=float )
-        _distances( self.data, self.length, self.depth, ids, result )
+        self._distances( ids.shape[0], visited, ids, result )
         return result
-         
+    
+    @cython.boundscheck(False)
+    cdef void _distances( self, unsigned int length, long[:] visited, long[:,:] ids, double[:] result ) nogil :
+        """
+        For each pair of node ids in the given (n,2) array, calculate the
+        distance to the root node for each pair and store their differece
+        in the given (1,n) result array. Calculations are performed within
+        a 'nogil' context, allowing the interpreter to perform other tasks
+        concurrently if desired. Private cdef method.
+        """
+        cdef unsigned int mrca
+        cdef float d
+        cdef unsigned int n
+        cdef unsigned int a
+        cdef unsigned int b
+        cdef unsigned int i
+        
+        for i in xrange( ids.shape[0] ) :
+            a = ids[i,0]
+            b = ids[i,1]
+            mrca = self._mrca( visited, a, b )
+            n = a
+            d = 0
+            while n != mrca :
+                d += self.data[n].distance
+                n =  self.data[n].parent
+            n = b
+            while n != mrca :
+                d += self.data[n].distance
+                n =  self.data[n].parent
+            result[i] = d
+
     def distances_by_name( self, id_pairs ) :
         """
         Returns an array of distances between pairs of leaf names in a
