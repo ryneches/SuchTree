@@ -433,6 +433,42 @@ cdef class SuchTree :
             col_ids[n] = self.data[ leaf ].right_child
         return col_ids
     
+    def adjacency( self, int node ) :
+        
+        cdef unsigned int i
+        cdef unsigned int j
+        cdef unsigned int k
+        cdef unsigned int node_id
+        cdef unsigned int parent
+        cdef float distance
+        cdef int l
+        cdef int r
+        cdef unsigned int n = 0
+        if self.np_buffer is None :
+            self.np_buffer = np.ndarray( self.length, dtype=int )
+        to_visit = [ node ]
+        for i in to_visit :
+            self.np_buffer[n] = i
+            n += 1
+            l,r = self.get_children( i )
+            if l != -1 :
+                to_visit.append( l )
+                to_visit.append( r )   
+        
+        ajmatrix = np.zeros( (n,n), dtype=float )
+        
+        for i in xrange( n ) :
+            node_id  = self.np_buffer[i]
+            parent   = self.data[node_id].parent
+            distance = self.data[node_id].distance
+            for j,k in enumerate( self.np_buffer[:n] ) :
+                if k == parent :
+                    ajmatrix[ i,j ] = distance
+                    ajmatrix[ j,i ] = distance
+                    
+        return { 'adjacency_matrix' : ajmatrix, 
+                 'leaf_ids' : self.np_buffer[:n] }
+        
     def dump_array( self ) :
         """
         Print the whole tree. (WARNING : may be huge and useless.)
@@ -741,16 +777,15 @@ cdef class SuchLinkedTrees :
         
         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )
         
-        for i in xrange( self.subset_b_size ) :
-            col = self.subset_columns[i] 
+        for col in self.subset_columns :
             for j in xrange( self.table[col].length ) :
                 m = self.table[col].links[j]
                 for l in self.subset_a_leafs :
                     if l == m :
-                        row_id = self.row_map[ self.table[col].links[j] ]
+                        row_id = self.row_map[ m ]
                         self.np_table[ row_id, col ] = True
                         continue
-        
+     
     property linklist :
         'numpy representation of link list'
         def __get__( self ) :
