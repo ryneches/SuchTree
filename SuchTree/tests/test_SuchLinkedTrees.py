@@ -185,7 +185,7 @@ def test_linkmatrix_property() :
         for row in SLT.row_names :
             col_id = SLT.col_names.index(col)
             row_id = SLT.row_names.index(row)
-            assert_equal( bool(links[row][col]), SLT.linkmatrix[row_id][col_id] )
+            assert_equal( bool(links.T[row][col]), SLT.linkmatrix[row_id][col_id] )
 
 def test_linklist_property() :
     T = SuchTree( test_tree )
