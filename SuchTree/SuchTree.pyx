@@ -444,8 +444,9 @@ cdef class SuchTree :
         cdef int l
         cdef int r
         cdef unsigned int n = 0
-        if self.np_buffer is None :
-            self.np_buffer = np.ndarray( self.length, dtype=int )
+        
+        self.np_buffer = np.ndarray( self.length, dtype=int )
+        
         to_visit = [ node ]
         for i in to_visit :
             self.np_buffer[n] = i
@@ -467,7 +468,42 @@ cdef class SuchTree :
                     ajmatrix[ j,i ] = distance
                     
         return { 'adjacency_matrix' : ajmatrix, 
-                 'leaf_ids' : self.np_buffer[:n] }
+                 'node_ids' : self.np_buffer[:n] }
+ 
+    def mgl( self, int node, normalized=False ) :
+        """
+        The modified graph Laplacian of the tree.    
+        """
+        cdef unsigned int i
+        cdef unsigned int j
+        cdef unsigned int I
+        cdef unsigned int J
+        cdef unsigned int n = 0
+        
+        self.np_buffer = np.ndarray( self.length, dtype=int )
+        
+        to_visit = [ node ]
+        for i in to_visit :
+            self.np_buffer[n] = i
+            n += 1
+            l,r = self.get_children( i )
+            if l != -1 :
+                to_visit.append( l )
+                to_visit.append( r )   
+        
+        mgl = np.zeros( (n,n), dtype=float )
+        
+        for i in xrange( n ) :
+            for j in xrange( n ) :
+                I = self.np_buffer[ i ]
+                J = self.np_buffer[ j ]
+                mgl[i,j] = - self.distance( I, J )
+       
+        for i in xrange( n ) :
+            mgl[i,i] = - sum( mgl[i,:] )
+                    
+        return { 'MGL' : mgl,
+                 'node_ids' : self.np_buffer[:n] }
         
     def dump_array( self ) :
         """

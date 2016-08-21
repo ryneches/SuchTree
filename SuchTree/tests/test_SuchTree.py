@@ -76,3 +76,14 @@ def test_hierarchy() :
     for i in T.get_internal_nodes() :
         some_leafs = set( T.get_leafs( i ) )
         assert_true( some_leafs <= all_leafs )
+
+def test_adjacency() :
+    T = SuchTree( test_tree )
+    aj, leaf_ids = T.adjacency( T.root ).values()
+    leaf_ids = list( leaf_ids )
+    for node in T.leafs.values() + list(T.get_internal_nodes() ):
+        if node == T.root : continue # skip the root node
+        parent = T.get_parent( node )
+        distance = T.distance( node, parent )
+        i,j = leaf_ids.index( node ), leaf_ids.index( parent )
+        print node, parent, ':', i, j, ' :: ', aj[i,j], distance
