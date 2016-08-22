@@ -1,15 +1,1 @@
-(((Mordella detracta,((Adoxia cheesemani,Adoxia obscura),Zorion minutum),(Hoplocneme sp.,Rhopalomerus sp.)),(Asilis pilicomis,Cyphon sp.)),
-((Lasioglossum A,(Leioproctus maritimus,Leioproctus fulvescens,Leioproctus A,Leioproctus D)),
-(((Pasiphila inductata,Argyrophenga janitae),Eudonia sabulosella),
-((((((((Avibrissina isolata,Avibrissina n. Sp.),Erythronychia aliena,Gracilicera setosa,(Heteria appendiculata,Heteria plebeia),Mallochomacquartia setiventris,
-(Neotachina n. sp.,Neotachina obtusa),(Occisor n. sp.,Occisor versutus),Peremptor modica,(Procissio near_kumarensis,Proscissio cana,Proscissio kumarensis,
-Proscissio lateralis),(Protohystricia huttoni,Protohystricia orientalis),Veluta albicincta,(Zealandotachina nigrifemorata,Zealandotachina varipes)),Calliphora quadrimaculata),(Muscidae_sp,Musc_sp)),((Cheilosia fulvipes,Cheilosia sp.),Helophilus hochstetteri,Lepidomyia decessum,(Melangyna novaezelandiae,Melangyna ortas,Melangyna sp.),
-Pilinasica cingulata,Xylota montana)),(Empididae_sp,Dolichopodidae_sp)),Apsonia muscaria),Eulalia sp.))));
-
-
-
-
-
-
-
-
+((((((Adoxia_cheesemani:1,Adoxia_obscura:1)1:1,Zorion_minutum:1)1:1,(Hoplocneme_sp.:1,Rhopalomerus_sp.:1)1:1)0:0,Mordella_detracta:1)1:1,(Asilis_pilicomis:1,Cyphon_sp.:1)1:1)1:1,((Lasioglossum_A:1,(((Leioproctus_A:1,Leioproctus_D:1)0:0,Leioproctus_fulvescens:1)0:0,Leioproctus_maritimus:1)1:1)1:1,(((Pasiphila_inductata:1,Argyrophenga_janitae:1)1:1,Eudonia_sabulosella:1)1:1,(((((((((((((((((Veluta_albicincta:1,(Zealandotachina_nigrifemorata:1,Zealandotachina_varipes:1)1:1)0:0,(Protohystricia_huttoni:1,Protohystricia_orientalis:1)1:1)0:0,(((Proscissio_kumarensis:1,Proscissio_lateralis:1)0:0,Proscissio_cana:1)0:0,Procissio_near_kumarensis:1)1:1)0:0,Peremptor_modica:1)0:0,(Occisor_n._sp.:1,Occisor_versutus:1)1:1)0:0,(Neotachina_n._sp.:1,Neotachina_obtusa:1)1:1)0:0,Mallochomacquartia_setiventris:1)0:0,(Heteria_appendiculata:1,Heteria_plebeia:1)1:1)0:0,Gracilicera_setosa:1)0:0,Erythronychia_aliena:1)0:0,(Avibrissina_isolata:1,Avibrissina_n._Sp.:1)1:1)1:1,Calliphora_quadrimaculata:1)1:1,(Muscidae_sp:1,Musc_sp:1)1:1)1:1,(((((Pilinasica_cingulata:1,Xylota_montana:1)0:0,((Melangyna_ortas:1,Melangyna_sp.:1)0:0,Melangyna_novaezelandiae:1)1:1)0:0,Lepidomyia_decessum:1)0:0,Helophilus_hochstetteri:1)0:0,(Cheilosia_fulvipes:1,Cheilosia_sp.:1)1:1)1:1)1:1,(Empididae_sp:1,Dolichopodidae_sp:1)1:1)1:1,Apsonia_muscaria:1)1:1,Eulalia_sp.:1)1:1)1:1)1:1);

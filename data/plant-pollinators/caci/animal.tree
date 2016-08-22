@@ -1,7 +1,1 @@
-((Zenaida asiatica, Columba squamosa),((Todus mexicanus, Melanerpes portoricensis),(((Vireo altiloquous,Vireo flavirostris,Vireo latimeri),((Tyrannus caudifasciatus,Tyrannus dominicensis),Myarchus antillarum)),
-((Icterus dominicensis,(Euphonia musica,(((Dendroica caerulescens,Dendroica tigrina),(Spindalis portoricensis,Nesospingus speculiferus)),
-(Coereba flaveola,(Tiaris bicolor,Loxigilla portoricensis))))),Margarops fuscatus))));
-
-
-
-
+((Zenaida_asiatica:1,Columba_squamosa:1)1:1,((Todus_mexicanus:1,Melanerpes_portoricensis:1)1:1,((((Vireo_flavirostris:1,Vireo_latimeri:1)0:0,Vireo_altiloquous:1)1:1,((Tyrannus_caudifasciatus:1,Tyrannus_dominicensis:1)1:1,Myarchus_antillarum:1)1:1)1:1,((Icterus_dominicensis:1,(Euphonia_musica:1,(((Dendroica_caerulescens:1,Dendroica_tigrina:1)1:1,(Spindalis_portoricensis:1,Nesospingus_speculiferus:1)1:1)1:1,(Coereba_flaveola:1,(Tiaris_bicolor:1,Loxigilla_portoricensis:1)1:1)1:1)1:1)1:1)1:1,Margarops_fuscatus:1)1:1)1:1)1:1);

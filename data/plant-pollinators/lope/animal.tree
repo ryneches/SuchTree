@@ -1,4 +1,1 @@
-((Gorilla gorilla: 5.0000000000E+02,Pan troglodytes: 5.0000000000E+02): 5.0000000000E+02,(Colobus satanas:
- 8.0000000000E+02,((Cercopithecus cephus: 3.0000000000E+02,Cercopithecus nictitans: 3.0000000000E+02,Cercopithecus pogonias:
- 3.0000000000E+02): 3.0000000000E+02,(Mandrillus sphinx: 4.0000000000E+02,Cercocebus albigena: 4.0000000000E+02
-): 2.0000000000E+02): 2.0000000000E+02): 2.0000000000E+02): 0.0000000000E+00;
+((Gorilla_gorilla:500,Pan_troglodytes:500)1:500,(Colobus_satanas:800,(((Cercopithecus_nictitans:300,Cercopithecus_pogonias:300)0:0,Cercopithecus_cephus:300)1:300,(Mandrillus_sphinx:400,Cercocebus_albigena:400)1:200)1:200)1:200);

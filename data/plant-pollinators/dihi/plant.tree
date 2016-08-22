@@ -1,3 +1,1 @@
-(Ranunculus_acris,(Lychnis_flos-cucculi,(Lathyrus_pratensis,(Vicia_cracca,Vicia_sativa),(Trifolium_dubium,Trifolium_pratense,Trifolium_repens),Lotus_corniculatus),((Prunella_vulgaris,Plantago_lanceolata),(Achillea_millefolium,Leucanthemum_vulgare,Cirsium_arvense,Taraxacum_officinale,Hypochoeris_radicata,Centaurea_nigra))));
-
-
+(Ranunculus_acris:1,(((((((Trifolium_pratense:1,Trifolium_repens:1)0:0,Trifolium_dubium:1)1:1,Lotus_corniculatus:1)0:0,(Vicia_cracca:1,Vicia_sativa:1)1:1)0:0,Lathyrus_pratensis:1)1:1,((Prunella_vulgaris:1,Plantago_lanceolata:1)1:1,(((((Hypochoeris_radicata:1,Centaurea_nigra:1)0:0,Taraxacum_officinale:1)0:0,Cirsium_arvense:1)0:0,Leucanthemum_vulgare:1)0:0,Achillea_millefolium:1)1:1)1:1)0:0,Lychnis_flos-cucculi:1)1:1);

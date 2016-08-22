@@ -1,7 +1,1 @@
-(((((((Anthophora alluaudi,Eucera gracilipes,Apis mellifera,Melecta curvispina),(Megachile canariensis,Osmia canariensis,Anthidium manicatum)),((Hyleaus canariensis,Colletes dimidiatus),Andrena wollestoni),(Lasioglossum viride,Lasioglossum actifrons,Lasioglossum chalcodes)),Tachysphex unicolor),(Dermasothes gracile,
-(Euodynerus reflexus,Leptochilus eatoni))),Gasteruption_sp),
-((Cyclyrius webbianus,Macroglossum stellatarum),
-(((((((Geron hesperidon,Lucilia sericata),Stomorhina_lunata),(Linnaemyia soror,Estheria simonyi,Tachinidae sp.,Peleteria ruficornis,Tachina canariensis)),Drosophila_sp),(Eristalis tenax,Scaeva albomaculata,Nyctia lugubris)),(Anastoechus latifrons,Anthrax anthrax,Cephalodromia  sp)),Bibio elmoi)));
-
-
-
+((((((((Hyleaus_canariensis:1,Colletes_dimidiatus:1)1:1,Andrena_wollestoni:1)1:1,((Lasioglossum_actifrons:1,Lasioglossum_chalcodes:1)0:0,Lasioglossum_viride:1)1:1)0:0,((((Apis_mellifera:1,Melecta_curvispina:1)0:0,Eucera_gracilipes:1)0:0,Anthophora_alluaudi:1)1:1,((Osmia_canariensis:1,Anthidium_manicatum:1)0:0,Megachile_canariensis:1)1:1)1:1)1:1,Tachysphex_unicolor:1)1:1,(Dermasothes_gracile:1,(Euodynerus_reflexus:1,Leptochilus_eatoni:1)1:1)1:1)1:1,Gasteruption_sp:1)1:1,((Cyclyrius_webbianus:1,Macroglossum_stellatarum:1)1:1,(((((((Geron_hesperidon:1,Lucilia_sericata:1)1:1,Stomorhina_lunata:1)1:1,((((Peleteria_ruficornis:1,Tachina_canariensis:1)0:0,Tachinidae_sp.:1)0:0,Estheria_simonyi:1)0:0,Linnaemyia_soror:1)1:1)1:1,Drosophila_sp:1)1:1,((Scaeva_albomaculata:1,Nyctia_lugubris:1)0:0,Eristalis_tenax:1)1:1)1:1,((Anthrax_anthrax:1,Cephalodromia__sp:1)0:0,Anastoechus_latifrons:1)1:1)1:1,Bibio_elmoi:1)1:1)1:1);

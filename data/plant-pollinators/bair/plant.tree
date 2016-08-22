@@ -1,3 +1,1 @@
-(Smilax_rotundifolia,Lindera_benzoin,((Vitis_spp.,(Celastrus_orbiculatus,Rhus_radicans)),(Cornus_florida,Lonicera_japonica)));
-
-
+((Lindera_benzoin:1,((Vitis_spp.:1,(Celastrus_orbiculatus:1,Rhus_radicans:1)1:1)1:1,(Cornus_florida:1,Lonicera_japonica:1)1:1)1:1)0:0,Smilax_rotundifolia:1);

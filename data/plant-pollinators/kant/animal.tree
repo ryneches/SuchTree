@@ -1,14 +1,1 @@
-(((((((((((Icterus auratus: 1.0000000000E+00,Icterus gularis: 1.0000000000E+00): 1.0000000000E+00,Icterus chrysater:
- 2.0000000000E+00): 2.0000000000E+00,(Icterus mesomelas : 1.0000000000E+00,Icterus prosthemelas: 1.0000000000E+00
-): 3.0000000000E+00): 1.0000000000E+00,Dives dives: 5.0000000000E+00): 1.0000000000E+00,
-Saltator atriceps: 6.0000000000E+00): 2.0000000000E+00,(Euphonia affinis: 1.0000000000E+00,Euphonia hirundinacea:
- 1.0000000000E+00): 7.0000000000E+00): 1.0000000000E+00,Turdus grayi: 9.0000000000E+00):
- 3.0000000000E+00,(Psilorhinus morio: 2.0000000000E+00,(Cissilopha yucatanica: 1.0000000000E+00,Cyanocorax yncas:
- 1.0000000000E+00): 1.0000000000E+00): 1.0000000000E+01): 6.0000000000E+00,(Cotinga amabilis:
- 5.0000000000E+00,(((Megarynchus pitangua: 1.0000000000E+00,Tyrannus melancholicus: 1.0000000000E+00):
- 2.0000000000E+00,Pitangus sulphuratus: 3.0000000000E+00,Myiozetetes similis: 3.0000000000E+00): 1.0000000000E+00,
-Tityra semifasciata: 4.0000000000E+00): 1.0000000000E+00): 1.3000000000E+01): 7.0000000000E+00,(
-(Centurus aurifrons: 1.0000000000E+00,Centurus pygmaeus: 1.0000000000E+00): 2.0000000000E+00,(Pteroglossus torguatus:
- 1.0000000000E+00,Ramphastos sulfuratus: 1.0000000000E+00): 2.0000000000E+00): 2.2000000000E+01,
-Trogon citreolus: 2.5000000000E+01,(Aratinga astec: 1.0000000000E+00,Amazona albifrons: 1.0000000000E+00):
- 2.4000000000E+01): 1.0000000000E+00,Ortalis vetula: 2.6000000000E+01): 0.0000000000E+00;
+((((Trogon_citreolus:25,(Aratinga_astec:1,Amazona_albifrons:1)1:24)0:0,((Centurus_aurifrons:1,Centurus_pygmaeus:1)1:2,(Pteroglossus_torguatus:1,Ramphastos_sulfuratus:1)1:2)1:22)0:0,(((((((((Icterus_auratus:1,Icterus_gularis:1)1:1,Icterus_chrysater:2)1:2,(Icterus_mesomelas:1,Icterus_prosthemelas:1)1:3)1:1,Dives_dives:5)1:1,Saltator_atriceps:6)1:2,(Euphonia_affinis:1,Euphonia_hirundinacea:1)1:7)1:1,Turdus_grayi:9)1:3,(Psilorhinus_morio:2,(Cissilopha_yucatanica:1,Cyanocorax_yncas:1)1:1)1:10)1:6,(Cotinga_amabilis:5,(((Pitangus_sulphuratus:3,Myiozetetes_similis:3)0:0,(Megarynchus_pitangua:1,Tyrannus_melancholicus:1)1:2)1:1,Tityra_semifasciata:4)1:1)1:13)1:7)1:1,Ortalis_vetula:26);

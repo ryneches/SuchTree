@@ -1,8 +1,1 @@
-(((Coereba flaveola: 5.0000000000E+00,((Thraupis episcopus: 1.0000000000E+00,Thraupis palmarum: 1.0000000000E+00):
- 3.0000000000E+00,(Tangara guttata: 2.0000000000E+00,(Tangara mexicana: 1.0000000000E+00,Tangara gyrola:
- 1.0000000000E+00): 1.0000000000E+00): 2.0000000000E+00): 1.0000000000E+00):
- 7.0000000000E+00,(((Cyanerpes caeruleus: 1.0000000000E+00,Cyanerpes cyaneus: 1.0000000000E+00):
- 1.0000000000E+00,Dacnis cayana: 2.0000000000E+00): 1.0000000000E+00,Chlorophanes spiza: 3.0000000000E+00
-): 9.0000000000E+00,((Tachyphonus rufus: 1.0000000000E+00,Tachyphonus luctuosus: 1.0000000000E+00):
- 1.0000000000E+00,Ramphocelus carbo: 2.0000000000E+00): 1.0000000000E+01): 1.0000000000E+00,
-Euphonia violacea: 1.3000000000E+01): 0.0000000000E+00;
+((((((Cyanerpes_caeruleus:1,Cyanerpes_cyaneus:1)1:1,Dacnis_cayana:2)1:1,Chlorophanes_spiza:3)1:9,((Tachyphonus_rufus:1,Tachyphonus_luctuosus:1)1:1,Ramphocelus_carbo:2)1:10)0:0,(Coereba_flaveola:5,((Thraupis_episcopus:1,Thraupis_palmarum:1)1:3,(Tangara_guttata:2,(Tangara_mexicana:1,Tangara_gyrola:1)1:1)1:2)1:1)1:7)1:1,Euphonia_violacea:13);

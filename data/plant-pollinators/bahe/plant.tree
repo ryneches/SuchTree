@@ -1,3 +1,1 @@
-(((Trillium_undulatum,(Maianthemum_canadense,Medeola_virginiana,Clintonia_borealis)),Cypripedium_acaule),(Oxalis_montana,(Cornus_canadensis,(Trientalis_borealis,(Pyrola_secunda,Chimaphila_umbellata)),(Aralia_nudicaulis,Linnaea_borealis))));
-
-
+(((Trillium_undulatum:1,((Medeola_virginiana:1,Clintonia_borealis:1)0:0,Maianthemum_canadense:1)1:1)1:1,Cypripedium_acaule:1)1:1,(Oxalis_montana:1,(((Trientalis_borealis:1,(Pyrola_secunda:1,Chimaphila_umbellata:1)1:1)1:1,(Aralia_nudicaulis:1,Linnaea_borealis:1)1:1)0:0,Cornus_canadensis:1)1:1)1:1);

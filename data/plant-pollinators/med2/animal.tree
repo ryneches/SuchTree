@@ -1,14 +1,1 @@
-(((Curculionidae_sp,(Coccinelidae sp1,Coccinelidae sp2,Coccinelidae sp3,Eriopis cf. conexa),(Epicauta sp.,Moredllidae_sp)),(Cantharidae_sp,Buprestidae_sp)),
-((((((Alloscirtetica herbsti,Apis mellifera,(Centris muralis,Centris sp.),Diadasia patagonica,Svastrides zebra,Chalepogenus caeruleus),
-(Anthidium rubriceps,Megachile sp3,Megachile sp4)),(Colletes lycii,(Arhysosage bifasciata,Callonychium mandibulare,Psaenythia rufipes)),
-(Augochloropsis sp.,(Caenohalictus sp1,Caenohalictus sp2),(Dialictus sp1,Dialictus sp2))),(Ammophila sp.,Oxybelus sp.,Prionyx sp.,Sphecidae sp.)),(cf. Entypus sp.,(Hypodinerus sp3,Eumenidae sp))),
-(((Vanessa cf. cardui,Tatochila sp.),Geometridae_sp),
-((((((((Tachinidae sp4,Tachinidae sp5,Tachinidae sp6),((cf. Microcerella sp.,Sarcophagidae sp.),(Compsomyiops fulvicrura,Calliphoridae sp2))),(Anthomyiidae sp2,
-(Muscidae sp1,Muscidae sp2,Muscidae sp3,Muscidae sp4))),(Tephritidae_sp,(cf. Notiphila sp.,Ephydridae sp.))),(Alipumilio sp,(Carposcalis punctulata,Carposcalis saltana),cf. Toxomerus sp.,(Copestylum aricia,Copestylum sp2),(Eristalis bogotensis,Eristalis tenax),Ocyptamus meridionalis,Scaeva occidentalis,Syrphidae sp3)),Empididae_sp),Thyridanthrax sp4),
-(Bibionidae sp1,Bibionidae sp2)))));
-
-
-
-
-
-
+(((((((Coccinelidae_sp3:1,Eriopis_cf._conexa:1)0:0,Coccinelidae_sp2:1)0:0,Coccinelidae_sp1:1)1:1,(Epicauta_sp.:1,Moredllidae_sp:1)1:1)0:0,Curculionidae_sp:1)1:1,(Cantharidae_sp:1,Buprestidae_sp:1)1:1)1:1,((((((Colletes_lycii:1,((Callonychium_mandibulare:1,Psaenythia_rufipes:1)0:0,Arhysosage_bifasciata:1)1:1)1:1,(((Caenohalictus_sp1:1,Caenohalictus_sp2:1)1:1,(Dialictus_sp1:1,Dialictus_sp2:1)1:1)0:0,Augochloropsis_sp.:1)1:1)0:0,((((((Svastrides_zebra:1,Chalepogenus_caeruleus:1)0:0,Diadasia_patagonica:1)0:0,(Centris_muralis:1,Centris_sp.:1)1:1)0:0,Apis_mellifera:1)0:0,Alloscirtetica_herbsti:1)1:1,((Megachile_sp3:1,Megachile_sp4:1)0:0,Anthidium_rubriceps:1)1:1)1:1)1:1,(((Prionyx_sp.:1,Sphecidae_sp.:1)0:0,Oxybelus_sp.:1)0:0,Ammophila_sp.:1)1:1)1:1,(cf._Entypus_sp.:1,(Hypodinerus_sp3:1,Eumenidae_sp:1)1:1)1:1)1:1,(((Vanessa_cf._cardui:1,Tatochila_sp.:1)1:1,Geometridae_sp:1)1:1,(((((((((Tachinidae_sp5:1,Tachinidae_sp6:1)0:0,Tachinidae_sp4:1)1:1,((cf._Microcerella_sp.:1,Sarcophagidae_sp.:1)1:1,(Compsomyiops_fulvicrura:1,Calliphoridae_sp2:1)1:1)1:1)1:1,(Anthomyiidae_sp2:1,(((Muscidae_sp3:1,Muscidae_sp4:1)0:0,Muscidae_sp2:1)0:0,Muscidae_sp1:1)1:1)1:1)1:1,(Tephritidae_sp:1,(cf._Notiphila_sp.:1,Ephydridae_sp.:1)1:1)1:1)1:1,(((((((Scaeva_occidentalis:1,Syrphidae_sp3:1)0:0,Ocyptamus_meridionalis:1)0:0,(Eristalis_bogotensis:1,Eristalis_tenax:1)1:1)0:0,(Copestylum_aricia:1,Copestylum_sp2:1)1:1)0:0,cf._Toxomerus_sp.:1)0:0,(Carposcalis_punctulata:1,Carposcalis_saltana:1)1:1)0:0,Alipumilio_sp:1)1:1)1:1,Empididae_sp:1)1:1,Thyridanthrax_sp4:1)1:1,(Bibionidae_sp1:1,Bibionidae_sp2:1)1:1)1:1)1:1)1:1);

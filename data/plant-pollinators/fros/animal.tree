@@ -1,5 +1,1 @@
-(Tauraco porphyrocephalus: 1.0000000000E+03,((Bycanistes buccinator: 6.0000000000E+02,(Pogoniulus bilineatus: 4.0000000000E+02,Buccanodon leucotis:
- 4.0000000000E+02): 2.0000000000E+02): 2.0000000000E+02,(Zosterops pallidus: 7.0000000000E+02,(
-Pycnonotus barbatus: 6.0000000000E+02,(Cholorocichla flaviventris: 5.0000000000E+02,Andropadus importunus: 5.0000000000E+02):
- 1.0000000000E+02): 1.0000000000E+02): 1.0000000000E+02): 2.0000000000E+02):
- 0.0000000000E+00;
+(Tauraco_porphyrocephalus:1000,((Bycanistes_buccinator:600,(Pogoniulus_bilineatus:400,Buccanodon_leucotis:400)1:200)1:200,(Zosterops_pallidus:700,(Pycnonotus_barbatus:600,(Cholorocichla_flaviventris:500,Andropadus_importunus:500)1:100)1:100)1:100)1:200);

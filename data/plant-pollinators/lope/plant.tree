@@ -1,3 +1,1 @@
-((Elaeis_guineensis,Marantochloa),(Pycnanthus_angolensis,Xylopia),(Ongokea_gore,(((Pentadesma_butyracea_sp1,Pentadesma_butyracea_sp2),((Berlinia_bracteosa,Pentaclethra_2species,(Detarium_macrocarpum_sp1,Detarium_macrocarpum_sp2),Tetrapleura_tetraptera),(Ficus_12species,(Milicia_excelsa_sp1,Milicia_excelsa_sp2)))),(Duboscia_macrocarpa,Pseudospondias_longifolia))));
-
-
+(((Pycnanthus_angolensis:1,Xylopia:1)1:1,(Ongokea_gore:1,(((Pentadesma_butyracea_sp1:1,Pentadesma_butyracea_sp2:1)1:1,(((((Detarium_macrocarpum_sp1:1,Detarium_macrocarpum_sp2:1)1:1,Tetrapleura_tetraptera:1)0:0,Pentaclethra_2species:1)0:0,Berlinia_bracteosa:1)1:1,(Ficus_12species:1,(Milicia_excelsa_sp1:1,Milicia_excelsa_sp2:1)1:1)1:1)1:1)1:1,(Duboscia_macrocarpa:1,Pseudospondias_longifolia:1)1:1)1:1)1:1)0:0,(Elaeis_guineensis:1,Marantochloa:1)1:1);

@@ -1,12 +1,1 @@
-(((((Eumenes sp.,Polistes subsericeus,(Polybia ignobilis,Polybia occidentalis),Parancistrocerus sp.),Campsomeris dorsata),Pepsis sp.),((Cerceris sp.,Sphex melanopus),((Augochlora sp.,Augochlora sp. 3,Augochlorensis callichroa,Auhochloropsis vesta,Augochloropsis sp.,(Dialictus sp.,Dialictus sp. 7),Pereirapis sp. 2),((Anthidiellum sp.,Athidium sp.,Megachile sp.),(Ceratina sp.,Exomalopsis sp.,Xylocopa fibriata,Apis mellifera,Euglossa cordata,Eulaema nigrita,Melipona favosa,Trigona angustula))))),
-(((Junonia evarete,Eurema nise),(Heliopetes arsalte,Pyrgus oileus orcus,Cogia calchas,Pompeius amblyspoila,(Urbanus dorantes,Urbanus simplicius))),
-((((Phaenica sp.,(Chrysagria duodecimpuntata,Helicobia morionella,Sarcophagula occidua)),Cyclocephala gravis),(Ornidia obesa,Palpada pusio,(Toxomerus floralis,Toxomerus marginatus))),Tabanus sp)));
-
-
-
-
-
-
-
-
-
+((((((((Polybia_ignobilis:1,Polybia_occidentalis:1)1:1,Parancistrocerus_sp.:1)0:0,Polistes_subsericeus:1)0:0,Eumenes_sp.:1)1:1,Campsomeris_dorsata:1)1:1,Pepsis_sp.:1)1:1,((Cerceris_sp.:1,Sphex_melanopus:1)1:1,((((((((Dialictus_sp.:1,Dialictus_sp._7:1)1:1,Pereirapis_sp._2:1)0:0,Augochloropsis_sp.:1)0:0,Auhochloropsis_vesta:1)0:0,Augochlorensis_callichroa:1)0:0,Augochlora_sp._3:1)0:0,Augochlora_sp.:1)1:1,(((Athidium_sp.:1,Megachile_sp.:1)0:0,Anthidiellum_sp.:1)1:1,(((((((Melipona_favosa:1,Trigona_angustula:1)0:0,Eulaema_nigrita:1)0:0,Euglossa_cordata:1)0:0,Apis_mellifera:1)0:0,Xylocopa_fibriata:1)0:0,Exomalopsis_sp.:1)0:0,Ceratina_sp.:1)1:1)1:1)1:1)1:1)1:1,(((Junonia_evarete:1,Eurema_nise:1)1:1,((((Pompeius_amblyspoila:1,(Urbanus_dorantes:1,Urbanus_simplicius:1)1:1)0:0,Cogia_calchas:1)0:0,Pyrgus_oileus_orcus:1)0:0,Heliopetes_arsalte:1)1:1)1:1,((((Phaenica_sp.:1,((Helicobia_morionella:1,Sarcophagula_occidua:1)0:0,Chrysagria_duodecimpuntata:1)1:1)1:1,Cyclocephala_gravis:1)1:1,((Palpada_pusio:1,(Toxomerus_floralis:1,Toxomerus_marginatus:1)1:1)0:0,Ornidia_obesa:1)1:1)1:1,Tabanus_sp:1)1:1)1:1);

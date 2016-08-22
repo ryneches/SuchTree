@@ -1,6 +1,1 @@
-(Protaetia aurichalcea,
-((Apoidae sp.,(Apis mellifera,Xylocopa fenestrata)),
-((Hesperidae sp.,(Leptotes pirithous,Phalantha phalantha)),
-(Stratiomyidae sp.,((Syrphid sp.,Ornidia obesa),(Lucilia sp.,Muscidae sp))))));
-
-
+(Protaetia_aurichalcea:1,((Apoidae_sp.:1,(Apis_mellifera:1,Xylocopa_fenestrata:1)1:1)1:1,((Hesperidae_sp.:1,(Leptotes_pirithous:1,Phalantha_phalantha:1)1:1)1:1,(Stratiomyidae_sp.:1,((Syrphid_sp.:1,Ornidia_obesa:1)1:1,(Lucilia_sp.:1,Muscidae_sp:1)1:1)1:1)1:1)1:1)1:1);

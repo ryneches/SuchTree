@@ -1,7 +1,1 @@
-(Columba squamosa,((((Vireo altiloquous,Vireo latimeri),((Tyrannus caudifasciatus,Tyrannus dominicensis),Myarchus antillarum)),
-(Molothrus bonariensis,(Euphonia musica,(Spindalis portoricensis,
-(Coereba flaveola,Loxigilla portoricensis))))),(Margarops fuscatus,Turdus plumbeus)));
-
-
-
-
+(Columba_squamosa:1,((((Vireo_altiloquous:1,Vireo_latimeri:1)1:1,((Tyrannus_caudifasciatus:1,Tyrannus_dominicensis:1)1:1,Myarchus_antillarum:1)1:1)1:1,(Molothrus_bonariensis:1,(Euphonia_musica:1,(Spindalis_portoricensis:1,(Coereba_flaveola:1,Loxigilla_portoricensis:1)1:1)1:1)1:1)1:1)1:1,(Margarops_fuscatus:1,Turdus_plumbeus:1)1:1)1:1);

@@ -1,3 +1,1 @@
-((Caltha_palustris,Papaver_radicatum),(Cerastium_alpinum,((Oxytropis_arctica,Astragalus_alpinus),(Geum_rossii,Potentilla_vahliana,Dryas_integrifolia)),(Arnica_alpina,Taraxacum_sp.,Petasites_frigidus)));
-
-
+((Caltha_palustris:1,Papaver_radicatum:1)1:1,((((Oxytropis_arctica:1,Astragalus_alpinus:1)1:1,((Potentilla_vahliana:1,Dryas_integrifolia:1)0:0,Geum_rossii:1)1:1)1:1,((Taraxacum_sp.:1,Petasites_frigidus:1)0:0,Arnica_alpina:1)1:1)0:0,Cerastium_alpinum:1)1:1);

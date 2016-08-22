@@ -1,3 +1,1 @@
-(Chamissoa_altissima,(Trema_micrantha,((Cabralea_canjerana,Trichilia_clauseni),Protium_heptaphyllum)),(Ixora_venulosa,Dendropanax_cuneatum));
-
-
+(((Trema_micrantha:1,((Cabralea_canjerana:1,Trichilia_clauseni:1)1:1,Protium_heptaphyllum:1)1:1)1:1,(Ixora_venulosa:1,Dendropanax_cuneatum:1)1:1)0:0,Chamissoa_altissima:1);

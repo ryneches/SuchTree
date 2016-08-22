@@ -1,3 +1,1 @@
-((Uvularia_sessilifolia,Trillium_catesbei,Erythronium_umbilicatum),(((Podophyllum_peltatum,(Thalictrum_thalictroides,Hepatica_americana)),Sanguinaria_canadensis),((Stellaria_pubera,Claytonia_virginica),(Tiarella_cordifolia,(Viola_papilionacea,(Cardamine_angustata,Aesculus_sylvatica))))));
-
-
+(((Trillium_catesbei:1,Erythronium_umbilicatum:1)0:0,Uvularia_sessilifolia:1)1:1,(((Podophyllum_peltatum:1,(Thalictrum_thalictroides:1,Hepatica_americana:1)1:1)1:1,Sanguinaria_canadensis:1)1:1,((Stellaria_pubera:1,Claytonia_virginica:1)1:1,(Tiarella_cordifolia:1,(Viola_papilionacea:1,(Cardamine_angustata:1,Aesculus_sylvatica:1)1:1)1:1)1:1)1:1)1:1);

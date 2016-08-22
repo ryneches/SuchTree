@@ -1,3 +1,1 @@
-(Freesia_,((Beta_maritima,Silene_vulgaris),(Lotus_corniculatus,Reseda_luteola),((Crithmum_maritimum,Daucus_carota),(Azorina_vidalii,(Leucanthemum_vulgare,Solidago_sempervirens)))));
-
-
+(Freesia_:1,(((Lotus_corniculatus:1,Reseda_luteola:1)1:1,((Crithmum_maritimum:1,Daucus_carota:1)1:1,(Azorina_vidalii:1,(Leucanthemum_vulgare:1,Solidago_sempervirens:1)1:1)1:1)1:1)0:0,(Beta_maritima:1,Silene_vulgaris:1)1:1)1:1);

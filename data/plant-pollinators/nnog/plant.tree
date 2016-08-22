@@ -1,3 +1,1 @@
-((Taxus_baccata,(Juniperus_phoenicea,Juniperus_communis,Juniperus_sabina,Juniperus_oxycedrus)),(Berberis_vulgaris,((Paeonia_officinalis,(((Sorbus_aria,Crataegus_monogyna,Rosa_canina,Prunus_mahaleb,Amelanchier_ovalis),(Rhamnus_myrtifolius,Rhamnus_saxatilis)),Daphne_laureola)),(Hedera_helix,(Lonicera_arborea,Lonicera_splendida)))));
-
-
+((Taxus_baccata:1,(((Juniperus_sabina:1,Juniperus_oxycedrus:1)0:0,Juniperus_communis:1)0:0,Juniperus_phoenicea:1)1:1)1:1,(Berberis_vulgaris:1,((Paeonia_officinalis:1,((((((Prunus_mahaleb:1,Amelanchier_ovalis:1)0:0,Rosa_canina:1)0:0,Crataegus_monogyna:1)0:0,Sorbus_aria:1)1:1,(Rhamnus_myrtifolius:1,Rhamnus_saxatilis:1)1:1)1:1,Daphne_laureola:1)1:1)1:1,(Hedera_helix:1,(Lonicera_arborea:1,Lonicera_splendida:1)1:1)1:1)1:1)1:1);

@@ -1,6 +1,1 @@
-(((Apis mellifera,Bombus griseocollis,Ceratina metallica,Nomada luteola),(Augochlora pura,Augochlorella striata,(Dialictus coeruleus,Dialictus oblongus,Dialictus obscurus,Dialictus imitatus,Dialictus zephyrus),Halictus confusus,Lasioglossum forbesii)),
-((Andrena carlini,Andrena irgeniae,Andrena forbesii,Andrena mansonii,Andrena rugosa,Andrena cressoni,Andrena miserabilis,Andrena erythronii,Andrena personata,Andrena sp),
-(Helophilus fasciatus,Melanostoma sp.,Metasyrphus americanus,(Syrphus torvus,Syrphus sp),Eristalis dimidiatus,Carposcalis obscura,Mesograpta marginata,Xylota nemorum)));
-
-
-
+(((((Ceratina_metallica:1,Nomada_luteola:1)0:0,Bombus_griseocollis:1)0:0,Apis_mellifera:1)1:1,((((Halictus_confusus:1,Lasioglossum_forbesii:1)0:0,((((Dialictus_imitatus:1,Dialictus_zephyrus:1)0:0,Dialictus_obscurus:1)0:0,Dialictus_oblongus:1)0:0,Dialictus_coeruleus:1)1:1)0:0,Augochlorella_striata:1)0:0,Augochlora_pura:1)1:1)1:1,((((((((((Andrena_personata:1,Andrena_sp:1)0:0,Andrena_erythronii:1)0:0,Andrena_miserabilis:1)0:0,Andrena_cressoni:1)0:0,Andrena_rugosa:1)0:0,Andrena_mansonii:1)0:0,Andrena_forbesii:1)0:0,Andrena_irgeniae:1)0:0,Andrena_carlini:1)1:1,(((((((Mesograpta_marginata:1,Xylota_nemorum:1)0:0,Carposcalis_obscura:1)0:0,Eristalis_dimidiatus:1)0:0,(Syrphus_torvus:1,Syrphus_sp:1)1:1)0:0,Metasyrphus_americanus:1)0:0,Melanostoma_sp.:1)0:0,Helophilus_fasciatus:1)1:1)1:1);

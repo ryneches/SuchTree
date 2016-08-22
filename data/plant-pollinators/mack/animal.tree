@@ -1,17 +1,1 @@
-(((Macropygia amboinensis: 1.0000000000E+00,Reinwardtoena reinwardtii: 1.0000000000E+00): 6.0000000000E+00,((Ducula rufigaster:
- 1.0000000000E+00,Ducula zoeae: 1.0000000000E+00): 4.0000000000E+00,((Ptilinopus pulchellus:
- 2.0000000000E+00,Ptilinopus rivoli: 2.0000000000E+00,Ptilinopus ornatus: 2.0000000000E+00): 1.0000000000E+00,
-Gymnophaps albertisii: 3.0000000000E+00): 2.0000000000E+00): 2.0000000000E+00): 2.4000000000E+01,(
-(Ailuroedus buccoides: 1.9000000000E+01,(((Meliphaga: 2.0000000000E+00,(Melilestes megarhycus: 1.0000000000E+00,Glycichaera fallax:
- 1.0000000000E+00): 1.0000000000E+00): 3.0000000000E+00,((Xanthotis polygramma: 1.0000000000E+00,
-Xanthotis flaviventer: 1.0000000000E+00): 1.0000000000E+00,Philemon buceroides: 2.0000000000E+00): 3.0000000000E+00
-): 1.3000000000E+01,((Melanocharis nigra: 1.1000000000E+01,((Coracina schisticeps: 2.0000000000E+00,Coracina boyeri:
- 2.0000000000E+00,Coracina melaena: 2.0000000000E+00): 8.0000000000E+00,((Pitohui kirhocephalus:
- 1.0000000000E+00,Oriolus szalayi: 1.0000000000E+00): 6.0000000000E+00,(Cracticus cassicus: 5.0000000000E+00
-,(Dicrurus hottentottus: 4.0000000000E+00,(((Cicinnurus magnificus: 1.0000000000E+00,Parasidea raggiana: 1.0000000000E+00):
- 1.0000000000E+00,Parotia lawesii: 2.0000000000E+00): 1.0000000000E+00,Manucodia chalybata: 3.0000000000E+00
-): 1.0000000000E+00): 1.0000000000E+00): 2.0000000000E+00): 3.0000000000E+00):
- 1.0000000000E+00): 1.0000000000E+00,Mino dumonti: 1.2000000000E+01): 6.0000000000E+00):
- 1.0000000000E+00): 4.0000000000E+00,Microdynamis parva: 2.3000000000E+01,Rhyticeros plicatus: 2.3000000000E+01,
-(Cacatua galerita: 1.0000000000E+00,Cyclopsittaca gulielmiterti: 1.0000000000E+00): 2.2000000000E+01):
- 8.0000000000E+00): 0.0000000000E+00;
+(((Macropygia_amboinensis:1,Reinwardtoena_reinwardtii:1)1:6,((Ducula_rufigaster:1,Ducula_zoeae:1)1:4,(((Ptilinopus_rivoli:2,Ptilinopus_ornatus:2)0:0,Ptilinopus_pulchellus:2)1:1,Gymnophaps_albertisii:3)1:2)1:2)1:24,(((Rhyticeros_plicatus:23,(Cacatua_galerita:1,Cyclopsittaca_gulielmiterti:1)1:22)0:0,Microdynamis_parva:23)0:0,(Ailuroedus_buccoides:19,(((Meliphaga:2,(Melilestes_megarhycus:1,Glycichaera_fallax:1)1:1)1:3,((Xanthotis_polygramma:1,Xanthotis_flaviventer:1)1:1,Philemon_buceroides:2)1:3)1:13,((Melanocharis_nigra:11,(((Coracina_boyeri:2,Coracina_melaena:2)0:0,Coracina_schisticeps:2)1:8,((Pitohui_kirhocephalus:1,Oriolus_szalayi:1)1:6,(Cracticus_cassicus:5,(Dicrurus_hottentottus:4,(((Cicinnurus_magnificus:1,Parasidea_raggiana:1)1:1,Parotia_lawesii:2)1:1,Manucodia_chalybata:3)1:1)1:1)1:2)1:3)1:1)1:1,Mino_dumonti:12)1:6)1:1)1:4)1:8);

@@ -1,12 +1,1 @@
-(Zenaidura macroura: 2.0000000000E+01,(((((((((Pipilo erythophtalmus: 2.0000000000E+00,(Zonotrichia albicollis: 1.0000000000E+00,Junco hyemalis:
- 1.0000000000E+00): 1.0000000000E+00): 2.0000000000E+00,(Euphagus carolinus: 1.0000000000E+00,
-Quiscalus quiscula: 1.0000000000E+00): 3.0000000000E+00): 1.0000000000E+00,Dendroica coronata: 5.0000000000E+00
-): 1.0000000000E+00,Cardinalis cardinalis: 6.0000000000E+00): 1.0000000000E+00,Carpodacus purpureus:
- 7.0000000000E+00): 5.0000000000E+00,(((Turdus migratorius: 1.0000000000E+00,Catharus guttata:
- 1.0000000000E+00): 2.0000000000E+00,(Mimus polyglottos: 1.0000000000E+00,Sturnus vulgaris: 1.0000000000E+00
-): 2.0000000000E+00): 1.0000000000E+00,Bombycilla cedrorum: 4.0000000000E+00): 8.0000000000E+00
-): 2.0000000000E+00,(Parus atricapillus: 1.0000000000E+00,Parus bicolor: 1.0000000000E+00):
- 1.3000000000E+01): 1.0000000000E+00,Vireo olivaceus: 1.5000000000E+01): 4.0000000000E+00,((
-Melanerpes carolinensis: 2.0000000000E+00,(Picoides pubescens: 1.0000000000E+00,Picoides villosus: 1.0000000000E+00):
- 1.0000000000E+00): 1.0000000000E+00,Colaptes auratus: 3.0000000000E+00): 1.6000000000E+01):
- 1.0000000000E+00): 0.0000000000E+00;
+(Zenaidura_macroura:20,(((((((((Pipilo_erythophtalmus:2,(Zonotrichia_albicollis:1,Junco_hyemalis:1)1:1)1:2,(Euphagus_carolinus:1,Quiscalus_quiscula:1)1:3)1:1,Dendroica_coronata:5)1:1,Cardinalis_cardinalis:6)1:1,Carpodacus_purpureus:7)1:5,(((Turdus_migratorius:1,Catharus_guttata:1)1:2,(Mimus_polyglottos:1,Sturnus_vulgaris:1)1:2)1:1,Bombycilla_cedrorum:4)1:8)1:2,(Parus_atricapillus:1,Parus_bicolor:1)1:13)1:1,Vireo_olivaceus:15)1:4,((Melanerpes_carolinensis:2,(Picoides_pubescens:1,Picoides_villosus:1)1:1)1:1,Colaptes_auratus:3)1:16)1:1);

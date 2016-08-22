@@ -1,3 +1,1 @@
-(Tamus_communis,((Euonymus_europaeus,((Crataegus_monogyna,Rosa_sp.,Prunus_spinosa,Rubus_sp.),Bryonia_dioica)),(Solanum_dulcamara,(Hedera_helix,(Sambucus_nigra,Lonicera_periclymenum)))));
-
-
+(Tamus_communis:1,((Euonymus_europaeus:1,((((Prunus_spinosa:1,Rubus_sp.:1)0:0,Rosa_sp.:1)0:0,Crataegus_monogyna:1)1:1,Bryonia_dioica:1)1:1)1:1,(Solanum_dulcamara:1,(Hedera_helix:1,(Sambucus_nigra:1,Lonicera_periclymenum:1)1:1)1:1)1:1)1:1);

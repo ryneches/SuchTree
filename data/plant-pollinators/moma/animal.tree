@@ -1,7 +1,1 @@
-(Bombus polaris,
-(((Boloria improba,(Colias hecla,Colias nastes)),Anarta richardsoni),
-(((Boreellus atriceps,Protocalliphora sp.),((Spilogona aesturium,Spilogona almquistii,Spilogona dorsata,Spilogona hurdiana,Spilogona latilamina,Spilogona melanosoma,Spilogona projecta,Spilogona sanctipauli),Eupogonomyia probilofensis)),Rhamphomyia sp.)));
-
-
-
-
+(Bombus_polaris:1,(((Boloria_improba:1,(Colias_hecla:1,Colias_nastes:1)1:1)1:1,Anarta_richardsoni:1)1:1,(((Boreellus_atriceps:1,Protocalliphora_sp.:1)1:1,((((((((Spilogona_projecta:1,Spilogona_sanctipauli:1)0:0,Spilogona_melanosoma:1)0:0,Spilogona_latilamina:1)0:0,Spilogona_hurdiana:1)0:0,Spilogona_dorsata:1)0:0,Spilogona_almquistii:1)0:0,Spilogona_aesturium:1)1:1,Eupogonomyia_probilofensis:1)1:1)1:1,Rhamphomyia_sp.:1)1:1)1:1);

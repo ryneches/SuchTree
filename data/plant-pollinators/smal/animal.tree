@@ -1,16 +1,1 @@
-((Macrodactlyus subspinosus,Cyphon variabilis),
-((((Andrena alleghaniensis,Andrena bradleyi,Andrena carlini,Andrena carolina,Andrena mandibularis,Andrena regularis,Andrena vicina),Colletes inaequalis),Dialictus pilosus,(Apis mellifera,Bombus terricola,(Pyrobombus impatiens,Pyrobombus perplexus,Pyrobombus sandersoni,Pyrobombus ternarius))),
-((Adela purpurea,Thymelicus lineola),
-(Dilophus caurinus,((Hybomitra minuscula,Hybomitra typhus),((Pyrophaena rosarum,Melanostoma sp.,Eristalis dimidiata,(Helophilus latifrons,Helophilus fasciatus,Helophilus laetus),Syritta pipiens,Toxomerus marginatus,Syrphus torvus),Spilogona fatima))))));
-
-
-
-
-
-
-
-
-
-
-
-
+((Macrodactlyus_subspinosus:1,Cyphon_variabilis:1)1:1,(((Dialictus_pilosus:1,((Bombus_terricola:1,(((Pyrobombus_sandersoni:1,Pyrobombus_ternarius:1)0:0,Pyrobombus_perplexus:1)0:0,Pyrobombus_impatiens:1)1:1)0:0,Apis_mellifera:1)1:1)0:0,(((((((Andrena_regularis:1,Andrena_vicina:1)0:0,Andrena_mandibularis:1)0:0,Andrena_carolina:1)0:0,Andrena_carlini:1)0:0,Andrena_bradleyi:1)0:0,Andrena_alleghaniensis:1)1:1,Colletes_inaequalis:1)1:1)1:1,((Adela_purpurea:1,Thymelicus_lineola:1)1:1,(Dilophus_caurinus:1,((Hybomitra_minuscula:1,Hybomitra_typhus:1)1:1,(((((((Toxomerus_marginatus:1,Syrphus_torvus:1)0:0,Syritta_pipiens:1)0:0,((Helophilus_fasciatus:1,Helophilus_laetus:1)0:0,Helophilus_latifrons:1)1:1)0:0,Eristalis_dimidiata:1)0:0,Melanostoma_sp.:1)0:0,Pyrophaena_rosarum:1)1:1,Spilogona_fatima:1)1:1)1:1)1:1)1:1)1:1);

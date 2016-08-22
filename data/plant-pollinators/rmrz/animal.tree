@@ -1,16 +1,1 @@
-((Cyclocephala sp1,Cyclocephala sp2),
-(((((Apis mellifera,(Bombus atratus,Bombus pullatus,Bombus volucelloides),Ceratina sp.,Euglossa sp.,Eulaema meriana,
-Exomalopsis sp.,(Melipona compresipes,Melipona scutellaris),Xylocopa sp.),Hylaeus sp.,(Augochlora sp3,(Augochloropsis sp 0,Augochloropsis sp 2,Augochloropsis sp 3),(Dialictus sp 1,Dialictus sp 2),
-Pereirapsis,Pseudaugochloropsis sp 1)),(Cerciris sp.,Oxybelus sp.,(Sphex ichneumoneus,Sphex sp.),Sticia sp.,Tachites sp.)),(((Brachygastra lecheguana,Montezumia azurescens,Pachodynerus nasidens,(Polistes lanio soikai,Polistes vibex braeceps),
-(Polybia occidentalis,Polybia scrobalis)),Campsomeris sp. ),Pepsis sp.)),
-(((Panoquina bola,Vehilius inca,Pyrrhogige sp.),Calicopis sp),
-((Sarcodexia innota,Cylindromia sp),(Copestylum sp.,Eristalis sp.,Volucella sp.)))));
-
-
-
-
-
-
-
-
-
+((Cyclocephala_sp1:1,Cyclocephala_sp2:1)1:1,(((((Hylaeus_sp.:1,((((Pereirapsis:1,Pseudaugochloropsis_sp_1:1)0:0,(Dialictus_sp_1:1,Dialictus_sp_2:1)1:1)0:0,((Augochloropsis_sp_2:1,Augochloropsis_sp_3:1)0:0,Augochloropsis_sp_0:1)1:1)0:0,Augochlora_sp3:1)1:1)0:0,((((((((Melipona_compresipes:1,Melipona_scutellaris:1)1:1,Xylocopa_sp.:1)0:0,Exomalopsis_sp.:1)0:0,Eulaema_meriana:1)0:0,Euglossa_sp.:1)0:0,Ceratina_sp.:1)0:0,((Bombus_pullatus:1,Bombus_volucelloides:1)0:0,Bombus_atratus:1)1:1)0:0,Apis_mellifera:1)1:1)1:1,((((Sticia_sp.:1,Tachites_sp.:1)0:0,(Sphex_ichneumoneus:1,Sphex_sp.:1)1:1)0:0,Oxybelus_sp.:1)0:0,Cerciris_sp.:1)1:1)1:1,(((((((Polistes_lanio_soikai:1,Polistes_vibex_braeceps:1)1:1,(Polybia_occidentalis:1,Polybia_scrobalis:1)1:1)0:0,Pachodynerus_nasidens:1)0:0,Montezumia_azurescens:1)0:0,Brachygastra_lecheguana:1)1:1,Campsomeris_sp.:1)1:1,Pepsis_sp.:1)1:1)1:1,((((Vehilius_inca:1,Pyrrhogige_sp.:1)0:0,Panoquina_bola:1)1:1,Calicopis_sp:1)1:1,((Sarcodexia_innota:1,Cylindromia_sp:1)1:1,((Eristalis_sp.:1,Volucella_sp.:1)0:0,Copestylum_sp.:1)1:1)1:1)1:1)1:1);

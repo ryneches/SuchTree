@@ -1,3 +1,1 @@
-(Erythronium_,((Isopyrum_,((Dicentra_cu,Dicentra_ca),Sanguinaria_)),(Claytonia_,Dentaria_)));
-
-
+(Erythronium_:1,((Isopyrum_:1,((Dicentra_cu:1,Dicentra_ca:1)1:1,Sanguinaria_:1)1:1)1:1,(Claytonia_:1,Dentaria_:1)1:1)1:1);

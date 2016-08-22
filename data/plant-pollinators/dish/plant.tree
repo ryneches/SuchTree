@@ -1,3 +1,1 @@
-(Orchis_morio,(Ranunculus_acris,(Cerastium_fontanum,((Lathyrus_pratensis,(Trifolium_dubium,Trifolium_repens),Lotus_corniculatus),Filipendula_ulmaria),(Primula_veris,(Galium_verum,(Leucanthemum_vulgare,(Cirsium_arvense,Cirsium_palustre),Taraxacum_officinale,Hypochoeris_radicata,Centaurea_nigra))))));
-
-
+(Orchis_morio:1,(Ranunculus_acris:1,((((((Trifolium_dubium:1,Trifolium_repens:1)1:1,Lotus_corniculatus:1)0:0,Lathyrus_pratensis:1)1:1,Filipendula_ulmaria:1)1:1,(Primula_veris:1,(Galium_verum:1,((((Hypochoeris_radicata:1,Centaurea_nigra:1)0:0,Taraxacum_officinale:1)0:0,(Cirsium_arvense:1,Cirsium_palustre:1)1:1)0:0,Leucanthemum_vulgare:1)1:1)1:1)1:1)0:0,Cerastium_fontanum:1)1:1)1:1);

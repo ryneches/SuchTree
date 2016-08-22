@@ -1,8 +1,1 @@
-((((Pyrrhula pyrrhula: 1.0000000000E+00,Fringilla coelebs: 1.0000000000E+00): 6.0000000000E+00,(((Turdus merula:
- 3.0000000000E+00,Turdus philomelos: 3.0000000000E+00,Turdus iliacus: 3.0000000000E+00,Turdus pilaris:
- 3.0000000000E+00): 1.0000000000E+00,Erithacus rubecula: 4.0000000000E+00): 1.0000000000E+00,
-Sitta europaea: 5.0000000000E+00): 2.0000000000E+00): 5.0000000000E+00,((Sylvia atricapilla:
- 1.0000000000E+00,Aegithalos caudatus: 1.0000000000E+00): 3.0000000000E+00,((Parus palustris:
- 1.0000000000E+00,Parus major: 1.0000000000E+00): 1.0000000000E+00,Parus caeruleus: 2.0000000000E+00
-): 2.0000000000E+00): 8.0000000000E+00): 1.0000000000E+00,Columba palumbus: 1.3000000000E+01
-): 0.0000000000E+00;
+((((Pyrrhula_pyrrhula:1,Fringilla_coelebs:1)1:6,(((((Turdus_iliacus:3,Turdus_pilaris:3)0:0,Turdus_philomelos:3)0:0,Turdus_merula:3)1:1,Erithacus_rubecula:4)1:1,Sitta_europaea:5)1:2)1:5,((Sylvia_atricapilla:1,Aegithalos_caudatus:1)1:3,((Parus_palustris:1,Parus_major:1)1:1,Parus_caeruleus:2)1:2)1:8)1:1,Columba_palumbus:13);

@@ -1,3 +1,1 @@
-(Dracaena_concinna,((Pemphis_acidula,((Turnera_angustifolia,Passiflora_suberosa),(Suriana_maritima,Leucaena_leucocephala)),(Thespesia_populnea,Hibiscus_tiliaceus)),((Tournefortia_argentea,Morinda_citrifolia,(Stachytarpheta_jamaicensis,Ipomoea_macrantha)),(Gastonia_mauritiana,Scaevola_sericea))));
-
-
+(Dracaena_concinna:1,(((((Turnera_angustifolia:1,Passiflora_suberosa:1)1:1,(Suriana_maritima:1,Leucaena_leucocephala:1)1:1)1:1,(Thespesia_populnea:1,Hibiscus_tiliaceus:1)1:1)0:0,Pemphis_acidula:1)1:1,(((Morinda_citrifolia:1,(Stachytarpheta_jamaicensis:1,Ipomoea_macrantha:1)1:1)0:0,Tournefortia_argentea:1)1:1,(Gastonia_mauritiana:1,Scaevola_sericea:1)1:1)1:1)1:1);

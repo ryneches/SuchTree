@@ -1,3 +1,1 @@
-(Ranunculus_lyalii,(Hoheria_glabrata,(((Galium_propinquum,Gentiana_corymbifera),(Parahebe_lyalii,Hebe_odora,Ourisia_macrocarpa)),((Wahlenbergia_albomarginata,Pratia_angulata),(Helichrysum_bellidioides,(Celmisia_coriacea,Celmisia_armstrongii),(Senecio_bellidioides,Senecio_bidwilli,Senecio_scorzoneroides),Cassinia_vauvilliersi,Chrysanthemum_leucanthemum,Craspedia_uniflora)))));
-
-
+(Ranunculus_lyalii:1,(Hoheria_glabrata:1,(((Galium_propinquum:1,Gentiana_corymbifera:1)1:1,((Hebe_odora:1,Ourisia_macrocarpa:1)0:0,Parahebe_lyalii:1)1:1)1:1,((Wahlenbergia_albomarginata:1,Pratia_angulata:1)1:1,(((((Chrysanthemum_leucanthemum:1,Craspedia_uniflora:1)0:0,Cassinia_vauvilliersi:1)0:0,((Senecio_bidwilli:1,Senecio_scorzoneroides:1)0:0,Senecio_bellidioides:1)1:1)0:0,(Celmisia_coriacea:1,Celmisia_armstrongii:1)1:1)0:0,Helichrysum_bellidioides:1)1:1)1:1)1:1)1:1);

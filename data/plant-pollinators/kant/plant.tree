@@ -1,3 +1,1 @@
-(Neea_psychotrioides,(Ficus_padifolia,(Metopium_browneii,Talisia_olivaeformis)),Ehretia_tinifolia);
-
-
+(((Ficus_padifolia:1,(Metopium_browneii:1,Talisia_olivaeformis:1)1:1)1:1,Ehretia_tinifolia:1)0:0,Neea_psychotrioides:1);

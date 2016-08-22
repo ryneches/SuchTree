@@ -1,15 +1,1 @@
-((((Byturus aestivus,(Meligethes spp.,Epuraea depressa),Olibrus aeneus),Dasytes plumbeus,(Anaspis flava,Anaspis rufilabris Gyllenhal,Anaspis frontalis),(Leptura rubra,Grammoptera ruficornis),(Rhynchites germanicus,(Ceuthorhynchus pollinarius,Strophosoma capitatus))),Cantharidae sp),
-((Bombus hortorum,Bombus pascuorum),
-(((((Aphantopus hyperantus,Maniola jurtina),Polyommatus icarus),Adscita statices),Nemophora degrella),
-((((((Muscidae_sp,Tachinidae_sp),(((Opomyzidae_sp,Clusiidae_sp),Chloropidae_sp),Lauxaniidae_sp)),(Chrysogaster solstialis,Episyrphus balteatus,Eumerus tuberculatus,Melanostoma scalare,Neocnemodon sp.,Rhingia campestris,Volucella pellucens)),(Empididae_sp,Dolichopodidae_sp)),Scatopsidae_sp),(Bibionidae_sp,Mycetophilidae_sp)))));
-
-
-
-
-
-
-
-
-
-
-
+(((((((Leptura_rubra:1,Grammoptera_ruficornis:1)1:1,(Rhynchites_germanicus:1,(Ceuthorhynchus_pollinarius:1,Strophosoma_capitatus:1)1:1)1:1)0:0,((Anaspis_rufilabris_Gyllenhal:1,Anaspis_frontalis:1)0:0,Anaspis_flava:1)1:1)0:0,Dasytes_plumbeus:1)0:0,(((Meligethes_spp.:1,Epuraea_depressa:1)1:1,Olibrus_aeneus:1)0:0,Byturus_aestivus:1)1:1)1:1,Cantharidae_sp:1)1:1,((Bombus_hortorum:1,Bombus_pascuorum:1)1:1,(((((Aphantopus_hyperantus:1,Maniola_jurtina:1)1:1,Polyommatus_icarus:1)1:1,Adscita_statices:1)1:1,Nemophora_degrella:1)1:1,((((((Muscidae_sp:1,Tachinidae_sp:1)1:1,(((Opomyzidae_sp:1,Clusiidae_sp:1)1:1,Chloropidae_sp:1)1:1,Lauxaniidae_sp:1)1:1)1:1,((((((Rhingia_campestris:1,Volucella_pellucens:1)0:0,Neocnemodon_sp.:1)0:0,Melanostoma_scalare:1)0:0,Eumerus_tuberculatus:1)0:0,Episyrphus_balteatus:1)0:0,Chrysogaster_solstialis:1)1:1)1:1,(Empididae_sp:1,Dolichopodidae_sp:1)1:1)1:1,Scatopsidae_sp:1)1:1,(Bibionidae_sp:1,Mycetophilidae_sp:1)1:1)1:1)1:1)1:1);

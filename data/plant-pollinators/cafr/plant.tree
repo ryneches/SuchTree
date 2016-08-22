@@ -1,3 +1,1 @@
-((Roystonea_borinquena,Musa_acuminata),(Ocotea_floribunda,Piper_amalaga),(Phytolacca_rivinoides,((Miconia_laevigatta,Miconia_prasina),((Alchornea_latifolia,Casearia_sylvestris),(Inga_vera,(Cecropia_schreberiana,Ficus_spp.),Momordica_charantia)),((Citrus_sinensis,Murraya_paniculata),Guarea_guidonia)),((Tournefortia_hisutissima,Coffea_arabica,Solanum_rugosum),(Schefflera_morototoni,Dendropanax_arboreus))));
-
-	
+(((Ocotea_floribunda:1,Piper_amalaga:1)1:1,((((((Alchornea_latifolia:1,Casearia_sylvestris:1)1:1,(((Cecropia_schreberiana:1,Ficus_spp.:1)1:1,Momordica_charantia:1)0:0,Inga_vera:1)1:1)1:1,((Citrus_sinensis:1,Murraya_paniculata:1)1:1,Guarea_guidonia:1)1:1)0:0,(Miconia_laevigatta:1,Miconia_prasina:1)1:1)1:1,(((Coffea_arabica:1,Solanum_rugosum:1)0:0,Tournefortia_hisutissima:1)1:1,(Schefflera_morototoni:1,Dendropanax_arboreus:1)1:1)1:1)0:0,Phytolacca_rivinoides:1)1:1)0:0,(Roystonea_borinquena:1,Musa_acuminata:1)1:1);

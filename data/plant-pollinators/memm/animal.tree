@@ -1,11 +1,1 @@
-((Cantharidae sp1,Curculionidae sp1),
-((Symphyta,Parasitica,(((Bombus lapidarius,Bombus muscorum,Bombus pascuorum,Bombus terrestris),Psithyrus sp.1,Apis mellifera),Formicidae_sp1)),
-((((((Maniola jurtina,Aglais urticae),Polyommatus icarus),Pieris brassicae),Thymelicus sylvestris),Incurvariidae_sp1),
-(((Tephritidae_sp1,Conipidae sp. 1),(Eriothrix rufomaculata,Scatophaga stercoraria)),(Chrysotoxum bicinctum,(Episyrphus arbustorum,Episyrphus balteatus),(Eristalis pertinax,Eristalis tenax),(Helophilus pendulus,Helophilus trivittatus),
-(Melanostoma mellinum,Melanostoma scalare),Meliscaeva auricollis,Metasyrphus corollae,(Platycheirus albimanus,Platycheirus clypeatus,Platycheirus scutatus),
-Rhingia campestris,Scaeva pyrastri,Sphaerophoria scripta,Syritta pipiens,(Syrphus ribesii,Syrphus vitripennis),Xanthogramma pedissequum)))));
-
-
-
-Observations --
-Symphyta and Parasitica added as a politomy at the base of Hymenoptera.
+((Cantharidae_sp1:1,Curculionidae_sp1:1)1:1,(((Parasitica:1,(((Psithyrus_sp.1:1,Apis_mellifera:1)0:0,(((Bombus_pascuorum:1,Bombus_terrestris:1)0:0,Bombus_muscorum:1)0:0,Bombus_lapidarius:1)1:1)1:1,Formicidae_sp1:1)1:1)0:0,Symphyta:1)1:1,((((((Maniola_jurtina:1,Aglais_urticae:1)1:1,Polyommatus_icarus:1)1:1,Pieris_brassicae:1)1:1,Thymelicus_sylvestris:1)1:1,Incurvariidae_sp1:1)1:1,(((Tephritidae_sp1:1,Conipidae_sp._1:1)1:1,(Eriothrix_rufomaculata:1,Scatophaga_stercoraria:1)1:1)1:1,((((((((((((((Syrphus_ribesii:1,Syrphus_vitripennis:1)1:1,Xanthogramma_pedissequum:1)0:0,Syritta_pipiens:1)0:0,Sphaerophoria_scripta:1)0:0,Scaeva_pyrastri:1)0:0,Rhingia_campestris:1)0:0,((Platycheirus_clypeatus:1,Platycheirus_scutatus:1)0:0,Platycheirus_albimanus:1)1:1)0:0,Metasyrphus_corollae:1)0:0,Meliscaeva_auricollis:1)0:0,(Melanostoma_mellinum:1,Melanostoma_scalare:1)1:1)0:0,(Helophilus_pendulus:1,Helophilus_trivittatus:1)1:1)0:0,(Eristalis_pertinax:1,Eristalis_tenax:1)1:1)0:0,(Episyrphus_arbustorum:1,Episyrphus_balteatus:1)1:1)0:0,Chrysotoxum_bicinctum:1)1:1)1:1)1:1)1:1);

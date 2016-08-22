@@ -1,3 +1,1 @@
-((Ranumculus_sulphureus,Papaver_radicatum),((Polygonum_viviparum,(Cerastium_alpinum,Stellaria_longipes)),((Saxifraga_oppositifolia,Saxifraga_hirculus),((Salix_arctica,(Potentilla_nivea,Dryas_integrifolia)),(Erysimum_pallasii,Lesquerella_arctica,Draba_sp.))),(Cassiope_tetragona,((Pedicularis_arctica,Pedicularis_capitata),(Arnica_alpina,Taraxacum_arctogenum,(Erigeron_eriocephalus,Erigeron_compositus))))));
-
-
+((Ranumculus_sulphureus:1,Papaver_radicatum:1)1:1,((((Saxifraga_oppositifolia:1,Saxifraga_hirculus:1)1:1,((Salix_arctica:1,(Potentilla_nivea:1,Dryas_integrifolia:1)1:1)1:1,((Lesquerella_arctica:1,Draba_sp.:1)0:0,Erysimum_pallasii:1)1:1)1:1)1:1,(Cassiope_tetragona:1,((Pedicularis_arctica:1,Pedicularis_capitata:1)1:1,((Taraxacum_arctogenum:1,(Erigeron_eriocephalus:1,Erigeron_compositus:1)1:1)0:0,Arnica_alpina:1)1:1)1:1)1:1)0:0,(Polygonum_viviparum:1,(Cerastium_alpinum:1,Stellaria_longipes:1)1:1)1:1)1:1);

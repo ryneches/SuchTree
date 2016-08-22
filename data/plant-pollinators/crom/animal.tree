@@ -1,3 +1,1 @@
-((Columba leucomela: 5.0000000000E+02,Macropygia amboinensis: 5.0000000000E+02): 5.0000000000E+02,(Ducula spilorrhoa:
- 5.0000000000E+02,(Ptilinopus magnificus: 3.0000000000E+02,Ptilinopus regina: 3.0000000000E+02,Ptilinopus superbus:
- 3.0000000000E+02): 2.0000000000E+02): 5.0000000000E+02): 0.0000000000E+00;
+((Columba_leucomela:500,Macropygia_amboinensis:500)1:500,(Ducula_spilorrhoa:500,((Ptilinopus_regina:300,Ptilinopus_superbus:300)0:0,Ptilinopus_magnificus:300)1:200)1:500);

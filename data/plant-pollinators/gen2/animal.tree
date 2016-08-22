@@ -1,13 +1,1 @@
-((((((Turdus rufiventris: 1.0000000000E+00,Turdus amaurochalinus: 1.0000000000E+00): 1.1000000000E+01,(Saltator similis:
- 1.0000000000E+01,Habia rubica: 1.0000000000E+01,(((((Ramphocelus carbo: 1.0000000000E+00,Tachyphonus coronatus: 1.0000000000E+00),Dacnis cayana:
- 2.0000000000E+00),Conirostrum speciosum:3.0000000000E+00),Thlypopsis sordida: 4.0000000000E+00): 4.0000000000E+00,((Tangara cayana: 2.0000000000E+00,(Thraupis sayaca:
- 1.0000000000E+00,Pipraeidea melanonota: 1.0000000000E+00): 1.0000000000E+00): 1.0000000000E+00,
-Coereba flaveola: 3.0000000000E+00): 5.0000000000E+00): 2.0000000000E+00): 2.0000000000E+00):
- 3.0000000000E+00,(Cyanocorax cristatellus: 2.0000000000E+00,(Vireo olivaceus: 1.0000000000E+00,Cyclarhis gujanensis:
- 1.0000000000E+00): 1.0000000000E+00): 1.3000000000E+01): 1.0000000000E+01,((
-Chiroxiphia caudata: 1.0000000000E+00,Manacus manacus: 1.0000000000E+00): 8.0000000000E+00,Tityra cayana:
- 9.0000000000E+00,(Sirystes sibilator: 6.0000000000E+00,Elaenia flavogaster: 6.0000000000E+00,Myiophobus fasciatus:
- 6.0000000000E+00,(Pitangus sulphuratus: 3.0000000000E+00,(Myiodynastes maculatus: 2.0000000000E+00,(Tyrannus savanna:
- 1.0000000000E+00,Tyrannus melancholicus: 1.0000000000E+00): 1.0000000000E+00): 1.0000000000E+00):
- 3.0000000000E+00): 3.0000000000E+00): 1.6000000000E+01): 1.0000000000E+00,Ramphastos toco:
- 2.6000000000E+01): 1.0000000000E+00,Penelope superciliaris: 2.7000000000E+01): 0.0000000000E+00;
+((((((Turdus_rufiventris:1,Turdus_amaurochalinus:1)1:11,((Habia_rubica:10,(((((Ramphocelus_carbo:1,Tachyphonus_coronatus:1)1:1,Dacnis_cayana:2)1:1,Conirostrum_speciosum:3)1:1,Thlypopsis_sordida:4)1:4,((Tangara_cayana:2,(Thraupis_sayaca:1,Pipraeidea_melanonota:1)1:1)1:1,Coereba_flaveola:3)1:5)1:2)0:0,Saltator_similis:10)1:2)1:3,(Cyanocorax_cristatellus:2,(Vireo_olivaceus:1,Cyclarhis_gujanensis:1)1:1)1:13)1:10,((Tityra_cayana:9,(((Myiophobus_fasciatus:6,(Pitangus_sulphuratus:3,(Myiodynastes_maculatus:2,(Tyrannus_savanna:1,Tyrannus_melancholicus:1)1:1)1:1)1:3)0:0,Elaenia_flavogaster:6)0:0,Sirystes_sibilator:6)1:3)0:0,(Chiroxiphia_caudata:1,Manacus_manacus:1)1:8)1:16)1:1,Ramphastos_toco:26)1:1,Penelope_superciliaris:27);

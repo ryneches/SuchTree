@@ -1,12 +1,1 @@
-((Unidentified green beetle,Unidentified beetle),
-((((Dielis dorsata,Unidentified Wasp),(Formicidae black ant 3sp.,Formicidae brown ant 2sp.)),((Apis mellifera,Anthophorid,Exomalopsis sp.,Euglossa cordata,(Centris dirrhoda,Centris sp.),Xylocopa sp.),Microbembex monadonta)),
-((((((Leptotes cassius,Strymon columella),((Danaus gilippus,Danaus eresimus),Junonia spp.,Agraulis vanillae)),(Phoebis sennae,Eurema,Ascia josephina),Papilio polydamas),(Polygonus leo,Urbanus proteus,Hylephila phyleus)),Anartia jatrophae),
-(Culex sp,Eristalis vinatorum,Unidentified fly))));
-
-
-
-
-
-
-
-
+((Unidentified_green_beetle:1,Unidentified_beetle:1)1:1,((((Dielis_dorsata:1,Unidentified_Wasp:1)1:1,(Formicidae_black_ant_3sp.:1,Formicidae_brown_ant_2sp.:1)1:1)1:1,(((((((Centris_dirrhoda:1,Centris_sp.:1)1:1,Xylocopa_sp.:1)0:0,Euglossa_cordata:1)0:0,Exomalopsis_sp.:1)0:0,Anthophorid:1)0:0,Apis_mellifera:1)1:1,Microbembex_monadonta:1)1:1)1:1,(((((((Eurema:1,Ascia_josephina:1)0:0,Phoebis_sennae:1)1:1,Papilio_polydamas:1)0:0,((Leptotes_cassius:1,Strymon_columella:1)1:1,((Junonia_spp.:1,Agraulis_vanillae:1)0:0,(Danaus_gilippus:1,Danaus_eresimus:1)1:1)1:1)1:1)1:1,((Urbanus_proteus:1,Hylephila_phyleus:1)0:0,Polygonus_leo:1)1:1)1:1,Anartia_jatrophae:1)1:1,((Eristalis_vinatorum:1,Unidentified_fly:1)0:0,Culex_sp:1)1:1)1:1)1:1);

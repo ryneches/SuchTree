@@ -1,5 +1,1 @@
-(((((Diphyllodes magnificus: 4.0000000000E+02,(Lophorina superba: 3.0000000000E+02,Ptiloris magnificus: 3.0000000000E+02):
- 1.0000000000E+02): 1.0000000000E+02,(Paradisaea raggiana: 4.0000000000E+02,Paradisaea rudolphi: 4.0000000000E+02
-): 1.0000000000E+02): 1.0000000000E+02,Epimachus albertisii: 6.0000000000E+02): 2.0000000000E+02,
-Parotia lawesii: 8.0000000000E+02): 2.0000000000E+02,(Manucodia keraudrenii: 5.0000000000E+02,Manucodia chalybatus:
- 5.0000000000E+02): 5.0000000000E+02): 0.0000000000E+00;
+(((((Diphyllodes_magnificus:400,(Lophorina_superba:300,Ptiloris_magnificus:300)1:100)1:100,(Paradisaea_raggiana:400,Paradisaea_rudolphi:400)1:100)1:100,Epimachus_albertisii:600)1:200,Parotia_lawesii:800)1:200,(Manucodia_keraudrenii:500,Manucodia_chalybatus:500)1:500);

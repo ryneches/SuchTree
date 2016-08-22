@@ -1,3 +1,1 @@
-(Strelitzia_nicholai,(Erianthemum_dregei,(((Bridelia_micrantha,Antidesma_venosum,Dovyalis_longispina),(Trema_orientalis,(Ficus_vogelii,Ficus_natalensis))),(Vepris_undulata,(Trichilia_emetica,Ekebergia_capensis))),((Euclea_natalensis,(Mimusops_caffra,Sideroxylon_inerme)),(Apodytes_dimidiata,Halleria_lucida))));
-
-
+(Strelitzia_nicholai:1,((((((Antidesma_venosum:1,Dovyalis_longispina:1)0:0,Bridelia_micrantha:1)1:1,(Trema_orientalis:1,(Ficus_vogelii:1,Ficus_natalensis:1)1:1)1:1)1:1,(Vepris_undulata:1,(Trichilia_emetica:1,Ekebergia_capensis:1)1:1)1:1)1:1,((Euclea_natalensis:1,(Mimusops_caffra:1,Sideroxylon_inerme:1)1:1)1:1,(Apodytes_dimidiata:1,Halleria_lucida:1)1:1)1:1)0:0,Erianthemum_dregei:1)1:1);

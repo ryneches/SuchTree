@@ -1,11 +1,1 @@
-((((Andrena chrysosceles,Andrena pubescens),(Anthophora plumipes,Apis mellifera,(Bombus hortorum,Bombus lapidarius,Bombus pascuorum,Bombus pratorum,Bombus terr_luc),Psithyrus vest),(Lasioglossum calceatum,Lasioglossum villosulum)),Cephus pygmaeus),
-((((((Pollenia sp,Sarcophaga sp.),Eriothrix rufomaculatus),Scathophaga stercoraria),(Cheilosia bergenstammi,Episyrphus balteatus,(Eristalis intricarius,Eristalis nemorum,Eristalis tenax),Helophilus sp.,Melanostoma sp.,
-Meliscaeva,Platycheirus,Sphaerophoria sp.,Syrphus sp,Tropidia scitta,Volucella bombylans)),Empis livida),
-((Lycaena phlaeas,Maniola jurtina),Panemeria tenebrata)));
-
-
-
-
-
-
-
+(((((((((((Bombus_pratorum:1,Bombus_terr_luc:1)0:0,Bombus_pascuorum:1)0:0,Bombus_lapidarius:1)0:0,Bombus_hortorum:1)1:1,Psithyrus_vest:1)0:0,Apis_mellifera:1)0:0,Anthophora_plumipes:1)1:1,(Lasioglossum_calceatum:1,Lasioglossum_villosulum:1)1:1)0:0,(Andrena_chrysosceles:1,Andrena_pubescens:1)1:1)1:1,Cephus_pygmaeus:1)1:1,((((((Pollenia_sp:1,Sarcophaga_sp.:1)1:1,Eriothrix_rufomaculatus:1)1:1,Scathophaga_stercoraria:1)1:1,((((((((((Tropidia_scitta:1,Volucella_bombylans:1)0:0,Syrphus_sp:1)0:0,Sphaerophoria_sp.:1)0:0,Platycheirus:1)0:0,Meliscaeva:1)0:0,Melanostoma_sp.:1)0:0,Helophilus_sp.:1)0:0,((Eristalis_nemorum:1,Eristalis_tenax:1)0:0,Eristalis_intricarius:1)1:1)0:0,Episyrphus_balteatus:1)0:0,Cheilosia_bergenstammi:1)1:1)1:1,Empis_livida:1)1:1,((Lycaena_phlaeas:1,Maniola_jurtina:1)1:1,Panemeria_tenebrata:1)1:1)1:1);

@@ -1,13 +1,1 @@
-(((((Chrysomelidae sp1,Chrysomelidae sp2),(Curculionidae sp1,Curculionidae sp2)),(Elateridae_sp,(Cantharidae_sp,Lycidae_sp))),(Scarabaeinae sp. 1,Scarabaeinae sp. 2,Scarabaeinae sp. 3,Atrichelaphinis tigrina,Cyrtothyrea marginalis)),
-((((Apis mellifera,(Halictidae sp. 1,Halictidae sp. 2)),(Tiphia sp.,(Hemipepsis hilaris,Pompilidae sp. 2))),Arge sp.),
-((Unid._butterfly,Unid._micromoth),
-(((((((Calliphoridae genus 1,Calliphoridae genus 2,Calliphoridae genus 3),Sarcophaga_sp),((Microphthalma sp. 1,Microphthalma sp. 2),Tachinidae Goniinae, Tachinidae genus 2)),(Musca domestica,Muscidae genus 2) ),(Dacus sp.,(Chloropidae_sp,(Sepsidae sp. 1,Sepsidae sp. 2,Sepsidae sp. 3) ))),(Empididae sp. 1,Empididae sp. 2)),Bibionidae_sp))));
-
- 
-
-
-
- 
-
- 
-
+(((((Chrysomelidae_sp1:1,Chrysomelidae_sp2:1)1:1,(Curculionidae_sp1:1,Curculionidae_sp2:1)1:1)1:1,(Elateridae_sp:1,(Cantharidae_sp:1,Lycidae_sp:1)1:1)1:1)1:1,((((Atrichelaphinis_tigrina:1,Cyrtothyrea_marginalis:1)0:0,Scarabaeinae_sp._3:1)0:0,Scarabaeinae_sp._2:1)0:0,Scarabaeinae_sp._1:1)1:1)1:1,((((Apis_mellifera:1,(Halictidae_sp._1:1,Halictidae_sp._2:1)1:1)1:1,(Tiphia_sp.:1,(Hemipepsis_hilaris:1,Pompilidae_sp._2:1)1:1)1:1)1:1,Arge_sp.:1)1:1,((Unid._butterfly:1,Unid._micromoth:1)1:1,((((((((Calliphoridae_genus_2:1,Calliphoridae_genus_3:1)0:0,Calliphoridae_genus_1:1)1:1,Sarcophaga_sp:1)1:1,((Tachinidae_Goniinae:1,Tachinidae_genus_2:1)0:0,(Microphthalma_sp._1:1,Microphthalma_sp._2:1)1:1)1:1)1:1,(Musca_domestica:1,Muscidae_genus_2:1)1:1)1:1,(Dacus_sp.:1,(Chloropidae_sp:1,((Sepsidae_sp._2:1,Sepsidae_sp._3:1)0:0,Sepsidae_sp._1:1)1:1)1:1)1:1)1:1,(Empididae_sp._1:1,Empididae_sp._2:1)1:1)1:1,Bibionidae_sp:1)1:1)1:1)1:1);

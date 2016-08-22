@@ -1,3 +1,1 @@
-((Pandanus_,_Zingiberaceae),((Myristica_,(Elmerrillia_,Uvaria_)),Piper_),(((Cissus_hypoglauca,C._aristata),(Syzygium_,(((Sloanea_aberrans,S._sogerensis),(Homalanthus_,Glochidion_,Endospermum_,Aporusa_)),(Ficus_drupacea,Ficus_gul,Ficus_odoardi,Ficus_202,Ficus_181,Ficus_217,Ficus_246,Ficus_275,Ficus_371)),(Sterculia_,(Aglaia_,Chisocheton_,Dysoxylum_)))),(Canthium_,(Gastonia_,Schefflera_))));
-
-
+((((Myristica_:1,(Elmerrillia_:1,Uvaria_:1)1:1)1:1,Piper_:1)1:1,(((Cissus_hypoglauca:1,C._aristata:1)1:1,(((((Sloanea_aberrans:1,S._sogerensis:1)1:1,(((Endospermum_:1,Aporusa_:1)0:0,Glochidion_:1)0:0,Homalanthus_:1)1:1)1:1,((((((((Ficus_275:1,Ficus_371:1)0:0,Ficus_246:1)0:0,Ficus_217:1)0:0,Ficus_181:1)0:0,Ficus_202:1)0:0,Ficus_odoardi:1)0:0,Ficus_gul:1)0:0,Ficus_drupacea:1)1:1)1:1,(Sterculia_:1,((Chisocheton_:1,Dysoxylum_:1)0:0,Aglaia_:1)1:1)1:1)0:0,Syzygium_:1)1:1)1:1,(Canthium_:1,(Gastonia_:1,Schefflera_:1)1:1)1:1)1:1)0:0,(Pandanus_:1,_Zingiberaceae:1)1:1);

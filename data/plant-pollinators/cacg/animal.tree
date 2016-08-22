@@ -1,7 +1,1 @@
-((Zenaida zenaida, Columba squamosa),(Todus mexicanus,((Vireo altiloquous,Tyrannus dominicensis),
-(((Icterus dominicensis,Molothrus bonariensis),(Euphonia musica,((Spindalis portoricensis,Nesospingus speculiferus),
-(Coereba flaveola,(Tiaris bicolor,Loxigilla portoricensis))))),(Margarops fuscatus,Turdus plumbeus)))));
-
-
-
-
+((Zenaida_zenaida:1,Columba_squamosa:1)1:1,(Todus_mexicanus:1,((Vireo_altiloquous:1,Tyrannus_dominicensis:1)1:1,(((Icterus_dominicensis:1,Molothrus_bonariensis:1)1:1,(Euphonia_musica:1,((Spindalis_portoricensis:1,Nesospingus_speculiferus:1)1:1,(Coereba_flaveola:1,(Tiaris_bicolor:1,Loxigilla_portoricensis:1)1:1)1:1)1:1)1:1)1:1,(Margarops_fuscatus:1,Turdus_plumbeus:1)1:1)1:1)1:1)1:1);
