@@ -1,10 +1,10 @@
-,Aglaia,Aporusa,Canthium,Chisocheton,Cissus hypoglauca,C. aristata,Dysoxylum,Elmerrillia,Endospermum,Ficus drupacea,Ficus gul,F. odoardi,Ficus 202,Ficus 181,Ficus 217,Ficus 246,Ficus 275,Ficus 371,Gastonia,Glochidion,Homalanthus,Myristica,Pandanus,Piper,Schefflera,Sloanea aberrans,S. sogerensis,Sterculia,Syzygium,Uvaria,Zingiberaceae
-CCM,0,0,0,1,0,1,0,1,0,0,25,19,1,0,0,1,8,1,0,0,0,0,0,0,0,0,0,0,0,0,1
-TMA,0,0,0,7,13,0,1,8,2,2,155,55,2,7,9,4,40,6,17,0,4,3,0,1,0,0,2,0,8,2,0
-MRI,0,0,0,16,1,0,0,0,0,0,0,2,0,0,0,0,0,0,7,0,8,0,0,0,1,0,0,0,0,0,0
-BBS,0,0,0,5,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-SBP,0,1,0,23,1,0,0,2,9,0,1,1,0,0,0,0,2,4,0,0,17,0,2,0,0,0,2,0,0,0,0
-LSW,1,0,0,10,2,0,1,2,2,0,12,6,0,2,0,0,1,4,22,0,10,3,0,0,47,0,2,1,1,0,0
-MBP,0,0,1,13,4,1,12,12,15,0,8,8,1,0,0,2,5,0,58,1,104,1,5,0,2,2,4,0,0,0,2
-RBP,3,0,0,13,5,0,17,2,2,0,45,20,0,0,0,0,13,3,24,0,75,1,2,0,0,0,1,0,1,0,0
-BBP,0,0,0,3,3,0,0,0,0,0,1,0,0,1,0,0,4,7,3,0,23,0,1,0,10,0,0,0,0,0,1
+,Chisocheton,Cissus_hypoglauca,Elmerrillia,Ficus_gul,Ficus_odoardi,Ficus_275,Ficus_371,Homalanthus,Gastonia,Endospermum,S._sogerensis,Dysoxylum,Myristica,Pandanus,Schefflera,Ficus_202,Ficus_181,Ficus_246,Syzygium,Zingiberaceae,Aglaia,C._aristata,Aporusa,Canthium,Ficus_drupacea,Ficus_217,Glochidion,Piper,Sloanea_aberrans,Sterculia,Uvaria
+Manucodia_keraudrenii,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,1,1,0,1,0,0,1
+Diphyllodes_magnificus,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0
+Parotia_lawesii,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0
+Paradisaea_raggiana,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+Lophorina_superba,1,1,1,1,1,1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Paradisaea_rudolphi,1,1,0,1,0,1,1,1,1,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Manucodia_chalybatus,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Ptiloris_magnificus,1,1,0,0,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Epimachus_albertisii,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

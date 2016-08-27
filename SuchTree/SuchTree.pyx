@@ -176,17 +176,22 @@ cdef class SuchTree :
         def __get__( self ) :
             return self.root
     
-    def get_parent( self, id ) :
+    def get_parent( self, query ) :
         """
         Return the id of the parent of a given node. Will accept node
         id or leaf name.
-        """
-        if type(id) is str :
+        """        
+        if type(query) is str :
             try :
-                id = self.leafs[ id ]
+                node_id = self.leafs[ query ]
             except KeyError :
-                raise Exception( 'Leaf name not found : ' + id )
-        return self.data[id].parent
+                raise Exception( 'leaf name not found : ' + query )
+        else :
+            node_id = int( query )
+        if node_id < 0 or node_id >= self.length :
+            raise Exception( 'node id out of bounds : ', node_id )
+
+        return self.data[node_id].parent
     
     def get_children( self, id ) :
         """
@@ -333,6 +338,12 @@ cdef class SuchTree :
                 b = self.leafs[b]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + b )
+        
+        if a < 0 or a >= self.length :
+            raise Exception( 'node id out of bounds :', a )
+        if b < 0 or b >= self.length :
+            raise Exception( 'node id out of bounds :', b )
+        
         return self._distance( a, b ) 
     
     @cython.boundscheck(False)
@@ -461,7 +472,9 @@ cdef class SuchTree :
         for i in xrange( n ) :
             node_id  = self.np_buffer[i]
             parent   = self.data[node_id].parent
+            if parent == -1 : continue
             distance = self.data[node_id].distance
+            if distance == 0 : distance += 1e-30
             for j,k in enumerate( self.np_buffer[:n] ) :
                 if k == parent :
                     ajmatrix[ i,j ] = distance

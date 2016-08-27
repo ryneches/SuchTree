@@ -1,17 +1,17 @@
-,Sp. 0,Alchornea latifolia           ,Anthurium scandens            ,Byrsonima coriacea            ,Casearia arborea              ,Cecropia schreberiana         ,Clusia rosea                  ,Cupania americana             ,Dendropanax arboreus          ,Ficus spp.                    ,Guarea guidonia               ,Henriettea fascicularis       ,Inga laurina                  ,Inga vera                     ,Miconia affinis               ,Miconia prasina               ,Miconia serrulata             ,Myrcia splendens              ,Myrcine coriacea              ,Ocotea leucoxylon             ,Phoradendron spp.             ,Psychotria berteroana         ,Schefflera morototoni         ,Tournefortia hisutissima      ,vine                          
-Coereba flaveola              ,0,0,0,0,0,7,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0
-Columba squamosa              ,0,0,0,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,3,0,0
-Euphonia musica               ,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0
-FINCHE                        ,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Icterus dominicensis          ,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-Loxigilla portoricensis       ,0,5,1,1,2,10,0,7,0,0,34,4,0,1,4,7,0,2,0,0,1,1,0,0,0
-Margarops fuscatus            ,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0
-Molothrus bonariensis         ,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Nesospingus speculiferus      ,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Spindalis portoricensis       ,0,0,0,1,0,12,0,0,1,0,0,1,0,2,0,15,1,5,1,0,0,3,14,1,1
-Tiaris bicolor                ,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Todus mexicanus               ,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Turdus plumbeus               ,0,0,0,0,0,3,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,10,0,0
-Tyrannus dominicensis         ,0,0,0,0,1,0,0,6,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Vireo altiloquous             ,1,1,0,2,1,1,7,3,0,0,6,0,0,0,0,0,0,0,1,0,0,0,1,0,0
-Zenaida zenaida               ,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+,Sp._0,Alchornea_latifolia,Anthurium_scandens,Byrsonima_coriacea,Casearia_arborea,Cecropia_schreberiana,Clusia_rosea,Cupania_americana,Dendropanax_arboreus,Ficus_spp.,Guarea_guidonia,Henriettea_fascicularis,Inga_laurina,Inga_vera,Miconia_affinis,Miconia_prasina,Miconia_serrulata,Myrcia_splendens,Myrcine_coriacea,Ocotea_leucoxylon,Phoradendron_spp.,Psychotria_berteroana,Schefflera_morototoni,Tournefortia_hisutissima,vine
+Coereba_flaveola______________,0,0,0,0,0,7,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0
+Columba_squamosa______________,0,0,0,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,3,0,0
+Euphonia_musica_______________,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0
+FINCHE________________________,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Icterus_dominicensis__________,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+Loxigilla_portoricensis_______,0,5,1,1,2,10,0,7,0,0,34,4,0,1,4,7,0,2,0,0,1,1,0,0,0
+Margarops_fuscatus____________,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+Molothrus_bonariensis_________,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Nesospingus_speculiferus______,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Spindalis_portoricensis_______,0,0,0,1,0,12,0,0,1,0,0,1,0,2,0,15,1,5,1,0,0,3,14,1,1
+Tiaris_bicolor________________,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Todus_mexicanus_______________,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Turdus_plumbeus_______________,0,0,0,0,0,3,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,10,0,0
+Tyrannus_dominicensis_________,0,0,0,0,1,0,0,6,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vireo_altiloquous_____________,1,1,0,2,1,1,7,3,0,0,6,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+Zenaida_zenaida_______________,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

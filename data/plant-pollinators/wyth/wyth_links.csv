@@ -1,15 +1,15 @@
-,Sambucus nigra,Crataegus monogyna,Rubus sp.,Bryonia dioica,Hedera helix,Euonymus europaeus,Solanum dulcamara,Prunus spinosa,Rosa sp.,Lonicera periclymenum,Tamus communis
-Turdus merula,1,1,1,0,1,1,0,1,1,0,0
-Parus palustris,1,0,1,1,0,1,1,0,0,1,1
-Turdus philomelos,1,1,1,0,1,0,0,0,0,0,0
-Parus caeruleus,1,0,1,1,0,0,0,0,0,1,0
-Columba palumbus,1,1,0,0,1,0,0,0,1,0,0
-Turdus iliacus,1,1,0,0,0,0,0,1,0,0,0
-Sylvia atricapilla,1,0,0,0,1,0,1,0,0,0,0
-Erithacus rubecula,1,0,0,0,1,1,0,0,0,0,0
-Pyrrhula pyrrhula,1,0,1,1,0,0,0,0,0,0,0
-Turdus pilaris,0,1,0,0,0,0,0,1,0,0,0
-Parus major,1,0,0,1,0,0,0,0,0,0,0
-Sitta europaea,1,0,0,0,0,0,1,0,0,0,0
-Fringilla coelebs,1,0,0,1,0,0,0,0,0,0,0
-Aegithalos caudatus,0,0,0,0,0,1,0,0,0,0,0
+,Sambucus_nigra,Crataegus_monogyna,Rubus_sp.,Bryonia_dioica,Hedera_helix,Euonymus_europaeus,Solanum_dulcamara,Prunus_spinosa,Rosa_sp.,Lonicera_periclymenum,Tamus_communis
+Turdus_merula,1,1,1,0,1,1,0,1,1,0,0
+Parus_palustris,1,0,1,1,0,1,1,0,0,1,1
+Turdus_philomelos,1,1,1,0,1,0,0,0,0,0,0
+Parus_caeruleus,1,0,1,1,0,0,0,0,0,1,0
+Columba_palumbus,1,1,0,0,1,0,0,0,1,0,0
+Turdus_iliacus,1,1,0,0,0,0,0,1,0,0,0
+Sylvia_atricapilla,1,0,0,0,1,0,1,0,0,0,0
+Erithacus_rubecula,1,0,0,0,1,1,0,0,0,0,0
+Pyrrhula_pyrrhula,1,0,1,1,0,0,0,0,0,0,0
+Turdus_pilaris,0,1,0,0,0,0,0,1,0,0,0
+Parus_major,1,0,0,1,0,0,0,0,0,0,0
+Sitta_europaea,1,0,0,0,0,0,1,0,0,0,0
+Fringilla_coelebs,1,0,0,1,0,0,0,0,0,0,0
+Aegithalos_caudatus,0,0,0,0,0,1,0,0,0,0,0

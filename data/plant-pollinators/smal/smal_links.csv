@@ -1,35 +1,35 @@
-,Salix fragilis,Chamaedaphne calyculata,Nemopanthus mucronata,Andromeda glaucophylla,Kalmia polifolia,Smilacina trifolia,Vaccinium myrtilloides,Aronia melanocarpa,Ledum groenlandicum,Gaylussacia baccata,Kalmia angustifolia,Calopogon pulchellus,Spiraea alba
-Adela purpurea,1,0,0,0,0,0,0,0,0,0,0,0,0
-Thymelicus lineola,0,0,0,0,0,0,0,0,0,0,0,1,1
-Macrodactlyus subspinosus,0,0,0,0,0,0,0,0,0,0,0,0,1
-Cyphon variabilis,1,0,0,0,0,0,0,0,0,0,0,0,0
-Hybomitra minuscula,0,0,0,0,0,0,0,0,0,0,0,0,1
-Hybomitra typhus,0,0,0,0,0,0,0,0,0,1,1,0,0
-Dilophus caurinus,0,0,1,0,0,0,0,0,0,0,0,0,0
-Spilogona fatima,1,1,1,0,0,1,0,0,0,0,0,0,0
-Shaerophoria sp.,0,1,0,0,0,1,0,1,1,0,0,0,0
-Pyrophaena rosarum,0,0,1,0,0,1,0,0,1,0,1,0,1
-Melanostoma sp.,0,1,1,0,0,1,0,1,0,0,0,0,0
-Sercomyia transversa,0,0,0,0,1,0,1,0,1,1,1,0,0
-Eristalis dimidiata,0,0,0,0,0,0,0,1,1,1,0,0,1
-Helophilus latifrons,0,0,0,0,0,0,0,1,1,1,0,0,0
-Helophilus fasciatus,0,1,0,0,0,0,0,1,1,1,1,0,0
-Helophilus laetus,0,0,0,0,0,0,0,1,1,0,0,0,1
-Syritta pipiens,0,0,0,0,0,1,0,1,0,0,1,0,1
-Toxomerus marginatus,0,0,0,0,0,0,0,0,0,0,0,1,0
-Syrphus torvus,0,0,1,0,0,0,0,1,0,0,0,0,0
-Apis mellifera,1,0,1,0,1,0,1,0,0,1,0,0,0
-Bombus terricola,1,0,0,0,0,0,1,0,1,1,0,0,1
-Pyrobombus impatiens,0,1,0,1,1,0,1,0,1,1,0,0,1
-Pyrobombus perplexus,1,0,0,0,1,0,1,1,0,0,0,0,1
-Pyrobombus sandersoni,1,1,0,0,1,0,1,1,1,1,1,0,1
-Pyrobombus ternarius,1,1,1,1,1,0,1,1,1,1,1,0,1
-Andrena alleghaniensis,0,0,1,0,0,0,0,1,1,0,0,0,0
-Andrena bradleyi,1,1,0,0,1,0,1,0,0,1,0,0,0
-Andrena carlini,1,1,1,0,0,0,1,0,1,0,0,0,0
-Andrena carolina,1,0,0,0,0,0,1,0,1,1,0,0,0
-Andrena mandibularis,0,1,1,0,1,0,1,0,1,0,1,0,0
-Andrena regularis,0,1,1,0,1,0,1,1,1,1,0,0,0
-Andrena vicina,1,1,1,0,1,0,1,1,1,1,0,0,0
-Colletes inaequalis,1,1,0,0,0,0,1,1,1,0,0,0,0
-Dialictus pilosus,0,0,1,0,1,0,0,1,0,0,0,0,0
+,Salix_fragilis,Chamaedaphne_calyculata,Nemopanthus_mucronata,Andromeda_glaucophylla,Kalmia_polifolia,Smilacina_trifolia,Vaccinium_myrtilloides,Aronia_melanocarpa,Ledum_groenlandicum,Gaylussacia_baccata,Kalmia_angustifolia,Calopogon_pulchellus,Spiraea_alba
+Adela_purpurea,1,0,0,0,0,0,0,0,0,0,0,0,0
+Thymelicus_lineola,0,0,0,0,0,0,0,0,0,0,0,1,1
+Macrodactlyus_subspinosus,0,0,0,0,0,0,0,0,0,0,0,0,1
+Cyphon_variabilis,1,0,0,0,0,0,0,0,0,0,0,0,0
+Hybomitra_minuscula,0,0,0,0,0,0,0,0,0,0,0,0,1
+Hybomitra_typhus,0,0,0,0,0,0,0,0,0,1,1,0,0
+Dilophus_caurinus,0,0,1,0,0,0,0,0,0,0,0,0,0
+Spilogona_fatima,1,1,1,0,0,1,0,0,0,0,0,0,0
+Shaerophoria_sp.,0,1,0,0,0,1,0,1,1,0,0,0,0
+Pyrophaena_rosarum,0,0,1,0,0,1,0,0,1,0,1,0,1
+Melanostoma_sp.,0,1,1,0,0,1,0,1,0,0,0,0,0
+Sercomyia_transversa,0,0,0,0,1,0,1,0,1,1,1,0,0
+Eristalis_dimidiata,0,0,0,0,0,0,0,1,1,1,0,0,1
+Helophilus_latifrons,0,0,0,0,0,0,0,1,1,1,0,0,0
+Helophilus_fasciatus,0,1,0,0,0,0,0,1,1,1,1,0,0
+Helophilus_laetus,0,0,0,0,0,0,0,1,1,0,0,0,1
+Syritta_pipiens,0,0,0,0,0,1,0,1,0,0,1,0,1
+Toxomerus_marginatus,0,0,0,0,0,0,0,0,0,0,0,1,0
+Syrphus_torvus,0,0,1,0,0,0,0,1,0,0,0,0,0
+Apis_mellifera,1,0,1,0,1,0,1,0,0,1,0,0,0
+Bombus_terricola,1,0,0,0,0,0,1,0,1,1,0,0,1
+Pyrobombus_impatiens,0,1,0,1,1,0,1,0,1,1,0,0,1
+Pyrobombus_perplexus,1,0,0,0,1,0,1,1,0,0,0,0,1
+Pyrobombus_sandersoni,1,1,0,0,1,0,1,1,1,1,1,0,1
+Pyrobombus_ternarius,1,1,1,1,1,0,1,1,1,1,1,0,1
+Andrena_alleghaniensis,0,0,1,0,0,0,0,1,1,0,0,0,0
+Andrena_bradleyi,1,1,0,0,1,0,1,0,0,1,0,0,0
+Andrena_carlini,1,1,1,0,0,0,1,0,1,0,0,0,0
+Andrena_carolina,1,0,0,0,0,0,1,0,1,1,0,0,0
+Andrena_mandibularis,0,1,1,0,1,0,1,0,1,0,1,0,0
+Andrena_regularis,0,1,1,0,1,0,1,1,1,1,0,0,0
+Andrena_vicina,1,1,1,0,1,0,1,1,1,1,0,0,0
+Colletes_inaequalis,1,1,0,0,0,0,1,1,1,0,0,0,0
+Dialictus_pilosus,0,0,1,0,1,0,0,1,0,0,0,0,0

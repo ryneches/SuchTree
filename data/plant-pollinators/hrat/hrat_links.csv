@@ -1,18 +1,18 @@
-,Pistacia lentiscus,Olea europaea,Phillyrea angustifolia,Rhamnus lycioides,Smilax aspera,Rubus ulmifolius,Myrtus communis,Daphne gnidium,Rubia pregrina,Osyris alba,Crataegus monogyna,Lonicera periclymenum,Asparagus aculeatus,Tamus communis,Pyrus bourgaeana,Asparagus aphyllus
-Sylvia atricapilla,1370,146,96,21,15,4,25,71,27,0.6,1,1,15,0,1,0.6
-Sylvia borin,336,0.6,15,85,10,14,0,52,38,0.7,0,2,0.8,1,0,0.3
-Erithacus rubecula,317,31,0.2,2.6,0.8,0.5,26,0.5,0,0,0,0,1,0,0,0.3
-Sylvia melanocephala,49,2,14,48,2,8,2,16,0,0.4,0,0.7,2,0.1,0,0.1
-Turdus merula,115,30,37,6,1,9,5,0,0.1,1,1,1,0.1,7,1,0.1
-Turdus philomelos,14,20,0.2,0,0,0,4,0,0,2,0,0,0,0,0,0.1
-Sylvia communis,17,0,6,4,0,0.7,0,2,0,0,0,0,0,0,0,0
-Sylvia hortensis,9,0,3,0,0.1,0.4,0,0,0,0,0,0,0,0,0,0
-Sylvia cantillans,21,0,3,3,0,0.9,0.1,3,0,0,0,0.2,0,0,0,0
-Ficedula hypoleuca,41,0,6,2,0.1,0.1,0,0,0,0,0,0,0,0,0,0
-Phoenicurus phoenicurus,9,0,0,0.5,0,0.5,0,0.1,0,0,0,0,0,0,0,0
-Sylvia undata,14,0,0,0,0,0,0.3,0,0,0,0,0,0,0,0,0
-Saxicola torquata,5,1,0,0,0,0,0.1,0,0,0,0,0,0,0,0,0
-Cyanopica cyanus,12,0.6,0.2,0.1,0,0.3,1,0,0,0,0.5,0,0,3,8,0
-Luscinia megarhynchos,5,0,0,0.7,0,0.3,0,0,0,0,0,0,0,0,0,0
-Muscicapa striata,11,0,0,1,0,0.2,0,0,0,0,0,0,0,0,0,0
-Sturnus unicolor,61,15,0,0,0,0,2,0,0,0,1,0,0,0,0,0
+,Pistacia_lentiscus,Olea_europaea,Phillyrea_angustifolia,Rhamnus_lycioides,Smilax_aspera,Rubus_ulmifolius,Myrtus_communis,Daphne_gnidium,Rubia_pregrina,Osyris_alba,Crataegus_monogyna,Lonicera_periclymenum,Asparagus_aculeatus,Tamus_communis,Pyrus_bourgaeana,Asparagus_aphyllus
+Sylvia_atricapilla,1370,146.0,96.0,21.0,15.0,4.0,25.0,71.0,27.0,0.6,1.0,1.0,15.0,0.0,1,0.6
+Sylvia_borin,336,0.6,15.0,85.0,10.0,14.0,0.0,52.0,38.0,0.7,0.0,2.0,0.8,1.0,0,0.3
+Erithacus_rubecula,317,31.0,0.2,2.6,0.8,0.5,26.0,0.5,0.0,0.0,0.0,0.0,1.0,0.0,0,0.3
+Sylvia_melanocephala,49,2.0,14.0,48.0,2.0,8.0,2.0,16.0,0.0,0.4,0.0,0.7,2.0,0.1,0,0.1
+Turdus_merula,115,30.0,37.0,6.0,1.0,9.0,5.0,0.0,0.1,1.0,1.0,1.0,0.1,7.0,1,0.1
+Turdus_philomelos,14,20.0,0.2,0.0,0.0,0.0,4.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0,0.1
+Sylvia_communis,17,0.0,6.0,4.0,0.0,0.7,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0
+Sylvia_hortensis,9,0.0,3.0,0.0,0.1,0.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0
+Sylvia_cantillans,21,0.0,3.0,3.0,0.0,0.9,0.1,3.0,0.0,0.0,0.0,0.2,0.0,0.0,0,0.0
+Ficedula_hypoleuca,41,0.0,6.0,2.0,0.1,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0
+Phoenicurus_phoenicurus,9,0.0,0.0,0.5,0.0,0.5,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0
+Sylvia_undata,14,0.0,0.0,0.0,0.0,0.0,0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0
+Saxicola_torquata,5,1.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0
+Cyanopica_cyanus,12,0.6,0.2,0.1,0.0,0.3,1.0,0.0,0.0,0.0,0.5,0.0,0.0,3.0,8,0.0
+Luscinia_megarhynchos,5,0.0,0.0,0.7,0.0,0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0
+Muscicapa_striata,11,0.0,0.0,1.0,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0
+Sturnus_unicolor,61,15.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0,0.0

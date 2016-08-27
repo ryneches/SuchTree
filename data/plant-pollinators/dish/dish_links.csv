@@ -1,37 +1,37 @@
-,Centaurea nigra,Cerastium fontanum,Cirsium arvense,Cirsium palustre,Filipendula ulmaria,Galium verum,Hypochoeris radicata,Lathyrus pratensis,Leucanthemum vulgare,Lotus corniculatus,Orchis morio,Primula veris,Ranunculus acris,Taraxacum officinale,Trifolium dubium,Trifolium repens
-Bombus terr/luc,8,0,0,0,0,0,0,0,5,0,0,1,0,0,0,0
-Bombus hortorum,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Bombus lapidarius,469,0,2,8,2,0,4,0,36,3,0,1,2,0,1,0
-Bombus pascuorum,35,0,0,3,0,0,0,4,0,2,1,0,1,0,0,2
-Bombus pratorum,8,0,0,4,0,0,0,0,5,0,0,0,0,0,0,0
-Psithyrus vest,12,0,0,8,0,0,0,0,3,0,0,0,0,0,0,0
-Apis mellifera,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Andrena chrysosceles,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
-Andrena pubescens,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-Anthophora plumipes,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0
-Lasioglossum calceatum,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-Lasioglossum villosulum,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-Cephus pygmaeus,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-Cheilosia bergenstammi,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0
-Episyrphus balteatus,8,0,0,0,4,6,2,0,0,0,1,0,0,0,0,0
-Eristalis intricarius,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-Eristalis nemorum,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0
-Eristalis tenax,3,0,0,0,1,0,0,0,9,0,0,0,0,0,0,0
-Helophilus sp.,2,0,0,0,0,0,0,0,10,0,0,0,1,0,0,0
-Melanostoma sp.,0,0,0,0,1,0,0,0,2,0,0,0,1,0,0,0
+,Centaurea_nigra,Cerastium_fontanum,Cirsium_arvense,Cirsium_palustre,Filipendula_ulmaria,Galium_verum,Hypochoeris_radicata,Lathyrus_pratensis,Leucanthemum_vulgare,Lotus_corniculatus,Orchis_morio,Primula_veris,Ranunculus_acris,Taraxacum_officinale,Trifolium_dubium,Trifolium_repens
+Bombus_terr/luc,8,0,0,0,0,0,0,0,5,0,0,1,0,0,0,0
+Bombus_hortorum,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bombus_lapidarius,469,0,2,8,2,0,4,0,36,3,0,1,2,0,1,0
+Bombus_pascuorum,35,0,0,3,0,0,0,4,0,2,1,0,1,0,0,2
+Bombus_pratorum,8,0,0,4,0,0,0,0,5,0,0,0,0,0,0,0
+Psithyrus_vest,12,0,0,8,0,0,0,0,3,0,0,0,0,0,0,0
+Apis_mellifera,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Andrena_chrysosceles,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+Andrena_pubescens,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Anthophora_plumipes,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0
+Lasioglossum_calceatum,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Lasioglossum_villosulum,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Cephus_pygmaeus,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Cheilosia_bergenstammi,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0
+Episyrphus_balteatus,8,0,0,0,4,6,2,0,0,0,1,0,0,0,0,0
+Eristalis_intricarius,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Eristalis_nemorum,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0
+Eristalis_tenax,3,0,0,0,1,0,0,0,9,0,0,0,0,0,0,0
+Helophilus_sp.,2,0,0,0,0,0,0,0,10,0,0,0,1,0,0,0
+Melanostoma_sp.,0,0,0,0,1,0,0,0,2,0,0,0,1,0,0,0
 Meliscaeva,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0
 Platycheirus,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
-Sphaerophoria sp.,0,0,0,0,1,2,0,0,2,0,1,0,0,1,0,0
-Syrphus sp,7,0,0,0,2,0,1,0,2,0,0,0,0,0,0,0
-Tropidia scitta,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-Volucella bombylans,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-Empis livida,11,0,1,0,0,0,0,0,20,0,0,0,0,0,0,0
-Eriothrix rufomaculatus,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0
-Lucillia sp,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0
-Pollenia sp,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
-Sarcophagus sp.,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-Scathophaga stercoraria,0,0,0,0,0,0,0,0,5,0,0,0,2,1,0,0
-Lycaena phlaeas (small copper),0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Maniola jurtina,110,0,6,0,0,0,0,0,31,0,0,0,1,0,0,0
-Panameria tenebrata,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
-Calocoris bipunctatus,36,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sphaerophoria_sp.,0,0,0,0,1,2,0,0,2,0,1,0,0,1,0,0
+Syrphus_sp,7,0,0,0,2,0,1,0,2,0,0,0,0,0,0,0
+Tropidia_scitta,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Volucella_bombylans,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Empis_livida,11,0,1,0,0,0,0,0,20,0,0,0,0,0,0,0
+Eriothrix_rufomaculatus,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0
+Lucillia_sp,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0
+Pollenia_sp,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+Sarcophagus_sp.,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Scathophaga_stercoraria,0,0,0,0,0,0,0,0,5,0,0,0,2,1,0,0
+Lycaena_phlaeas_(small_copper),0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Maniola_jurtina,110,0,6,0,0,0,0,0,31,0,0,0,1,0,0,0
+Panameria_tenebrata,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Calocoris_bipunctatus,36,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
