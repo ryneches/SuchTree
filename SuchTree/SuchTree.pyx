@@ -645,7 +645,7 @@ cdef class SuchLinkedTrees :
             self.row_map[i] = n
         
         # populate the link table
-        print id(self), 'allocating columns in', <unsigned int> &self.table
+        #print id(self), 'allocating columns in', <unsigned int> &self.table
         self.n_links = 0
         for i,(colname,s) in enumerate( link_matrix.T.reindex( self.col_names ).iterrows() ) :
             # attach leaf nodes in TreeB to corresponding column in
@@ -664,7 +664,7 @@ cdef class SuchLinkedTrees :
                     self.table[i].links[j] = l[j]
          
         # by default, the subset is the whole table
-        print 'bulding default subset.'
+        #print 'bulding default subset.'
         self.subset_a_size = len( self.row_ids )
         self.subset_b_size = len( self.col_ids )
         self.subset_n_links = self.n_links
@@ -674,19 +674,19 @@ cdef class SuchLinkedTrees :
         self.subset_b_leafs = self.col_ids
         
         # make np_linklist
-        print 'bulding default link list.'
+        #print 'bulding default link list.'
         self.np_linklist = np.ndarray( ( self.n_links, 2 ), dtype=int )
         self._build_linklist()
     
     def __dealloc__( self ) :
         
-        print id(self), 'freeing columns in', <unsigned int> &self.table
+        #print id(self), 'freeing columns in', <unsigned int> &self.table
         
         for i in xrange( self.table_size ) :
             if not self.table[i].links == NULL :
                 PyMem_Free( self.table[i].links ) 
         
-        print id(self), 'freeing table', <unsigned int> &self.table
+        #print id(self), 'freeing table', <unsigned int> &self.table
         
         PyMem_Free( self.table )
     
