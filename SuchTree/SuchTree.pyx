@@ -75,6 +75,7 @@ cdef class SuchTree :
     cdef unsigned int depth
     cdef unsigned int n_leafs
     cdef unsigned int root
+    cdef np.float64_t epsilon
     cdef object leafs   
     cdef object np_buffer   
     
@@ -86,6 +87,9 @@ cdef class SuchTree :
         cdef int id
         self.np_buffer = None
         self.n_leafs = 0
+        
+        # tiny nonzero distance for representing polytomies
+        self.epsilon = np.finfo( np.float64 ).eps 
         
         url_strings = [ 'http://', 'https://', 'ftp://' ]
         
@@ -175,6 +179,13 @@ cdef class SuchTree :
         'The id of the root node.'
         def __get__( self ) :
             return self.root
+    
+    property polytomy_distance :
+        'Tiny, nonzero distance for polytomies in the adjacency matrix.'
+        def __get__( self ) :
+            return self.epsilon
+        def __set__( self, np.float64_t new_epsilon ) :
+            self.epsilon = new_epsilon
     
     def get_parent( self, query ) :
         """
@@ -474,7 +485,7 @@ cdef class SuchTree :
             parent   = self.data[node_id].parent
             if parent == -1 : continue
             distance = self.data[node_id].distance
-            if distance == 0 : distance += 1e-30
+            if distance == 0 : distance += self.epsilon
             for j,k in enumerate( self.np_buffer[:n] ) :
                 if k == parent :
                     ajmatrix[ i,j ] = distance
