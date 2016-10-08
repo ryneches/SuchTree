@@ -1,5 +1,4 @@
-,Oxalis_compacta,Phacelia_secunda,Tropaeolum_polyph,Azorella_madreporica,Nassauvia_lagascae,Draba_tenuis,Nototriche_compacta,L._acaulis,Draba_gilliesii,Caiophora_coronata,Oreopolus_glacialis,Junellia_uniflora,Chaetanthera_lyco,Nassauvia_pungens,Adesmia_cap,Adesmia_glomerula,Loasa_caespitosa,Viola_atropurpurea,Chaetanthera_flabellata,Erigeron_andicola,Leuceria_salina,Nassauvia_pinni,Senecio_francisci,Cardamine_nivalis,Oxalis_?1,Calandrinia_affinis,Calandrinia_caespitosa,Calandrinia_occulta,Calandrinia_picta,Calandrinia_sericea,Ranunculus_peduncularis,Acaena_pinn,Pozoa_coriacea,Valeriana_radicalis,Viola_montagnei,Viola_philippii
-n.i.,0,0,0,1,0,1,0,1,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,1,1,1,0,1,0,1,1,0,0
+,Oxalis_compacta,Phacelia_secunda,Tropaeolum_polyph,Azorella_madreporica,Nassauvia_lagascae,Draba_tenuis,Nototriche_compacta,L._acaulis,Draba_gilliesii,Caiophora_coronata,Oreopolus_glacialis,Junellia_uniflora,Chaetanthera_lyco,Nassauvia_pungens,Adesmia_cap,Adesmia_glomerula,Loasa_caespitosa,Viola_atropurpurea,Chaetanthera_flabellata,Erigeron_andicola,Leucheria_salina,Nassauvia_pinni,Senecio_francisci,Cardamine_nivalis,Oxalis_sp,Calandrinia_affinis,Calandrinia_caespitosa,Calandrinia_occulta,Calandrinia_picta,Calandrinia_sericea,Ranunculus_peduncularis,Acaena_pinnatifida,Pozoa_coriacea,Valeriana_radicalis,Viola_montagnei,Viola_philippii
 Scaeva_mel,0,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0
 Yramea_mod,1,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
 Sarcophagidae,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
@@ -8,11 +7,9 @@ Anthidium_sp1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 Bombus_dahlbomii,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Megachile_sp5,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Megachile_semirufa,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Stenoanthidium_espinosai,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stenanthidium_espinosai,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Habromyia_lipoflava,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-n.i.,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Faunula_leu,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-n.i.,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Bombyliidae_sp1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Dasybasis_sp,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Syrphidae,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
