@@ -456,7 +456,10 @@ cdef class SuchTree :
         return col_ids
     
     def adjacency( self, int node ) :
-        
+        """
+        The graph adjacency matrix of the subtree descendent from
+        node.
+        """
         cdef unsigned int i
         cdef unsigned int j
         cdef unsigned int k
@@ -494,40 +497,18 @@ cdef class SuchTree :
         return { 'adjacency_matrix' : ajmatrix, 
                  'node_ids' : self.np_buffer[:n] }
  
-    def mgl( self, int node, normalized=False ) :
+    def laplacian( self, int node ) :
         """
-        The modified graph Laplacian of the tree.    
+        The graph Laplacian matrix of the subtree decendent from node.    
         """
-        cdef unsigned int i
-        cdef unsigned int j
-        cdef unsigned int I
-        cdef unsigned int J
-        cdef unsigned int n = 0
         
-        self.np_buffer = np.ndarray( self.length, dtype=int )
+        aj, node_ids = self.adjacency( node ).values()
+        lp = np.zeros( aj.shape )
+        np.fill_diagonal( lp, aj.sum( axis=0 ) )
+        lp = lp - aj
         
-        to_visit = [ node ]
-        for i in to_visit :
-            self.np_buffer[n] = i
-            n += 1
-            l,r = self.get_children( i )
-            if l != -1 :
-                to_visit.append( l )
-                to_visit.append( r )   
-        
-        mgl = np.zeros( (n,n), dtype=float )
-        
-        for i in xrange( n ) :
-            for j in xrange( n ) :
-                I = self.np_buffer[ i ]
-                J = self.np_buffer[ j ]
-                mgl[i,j] = - self.distance( I, J )
-       
-        for i in xrange( n ) :
-            mgl[i,i] = - sum( mgl[i,:] )
-                    
-        return { 'MGL' : mgl,
-                 'node_ids' : self.np_buffer[:n] }
+        return { 'laplacian' : lp,
+                 'node_ids' : node_ids }
         
     def dump_array( self ) :
         """
