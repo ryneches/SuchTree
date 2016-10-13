@@ -455,7 +455,7 @@ cdef class SuchTree :
             col_ids[n] = self.data[ leaf ].right_child
         return col_ids
     
-    def adjacency( self, int node ) :
+    def adjacency( self, int node=-1 ) :
         """
         The graph adjacency matrix of the subtree descendent from
         node.
@@ -470,6 +470,14 @@ cdef class SuchTree :
         cdef int r
         cdef unsigned int n = 0
         
+        # by default, start from the root node
+        if node == -1 :
+            node = self.root
+        
+        # bail if the node isn't in our tree
+        if node > self.length or node < -1 :
+            raise Exception( 'Node id out of range.', node )
+         
         self.np_buffer = np.ndarray( self.length, dtype=int )
         
         to_visit = [ node ]
@@ -493,16 +501,18 @@ cdef class SuchTree :
                 if k == parent :
                     ajmatrix[ i,j ] = distance
                     ajmatrix[ j,i ] = distance
-                    
+        
         return { 'adjacency_matrix' : ajmatrix, 
                  'node_ids' : self.np_buffer[:n] }
- 
-    def laplacian( self, int node ) :
+    
+    def laplacian( self, int node=-1 ) :
         """
         The graph Laplacian matrix of the subtree decendent from node.    
         """
+        if node == -1 :
+            node = self.root 
         
-        aj, node_ids = self.adjacency( node ).values()
+        aj, node_ids = self.adjacency( node=node ).values()
         lp = np.zeros( aj.shape )
         np.fill_diagonal( lp, aj.sum( axis=0 ) )
         lp = lp - aj
