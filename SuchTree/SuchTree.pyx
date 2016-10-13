@@ -562,6 +562,8 @@ cdef class SuchLinkedTrees :
     cdef object linked_leafsA
     cdef object linked_leafsB
     
+    cdef unsigned int subset_a_root
+    cdef unsigned int subset_b_root
     cdef object subset_columns
     cdef object subset_rows
     cdef object subset_a_leafs
@@ -667,6 +669,8 @@ cdef class SuchLinkedTrees :
          
         # by default, the subset is the whole table
         #print 'bulding default subset.'
+        self.subset_a_root = self.TreeA.root
+        self.subset_b_root = self.TreeB.root
         self.subset_a_size = len( self.row_ids )
         self.subset_b_size = len( self.col_ids )
         self.subset_n_links = self.n_links
@@ -770,6 +774,16 @@ cdef class SuchLinkedTrees :
         def __get__( self ) :
             return self.subset_b_size
  
+    property subset_a_root :
+        'ID of the current subset root in TreeA.'
+        def __get__( self ) :
+            return self.subset_a_root
+    
+    property subset_b_root :
+        'ID of the current subset root in TreeB.'
+        def __get__( self ) :
+            return self.subset_b_root
+    
     property subset_n_links :
         'Number of links in the current subset.'
         def __get__( self ) :
@@ -876,16 +890,26 @@ cdef class SuchLinkedTrees :
         
     def subset_b( self, node_id ) :
         'subset the link matrix to leafs desended from node_id in TreeB'
+
+        if node_id > self.TreeB.length or node_id < 0 :
+            raise Exception( 'Node ID out of bounds.', node_id )
+
         self.subset_b_leafs = self.TreeB.get_leafs( node_id )
         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )
-        self.subset_b_size = len( self.subset_columns )
+        self.subset_b_size  = len( self.subset_columns )
+        self.subset_b_root  = node_id 
         self._build_linklist()
     
     def subset_a( self, node_id ) :
         'subset the link matrix to leafs desended from node_id in TreeA'
+        
+        if node_id > self.TreeA.length or node_id < 0 :
+            raise Exception( 'Node ID out of bounds.', node_id )
+        
         self.subset_a_leafs = self.TreeA.get_leafs( node_id )
-        self.subset_rows = self.TreeA.get_links( self.subset_a_leafs )
-        self.subset_a_size = len( self.subset_rows )
+        self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )
+        self.subset_a_size  = len( self.subset_rows )
+        self.subset_a_root  = node_id
         self._build_linklist()
         
     @cython.boundscheck(False)
@@ -1069,7 +1093,55 @@ cdef class SuchLinkedTrees :
                  'n_samples'   : n * buckets * cycles,
                  'deviation_a' : deviation_a,
                  'deviation_b' : deviation_b } 
-         
+    
+    def adjacency( self ) :
+        """
+        Build the graph adjacency matrix of the current subsetted
+        trees.
+        """
+        TA = self.TreeA.adjacency( node = self.subset_a_root )
+        TB = self.TreeB.adjacency( node = self.subset_b_root )
+        ta_aj = TA['adjacency_matrix']
+        tb_aj = TB['adjacency_matrix']
+        ta_node_ids = TA['node_ids'].tolist()
+        tb_node_ids = TB['node_ids'].tolist()
+        
+        ta_links = map( lambda x : ta_node_ids.index(x), self.linklist[:,1] )
+        tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], self.linklist[:,0] )
+        
+        aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0], 
+                         ta_aj.shape[1] + tb_aj.shape[1] ) )
+        
+        # place the tree adjacency matrixes into the empty graph matrix
+        aj[ 0:ta_aj.shape[0] , 0:ta_aj.shape[1]  ] = ta_aj / ta_aj.max()
+        aj[   ta_aj.shape[0]:,   ta_aj.shape[1]: ] = tb_aj / tb_aj.max()
+        
+        # compute means of all the non-zero-length edges of the trees
+        ta_mean = np.mean( ta_aj.flatten()[ ta_aj.flatten() > self.TreeA.polytomy_distance ] )
+        tb_mean = np.mean( tb_aj.flatten()[ tb_aj.flatten() > self.TreeB.polytomy_distance ] )        
+        link_mean = ( ta_mean / ta_aj.max() + tb_mean / tb_aj.max() ) / 2.0        
+
+        # place the link edges into graph adjacency matrix,
+        # normalizing their edge weights to the average weight of the
+        # tree edges
+        for i,j in zip( tb_links, ta_links ) :
+            aj[i,j] = link_mean
+            aj[j,i] = link_mean
+        
+        return aj
+    
+    def laplacian( self ) :
+        """
+        The graph Laplacian matrix of the current subsetted trees.
+        """
+        
+        aj = self.adjacency()
+        lp = np.zeros( aj.shape )
+        np.fill_diagonal( lp, aj.sum( axis=0 ) )
+        lp = lp - aj
+        
+        return lp
+    
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'
         for i in xrange( self.n_cols ) :
