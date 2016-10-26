@@ -1094,10 +1094,10 @@ cdef class SuchLinkedTrees :
                  'deviation_a' : deviation_a,
                  'deviation_b' : deviation_b } 
     
-    def adjacency( self ) :
+    def adjacency( self, deletions=0, additions=0, swaps=0 ) :
         """
         Build the graph adjacency matrix of the current subsetted
-        trees.
+        trees, applying the specified random permutaitons.
         """
         TA = self.TreeA.adjacency( node = self.subset_a_root )
         TB = self.TreeB.adjacency( node = self.subset_b_root )
@@ -1106,9 +1106,25 @@ cdef class SuchLinkedTrees :
         ta_node_ids = TA['node_ids'].tolist()
         tb_node_ids = TB['node_ids'].tolist()
         
-        ta_links = map( lambda x : ta_node_ids.index(x), self.linklist[:,1] )
-        tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], self.linklist[:,0] )
+        # apply random permutations
+        ll = np.array( self.linklist )
+        for i in xrange( 1, deletions ) :
+            ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
+        for i in xrange( 1, swaps ) :
+            x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )
+            X, Y = ll[x,1], ll[y,1]
+            ll[x,1] = Y
+            ll[y,1] = X
+        for i in xrange( 1, additions ) :
+            a = np.random.choice( self.TreeA.leafs.values() )
+            b = np.random.choice( self.TreeB.leafs.values() )
+            ll = np.concatenate( (ll, np.array([[b,a]])), axis=0 )
         
+        # map node ids to matrix coordinates
+        ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )
+        tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )
+        
+        # build empty graph adjacency matrix
         aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0], 
                          ta_aj.shape[1] + tb_aj.shape[1] ) )
         
@@ -1130,12 +1146,14 @@ cdef class SuchLinkedTrees :
         
         return aj
     
-    def laplacian( self ) :
+    def laplacian( self, deletions=0, additions=0, swaps=0 ) :
         """
         The graph Laplacian matrix of the current subsetted trees.
         """
         
-        aj = self.adjacency()
+        aj = self.adjacency( deletions=deletions,
+                             additions=additions,
+                             swaps=swaps )
         lp = np.zeros( aj.shape )
         np.fill_diagonal( lp, aj.sum( axis=0 ) )
         lp = lp - aj
