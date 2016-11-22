@@ -4,6 +4,7 @@ from dendropy import Tree
 import numpy as np
 cimport numpy as np
 import pandas as pd
+from scipy.linalg.cython_lapack cimport dsyev
 
 cdef extern from 'stdint.h' :
     ctypedef unsigned long int uint64_t
@@ -1159,6 +1160,34 @@ cdef class SuchLinkedTrees :
         lp = lp - aj
         
         return lp
+        
+    def spectrum( self, deletions=0, additions=0, swaps=0 ) :
+        """
+        The eigenvalues of the graph Laplacian matrix of the current
+        subsetted trees.
+        """ 
+        lp = self.laplacian( deletions, additions, swaps )
+        
+        cdef int N     = lp.shape[0]
+        cdef int nb    = 4
+        cdef int lwork = (nb+2)*N
+        
+        np_work = np.ndarray( lwork )
+        np_w    = np.ndarray( N )
+        
+        cdef double[:,::1] a = lp
+        cdef double[:] work  = np_work
+        cdef double[:] w     = np_w
+        
+        cdef double * b = &a[0,0]
+        cdef int info   = 0
+        
+        dsyev( 'N', 'U', &N, b, &N, &w[0], &work[0], &lwork, &info )
+         
+        if info == 0 :
+            return np_w
+        else :
+            return info
     
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'

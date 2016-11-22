@@ -13,6 +13,7 @@ setup(
     license='BSD',
     packages=['SuchTree'],
     install_requires=[
+        'scipy>=0.18',
         'numpy',
         'dendropy',
         'cython'
