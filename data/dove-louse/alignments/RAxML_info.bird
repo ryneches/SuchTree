@@ -1,0 +1,90 @@
+
+
+This is RAxML version 8.2.9 released by Alexandros Stamatakis on July 20 2016.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 585 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 46.87%
+
+RAxML rapid hill-climbing mode
+
+Using 3 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 195
+Name: fibrinogen
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+Partition: 1
+Alignment Patterns: 174
+Name: COI
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+Partition: 2
+Alignment Patterns: 216
+Name: cytb
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+/usr/bin/raxmlHPC-PTHREADS-AVX -T 2 -m GTRGAMMA -n bird -s bird.phylip -q bird.txt -p 1001 
+
+
+Partition: 0 with name: fibrinogen
+Base frequencies: 0.323 0.187 0.186 0.304 
+
+Partition: 1 with name: COI
+Base frequencies: 0.265 0.276 0.191 0.267 
+
+Partition: 2 with name: cytb
+Base frequencies: 0.262 0.354 0.132 0.252 
+
+Inference[0]: Time 2.286877 GAMMA-based likelihood -10154.189892, best rearrangement setting 5
+alpha[0]: 0.129877 rates[0] ac ag at cg ct gt: 0.217970 11.462068 0.164427 0.871665 0.881666 1.000000 alpha[1]: 0.775878 rates[1] ac ag at cg ct gt: 0.654104 2.511246 0.574478 0.423356 3.699979 1.000000 alpha[2]: 0.116080 rates[2] ac ag at cg ct gt: 0.490832 8.014048 0.440944 0.058688 6.346081 1.000000 
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -10150.673940 tree written to file /home/russell/Projects/SuchTree/data/dove-louse/alignments/RAxML_result.bird
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -10150.673940 .... 
+
+Final GAMMA-based Score of best tree -10150.673940
+
+Program execution info written to /home/russell/Projects/SuchTree/data/dove-louse/alignments/RAxML_info.bird
+Best-scoring ML tree written to: /home/russell/Projects/SuchTree/data/dove-louse/alignments/RAxML_bestTree.bird
+
+Overall execution time: 3.031402 secs or 0.000842 hours or 0.000035 days
+
