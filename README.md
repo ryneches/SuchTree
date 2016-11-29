@@ -194,10 +194,36 @@ for generating them, is also included.
 * **smal**	Small, E. 1976. *Insect pollinators of the Mer Bleue peat bog of Ottawa.* Canadian Field Naturalist 90:22-28. 
 * **smra**	Smith-Ramírez C., P. Martinez, M. Nuñez, C. González and J. J. Armesto 2005 *Diversity, flower visitation frequency and generalism of pollinators in temperate rain forests of Chiloé Island,Chile.* Botanical Journal of the Linnean Society, 2005, 147, 399–416.
 
+#### Frugivory
+
+* **bair**	Baird, J.W. 1980. *The selection and use of fruit by birds in an eastern forest.* Wilson Bulletin 92: 63-73.
+* **beeh**	Beehler, B. 1983. *Frugivory and polygamy in birds of paradise.* Auk, 100: 1-12.
+* **cacg**	Carlo et al. 2003. *Avian fruit preferences across a Puerto Rican forested landscape: pattern consistency and implications for seed removal.* Oecologia 134: 119-131
+* **caci**	Carlo et al. 2003. *Avian fruit preferences across a Puerto Rican forested landscape: pattern consistency and implications for seed removal.* Oecologia 134: 119-131
+* **caco**	Carlo et al. 2003. *Avian fruit preferences across a Puerto Rican forested landscape: pattern consistency and implications for seed removal.* Oecologia 134: 119-131
+* **cafr**	Carlo et al. 2003. *Avian fruit preferences across a Puerto Rican forested landscape: pattern consistency and implications for seed removal.* Oecologia 134: 119-131
+* **crom**	Crome, F.H.J. 1975. *The ecology of fruit pigeons in tropical Northern Queensland.* Australian Journal of Wildlife Research, 2: 155-185.
+* **fros**	Frost, P.G.H. 1980. *Fruit-frugivore interactions in a South African coastal dune forest.* Pages 1179-1184 in: R. Noring (ed.). Acta XVII Congresus Internationalis Ornithologici, Deutsches Ornithologische Gessenshaft, Berlin.
+* **gen1**	Galetti, M., Pizo, M.A. 1996. *Fruit eating birds in a forest fragment in southeastern Brazil.* Ararajuba, Revista Brasileira de Ornitologia, 4: 71-79.
+* **gen2**	Galetti, M., Pizo, M.A. 1996. *Fruit eating birds in a forest fragment in southeastern Brazil.* Ararajuba, Revista Brasileira de Ornitologia, 4: 71-79.
+* **hamm**	Hammann, A. & Curio, B. 1999. *Interactions among frugivores and fleshy fruit trees in a Philippine submontane rainforest*
+* **hrat**	Jordano P. 1985. *El ciclo anual de los paseriformes frugívoros en el matorral mediterráneo del sur de España: importancia de su invernada y variaciones interanuales.* Ardeola, 32, 69-94.
+* **kant**	Kantak, G.E. 1979. *Observations on some fruit-eating birds in Mexico.* Auk, 96: 183-186.
+* **lamb**	Lambert F. 1989. *Fig-eating by birds in a Malaysian lowland rain forest.* J. Trop. Ecol., 5, 401-412.
+* **lope**	Tutin, C.E.G., Ham, R.M., White, L.J.T., Harrison, M.J.S. 1997. *The primate community of the Lopé Reserve, Gabon: diets, responses to fruit scarcity, and effects on biomass.* American Journal of Primatology, 42: 1-24.
+* **mack**	Mack, AL and Wright, DD. 1996. *Notes on occurrence and feeding of birds at Crater Mountain Biological Research Station, Papua New Guinea.* Emu 96: 89-101. 
+* **mont**	Wheelwright, N.T., Haber, W.A., Murray, K.G., Guindon, C. 1984. *Tropical fruit-eating birds and their food plants: a survey of a Costa Rican lower montane forest.* Biotropica, 16: 173-192.
+* **ncor**	P. Jordano, unpubl.
+* **nnog**	P. Jordano, unpubl.
+* **sapf**	Noma, N. 1997. *Annual fluctuations of sapfruits production and synchronization within and inter species in a warm temperate forest on Yakushima Island, Japan.* Tropics, 6: 441-449.
+* **snow**	Snow, B.K., Snow, D.W. 1971. *The feeding ecology of tanagers and honeycreepers in Trinidad.* Auk, 88: 291-322.
+* **wes**	Silva, W.R., P. De Marco, E. Hasui, and V.S.M. Gomes, 2002. *Patterns of fruit-frugivores interactions in two Atlantic Forest bird communities of South-eastern Brazil: implications for conservation.* Pp. 423-435. In: D.J. Levey, W.R. Silva and M. Galetti (eds.) Seed dispersal and frugivory: ecology, evolution and conservation. Wallinford: CAB International.
+* **wyth**	Snow B.K. & Snow D.W. 1988. *Birds and berries, Calton, England.*
+
+
 ### Wow
 
 Special thanks to [@camillescott](https://github.com/camillescott) and 
 [@pmarkowsky](https://github.com/pmarkowsky) for their many helpful
 suggestions (and for their patience).
-
 
