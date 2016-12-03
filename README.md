@@ -155,6 +155,11 @@ literature. Additionally, a collection of simulated interactions with
 various properties, along with an annotated notebook of `Python` code
 for generating them, is also included.
 
+#### Host/Parasite
+
+* **gopher-louse** Hafner, M.S. & Nadler, S.A. 1988. *Phylogenetic trees support the coevolution of parasites and their hosts.* Nature 332: 258-259)
+* **dove-louse** Dale H. Clayton, Sarah E. Bush, Brad M. Goates, and Kevin P. Johnson. 2003. *Host defense reinforces host–parasite cospeciation.* PNAS.
+
 #### Plant/Pollinator (visitor) interactions
 
 * **arr1**	Arroyo, M.T.K., R. Primack & J.J. Armesto. 1982. *Community studies in pollination ecology in the high temperate Andes of central Chile. I. Pollination mechanisms and altitudinal variation.* Amer. J. Bot. 69:82-97.
@@ -194,7 +199,7 @@ for generating them, is also included.
 * **smal**	Small, E. 1976. *Insect pollinators of the Mer Bleue peat bog of Ottawa.* Canadian Field Naturalist 90:22-28. 
 * **smra**	Smith-Ramírez C., P. Martinez, M. Nuñez, C. González and J. J. Armesto 2005 *Diversity, flower visitation frequency and generalism of pollinators in temperate rain forests of Chiloé Island,Chile.* Botanical Journal of the Linnean Society, 2005, 147, 399–416.
 
-#### Frugivory
+#### Frugivory interactions
 
 * **bair**	Baird, J.W. 1980. *The selection and use of fruit by birds in an eastern forest.* Wilson Bulletin 92: 63-73.
 * **beeh**	Beehler, B. 1983. *Frugivory and polygamy in birds of paradise.* Auk, 100: 1-12.
