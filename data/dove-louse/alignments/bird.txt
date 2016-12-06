@@ -1,3 +1,0 @@
-DNA, fibrinogen = 1-1160
-DNA, COI = 1161-1555
-DNA, cytb = 1556-2600
