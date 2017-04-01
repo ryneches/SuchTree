@@ -158,9 +158,14 @@ for generating them, is also included.
 #### Host/Parasite
 
 * **gopher-louse** Hafner, M.S. & Nadler, S.A. 1988. *Phylogenetic trees support the coevolution of parasites and their hosts.* Nature 332: 258-259)
-* **dove-louse** Dale H. Clayton, Sarah E. Bush, Brad M. Goates, and Kevin P. Johnson. 2003. *Host defense reinforces host–parasite cospeciation.* PNAS.
+* **dove-louse** Dale H. Clayton, Sarah E. Bush, Brad M. Goates, and Kevin P. Johnson. 2003. *Host defense reinforces host–parasite cospeciation.* PNAS. 
 
 #### Plant/Pollinator (visitor) interactions
+
+These were originally collected by Enrico Rezende *et al.* :
+
+> Enrico L. Rezende, Jessica E. Lavabre, Paulo R. Guimarães, Pedro Jordano & Jordi Bascompte 
+"[Non-random coextinctions in phylogenetically structured mutualistic networks](http://www.nature.com/nature/journal/v448/n7156/abs/nature05956.html)," *Nature*, 2007
 
 * **arr1**	Arroyo, M.T.K., R. Primack & J.J. Armesto. 1982. *Community studies in pollination ecology in the high temperate Andes of central Chile. I. Pollination mechanisms and altitudinal variation.* Amer. J. Bot. 69:82-97.
 * **arr2**	Arroyo, M.T.K., R. Primack & J.J. Armesto. 1982. *Community studies in pollination ecology in the high temperate Andes of central Chile. I. Pollination mechanisms and altitudinal variation.* Amer. J. Bot. 69:82-97.
