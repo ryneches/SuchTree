@@ -1,0 +1,75 @@
+Asbu11_12	Asbu
+Cro_Pefam4_3KB1_c	PefamChimba
+PefmC1_c	PefamChimba
+Cro_Pefam4_1KB1_c	PefamChimba
+PefsC2_c	PefasChimba
+PefsC1_c	PefasChimba
+PefsC3_c	PefasChimba
+Inlo2_c	InloKalL
+Inlo1_c	InloKalL
+Peor2_c	InloKalL
+Peor3_c	InloKalL
+Mbi_Peep2_1KB3_c	PeepIsanga
+Peor4_c	InloKalL
+Mus_Pefam2_2KB1_c	PepoKatete
+PemaC4_c	Pe_cf_ma
+PemaC5_c	Pe_cf_ma
+PepoC2_c	PepoKatete
+PemaC6_c	Pe_cf_ma
+PepoC4_c	PepoKatete
+Mus_Lola2_gill1_c	LolaChimba
+LoLaC2_c	LolaChimba
+Mto-Lola1-gillFTA2_c	LolaChimba
+TrbrB3_c	TrbrBulombora
+TrbrB5_c	TrbrBulombora
+TrbrB1_c	TrbrBulombora
+TrbrB2_c	TrbrBulombora
+TrbrB11_c	TrbrBulombora
+TrduC2_c	TrduBemba
+TrbrB13_c	TrbrBulombora
+Cro_Trmo1_4KB4_c	TrmoMbi
+PscuC2_c	PscuKatete
+PscuC3_c	PscuKatete
+SibaC1_c	SibaMahale
+SibaC3_c	SibaMahale
+SimaC13_c	SimaUbwari
+SimaC14_c	SimaUbwari
+Kas_Pscu1_2KB1_c	PscuKatete
+Kal_Pscu1_FTA1_c	PscuKatete
+PscuC5_c	PscuKatete
+PscuC4_c	PscuKatete
+Won_Siba1_1KB1_c	PscuKatete
+Mbi_Ctho1_1KB1_c	CthoMbi
+Mto_Ctho1_1KB4_c	CthoMbi
+SiplC4_c	SiplKalL
+Kal_Siba10_1KB1_1g3	SiplKalL
+GnaPfe3_2KB1	GnpfKalL
+Kal_Gnpf2_gill3_c	GnpfKalL
+GnPfC2_c	GnpfKalL
+Kal_Sidi4_3KB1_c	SidiKalL
+Kal_Sidi5_1KB2_c	SidiKalL
+Mbi_Peep2_1KB1_c	PeepIsanga
+LidaC1_c	LidaMpu
+Lida11_1_c	LidaMpu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
