@@ -49,7 +49,7 @@ def pearson( double[:] x, double[:] y ) :
 @cython.no_gc_clear
 cdef class SuchTree :
     """
-    SuchTree extention type. The constructor accepts a filesystem 
+    SuchTree extention type. The constructor accepts a filesystem
     path or URL to a file that describes the tree in NEWICK format.
     For now, SuchTree uses dendropy to parse the NEWICK file.
 
@@ -77,9 +77,9 @@ cdef class SuchTree :
     cdef unsigned int n_leafs
     cdef unsigned int root
     cdef np.float64_t epsilon
-    cdef object leafs   
-    cdef object np_buffer   
-    
+    cdef object leafs
+    cdef object np_buffer
+
     def __init__( self, tree_file ) :
         """
         SuchTree constructor.
@@ -88,12 +88,12 @@ cdef class SuchTree :
         cdef int id
         self.np_buffer = None
         self.n_leafs = 0
-        
+
         # tiny nonzero distance for representing polytomies
-        self.epsilon = np.finfo( np.float64 ).eps 
-        
+        self.epsilon = np.finfo( np.float64 ).eps
+
         url_strings = [ 'http://', 'https://', 'ftp://' ]
-        
+
         if filter( lambda x : tree_file.startswith(x), url_strings ) :
             t = Tree.get( url=tree_file,
                           schema='newick',
@@ -110,26 +110,29 @@ cdef class SuchTree :
         self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )
         if self.data == NULL :
             raise Exception( 'SuchTree could not allocate memory' )
-        
+
         self.length = size
         if not self.data :
             raise MemoryError()
-        
+
         self.leafs = {}
         for id,node in enumerate( t.inorder_node_iter() ) :
             node.label = id
             if id >= size :
-                raise Exception( 'node label out of bounds : ' + str(id) ) 
+                raise Exception( 'node label out of bounds : ' + str(id) )
             if node.taxon :
                 self.leafs[ node.taxon.label ] = id
-                
+
         for id,node in enumerate( t.inorder_node_iter() ) :
             if not node.parent_node :
-                distance = -1
+                distance = -1.0
                 parent   = -1
                 self.root = id
             else :
-                distance = node.edge_length
+                if not node.edge_length :
+                    distance = 0.0
+                else :
+                    distance = node.edge_length
                 parent   = node.parent_node.label
             if node.taxon :
                 left_child, right_child = -1, -1
@@ -138,15 +141,15 @@ cdef class SuchTree :
                 l_child, r_child = node.child_nodes()
                 left_child  = l_child.label
                 right_child = r_child.label
-            
+
             if id >= size :
-                raise Exception( 'node label out of bounds : ' + str(id) ) 
-        
+                raise Exception( 'node label out of bounds : ' + str(id) )
+
             self.data[id].parent      = parent
             self.data[id].left_child  = left_child
             self.data[id].right_child = right_child
             self.data[id].distance    = distance
-            
+
         for id in self.leafs.values() :
             n = 1
             while True :
@@ -155,44 +158,44 @@ cdef class SuchTree :
                 n += 1
             if n > self.depth :
                 self.depth = n
-                
+
     property length :
         'The number of nodes in the tree.'
         def __get__( self ) :
             return self.length
-    
+
     property depth :
         'The maximum depth of the tree.'
         def __get__( self ) :
             return self.depth
-    
+
     property n_leafs :
         'The number of leafs in the tree.'
         def __get__( self ) :
             return self.n_leafs
-    
+
     property leafs :
         'A dictionary mapping leaf names to leaf node ids.'
         def __get__( self ) :
             return self.leafs
-    
+
     property root :
         'The id of the root node.'
         def __get__( self ) :
             return self.root
-    
+
     property polytomy_distance :
         'Tiny, nonzero distance for polytomies in the adjacency matrix.'
         def __get__( self ) :
             return self.epsilon
         def __set__( self, np.float64_t new_epsilon ) :
             self.epsilon = new_epsilon
-    
+
     def get_parent( self, query ) :
         """
         Return the id of the parent of a given node. Will accept node
         id or leaf name.
-        """        
+        """
         if type(query) is str :
             try :
                 node_id = self.leafs[ query ]
@@ -204,7 +207,7 @@ cdef class SuchTree :
             raise Exception( 'node id out of bounds : ', node_id )
 
         return self.data[node_id].parent
-    
+
     def get_children( self, id ) :
         """
         Return the ids of child nodes of given node. Will accept node
@@ -216,7 +219,7 @@ cdef class SuchTree :
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
         return ( self.data[id].left_child, self.data[id].right_child )
-    
+
     def get_leafs( self, id ) :
         """
         Return an array of ids of all leaf nodes descendent from a given node.
@@ -235,9 +238,9 @@ cdef class SuchTree :
                 n += 1
             else :
                 to_visit.append( l )
-                to_visit.append( r )   
+                to_visit.append( r )
         return np.array(self.np_buffer[:n])
-    
+
     def get_internal_nodes( self ) :
         """
         Return an array of the ids of all internal nodes.
@@ -247,7 +250,7 @@ cdef class SuchTree :
         cdef int r
         cdef unsigned int n = 0
         if self.np_buffer is None :
-            self.np_buffer = np.ndarray( self.n_leafs, dtype=int ) 
+            self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
         to_visit = [self.root]
         for i in to_visit :
             l,r = self.get_children( i )
@@ -259,7 +262,7 @@ cdef class SuchTree :
                 self.np_buffer[n] = i
                 n += 1
         return np.array(self.np_buffer[:n])
-        
+
     def get_distance_to_root( self, id ) :
         """
         Return distance to root for a given node. Will accept node id
@@ -271,7 +274,7 @@ cdef class SuchTree :
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
         return self._get_distance_to_root( id )
-    
+
     @cython.boundscheck(False)
     cdef float _get_distance_to_root( self, id ) :
         """
@@ -283,30 +286,30 @@ cdef class SuchTree :
         cdef int i = id
         cdef int a_depth = 0
         cdef int mrca = -1
-        
+
         while True :
             d_i = self.data[i].distance
             if d_i == -1 : break
             d = d + d_i
             i = self.data[i].parent
         return d
-    
+
     def mrca( self, a, b ) :
         """
         Return the id of the most recent common ancestor of two nodes
         if given ids.
         """
         visited = np.zeros( self.depth, dtype=int )
-        
+
         return self._mrca( visited, a, b )
-    
+
     @cython.boundscheck(False)
     cdef int _mrca( self, long[:] visited, int a, int b ) nogil :
         cdef int n
         cdef int i
         cdef int mrca = -1
         cdef int a_depth
-        
+
         n = a
         i = 0
         while True :
@@ -315,7 +318,7 @@ cdef class SuchTree :
             i += 1
             if n == -1 : break
         a_depth = i
-        
+
         n = b
         while True :
             i = 0
@@ -330,11 +333,11 @@ cdef class SuchTree :
             if n == -1 :
                 mrca = n
                 break
-        for i in xrange( self.depth ) : 
+        for i in xrange( self.depth ) :
             visited[i] = -1
-        
+
         return mrca
-   
+
     def distance( self, a, b ) :
         """
         Return distnace between a pair of nodes. Will accelt node ids
@@ -350,22 +353,22 @@ cdef class SuchTree :
                 b = self.leafs[b]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + b )
-        
+
         if a < 0 or a >= self.length :
             raise Exception( 'node id out of bounds :', a )
         if b < 0 or b >= self.length :
             raise Exception( 'node id out of bounds :', b )
-        
-        return self._distance( a, b ) 
-    
+
+        return self._distance( a, b )
+
     @cython.boundscheck(False)
     cdef float _distance( self, int a, int b ) :
         cdef int mrca
         cdef float d = 0
         cdef int n
-        
+
         mrca = self.mrca( a, b )
-       
+
         n = a
         while n != mrca :
             d += self.data[n].distance
@@ -375,21 +378,21 @@ cdef class SuchTree :
             d += self.data[n].distance
             n =  self.data[n].parent
         return d
-    
+
     def distances( self, long[:,:] ids ) :
         """
         Returns an array of distances between pairs of node ids in a
         given (n,2) array. Accepts only node ids.
         """
-        if not ids.shape[1] == 2 : 
-            raise Exception( 'expected (n,2) array', 
+        if not ids.shape[1] == 2 :
+            raise Exception( 'expected (n,2) array',
                              ids.shape[0], ids.shape[1] )
-        
+
         visited = np.zeros( self.depth, dtype=int )
         result = np.zeros( ids.shape[0], dtype=float )
         self._distances( ids.shape[0], visited, ids, result )
         return result
-    
+
     @cython.boundscheck(False)
     cdef void _distances( self, unsigned int length, long[:] visited, long[:,:] ids, double[:] result ) nogil :
         """
@@ -405,7 +408,7 @@ cdef class SuchTree :
         cdef unsigned int a
         cdef unsigned int b
         cdef unsigned int i
-        
+
         for i in xrange( ids.shape[0] ) :
             a = ids[i,0]
             b = ids[i,1]
@@ -420,7 +423,7 @@ cdef class SuchTree :
                 d += self.data[n].distance
                 n =  self.data[n].parent
             result[i] = d
-        
+
     def distances_by_name( self, id_pairs ) :
         """
         Returns an array of distances between pairs of leaf names in a
@@ -432,7 +435,7 @@ cdef class SuchTree :
             ids[n][0] = self.leafs[a]
             ids[n][1] = self.leafs[b]
         return self.distances( ids )
-    
+
     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :
         """
         Attaches a leaf node to SuchLinkedTrees link matrix column.
@@ -444,7 +447,7 @@ cdef class SuchTree :
         # we only use the left child to identify a node as a leaf, so
         # the right child is avalable to store the column index
         self.data[leaf_id].right_child = col_id
-    
+
     def get_links( self, leaf_ids ) :
         """
         Returns an array of column ids for an array of leaf ids.
@@ -455,7 +458,7 @@ cdef class SuchTree :
         for n,leaf in enumerate( leaf_ids ) :
             col_ids[n] = self.data[ leaf ].right_child
         return col_ids
-    
+
     def adjacency( self, int node=-1 ) :
         """
         The graph adjacency matrix of the subtree descendent from
@@ -470,17 +473,17 @@ cdef class SuchTree :
         cdef int l
         cdef int r
         cdef unsigned int n = 0
-        
+
         # by default, start from the root node
         if node == -1 :
             node = self.root
-        
+
         # bail if the node isn't in our tree
         if node > self.length or node < -1 :
             raise Exception( 'Node id out of range.', node )
-         
+
         self.np_buffer = np.ndarray( self.length, dtype=int )
-        
+
         to_visit = [ node ]
         for i in to_visit :
             self.np_buffer[n] = i
@@ -488,10 +491,10 @@ cdef class SuchTree :
             l,r = self.get_children( i )
             if l != -1 :
                 to_visit.append( l )
-                to_visit.append( r )   
-        
+                to_visit.append( r )
+
         ajmatrix = np.zeros( (n,n), dtype=float )
-        
+
         for i in xrange( n ) :
             node_id  = self.np_buffer[i]
             parent   = self.data[node_id].parent
@@ -502,25 +505,25 @@ cdef class SuchTree :
                 if k == parent :
                     ajmatrix[ i,j ] = distance
                     ajmatrix[ j,i ] = distance
-        
-        return { 'adjacency_matrix' : ajmatrix, 
+
+        return { 'adjacency_matrix' : ajmatrix,
                  'node_ids' : self.np_buffer[:n] }
-    
+
     def laplacian( self, int node=-1 ) :
         """
-        The graph Laplacian matrix of the subtree decendent from node.    
+        The graph Laplacian matrix of the subtree decendent from node.
         """
         if node == -1 :
-            node = self.root 
-        
+            node = self.root
+
         aj, node_ids = self.adjacency( node=node ).values()
         lp = np.zeros( aj.shape )
         np.fill_diagonal( lp, aj.sum( axis=0 ) )
         lp = lp - aj
-        
+
         return { 'laplacian' : lp,
                  'node_ids' : node_ids }
-        
+
     def dump_array( self ) :
         """
         Print the whole tree. (WARNING : may be huge and useless.)
@@ -531,7 +534,7 @@ cdef class SuchTree :
             print '   parent      : %d'    % self.data[n].parent
             print '   left child  : %d'    % self.data[n].left_child
             print '   right child : %d'    % self.data[n].right_child
-    
+
     def __dealloc__( self ) :
         PyMem_Free( self.data )     # no-op if self.data is NULL
 
@@ -544,25 +547,25 @@ cdef struct Column :
 cdef class SuchLinkedTrees :
     cdef Column* table
     cdef unsigned int table_size
-    
+
     cdef object TreeA
     cdef object TreeB
-    
+
     cdef object row_ids
     cdef object row_names
     cdef object col_ids
     cdef object col_names
-    
+
     cdef unsigned int n_rows
     cdef unsigned int n_cols
     cdef unsigned int n_links
-    
+
     cdef object np_table
     cdef object np_linklist
-    
+
     cdef object linked_leafsA
     cdef object linked_leafsB
-    
+
     cdef unsigned int subset_a_root
     cdef unsigned int subset_b_root
     cdef object subset_columns
@@ -572,12 +575,12 @@ cdef class SuchLinkedTrees :
     cdef unsigned int subset_a_size
     cdef unsigned int subset_b_size
     cdef unsigned int subset_n_links
-    
+
     cdef object row_map
-    
+
     cdef uint64_t seed
     cdef uint64_t modulus
-    
+
     def __cinit__( self, tree_a, tree_b, link_matrix ) :
         cdef unsigned int i
         self.table_size = link_matrix.shape[1]
@@ -586,13 +589,13 @@ cdef class SuchLinkedTrees :
             self.table[i].length = 0
             self.table[i].leaf_id = 0
             self.table[i].links = NULL
-        
+
         # initialize random number generator
         self.seed = np.random.randint( UINT64_MAX >> 1 )
         self.modulus = 2685821657736338717
-        
+
     def __init__( self, tree_a, tree_b, link_matrix ) :
-        
+
         # these objects are constructed only when first accessed
         self.np_table = None
         self.np_linklist = None
@@ -605,33 +608,33 @@ cdef class SuchLinkedTrees :
         self.subset_columns = None
         self.subset_a_leafs = None
         self.subset_b_leafs = None
-        self.row_map = None        
-        
-        # build trees from newick files, URLs to newick files or 
+        self.row_map = None
+
+        # build trees from newick files, URLs to newick files or
         # from existing SuchTrees
-        if type( tree_a ) == str : 
+        if type( tree_a ) == str :
             self.TreeA = SuchTree( tree_a )
         elif type( tree_a ) == SuchTree :
             self.TreeA = tree_a
         else :
             raise Exception( 'unknown input for tree', type(tree_a) )
-        
-        # build trees from newick files, URLs to newick files or 
+
+        # build trees from newick files, URLs to newick files or
         # from existing SuchTrees
-        if type( tree_b ) == str : 
+        if type( tree_b ) == str :
             self.TreeB = SuchTree( tree_b )
         elif type( tree_b ) == SuchTree :
             self.TreeB = tree_b
         else :
             raise Exception( 'unknown input for tree', type(tree_b) )
-            
+
         # make sure the link matrix connects the trees
         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :
             raise Exception( 'link_matrix shape must match tree leaf counts' )
-        
+
         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :
             raise Exception( 'axis[0] does not match TreeA leaf names' )
-        
+
         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :
             raise Exception( 'axis[1] does not match TreeB leaf names' )
 
@@ -640,15 +643,15 @@ cdef class SuchLinkedTrees :
         self.col_ids = np.array( self.TreeB.leafs.values() )
         self.row_names = self.TreeA.leafs.keys()
         self.col_names = self.TreeB.leafs.keys()
-        
+
         self.n_rows = self.TreeA.n_leafs
         self.n_cols = self.TreeB.n_leafs
-        
+
         # reverse map for row ids
         self.row_map = np.zeros( self.TreeA.length, dtype=int )
         for n,i in enumerate(self.row_ids) :
             self.row_map[i] = n
-        
+
         # populate the link table
         #print id(self), 'allocating columns in', <unsigned int> &self.table
         self.n_links = 0
@@ -667,7 +670,7 @@ cdef class SuchLinkedTrees :
                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
                 for j in xrange( col_size ) :
                     self.table[i].links[j] = l[j]
-         
+
         # by default, the subset is the whole table
         #print 'bulding default subset.'
         self.subset_a_root = self.TreeA.root
@@ -679,127 +682,127 @@ cdef class SuchLinkedTrees :
         self.subset_columns = np.array( range( self.subset_b_size ) )
         self.subset_a_leafs = self.row_ids
         self.subset_b_leafs = self.col_ids
-        
+
         # make np_linklist
         #print 'bulding default link list.'
         self.np_linklist = np.ndarray( ( self.n_links, 2 ), dtype=int )
         self._build_linklist()
-    
+
     def __dealloc__( self ) :
-        
+
         #print id(self), 'freeing columns in', <unsigned int> &self.table
-        
+
         for i in xrange( self.table_size ) :
             if not self.table[i].links == NULL :
-                PyMem_Free( self.table[i].links ) 
-        
+                PyMem_Free( self.table[i].links )
+
         #print id(self), 'freeing table', <unsigned int> &self.table
-        
+
         PyMem_Free( self.table )
-    
+
     property TreeA :
         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
         def __get__( self ) :
             return self.TreeA
-    
+
     property TreeB :
         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
         def __get__( self ) :
             return self.TreeB
-    
+
     property n_links :
         'size of the link list'
         def __get__( self ) :
-            return self.n_links   
-     
+            return self.n_links
+
     property n_cols :
         'Number of columns in the link matrix.'
         def __get__( self ) :
             return self.n_cols
-    
+
     property n_rows :
         'Number of rows in the link matrix.'
         def __get__( self ) :
             return self.n_rows
-    
+
     property col_ids :
         'ids of the columns (TreeB) in the link matrix.'
         def __get__( self ) :
             if self.col_ids is None :
                 self.col_ids = self.TreeB.leafs.values()
             return self.col_ids
-    
+
     property row_ids :
         'ids of the rows (TreeA) in the link matrix.'
         def __get__( self ) :
             if self.row_ids is None :
                 self.row_ids = self.TreeA.leafs.values()
             return self.row_ids
-    
+
     property col_names :
         'Names of the columns (TreeB) in the link matrix.'
         def __get__( self ) :
             if self.col_names is None :
                 self.col_names = self.TreeB.leafs.keys()
             return self.col_names
-    
+
     property row_names :
         'Names of the rows (TreeA) in the link matrix.'
         def __get__( self ) :
             if self.col_ids is None :
                 self.row_names = self.TreeA.leafs.keys()
             return self.row_names
-    
+
     property subset_columns :
         'ids of the current subset columns.'
         def __get__( self ) :
             return self.subset_columns
-    
+
     property subset_a_leafs :
         'ids of the current subset rows.'
         def __get__( self ) :
             return self.subset_a_leafs
- 
+
     property subset_b_leafs :
         'ids of the current subset columns.'
         def __get__( self ) :
             return self.subset_b_leafs
-    
+
     property subset_a_size :
         'Number of rows in the current subset.'
         def __get__( self ) :
             return self.subset_a_size
-        
+
     property subset_b_size :
         'Number of columns in the current subset.'
         def __get__( self ) :
             return self.subset_b_size
- 
+
     property subset_a_root :
         'ID of the current subset root in TreeA.'
         def __get__( self ) :
             return self.subset_a_root
-    
+
     property subset_b_root :
         'ID of the current subset root in TreeB.'
         def __get__( self ) :
             return self.subset_b_root
-    
+
     property subset_n_links :
         'Number of links in the current subset.'
         def __get__( self ) :
             return self.subset_n_links
-    
+
     def get_column_leafs( self, col, as_row_ids=False ) :
-        
+
         if type(col) is str :
             col_id = self.col_names.index( col )
         else :
             col_id = col
-        
+
         if col_id > self.n_cols :
             raise Exception( 'col_id out of bounds', col_id )
-        
+
         length = self.table[ col_id ].length
         column = np.ndarray( self.table[ col_id ].length, dtype=int )
         for i in xrange( length ) :
@@ -807,42 +810,42 @@ cdef class SuchLinkedTrees :
                 column[i] = self.row_map[ self.table[ col_id ].links[i] ]
             else :
                 column[i] = self.table[ col_id ].links[i]
-        
+
         return column
-    
+
     def get_column_links( self, col ) :
-        
+
         if type(col) is str :
             col_id = self.col_names.index( col )
         else :
             col_id = col
-        
+
         if col_id > self.n_cols :
             raise Exception( 'col_id out of bounds', col_id )
-        
+
         length = self.table[ col_id ].length
         column = np.zeros( self.n_rows, dtype=bool )
         for i in xrange( length ) :
             column[ self.row_map[ self.table[ col_id ].links[i] ] ] = True
-        
+
         return column
-     
+
     property linkmatrix :
         'numpy representation of link matrix (generated only on access)'
         def __get__( self ) :
-            self._build_linkmatrix()                
+            self._build_linkmatrix()
             return self.np_table
-    
-    @cython.boundscheck(False) 
+
+    @cython.boundscheck(False)
     cdef _build_linkmatrix( self ) :
         cdef unsigned int i
         cdef unsigned int j
         cdef unsigned int l
         cdef unsigned int m
         cdef unsigned int row_id
-        
+
         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )
-        
+
         for col in self.subset_columns :
             for j in xrange( self.table[col].length ) :
                 m = self.table[col].links[j]
@@ -851,13 +854,13 @@ cdef class SuchLinkedTrees :
                         row_id = self.row_map[ m ]
                         self.np_table[ row_id, col ] = True
                         continue
-     
+
     property linklist :
         'numpy representation of link list'
         def __get__( self ) :
             # length will be shorter with subsetted link matrixes
             return self.np_linklist[:self.subset_n_links,:]
-    
+
     @cython.boundscheck(False)
     cdef void _build_linklist( self ) :
         cdef unsigned int i
@@ -867,14 +870,14 @@ cdef class SuchLinkedTrees :
         cdef unsigned int n
         cdef unsigned int col
         cdef unsigned int k = 0
-       
+
         # Memoryviews into numpy arrays
         cdef long [:] col_ids        = self.col_ids
         cdef long [:] subset_columns = self.subset_columns
         cdef long [:] subset_a_leafs = self.subset_a_leafs
         cdef long [:] subset_b_leafs = self.subset_b_leafs
         cdef long [:,:] np_linklist  = self.np_linklist
-        
+
         for i in xrange( self.subset_b_size ) :
             col = subset_columns[i]
             for j in xrange( self.table[col].length ) :
@@ -886,9 +889,9 @@ cdef class SuchLinkedTrees :
                         np_linklist[ k, 1 ] = m
                         k += 1
                         continue
-        
+
         self.subset_n_links = k
-        
+
     def subset_b( self, node_id ) :
         'subset the link matrix to leafs desended from node_id in TreeB'
 
@@ -898,21 +901,21 @@ cdef class SuchLinkedTrees :
         self.subset_b_leafs = self.TreeB.get_leafs( node_id )
         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )
         self.subset_b_size  = len( self.subset_columns )
-        self.subset_b_root  = node_id 
+        self.subset_b_root  = node_id
         self._build_linklist()
-    
+
     def subset_a( self, node_id ) :
         'subset the link matrix to leafs desended from node_id in TreeA'
-        
+
         if node_id > self.TreeA.length or node_id < 0 :
             raise Exception( 'Node ID out of bounds.', node_id )
-        
+
         self.subset_a_leafs = self.TreeA.get_leafs( node_id )
         self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )
         self.subset_a_size  = len( self.subset_rows )
         self.subset_a_root  = node_id
         self._build_linklist()
-        
+
     @cython.boundscheck(False)
     def linked_distances( self ) :
         """
@@ -922,15 +925,15 @@ cdef class SuchLinkedTrees :
         cdef unsigned int i
         cdef unsigned int j
         cdef unsigned int k = 0
-        cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) / 2 
-        
+        cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) / 2
+
         ids_a = np.ndarray( ( size, 2 ), dtype=int )
         ids_b = np.ndarray( ( size, 2 ), dtype=int )
-        
+
         cdef long [:,:] linklist = self.np_linklist
         cdef long [:,:] IDs_a = ids_a
         cdef long [:,:] IDs_b = ids_b
-         
+
         with nogil :
             for i in xrange( self.subset_n_links ) :
                 for j in xrange( i ) :
@@ -939,8 +942,8 @@ cdef class SuchLinkedTrees :
                     IDs_b[ k, 1 ] = linklist[ i, 0 ]
                     IDs_b[ k, 0 ] = linklist[ j, 0 ]
                     k += 1
-        
-        return { 'TreeA'       : self.TreeA.distances( ids_a ), 
+
+        return { 'TreeA'       : self.TreeA.distances( ids_a ),
                  'TreeB'       : self.TreeB.distances( ids_b ),
                  'ids_A'       : ids_a,
                  'ids_B'       : ids_b,
@@ -948,79 +951,79 @@ cdef class SuchLinkedTrees :
                  'n_samples'   : size,
                  'deviation_a' : None,
                  'deviation_b' : None }
-    
-    @cython.boundscheck(False) 
+
+    @cython.boundscheck(False)
     cdef uint64_t _random_int( self, uint64_t n ) nogil :
         '''
         An implementation of the xorshift64star pseudorandom number
         generator, included here so that we can obtain random numbers
         outside python's Global Interpreter Lock.
-        
+
         Marsaglia, G. (2003). Xorshift RNGs. Journal of Statistical
-        Software, 8(14), 1 - 6. 
+        Software, 8(14), 1 - 6.
         http://dx.doi.org/10.18637/jss.v008.i14
         '''
         self.seed ^= self.seed >> 12 # a
         self.seed ^= self.seed << 25 # b
         self.seed ^= self.seed >> 27 # c
         return ( self.seed * self.modulus ) % n
-    
+
     @cython.boundscheck(False)
-    def sample_linked_distances( self, float sigma=0.001, 
+    def sample_linked_distances( self, float sigma=0.001,
                                        unsigned int buckets=64,
-                                       unsigned int n=4096, 
+                                       unsigned int n=4096,
                                        unsigned int maxcycles=100 ) :
-        
+
         np_query_a = np.ndarray( ( n, 2 ), dtype=int )
         np_query_b = np.ndarray( ( n, 2 ), dtype=int )
-        
+
         np_distances_a = np.ndarray( ( buckets, n ), dtype=float )
         np_distances_b = np.ndarray( ( buckets, n ), dtype=float )
-       
+
         np_dbuffer_a = np.ndarray( n, dtype=float )
         np_dbuffer_b = np.ndarray( n, dtype=float )
-        
+
         np_sums_a = np.zeros( buckets, dtype=float )
         np_sums_b = np.zeros( buckets, dtype=float )
-        
+
         np_sumsq_a = np.zeros( buckets, dtype=float )
         np_sumsq_b = np.zeros( buckets, dtype=float )
-         
+
         np_samples_a = np.zeros( buckets, dtype=int )
         np_samples_b = np.zeros( buckets, dtype=int )
-        
+
         np_deviations_a = np.ndarray( buckets, dtype=float )
         np_deviations_b = np.ndarray( buckets, dtype=float )
-        
+
         np_all_distances_a = np.ndarray( buckets * n * maxcycles, dtype=float )
         np_all_distances_b = np.ndarray( buckets * n * maxcycles, dtype=float )
-        
+
         cdef long [:,:] query_a = np_query_a
         cdef long [:,:] query_b = np_query_b
-        
+
         cdef double [:,:] distances_a = np_distances_a
         cdef double [:,:] distances_b = np_distances_b
-        
+
         cdef double [:] distances_a_mv = np_dbuffer_a
         cdef double [:] distances_b_mv = np_dbuffer_b
-         
+
         cdef double [:] sums_a = np_sums_a
         cdef double [:] sums_b = np_sums_b
-        
+
         cdef double [:] sumsq_a = np_sumsq_a
         cdef double [:] sumsq_b = np_sumsq_b
-        
+
         cdef long [:] samples_a = np_samples_a
         cdef long [:] samples_b = np_samples_b
-        
+
         cdef double [:] deviations_a = np_deviations_a
         cdef double [:] deviations_b = np_deviations_b
-                
+
         cdef double [:] all_distances_a = np_all_distances_a
         cdef double [:] all_distances_b = np_all_distances_b
-        
+
         cdef long [:,:] linklist = self.np_linklist
-        
+
         cdef int i
         cdef int j
         cdef int l1
@@ -1029,14 +1032,14 @@ cdef class SuchLinkedTrees :
         cdef int a2
         cdef int b1
         cdef int b2
-        
+
         cdef float deviation_a
         cdef float deviation_b
         cdef float sumsq_bucket_a
         cdef float sumsq_bucket_b
-        
+
         cdef unsigned int cycles = 0
-        
+
         while True :
             for i in xrange( buckets ) :
                 with nogil :
@@ -1082,19 +1085,19 @@ cdef class SuchLinkedTrees :
                 sumsq_bucket_b += deviations_b[i]**2
             deviation_a = ( sumsq_bucket_a / buckets - ( deviation_a / buckets )**2 )**(0.5)
             deviation_b = ( sumsq_bucket_b / buckets - ( deviation_b / buckets )**2 )**(0.5)
-           
+
             cycles += 1
-            
+
             if deviation_a < sigma and deviation_b < sigma : break
             if cycles >= maxcycles : return None
-             
+
         return { 'TreeA'       : np_all_distances_a[ : n * buckets * cycles ],
                  'TreeB'       : np_all_distances_b[ : n * buckets * cycles ],
                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,
                  'n_samples'   : n * buckets * cycles,
                  'deviation_a' : deviation_a,
-                 'deviation_b' : deviation_b } 
-    
+                 'deviation_b' : deviation_b }
+
     def adjacency( self, deletions=0, additions=0, swaps=0 ) :
         """
         Build the graph adjacency matrix of the current subsetted
@@ -1106,7 +1109,7 @@ cdef class SuchLinkedTrees :
         tb_aj = TB['adjacency_matrix']
         ta_node_ids = TA['node_ids'].tolist()
         tb_node_ids = TB['node_ids'].tolist()
-        
+
         # apply random permutations
         ll = np.array( self.linklist )
         for i in xrange( 1, deletions ) :
@@ -1120,23 +1123,23 @@ cdef class SuchLinkedTrees :
             a = np.random.choice( self.TreeA.leafs.values() )
             b = np.random.choice( self.TreeB.leafs.values() )
             ll = np.concatenate( (ll, np.array([[b,a]])), axis=0 )
-        
+
         # map node ids to matrix coordinates
         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )
         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )
-        
+
         # build empty graph adjacency matrix
-        aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0], 
+        aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0],
                          ta_aj.shape[1] + tb_aj.shape[1] ) )
-        
+
         # place the tree adjacency matrixes into the empty graph matrix
         aj[ 0:ta_aj.shape[0] , 0:ta_aj.shape[1]  ] = ta_aj / ta_aj.max()
         aj[   ta_aj.shape[0]:,   ta_aj.shape[1]: ] = tb_aj / tb_aj.max()
-        
+
         # compute means of all the non-zero-length edges of the trees
         ta_mean = np.mean( ta_aj.flatten()[ ta_aj.flatten() > self.TreeA.polytomy_distance ] )
-        tb_mean = np.mean( tb_aj.flatten()[ tb_aj.flatten() > self.TreeB.polytomy_distance ] )        
-        link_mean = ( ta_mean / ta_aj.max() + tb_mean / tb_aj.max() ) / 2.0        
+        tb_mean = np.mean( tb_aj.flatten()[ tb_aj.flatten() > self.TreeB.polytomy_distance ] )
+        link_mean = ( ta_mean / ta_aj.max() + tb_mean / tb_aj.max() ) / 2.0
 
         # place the link edges into graph adjacency matrix,
         # normalizing their edge weights to the average weight of the
@@ -1144,51 +1147,51 @@ cdef class SuchLinkedTrees :
         for i,j in zip( tb_links, ta_links ) :
             aj[i,j] = link_mean
             aj[j,i] = link_mean
-        
+
         return aj
-    
+
     def laplacian( self, deletions=0, additions=0, swaps=0 ) :
         """
         The graph Laplacian matrix of the current subsetted trees.
         """
-        
+
         aj = self.adjacency( deletions=deletions,
                              additions=additions,
                              swaps=swaps )
         lp = np.zeros( aj.shape )
         np.fill_diagonal( lp, aj.sum( axis=0 ) )
         lp = lp - aj
-        
+
         return lp
-        
+
     def spectrum( self, deletions=0, additions=0, swaps=0 ) :
         """
         The eigenvalues of the graph Laplacian matrix of the current
         subsetted trees.
-        """ 
+        """
         lp = self.laplacian( deletions, additions, swaps )
-        
+
         cdef int N     = lp.shape[0]
         cdef int nb    = 4
         cdef int lwork = (nb+2)*N
-        
+
         np_work = np.ndarray( lwork )
         np_w    = np.ndarray( N )
-        
+
         cdef double[:,::1] a = lp
         cdef double[:] work  = np_work
         cdef double[:] w     = np_w
-        
+
         cdef double * b = &a[0,0]
         cdef int info   = 0
-        
+
         dsyev( 'N', 'U', &N, b, &N, &w[0], &work[0], &lwork, &info )
-         
+
         if info == 0 :
             return np_w
         else :
             return info
-    
+
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'
         for i in xrange( self.n_cols ) :
