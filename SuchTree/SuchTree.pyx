@@ -85,7 +85,7 @@ cdef class SuchTree :
         SuchTree constructor.
         """
         cdef unsigned int n
-        cdef int id
+        cdef int node_id
         self.np_buffer = None
         self.n_leafs = 0
 
@@ -116,18 +116,18 @@ cdef class SuchTree :
             raise MemoryError()
         
         self.leafs = {}
-        for id,node in enumerate( t.inorder_node_iter() ) :
-            node.label = id
-            if id >= size :
-                raise Exception( 'node label out of bounds : ' + str(id) )
+        for node_id,node in enumerate( t.inorder_node_iter() ) :
+            node.label = node_id
+            if node_id >= size :
+                raise Exception( 'node label out of bounds : ' + str(node_id) )
             if node.taxon :
-                self.leafs[ node.taxon.label ] = id
+                self.leafs[ node.taxon.label ] = node_id
         
-        for id,node in enumerate( t.inorder_node_iter() ) :
+        for node_id,node in enumerate( t.inorder_node_iter() ) :
             if not node.parent_node :
                 distance = -1.0
                 parent   = -1
-                self.root = id
+                self.root = node_id
             else :
                 if not node.edge_length :
                     distance = 0.0
@@ -142,19 +142,19 @@ cdef class SuchTree :
                 left_child  = l_child.label
                 right_child = r_child.label
             
-            if id >= size :
-                raise Exception( 'node label out of bounds : ' + str(id) )
+            if node_id >= size :
+                raise Exception( 'node label out of bounds : ' + str(node_id) )
             
-            self.data[id].parent      = parent
-            self.data[id].left_child  = left_child
-            self.data[id].right_child = right_child
-            self.data[id].distance    = distance
+            self.data[node_id].parent      = parent
+            self.data[node_id].left_child  = left_child
+            self.data[node_id].right_child = right_child
+            self.data[node_id].distance    = distance
             
-        for id in self.leafs.values() :
+        for node_id in self.leafs.values() :
             n = 1
             while True :
-                if self.data[id].parent == -1 : break
-                id = self.data[id].parent
+                if self.data[node_id].parent == -1 : break
+                node_id = self.data[node_id].parent
                 n += 1
             if n > self.depth :
                 self.depth = n
@@ -208,19 +208,19 @@ cdef class SuchTree :
             
         return self.data[node_id].parent
         
-    def get_children( self, id ) :
+    def get_children( self, node_id ) :
         """
         Return the ids of child nodes of given node. Will accept node
         id or a leaf name.
         """
-        if type(id) is str :
+        if type(node_id) is str :
             try :
-                id = self.leafs[ id ]
+                node_id = self.leafs[ node_id ]
             except KeyError :
-                raise Exception( 'Leaf name not found : ' + id )
-        return ( self.data[id].left_child, self.data[id].right_child )
+                raise Exception( 'Leaf name not found : ' + node_id )
+        return ( self.data[node_id].left_child, self.data[node_id].right_child )
         
-    def get_leafs( self, id ) :
+    def get_leafs( self, node_id ) :
         """
         Return an array of ids of all leaf nodes descendent from a given node.
         """
@@ -230,7 +230,7 @@ cdef class SuchTree :
         cdef unsigned int n = 0
         if self.np_buffer is None :
             self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
-        to_visit = [id]
+        to_visit = [node_id]
         for i in to_visit :
             l,r = self.get_children( i )
             if l == -1 :
@@ -241,7 +241,7 @@ cdef class SuchTree :
                 to_visit.append( r )
         return np.array(self.np_buffer[:n])
 
-    def get_descendant_nodes( self, node ) :
+    def get_descendant_nodes( self, node_id ) :
         """
         Generator for ids of all nodes descendent from a given node.
         """
@@ -250,7 +250,7 @@ cdef class SuchTree :
         cdef int r
         cdef unsigned int n = 0
 
-        to_visit = [node]
+        to_visit = [node_id]
         for i in to_visit :
             l,r = self.get_children( i )
             if l == -1 :
@@ -269,6 +269,7 @@ cdef class SuchTree :
         cdef int l
         cdef int r
         cdef unsigned int n = 0
+
         if from_node == -1 : from_node = self.root
 
         if self.np_buffer is None :
@@ -287,54 +288,54 @@ cdef class SuchTree :
                 self.np_buffer[n] = i
                 n += 1
         return np.array(self.np_buffer[:n])
-
-    def get_distance_to_root( self, id ) :
+        
+    def get_distance_to_root( self, node_id ) :
         """
         Return distance to root for a given node. Will accept node id
         or a leaf name.
         """
-        if type(id) is str :
+        if type(node_id) is str :
             try :
-                id = self.leafs[ id ]
+                id = self.leafs[ node_id ]
             except KeyError :
-                raise Exception( 'Leaf name not found : ' + id )
-        return self._get_distance_to_root( id )
-
+                raise Exception( 'Leaf name not found : ' + node_id )
+        return self._get_distance_to_root( node_id )
+        
     @cython.boundscheck(False)
-    cdef float _get_distance_to_root( self, id ) :
+    cdef float _get_distance_to_root( self, node_id ) :
         """
         Calculate the distance from a node of a given id to the root node.
         Will work for both leaf and internal nodes. Private cdef method.
         """
         cdef float d = 0.0
         cdef float d_i = 0.0
-        cdef int i = id
+        cdef int i = node_id
         cdef int a_depth = 0
         cdef int mrca = -1
-
+        
         while True :
             d_i = self.data[i].distance
             if d_i == -1 : break
             d = d + d_i
             i = self.data[i].parent
         return d
-
+        
     def mrca( self, a, b ) :
         """
         Return the id of the most recent common ancestor of two nodes
         if given ids.
         """
         visited = np.zeros( self.depth, dtype=int )
-
+        
         return self._mrca( visited, a, b )
-
+        
     @cython.boundscheck(False)
     cdef int _mrca( self, long[:] visited, int a, int b ) nogil :
         cdef int n
         cdef int i
         cdef int mrca = -1
         cdef int a_depth
-
+        
         n = a
         i = 0
         while True :
@@ -343,7 +344,7 @@ cdef class SuchTree :
             i += 1
             if n == -1 : break
         a_depth = i
-
+        
         n = b
         while True :
             i = 0
@@ -360,13 +361,14 @@ cdef class SuchTree :
                 break
         for i in xrange( self.depth ) :
             visited[i] = -1
-
+            
         return mrca
-
+        
     def distance( self, a, b ) :
         """
-        Return distnace between a pair of nodes. Will accelt node ids
-        or leaf names.
+        Return distnace between a pair of nodes. Will treat strings as
+        leaf names and integers as node ids. Either argument can be a
+        leaf name or an integer.
         """
         if type(a) is str :
             try :
@@ -406,8 +408,8 @@ cdef class SuchTree :
 
     def distances( self, long[:,:] ids ) :
         """
-        Returns an array of distances between pairs of node ids in a
-        given (n,2) array. Accepts only node ids.
+        Returns an array of distances between pairs of node ids,
+        which are expected as an (n,2) array of type int.
         """
         if not ids.shape[1] == 2 :
             raise Exception( 'expected (n,2) array',
@@ -417,9 +419,12 @@ cdef class SuchTree :
         result = np.zeros( ids.shape[0], dtype=float )
         self._distances( ids.shape[0], visited, ids, result )
         return result
-
+        
     @cython.boundscheck(False)
-    cdef void _distances( self, unsigned int length, long[:] visited, long[:,:] ids, double[:] result ) nogil :
+    cdef void _distances( self, unsigned int length,
+                                long[:] visited,
+                                long[:,:] ids,
+                                double[:] result ) nogil :
         """
         For each pair of node ids in the given (n,2) array, calculate the
         distance to the root node for each pair and store their differece
@@ -433,7 +438,7 @@ cdef class SuchTree :
         cdef unsigned int a
         cdef unsigned int b
         cdef unsigned int i
-
+        
         for i in xrange( ids.shape[0] ) :
             a = ids[i,0]
             b = ids[i,1]
@@ -460,7 +465,7 @@ cdef class SuchTree :
             ids[n][0] = self.leafs[a]
             ids[n][1] = self.leafs[b]
         return self.distances( ids )
-
+        
     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :
         """
         Attaches a leaf node to SuchLinkedTrees link matrix column.
@@ -472,7 +477,7 @@ cdef class SuchTree :
         # we only use the left child to identify a node as a leaf, so
         # the right child is avalable to store the column index
         self.data[leaf_id].right_child = col_id
-
+        
     def get_links( self, leaf_ids ) :
         """
         Returns an array of column ids for an array of leaf ids.
@@ -483,11 +488,12 @@ cdef class SuchTree :
         for n,leaf in enumerate( leaf_ids ) :
             col_ids[n] = self.data[ leaf ].right_child
         return col_ids
-
+        
     def adjacency( self, int node=-1 ) :
         """
-        The graph adjacency matrix of the subtree descendent from
-        node.
+        The graph adjacency matrix of the tree. If parameter 
+        node is given, return graph adjacency matrix of the
+        subtree descendent from node_id.
         """
         cdef unsigned int i
         cdef unsigned int j
@@ -506,9 +512,9 @@ cdef class SuchTree :
         # bail if the node isn't in our tree
         if node > self.length or node < -1 :
             raise Exception( 'Node id out of range.', node )
-
+        
         self.np_buffer = np.ndarray( self.length, dtype=int )
-
+        
         to_visit = [ node ]
         for i in to_visit :
             self.np_buffer[n] = i
@@ -517,9 +523,9 @@ cdef class SuchTree :
             if l != -1 :
                 to_visit.append( l )
                 to_visit.append( r )
-
+        
         ajmatrix = np.zeros( (n,n), dtype=float )
-
+        
         for i in xrange( n ) :
             node_id  = self.np_buffer[i]
             parent   = self.data[node_id].parent
@@ -530,17 +536,19 @@ cdef class SuchTree :
                 if k == parent :
                     ajmatrix[ i,j ] = distance
                     ajmatrix[ j,i ] = distance
-
+        
         return { 'adjacency_matrix' : ajmatrix,
                  'node_ids' : self.np_buffer[:n] }
-
+        
     def laplacian( self, int node=-1 ) :
         """
-        The graph Laplacian matrix of the subtree decendent from node.
+        The graph Laplacian matrix of the tree, or if the parameter
+        node is given, return the graph Laplacian matrix of the 
+        subtree decendent from node.
         """
         if node == -1 :
             node = self.root
-
+        
         aj, node_ids = self.adjacency( node=node ).values()
         lp = np.zeros( aj.shape )
         np.fill_diagonal( lp, aj.sum( axis=0 ) )
@@ -548,7 +556,7 @@ cdef class SuchTree :
 
         return { 'laplacian' : lp,
                  'node_ids' : node_ids }
-
+        
     def dump_array( self ) :
         """
         Print the whole tree. (WARNING : may be huge and useless.)
@@ -559,7 +567,7 @@ cdef class SuchTree :
             print '   parent      : %d'    % self.data[n].parent
             print '   left child  : %d'    % self.data[n].left_child
             print '   right child : %d'    % self.data[n].right_child
-
+        
     def __dealloc__( self ) :
         PyMem_Free( self.data )     # no-op if self.data is NULL
 
