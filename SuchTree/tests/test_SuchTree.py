@@ -87,3 +87,11 @@ def test_adjacency() :
         distance = T.distance( node, parent )
         i,j = leaf_ids.index( node ), leaf_ids.index( parent )
         print node, parent, ':', i, j, ' :: ', aj[i,j], distance
+
+def test_get_descendant_nodes() :
+    T = SuchTree( test_tree )
+    A = set( T.get_descendant_nodes( T.root ) )
+    B = set( T.get_leafs( T.root ) )
+    C = set( T.get_internal_nodes() )
+    assert_equal( A, B | C )
+

@@ -114,7 +114,7 @@ cdef class SuchTree :
         self.length = size
         if not self.data :
             raise MemoryError()
-
+        
         self.leafs = {}
         for id,node in enumerate( t.inorder_node_iter() ) :
             node.label = id
@@ -122,7 +122,7 @@ cdef class SuchTree :
                 raise Exception( 'node label out of bounds : ' + str(id) )
             if node.taxon :
                 self.leafs[ node.taxon.label ] = id
-
+        
         for id,node in enumerate( t.inorder_node_iter() ) :
             if not node.parent_node :
                 distance = -1.0
@@ -141,15 +141,15 @@ cdef class SuchTree :
                 l_child, r_child = node.child_nodes()
                 left_child  = l_child.label
                 right_child = r_child.label
-
+            
             if id >= size :
                 raise Exception( 'node label out of bounds : ' + str(id) )
-
+            
             self.data[id].parent      = parent
             self.data[id].left_child  = left_child
             self.data[id].right_child = right_child
             self.data[id].distance    = distance
-
+            
         for id in self.leafs.values() :
             n = 1
             while True :
@@ -158,39 +158,39 @@ cdef class SuchTree :
                 n += 1
             if n > self.depth :
                 self.depth = n
-
+                
     property length :
         'The number of nodes in the tree.'
         def __get__( self ) :
             return self.length
-
+            
     property depth :
         'The maximum depth of the tree.'
         def __get__( self ) :
             return self.depth
-
+            
     property n_leafs :
         'The number of leafs in the tree.'
         def __get__( self ) :
             return self.n_leafs
-
+            
     property leafs :
         'A dictionary mapping leaf names to leaf node ids.'
         def __get__( self ) :
             return self.leafs
-
+            
     property root :
         'The id of the root node.'
         def __get__( self ) :
             return self.root
-
+            
     property polytomy_distance :
         'Tiny, nonzero distance for polytomies in the adjacency matrix.'
         def __get__( self ) :
             return self.epsilon
         def __set__( self, np.float64_t new_epsilon ) :
             self.epsilon = new_epsilon
-
+            
     def get_parent( self, query ) :
         """
         Return the id of the parent of a given node. Will accept node
@@ -205,9 +205,9 @@ cdef class SuchTree :
             node_id = int( query )
         if node_id < 0 or node_id >= self.length :
             raise Exception( 'node id out of bounds : ', node_id )
-
+            
         return self.data[node_id].parent
-
+        
     def get_children( self, id ) :
         """
         Return the ids of child nodes of given node. Will accept node
@@ -219,7 +219,7 @@ cdef class SuchTree :
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + id )
         return ( self.data[id].left_child, self.data[id].right_child )
-
+        
     def get_leafs( self, id ) :
         """
         Return an array of ids of all leaf nodes descendent from a given node.
@@ -241,7 +241,27 @@ cdef class SuchTree :
                 to_visit.append( r )
         return np.array(self.np_buffer[:n])
 
-    def get_internal_nodes( self ) :
+    def get_descendant_nodes( self, node ) :
+        """
+        Generator for ids of all nodes descendent from a given node.
+        """
+        cdef unsigned int i
+        cdef int l
+        cdef int r
+        cdef unsigned int n = 0
+
+        to_visit = [node]
+        for i in to_visit :
+            l,r = self.get_children( i )
+            if l == -1 :
+                yield i
+                continue
+            else :
+                to_visit.append( l )
+                to_visit.append( r )
+                yield i
+
+    def get_internal_nodes( self, from_node=-1 ) :
         """
         Return an array of the ids of all internal nodes.
         """
@@ -249,9 +269,14 @@ cdef class SuchTree :
         cdef int l
         cdef int r
         cdef unsigned int n = 0
+        if from_node == -1 : from_node = self.root
+
         if self.np_buffer is None :
             self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
-        to_visit = [self.root]
+            # this doesn't look like it should work, but strictly
+            # bifrucating trees always have one fewer internal nodes
+            # than leaf nodes
+        to_visit = [from_node]
         for i in to_visit :
             l,r = self.get_children( i )
             if l == -1 :
