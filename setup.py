@@ -5,7 +5,7 @@ from Cython.Build import cythonize
 
 setup(
     name='SuchTree',
-    version='0.2',
+    version='0.3',
     description='A Python library for doing fast, thread-safe computations on phylogenetic trees.',
     url='http://github.com/ryneches/SuchTree',
     author='Russell Neches',

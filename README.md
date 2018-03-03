@@ -31,12 +31,36 @@ lots of other useful things. However, that power and flexibility comes
 with a price; speed.
 
 For trees of moderate size, it is possible to solve the speed issue by
-doing your statistics on a matrix of patristic distances.
-Unfortunately, distance matrixes scale quadratically with the number
-of taxa in your tree. A distance matrix for a tree of 100,000 taxa
-will consume about 20GB of RAM. If your statistical method performs
-sampling, then almost every operation will be a cache miss. Even if
-you have the RAM, it will be painfully slow.
+working with matrix representations of the tree. Unfortunately, most
+representations scale quadratically with the number of taxa in your tree.
+A distance matrix for a tree of 100,000 taxa will consume about 20GB 
+of RAM. If your method performs sampling, then almost every operation
+will be a cache miss. Even if you have the RAM, it will be painfully slow.
+
+### So problem, again
+
+Suppose you have more than one group of organisms, and you want to study
+the way their interactions have influenced their evolution. Now, you have
+several trees that link together to form a generalized graph. Oh no, not
+graph theory!
+
+Calm yourself! `SuchLinkedTrees` has you covered. At the moment,
+`SuchLinkedTrees` supports trees of two interacting groups, but work is
+under way to generalize it to any number of groups. Like `SuchTree`,
+`SuchLinkedTrees` is not intended to be a general purpose graph theory
+package. Instead, it leverages `SuchTree` to efficiently handle the 
+problem-specific tasks of working with co-phylogeny systems. It will load
+your datasets. It will build the graphs. It will let you subset the graphs
+using their phylogenetic or ecological properties. It will generate
+weighted adjacency and Laplacian matrixes of the whole graph or of subgraphs
+you have selected. It will generate spectral decompositions of subgraphs if
+spectral graph theory is your thing.
+
+And, if that doesn't solve your problem, it will emit sugraphs as `Graph`
+objects for use with the [`igraph`](http://igraph.org/) network analysis
+package. Now you can do even more things. Maybe you want to get all crazy
+with some [graph kernels](https://github.com/BorgwardtLab/GraphKernels)? Well,
+now you can just do that.
 
 ### Much solution
 
