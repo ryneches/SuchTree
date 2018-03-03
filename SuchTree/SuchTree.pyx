@@ -6,6 +6,14 @@ cimport numpy as np
 import pandas as pd
 from scipy.linalg.cython_lapack cimport dsyev
 
+# if igraph is available, enable
+# SuchLinkedTrees.to_igraph()
+try :
+    from igraph import Graph, ADJ_UNDIRECTED
+    with_igraph = True
+except ImportError :
+    with_igraph = False
+
 cdef extern from 'stdint.h' :
     ctypedef unsigned long int uint64_t
     uint64_t UINT64_MAX
@@ -1223,6 +1231,29 @@ cdef class SuchLinkedTrees :
             return np_w
         else :
             return info
+    
+    def to_igraph( self ) :
+        """
+        Return the current SuchLinkedTrees subgraph as a weighted,
+        labled igraph object. The igraph package must be installed.
+        """
+        if not with_igraph :
+            raise Exception( 'igraph package not installed.' )
+        
+        g = Graph.Weighted_Adjacency( self.adjacency().tolist(),
+                                      mode=ADJ_UNDIRECTED )
+        
+        subset_a_length = len( list( self.TreeA.get_descendant_nodes( self.subset_a_root ) ) )
+        subset_b_length = len( list( self.TreeB.get_descendant_nodes( self.subset_b_root ) ) )
+        
+        g.vs['color'] = ['#e1e329ff'] * subset_a_length + \
+                        ['#24878dff'] * subset_b_length
+        g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \
+                        [ 'g' + str(i) for i in range( subset_b_length ) ]
+        g.vs['tree'] = [ 0 ]  * subset_a_length + [ 1 ] * subset_b_length
+        
+        return g
+ 
 
     def dump_table( self ) :
         'Print the link matrix (WARNING : may be huge and useless)'

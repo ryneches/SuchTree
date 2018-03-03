@@ -14,6 +14,11 @@ for n,node in enumerate( dpt.inorder_node_iter() ) :
     if node.taxon :
         N += 1
 
+# gopher/louse dataset
+gopher_tree = 'SuchTree/tests/gopher.tree'
+lice_tree   = 'SuchTree/tests/lice.tree'
+gl_links    = 'SuchTree/tests/links.csv'
+
 def test_init_link_by_name() :
     T = SuchTree( test_tree )
     links = pd.DataFrame( numpy.random.random_integers( 0, 3, size=(N,N)),
@@ -236,3 +241,33 @@ def test_subset_b() :
         list( l[l>0].index ) ))
     B = set(map( lambda x : (x[0], x[1]),  SLT.linklist ) )
     assert_equal( A, B )
+
+# test igraph output
+
+def test_to_igraph() :
+    #Make sure the igraph output has correct same structure 
+    
+    T1 = SuchTree( gopher_tree )
+    T2 = SuchTree( lice_tree   )
+    links = pd.DataFrame.from_csv( gl_links )
+    
+    SLT = SuchLinkedTrees( T1, T2, links )
+    
+    g = SLT.to_igraph()
+    
+    # igraph returns an unweighted adjacency matrix,
+    # so we'll convert SuchLinkedTrees weighted
+    # adjacency matrix to an unweighted form.
+    saj = numpy.ceil( SLT.adjacency() )
+    
+    # For some reason, igraph invented its own Matrix
+    # class that doesn't implement a standard numpy 
+    # interface. :-/
+    iaj = numpy.array( map( list, g.get_adjacency() ) )
+    
+    # matrixes must be the same shape
+    assert_equal( saj.shape, iaj.shape )
+    
+    # all matrix elements must be equal
+    assert( reduce( lambda a,b:a and b, (saj == iaj).flatten() ) )
+
