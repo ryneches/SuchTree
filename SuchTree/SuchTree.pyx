@@ -251,7 +251,8 @@ cdef class SuchTree :
     
     def get_descendant_nodes( self, node_id ) :
         """
-        Generator for ids of all nodes descendent from a given node.
+        Generator for ids of all nodes descendent from a given node,
+        starting with the given node.
         """
         cdef unsigned int i
         cdef int l
@@ -327,7 +328,42 @@ cdef class SuchTree :
             d = d + d_i
             i = self.data[i].parent
         return d
+    
+    def is_ancestor( self, a, b ) :
+        """
+        Tristate : returns 1 if a is an ancestor of b, -1 if b is an
+        ancestor of a, or 0 otherwise. Accepts node ids.
+        """
+        return self._is_ancestor( a, b )
         
+    @cython.boundscheck(False)
+    cdef int _is_ancestor( self, int a, int b ) nogil :
+        cdef int i
+        cdef int n
+
+        # is a an ancestor of b?
+        i = b
+        while True :
+            n = self.data[i].parent
+            if n == -1 :
+                break
+            if n == a :
+                return 1
+            i = n
+
+        # is b an ancestor of a?
+        i = a
+        while True :
+            n = self.data[i].parent
+            if n == -1 :
+                break
+            if n == b :
+                return -1
+            i = n
+        
+        # or neither?
+        return 0
+
     def mrca( self, a, b ) :
         """
         Return the id of the most recent common ancestor of two nodes

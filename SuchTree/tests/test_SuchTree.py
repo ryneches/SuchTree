@@ -95,3 +95,11 @@ def test_get_descendant_nodes() :
     C = set( T.get_internal_nodes() )
     assert_equal( A, B | C )
 
+def test_is_ancestor() :
+    T = SuchTree( test_tree )
+    assert_equal( T.length - 1,
+                  sum( map( lambda x : T.is_ancestor( T.root, x ), 
+                            T.get_descendant_nodes( T.root ) ) ) )
+    assert_equal( 1 - T.length,
+                  sum( map( lambda x : T.is_ancestor( x, T.root ),
+                            T.get_descendant_nodes( T.root ) ) ) )
