@@ -228,7 +228,7 @@ def test_link_identities() :
     t1_sfeal = dict( zip( T1.leafs.values(), T1.leafs.keys() ) )
     t2_sfeal = dict( zip( T2.leafs.values(), T2.leafs.keys() ) )
     
-    lll = set( (t1_sfeal[i], t2_sfeal[j] ) for i,j in SLT.linklist.tolist() )
+    lll = set( (t1_sfeal[j], t2_sfeal[i] ) for i,j in SLT.linklist.tolist() )
     
     assert_equal( set(ll), lll )
 
