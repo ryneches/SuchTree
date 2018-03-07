@@ -4,6 +4,7 @@ from dendropy import Tree
 from itertools import combinations
 import numpy
 import pandas as pd
+import tempfile
 
 test_tree = 'SuchTree/tests/test.tree'
 dpt = Tree.get( file=open(test_tree), schema='newick' )
@@ -205,6 +206,31 @@ def test_linklist_property() :
         list( l[l>0].index ) ))
     B = set(map( lambda x : (x[0], x[1]),  SLT.linklist ) )
     assert_equal( A, B )
+
+def test_link_identities() :
+    with tempfile.NamedTemporaryFile() as f1 :
+        f1.file.write( '(A:1,(B:1,(C:1,D:1)E:1)F:1)G:1;' )
+        f1.file.close()
+        T1 = SuchTree( f1.name )
+    with tempfile.NamedTemporaryFile() as f2 :
+        f2.file.write( '((a:1,b:1)e:1,(c:1,d:1)f:1)g:1;' )
+        f2.file.close()
+        T2 = SuchTree( f2.name )
+    
+    ll = ( ('A','a'), ('B','c'), ('B','d'), ('C','d'), ('D','d') )
+    
+    links = pd.DataFrame( numpy.zeros( (4,4), dtype=int ), index=T1.leafs.keys(), columns=T2.leafs.keys() )
+    for i,j in ll :
+            links.at[i,j] = 1
+    
+    SLT = SuchLinkedTrees( T1, T2, links )
+    
+    t1_sfeal = dict( zip( T1.leafs.values(), T1.leafs.keys() ) )
+    t2_sfeal = dict( zip( T2.leafs.values(), T2.leafs.keys() ) )
+    
+    lll = set( (t1_sfeal[i], t2_sfeal[j] ) for i,j in SLT.linklist.tolist() )
+    
+    assert_equal( set(ll), lll )
 
 # test subsetting
 
