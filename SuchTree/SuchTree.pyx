@@ -1268,7 +1268,7 @@ cdef class SuchLinkedTrees :
         else :
             return info
     
-    def to_igraph( self ) :
+    def to_igraph( self, deletions=0, additions=0, swaps=0 ) :
         """
         Return the current SuchLinkedTrees subgraph as a weighted,
         labled igraph object. The igraph package must be installed.
@@ -1276,7 +1276,9 @@ cdef class SuchLinkedTrees :
         if not with_igraph :
             raise Exception( 'igraph package not installed.' )
         
-        g = Graph.Weighted_Adjacency( self.adjacency().tolist(),
+        g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions, 
+                                                      additions=additions, 
+                                                      swaps=swaps ).tolist(),
                                       mode=ADJ_UNDIRECTED )
         
         subset_a_length = len( list( self.TreeA.get_descendant_nodes( self.subset_a_root ) ) )

@@ -1,5 +1,6 @@
 from __future__ import print_function
 
+from functools import reduce
 import pytest
 from SuchTree import SuchTree, SuchLinkedTrees, pearson
 from dendropy import Tree
@@ -286,7 +287,7 @@ def test_to_igraph() :
     
     T1 = SuchTree( gopher_tree )
     T2 = SuchTree( lice_tree   )
-    links = pd.DataFrame.from_csv( gl_links )
+    links = pd.read_csv( gl_links, index_col=0 )
     
     SLT = SuchLinkedTrees( T1, T2, links )
     
@@ -300,7 +301,7 @@ def test_to_igraph() :
     # For some reason, igraph invented its own Matrix
     # class that doesn't implement a standard numpy 
     # interface. :-/
-    iaj = numpy.array( map( list, g.get_adjacency() ) )
+    iaj = numpy.array( list( map( list, g.get_adjacency() ) ) )
     
     # matrixes must be the same shape
     assert saj.shape == iaj.shape
