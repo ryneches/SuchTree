@@ -2,6 +2,9 @@
 from setuptools import setup, Extension
 from Cython.Distutils import build_ext
 from Cython.Build import cythonize
+from sys import version_info
+
+d = { 'language_level' : version_info.major }
 
 setup(
     name='SuchTree',
@@ -21,6 +24,6 @@ setup(
         'pandas',
     ],
     zip_safe=False,
-    ext_modules = cythonize( [ "SuchTree/SuchTree.pyx" ] ),
+    ext_modules = cythonize( [ "SuchTree/SuchTree.pyx" ], compiler_directives = d ),
     test_suite = 'nose.collector'
 )

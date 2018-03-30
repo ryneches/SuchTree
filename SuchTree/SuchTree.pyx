@@ -606,11 +606,11 @@ cdef class SuchTree :
         Print the whole tree. (WARNING : may be huge and useless.)
         """
         for n in range(self.length) :
-            print 'id : %d ->' % n
-            print '   distance    : %0.3f' % self.data[n].distance
-            print '   parent      : %d'    % self.data[n].parent
-            print '   left child  : %d'    % self.data[n].left_child
-            print '   right child : %d'    % self.data[n].right_child
+            print( 'id : %d ->' % n )
+            print( '   distance    : %0.3f' % self.data[n].distance    )
+            print( '   parent      : %d'    % self.data[n].parent      )
+            print( '   left child  : %d'    % self.data[n].left_child  )
+            print( '   right child : %d'    % self.data[n].right_child )
         
     def __dealloc__( self ) :
         PyMem_Free( self.data )     # no-op if self.data is NULL
@@ -1002,7 +1002,7 @@ cdef class SuchLinkedTrees :
         cdef unsigned int i
         cdef unsigned int j
         cdef unsigned int k = 0
-        cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) / 2
+        cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) // 2
         
         ids_a = np.ndarray( ( size, 2 ), dtype=int )
         ids_b = np.ndarray( ( size, 2 ), dtype=int )
@@ -1299,4 +1299,4 @@ cdef class SuchLinkedTrees :
                 #row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
                 row_id = self.table[i].links[j]
                 col.append( row_id )
-            print 'column', i, ':', ','.join( map( str, col ) )
+            print( 'column', i, ':', ','.join( map( str, col ) ) )
