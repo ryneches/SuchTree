@@ -17,7 +17,8 @@ setup(
         'scipy>=0.18',
         'numpy',
         'dendropy',
-        'cython'
+        'cython',
+        'pandas',
     ],
     zip_safe=False,
     ext_modules = cythonize( [ "SuchTree/SuchTree.pyx" ] ),
