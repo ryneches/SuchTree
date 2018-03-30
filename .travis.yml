@@ -17,9 +17,9 @@ before_install:
   - ./miniconda.sh -b
   #- export PATH=/home/travis/miniconda2/bin:$PATH
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then 
-      source /home/travis/miniconda2/bin/activate root
+      source /home/travis/miniconda2/bin/activate root;
     else
-      source /home/travis/miniconda3/bin/activate root
+      source /home/travis/miniconda3/bin/activate root;
     fi
   - conda update --yes conda
   # The next couple lines fix a crash with multiprocessing on Travis and are not specific to using Miniconda
