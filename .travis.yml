@@ -1,6 +1,7 @@
 language: python
 python:
   - 2.7
+  - 3.6
 notifications:
   email: false
 env:
@@ -30,8 +31,9 @@ install:
 
 # Run test
 script:
-  - nosetests --with-cov --cover-test SuchTree
+#  - nosetests --with-cov --cover-test SuchTree
 #  - coverage run --source=SuchTree setup.py test
+  - pytest
 
 # Calculate coverage
 after_success:

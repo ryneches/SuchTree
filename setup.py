@@ -8,7 +8,7 @@ d = { 'language_level' : version_info.major }
 
 setup(
     name='SuchTree',
-    version='0.4',
+    version='0.5',
     description='A Python library for doing fast, thread-safe computations on phylogenetic trees.',
     url='http://github.com/ryneches/SuchTree',
     author='Russell Neches',
@@ -25,5 +25,7 @@ setup(
     ],
     zip_safe=False,
     ext_modules = cythonize( [ "SuchTree/SuchTree.pyx" ], compiler_directives = d ),
-    test_suite = 'nose.collector'
+    #test_suite = 'nose.collector',
+    setup_requires = [ 'pytest-runner', ],
+    tests_require = [ 'pytest', ],
 )

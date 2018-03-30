@@ -102,7 +102,7 @@ cdef class SuchTree :
         
         url_strings = [ 'http://', 'https://', 'ftp://' ]
 
-        if filter( lambda x : tree_file.startswith(x), url_strings ) :
+        if any ( tree_file.startswith(x) for x in url_strings ) :
             t = Tree.get( url=tree_file,
                           schema='newick',
                           preserve_underscores=True,
@@ -689,7 +689,7 @@ cdef class SuchLinkedTrees :
         
         # build trees from newick files, URLs to newick files or
         # from existing SuchTrees
-        if type( tree_a ) == str :
+        if isinstance( tree_a, basestring ):
             self.TreeA = SuchTree( tree_a )
         elif type( tree_a ) == SuchTree :
             self.TreeA = tree_a
@@ -698,7 +698,7 @@ cdef class SuchLinkedTrees :
         
         # build trees from newick files, URLs to newick files or
         # from existing SuchTrees
-        if type( tree_b ) == str :
+        if isinstance( tree_b, basestring ):
             self.TreeB = SuchTree( tree_b )
         elif type( tree_b ) == SuchTree :
             self.TreeB = tree_b
@@ -716,10 +716,10 @@ cdef class SuchLinkedTrees :
             raise Exception( 'axis[1] does not match TreeB leaf names' )
         
         # set row and column indexes
-        self.row_ids = np.array( self.TreeA.leafs.values() )
-        self.col_ids = np.array( self.TreeB.leafs.values() )
-        self.row_names = self.TreeA.leafs.keys()
-        self.col_names = self.TreeB.leafs.keys()
+        self.row_ids = np.array( list(self.TreeA.leafs.values()) )
+        self.col_ids = np.array( list(self.TreeB.leafs.values()) )
+        self.row_names = list(self.TreeA.leafs.keys())
+        self.col_names = list(self.TreeB.leafs.keys())
         
         self.n_rows = self.TreeA.n_leafs
         self.n_cols = self.TreeB.n_leafs
@@ -872,7 +872,7 @@ cdef class SuchLinkedTrees :
         
     def get_column_leafs( self, col, as_row_ids=False ) :
         
-        if type(col) is str :
+        if isinstance(col, basestring) :
             col_id = self.col_names.index( col )
         else :
             col_id = col
@@ -892,7 +892,7 @@ cdef class SuchLinkedTrees :
         
     def get_column_links( self, col ) :
         
-        if type(col) is str :
+        if isinstance(col, basestring) :
             col_id = self.col_names.index( col )
         else :
             col_id = col
