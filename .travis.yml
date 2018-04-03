@@ -1,11 +1,16 @@
 language: python
 python:
-  - 2.7
-  - 3.6
+  - "2.7"
+  - "3.5"
+  - "3.6"
 notifications:
   email: false
 env:
-  - CPATH=/home/travis/miniconda2/lib/python2.7/site-packages/numpy/core/include
+  - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then 
+      CPATH=/home/travis/miniconda2/lib/python2.7/site-packages/numpy/core/include
+    else
+      CPATH=/home/travis/miniconda3/lib/python${TRAVIS_PYTHON_VERSION}/site-packages/numpy/core/include
+    fi
 # Setup anaconda
 before_install:
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
