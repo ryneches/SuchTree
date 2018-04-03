@@ -31,18 +31,18 @@ install:
   # Coverage packages are on my binstar channel
   - conda install --yes -c dan_blanchard python-coveralls nose-cov
   - pip install dendropy
-  - pip install coverage
+  - pip install codecov
   # - pip install python-igraph
   - conda update --yes pip
   - easy_install --upgrade distribute
-  - python setup.py build_ext -i
+  - python setup.py install
 
 # Run test
 script:
 #  - nosetests --with-cov --cover-test SuchTree
 #  - coverage run --source=SuchTree setup.py test
-  - python setup.py test
+  - pytest --cov
 
 # Calculate coverage
 after_success:
-  - coveralls
+  - codecov 67fd610c-32ee-4a70-b6a9-8a6f6883ef78
