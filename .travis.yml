@@ -1,11 +1,11 @@
 language: python
 python:
-  - 2.7
-  - 3.6
+  - "2.7"
+  - "3.5"
+  - "3.6"
 notifications:
   email: false
-env:
-  - CPATH=/home/travis/miniconda2/lib/python2.7/site-packages/numpy/core/include
+
 # Setup anaconda
 before_install:
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
@@ -41,7 +41,7 @@ install:
 script:
 #  - nosetests --with-cov --cover-test SuchTree
 #  - coverage run --source=SuchTree setup.py test
-  - pytest
+  - python setup.py test
 
 # Calculate coverage
 after_success:
