@@ -45,4 +45,4 @@ script:
 
 # Calculate coverage
 after_success:
-  - codecov 67fd610c-32ee-4a70-b6a9-8a6f6883ef78
+  - codecov --token=67fd610c-32ee-4a70-b6a9-8a6f6883ef78
