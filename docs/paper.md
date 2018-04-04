@@ -16,7 +16,7 @@ authors:
 affiliations:
 - name: U.C. Davis Genome Center
   index: 1
-- name: UC Davis Graduate Group in Computer Science
+- name: U.C. Davis Graduate Group in Computer Science
   index: 2
 date: 3 April 2018
 bibliography: paper.bib

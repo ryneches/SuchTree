@@ -1,0 +1,30 @@
+{
+  "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+  "@type": "Code",
+  "author": [
+    {
+      "@id": "http://orcid.org/0000-0002-2055-8381",
+      "@type": "Person",
+      "email": "russell@vort.org",
+      "name": "Russell Neches",
+      "affiliation": "U.C. Davis Genome Center"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8822-8779",
+      "@type": "Person",
+      "email": "cswel@ucdavis.edu",
+      "name": "Camille Scott",
+      "affiliation": "U.C. Davis Graduate Group in Computer Science"
+    }
+  ],
+  "identifier": "https://doi.org/10.5281/zenodo.1212627",
+  "codeRepository": "https://github.com/ryneches/SuchTree/",
+  "datePublished": "2018-04-04",
+  "dateModified": "2018-04-04",
+  "dateCreated": "2018-04-04",
+  "description": "A Python library for fast, thread-safe computations on phylogenetic trees",
+  "keywords": "phylogenetics, python, coevolution, graph theory",
+  "license": "BSD-3",
+  "title": "SuchTree",
+  "version": "0.6"
+}

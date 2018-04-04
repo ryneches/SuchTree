@@ -56,14 +56,14 @@ class VerboseBuildExt(_build_ext):
 
 setup(
     name='SuchTree',
-    version='0.5',
+    version='0.6',
     description='A Python library for doing fast, thread-safe computations on phylogenetic trees.',
     url='http://github.com/ryneches/SuchTree',
     author='Russell Neches',
     author_email='ryneches@ucdavis.edu',
     license='BSD',
     packages=['SuchTree'],
-    download_url='https://github.com/ryneches/SuchTree/archive/0.5.tar.gz',
+    download_url='https://github.com/ryneches/SuchTree/archive/0.6.tar.gz',
     install_requires=[
         'scipy>=0.18',
         'numpy',
