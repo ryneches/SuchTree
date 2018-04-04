@@ -119,7 +119,7 @@ CPU times: user 10.1 s, sys: 0 ns, total: 10.1 s
 Wall time: 10.1 s
 ```
 
-<img src='docs/nj_vs_ml.png' width=300>
+<img src='docs/nj_vs_ml.png' width=500>
 
 ```python
 from scipy.stats import kendalltau, pearsonr
