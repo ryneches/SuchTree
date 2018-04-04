@@ -86,6 +86,7 @@ cdef class SuchTree :
     cdef unsigned int root
     cdef np.float64_t epsilon
     cdef object leafs
+    cdef object leafnodes
     cdef object np_buffer
     
     def __init__( self, tree_file ) :
@@ -124,13 +125,15 @@ cdef class SuchTree :
             raise MemoryError()
         
         self.leafs = {}
+        self.leafnodes = {}
         for node_id,node in enumerate( t.inorder_node_iter() ) :
             node.label = node_id
             if node_id >= size :
                 raise Exception( 'node label out of bounds : ' + str(node_id) )
             if node.taxon :
                 self.leafs[ node.taxon.label ] = node_id
-        
+                self.leafnodes[ node_id ] = node.taxon.label
+
         for node_id,node in enumerate( t.inorder_node_iter() ) :
             if not node.parent_node :
                 distance = -1.0
@@ -186,7 +189,12 @@ cdef class SuchTree :
         'A dictionary mapping leaf names to leaf node ids.'
         def __get__( self ) :
             return self.leafs
-            
+    
+    property leafnodes :
+        'A dictionary mapping leaf node ids to leaf names.'
+        def __get__( self ) :
+            return self.leafnodes
+
     property root :
         'The id of the root node.'
         def __get__( self ) :
@@ -298,6 +306,30 @@ cdef class SuchTree :
                 n += 1
         return np.array(self.np_buffer[:n])
         
+    def get_nodes( self, from_node=-1 ) :
+        """
+        Return an array of the ids of all internal nodes.
+        """
+        cdef unsigned int i
+        cdef int l
+        cdef int r
+        cdef unsigned int n = 0
+        
+        if from_node == -1 : from_node = self.root
+        
+        if self.np_buffer is None :
+            self.np_buffer = np.ndarray( self.length, dtype=int )
+        
+        to_visit = [from_node]
+        for i in to_visit :
+            l,r = self.get_children( i )
+            self.np_buffer[n] = i
+            n += 1
+            if l != -1 :
+                to_visit.append( l )
+                to_visit.append( r )
+        return np.array(self.np_buffer[:n])
+ 
     def get_distance_to_root( self, node_id ) :
         """
         Return distance to root for a given node. Will accept node id
@@ -612,6 +644,26 @@ cdef class SuchTree :
             print( '   left child  : %d'    % self.data[n].left_child  )
             print( '   right child : %d'    % self.data[n].right_child )
         
+    def nodes_data( self ) :
+        """
+        Generator for the node data in the tree, compatible with networkx.
+        """
+        for n in range(self.length) :
+            if self.data[n].left_child == -1 :
+                leaf_name = self.leafnodes[n]
+            else :
+                leaf_name = ''
+            yield ( n, { 'label' : leaf_name } )
+    
+    def edges_data( self ) :
+        """
+        Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
+        """
+        for n in range(self.length) :
+            # no edges beyond the root node
+            if self.data[n].parent == -1 : continue
+            yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )
+
     def __dealloc__( self ) :
         PyMem_Free( self.data )     # no-op if self.data is NULL
 

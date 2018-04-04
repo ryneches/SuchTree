@@ -1,10 +1,17 @@
 from __future__ import print_function
 
+import pytest
 from pytest import approx
 from SuchTree import SuchTree
 from dendropy import Tree
 from itertools import combinations, chain
 import numpy
+
+try :
+    import networkx
+    has_networkx = True
+except ImportError :
+    has_networkx = False
 
 test_tree = 'SuchTree/tests/test.tree'
 dpt = Tree.get( file=open(test_tree), schema='newick' )
@@ -101,3 +108,13 @@ def test_is_ancestor() :
                                 T.get_descendant_nodes( T.root ) ) )
     assert 1 - T.length == sum( map( lambda x : T.is_ancestor( x, T.root ),
                                 T.get_descendant_nodes( T.root ) ) )
+
+@pytest.mark.skipif(not has_networkx, reason="networkx not installed")
+def test_networkx() :
+    T = SuchTree( test_tree )
+    g = networkx.graph.Graph()
+    
+    g.add_nodes_from( T.nodes_data() )
+    g.add_edges_from( T.edges_data() )
+    
+    assert set( g.nodes() ) == set( T.get_nodes() )

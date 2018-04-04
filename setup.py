@@ -63,7 +63,7 @@ setup(
     author_email='ryneches@ucdavis.edu',
     license='BSD',
     packages=['SuchTree'],
-    download_url='https://github.com/ryneches/SuchTree/archive/0.4.tar.gz',
+    download_url='https://github.com/ryneches/SuchTree/archive/0.5.tar.gz',
     install_requires=[
         'scipy>=0.18',
         'numpy',
