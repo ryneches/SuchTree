@@ -91,11 +91,11 @@ calculations in a little more than ten seconds.
 from SuchTree import SuchTree
 import random
 
-T1 = SuchTree( 'ml.tree' )
-T2 = SuchTree( 'nj.tree' )
+T1 = SuchTree( 'data/bigtrees/ml.tree' )
+T2 = SuchTree( 'data/bigtrees/nj.tree' )
 
-print 'nodes : %d, leafs : %d' % ( T1.length, len(T1.leafs) )
-print 'nodes : %d, leafs : %d' % ( T2.length, len(T2.leafs) )
+print( 'nodes : %d, leafs : %d' % ( T1.length, len(T1.leafs) ) )
+print( 'nodes : %d, leafs : %d' % ( T2.length, len(T2.leafs) ) )
 ```
 
 ```
@@ -105,7 +105,7 @@ nodes : 108653, leafs : 54327
 
 ```python
 N = 1000000
-v = T1.leafs.keys()
+v = list( T1.leafs.keys() )
 
 pairs = []
 for i in range(N) :
@@ -124,8 +124,8 @@ Wall time: 10.1 s
 ```python
 from scipy.stats import kendalltau, pearsonr
 
-print 'Kendall\'s tau : %0.3f' % kendalltau( D1, D2 )[0]
-print 'Pearson\'s r   : %0.3f' % pearsonr( D1, D2 )[0]
+print( 'Kendall\'s tau : %0.3f' % kendalltau( D1, D2 )[0] )
+print( 'Pearson\'s r   : %0.3f' % pearsonr( D1, D2 )[0] )
 ```
 ```
 Kendall's tau : 0.709
