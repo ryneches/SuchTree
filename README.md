@@ -12,7 +12,7 @@ You have a phylogenetic tree, and you want to do some statistics with
 it. No problem! There are lots of packages in Python that let you
 manipulate phylogenies, like [`dendropy`](http://www.dendropy.org/),
 [`scikit-bio`](http://scikit-bio.org/docs/latest/tree.html) and
-[`ETE`](http://etetoolkit.org/). Surely one of them will work. And
+[`ete3`](http://etetoolkit.org/). Surely one of them will work. And
 indeed they will, if your tree isn't *too* big and your statistical
 method doesn't require *too* many traversals. If you're working with a
 hundred or a thousand organisms, no problem. You should probably
@@ -21,7 +21,7 @@ features.
 
 If, however, you are working with trees that include tens of
 thousands, or maybe even millions of organisms, you are going to run
-into problems. `ETE`, `dendropy` and `scikit-bio`'s `TreeNode` are all
+into problems. `ete3`, `dendropy` and `scikit-bio`'s `TreeNode` are all
 implemented to give you lots of flexibility. You can re-root trees,
 use different traversal schemes, attach metadata to nodes, attach and
 detach nodes, splice sub-trees into or out of the main tree, and do
@@ -56,7 +56,7 @@ spectral graph theory is your thing.
 
 And, if that doesn't solve your problem, it will emit sugraphs as `Graph`
 objects for use with the [`igraph`](http://igraph.org/) network analysis
-package. Now you can do even more things. Maybe you want to get all crazy
+package, or node and edge data for building graphs in [`networkx`](https://networkx.github.io/). Now you can do even more things. Maybe you want to get all crazy
 with some [graph kernels](https://github.com/BorgwardtLab/GraphKernels)? Well,
 now you can just do that.
 
@@ -65,7 +65,7 @@ now you can just do that.
 `SuchTree` is motivated by the observation that, while a distance
 matrix of 100,000 taxa is quite bulky, the tree it represents can be
 made to fit into about 7.6MB of RAM if implemented simply using only
-`C` primitives.  This is small enough to fit into L2 cache on many
+`C` primitives.  This is small enough to fit into L3 cache on many
 modern microprocessors. This comes at the cost of traversing the tree
 for every calculation (about 16 hops from leaf to root for a 100,000
 taxa tree), but, as these operations all happen on-chip, the processor
@@ -119,7 +119,7 @@ CPU times: user 10.1 s, sys: 0 ns, total: 10.1 s
 Wall time: 10.1 s
 ```
 
-![neighbor joining vs. maximum likelihood](docs/nj_vs_ml.png)
+<img src='docs/nj_vs_ml.png' width=300>
 
 ```python
 from scipy.stats import kendalltau, pearsonr
@@ -149,6 +149,7 @@ The available properties are :
 * `depth` : the maximum depth of the tree
 * `root` : the id of the root node
 * `leafs` : a dictionary mapping leaf names to their ids
+* `leafnodes` : a dictionary mapping leaf node ids to leaf names
 
 The available methods are :
 
@@ -162,7 +163,7 @@ the integrated phylogenetic distance to the root node
 of the nearest node that is parent to both
 * `distance` : for a given pair of node ids or leaf names, return the
 patristic distance between the pair
-* `distances` : for an (n,2) aray of pairs of node ids, return an (n)
+* `distances` : for an (n,2) array of pairs of node ids, return an (n)
 array of patristic distances between the pairs
 * `distances_by_name` for an (n,2) list of pairs of leaf names, return
 an (n) list of patristic distances between each pair
@@ -175,12 +176,21 @@ For analysis of ecological interactions, `SuchTree` is distributed
 with a curated collection of several different examples from the
 literature. Additionally, a collection of simulated interactions with
 various properties, along with an annotated notebook of `Python` code
-for generating them, is also included.
+for generating them, is also included. Interactions are registered in
+a JSON object (`data/studies.json`).
 
 #### Host/Parasite
 
 * **gopher-louse** Hafner, M.S. & Nadler, S.A. 1988. *Phylogenetic trees support the coevolution of parasites and their hosts.* Nature 332: 258-259)
 * **dove-louse** Dale H. Clayton, Sarah E. Bush, Brad M. Goates, and Kevin P. Johnson. 2003. *Host defense reinforces host–parasite cospeciation.* PNAS. 
+* **sedge-smut** Escudero, Marcial. 2015. *Phylogenetic congruence of parasitic
+smut fungi (Anthracoidea, Anthracoideaceae) and their host plants (Carex,
+Cyperaceae): Cospeciation or host-shift speciation?* American journal of
+botany.
+* **fish-worm** Maarten P. M. Vanhove, Antoine Pariselle, Maarten Van Steenberge,
+Joost A. M. Raeymaekers, Pascal I. Hablützel, Céline Gillardin, Bart Hellemans,
+Floris C. Breman, Stephan Koblmüller, Christian Sturmbauer, Jos Snoeks,
+Filip A. M. Volckaert & Tine Huyse. 2015. *Hidden biodiversity in an ancient lake: phylogenetic congruence between Lake Tanganyika tropheine cichlids and their monogenean flatworm parasites*, Scientific Reports. 
 
 #### Plant/Pollinator (visitor) interactions
 
