@@ -2,7 +2,7 @@ from __future__ import print_function
 
 from functools import reduce
 import pytest
-from SuchTree import SuchTree, SuchLinkedTrees, pearson
+from SuchTree import SuchTree, SuchLinkedTrees
 from dendropy import Tree
 from itertools import combinations
 import numpy

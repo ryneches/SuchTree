@@ -446,12 +446,12 @@ cdef class SuchTree :
         leaf names and integers as node ids. Either argument can be a
         leaf name or an integer.
         """
-        if type(a) is str :
+        if isinstance( a, str ) :
             try :
                 a = self.leafs[a]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + a )
-        if type(b) is str :
+        if isinstance( b, str ) :
             try :
                 b = self.leafs[b]
             except KeyError :
