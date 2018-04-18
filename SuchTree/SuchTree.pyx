@@ -967,14 +967,17 @@ cdef class SuchLinkedTrees :
     
     @cython.boundscheck(False)
     cdef _build_linkmatrix( self ) :
+        
+        ## FIXME : This seems to improperly index when subsetting
+        
         cdef unsigned int i
         cdef unsigned int j
         cdef unsigned int l
         cdef unsigned int m
         cdef unsigned int row_id
-
+        
         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )
-
+        
         for col in self.subset_columns :
             for j in xrange( self.table[col].length ) :
                 m = self.table[col].links[j]
