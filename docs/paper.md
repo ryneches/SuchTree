@@ -38,7 +38,7 @@ Each of these packages allow trees to be manipulated, edited and reshaped. To ma
 
 ![](nj_vs_ml.png)
 
-**Figure 1 :** Two phylogenetic trees of 54,327 taxa were constructed using different methods (approximate maximum likelihood using [`FastTree`](http://www.microbesonline.org/fasttree/) and the [`neighbor joining`](https://en.wikipedia.org/wiki/Neighbor_joining) agglomerative clustering method). To explore the different topologies of the trees, pairs of taxa were chosen at random and the patristic distance between each pair was computed through each of the two trees. This plot shows 1,000,000 random pairs sampled from 1,475,684,301 possible pairs (0.07%). The two million distances calculations required about 12.5 seconds using a single thread.
+**Figure 1 :** Two phylogenetic trees of 54,327 taxa were constructed using different methods (approximate maximum likelihood using [`FastTree`](http://www.microbesonline.org/fasttree/) [@price2009fasttree] [@price2010fasttree] and the [`neighbor joining`](https://en.wikipedia.org/wiki/Neighbor_joining) agglomerative clustering method). To explore the different topologies of the trees, pairs of taxa were chosen at random and the patristic distance between each pair was computed through each of the two trees. This plot shows 1,000,000 random pairs sampled from 1,475,684,301 possible pairs (0.07%). The two million distances calculations required about 12.5 seconds using a single thread.
 
 `SuchTree` supports co-phylogenies, with functions for efficiently extracting graphs and subgraphs for network analysis, and has native support for [`igraph`](http://igraph.org/) and [`networkx`](https://networkx.github.io/).
 
