@@ -1,10 +1,34 @@
-# SuchTree
+#SuchTree
 
 A Python library for doing fast, thread-safe computations with
 phylogenetic trees.
 
 [![Build
 Status](https://travis-ci.org/ryneches/SuchTree.svg?branch=master)](https://travis-ci.org/ryneches/SuchTree) [![codecov](https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg)](https://codecov.io/gh/ryneches/SuchTree) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE) [![JOSS](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg)](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610)
+
+### How installation
+
+`SuchTree` depends on the following packages :
+
+* `scipy`
+* `numpy`
+* `dendropy`
+* `cython`
+* `pandas`
+
+To install the current release, you can install from PyPI :
+
+```
+pip install SuchTree
+```
+
+To install the most recent development version :
+
+```
+git clone https://github.com/ryneches/SuchTree.git
+cd SuchTree
+./setup.py install
+```
 
 ### So problem
 
