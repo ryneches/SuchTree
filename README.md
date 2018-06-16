@@ -132,7 +132,7 @@ Kendall's tau : 0.709
 Pearson's r   : 0.969
 ```
 
-### How installation
+### Many installation
 
 `SuchTree` depends on the following packages :
 
