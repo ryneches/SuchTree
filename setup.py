@@ -56,7 +56,7 @@ class VerboseBuildExt(_build_ext):
 
 setup(
     name='SuchTree',
-    version='0.6',
+    version='0.7',
     description='A Python library for doing fast, thread-safe computations on phylogenetic trees.',
     url='http://github.com/ryneches/SuchTree',
     author='Russell Neches',
