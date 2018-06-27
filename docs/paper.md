@@ -1,5 +1,5 @@
 ---
-title: 'SuchTree: Fast, thread-safe computations with phylogenetic trees.'
+title: 'SuchTree: Fast, thread-safe computations with phylogenetic trees'
 tags:
 - phylogenetics
 - trees
