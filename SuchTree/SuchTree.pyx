@@ -103,7 +103,7 @@ cdef class SuchTree :
         
         url_strings = [ 'http://', 'https://', 'ftp://' ]
 
-        if any ( tree_file.startswith(x) for x in url_strings ) :
+        if any( [ tree_file.startswith(x) for x in url_strings ] ) :
             t = Tree.get( url=tree_file,
                           schema='newick',
                           preserve_underscores=True,
