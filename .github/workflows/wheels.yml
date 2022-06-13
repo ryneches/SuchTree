@@ -29,7 +29,8 @@ jobs:
         # env:
         #   CIBW_SOME_OPTION: value
         env :
-            CIBW_SKIP: pp* # scipy is not fully supported on PyPY yet :-(
+            CIBW_SKIP: "pp*  -win* " # scipy is not fully supported on PyPY yet :-(
+                                     # don't attempt to build on Windows either
 
       - uses: actions/upload-artifact@v2
         with:
