@@ -29,7 +29,8 @@ jobs:
         # env:
         #   CIBW_SOME_OPTION: value
         env :
-          CIBW_BEFORE_BUILD_LINUX: apt-get install libblas-dev liblapack-dev libopenblas-dev libopenblas64-dev libatlas-base-dev
+          # CIBW_BEFORE_BUILD_LINUX: apt-get install libblas-dev liblapack-dev libopenblas-dev libopenblas64-dev libatlas-base-dev
+          CIBW_BEFORE_BUILD_LINUX: yum install lapack-devel blas-devel openblas-devel atlas-devel 
           CIBW_SKIP: pp*
               # scipy is not fully supported on PyPY yet :-(
               # I'm not sure what's up with cp310-manylinux_i686, but
