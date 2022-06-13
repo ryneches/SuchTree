@@ -12,7 +12,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-20.04, windows-2019, macOS-10.15]
+        os: [ubuntu-20.04, macOS-10.15]
 
     steps:
       - uses: actions/checkout@v2
@@ -29,8 +29,8 @@ jobs:
         # env:
         #   CIBW_SOME_OPTION: value
         env :
-            CIBW_SKIP: "pp*  -win* " # scipy is not fully supported on PyPY yet :-(
-                                     # don't attempt to build on Windows either
+            CIBW_SKIP: pp*  # scipy is not fully supported on PyPY yet :-(
+                            # don't attempt to build on Windows either
 
       - uses: actions/upload-artifact@v2
         with:
