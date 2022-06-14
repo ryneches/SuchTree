@@ -17,6 +17,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      # Set up miniconda env
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: ${{ matrix.python-version }}
+      - name: Conda info
+        shell: bash -l {0}
+        run: conda info
+      # install numpy and scipy with conda, so we get the system dependencies
+      - name: Install numpy and scipy
+        shell: bash -l {0}
+        run : conda install numpy scipy
+
       # Used to host cibuildwheel
       - uses: actions/setup-python@v2
 
@@ -30,7 +43,7 @@ jobs:
         #   CIBW_SOME_OPTION: value
         env :
           # CIBW_BEFORE_BUILD_LINUX: apt-get install libblas-dev liblapack-dev libopenblas-dev libopenblas64-dev libatlas-base-dev
-          CIBW_BEFORE_BUILD_LINUX: yum install lapack-devel blas-devel openblas-devel atlas-devel 
+          # CIBW_BEFORE_BUILD_LINUX: yum install lapack-devel blas-devel openblas-devel atlas-devel 
           CIBW_SKIP: pp*
               # scipy is not fully supported on PyPY yet :-(
               # I'm not sure what's up with cp310-manylinux_i686, but
