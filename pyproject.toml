@@ -1,3 +1,6 @@
 [build-system]
 requires = [ "setuptools", "wheel", "Cython", "numpy", "scipy" ]
 build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel.linux]
+before-all = "yum install lapack-devel blas-devel openblas-devel atlas-devel"
