@@ -2,4 +2,4 @@
 from __future__ import absolute_import
 from MuchTree import SuchTree, SuchLinkedTrees
 
-__version__ = 0.8.1
+__version__ = 0.9
