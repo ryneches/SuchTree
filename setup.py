@@ -4,7 +4,7 @@ from setuptools import Extension, setup
 from Cython.Build import cythonize
 import numpy
 
-sourcefiles = [ 'SuchTree/SuchTree.pyx' ]
+sourcefiles = [ 'SuchTree/MuchTree.pyx' ]
 
 extensions = [ Extension( 'SuchTree', sourcefiles, include_dirs=[numpy.get_include()]) ]
 
