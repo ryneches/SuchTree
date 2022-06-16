@@ -8,4 +8,5 @@ archs = "x86_64"
 skip = "*musllinux*"
 
 [tool.cibuildwheel.macos]
+archs = "arm64 x86_64"
 skip = "pp*"

@@ -1,4 +1,3 @@
-#cython: language_level=3
 import cython
 from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
 from dendropy import Tree
