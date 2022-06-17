@@ -1,2 +1,5 @@
+# include Cython files
 include SuchTree/*.pyx
+
+# include Python files
 include SuchTree/**/*.py
