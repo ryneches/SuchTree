@@ -6,7 +6,7 @@ import numpy
 
 sourcefiles = [ 'SuchTree/*.pyx' ]
 
-extensions = [ Extension( 'SuchTree.MuchTree', sourcefiles, include_dirs=[numpy.get_include()]) ]
+extensions = [ Extension( 'MuchTree', sourcefiles, include_dirs=[numpy.get_include()]) ]
 
 extensions = cythonize( extensions, language_level = "3" )
 

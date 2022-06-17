@@ -1,1 +1,2 @@
 include SuchTree/*.pyx
+include SuchTree/**/*.py
