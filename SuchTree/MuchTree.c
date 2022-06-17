@@ -4,21 +4,21 @@
 {
     "distutils": {
         "depends": [
-            "/tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/core/include/numpy/arrayscalars.h",
-            "/tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/core/include/numpy/ndarrayobject.h",
-            "/tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/core/include/numpy/ndarraytypes.h",
-            "/tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/core/include/numpy/arrayscalars.h",
+            "/tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/core/include/numpy/ndarrayobject.h",
+            "/tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/core/include/numpy/ndarraytypes.h",
+            "/tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/core/include/numpy/ufuncobject.h"
         ],
         "include_dirs": [
-            "/tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/core/include"
+            "/tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/core/include"
         ],
-        "name": "MuchTree",
+        "name": "SuchTree.MuchTree",
         "sources": [
             "SuchTree/MuchTree.pyx"
         ]
     },
-    "module_name": "MuchTree"
+    "module_name": "SuchTree.MuchTree"
 }
 END: Cython Metadata */
 
@@ -712,8 +712,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__MuchTree
-#define __PYX_HAVE_API__MuchTree
+#define __PYX_HAVE__SuchTree__MuchTree
+#define __PYX_HAVE_API__SuchTree__MuchTree
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -1074,7 +1074,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":690
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":690
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1083,7 +1083,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":691
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":691
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1092,7 +1092,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":692
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":692
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1101,7 +1101,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":693
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":693
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1110,7 +1110,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":697
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":697
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1119,7 +1119,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":698
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":698
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1128,7 +1128,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":699
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":699
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1137,7 +1137,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":700
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":700
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1146,7 +1146,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":704
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":704
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1155,7 +1155,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":705
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":705
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1164,7 +1164,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":714
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":714
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1173,7 +1173,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":715
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":715
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1182,7 +1182,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":716
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":716
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1191,7 +1191,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":718
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":718
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1200,7 +1200,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":719
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":719
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1209,7 +1209,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":720
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":720
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1218,7 +1218,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":722
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":722
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1227,7 +1227,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":723
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":723
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1236,7 +1236,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":725
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":725
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1245,7 +1245,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":726
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":726
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1254,7 +1254,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":727
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":727
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1306,18 +1306,18 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 
 
 /*--- Type declarations ---*/
-struct __pyx_obj_8MuchTree_SuchTree;
-struct __pyx_obj_8MuchTree_SuchLinkedTrees;
-struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes;
-struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data;
-struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data;
-struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency;
+struct __pyx_obj_8SuchTree_8MuchTree_SuchTree;
+struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees;
+struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes;
+struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data;
+struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data;
+struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":729
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":729
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1326,7 +1326,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":730
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":730
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1335,7 +1335,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":731
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":731
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1344,7 +1344,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":733
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":733
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1424,47 +1424,47 @@ typedef int __pyx_t_5scipy_6linalg_13cython_lapack_zselect1(__pyx_t_double_compl
  * cdef void cbbcsd(char *jobu1, char *jobu2, char *jobv1t, char *jobv2t, char *trans, int *m, int *p, int *q, s *theta, s *phi, c *u1, int *ldu1, c *u2, int *ldu2, c *v1t, int *ldv1t, c *v2t, int *ldv2t, s *b11d, s *b11e, s *b12d, s *b12e, s *b21d, s *b21e, s *b22d, s *b22e, s *rwork, int *lrwork, int *info) nogil
  */
 typedef int __pyx_t_5scipy_6linalg_13cython_lapack_zselect2(__pyx_t_double_complex *, __pyx_t_double_complex *);
-struct __pyx_t_8MuchTree_Node;
-struct __pyx_t_8MuchTree_Column;
+struct __pyx_t_8SuchTree_8MuchTree_Node;
+struct __pyx_t_8SuchTree_8MuchTree_Column;
 
-/* "MuchTree.pyx":24
+/* "SuchTree/MuchTree.pyx":24
  * # and 'right_child' attributes represent integer offsets within the
  * # array that specify other Node structs.
  * cdef struct Node :             # <<<<<<<<<<<<<<
  *     int parent
  *     int left_child
  */
-struct __pyx_t_8MuchTree_Node {
+struct __pyx_t_8SuchTree_8MuchTree_Node {
   int parent;
   int left_child;
   int right_child;
   float distance;
 };
 
-/* "MuchTree.pyx":671
+/* "SuchTree/MuchTree.pyx":671
  * 
  * 
  * cdef struct Column :             # <<<<<<<<<<<<<<
  *     unsigned int length
  *     unsigned int leaf_id
  */
-struct __pyx_t_8MuchTree_Column {
+struct __pyx_t_8SuchTree_8MuchTree_Column {
   unsigned int length;
   unsigned int leaf_id;
   unsigned int *links;
 };
 
-/* "MuchTree.pyx":58
+/* "SuchTree/MuchTree.pyx":58
  * 
  * @cython.no_gc_clear
  * cdef class SuchTree :             # <<<<<<<<<<<<<<
  *     """
  *     SuchTree extention type. The constructor accepts a filesystem
  */
-struct __pyx_obj_8MuchTree_SuchTree {
+struct __pyx_obj_8SuchTree_8MuchTree_SuchTree {
   PyObject_HEAD
-  struct __pyx_vtabstruct_8MuchTree_SuchTree *__pyx_vtab;
-  struct __pyx_t_8MuchTree_Node *data;
+  struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree *__pyx_vtab;
+  struct __pyx_t_8SuchTree_8MuchTree_Node *data;
   unsigned int length;
   unsigned int depth;
   unsigned int n_leafs;
@@ -1476,17 +1476,17 @@ struct __pyx_obj_8MuchTree_SuchTree {
 };
 
 
-/* "MuchTree.pyx":676
+/* "SuchTree/MuchTree.pyx":676
  *     unsigned int* links
  * 
  * cdef class SuchLinkedTrees :             # <<<<<<<<<<<<<<
  *     cdef Column* table
  *     cdef unsigned int table_size
  */
-struct __pyx_obj_8MuchTree_SuchLinkedTrees {
+struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees {
   PyObject_HEAD
-  struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *__pyx_vtab;
-  struct __pyx_t_8MuchTree_Column *table;
+  struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_vtab;
+  struct __pyx_t_8SuchTree_8MuchTree_Column *table;
   unsigned int table_size;
   PyObject *TreeA;
   PyObject *TreeB;
@@ -1516,70 +1516,70 @@ struct __pyx_obj_8MuchTree_SuchLinkedTrees {
 };
 
 
-/* "MuchTree.pyx":260
+/* "SuchTree/MuchTree.pyx":260
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_descendant_nodes( self, node_id ) :             # <<<<<<<<<<<<<<
  *         """
  *         Generator for ids of all nodes descendent from a given node,
  */
-struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes {
+struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes {
   PyObject_HEAD
   unsigned int __pyx_v_i;
   int __pyx_v_l;
   unsigned int __pyx_v_n;
   PyObject *__pyx_v_node_id;
   int __pyx_v_r;
-  struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self;
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self;
   PyObject *__pyx_v_to_visit;
   PyObject *__pyx_t_0;
   Py_ssize_t __pyx_t_1;
 };
 
 
-/* "MuchTree.pyx":647
+/* "SuchTree/MuchTree.pyx":647
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
  *         """
  *         Generator for the node data in the tree, compatible with networkx.
  */
-struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data {
+struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data {
   PyObject_HEAD
   PyObject *__pyx_v_leaf_name;
   unsigned int __pyx_v_n;
-  struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self;
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self;
   unsigned int __pyx_t_0;
   unsigned int __pyx_t_1;
   unsigned int __pyx_t_2;
 };
 
 
-/* "MuchTree.pyx":658
+/* "SuchTree/MuchTree.pyx":658
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
  *         """
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
  */
-struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data {
+struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data {
   PyObject_HEAD
   unsigned int __pyx_v_n;
-  struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self;
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self;
   unsigned int __pyx_t_0;
   unsigned int __pyx_t_1;
   unsigned int __pyx_t_2;
 };
 
 
-/* "MuchTree.pyx":1232
+/* "SuchTree/MuchTree.pyx":1232
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
  *         """
  *         Build the graph adjacency matrix of the current subsetted
  */
-struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency {
+struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency {
   PyObject_HEAD
   PyObject *__pyx_v_ta_aj;
   PyObject *__pyx_v_ta_node_ids;
@@ -1665,7 +1665,7 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "MuchTree.pyx":58
+/* "SuchTree/MuchTree.pyx":58
  * 
  * @cython.no_gc_clear
  * cdef class SuchTree :             # <<<<<<<<<<<<<<
@@ -1673,17 +1673,17 @@ struct __pyx_memoryviewslice_obj {
  *     SuchTree extention type. The constructor accepts a filesystem
  */
 
-struct __pyx_vtabstruct_8MuchTree_SuchTree {
-  float (*_get_distance_to_root)(struct __pyx_obj_8MuchTree_SuchTree *, PyObject *);
-  int (*_is_ancestor)(struct __pyx_obj_8MuchTree_SuchTree *, int, int);
-  int (*_mrca)(struct __pyx_obj_8MuchTree_SuchTree *, __Pyx_memviewslice, int, int);
-  float (*_distance)(struct __pyx_obj_8MuchTree_SuchTree *, int, int);
-  void (*_distances)(struct __pyx_obj_8MuchTree_SuchTree *, unsigned int, __Pyx_memviewslice, __Pyx_memviewslice, __Pyx_memviewslice);
+struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree {
+  float (*_get_distance_to_root)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, PyObject *);
+  int (*_is_ancestor)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, int, int);
+  int (*_mrca)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, __Pyx_memviewslice, int, int);
+  float (*_distance)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, int, int);
+  void (*_distances)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, unsigned int, __Pyx_memviewslice, __Pyx_memviewslice, __Pyx_memviewslice);
 };
-static struct __pyx_vtabstruct_8MuchTree_SuchTree *__pyx_vtabptr_8MuchTree_SuchTree;
+static struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree *__pyx_vtabptr_8SuchTree_8MuchTree_SuchTree;
 
 
-/* "MuchTree.pyx":676
+/* "SuchTree/MuchTree.pyx":676
  *     unsigned int* links
  * 
  * cdef class SuchLinkedTrees :             # <<<<<<<<<<<<<<
@@ -1691,12 +1691,12 @@ static struct __pyx_vtabstruct_8MuchTree_SuchTree *__pyx_vtabptr_8MuchTree_SuchT
  *     cdef unsigned int table_size
  */
 
-struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees {
-  PyObject *(*_build_linkmatrix)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *);
-  void (*_build_linklist)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *);
-  uint64_t (*_random_int)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *, uint64_t);
+struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees {
+  PyObject *(*_build_linkmatrix)(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *);
+  void (*_build_linklist)(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *);
+  uint64_t (*_random_int)(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *, uint64_t);
 };
-static struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *__pyx_vtabptr_8MuchTree_SuchLinkedTrees;
+static struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_vtabptr_8SuchTree_8MuchTree_SuchLinkedTrees;
 
 
 /* "View.MemoryView":105
@@ -2766,14 +2766,14 @@ static int __Pyx_ImportFunction(PyObject *module, const char *funcname, void (**
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
-static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto*/
-static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_a, int __pyx_v_b); /* proto*/
-static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_visited, int __pyx_v_a, int __pyx_v_b); /* proto*/
-static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_a, int __pyx_v_b); /* proto*/
-static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, CYTHON_UNUSED unsigned int __pyx_v_length, __Pyx_memviewslice __pyx_v_visited, __Pyx_memviewslice __pyx_v_ids, __Pyx_memviewslice __pyx_v_result); /* proto*/
-static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto*/
-static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto*/
-static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, uint64_t __pyx_v_n); /* proto*/
+static float __pyx_f_8SuchTree_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto*/
+static int __pyx_f_8SuchTree_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_a, int __pyx_v_b); /* proto*/
+static int __pyx_f_8SuchTree_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_visited, int __pyx_v_a, int __pyx_v_b); /* proto*/
+static float __pyx_f_8SuchTree_8MuchTree_8SuchTree__distance(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_a, int __pyx_v_b); /* proto*/
+static void __pyx_f_8SuchTree_8MuchTree_8SuchTree__distances(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, CYTHON_UNUSED unsigned int __pyx_v_length, __Pyx_memviewslice __pyx_v_visited, __Pyx_memviewslice __pyx_v_ids, __Pyx_memviewslice __pyx_v_result); /* proto*/
+static PyObject *__pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto*/
+static void __pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto*/
+static uint64_t __pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, uint64_t __pyx_v_n); /* proto*/
 static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self); /* proto*/
 static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_index); /* proto*/
 static PyObject *__pyx_memoryview_is_slice(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_obj); /* proto*/
@@ -2830,13 +2830,13 @@ static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 /* Module declarations from 'scipy.linalg.cython_lapack' */
 static void (*__pyx_f_5scipy_6linalg_13cython_lapack_dsyev)(char *, char *, int *, __pyx_t_5scipy_6linalg_13cython_lapack_d *, int *, __pyx_t_5scipy_6linalg_13cython_lapack_d *, __pyx_t_5scipy_6linalg_13cython_lapack_d *, int *, int *); /*proto*/
 
-/* Module declarations from 'MuchTree' */
-static PyTypeObject *__pyx_ptype_8MuchTree_SuchTree = 0;
-static PyTypeObject *__pyx_ptype_8MuchTree_SuchLinkedTrees = 0;
-static PyTypeObject *__pyx_ptype_8MuchTree___pyx_scope_struct__get_descendant_nodes = 0;
-static PyTypeObject *__pyx_ptype_8MuchTree___pyx_scope_struct_1_nodes_data = 0;
-static PyTypeObject *__pyx_ptype_8MuchTree___pyx_scope_struct_2_edges_data = 0;
-static PyTypeObject *__pyx_ptype_8MuchTree___pyx_scope_struct_3_adjacency = 0;
+/* Module declarations from 'SuchTree.MuchTree' */
+static PyTypeObject *__pyx_ptype_8SuchTree_8MuchTree_SuchTree = 0;
+static PyTypeObject *__pyx_ptype_8SuchTree_8MuchTree_SuchLinkedTrees = 0;
+static PyTypeObject *__pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes = 0;
+static PyTypeObject *__pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data = 0;
+static PyTypeObject *__pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data = 0;
+static PyTypeObject *__pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -2848,7 +2848,7 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice, __Pyx_memviewslice, unsigned int); /*proto*/
+static double __pyx_f_8SuchTree_8MuchTree__pearson(__Pyx_memviewslice, __Pyx_memviewslice, unsigned int); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -2884,11 +2884,11 @@ static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_double = { "double", NULL, sizeof(double), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_long = { "long", NULL, sizeof(long), { 0 }, 0, IS_UNSIGNED(long) ? 'U' : 'I', IS_UNSIGNED(long), 0 };
-#define __Pyx_MODULE_NAME "MuchTree"
-extern int __pyx_module_is_main_MuchTree;
-int __pyx_module_is_main_MuchTree = 0;
+#define __Pyx_MODULE_NAME "SuchTree.MuchTree"
+extern int __pyx_module_is_main_SuchTree__MuchTree;
+int __pyx_module_is_main_SuchTree__MuchTree = 0;
 
-/* Implementation of 'MuchTree' */
+/* Implementation of 'SuchTree.MuchTree' */
 static PyObject *__pyx_builtin_ImportError;
 static PyObject *__pyx_builtin_xrange;
 static PyObject *__pyx_builtin_ZeroDivisionError;
@@ -3030,7 +3030,6 @@ static const char __pyx_k_replace[] = "replace";
 static const char __pyx_k_24878dff[] = "#24878dff";
 static const char __pyx_k_Ellipsis[] = "Ellipsis";
 static const char __pyx_k_KeyError[] = "KeyError";
-static const char __pyx_k_MuchTree[] = "MuchTree";
 static const char __pyx_k_SuchTree[] = "SuchTree";
 static const char __pyx_k_dendropy[] = "dendropy";
 static const char __pyx_k_e1e329ff[] = "#e1e329ff";
@@ -3096,6 +3095,7 @@ static const char __pyx_k_dtype_is_object[] = "dtype_is_object";
 static const char __pyx_k_pyx_PickleError[] = "__pyx_PickleError";
 static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
 static const char __pyx_k_adjacency_matrix[] = "adjacency_matrix";
+static const char __pyx_k_SuchTree_MuchTree[] = "SuchTree.MuchTree";
 static const char __pyx_k_Unknown_leaf_id_s[] = "Unknown leaf id(s).";
 static const char __pyx_k_ZeroDivisionError[] = "ZeroDivisionError";
 static const char __pyx_k_inorder_node_iter[] = "inorder_node_iter";
@@ -3179,7 +3179,6 @@ static PyObject *__pyx_kp_u_Leaf_name_not_found;
 static PyObject *__pyx_n_s_MemoryError;
 static PyObject *__pyx_kp_s_MemoryView_of_r_at_0x_x;
 static PyObject *__pyx_kp_s_MemoryView_of_r_object;
-static PyObject *__pyx_n_s_MuchTree;
 static PyObject *__pyx_kp_u_Node_ID_out_of_bounds;
 static PyObject *__pyx_kp_u_Node_id_out_of_range;
 static PyObject *__pyx_n_b_O;
@@ -3187,6 +3186,7 @@ static PyObject *__pyx_kp_s_Out_of_bounds_on_buffer_access_a;
 static PyObject *__pyx_n_s_PickleError;
 static PyObject *__pyx_n_s_SuchLinkedTrees;
 static PyObject *__pyx_n_s_SuchTree;
+static PyObject *__pyx_n_s_SuchTree_MuchTree;
 static PyObject *__pyx_kp_s_SuchTree_MuchTree_pyx;
 static PyObject *__pyx_kp_u_SuchTree_could_not_allocate_memo;
 static PyObject *__pyx_n_s_SuchTree_edges_data;
@@ -3410,75 +3410,75 @@ static PyObject *__pyx_n_s_xrange;
 static PyObject *__pyx_n_s_y;
 static PyObject *__pyx_n_s_zeros;
 static PyObject *__pyx_n_s_zip;
-static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_y); /* proto */
-static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_tree_file); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_5leafs___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_9leafnodes___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_17polytomy_distance___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static int __pyx_pf_8MuchTree_8SuchTree_17polytomy_distance_2__set__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, __pyx_t_5numpy_float64_t __pyx_v_new_epsilon); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_query); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_8get_descendant_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_ids); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_id_pairs); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, unsigned int __pyx_v_leaf_id, unsigned int __pyx_v_col_id); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_leaf_ids); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_node); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_node); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static void __pyx_pf_8MuchTree_8SuchTree_43__dealloc__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_45__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_47__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_tree_a, CYTHON_UNUSED PyObject *__pyx_v_tree_b, PyObject *__pyx_v_link_matrix); /* proto */
-static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_tree_a, PyObject *__pyx_v_tree_b, PyObject *__pyx_v_link_matrix); /* proto */
-static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_col, PyObject *__pyx_v_as_row_ids); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_col); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, float __pyx_v_sigma, unsigned int __pyx_v_buckets, unsigned int __pyx_v_n, unsigned int __pyx_v_maxcycles); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_y); /* proto */
+static int __pyx_pf_8SuchTree_8MuchTree_8SuchTree___init__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_tree_file); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_5leafs___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_9leafnodes___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static int __pyx_pf_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_2__set__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, __pyx_t_5numpy_float64_t __pyx_v_new_epsilon); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_query); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_8get_descendant_nodes(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_15get_distance_to_root(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_ids); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_id_pairs); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, unsigned int __pyx_v_leaf_id, unsigned int __pyx_v_col_id); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_leaf_ids); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_node); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_node); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static void __pyx_pf_8SuchTree_8MuchTree_8SuchTree_43__dealloc__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_45__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_47__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_tree_a, CYTHON_UNUSED PyObject *__pyx_v_tree_b, PyObject *__pyx_v_link_matrix); /* proto */
+static int __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_tree_a, PyObject *__pyx_v_tree_b, PyObject *__pyx_v_link_matrix); /* proto */
+static void __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_col, PyObject *__pyx_v_as_row_ids); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_8get_column_links(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_col); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14linked_distances(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, float __pyx_v_sigma, unsigned int __pyx_v_buckets, unsigned int __pyx_v_n, unsigned int __pyx_v_maxcycles); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__pyx_v_x); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__pyx_v_x); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_28__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_30__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_28__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_30__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_obj *__pyx_v_self); /* proto */
@@ -3521,12 +3521,12 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_8MuchTree_SuchTree(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_8MuchTree_SuchLinkedTrees(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct__get_descendant_nodes(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_1_nodes_data(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_2_edges_data(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_3_adjacency(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree_SuchTree(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree_SuchLinkedTrees(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3584,7 +3584,7 @@ static PyObject *__pyx_codeobj__37;
 static PyObject *__pyx_codeobj__44;
 /* Late includes */
 
-/* "MuchTree.pyx":31
+/* "SuchTree/MuchTree.pyx":31
  * 
  * @cython.boundscheck(False)
  * cdef double _pearson( double[:] x, double[:] y, unsigned int n ) nogil :             # <<<<<<<<<<<<<<
@@ -3592,7 +3592,7 @@ static PyObject *__pyx_codeobj__44;
  *     cdef unsigned long j
  */
 
-static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_y, unsigned int __pyx_v_n) {
+static double __pyx_f_8SuchTree_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_y, unsigned int __pyx_v_n) {
   unsigned long __pyx_v_j;
   float __pyx_v_yt;
   float __pyx_v_xt;
@@ -3611,7 +3611,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "MuchTree.pyx":35
+  /* "SuchTree/MuchTree.pyx":35
  *     cdef unsigned long j
  *     cdef float yt, xt, t, df
  *     cdef float syy=0.0, sxy=0.0, sxx=0.0, ay=0.0, ax=0.0             # <<<<<<<<<<<<<<
@@ -3624,7 +3624,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
   __pyx_v_ay = 0.0;
   __pyx_v_ax = 0.0;
 
-  /* "MuchTree.pyx":36
+  /* "SuchTree/MuchTree.pyx":36
  *     cdef float yt, xt, t, df
  *     cdef float syy=0.0, sxy=0.0, sxx=0.0, ay=0.0, ax=0.0
  *     for j in xrange( n ) :             # <<<<<<<<<<<<<<
@@ -3636,7 +3636,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_j = __pyx_t_3;
 
-    /* "MuchTree.pyx":37
+    /* "SuchTree/MuchTree.pyx":37
  *     cdef float syy=0.0, sxy=0.0, sxx=0.0, ay=0.0, ax=0.0
  *     for j in xrange( n ) :
  *         ax += x[j]             # <<<<<<<<<<<<<<
@@ -3646,7 +3646,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
     __pyx_t_4 = __pyx_v_j;
     __pyx_v_ax = (__pyx_v_ax + (*((double *) ( /* dim=0 */ (__pyx_v_x.data + __pyx_t_4 * __pyx_v_x.strides[0]) ))));
 
-    /* "MuchTree.pyx":38
+    /* "SuchTree/MuchTree.pyx":38
  *     for j in xrange( n ) :
  *         ax += x[j]
  *         ay += y[j]             # <<<<<<<<<<<<<<
@@ -3657,7 +3657,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
     __pyx_v_ay = (__pyx_v_ay + (*((double *) ( /* dim=0 */ (__pyx_v_y.data + __pyx_t_4 * __pyx_v_y.strides[0]) ))));
   }
 
-  /* "MuchTree.pyx":39
+  /* "SuchTree/MuchTree.pyx":39
  *         ax += x[j]
  *         ay += y[j]
  *     ax /= n             # <<<<<<<<<<<<<<
@@ -3676,7 +3676,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
   }
   __pyx_v_ax = (__pyx_v_ax / __pyx_v_n);
 
-  /* "MuchTree.pyx":40
+  /* "SuchTree/MuchTree.pyx":40
  *         ay += y[j]
  *     ax /= n
  *     ay /= n             # <<<<<<<<<<<<<<
@@ -3695,7 +3695,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
   }
   __pyx_v_ay = (__pyx_v_ay / __pyx_v_n);
 
-  /* "MuchTree.pyx":41
+  /* "SuchTree/MuchTree.pyx":41
  *     ax /= n
  *     ay /= n
  *     for j in xrange( n ) :             # <<<<<<<<<<<<<<
@@ -3707,7 +3707,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_j = __pyx_t_3;
 
-    /* "MuchTree.pyx":42
+    /* "SuchTree/MuchTree.pyx":42
  *     ay /= n
  *     for j in xrange( n ) :
  *         xt  =  x[j] - ax             # <<<<<<<<<<<<<<
@@ -3717,7 +3717,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
     __pyx_t_4 = __pyx_v_j;
     __pyx_v_xt = ((*((double *) ( /* dim=0 */ (__pyx_v_x.data + __pyx_t_4 * __pyx_v_x.strides[0]) ))) - __pyx_v_ax);
 
-    /* "MuchTree.pyx":43
+    /* "SuchTree/MuchTree.pyx":43
  *     for j in xrange( n ) :
  *         xt  =  x[j] - ax
  *         yt  =  y[j] - ay             # <<<<<<<<<<<<<<
@@ -3727,7 +3727,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
     __pyx_t_4 = __pyx_v_j;
     __pyx_v_yt = ((*((double *) ( /* dim=0 */ (__pyx_v_y.data + __pyx_t_4 * __pyx_v_y.strides[0]) ))) - __pyx_v_ay);
 
-    /* "MuchTree.pyx":44
+    /* "SuchTree/MuchTree.pyx":44
  *         xt  =  x[j] - ax
  *         yt  =  y[j] - ay
  *         sxx += xt * xt             # <<<<<<<<<<<<<<
@@ -3736,7 +3736,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
  */
     __pyx_v_sxx = (__pyx_v_sxx + (__pyx_v_xt * __pyx_v_xt));
 
-    /* "MuchTree.pyx":45
+    /* "SuchTree/MuchTree.pyx":45
  *         yt  =  y[j] - ay
  *         sxx += xt * xt
  *         syy += yt * yt             # <<<<<<<<<<<<<<
@@ -3745,7 +3745,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
  */
     __pyx_v_syy = (__pyx_v_syy + (__pyx_v_yt * __pyx_v_yt));
 
-    /* "MuchTree.pyx":46
+    /* "SuchTree/MuchTree.pyx":46
  *         sxx += xt * xt
  *         syy += yt * yt
  *         sxy += xt * yt             # <<<<<<<<<<<<<<
@@ -3755,7 +3755,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
     __pyx_v_sxy = (__pyx_v_sxy + (__pyx_v_xt * __pyx_v_yt));
   }
 
-  /* "MuchTree.pyx":47
+  /* "SuchTree/MuchTree.pyx":47
  *         syy += yt * yt
  *         sxy += xt * yt
  *     return sxy / ( ( sxx * syy ) + 1.0e-20 )**(0.5)             # <<<<<<<<<<<<<<
@@ -3776,7 +3776,7 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
   __pyx_r = (((double)__pyx_v_sxy) / __pyx_t_5);
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":31
+  /* "SuchTree/MuchTree.pyx":31
  * 
  * @cython.boundscheck(False)
  * cdef double _pearson( double[:] x, double[:] y, unsigned int n ) nogil :             # <<<<<<<<<<<<<<
@@ -3786,13 +3786,13 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_WriteUnraisable("MuchTree._pearson", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 1);
+  __Pyx_WriteUnraisable("SuchTree.MuchTree._pearson", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 1);
   __pyx_r = 0;
   __pyx_L0:;
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":49
+/* "SuchTree/MuchTree.pyx":49
  *     return sxy / ( ( sxx * syy ) + 1.0e-20 )**(0.5)
  * 
  * def pearson( double[:] x, double[:] y ) :             # <<<<<<<<<<<<<<
@@ -3801,9 +3801,9 @@ static double __pyx_f_8MuchTree__pearson(__Pyx_memviewslice __pyx_v_x, __Pyx_mem
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_1pearson(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_8MuchTree_1pearson = {"pearson", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_1pearson, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_8MuchTree_1pearson(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_1pearson(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8SuchTree_8MuchTree_1pearson = {"pearson", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_1pearson, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_1pearson(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_y = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_lineno = 0;
@@ -3854,18 +3854,18 @@ static PyObject *__pyx_pw_8MuchTree_1pearson(PyObject *__pyx_self, PyObject *__p
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("pearson", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 49, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.pearson", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.pearson", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_pearson(__pyx_self, __pyx_v_x, __pyx_v_y);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_pearson(__pyx_self, __pyx_v_x, __pyx_v_y);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_y) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice __pyx_v_y) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   size_t __pyx_t_1;
@@ -3883,7 +3883,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("pearson", 0);
 
-  /* "MuchTree.pyx":50
+  /* "SuchTree/MuchTree.pyx":50
  * 
  * def pearson( double[:] x, double[:] y ) :
  *     if not len(x) == len(y) :             # <<<<<<<<<<<<<<
@@ -3895,7 +3895,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_t_3 = ((!((__pyx_t_1 == __pyx_t_2) != 0)) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "MuchTree.pyx":51
+    /* "SuchTree/MuchTree.pyx":51
  * def pearson( double[:] x, double[:] y ) :
  *     if not len(x) == len(y) :
  *         raise Exception( 'vectors must be the same length.', (len(x),len(y)) )             # <<<<<<<<<<<<<<
@@ -3931,7 +3931,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __PYX_ERR(0, 51, __pyx_L1_error)
 
-    /* "MuchTree.pyx":50
+    /* "SuchTree/MuchTree.pyx":50
  * 
  * def pearson( double[:] x, double[:] y ) :
  *     if not len(x) == len(y) :             # <<<<<<<<<<<<<<
@@ -3940,7 +3940,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   }
 
-  /* "MuchTree.pyx":52
+  /* "SuchTree/MuchTree.pyx":52
  *     if not len(x) == len(y) :
  *         raise Exception( 'vectors must be the same length.', (len(x),len(y)) )
  *     try :             # <<<<<<<<<<<<<<
@@ -3956,7 +3956,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_XGOTREF(__pyx_t_9);
     /*try:*/ {
 
-      /* "MuchTree.pyx":53
+      /* "SuchTree/MuchTree.pyx":53
  *         raise Exception( 'vectors must be the same length.', (len(x),len(y)) )
  *     try :
  *         return _pearson( x, y, len(x) )             # <<<<<<<<<<<<<<
@@ -3965,13 +3965,13 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_t_2 = __Pyx_MemoryView_Len(__pyx_v_x); 
-      __pyx_t_6 = PyFloat_FromDouble(__pyx_f_8MuchTree__pearson(__pyx_v_x, __pyx_v_y, __pyx_t_2)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 53, __pyx_L4_error)
+      __pyx_t_6 = PyFloat_FromDouble(__pyx_f_8SuchTree_8MuchTree__pearson(__pyx_v_x, __pyx_v_y, __pyx_t_2)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 53, __pyx_L4_error)
       __Pyx_GOTREF(__pyx_t_6);
       __pyx_r = __pyx_t_6;
       __pyx_t_6 = 0;
       goto __pyx_L8_try_return;
 
-      /* "MuchTree.pyx":52
+      /* "SuchTree/MuchTree.pyx":52
  *     if not len(x) == len(y) :
  *         raise Exception( 'vectors must be the same length.', (len(x),len(y)) )
  *     try :             # <<<<<<<<<<<<<<
@@ -3984,7 +3984,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "MuchTree.pyx":54
+    /* "SuchTree/MuchTree.pyx":54
  *     try :
  *         return _pearson( x, y, len(x) )
  *     except ZeroDivisionError :             # <<<<<<<<<<<<<<
@@ -3993,13 +3993,13 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
  */
     __pyx_t_10 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ZeroDivisionError);
     if (__pyx_t_10) {
-      __Pyx_AddTraceback("MuchTree.pearson", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("SuchTree.MuchTree.pearson", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_5, &__pyx_t_4) < 0) __PYX_ERR(0, 54, __pyx_L6_except_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GOTREF(__pyx_t_4);
 
-      /* "MuchTree.pyx":55
+      /* "SuchTree/MuchTree.pyx":55
  *         return _pearson( x, y, len(x) )
  *     except ZeroDivisionError :
  *         return 0.0             # <<<<<<<<<<<<<<
@@ -4017,7 +4017,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
     goto __pyx_L6_except_error;
     __pyx_L6_except_error:;
 
-    /* "MuchTree.pyx":52
+    /* "SuchTree/MuchTree.pyx":52
  *     if not len(x) == len(y) :
  *         raise Exception( 'vectors must be the same length.', (len(x),len(y)) )
  *     try :             # <<<<<<<<<<<<<<
@@ -4043,7 +4043,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
     goto __pyx_L0;
   }
 
-  /* "MuchTree.pyx":49
+  /* "SuchTree/MuchTree.pyx":49
  *     return sxy / ( ( sxx * syy ) + 1.0e-20 )**(0.5)
  * 
  * def pearson( double[:] x, double[:] y ) :             # <<<<<<<<<<<<<<
@@ -4056,7 +4056,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("MuchTree.pearson", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.pearson", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_x, 1);
@@ -4066,7 +4066,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":92
+/* "SuchTree/MuchTree.pyx":92
  *     cdef object np_buffer
  * 
  *     def __init__( self, tree_file ) :             # <<<<<<<<<<<<<<
@@ -4075,12 +4075,12 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
  */
 
 /* Python wrapper */
-static int __pyx_pw_8MuchTree_8SuchTree_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree___init__[] = "\n        SuchTree constructor.\n        ";
+static int __pyx_pw_8SuchTree_8MuchTree_8SuchTree_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree___init__[] = "\n        SuchTree constructor.\n        ";
 #if CYTHON_UPDATE_DESCRIPTOR_DOC
-struct wrapperbase __pyx_wrapperbase_8MuchTree_8SuchTree___init__;
+struct wrapperbase __pyx_wrapperbase_8SuchTree_8MuchTree_8SuchTree___init__;
 #endif
-static int __pyx_pw_8MuchTree_8SuchTree_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_8SuchTree_8MuchTree_8SuchTree_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_tree_file = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -4120,18 +4120,18 @@ static int __pyx_pw_8MuchTree_8SuchTree_1__init__(PyObject *__pyx_v_self, PyObje
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 92, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree___init__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_tree_file);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree___init__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_tree_file);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_tree_file) {
+static int __pyx_pf_8SuchTree_8MuchTree_8SuchTree___init__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_tree_file) {
   unsigned int __pyx_v_n;
   int __pyx_v_node_id;
   PyObject *__pyx_v_url_strings = NULL;
@@ -4169,7 +4169,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "MuchTree.pyx":98
+  /* "SuchTree/MuchTree.pyx":98
  *         cdef unsigned int n
  *         cdef int node_id
  *         self.np_buffer = None             # <<<<<<<<<<<<<<
@@ -4182,7 +4182,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __Pyx_DECREF(__pyx_v_self->np_buffer);
   __pyx_v_self->np_buffer = Py_None;
 
-  /* "MuchTree.pyx":99
+  /* "SuchTree/MuchTree.pyx":99
  *         cdef int node_id
  *         self.np_buffer = None
  *         self.n_leafs = 0             # <<<<<<<<<<<<<<
@@ -4191,7 +4191,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
   __pyx_v_self->n_leafs = 0;
 
-  /* "MuchTree.pyx":102
+  /* "SuchTree/MuchTree.pyx":102
  * 
  *         # tiny nonzero distance for representing polytomies
  *         self.epsilon = np.finfo( np.float64 ).eps             # <<<<<<<<<<<<<<
@@ -4231,7 +4231,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_self->epsilon = __pyx_t_5;
 
-  /* "MuchTree.pyx":104
+  /* "SuchTree/MuchTree.pyx":104
  *         self.epsilon = np.finfo( np.float64 ).eps
  * 
  *         url_strings = [ 'http://', 'https://', 'ftp://' ]             # <<<<<<<<<<<<<<
@@ -4252,7 +4252,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __pyx_v_url_strings = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":106
+  /* "SuchTree/MuchTree.pyx":106
  *         url_strings = [ 'http://', 'https://', 'ftp://' ]
  * 
  *         if any( [ tree_file.startswith(x) for x in url_strings ] ) :             # <<<<<<<<<<<<<<
@@ -4308,7 +4308,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_8) {
 
-    /* "MuchTree.pyx":107
+    /* "SuchTree/MuchTree.pyx":107
  * 
  *         if any( [ tree_file.startswith(x) for x in url_strings ] ) :
  *             t = Tree.get( url=tree_file,             # <<<<<<<<<<<<<<
@@ -4325,7 +4325,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_url, __pyx_v_tree_file) < 0) __PYX_ERR(0, 107, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_schema, __pyx_n_u_newick) < 0) __PYX_ERR(0, 107, __pyx_L1_error)
 
-    /* "MuchTree.pyx":109
+    /* "SuchTree/MuchTree.pyx":109
  *             t = Tree.get( url=tree_file,
  *                           schema='newick',
  *                           preserve_underscores=True,             # <<<<<<<<<<<<<<
@@ -4334,7 +4334,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_preserve_underscores, Py_True) < 0) __PYX_ERR(0, 107, __pyx_L1_error)
 
-    /* "MuchTree.pyx":110
+    /* "SuchTree/MuchTree.pyx":110
  *                           schema='newick',
  *                           preserve_underscores=True,
  *                           suppress_internal_node_taxa=True )             # <<<<<<<<<<<<<<
@@ -4343,7 +4343,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_suppress_internal_node_taxa, Py_True) < 0) __PYX_ERR(0, 107, __pyx_L1_error)
 
-    /* "MuchTree.pyx":107
+    /* "SuchTree/MuchTree.pyx":107
  * 
  *         if any( [ tree_file.startswith(x) for x in url_strings ] ) :
  *             t = Tree.get( url=tree_file,             # <<<<<<<<<<<<<<
@@ -4357,7 +4357,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_v_t = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":106
+    /* "SuchTree/MuchTree.pyx":106
  *         url_strings = [ 'http://', 'https://', 'ftp://' ]
  * 
  *         if any( [ tree_file.startswith(x) for x in url_strings ] ) :             # <<<<<<<<<<<<<<
@@ -4367,7 +4367,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":112
+  /* "SuchTree/MuchTree.pyx":112
  *                           suppress_internal_node_taxa=True )
  *         else :
  *             t = Tree.get( file=open(tree_file),             # <<<<<<<<<<<<<<
@@ -4388,7 +4388,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_schema, __pyx_n_u_newick) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
 
-    /* "MuchTree.pyx":114
+    /* "SuchTree/MuchTree.pyx":114
  *             t = Tree.get( file=open(tree_file),
  *                           schema='newick',
  *                           preserve_underscores=True,             # <<<<<<<<<<<<<<
@@ -4397,7 +4397,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_preserve_underscores, Py_True) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
 
-    /* "MuchTree.pyx":115
+    /* "SuchTree/MuchTree.pyx":115
  *                           schema='newick',
  *                           preserve_underscores=True,
  *                           suppress_internal_node_taxa=True )             # <<<<<<<<<<<<<<
@@ -4406,7 +4406,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_suppress_internal_node_taxa, Py_True) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
 
-    /* "MuchTree.pyx":112
+    /* "SuchTree/MuchTree.pyx":112
  *                           suppress_internal_node_taxa=True )
  *         else :
  *             t = Tree.get( file=open(tree_file),             # <<<<<<<<<<<<<<
@@ -4422,7 +4422,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   }
   __pyx_L3:;
 
-  /* "MuchTree.pyx":116
+  /* "SuchTree/MuchTree.pyx":116
  *                           preserve_underscores=True,
  *                           suppress_internal_node_taxa=True )
  *         t.resolve_polytomies()             # <<<<<<<<<<<<<<
@@ -4448,7 +4448,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":117
+  /* "SuchTree/MuchTree.pyx":117
  *                           suppress_internal_node_taxa=True )
  *         t.resolve_polytomies()
  *         size = len( t.nodes() )             # <<<<<<<<<<<<<<
@@ -4479,23 +4479,23 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __pyx_v_size = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":119
+  /* "SuchTree/MuchTree.pyx":119
  *         size = len( t.nodes() )
  *         # allocate some memory
  *         self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )             # <<<<<<<<<<<<<<
  *         if self.data == NULL :
  *             raise Exception( 'SuchTree could not allocate memory' )
  */
-  __pyx_t_3 = __Pyx_PyInt_FromSize_t((sizeof(struct __pyx_t_8MuchTree_Node))); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_FromSize_t((sizeof(struct __pyx_t_8SuchTree_8MuchTree_Node))); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = PyNumber_Multiply(__pyx_v_size, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_9 = __Pyx_PyInt_As_size_t(__pyx_t_4); if (unlikely((__pyx_t_9 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_v_self->data = ((struct __pyx_t_8MuchTree_Node *)PyMem_Malloc(__pyx_t_9));
+  __pyx_v_self->data = ((struct __pyx_t_8SuchTree_8MuchTree_Node *)PyMem_Malloc(__pyx_t_9));
 
-  /* "MuchTree.pyx":120
+  /* "SuchTree/MuchTree.pyx":120
  *         # allocate some memory
  *         self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )
  *         if self.data == NULL :             # <<<<<<<<<<<<<<
@@ -4505,7 +4505,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __pyx_t_8 = ((__pyx_v_self->data == NULL) != 0);
   if (unlikely(__pyx_t_8)) {
 
-    /* "MuchTree.pyx":121
+    /* "SuchTree/MuchTree.pyx":121
  *         self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )
  *         if self.data == NULL :
  *             raise Exception( 'SuchTree could not allocate memory' )             # <<<<<<<<<<<<<<
@@ -4518,7 +4518,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __PYX_ERR(0, 121, __pyx_L1_error)
 
-    /* "MuchTree.pyx":120
+    /* "SuchTree/MuchTree.pyx":120
  *         # allocate some memory
  *         self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )
  *         if self.data == NULL :             # <<<<<<<<<<<<<<
@@ -4527,7 +4527,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
   }
 
-  /* "MuchTree.pyx":123
+  /* "SuchTree/MuchTree.pyx":123
  *             raise Exception( 'SuchTree could not allocate memory' )
  * 
  *         self.length = size             # <<<<<<<<<<<<<<
@@ -4537,7 +4537,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __pyx_t_10 = __Pyx_PyInt_As_unsigned_int(__pyx_v_size); if (unlikely((__pyx_t_10 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 123, __pyx_L1_error)
   __pyx_v_self->length = __pyx_t_10;
 
-  /* "MuchTree.pyx":124
+  /* "SuchTree/MuchTree.pyx":124
  * 
  *         self.length = size
  *         if not self.data :             # <<<<<<<<<<<<<<
@@ -4547,7 +4547,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __pyx_t_8 = ((!(__pyx_v_self->data != 0)) != 0);
   if (unlikely(__pyx_t_8)) {
 
-    /* "MuchTree.pyx":125
+    /* "SuchTree/MuchTree.pyx":125
  *         self.length = size
  *         if not self.data :
  *             raise MemoryError()             # <<<<<<<<<<<<<<
@@ -4556,7 +4556,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     PyErr_NoMemory(); __PYX_ERR(0, 125, __pyx_L1_error)
 
-    /* "MuchTree.pyx":124
+    /* "SuchTree/MuchTree.pyx":124
  * 
  *         self.length = size
  *         if not self.data :             # <<<<<<<<<<<<<<
@@ -4565,7 +4565,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
   }
 
-  /* "MuchTree.pyx":127
+  /* "SuchTree/MuchTree.pyx":127
  *             raise MemoryError()
  * 
  *         self.leafs = {}             # <<<<<<<<<<<<<<
@@ -4580,7 +4580,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __pyx_v_self->leafs = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":128
+  /* "SuchTree/MuchTree.pyx":128
  * 
  *         self.leafs = {}
  *         self.leafnodes = {}             # <<<<<<<<<<<<<<
@@ -4595,7 +4595,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __pyx_v_self->leafnodes = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":129
+  /* "SuchTree/MuchTree.pyx":129
  *         self.leafs = {}
  *         self.leafnodes = {}
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :             # <<<<<<<<<<<<<<
@@ -4665,7 +4665,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_v_node_id = __pyx_t_11;
     __pyx_t_11 = (__pyx_t_11 + 1);
 
-    /* "MuchTree.pyx":130
+    /* "SuchTree/MuchTree.pyx":130
  *         self.leafnodes = {}
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :
  *             node.label = node_id             # <<<<<<<<<<<<<<
@@ -4677,7 +4677,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_node, __pyx_n_s_label, __pyx_t_4) < 0) __PYX_ERR(0, 130, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":131
+    /* "SuchTree/MuchTree.pyx":131
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :
  *             node.label = node_id
  *             if node_id >= size :             # <<<<<<<<<<<<<<
@@ -4692,7 +4692,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (unlikely(__pyx_t_8)) {
 
-      /* "MuchTree.pyx":132
+      /* "SuchTree/MuchTree.pyx":132
  *             node.label = node_id
  *             if node_id >= size :
  *                 raise Exception( 'node label out of bounds : ' + str(node_id) )             # <<<<<<<<<<<<<<
@@ -4714,7 +4714,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __PYX_ERR(0, 132, __pyx_L1_error)
 
-      /* "MuchTree.pyx":131
+      /* "SuchTree/MuchTree.pyx":131
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :
  *             node.label = node_id
  *             if node_id >= size :             # <<<<<<<<<<<<<<
@@ -4723,7 +4723,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     }
 
-    /* "MuchTree.pyx":133
+    /* "SuchTree/MuchTree.pyx":133
  *             if node_id >= size :
  *                 raise Exception( 'node label out of bounds : ' + str(node_id) )
  *             if node.taxon :             # <<<<<<<<<<<<<<
@@ -4736,7 +4736,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if (__pyx_t_8) {
 
-      /* "MuchTree.pyx":134
+      /* "SuchTree/MuchTree.pyx":134
  *                 raise Exception( 'node label out of bounds : ' + str(node_id) )
  *             if node.taxon :
  *                 self.leafs[ node.taxon.label ] = node_id             # <<<<<<<<<<<<<<
@@ -4754,7 +4754,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "MuchTree.pyx":135
+      /* "SuchTree/MuchTree.pyx":135
  *             if node.taxon :
  *                 self.leafs[ node.taxon.label ] = node_id
  *                 self.leafnodes[ node_id ] = node.taxon.label             # <<<<<<<<<<<<<<
@@ -4769,7 +4769,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       if (unlikely(__Pyx_SetItemInt(__pyx_v_self->leafnodes, __pyx_v_node_id, __pyx_t_2, int, 1, __Pyx_PyInt_From_int, 0, 1, 1) < 0)) __PYX_ERR(0, 135, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "MuchTree.pyx":133
+      /* "SuchTree/MuchTree.pyx":133
  *             if node_id >= size :
  *                 raise Exception( 'node label out of bounds : ' + str(node_id) )
  *             if node.taxon :             # <<<<<<<<<<<<<<
@@ -4778,7 +4778,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     }
 
-    /* "MuchTree.pyx":129
+    /* "SuchTree/MuchTree.pyx":129
  *         self.leafs = {}
  *         self.leafnodes = {}
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :             # <<<<<<<<<<<<<<
@@ -4788,7 +4788,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":137
+  /* "SuchTree/MuchTree.pyx":137
  *                 self.leafnodes[ node_id ] = node.taxon.label
  * 
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :             # <<<<<<<<<<<<<<
@@ -4858,7 +4858,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_v_node_id = __pyx_t_11;
     __pyx_t_11 = (__pyx_t_11 + 1);
 
-    /* "MuchTree.pyx":138
+    /* "SuchTree/MuchTree.pyx":138
  * 
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :
  *             if not node.parent_node :             # <<<<<<<<<<<<<<
@@ -4872,7 +4872,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_t_13 = ((!__pyx_t_8) != 0);
     if (__pyx_t_13) {
 
-      /* "MuchTree.pyx":139
+      /* "SuchTree/MuchTree.pyx":139
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :
  *             if not node.parent_node :
  *                 distance = -1.0             # <<<<<<<<<<<<<<
@@ -4882,7 +4882,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __Pyx_INCREF(__pyx_float_neg_1_0);
       __Pyx_XDECREF_SET(__pyx_v_distance, __pyx_float_neg_1_0);
 
-      /* "MuchTree.pyx":140
+      /* "SuchTree/MuchTree.pyx":140
  *             if not node.parent_node :
  *                 distance = -1.0
  *                 parent   = -1             # <<<<<<<<<<<<<<
@@ -4892,7 +4892,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __Pyx_INCREF(__pyx_int_neg_1);
       __Pyx_XDECREF_SET(__pyx_v_parent, __pyx_int_neg_1);
 
-      /* "MuchTree.pyx":141
+      /* "SuchTree/MuchTree.pyx":141
  *                 distance = -1.0
  *                 parent   = -1
  *                 self.root = node_id             # <<<<<<<<<<<<<<
@@ -4901,7 +4901,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
       __pyx_v_self->root = __pyx_v_node_id;
 
-      /* "MuchTree.pyx":138
+      /* "SuchTree/MuchTree.pyx":138
  * 
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :
  *             if not node.parent_node :             # <<<<<<<<<<<<<<
@@ -4911,7 +4911,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       goto __pyx_L18;
     }
 
-    /* "MuchTree.pyx":143
+    /* "SuchTree/MuchTree.pyx":143
  *                 self.root = node_id
  *             else :
  *                 if not node.edge_length :             # <<<<<<<<<<<<<<
@@ -4926,7 +4926,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __pyx_t_8 = ((!__pyx_t_13) != 0);
       if (__pyx_t_8) {
 
-        /* "MuchTree.pyx":144
+        /* "SuchTree/MuchTree.pyx":144
  *             else :
  *                 if not node.edge_length :
  *                     distance = 0.0             # <<<<<<<<<<<<<<
@@ -4936,7 +4936,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
         __Pyx_INCREF(__pyx_float_0_0);
         __Pyx_XDECREF_SET(__pyx_v_distance, __pyx_float_0_0);
 
-        /* "MuchTree.pyx":143
+        /* "SuchTree/MuchTree.pyx":143
  *                 self.root = node_id
  *             else :
  *                 if not node.edge_length :             # <<<<<<<<<<<<<<
@@ -4946,7 +4946,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
         goto __pyx_L19;
       }
 
-      /* "MuchTree.pyx":146
+      /* "SuchTree/MuchTree.pyx":146
  *                     distance = 0.0
  *                 else :
  *                     distance = node.edge_length             # <<<<<<<<<<<<<<
@@ -4961,7 +4961,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       }
       __pyx_L19:;
 
-      /* "MuchTree.pyx":147
+      /* "SuchTree/MuchTree.pyx":147
  *                 else :
  *                     distance = node.edge_length
  *                 parent   = node.parent_node.label             # <<<<<<<<<<<<<<
@@ -4978,7 +4978,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     }
     __pyx_L18:;
 
-    /* "MuchTree.pyx":148
+    /* "SuchTree/MuchTree.pyx":148
  *                     distance = node.edge_length
  *                 parent   = node.parent_node.label
  *             if node.taxon :             # <<<<<<<<<<<<<<
@@ -4991,7 +4991,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if (__pyx_t_8) {
 
-      /* "MuchTree.pyx":149
+      /* "SuchTree/MuchTree.pyx":149
  *                 parent   = node.parent_node.label
  *             if node.taxon :
  *                 left_child, right_child = -1, -1             # <<<<<<<<<<<<<<
@@ -5007,7 +5007,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __Pyx_XDECREF_SET(__pyx_v_right_child, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "MuchTree.pyx":150
+      /* "SuchTree/MuchTree.pyx":150
  *             if node.taxon :
  *                 left_child, right_child = -1, -1
  *                 self.n_leafs += 1             # <<<<<<<<<<<<<<
@@ -5016,7 +5016,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
       __pyx_v_self->n_leafs = (__pyx_v_self->n_leafs + 1);
 
-      /* "MuchTree.pyx":148
+      /* "SuchTree/MuchTree.pyx":148
  *                     distance = node.edge_length
  *                 parent   = node.parent_node.label
  *             if node.taxon :             # <<<<<<<<<<<<<<
@@ -5026,7 +5026,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       goto __pyx_L20;
     }
 
-    /* "MuchTree.pyx":152
+    /* "SuchTree/MuchTree.pyx":152
  *                 self.n_leafs += 1
  *             else :
  *                 l_child, r_child = node.child_nodes()             # <<<<<<<<<<<<<<
@@ -5102,7 +5102,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __Pyx_XDECREF_SET(__pyx_v_r_child, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":153
+      /* "SuchTree/MuchTree.pyx":153
  *             else :
  *                 l_child, r_child = node.child_nodes()
  *                 left_child  = l_child.label             # <<<<<<<<<<<<<<
@@ -5114,7 +5114,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __Pyx_XDECREF_SET(__pyx_v_left_child, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "MuchTree.pyx":154
+      /* "SuchTree/MuchTree.pyx":154
  *                 l_child, r_child = node.child_nodes()
  *                 left_child  = l_child.label
  *                 right_child = r_child.label             # <<<<<<<<<<<<<<
@@ -5128,7 +5128,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     }
     __pyx_L20:;
 
-    /* "MuchTree.pyx":156
+    /* "SuchTree/MuchTree.pyx":156
  *                 right_child = r_child.label
  * 
  *             if node_id >= size :             # <<<<<<<<<<<<<<
@@ -5143,7 +5143,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (unlikely(__pyx_t_8)) {
 
-      /* "MuchTree.pyx":157
+      /* "SuchTree/MuchTree.pyx":157
  * 
  *             if node_id >= size :
  *                 raise Exception( 'node label out of bounds : ' + str(node_id) )             # <<<<<<<<<<<<<<
@@ -5165,7 +5165,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(0, 157, __pyx_L1_error)
 
-      /* "MuchTree.pyx":156
+      /* "SuchTree/MuchTree.pyx":156
  *                 right_child = r_child.label
  * 
  *             if node_id >= size :             # <<<<<<<<<<<<<<
@@ -5174,7 +5174,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     }
 
-    /* "MuchTree.pyx":159
+    /* "SuchTree/MuchTree.pyx":159
  *                 raise Exception( 'node label out of bounds : ' + str(node_id) )
  * 
  *             self.data[node_id].parent      = parent             # <<<<<<<<<<<<<<
@@ -5184,7 +5184,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_t_15 = __Pyx_PyInt_As_int(__pyx_v_parent); if (unlikely((__pyx_t_15 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 159, __pyx_L1_error)
     (__pyx_v_self->data[__pyx_v_node_id]).parent = __pyx_t_15;
 
-    /* "MuchTree.pyx":160
+    /* "SuchTree/MuchTree.pyx":160
  * 
  *             self.data[node_id].parent      = parent
  *             self.data[node_id].left_child  = left_child             # <<<<<<<<<<<<<<
@@ -5194,7 +5194,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_t_15 = __Pyx_PyInt_As_int(__pyx_v_left_child); if (unlikely((__pyx_t_15 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 160, __pyx_L1_error)
     (__pyx_v_self->data[__pyx_v_node_id]).left_child = __pyx_t_15;
 
-    /* "MuchTree.pyx":161
+    /* "SuchTree/MuchTree.pyx":161
  *             self.data[node_id].parent      = parent
  *             self.data[node_id].left_child  = left_child
  *             self.data[node_id].right_child = right_child             # <<<<<<<<<<<<<<
@@ -5204,7 +5204,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_t_15 = __Pyx_PyInt_As_int(__pyx_v_right_child); if (unlikely((__pyx_t_15 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 161, __pyx_L1_error)
     (__pyx_v_self->data[__pyx_v_node_id]).right_child = __pyx_t_15;
 
-    /* "MuchTree.pyx":162
+    /* "SuchTree/MuchTree.pyx":162
  *             self.data[node_id].left_child  = left_child
  *             self.data[node_id].right_child = right_child
  *             self.data[node_id].distance    = distance             # <<<<<<<<<<<<<<
@@ -5214,7 +5214,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_t_16 = __pyx_PyFloat_AsFloat(__pyx_v_distance); if (unlikely((__pyx_t_16 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 162, __pyx_L1_error)
     (__pyx_v_self->data[__pyx_v_node_id]).distance = __pyx_t_16;
 
-    /* "MuchTree.pyx":137
+    /* "SuchTree/MuchTree.pyx":137
  *                 self.leafnodes[ node_id ] = node.taxon.label
  * 
  *         for node_id,node in enumerate( t.inorder_node_iter() ) :             # <<<<<<<<<<<<<<
@@ -5224,7 +5224,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":164
+  /* "SuchTree/MuchTree.pyx":164
  *             self.data[node_id].distance    = distance
  * 
  *         for node_id in self.leafs.values() :             # <<<<<<<<<<<<<<
@@ -5250,7 +5250,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_node_id = __pyx_t_15;
 
-    /* "MuchTree.pyx":165
+    /* "SuchTree/MuchTree.pyx":165
  * 
  *         for node_id in self.leafs.values() :
  *             n = 1             # <<<<<<<<<<<<<<
@@ -5259,7 +5259,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     __pyx_v_n = 1;
 
-    /* "MuchTree.pyx":166
+    /* "SuchTree/MuchTree.pyx":166
  *         for node_id in self.leafs.values() :
  *             n = 1
  *             while True :             # <<<<<<<<<<<<<<
@@ -5268,7 +5268,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
     while (1) {
 
-      /* "MuchTree.pyx":167
+      /* "SuchTree/MuchTree.pyx":167
  *             n = 1
  *             while True :
  *                 if self.data[node_id].parent == -1 : break             # <<<<<<<<<<<<<<
@@ -5280,7 +5280,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
         goto __pyx_L27_break;
       }
 
-      /* "MuchTree.pyx":168
+      /* "SuchTree/MuchTree.pyx":168
  *             while True :
  *                 if self.data[node_id].parent == -1 : break
  *                 node_id = self.data[node_id].parent             # <<<<<<<<<<<<<<
@@ -5290,7 +5290,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
       __pyx_t_15 = (__pyx_v_self->data[__pyx_v_node_id]).parent;
       __pyx_v_node_id = __pyx_t_15;
 
-      /* "MuchTree.pyx":169
+      /* "SuchTree/MuchTree.pyx":169
  *                 if self.data[node_id].parent == -1 : break
  *                 node_id = self.data[node_id].parent
  *                 n += 1             # <<<<<<<<<<<<<<
@@ -5301,7 +5301,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     }
     __pyx_L27_break:;
 
-    /* "MuchTree.pyx":170
+    /* "SuchTree/MuchTree.pyx":170
  *                 node_id = self.data[node_id].parent
  *                 n += 1
  *             if n > self.depth :             # <<<<<<<<<<<<<<
@@ -5311,7 +5311,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
     __pyx_t_8 = ((__pyx_v_n > __pyx_v_self->depth) != 0);
     if (__pyx_t_8) {
 
-      /* "MuchTree.pyx":171
+      /* "SuchTree/MuchTree.pyx":171
  *                 n += 1
  *             if n > self.depth :
  *                 self.depth = n             # <<<<<<<<<<<<<<
@@ -5320,7 +5320,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
       __pyx_v_self->depth = __pyx_v_n;
 
-      /* "MuchTree.pyx":170
+      /* "SuchTree/MuchTree.pyx":170
  *                 node_id = self.data[node_id].parent
  *                 n += 1
  *             if n > self.depth :             # <<<<<<<<<<<<<<
@@ -5331,7 +5331,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":92
+  /* "SuchTree/MuchTree.pyx":92
  *     cdef object np_buffer
  * 
  *     def __init__( self, tree_file ) :             # <<<<<<<<<<<<<<
@@ -5348,7 +5348,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("MuchTree.SuchTree.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_url_strings);
@@ -5366,7 +5366,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":175
+/* "SuchTree/MuchTree.pyx":175
  *     property length :
  *         'The number of nodes in the tree.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5375,19 +5375,19 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_6length_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_6length_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_6length_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_6length_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_6length___get__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_6length___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5396,7 +5396,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":176
+  /* "SuchTree/MuchTree.pyx":176
  *         'The number of nodes in the tree.'
  *         def __get__( self ) :
  *             return self.length             # <<<<<<<<<<<<<<
@@ -5410,7 +5410,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":175
+  /* "SuchTree/MuchTree.pyx":175
  *     property length :
  *         'The number of nodes in the tree.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5421,7 +5421,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.length.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.length.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5429,7 +5429,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":180
+/* "SuchTree/MuchTree.pyx":180
  *     property depth :
  *         'The maximum depth of the tree.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5438,19 +5438,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6length___get__(struct __pyx_obj_8
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_5depth_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_5depth_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_5depth_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_5depth_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_5depth___get__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_5depth___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5459,7 +5459,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8M
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":181
+  /* "SuchTree/MuchTree.pyx":181
  *         'The maximum depth of the tree.'
  *         def __get__( self ) :
  *             return self.depth             # <<<<<<<<<<<<<<
@@ -5473,7 +5473,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8M
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":180
+  /* "SuchTree/MuchTree.pyx":180
  *     property depth :
  *         'The maximum depth of the tree.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5484,7 +5484,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8M
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.depth.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.depth.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5492,7 +5492,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8M
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":185
+/* "SuchTree/MuchTree.pyx":185
  *     property n_leafs :
  *         'The number of leafs in the tree.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5501,19 +5501,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_5depth___get__(struct __pyx_obj_8M
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_7n_leafs_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_7n_leafs_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_7n_leafs_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_7n_leafs_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_7n_leafs___get__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_7n_leafs___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5522,7 +5522,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":186
+  /* "SuchTree/MuchTree.pyx":186
  *         'The number of leafs in the tree.'
  *         def __get__( self ) :
  *             return self.n_leafs             # <<<<<<<<<<<<<<
@@ -5536,7 +5536,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":185
+  /* "SuchTree/MuchTree.pyx":185
  *     property n_leafs :
  *         'The number of leafs in the tree.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5547,7 +5547,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.n_leafs.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.n_leafs.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5555,7 +5555,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":190
+/* "SuchTree/MuchTree.pyx":190
  *     property leafs :
  *         'A dictionary mapping leaf names to leaf node ids.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5564,24 +5564,24 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_7n_leafs___get__(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_5leafs_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_5leafs_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_5leafs_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_5leafs_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_5leafs___get__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_5leafs___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_5leafs___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_5leafs___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":191
+  /* "SuchTree/MuchTree.pyx":191
  *         'A dictionary mapping leaf names to leaf node ids.'
  *         def __get__( self ) :
  *             return self.leafs             # <<<<<<<<<<<<<<
@@ -5593,7 +5593,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_5leafs___get__(struct __pyx_obj_8M
   __pyx_r = __pyx_v_self->leafs;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":190
+  /* "SuchTree/MuchTree.pyx":190
  *     property leafs :
  *         'A dictionary mapping leaf names to leaf node ids.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5608,7 +5608,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_5leafs___get__(struct __pyx_obj_8M
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":195
+/* "SuchTree/MuchTree.pyx":195
  *     property leafnodes :
  *         'A dictionary mapping leaf node ids to leaf names.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5617,24 +5617,24 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_5leafs___get__(struct __pyx_obj_8M
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_9leafnodes_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_9leafnodes_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_9leafnodes_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_9leafnodes_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_9leafnodes___get__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_9leafnodes___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_9leafnodes___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_9leafnodes___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":196
+  /* "SuchTree/MuchTree.pyx":196
  *         'A dictionary mapping leaf node ids to leaf names.'
  *         def __get__( self ) :
  *             return self.leafnodes             # <<<<<<<<<<<<<<
@@ -5646,7 +5646,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_9leafnodes___get__(struct __pyx_ob
   __pyx_r = __pyx_v_self->leafnodes;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":195
+  /* "SuchTree/MuchTree.pyx":195
  *     property leafnodes :
  *         'A dictionary mapping leaf node ids to leaf names.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5661,7 +5661,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_9leafnodes___get__(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":200
+/* "SuchTree/MuchTree.pyx":200
  *     property root :
  *         'The id of the root node.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5670,19 +5670,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_9leafnodes___get__(struct __pyx_ob
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_4root_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_4root_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_4root_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_4root_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_4root___get__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_4root___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5691,7 +5691,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8Mu
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":201
+  /* "SuchTree/MuchTree.pyx":201
  *         'The id of the root node.'
  *         def __get__( self ) :
  *             return self.root             # <<<<<<<<<<<<<<
@@ -5705,7 +5705,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8Mu
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":200
+  /* "SuchTree/MuchTree.pyx":200
  *     property root :
  *         'The id of the root node.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5716,7 +5716,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8Mu
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.root.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.root.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5724,7 +5724,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8Mu
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":205
+/* "SuchTree/MuchTree.pyx":205
  *     property polytomy_distance :
  *         'Tiny, nonzero distance for polytomies in the adjacency matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5733,19 +5733,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4root___get__(struct __pyx_obj_8Mu
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_17polytomy_distance_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_17polytomy_distance_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_17polytomy_distance___get__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_17polytomy_distance___get__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5754,7 +5754,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17polytomy_distance___get__(struct
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":206
+  /* "SuchTree/MuchTree.pyx":206
  *         'Tiny, nonzero distance for polytomies in the adjacency matrix.'
  *         def __get__( self ) :
  *             return self.epsilon             # <<<<<<<<<<<<<<
@@ -5768,7 +5768,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17polytomy_distance___get__(struct
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":205
+  /* "SuchTree/MuchTree.pyx":205
  *     property polytomy_distance :
  *         'Tiny, nonzero distance for polytomies in the adjacency matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -5779,7 +5779,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17polytomy_distance___get__(struct
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.polytomy_distance.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.polytomy_distance.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5787,7 +5787,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17polytomy_distance___get__(struct
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":207
+/* "SuchTree/MuchTree.pyx":207
  *         def __get__( self ) :
  *             return self.epsilon
  *         def __set__( self, np.float64_t new_epsilon ) :             # <<<<<<<<<<<<<<
@@ -5796,8 +5796,8 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17polytomy_distance___get__(struct
  */
 
 /* Python wrapper */
-static int __pyx_pw_8MuchTree_8SuchTree_17polytomy_distance_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_arg_new_epsilon); /*proto*/
-static int __pyx_pw_8MuchTree_8SuchTree_17polytomy_distance_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_arg_new_epsilon) {
+static int __pyx_pw_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_arg_new_epsilon); /*proto*/
+static int __pyx_pw_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_arg_new_epsilon) {
   __pyx_t_5numpy_float64_t __pyx_v_new_epsilon;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -5810,23 +5810,23 @@ static int __pyx_pw_8MuchTree_8SuchTree_17polytomy_distance_3__set__(PyObject *_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.polytomy_distance.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.polytomy_distance.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_17polytomy_distance_2__set__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((__pyx_t_5numpy_float64_t)__pyx_v_new_epsilon));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_2__set__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((__pyx_t_5numpy_float64_t)__pyx_v_new_epsilon));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8MuchTree_8SuchTree_17polytomy_distance_2__set__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, __pyx_t_5numpy_float64_t __pyx_v_new_epsilon) {
+static int __pyx_pf_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_2__set__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, __pyx_t_5numpy_float64_t __pyx_v_new_epsilon) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__", 0);
 
-  /* "MuchTree.pyx":208
+  /* "SuchTree/MuchTree.pyx":208
  *             return self.epsilon
  *         def __set__( self, np.float64_t new_epsilon ) :
  *             self.epsilon = new_epsilon             # <<<<<<<<<<<<<<
@@ -5835,7 +5835,7 @@ static int __pyx_pf_8MuchTree_8SuchTree_17polytomy_distance_2__set__(struct __py
  */
   __pyx_v_self->epsilon = __pyx_v_new_epsilon;
 
-  /* "MuchTree.pyx":207
+  /* "SuchTree/MuchTree.pyx":207
  *         def __get__( self ) :
  *             return self.epsilon
  *         def __set__( self, np.float64_t new_epsilon ) :             # <<<<<<<<<<<<<<
@@ -5849,7 +5849,7 @@ static int __pyx_pf_8MuchTree_8SuchTree_17polytomy_distance_2__set__(struct __py
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":210
+/* "SuchTree/MuchTree.pyx":210
  *             self.epsilon = new_epsilon
  * 
  *     def get_parent( self, query ) :             # <<<<<<<<<<<<<<
@@ -5858,20 +5858,20 @@ static int __pyx_pf_8MuchTree_8SuchTree_17polytomy_distance_2__set__(struct __py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_3get_parent(PyObject *__pyx_v_self, PyObject *__pyx_v_query); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_2get_parent[] = "\n        Return the id of the parent of a given node. Will accept node\n        id or leaf name.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_3get_parent(PyObject *__pyx_v_self, PyObject *__pyx_v_query) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_3get_parent(PyObject *__pyx_v_self, PyObject *__pyx_v_query); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_2get_parent[] = "\n        Return the id of the parent of a given node. Will accept node\n        id or leaf name.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_3get_parent(PyObject *__pyx_v_self, PyObject *__pyx_v_query) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_parent (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_2get_parent(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_query));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_2get_parent(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_query));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_query) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_query) {
   PyObject *__pyx_v_node_id = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -5892,7 +5892,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_parent", 0);
 
-  /* "MuchTree.pyx":215
+  /* "SuchTree/MuchTree.pyx":215
  *         id or leaf name.
  *         """
  *         if type(query) is str :             # <<<<<<<<<<<<<<
@@ -5903,7 +5903,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":216
+    /* "SuchTree/MuchTree.pyx":216
  *         """
  *         if type(query) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -5919,7 +5919,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
       __Pyx_XGOTREF(__pyx_t_5);
       /*try:*/ {
 
-        /* "MuchTree.pyx":217
+        /* "SuchTree/MuchTree.pyx":217
  *         if type(query) is str :
  *             try :
  *                 node_id = self.leafs[ query ]             # <<<<<<<<<<<<<<
@@ -5931,7 +5931,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
         __pyx_v_node_id = __pyx_t_6;
         __pyx_t_6 = 0;
 
-        /* "MuchTree.pyx":216
+        /* "SuchTree/MuchTree.pyx":216
  *         """
  *         if type(query) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -5946,7 +5946,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
       __pyx_L4_error:;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":218
+      /* "SuchTree/MuchTree.pyx":218
  *             try :
  *                 node_id = self.leafs[ query ]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -5955,13 +5955,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
  */
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
-        __Pyx_AddTraceback("MuchTree.SuchTree.get_parent", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_parent", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 218, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "MuchTree.pyx":219
+        /* "SuchTree/MuchTree.pyx":219
  *                 node_id = self.leafs[ query ]
  *             except KeyError :
  *                 raise Exception( 'leaf name not found : ' + query )             # <<<<<<<<<<<<<<
@@ -5980,7 +5980,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "MuchTree.pyx":216
+      /* "SuchTree/MuchTree.pyx":216
  *         """
  *         if type(query) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -5995,7 +5995,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
       __pyx_L9_try_end:;
     }
 
-    /* "MuchTree.pyx":215
+    /* "SuchTree/MuchTree.pyx":215
  *         id or leaf name.
  *         """
  *         if type(query) is str :             # <<<<<<<<<<<<<<
@@ -6005,7 +6005,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":221
+  /* "SuchTree/MuchTree.pyx":221
  *                 raise Exception( 'leaf name not found : ' + query )
  *         else :
  *             node_id = int( query )             # <<<<<<<<<<<<<<
@@ -6020,7 +6020,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
   }
   __pyx_L3:;
 
-  /* "MuchTree.pyx":222
+  /* "SuchTree/MuchTree.pyx":222
  *         else :
  *             node_id = int( query )
  *         if node_id < 0 or node_id >= self.length :             # <<<<<<<<<<<<<<
@@ -6045,7 +6045,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
   __pyx_L13_bool_binop_done:;
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":223
+    /* "SuchTree/MuchTree.pyx":223
  *             node_id = int( query )
  *         if node_id < 0 or node_id >= self.length :
  *             raise Exception( 'node id out of bounds : ', node_id )             # <<<<<<<<<<<<<<
@@ -6067,7 +6067,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __PYX_ERR(0, 223, __pyx_L1_error)
 
-    /* "MuchTree.pyx":222
+    /* "SuchTree/MuchTree.pyx":222
  *         else :
  *             node_id = int( query )
  *         if node_id < 0 or node_id >= self.length :             # <<<<<<<<<<<<<<
@@ -6076,7 +6076,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":225
+  /* "SuchTree/MuchTree.pyx":225
  *             raise Exception( 'node id out of bounds : ', node_id )
  * 
  *         return self.data[node_id].parent             # <<<<<<<<<<<<<<
@@ -6091,7 +6091,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
   __pyx_t_9 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":210
+  /* "SuchTree/MuchTree.pyx":210
  *             self.epsilon = new_epsilon
  * 
  *     def get_parent( self, query ) :             # <<<<<<<<<<<<<<
@@ -6106,7 +6106,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_parent", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_parent", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_node_id);
@@ -6115,7 +6115,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":227
+/* "SuchTree/MuchTree.pyx":227
  *         return self.data[node_id].parent
  * 
  *     def get_children( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -6124,20 +6124,20 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_5get_children(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_4get_children[] = "\n        Return the ids of child nodes of given node. Will accept node\n        id or a leaf name.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_5get_children(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_5get_children(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_4get_children[] = "\n        Return the ids of child nodes of given node. Will accept node\n        id or a leaf name.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_5get_children(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_children (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_4get_children(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_4get_children(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -6158,7 +6158,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
   __Pyx_RefNannySetupContext("get_children", 0);
   __Pyx_INCREF(__pyx_v_node_id);
 
-  /* "MuchTree.pyx":232
+  /* "SuchTree/MuchTree.pyx":232
  *         id or a leaf name.
  *         """
  *         if type(node_id) is str :             # <<<<<<<<<<<<<<
@@ -6169,7 +6169,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":233
+    /* "SuchTree/MuchTree.pyx":233
  *         """
  *         if type(node_id) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -6185,7 +6185,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
       __Pyx_XGOTREF(__pyx_t_5);
       /*try:*/ {
 
-        /* "MuchTree.pyx":234
+        /* "SuchTree/MuchTree.pyx":234
  *         if type(node_id) is str :
  *             try :
  *                 node_id = self.leafs[ node_id ]             # <<<<<<<<<<<<<<
@@ -6197,7 +6197,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
         __Pyx_DECREF_SET(__pyx_v_node_id, __pyx_t_6);
         __pyx_t_6 = 0;
 
-        /* "MuchTree.pyx":233
+        /* "SuchTree/MuchTree.pyx":233
  *         """
  *         if type(node_id) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -6212,7 +6212,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
       __pyx_L4_error:;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":235
+      /* "SuchTree/MuchTree.pyx":235
  *             try :
  *                 node_id = self.leafs[ node_id ]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -6221,13 +6221,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
  */
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
-        __Pyx_AddTraceback("MuchTree.SuchTree.get_children", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_children", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 235, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "MuchTree.pyx":236
+        /* "SuchTree/MuchTree.pyx":236
  *                 node_id = self.leafs[ node_id ]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + node_id )             # <<<<<<<<<<<<<<
@@ -6246,7 +6246,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "MuchTree.pyx":233
+      /* "SuchTree/MuchTree.pyx":233
  *         """
  *         if type(node_id) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -6261,7 +6261,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
       __pyx_L9_try_end:;
     }
 
-    /* "MuchTree.pyx":232
+    /* "SuchTree/MuchTree.pyx":232
  *         id or a leaf name.
  *         """
  *         if type(node_id) is str :             # <<<<<<<<<<<<<<
@@ -6270,7 +6270,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
  */
   }
 
-  /* "MuchTree.pyx":237
+  /* "SuchTree/MuchTree.pyx":237
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + node_id )
  *         return ( self.data[node_id].left_child, self.data[node_id].right_child )             # <<<<<<<<<<<<<<
@@ -6296,7 +6296,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":227
+  /* "SuchTree/MuchTree.pyx":227
  *         return self.data[node_id].parent
  * 
  *     def get_children( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -6311,7 +6311,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_children", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_children", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_node_id);
@@ -6320,7 +6320,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":239
+/* "SuchTree/MuchTree.pyx":239
  *         return ( self.data[node_id].left_child, self.data[node_id].right_child )
  * 
  *     def get_leafs( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -6329,20 +6329,20 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_children(struct __pyx_obj_8Mu
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_7get_leafs(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_6get_leafs[] = "\n        Return an array of ids of all leaf nodes descendent from a given node.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_7get_leafs(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_7get_leafs(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_6get_leafs[] = "\n        Return an array of ids of all leaf nodes descendent from a given node.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_7get_leafs(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_leafs (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_6get_leafs(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_6get_leafs(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
   unsigned int __pyx_v_i;
   int __pyx_v_l;
   int __pyx_v_r;
@@ -6368,7 +6368,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_leafs", 0);
 
-  /* "MuchTree.pyx":246
+  /* "SuchTree/MuchTree.pyx":246
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -6377,7 +6377,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
  */
   __pyx_v_n = 0;
 
-  /* "MuchTree.pyx":247
+  /* "SuchTree/MuchTree.pyx":247
  *         cdef int r
  *         cdef unsigned int n = 0
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -6388,7 +6388,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":248
+    /* "SuchTree/MuchTree.pyx":248
  *         cdef unsigned int n = 0
  *         if self.np_buffer is None :
  *             self.np_buffer = np.ndarray( self.n_leafs, dtype=int )             # <<<<<<<<<<<<<<
@@ -6415,7 +6415,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
     __pyx_v_self->np_buffer = __pyx_t_5;
     __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":247
+    /* "SuchTree/MuchTree.pyx":247
  *         cdef int r
  *         cdef unsigned int n = 0
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -6424,7 +6424,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":249
+  /* "SuchTree/MuchTree.pyx":249
  *         if self.np_buffer is None :
  *             self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
  *         to_visit = [node_id]             # <<<<<<<<<<<<<<
@@ -6439,7 +6439,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
   __pyx_v_to_visit = ((PyObject*)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":250
+  /* "SuchTree/MuchTree.pyx":250
  *             self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
  *         to_visit = [node_id]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -6459,7 +6459,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_i = __pyx_t_7;
 
-    /* "MuchTree.pyx":251
+    /* "SuchTree/MuchTree.pyx":251
  *         to_visit = [node_id]
  *         for i in to_visit :
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
@@ -6539,7 +6539,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
     __pyx_v_l = __pyx_t_11;
     __pyx_v_r = __pyx_t_12;
 
-    /* "MuchTree.pyx":252
+    /* "SuchTree/MuchTree.pyx":252
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -6549,7 +6549,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
     __pyx_t_2 = ((__pyx_v_l == -1L) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":253
+      /* "SuchTree/MuchTree.pyx":253
  *             l,r = self.get_children( i )
  *             if l == -1 :
  *                 self.np_buffer[n] = i             # <<<<<<<<<<<<<<
@@ -6561,7 +6561,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
       if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_3, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 253, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "MuchTree.pyx":254
+      /* "SuchTree/MuchTree.pyx":254
  *             if l == -1 :
  *                 self.np_buffer[n] = i
  *                 n += 1             # <<<<<<<<<<<<<<
@@ -6570,7 +6570,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
  */
       __pyx_v_n = (__pyx_v_n + 1);
 
-      /* "MuchTree.pyx":252
+      /* "SuchTree/MuchTree.pyx":252
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -6580,7 +6580,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
       goto __pyx_L8;
     }
 
-    /* "MuchTree.pyx":256
+    /* "SuchTree/MuchTree.pyx":256
  *                 n += 1
  *             else :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
@@ -6593,7 +6593,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
       __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_3); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 256, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "MuchTree.pyx":257
+      /* "SuchTree/MuchTree.pyx":257
  *             else :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
@@ -6607,7 +6607,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
     }
     __pyx_L8:;
 
-    /* "MuchTree.pyx":250
+    /* "SuchTree/MuchTree.pyx":250
  *             self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
  *         to_visit = [node_id]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -6617,7 +6617,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":258
+  /* "SuchTree/MuchTree.pyx":258
  *                 to_visit.append( l )
  *                 to_visit.append( r )
  *         return np.array(self.np_buffer[:n])             # <<<<<<<<<<<<<<
@@ -6652,7 +6652,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":239
+  /* "SuchTree/MuchTree.pyx":239
  *         return ( self.data[node_id].left_child, self.data[node_id].right_child )
  * 
  *     def get_leafs( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -6667,7 +6667,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_leafs", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_leafs", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_to_visit);
@@ -6675,9 +6675,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_8SuchTree_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "MuchTree.pyx":260
+/* "SuchTree/MuchTree.pyx":260
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_descendant_nodes( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -6686,30 +6686,30 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_9get_descendant_nodes(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_8get_descendant_nodes[] = "\n        Generator for ids of all nodes descendent from a given node,\n        starting with the given node.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_9get_descendant_nodes(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_9get_descendant_nodes(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_8get_descendant_nodes[] = "\n        Generator for ids of all nodes descendent from a given node,\n        starting with the given node.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_9get_descendant_nodes(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_descendant_nodes (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_8get_descendant_nodes(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_8get_descendant_nodes(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_8get_descendant_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *__pyx_cur_scope;
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_8get_descendant_nodes(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_descendant_nodes", 0);
-  __pyx_cur_scope = (struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *)__pyx_tp_new_8MuchTree___pyx_scope_struct__get_descendant_nodes(__pyx_ptype_8MuchTree___pyx_scope_struct__get_descendant_nodes, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *)__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes(__pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 260, __pyx_L1_error)
   } else {
@@ -6722,7 +6722,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_8get_descendant_nodes(struct __pyx
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_node_id);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_node_id);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8MuchTree_8SuchTree_10generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_get_descendant_nodes, __pyx_n_s_SuchTree_get_descendant_nodes, __pyx_n_s_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 260, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8SuchTree_8MuchTree_8SuchTree_10generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_get_descendant_nodes, __pyx_n_s_SuchTree_get_descendant_nodes, __pyx_n_s_SuchTree_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -6730,7 +6730,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_8get_descendant_nodes(struct __pyx
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_descendant_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_descendant_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -6738,9 +6738,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_8get_descendant_nodes(struct __pyx
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_8SuchTree_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *__pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *)__pyx_generator->closure);
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *__pyx_cur_scope = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   Py_ssize_t __pyx_t_2;
@@ -6770,7 +6770,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
   __pyx_L3_first_run:;
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 260, __pyx_L1_error)
 
-  /* "MuchTree.pyx":268
+  /* "SuchTree/MuchTree.pyx":268
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -6779,7 +6779,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  */
   __pyx_cur_scope->__pyx_v_n = 0;
 
-  /* "MuchTree.pyx":270
+  /* "SuchTree/MuchTree.pyx":270
  *         cdef unsigned int n = 0
  * 
  *         to_visit = [node_id]             # <<<<<<<<<<<<<<
@@ -6795,7 +6795,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
   __pyx_cur_scope->__pyx_v_to_visit = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":271
+  /* "SuchTree/MuchTree.pyx":271
  * 
  *         to_visit = [node_id]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -6815,7 +6815,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_cur_scope->__pyx_v_i = __pyx_t_4;
 
-    /* "MuchTree.pyx":272
+    /* "SuchTree/MuchTree.pyx":272
  *         to_visit = [node_id]
  *         for i in to_visit :
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
@@ -6895,7 +6895,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
     __pyx_cur_scope->__pyx_v_l = __pyx_t_9;
     __pyx_cur_scope->__pyx_v_r = __pyx_t_10;
 
-    /* "MuchTree.pyx":273
+    /* "SuchTree/MuchTree.pyx":273
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -6905,7 +6905,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
     __pyx_t_11 = ((__pyx_cur_scope->__pyx_v_l == -1L) != 0);
     if (__pyx_t_11) {
 
-      /* "MuchTree.pyx":274
+      /* "SuchTree/MuchTree.pyx":274
  *             l,r = self.get_children( i )
  *             if l == -1 :
  *                 yield i             # <<<<<<<<<<<<<<
@@ -6932,7 +6932,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
       if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 274, __pyx_L1_error)
 
-      /* "MuchTree.pyx":275
+      /* "SuchTree/MuchTree.pyx":275
  *             if l == -1 :
  *                 yield i
  *                 continue             # <<<<<<<<<<<<<<
@@ -6941,7 +6941,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  */
       goto __pyx_L4_continue;
 
-      /* "MuchTree.pyx":273
+      /* "SuchTree/MuchTree.pyx":273
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -6950,7 +6950,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  */
     }
 
-    /* "MuchTree.pyx":277
+    /* "SuchTree/MuchTree.pyx":277
  *                 continue
  *             else :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
@@ -6963,7 +6963,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       __pyx_t_12 = __Pyx_PyList_Append(__pyx_cur_scope->__pyx_v_to_visit, __pyx_t_3); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 277, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "MuchTree.pyx":278
+      /* "SuchTree/MuchTree.pyx":278
  *             else :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
@@ -6975,7 +6975,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       __pyx_t_12 = __Pyx_PyList_Append(__pyx_cur_scope->__pyx_v_to_visit, __pyx_t_3); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 278, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "MuchTree.pyx":279
+      /* "SuchTree/MuchTree.pyx":279
  *                 to_visit.append( l )
  *                 to_visit.append( r )
  *                 yield i             # <<<<<<<<<<<<<<
@@ -7003,7 +7003,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 279, __pyx_L1_error)
     }
 
-    /* "MuchTree.pyx":271
+    /* "SuchTree/MuchTree.pyx":271
  * 
  *         to_visit = [node_id]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7015,7 +7015,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "MuchTree.pyx":260
+  /* "SuchTree/MuchTree.pyx":260
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_descendant_nodes( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -7044,7 +7044,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":281
+/* "SuchTree/MuchTree.pyx":281
  *                 yield i
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
@@ -7053,9 +7053,9 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_12get_internal_nodes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_11get_internal_nodes[] = "\n        Return an array of the ids of all internal nodes.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_12get_internal_nodes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_12get_internal_nodes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_11get_internal_nodes[] = "\n        Return an array of the ids of all internal nodes.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_12get_internal_nodes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_from_node = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -7101,18 +7101,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_12get_internal_nodes(PyObject *__p
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("get_internal_nodes", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 281, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_internal_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_internal_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_from_node);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_11get_internal_nodes(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_from_node);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node) {
   unsigned int __pyx_v_i;
   int __pyx_v_l;
   int __pyx_v_r;
@@ -7139,7 +7139,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __Pyx_RefNannySetupContext("get_internal_nodes", 0);
   __Pyx_INCREF(__pyx_v_from_node);
 
-  /* "MuchTree.pyx":288
+  /* "SuchTree/MuchTree.pyx":288
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -7148,7 +7148,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
   __pyx_v_n = 0;
 
-  /* "MuchTree.pyx":290
+  /* "SuchTree/MuchTree.pyx":290
  *         cdef unsigned int n = 0
  * 
  *         if from_node == -1 : from_node = self.root             # <<<<<<<<<<<<<<
@@ -7166,7 +7166,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
     __pyx_t_1 = 0;
   }
 
-  /* "MuchTree.pyx":292
+  /* "SuchTree/MuchTree.pyx":292
  *         if from_node == -1 : from_node = self.root
  * 
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -7177,7 +7177,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "MuchTree.pyx":293
+    /* "SuchTree/MuchTree.pyx":293
  * 
  *         if self.np_buffer is None :
  *             self.np_buffer = np.ndarray( self.n_leafs, dtype=int )             # <<<<<<<<<<<<<<
@@ -7204,7 +7204,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
     __pyx_v_self->np_buffer = __pyx_t_5;
     __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":292
+    /* "SuchTree/MuchTree.pyx":292
  *         if from_node == -1 : from_node = self.root
  * 
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -7213,7 +7213,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
   }
 
-  /* "MuchTree.pyx":297
+  /* "SuchTree/MuchTree.pyx":297
  *             # bifrucating trees always have one fewer internal nodes
  *             # than leaf nodes
  *         to_visit = [from_node]             # <<<<<<<<<<<<<<
@@ -7228,7 +7228,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __pyx_v_to_visit = ((PyObject*)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":298
+  /* "SuchTree/MuchTree.pyx":298
  *             # than leaf nodes
  *         to_visit = [from_node]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7248,7 +7248,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_i = __pyx_t_7;
 
-    /* "MuchTree.pyx":299
+    /* "SuchTree/MuchTree.pyx":299
  *         to_visit = [from_node]
  *         for i in to_visit :
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
@@ -7328,7 +7328,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
     __pyx_v_l = __pyx_t_11;
     __pyx_v_r = __pyx_t_12;
 
-    /* "MuchTree.pyx":300
+    /* "SuchTree/MuchTree.pyx":300
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -7338,7 +7338,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
     __pyx_t_3 = ((__pyx_v_l == -1L) != 0);
     if (__pyx_t_3) {
 
-      /* "MuchTree.pyx":301
+      /* "SuchTree/MuchTree.pyx":301
  *             l,r = self.get_children( i )
  *             if l == -1 :
  *                 continue             # <<<<<<<<<<<<<<
@@ -7347,7 +7347,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
       goto __pyx_L5_continue;
 
-      /* "MuchTree.pyx":300
+      /* "SuchTree/MuchTree.pyx":300
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -7356,7 +7356,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
     }
 
-    /* "MuchTree.pyx":303
+    /* "SuchTree/MuchTree.pyx":303
  *                 continue
  *             else :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
@@ -7369,7 +7369,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 303, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":304
+      /* "SuchTree/MuchTree.pyx":304
  *             else :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
@@ -7381,7 +7381,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 304, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":305
+      /* "SuchTree/MuchTree.pyx":305
  *                 to_visit.append( l )
  *                 to_visit.append( r )
  *                 self.np_buffer[n] = i             # <<<<<<<<<<<<<<
@@ -7393,7 +7393,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_1, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 305, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":306
+      /* "SuchTree/MuchTree.pyx":306
  *                 to_visit.append( r )
  *                 self.np_buffer[n] = i
  *                 n += 1             # <<<<<<<<<<<<<<
@@ -7403,7 +7403,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       __pyx_v_n = (__pyx_v_n + 1);
     }
 
-    /* "MuchTree.pyx":298
+    /* "SuchTree/MuchTree.pyx":298
  *             # than leaf nodes
  *         to_visit = [from_node]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7414,7 +7414,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":307
+  /* "SuchTree/MuchTree.pyx":307
  *                 self.np_buffer[n] = i
  *                 n += 1
  *         return np.array(self.np_buffer[:n])             # <<<<<<<<<<<<<<
@@ -7449,7 +7449,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":281
+  /* "SuchTree/MuchTree.pyx":281
  *                 yield i
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
@@ -7464,7 +7464,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_internal_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_internal_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_to_visit);
@@ -7474,7 +7474,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":309
+/* "SuchTree/MuchTree.pyx":309
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
@@ -7483,9 +7483,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_14get_nodes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_13get_nodes[] = "\n        Return an array of the ids of all internal nodes.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_14get_nodes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_14get_nodes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_13get_nodes[] = "\n        Return an array of the ids of all internal nodes.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_14get_nodes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_from_node = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -7531,18 +7531,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_14get_nodes(PyObject *__pyx_v_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("get_nodes", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 309, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_13get_nodes(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_from_node);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_13get_nodes(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_from_node);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node) {
   unsigned int __pyx_v_i;
   int __pyx_v_l;
   int __pyx_v_r;
@@ -7569,7 +7569,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __Pyx_RefNannySetupContext("get_nodes", 0);
   __Pyx_INCREF(__pyx_v_from_node);
 
-  /* "MuchTree.pyx":316
+  /* "SuchTree/MuchTree.pyx":316
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -7578,7 +7578,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
   __pyx_v_n = 0;
 
-  /* "MuchTree.pyx":318
+  /* "SuchTree/MuchTree.pyx":318
  *         cdef unsigned int n = 0
  * 
  *         if from_node == -1 : from_node = self.root             # <<<<<<<<<<<<<<
@@ -7596,7 +7596,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     __pyx_t_1 = 0;
   }
 
-  /* "MuchTree.pyx":320
+  /* "SuchTree/MuchTree.pyx":320
  *         if from_node == -1 : from_node = self.root
  * 
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -7607,7 +7607,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "MuchTree.pyx":321
+    /* "SuchTree/MuchTree.pyx":321
  * 
  *         if self.np_buffer is None :
  *             self.np_buffer = np.ndarray( self.length, dtype=int )             # <<<<<<<<<<<<<<
@@ -7634,7 +7634,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     __pyx_v_self->np_buffer = __pyx_t_5;
     __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":320
+    /* "SuchTree/MuchTree.pyx":320
  *         if from_node == -1 : from_node = self.root
  * 
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -7643,7 +7643,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":323
+  /* "SuchTree/MuchTree.pyx":323
  *             self.np_buffer = np.ndarray( self.length, dtype=int )
  * 
  *         to_visit = [from_node]             # <<<<<<<<<<<<<<
@@ -7658,7 +7658,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __pyx_v_to_visit = ((PyObject*)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":324
+  /* "SuchTree/MuchTree.pyx":324
  * 
  *         to_visit = [from_node]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7678,7 +7678,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_i = __pyx_t_7;
 
-    /* "MuchTree.pyx":325
+    /* "SuchTree/MuchTree.pyx":325
  *         to_visit = [from_node]
  *         for i in to_visit :
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
@@ -7758,7 +7758,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     __pyx_v_l = __pyx_t_11;
     __pyx_v_r = __pyx_t_12;
 
-    /* "MuchTree.pyx":326
+    /* "SuchTree/MuchTree.pyx":326
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             self.np_buffer[n] = i             # <<<<<<<<<<<<<<
@@ -7770,7 +7770,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_1, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "MuchTree.pyx":327
+    /* "SuchTree/MuchTree.pyx":327
  *             l,r = self.get_children( i )
  *             self.np_buffer[n] = i
  *             n += 1             # <<<<<<<<<<<<<<
@@ -7779,7 +7779,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
     __pyx_v_n = (__pyx_v_n + 1);
 
-    /* "MuchTree.pyx":328
+    /* "SuchTree/MuchTree.pyx":328
  *             self.np_buffer[n] = i
  *             n += 1
  *             if l != -1 :             # <<<<<<<<<<<<<<
@@ -7789,7 +7789,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     __pyx_t_3 = ((__pyx_v_l != -1L) != 0);
     if (__pyx_t_3) {
 
-      /* "MuchTree.pyx":329
+      /* "SuchTree/MuchTree.pyx":329
  *             n += 1
  *             if l != -1 :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
@@ -7801,7 +7801,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
       __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 329, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":330
+      /* "SuchTree/MuchTree.pyx":330
  *             if l != -1 :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
@@ -7813,7 +7813,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
       __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 330, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":328
+      /* "SuchTree/MuchTree.pyx":328
  *             self.np_buffer[n] = i
  *             n += 1
  *             if l != -1 :             # <<<<<<<<<<<<<<
@@ -7822,7 +7822,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
     }
 
-    /* "MuchTree.pyx":324
+    /* "SuchTree/MuchTree.pyx":324
  * 
  *         to_visit = [from_node]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7832,7 +7832,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":331
+  /* "SuchTree/MuchTree.pyx":331
  *                 to_visit.append( l )
  *                 to_visit.append( r )
  *         return np.array(self.np_buffer[:n])             # <<<<<<<<<<<<<<
@@ -7867,7 +7867,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":309
+  /* "SuchTree/MuchTree.pyx":309
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
@@ -7882,7 +7882,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_to_visit);
@@ -7892,7 +7892,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":333
+/* "SuchTree/MuchTree.pyx":333
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -7901,20 +7901,20 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_16get_distance_to_root(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_15get_distance_to_root[] = "\n        Return distance to root for a given node. Will accept node id\n        or a leaf name.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_16get_distance_to_root(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_16get_distance_to_root(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_15get_distance_to_root[] = "\n        Return distance to root for a given node. Will accept node id\n        or a leaf name.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_16get_distance_to_root(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_distance_to_root (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_15get_distance_to_root(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_15get_distance_to_root(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
   CYTHON_UNUSED PyObject *__pyx_v_id = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -7934,7 +7934,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_distance_to_root", 0);
 
-  /* "MuchTree.pyx":338
+  /* "SuchTree/MuchTree.pyx":338
  *         or a leaf name.
  *         """
  *         if type(node_id) is str :             # <<<<<<<<<<<<<<
@@ -7945,7 +7945,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":339
+    /* "SuchTree/MuchTree.pyx":339
  *         """
  *         if type(node_id) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -7961,7 +7961,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
       __Pyx_XGOTREF(__pyx_t_5);
       /*try:*/ {
 
-        /* "MuchTree.pyx":340
+        /* "SuchTree/MuchTree.pyx":340
  *         if type(node_id) is str :
  *             try :
  *                 id = self.leafs[ node_id ]             # <<<<<<<<<<<<<<
@@ -7973,7 +7973,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
         __pyx_v_id = __pyx_t_6;
         __pyx_t_6 = 0;
 
-        /* "MuchTree.pyx":339
+        /* "SuchTree/MuchTree.pyx":339
  *         """
  *         if type(node_id) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -7988,7 +7988,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
       __pyx_L4_error:;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":341
+      /* "SuchTree/MuchTree.pyx":341
  *             try :
  *                 id = self.leafs[ node_id ]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -7997,13 +7997,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
  */
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
-        __Pyx_AddTraceback("MuchTree.SuchTree.get_distance_to_root", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_distance_to_root", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 341, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "MuchTree.pyx":342
+        /* "SuchTree/MuchTree.pyx":342
  *                 id = self.leafs[ node_id ]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + node_id )             # <<<<<<<<<<<<<<
@@ -8022,7 +8022,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "MuchTree.pyx":339
+      /* "SuchTree/MuchTree.pyx":339
  *         """
  *         if type(node_id) is str :
  *             try :             # <<<<<<<<<<<<<<
@@ -8037,7 +8037,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
       __pyx_L9_try_end:;
     }
 
-    /* "MuchTree.pyx":338
+    /* "SuchTree/MuchTree.pyx":338
  *         or a leaf name.
  *         """
  *         if type(node_id) is str :             # <<<<<<<<<<<<<<
@@ -8046,7 +8046,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
  */
   }
 
-  /* "MuchTree.pyx":343
+  /* "SuchTree/MuchTree.pyx":343
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + node_id )
  *         return self._get_distance_to_root( node_id )             # <<<<<<<<<<<<<<
@@ -8054,13 +8054,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_9 = PyFloat_FromDouble(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_get_distance_to_root(__pyx_v_self, __pyx_v_node_id)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 343, __pyx_L1_error)
+  __pyx_t_9 = PyFloat_FromDouble(((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_get_distance_to_root(__pyx_v_self, __pyx_v_node_id)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 343, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_r = __pyx_t_9;
   __pyx_t_9 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":333
+  /* "SuchTree/MuchTree.pyx":333
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -8075,7 +8075,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_distance_to_root", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_distance_to_root", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_id);
@@ -8084,7 +8084,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":346
+/* "SuchTree/MuchTree.pyx":346
  * 
  *     @cython.boundscheck(False)
  *     cdef float _get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -8092,7 +8092,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
  *         Calculate the distance from a node of a given id to the root node.
  */
 
-static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static float __pyx_f_8SuchTree_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
   float __pyx_v_d;
   float __pyx_v_d_i;
   int __pyx_v_i;
@@ -8108,7 +8108,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_get_distance_to_root", 0);
 
-  /* "MuchTree.pyx":351
+  /* "SuchTree/MuchTree.pyx":351
  *         Will work for both leaf and internal nodes. Private cdef method.
  *         """
  *         cdef float d = 0.0             # <<<<<<<<<<<<<<
@@ -8117,7 +8117,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   __pyx_v_d = 0.0;
 
-  /* "MuchTree.pyx":352
+  /* "SuchTree/MuchTree.pyx":352
  *         """
  *         cdef float d = 0.0
  *         cdef float d_i = 0.0             # <<<<<<<<<<<<<<
@@ -8126,7 +8126,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   __pyx_v_d_i = 0.0;
 
-  /* "MuchTree.pyx":353
+  /* "SuchTree/MuchTree.pyx":353
  *         cdef float d = 0.0
  *         cdef float d_i = 0.0
  *         cdef int i = node_id             # <<<<<<<<<<<<<<
@@ -8136,7 +8136,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_node_id); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 353, __pyx_L1_error)
   __pyx_v_i = __pyx_t_1;
 
-  /* "MuchTree.pyx":354
+  /* "SuchTree/MuchTree.pyx":354
  *         cdef float d_i = 0.0
  *         cdef int i = node_id
  *         cdef int a_depth = 0             # <<<<<<<<<<<<<<
@@ -8145,7 +8145,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   __pyx_v_a_depth = 0;
 
-  /* "MuchTree.pyx":355
+  /* "SuchTree/MuchTree.pyx":355
  *         cdef int i = node_id
  *         cdef int a_depth = 0
  *         cdef int mrca = -1             # <<<<<<<<<<<<<<
@@ -8154,7 +8154,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   __pyx_v_mrca = -1;
 
-  /* "MuchTree.pyx":357
+  /* "SuchTree/MuchTree.pyx":357
  *         cdef int mrca = -1
  * 
  *         while True :             # <<<<<<<<<<<<<<
@@ -8163,7 +8163,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   while (1) {
 
-    /* "MuchTree.pyx":358
+    /* "SuchTree/MuchTree.pyx":358
  * 
  *         while True :
  *             d_i = self.data[i].distance             # <<<<<<<<<<<<<<
@@ -8173,7 +8173,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
     __pyx_t_2 = (__pyx_v_self->data[__pyx_v_i]).distance;
     __pyx_v_d_i = __pyx_t_2;
 
-    /* "MuchTree.pyx":359
+    /* "SuchTree/MuchTree.pyx":359
  *         while True :
  *             d_i = self.data[i].distance
  *             if d_i == -1 : break             # <<<<<<<<<<<<<<
@@ -8185,7 +8185,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
       goto __pyx_L4_break;
     }
 
-    /* "MuchTree.pyx":360
+    /* "SuchTree/MuchTree.pyx":360
  *             d_i = self.data[i].distance
  *             if d_i == -1 : break
  *             d = d + d_i             # <<<<<<<<<<<<<<
@@ -8194,7 +8194,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
     __pyx_v_d = (__pyx_v_d + __pyx_v_d_i);
 
-    /* "MuchTree.pyx":361
+    /* "SuchTree/MuchTree.pyx":361
  *             if d_i == -1 : break
  *             d = d + d_i
  *             i = self.data[i].parent             # <<<<<<<<<<<<<<
@@ -8206,7 +8206,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   }
   __pyx_L4_break:;
 
-  /* "MuchTree.pyx":362
+  /* "SuchTree/MuchTree.pyx":362
  *             d = d + d_i
  *             i = self.data[i].parent
  *         return d             # <<<<<<<<<<<<<<
@@ -8216,7 +8216,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   __pyx_r = __pyx_v_d;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":346
+  /* "SuchTree/MuchTree.pyx":346
  * 
  *     @cython.boundscheck(False)
  *     cdef float _get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -8226,14 +8226,14 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_WriteUnraisable("MuchTree.SuchTree._get_distance_to_root", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("SuchTree.MuchTree.SuchTree._get_distance_to_root", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":364
+/* "SuchTree/MuchTree.pyx":364
  *         return d
  * 
  *     def is_ancestor( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -8242,9 +8242,9 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_18is_ancestor(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_17is_ancestor[] = "\n        Tristate : returns 1 if a is an ancestor of b, -1 if b is an\n        ancestor of a, or 0 otherwise. Accepts node ids.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_18is_ancestor(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_18is_ancestor(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_17is_ancestor[] = "\n        Tristate : returns 1 if a is an ancestor of b, -1 if b is an\n        ancestor of a, or 0 otherwise. Accepts node ids.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_18is_ancestor(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_a = 0;
   PyObject *__pyx_v_b = 0;
   int __pyx_lineno = 0;
@@ -8295,18 +8295,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_18is_ancestor(PyObject *__pyx_v_se
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("is_ancestor", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 364, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.is_ancestor", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.is_ancestor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_17is_ancestor(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_17is_ancestor(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -8317,7 +8317,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_ancestor", 0);
 
-  /* "MuchTree.pyx":369
+  /* "SuchTree/MuchTree.pyx":369
  *         ancestor of a, or 0 otherwise. Accepts node ids.
  *         """
  *         return self._is_ancestor( a, b )             # <<<<<<<<<<<<<<
@@ -8327,13 +8327,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 369, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 369, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyInt_From_int(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_is_ancestor(__pyx_v_self, __pyx_t_1, __pyx_t_2)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 369, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_is_ancestor(__pyx_v_self, __pyx_t_1, __pyx_t_2)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 369, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":364
+  /* "SuchTree/MuchTree.pyx":364
  *         return d
  * 
  *     def is_ancestor( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -8344,7 +8344,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("MuchTree.SuchTree.is_ancestor", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.is_ancestor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8352,7 +8352,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":372
+/* "SuchTree/MuchTree.pyx":372
  * 
  *     @cython.boundscheck(False)
  *     cdef int _is_ancestor( self, int a, int b ) nogil :             # <<<<<<<<<<<<<<
@@ -8360,14 +8360,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
  *         cdef int n
  */
 
-static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_a, int __pyx_v_b) {
+static int __pyx_f_8SuchTree_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_a, int __pyx_v_b) {
   int __pyx_v_i;
   int __pyx_v_n;
   int __pyx_r;
   int __pyx_t_1;
   int __pyx_t_2;
 
-  /* "MuchTree.pyx":377
+  /* "SuchTree/MuchTree.pyx":377
  * 
  *         # is a an ancestor of b?
  *         i = b             # <<<<<<<<<<<<<<
@@ -8376,7 +8376,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
   __pyx_v_i = __pyx_v_b;
 
-  /* "MuchTree.pyx":378
+  /* "SuchTree/MuchTree.pyx":378
  *         # is a an ancestor of b?
  *         i = b
  *         while True :             # <<<<<<<<<<<<<<
@@ -8385,7 +8385,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
   while (1) {
 
-    /* "MuchTree.pyx":379
+    /* "SuchTree/MuchTree.pyx":379
  *         i = b
  *         while True :
  *             n = self.data[i].parent             # <<<<<<<<<<<<<<
@@ -8395,7 +8395,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_1 = (__pyx_v_self->data[__pyx_v_i]).parent;
     __pyx_v_n = __pyx_t_1;
 
-    /* "MuchTree.pyx":380
+    /* "SuchTree/MuchTree.pyx":380
  *         while True :
  *             n = self.data[i].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8405,7 +8405,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_2 = ((__pyx_v_n == -1L) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":381
+      /* "SuchTree/MuchTree.pyx":381
  *             n = self.data[i].parent
  *             if n == -1 :
  *                 break             # <<<<<<<<<<<<<<
@@ -8414,7 +8414,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
       goto __pyx_L4_break;
 
-      /* "MuchTree.pyx":380
+      /* "SuchTree/MuchTree.pyx":380
  *         while True :
  *             n = self.data[i].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8423,7 +8423,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
     }
 
-    /* "MuchTree.pyx":382
+    /* "SuchTree/MuchTree.pyx":382
  *             if n == -1 :
  *                 break
  *             if n == a :             # <<<<<<<<<<<<<<
@@ -8433,7 +8433,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_2 = ((__pyx_v_n == __pyx_v_a) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":383
+      /* "SuchTree/MuchTree.pyx":383
  *                 break
  *             if n == a :
  *                 return 1             # <<<<<<<<<<<<<<
@@ -8443,7 +8443,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
       __pyx_r = 1;
       goto __pyx_L0;
 
-      /* "MuchTree.pyx":382
+      /* "SuchTree/MuchTree.pyx":382
  *             if n == -1 :
  *                 break
  *             if n == a :             # <<<<<<<<<<<<<<
@@ -8452,7 +8452,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
     }
 
-    /* "MuchTree.pyx":384
+    /* "SuchTree/MuchTree.pyx":384
  *             if n == a :
  *                 return 1
  *             i = n             # <<<<<<<<<<<<<<
@@ -8463,7 +8463,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   }
   __pyx_L4_break:;
 
-  /* "MuchTree.pyx":387
+  /* "SuchTree/MuchTree.pyx":387
  * 
  *         # is b an ancestor of a?
  *         i = a             # <<<<<<<<<<<<<<
@@ -8472,7 +8472,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
   __pyx_v_i = __pyx_v_a;
 
-  /* "MuchTree.pyx":388
+  /* "SuchTree/MuchTree.pyx":388
  *         # is b an ancestor of a?
  *         i = a
  *         while True :             # <<<<<<<<<<<<<<
@@ -8481,7 +8481,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
   while (1) {
 
-    /* "MuchTree.pyx":389
+    /* "SuchTree/MuchTree.pyx":389
  *         i = a
  *         while True :
  *             n = self.data[i].parent             # <<<<<<<<<<<<<<
@@ -8491,7 +8491,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_1 = (__pyx_v_self->data[__pyx_v_i]).parent;
     __pyx_v_n = __pyx_t_1;
 
-    /* "MuchTree.pyx":390
+    /* "SuchTree/MuchTree.pyx":390
  *         while True :
  *             n = self.data[i].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8501,7 +8501,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_2 = ((__pyx_v_n == -1L) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":391
+      /* "SuchTree/MuchTree.pyx":391
  *             n = self.data[i].parent
  *             if n == -1 :
  *                 break             # <<<<<<<<<<<<<<
@@ -8510,7 +8510,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
       goto __pyx_L8_break;
 
-      /* "MuchTree.pyx":390
+      /* "SuchTree/MuchTree.pyx":390
  *         while True :
  *             n = self.data[i].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8519,7 +8519,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
     }
 
-    /* "MuchTree.pyx":392
+    /* "SuchTree/MuchTree.pyx":392
  *             if n == -1 :
  *                 break
  *             if n == b :             # <<<<<<<<<<<<<<
@@ -8529,7 +8529,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_2 = ((__pyx_v_n == __pyx_v_b) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":393
+      /* "SuchTree/MuchTree.pyx":393
  *                 break
  *             if n == b :
  *                 return -1             # <<<<<<<<<<<<<<
@@ -8539,7 +8539,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
       __pyx_r = -1;
       goto __pyx_L0;
 
-      /* "MuchTree.pyx":392
+      /* "SuchTree/MuchTree.pyx":392
  *             if n == -1 :
  *                 break
  *             if n == b :             # <<<<<<<<<<<<<<
@@ -8548,7 +8548,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
     }
 
-    /* "MuchTree.pyx":394
+    /* "SuchTree/MuchTree.pyx":394
  *             if n == b :
  *                 return -1
  *             i = n             # <<<<<<<<<<<<<<
@@ -8559,7 +8559,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   }
   __pyx_L8_break:;
 
-  /* "MuchTree.pyx":397
+  /* "SuchTree/MuchTree.pyx":397
  * 
  *         # or neither?
  *         return 0             # <<<<<<<<<<<<<<
@@ -8569,7 +8569,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":372
+  /* "SuchTree/MuchTree.pyx":372
  * 
  *     @cython.boundscheck(False)
  *     cdef int _is_ancestor( self, int a, int b ) nogil :             # <<<<<<<<<<<<<<
@@ -8582,7 +8582,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":399
+/* "SuchTree/MuchTree.pyx":399
  *         return 0
  * 
  *     def mrca( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -8591,9 +8591,9 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_20mrca(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_19mrca[] = "\n        Return the id of the most recent common ancestor of two nodes\n        if given ids.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_20mrca(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_20mrca(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_19mrca[] = "\n        Return the id of the most recent common ancestor of two nodes\n        if given ids.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_20mrca(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_a = 0;
   PyObject *__pyx_v_b = 0;
   int __pyx_lineno = 0;
@@ -8644,18 +8644,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_20mrca(PyObject *__pyx_v_self, PyO
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("mrca", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 399, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.mrca", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.mrca", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_19mrca(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_19mrca(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
   PyObject *__pyx_v_visited = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -8671,7 +8671,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("mrca", 0);
 
-  /* "MuchTree.pyx":404
+  /* "SuchTree/MuchTree.pyx":404
  *         if given ids.
  *         """
  *         visited = np.zeros( self.depth, dtype=int )             # <<<<<<<<<<<<<<
@@ -8701,7 +8701,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __pyx_v_visited = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":406
+  /* "SuchTree/MuchTree.pyx":406
  *         visited = np.zeros( self.depth, dtype=int )
  * 
  *         return self._mrca( visited, a, b )             # <<<<<<<<<<<<<<
@@ -8712,7 +8712,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_visited, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 406, __pyx_L1_error)
   __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 406, __pyx_L1_error)
   __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 406, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyInt_From_int(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_mrca(__pyx_v_self, __pyx_t_5, __pyx_t_6, __pyx_t_7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 406, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_mrca(__pyx_v_self, __pyx_t_5, __pyx_t_6, __pyx_t_7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 406, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
   __pyx_t_5.memview = NULL;
@@ -8721,7 +8721,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":399
+  /* "SuchTree/MuchTree.pyx":399
  *         return 0
  * 
  *     def mrca( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -8736,7 +8736,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.mrca", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.mrca", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_visited);
@@ -8745,7 +8745,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":409
+/* "SuchTree/MuchTree.pyx":409
  * 
  *     @cython.boundscheck(False)
  *     cdef int _mrca( self, long[:] visited, int a, int b ) nogil :             # <<<<<<<<<<<<<<
@@ -8753,7 +8753,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
  *         cdef int i
  */
 
-static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_visited, int __pyx_v_a, int __pyx_v_b) {
+static int __pyx_f_8SuchTree_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_visited, int __pyx_v_a, int __pyx_v_b) {
   int __pyx_v_n;
   int __pyx_v_i;
   int __pyx_v_mrca;
@@ -8765,7 +8765,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   unsigned int __pyx_t_4;
   unsigned int __pyx_t_5;
 
-  /* "MuchTree.pyx":412
+  /* "SuchTree/MuchTree.pyx":412
  *         cdef int n
  *         cdef int i
  *         cdef int mrca = -1             # <<<<<<<<<<<<<<
@@ -8774,7 +8774,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_mrca = -1;
 
-  /* "MuchTree.pyx":415
+  /* "SuchTree/MuchTree.pyx":415
  *         cdef int a_depth
  * 
  *         n = a             # <<<<<<<<<<<<<<
@@ -8783,7 +8783,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_n = __pyx_v_a;
 
-  /* "MuchTree.pyx":416
+  /* "SuchTree/MuchTree.pyx":416
  * 
  *         n = a
  *         i = 0             # <<<<<<<<<<<<<<
@@ -8792,7 +8792,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_i = 0;
 
-  /* "MuchTree.pyx":417
+  /* "SuchTree/MuchTree.pyx":417
  *         n = a
  *         i = 0
  *         while True :             # <<<<<<<<<<<<<<
@@ -8801,7 +8801,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   while (1) {
 
-    /* "MuchTree.pyx":418
+    /* "SuchTree/MuchTree.pyx":418
  *         i = 0
  *         while True :
  *             visited[i] = n             # <<<<<<<<<<<<<<
@@ -8812,7 +8812,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     if (__pyx_t_1 < 0) __pyx_t_1 += __pyx_v_visited.shape[0];
     *((long *) ( /* dim=0 */ (__pyx_v_visited.data + __pyx_t_1 * __pyx_v_visited.strides[0]) )) = __pyx_v_n;
 
-    /* "MuchTree.pyx":419
+    /* "SuchTree/MuchTree.pyx":419
  *         while True :
  *             visited[i] = n
  *             n = self.data[n].parent             # <<<<<<<<<<<<<<
@@ -8822,7 +8822,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     __pyx_t_2 = (__pyx_v_self->data[__pyx_v_n]).parent;
     __pyx_v_n = __pyx_t_2;
 
-    /* "MuchTree.pyx":420
+    /* "SuchTree/MuchTree.pyx":420
  *             visited[i] = n
  *             n = self.data[n].parent
  *             i += 1             # <<<<<<<<<<<<<<
@@ -8831,7 +8831,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
     __pyx_v_i = (__pyx_v_i + 1);
 
-    /* "MuchTree.pyx":421
+    /* "SuchTree/MuchTree.pyx":421
  *             n = self.data[n].parent
  *             i += 1
  *             if n == -1 : break             # <<<<<<<<<<<<<<
@@ -8845,7 +8845,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   }
   __pyx_L4_break:;
 
-  /* "MuchTree.pyx":422
+  /* "SuchTree/MuchTree.pyx":422
  *             i += 1
  *             if n == -1 : break
  *         a_depth = i             # <<<<<<<<<<<<<<
@@ -8854,7 +8854,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_a_depth = __pyx_v_i;
 
-  /* "MuchTree.pyx":424
+  /* "SuchTree/MuchTree.pyx":424
  *         a_depth = i
  * 
  *         n = b             # <<<<<<<<<<<<<<
@@ -8863,7 +8863,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_n = __pyx_v_b;
 
-  /* "MuchTree.pyx":425
+  /* "SuchTree/MuchTree.pyx":425
  * 
  *         n = b
  *         while True :             # <<<<<<<<<<<<<<
@@ -8872,7 +8872,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   while (1) {
 
-    /* "MuchTree.pyx":426
+    /* "SuchTree/MuchTree.pyx":426
  *         n = b
  *         while True :
  *             i = 0             # <<<<<<<<<<<<<<
@@ -8881,7 +8881,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
     __pyx_v_i = 0;
 
-    /* "MuchTree.pyx":427
+    /* "SuchTree/MuchTree.pyx":427
  *         while True :
  *             i = 0
  *             while True :             # <<<<<<<<<<<<<<
@@ -8890,7 +8890,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
     while (1) {
 
-      /* "MuchTree.pyx":428
+      /* "SuchTree/MuchTree.pyx":428
  *             i = 0
  *             while True :
  *                 if i >= a_depth : break             # <<<<<<<<<<<<<<
@@ -8902,7 +8902,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
         goto __pyx_L9_break;
       }
 
-      /* "MuchTree.pyx":429
+      /* "SuchTree/MuchTree.pyx":429
  *             while True :
  *                 if i >= a_depth : break
  *                 if visited[i] == n :             # <<<<<<<<<<<<<<
@@ -8914,7 +8914,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
       __pyx_t_3 = (((*((long *) ( /* dim=0 */ (__pyx_v_visited.data + __pyx_t_1 * __pyx_v_visited.strides[0]) ))) == __pyx_v_n) != 0);
       if (__pyx_t_3) {
 
-        /* "MuchTree.pyx":430
+        /* "SuchTree/MuchTree.pyx":430
  *                 if i >= a_depth : break
  *                 if visited[i] == n :
  *                     mrca = visited[i]             # <<<<<<<<<<<<<<
@@ -8925,7 +8925,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
         if (__pyx_t_1 < 0) __pyx_t_1 += __pyx_v_visited.shape[0];
         __pyx_v_mrca = (*((long *) ( /* dim=0 */ (__pyx_v_visited.data + __pyx_t_1 * __pyx_v_visited.strides[0]) )));
 
-        /* "MuchTree.pyx":431
+        /* "SuchTree/MuchTree.pyx":431
  *                 if visited[i] == n :
  *                     mrca = visited[i]
  *                     break             # <<<<<<<<<<<<<<
@@ -8934,7 +8934,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
         goto __pyx_L9_break;
 
-        /* "MuchTree.pyx":429
+        /* "SuchTree/MuchTree.pyx":429
  *             while True :
  *                 if i >= a_depth : break
  *                 if visited[i] == n :             # <<<<<<<<<<<<<<
@@ -8943,7 +8943,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
       }
 
-      /* "MuchTree.pyx":432
+      /* "SuchTree/MuchTree.pyx":432
  *                     mrca = visited[i]
  *                     break
  *                 i += 1             # <<<<<<<<<<<<<<
@@ -8954,7 +8954,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     }
     __pyx_L9_break:;
 
-    /* "MuchTree.pyx":433
+    /* "SuchTree/MuchTree.pyx":433
  *                     break
  *                 i += 1
  *             if mrca != -1 : break             # <<<<<<<<<<<<<<
@@ -8966,7 +8966,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
       goto __pyx_L7_break;
     }
 
-    /* "MuchTree.pyx":434
+    /* "SuchTree/MuchTree.pyx":434
  *                 i += 1
  *             if mrca != -1 : break
  *             n = self.data[n].parent             # <<<<<<<<<<<<<<
@@ -8976,7 +8976,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     __pyx_t_2 = (__pyx_v_self->data[__pyx_v_n]).parent;
     __pyx_v_n = __pyx_t_2;
 
-    /* "MuchTree.pyx":435
+    /* "SuchTree/MuchTree.pyx":435
  *             if mrca != -1 : break
  *             n = self.data[n].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8986,7 +8986,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     __pyx_t_3 = ((__pyx_v_n == -1L) != 0);
     if (__pyx_t_3) {
 
-      /* "MuchTree.pyx":436
+      /* "SuchTree/MuchTree.pyx":436
  *             n = self.data[n].parent
  *             if n == -1 :
  *                 mrca = n             # <<<<<<<<<<<<<<
@@ -8995,7 +8995,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
       __pyx_v_mrca = __pyx_v_n;
 
-      /* "MuchTree.pyx":437
+      /* "SuchTree/MuchTree.pyx":437
  *             if n == -1 :
  *                 mrca = n
  *                 break             # <<<<<<<<<<<<<<
@@ -9004,7 +9004,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
       goto __pyx_L7_break;
 
-      /* "MuchTree.pyx":435
+      /* "SuchTree/MuchTree.pyx":435
  *             if mrca != -1 : break
  *             n = self.data[n].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -9015,7 +9015,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   }
   __pyx_L7_break:;
 
-  /* "MuchTree.pyx":438
+  /* "SuchTree/MuchTree.pyx":438
  *                 mrca = n
  *                 break
  *         for i in xrange( self.depth ) :             # <<<<<<<<<<<<<<
@@ -9027,7 +9027,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   for (__pyx_t_2 = 0; __pyx_t_2 < __pyx_t_5; __pyx_t_2+=1) {
     __pyx_v_i = __pyx_t_2;
 
-    /* "MuchTree.pyx":439
+    /* "SuchTree/MuchTree.pyx":439
  *                 break
  *         for i in xrange( self.depth ) :
  *             visited[i] = -1             # <<<<<<<<<<<<<<
@@ -9039,7 +9039,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     *((long *) ( /* dim=0 */ (__pyx_v_visited.data + __pyx_t_1 * __pyx_v_visited.strides[0]) )) = -1L;
   }
 
-  /* "MuchTree.pyx":441
+  /* "SuchTree/MuchTree.pyx":441
  *             visited[i] = -1
  * 
  *         return mrca             # <<<<<<<<<<<<<<
@@ -9049,7 +9049,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   __pyx_r = __pyx_v_mrca;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":409
+  /* "SuchTree/MuchTree.pyx":409
  * 
  *     @cython.boundscheck(False)
  *     cdef int _mrca( self, long[:] visited, int a, int b ) nogil :             # <<<<<<<<<<<<<<
@@ -9062,7 +9062,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":443
+/* "SuchTree/MuchTree.pyx":443
  *         return mrca
  * 
  *     def distance( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -9071,9 +9071,9 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_22distance(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_21distance[] = "\n        Return distnace between a pair of nodes. Will treat strings as\n        leaf names and integers as node ids. Either argument can be a\n        leaf name or an integer.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_22distance(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_22distance(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_21distance[] = "\n        Return distnace between a pair of nodes. Will treat strings as\n        leaf names and integers as node ids. Either argument can be a\n        leaf name or an integer.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_22distance(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_a = 0;
   PyObject *__pyx_v_b = 0;
   int __pyx_lineno = 0;
@@ -9124,18 +9124,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_22distance(PyObject *__pyx_v_self,
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("distance", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 443, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_21distance(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_21distance(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -9157,7 +9157,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __Pyx_INCREF(__pyx_v_a);
   __Pyx_INCREF(__pyx_v_b);
 
-  /* "MuchTree.pyx":449
+  /* "SuchTree/MuchTree.pyx":449
  *         leaf name or an integer.
  *         """
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
@@ -9168,7 +9168,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":450
+    /* "SuchTree/MuchTree.pyx":450
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9184,7 +9184,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __Pyx_XGOTREF(__pyx_t_5);
       /*try:*/ {
 
-        /* "MuchTree.pyx":451
+        /* "SuchTree/MuchTree.pyx":451
  *         if isinstance( a, str ) :
  *             try :
  *                 a = self.leafs[a]             # <<<<<<<<<<<<<<
@@ -9196,7 +9196,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
         __Pyx_DECREF_SET(__pyx_v_a, __pyx_t_6);
         __pyx_t_6 = 0;
 
-        /* "MuchTree.pyx":450
+        /* "SuchTree/MuchTree.pyx":450
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9211,7 +9211,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __pyx_L4_error:;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":452
+      /* "SuchTree/MuchTree.pyx":452
  *             try :
  *                 a = self.leafs[a]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -9220,13 +9220,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
-        __Pyx_AddTraceback("MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 452, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "MuchTree.pyx":453
+        /* "SuchTree/MuchTree.pyx":453
  *                 a = self.leafs[a]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )             # <<<<<<<<<<<<<<
@@ -9245,7 +9245,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "MuchTree.pyx":450
+      /* "SuchTree/MuchTree.pyx":450
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9260,7 +9260,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __pyx_L9_try_end:;
     }
 
-    /* "MuchTree.pyx":449
+    /* "SuchTree/MuchTree.pyx":449
  *         leaf name or an integer.
  *         """
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
@@ -9269,7 +9269,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":454
+  /* "SuchTree/MuchTree.pyx":454
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :             # <<<<<<<<<<<<<<
@@ -9280,7 +9280,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":455
+    /* "SuchTree/MuchTree.pyx":455
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9296,7 +9296,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __Pyx_XGOTREF(__pyx_t_3);
       /*try:*/ {
 
-        /* "MuchTree.pyx":456
+        /* "SuchTree/MuchTree.pyx":456
  *         if isinstance( b, str ) :
  *             try :
  *                 b = self.leafs[b]             # <<<<<<<<<<<<<<
@@ -9308,7 +9308,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
         __Pyx_DECREF_SET(__pyx_v_b, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "MuchTree.pyx":455
+        /* "SuchTree/MuchTree.pyx":455
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9327,7 +9327,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "MuchTree.pyx":457
+      /* "SuchTree/MuchTree.pyx":457
  *             try :
  *                 b = self.leafs[b]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -9336,13 +9336,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
-        __Pyx_AddTraceback("MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_9, &__pyx_t_8, &__pyx_t_6) < 0) __PYX_ERR(0, 457, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_6);
 
-        /* "MuchTree.pyx":458
+        /* "SuchTree/MuchTree.pyx":458
  *                 b = self.leafs[b]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + b )             # <<<<<<<<<<<<<<
@@ -9361,7 +9361,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       goto __pyx_L15_except_error;
       __pyx_L15_except_error:;
 
-      /* "MuchTree.pyx":455
+      /* "SuchTree/MuchTree.pyx":455
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9376,7 +9376,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __pyx_L18_try_end:;
     }
 
-    /* "MuchTree.pyx":454
+    /* "SuchTree/MuchTree.pyx":454
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :             # <<<<<<<<<<<<<<
@@ -9385,7 +9385,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":460
+  /* "SuchTree/MuchTree.pyx":460
  *                 raise Exception( 'Leaf name not found : ' + b )
  * 
  *         if a < 0 or a >= self.length :             # <<<<<<<<<<<<<<
@@ -9410,7 +9410,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __pyx_L22_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":461
+    /* "SuchTree/MuchTree.pyx":461
  * 
  *         if a < 0 or a >= self.length :
  *             raise Exception( 'node id out of bounds :', a )             # <<<<<<<<<<<<<<
@@ -9432,7 +9432,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __PYX_ERR(0, 461, __pyx_L1_error)
 
-    /* "MuchTree.pyx":460
+    /* "SuchTree/MuchTree.pyx":460
  *                 raise Exception( 'Leaf name not found : ' + b )
  * 
  *         if a < 0 or a >= self.length :             # <<<<<<<<<<<<<<
@@ -9441,7 +9441,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":462
+  /* "SuchTree/MuchTree.pyx":462
  *         if a < 0 or a >= self.length :
  *             raise Exception( 'node id out of bounds :', a )
  *         if b < 0 or b >= self.length :             # <<<<<<<<<<<<<<
@@ -9466,7 +9466,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __pyx_L25_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":463
+    /* "SuchTree/MuchTree.pyx":463
  *             raise Exception( 'node id out of bounds :', a )
  *         if b < 0 or b >= self.length :
  *             raise Exception( 'node id out of bounds :', b )             # <<<<<<<<<<<<<<
@@ -9488,7 +9488,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __PYX_ERR(0, 463, __pyx_L1_error)
 
-    /* "MuchTree.pyx":462
+    /* "SuchTree/MuchTree.pyx":462
  *         if a < 0 or a >= self.length :
  *             raise Exception( 'node id out of bounds :', a )
  *         if b < 0 or b >= self.length :             # <<<<<<<<<<<<<<
@@ -9497,7 +9497,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":465
+  /* "SuchTree/MuchTree.pyx":465
  *             raise Exception( 'node id out of bounds :', b )
  * 
  *         return self._distance( a, b )             # <<<<<<<<<<<<<<
@@ -9507,13 +9507,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 465, __pyx_L1_error)
   __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 465, __pyx_L1_error)
-  __pyx_t_6 = PyFloat_FromDouble(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_distance(__pyx_v_self, __pyx_t_7, __pyx_t_12)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 465, __pyx_L1_error)
+  __pyx_t_6 = PyFloat_FromDouble(((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_distance(__pyx_v_self, __pyx_t_7, __pyx_t_12)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 465, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_r = __pyx_t_6;
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":443
+  /* "SuchTree/MuchTree.pyx":443
  *         return mrca
  * 
  *     def distance( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -9528,7 +9528,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_a);
@@ -9538,7 +9538,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":468
+/* "SuchTree/MuchTree.pyx":468
  * 
  *     @cython.boundscheck(False)
  *     cdef float _distance( self, int a, int b ) :             # <<<<<<<<<<<<<<
@@ -9546,7 +9546,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  *         cdef float d = 0
  */
 
-static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_a, int __pyx_v_b) {
+static float __pyx_f_8SuchTree_8MuchTree_8SuchTree__distance(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_a, int __pyx_v_b) {
   int __pyx_v_mrca;
   float __pyx_v_d;
   int __pyx_v_n;
@@ -9565,7 +9565,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_distance", 0);
 
-  /* "MuchTree.pyx":470
+  /* "SuchTree/MuchTree.pyx":470
  *     cdef float _distance( self, int a, int b ) :
  *         cdef int mrca
  *         cdef float d = 0             # <<<<<<<<<<<<<<
@@ -9574,7 +9574,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
   __pyx_v_d = 0.0;
 
-  /* "MuchTree.pyx":473
+  /* "SuchTree/MuchTree.pyx":473
  *         cdef int n
  * 
  *         mrca = self.mrca( a, b )             # <<<<<<<<<<<<<<
@@ -9640,7 +9640,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mrca = __pyx_t_6;
 
-  /* "MuchTree.pyx":475
+  /* "SuchTree/MuchTree.pyx":475
  *         mrca = self.mrca( a, b )
  * 
  *         n = a             # <<<<<<<<<<<<<<
@@ -9649,7 +9649,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
   __pyx_v_n = __pyx_v_a;
 
-  /* "MuchTree.pyx":476
+  /* "SuchTree/MuchTree.pyx":476
  * 
  *         n = a
  *         while n != mrca :             # <<<<<<<<<<<<<<
@@ -9660,7 +9660,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     __pyx_t_8 = ((__pyx_v_n != __pyx_v_mrca) != 0);
     if (!__pyx_t_8) break;
 
-    /* "MuchTree.pyx":477
+    /* "SuchTree/MuchTree.pyx":477
  *         n = a
  *         while n != mrca :
  *             d += self.data[n].distance             # <<<<<<<<<<<<<<
@@ -9669,7 +9669,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_d = (__pyx_v_d + (__pyx_v_self->data[__pyx_v_n]).distance);
 
-    /* "MuchTree.pyx":478
+    /* "SuchTree/MuchTree.pyx":478
  *         while n != mrca :
  *             d += self.data[n].distance
  *             n =  self.data[n].parent             # <<<<<<<<<<<<<<
@@ -9680,7 +9680,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     __pyx_v_n = __pyx_t_6;
   }
 
-  /* "MuchTree.pyx":479
+  /* "SuchTree/MuchTree.pyx":479
  *             d += self.data[n].distance
  *             n =  self.data[n].parent
  *         n = b             # <<<<<<<<<<<<<<
@@ -9689,7 +9689,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
   __pyx_v_n = __pyx_v_b;
 
-  /* "MuchTree.pyx":480
+  /* "SuchTree/MuchTree.pyx":480
  *             n =  self.data[n].parent
  *         n = b
  *         while n != mrca :             # <<<<<<<<<<<<<<
@@ -9700,7 +9700,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     __pyx_t_8 = ((__pyx_v_n != __pyx_v_mrca) != 0);
     if (!__pyx_t_8) break;
 
-    /* "MuchTree.pyx":481
+    /* "SuchTree/MuchTree.pyx":481
  *         n = b
  *         while n != mrca :
  *             d += self.data[n].distance             # <<<<<<<<<<<<<<
@@ -9709,7 +9709,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_d = (__pyx_v_d + (__pyx_v_self->data[__pyx_v_n]).distance);
 
-    /* "MuchTree.pyx":482
+    /* "SuchTree/MuchTree.pyx":482
  *         while n != mrca :
  *             d += self.data[n].distance
  *             n =  self.data[n].parent             # <<<<<<<<<<<<<<
@@ -9720,7 +9720,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     __pyx_v_n = __pyx_t_6;
   }
 
-  /* "MuchTree.pyx":483
+  /* "SuchTree/MuchTree.pyx":483
  *             d += self.data[n].distance
  *             n =  self.data[n].parent
  *         return d             # <<<<<<<<<<<<<<
@@ -9730,7 +9730,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   __pyx_r = __pyx_v_d;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":468
+  /* "SuchTree/MuchTree.pyx":468
  * 
  *     @cython.boundscheck(False)
  *     cdef float _distance( self, int a, int b ) :             # <<<<<<<<<<<<<<
@@ -9746,14 +9746,14 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_WriteUnraisable("MuchTree.SuchTree._distance", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("SuchTree.MuchTree.SuchTree._distance", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":485
+/* "SuchTree/MuchTree.pyx":485
  *         return d
  * 
  *     def distances( self, long[:,:] ids ) :             # <<<<<<<<<<<<<<
@@ -9762,9 +9762,9 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_24distances(PyObject *__pyx_v_self, PyObject *__pyx_arg_ids); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_23distances[] = "\n        Returns an array of distances between pairs of node ids,\n        which are expected as an (n,2) array of type int.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_24distances(PyObject *__pyx_v_self, PyObject *__pyx_arg_ids) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_24distances(PyObject *__pyx_v_self, PyObject *__pyx_arg_ids); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_23distances[] = "\n        Returns an array of distances between pairs of node ids,\n        which are expected as an (n,2) array of type int.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_24distances(PyObject *__pyx_v_self, PyObject *__pyx_arg_ids) {
   __Pyx_memviewslice __pyx_v_ids = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -9777,18 +9777,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_24distances(PyObject *__pyx_v_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_23distances(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_ids);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_23distances(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_ids);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_ids) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_ids) {
   PyObject *__pyx_v_visited = NULL;
   PyObject *__pyx_v_result = NULL;
   PyObject *__pyx_r = NULL;
@@ -9805,7 +9805,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("distances", 0);
 
-  /* "MuchTree.pyx":490
+  /* "SuchTree/MuchTree.pyx":490
  *         which are expected as an (n,2) array of type int.
  *         """
  *         if not ids.shape[1] == 2 :             # <<<<<<<<<<<<<<
@@ -9815,7 +9815,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_t_1 = ((!(((__pyx_v_ids.shape[1]) == 2) != 0)) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":492
+    /* "SuchTree/MuchTree.pyx":492
  *         if not ids.shape[1] == 2 :
  *             raise Exception( 'expected (n,2) array',
  *                              ids.shape[0], ids.shape[1] )             # <<<<<<<<<<<<<<
@@ -9827,7 +9827,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
     __pyx_t_3 = PyInt_FromSsize_t((__pyx_v_ids.shape[1])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 492, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
 
-    /* "MuchTree.pyx":491
+    /* "SuchTree/MuchTree.pyx":491
  *         """
  *         if not ids.shape[1] == 2 :
  *             raise Exception( 'expected (n,2) array',             # <<<<<<<<<<<<<<
@@ -9852,7 +9852,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(0, 491, __pyx_L1_error)
 
-    /* "MuchTree.pyx":490
+    /* "SuchTree/MuchTree.pyx":490
  *         which are expected as an (n,2) array of type int.
  *         """
  *         if not ids.shape[1] == 2 :             # <<<<<<<<<<<<<<
@@ -9861,7 +9861,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":494
+  /* "SuchTree/MuchTree.pyx":494
  *                              ids.shape[0], ids.shape[1] )
  * 
  *         visited = np.zeros( self.depth, dtype=int )             # <<<<<<<<<<<<<<
@@ -9891,7 +9891,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_v_visited = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":495
+  /* "SuchTree/MuchTree.pyx":495
  * 
  *         visited = np.zeros( self.depth, dtype=int )
  *         result = np.zeros( ids.shape[0], dtype=float )             # <<<<<<<<<<<<<<
@@ -9921,7 +9921,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_v_result = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":496
+  /* "SuchTree/MuchTree.pyx":496
  *         visited = np.zeros( self.depth, dtype=int )
  *         result = np.zeros( ids.shape[0], dtype=float )
  *         self._distances( ids.shape[0], visited, ids, result )             # <<<<<<<<<<<<<<
@@ -9930,7 +9930,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
  */
   __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_visited, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 496, __pyx_L1_error)
   __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_result, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 496, __pyx_L1_error)
-  ((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_distances(__pyx_v_self, (__pyx_v_ids.shape[0]), __pyx_t_6, __pyx_v_ids, __pyx_t_7);
+  ((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_distances(__pyx_v_self, (__pyx_v_ids.shape[0]), __pyx_t_6, __pyx_v_ids, __pyx_t_7);
   __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
@@ -9938,7 +9938,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":497
+  /* "SuchTree/MuchTree.pyx":497
  *         result = np.zeros( ids.shape[0], dtype=float )
  *         self._distances( ids.shape[0], visited, ids, result )
  *         return result             # <<<<<<<<<<<<<<
@@ -9950,7 +9950,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_r = __pyx_v_result;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":485
+  /* "SuchTree/MuchTree.pyx":485
  *         return d
  * 
  *     def distances( self, long[:,:] ids ) :             # <<<<<<<<<<<<<<
@@ -9966,7 +9966,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_5);
   __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_ids, 1);
@@ -9977,7 +9977,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":500
+/* "SuchTree/MuchTree.pyx":500
  * 
  *     @cython.boundscheck(False)
  *     cdef void _distances( self, unsigned int length,             # <<<<<<<<<<<<<<
@@ -9985,7 +9985,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
  *                                 long[:,:] ids,
  */
 
-static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, CYTHON_UNUSED unsigned int __pyx_v_length, __Pyx_memviewslice __pyx_v_visited, __Pyx_memviewslice __pyx_v_ids, __Pyx_memviewslice __pyx_v_result) {
+static void __pyx_f_8SuchTree_8MuchTree_8SuchTree__distances(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, CYTHON_UNUSED unsigned int __pyx_v_length, __Pyx_memviewslice __pyx_v_visited, __Pyx_memviewslice __pyx_v_ids, __Pyx_memviewslice __pyx_v_result) {
   unsigned int __pyx_v_mrca;
   float __pyx_v_d;
   unsigned int __pyx_v_n;
@@ -10000,7 +10000,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
   int __pyx_t_6;
   int __pyx_t_7;
 
-  /* "MuchTree.pyx":518
+  /* "SuchTree/MuchTree.pyx":518
  *         cdef unsigned int i
  * 
  *         for i in xrange( ids.shape[0] ) :             # <<<<<<<<<<<<<<
@@ -10012,7 +10012,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "MuchTree.pyx":519
+    /* "SuchTree/MuchTree.pyx":519
  * 
  *         for i in xrange( ids.shape[0] ) :
  *             a = ids[i,0]             # <<<<<<<<<<<<<<
@@ -10024,7 +10024,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
     if (__pyx_t_5 < 0) __pyx_t_5 += __pyx_v_ids.shape[1];
     __pyx_v_a = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_ids.data + __pyx_t_4 * __pyx_v_ids.strides[0]) ) + __pyx_t_5 * __pyx_v_ids.strides[1]) )));
 
-    /* "MuchTree.pyx":520
+    /* "SuchTree/MuchTree.pyx":520
  *         for i in xrange( ids.shape[0] ) :
  *             a = ids[i,0]
  *             b = ids[i,1]             # <<<<<<<<<<<<<<
@@ -10036,16 +10036,16 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
     if (__pyx_t_5 < 0) __pyx_t_5 += __pyx_v_ids.shape[1];
     __pyx_v_b = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_ids.data + __pyx_t_4 * __pyx_v_ids.strides[0]) ) + __pyx_t_5 * __pyx_v_ids.strides[1]) )));
 
-    /* "MuchTree.pyx":521
+    /* "SuchTree/MuchTree.pyx":521
  *             a = ids[i,0]
  *             b = ids[i,1]
  *             mrca = self._mrca( visited, a, b )             # <<<<<<<<<<<<<<
  *             n = a
  *             d = 0
  */
-    __pyx_v_mrca = ((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_mrca(__pyx_v_self, __pyx_v_visited, __pyx_v_a, __pyx_v_b);
+    __pyx_v_mrca = ((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_mrca(__pyx_v_self, __pyx_v_visited, __pyx_v_a, __pyx_v_b);
 
-    /* "MuchTree.pyx":522
+    /* "SuchTree/MuchTree.pyx":522
  *             b = ids[i,1]
  *             mrca = self._mrca( visited, a, b )
  *             n = a             # <<<<<<<<<<<<<<
@@ -10054,7 +10054,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_n = __pyx_v_a;
 
-    /* "MuchTree.pyx":523
+    /* "SuchTree/MuchTree.pyx":523
  *             mrca = self._mrca( visited, a, b )
  *             n = a
  *             d = 0             # <<<<<<<<<<<<<<
@@ -10063,7 +10063,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_d = 0.0;
 
-    /* "MuchTree.pyx":524
+    /* "SuchTree/MuchTree.pyx":524
  *             n = a
  *             d = 0
  *             while n != mrca :             # <<<<<<<<<<<<<<
@@ -10074,7 +10074,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
       __pyx_t_6 = ((__pyx_v_n != __pyx_v_mrca) != 0);
       if (!__pyx_t_6) break;
 
-      /* "MuchTree.pyx":525
+      /* "SuchTree/MuchTree.pyx":525
  *             d = 0
  *             while n != mrca :
  *                 d += self.data[n].distance             # <<<<<<<<<<<<<<
@@ -10083,7 +10083,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
       __pyx_v_d = (__pyx_v_d + (__pyx_v_self->data[__pyx_v_n]).distance);
 
-      /* "MuchTree.pyx":526
+      /* "SuchTree/MuchTree.pyx":526
  *             while n != mrca :
  *                 d += self.data[n].distance
  *                 n =  self.data[n].parent             # <<<<<<<<<<<<<<
@@ -10094,7 +10094,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
       __pyx_v_n = __pyx_t_7;
     }
 
-    /* "MuchTree.pyx":527
+    /* "SuchTree/MuchTree.pyx":527
  *                 d += self.data[n].distance
  *                 n =  self.data[n].parent
  *             n = b             # <<<<<<<<<<<<<<
@@ -10103,7 +10103,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_n = __pyx_v_b;
 
-    /* "MuchTree.pyx":528
+    /* "SuchTree/MuchTree.pyx":528
  *                 n =  self.data[n].parent
  *             n = b
  *             while n != mrca :             # <<<<<<<<<<<<<<
@@ -10114,7 +10114,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
       __pyx_t_6 = ((__pyx_v_n != __pyx_v_mrca) != 0);
       if (!__pyx_t_6) break;
 
-      /* "MuchTree.pyx":529
+      /* "SuchTree/MuchTree.pyx":529
  *             n = b
  *             while n != mrca :
  *                 d += self.data[n].distance             # <<<<<<<<<<<<<<
@@ -10123,7 +10123,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
       __pyx_v_d = (__pyx_v_d + (__pyx_v_self->data[__pyx_v_n]).distance);
 
-      /* "MuchTree.pyx":530
+      /* "SuchTree/MuchTree.pyx":530
  *             while n != mrca :
  *                 d += self.data[n].distance
  *                 n =  self.data[n].parent             # <<<<<<<<<<<<<<
@@ -10134,7 +10134,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
       __pyx_v_n = __pyx_t_7;
     }
 
-    /* "MuchTree.pyx":531
+    /* "SuchTree/MuchTree.pyx":531
  *                 d += self.data[n].distance
  *                 n =  self.data[n].parent
  *             result[i] = d             # <<<<<<<<<<<<<<
@@ -10145,7 +10145,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
     *((double *) ( /* dim=0 */ (__pyx_v_result.data + __pyx_t_4 * __pyx_v_result.strides[0]) )) = __pyx_v_d;
   }
 
-  /* "MuchTree.pyx":500
+  /* "SuchTree/MuchTree.pyx":500
  * 
  *     @cython.boundscheck(False)
  *     cdef void _distances( self, unsigned int length,             # <<<<<<<<<<<<<<
@@ -10156,7 +10156,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
   /* function exit code */
 }
 
-/* "MuchTree.pyx":533
+/* "SuchTree/MuchTree.pyx":533
  *             result[i] = d
  * 
  *     def distances_by_name( self, id_pairs ) :             # <<<<<<<<<<<<<<
@@ -10165,20 +10165,20 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_26distances_by_name(PyObject *__pyx_v_self, PyObject *__pyx_v_id_pairs); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_25distances_by_name[] = "\n        Returns an array of distances between pairs of leaf names in a\n        given (n,2) list of lists. Accepts only leaf names.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_26distances_by_name(PyObject *__pyx_v_self, PyObject *__pyx_v_id_pairs) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_26distances_by_name(PyObject *__pyx_v_self, PyObject *__pyx_v_id_pairs); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_25distances_by_name[] = "\n        Returns an array of distances between pairs of leaf names in a\n        given (n,2) list of lists. Accepts only leaf names.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_26distances_by_name(PyObject *__pyx_v_self, PyObject *__pyx_v_id_pairs) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("distances_by_name (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_25distances_by_name(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_id_pairs));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_25distances_by_name(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_id_pairs));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_id_pairs) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_id_pairs) {
   PyObject *__pyx_v_shape = NULL;
   PyObject *__pyx_v_ids = NULL;
   PyObject *__pyx_v_n = NULL;
@@ -10200,7 +10200,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("distances_by_name", 0);
 
-  /* "MuchTree.pyx":538
+  /* "SuchTree/MuchTree.pyx":538
  *         given (n,2) list of lists. Accepts only leaf names.
  *         """
  *         shape = ( len(id_pairs), len(id_pairs[0]) )             # <<<<<<<<<<<<<<
@@ -10227,7 +10227,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   __pyx_v_shape = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":539
+  /* "SuchTree/MuchTree.pyx":539
  *         """
  *         shape = ( len(id_pairs), len(id_pairs[0]) )
  *         ids = np.zeros( shape, dtype=int )             # <<<<<<<<<<<<<<
@@ -10255,7 +10255,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   __pyx_v_ids = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":540
+  /* "SuchTree/MuchTree.pyx":540
  *         shape = ( len(id_pairs), len(id_pairs[0]) )
  *         ids = np.zeros( shape, dtype=int )
  *         for n,(a,b) in enumerate(id_pairs) :             # <<<<<<<<<<<<<<
@@ -10361,7 +10361,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
     __pyx_t_5 = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":541
+    /* "SuchTree/MuchTree.pyx":541
  *         ids = np.zeros( shape, dtype=int )
  *         for n,(a,b) in enumerate(id_pairs) :
  *             ids[n][0] = self.leafs[a]             # <<<<<<<<<<<<<<
@@ -10376,7 +10376,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":542
+    /* "SuchTree/MuchTree.pyx":542
  *         for n,(a,b) in enumerate(id_pairs) :
  *             ids[n][0] = self.leafs[a]
  *             ids[n][1] = self.leafs[b]             # <<<<<<<<<<<<<<
@@ -10391,7 +10391,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":540
+    /* "SuchTree/MuchTree.pyx":540
  *         shape = ( len(id_pairs), len(id_pairs[0]) )
  *         ids = np.zeros( shape, dtype=int )
  *         for n,(a,b) in enumerate(id_pairs) :             # <<<<<<<<<<<<<<
@@ -10402,7 +10402,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":543
+  /* "SuchTree/MuchTree.pyx":543
  *             ids[n][0] = self.leafs[a]
  *             ids[n][1] = self.leafs[b]
  *         return self.distances( ids )             # <<<<<<<<<<<<<<
@@ -10431,7 +10431,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":533
+  /* "SuchTree/MuchTree.pyx":533
  *             result[i] = d
  * 
  *     def distances_by_name( self, id_pairs ) :             # <<<<<<<<<<<<<<
@@ -10447,7 +10447,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("MuchTree.SuchTree.distances_by_name", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.distances_by_name", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_shape);
@@ -10460,7 +10460,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":545
+/* "SuchTree/MuchTree.pyx":545
  *         return self.distances( ids )
  * 
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :             # <<<<<<<<<<<<<<
@@ -10469,9 +10469,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_28link_leaf(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_27link_leaf[] = "\n        Attaches a leaf node to SuchLinkedTrees link matrix column.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_28link_leaf(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_28link_leaf(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_27link_leaf[] = "\n        Attaches a leaf node to SuchLinkedTrees link matrix column.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_28link_leaf(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   unsigned int __pyx_v_leaf_id;
   unsigned int __pyx_v_col_id;
   int __pyx_lineno = 0;
@@ -10522,18 +10522,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_28link_leaf(PyObject *__pyx_v_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("link_leaf", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 545, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.link_leaf", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.link_leaf", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_27link_leaf(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_leaf_id, __pyx_v_col_id);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_27link_leaf(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_leaf_id, __pyx_v_col_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, unsigned int __pyx_v_leaf_id, unsigned int __pyx_v_col_id) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, unsigned int __pyx_v_leaf_id, unsigned int __pyx_v_col_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -10547,7 +10547,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("link_leaf", 0);
 
-  /* "MuchTree.pyx":549
+  /* "SuchTree/MuchTree.pyx":549
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
  *         """
  *         if not self.data[leaf_id].left_child == -1 :             # <<<<<<<<<<<<<<
@@ -10557,7 +10557,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   __pyx_t_1 = ((!(((__pyx_v_self->data[__pyx_v_leaf_id]).left_child == -1L) != 0)) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":550
+    /* "SuchTree/MuchTree.pyx":550
  *         """
  *         if not self.data[leaf_id].left_child == -1 :
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )             # <<<<<<<<<<<<<<
@@ -10581,7 +10581,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __PYX_ERR(0, 550, __pyx_L1_error)
 
-    /* "MuchTree.pyx":549
+    /* "SuchTree/MuchTree.pyx":549
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
  *         """
  *         if not self.data[leaf_id].left_child == -1 :             # <<<<<<<<<<<<<<
@@ -10590,7 +10590,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":551
+  /* "SuchTree/MuchTree.pyx":551
  *         if not self.data[leaf_id].left_child == -1 :
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )
  *         if not leaf_id in set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
@@ -10625,7 +10625,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   __pyx_t_6 = (__pyx_t_1 != 0);
   if (unlikely(__pyx_t_6)) {
 
-    /* "MuchTree.pyx":552
+    /* "SuchTree/MuchTree.pyx":552
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )
  *         if not leaf_id in set( self.leafs.values() ) :
  *             raise Exception( 'Unknown leaf id.', leaf_id )             # <<<<<<<<<<<<<<
@@ -10649,7 +10649,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __PYX_ERR(0, 552, __pyx_L1_error)
 
-    /* "MuchTree.pyx":551
+    /* "SuchTree/MuchTree.pyx":551
  *         if not self.data[leaf_id].left_child == -1 :
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )
  *         if not leaf_id in set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
@@ -10658,7 +10658,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":555
+  /* "SuchTree/MuchTree.pyx":555
  *         # we only use the left child to identify a node as a leaf, so
  *         # the right child is avalable to store the column index
  *         self.data[leaf_id].right_child = col_id             # <<<<<<<<<<<<<<
@@ -10667,7 +10667,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
  */
   (__pyx_v_self->data[__pyx_v_leaf_id]).right_child = __pyx_v_col_id;
 
-  /* "MuchTree.pyx":545
+  /* "SuchTree/MuchTree.pyx":545
  *         return self.distances( ids )
  * 
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :             # <<<<<<<<<<<<<<
@@ -10683,7 +10683,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchTree.link_leaf", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.link_leaf", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10691,7 +10691,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":557
+/* "SuchTree/MuchTree.pyx":557
  *         self.data[leaf_id].right_child = col_id
  * 
  *     def get_links( self, leaf_ids ) :             # <<<<<<<<<<<<<<
@@ -10700,20 +10700,20 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_30get_links(PyObject *__pyx_v_self, PyObject *__pyx_v_leaf_ids); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_29get_links[] = "\n        Returns an array of column ids for an array of leaf ids.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_30get_links(PyObject *__pyx_v_self, PyObject *__pyx_v_leaf_ids) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_30get_links(PyObject *__pyx_v_self, PyObject *__pyx_v_leaf_ids); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_29get_links[] = "\n        Returns an array of column ids for an array of leaf ids.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_30get_links(PyObject *__pyx_v_self, PyObject *__pyx_v_leaf_ids) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_links (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_29get_links(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_leaf_ids));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_29get_links(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_leaf_ids));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_leaf_ids) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_leaf_ids) {
   PyObject *__pyx_v_col_ids = NULL;
   PyObject *__pyx_v_n = NULL;
   PyObject *__pyx_v_leaf = NULL;
@@ -10733,7 +10733,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_links", 0);
 
-  /* "MuchTree.pyx":561
+  /* "SuchTree/MuchTree.pyx":561
  *         Returns an array of column ids for an array of leaf ids.
  *         """
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
@@ -10770,7 +10770,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   __pyx_t_6 = ((!__pyx_t_5) != 0);
   if (unlikely(__pyx_t_6)) {
 
-    /* "MuchTree.pyx":562
+    /* "SuchTree/MuchTree.pyx":562
  *         """
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )             # <<<<<<<<<<<<<<
@@ -10792,7 +10792,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(0, 562, __pyx_L1_error)
 
-    /* "MuchTree.pyx":561
+    /* "SuchTree/MuchTree.pyx":561
  *         Returns an array of column ids for an array of leaf ids.
  *         """
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
@@ -10801,7 +10801,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":563
+  /* "SuchTree/MuchTree.pyx":563
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )             # <<<<<<<<<<<<<<
@@ -10826,7 +10826,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   __pyx_v_col_ids = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":564
+  /* "SuchTree/MuchTree.pyx":564
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
  *         for n,leaf in enumerate( leaf_ids ) :             # <<<<<<<<<<<<<<
@@ -10884,7 +10884,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
     __pyx_t_1 = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "MuchTree.pyx":565
+    /* "SuchTree/MuchTree.pyx":565
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
  *         for n,leaf in enumerate( leaf_ids ) :
  *             col_ids[n] = self.data[ leaf ].right_child             # <<<<<<<<<<<<<<
@@ -10897,7 +10897,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
     if (unlikely(PyObject_SetItem(__pyx_v_col_ids, __pyx_v_n, __pyx_t_2) < 0)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "MuchTree.pyx":564
+    /* "SuchTree/MuchTree.pyx":564
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
  *         for n,leaf in enumerate( leaf_ids ) :             # <<<<<<<<<<<<<<
@@ -10908,7 +10908,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":566
+  /* "SuchTree/MuchTree.pyx":566
  *         for n,leaf in enumerate( leaf_ids ) :
  *             col_ids[n] = self.data[ leaf ].right_child
  *         return col_ids             # <<<<<<<<<<<<<<
@@ -10920,7 +10920,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   __pyx_r = __pyx_v_col_ids;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":557
+  /* "SuchTree/MuchTree.pyx":557
  *         self.data[leaf_id].right_child = col_id
  * 
  *     def get_links( self, leaf_ids ) :             # <<<<<<<<<<<<<<
@@ -10934,7 +10934,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("MuchTree.SuchTree.get_links", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.get_links", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_col_ids);
@@ -10945,7 +10945,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":568
+/* "SuchTree/MuchTree.pyx":568
  *         return col_ids
  * 
  *     def adjacency( self, int node=-1 ) :             # <<<<<<<<<<<<<<
@@ -10954,9 +10954,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_32adjacency(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_31adjacency[] = "\n        The graph adjacency matrix of the tree. If parameter \n        node is given, return graph adjacency matrix of the\n        subtree descendent from node_id.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_32adjacency(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_32adjacency(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_31adjacency[] = "\n        The graph adjacency matrix of the tree. If parameter \n        node is given, return graph adjacency matrix of the\n        subtree descendent from node_id.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_32adjacency(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_node;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -11005,18 +11005,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_32adjacency(PyObject *__pyx_v_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("adjacency", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 568, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_31adjacency(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_node);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_31adjacency(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_node);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_node) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_node) {
   unsigned int __pyx_v_i;
   unsigned int __pyx_v_j;
   unsigned int __pyx_v_k;
@@ -11054,7 +11054,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("adjacency", 0);
 
-  /* "MuchTree.pyx":582
+  /* "SuchTree/MuchTree.pyx":582
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -11063,7 +11063,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
   __pyx_v_n = 0;
 
-  /* "MuchTree.pyx":585
+  /* "SuchTree/MuchTree.pyx":585
  * 
  *         # by default, start from the root node
  *         if node == -1 :             # <<<<<<<<<<<<<<
@@ -11073,7 +11073,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_t_1 = ((__pyx_v_node == -1L) != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":586
+    /* "SuchTree/MuchTree.pyx":586
  *         # by default, start from the root node
  *         if node == -1 :
  *             node = self.root             # <<<<<<<<<<<<<<
@@ -11083,7 +11083,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_2 = __pyx_v_self->root;
     __pyx_v_node = __pyx_t_2;
 
-    /* "MuchTree.pyx":585
+    /* "SuchTree/MuchTree.pyx":585
  * 
  *         # by default, start from the root node
  *         if node == -1 :             # <<<<<<<<<<<<<<
@@ -11092,7 +11092,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":589
+  /* "SuchTree/MuchTree.pyx":589
  * 
  *         # bail if the node isn't in our tree
  *         if node > self.length or node < -1 :             # <<<<<<<<<<<<<<
@@ -11110,7 +11110,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_L5_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":590
+    /* "SuchTree/MuchTree.pyx":590
  *         # bail if the node isn't in our tree
  *         if node > self.length or node < -1 :
  *             raise Exception( 'Node id out of range.', node )             # <<<<<<<<<<<<<<
@@ -11134,7 +11134,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __PYX_ERR(0, 590, __pyx_L1_error)
 
-    /* "MuchTree.pyx":589
+    /* "SuchTree/MuchTree.pyx":589
  * 
  *         # bail if the node isn't in our tree
  *         if node > self.length or node < -1 :             # <<<<<<<<<<<<<<
@@ -11143,7 +11143,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":592
+  /* "SuchTree/MuchTree.pyx":592
  *             raise Exception( 'Node id out of range.', node )
  * 
  *         self.np_buffer = np.ndarray( self.length, dtype=int )             # <<<<<<<<<<<<<<
@@ -11170,7 +11170,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_v_self->np_buffer = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":594
+  /* "SuchTree/MuchTree.pyx":594
  *         self.np_buffer = np.ndarray( self.length, dtype=int )
  * 
  *         to_visit = [ node ]             # <<<<<<<<<<<<<<
@@ -11187,7 +11187,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_v_to_visit = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":595
+  /* "SuchTree/MuchTree.pyx":595
  * 
  *         to_visit = [ node ]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -11207,7 +11207,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_i = __pyx_t_2;
 
-    /* "MuchTree.pyx":596
+    /* "SuchTree/MuchTree.pyx":596
  *         to_visit = [ node ]
  *         for i in to_visit :
  *             self.np_buffer[n] = i             # <<<<<<<<<<<<<<
@@ -11219,7 +11219,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_6, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "MuchTree.pyx":597
+    /* "SuchTree/MuchTree.pyx":597
  *         for i in to_visit :
  *             self.np_buffer[n] = i
  *             n += 1             # <<<<<<<<<<<<<<
@@ -11228,7 +11228,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
     __pyx_v_n = (__pyx_v_n + 1);
 
-    /* "MuchTree.pyx":598
+    /* "SuchTree/MuchTree.pyx":598
  *             self.np_buffer[n] = i
  *             n += 1
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
@@ -11308,7 +11308,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_v_l = __pyx_t_11;
     __pyx_v_r = __pyx_t_12;
 
-    /* "MuchTree.pyx":599
+    /* "SuchTree/MuchTree.pyx":599
  *             n += 1
  *             l,r = self.get_children( i )
  *             if l != -1 :             # <<<<<<<<<<<<<<
@@ -11318,7 +11318,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_1 = ((__pyx_v_l != -1L) != 0);
     if (__pyx_t_1) {
 
-      /* "MuchTree.pyx":600
+      /* "SuchTree/MuchTree.pyx":600
  *             l,r = self.get_children( i )
  *             if l != -1 :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
@@ -11330,7 +11330,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_6); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 600, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":601
+      /* "SuchTree/MuchTree.pyx":601
  *             if l != -1 :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
@@ -11342,7 +11342,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_6); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 601, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":599
+      /* "SuchTree/MuchTree.pyx":599
  *             n += 1
  *             l,r = self.get_children( i )
  *             if l != -1 :             # <<<<<<<<<<<<<<
@@ -11351,7 +11351,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
     }
 
-    /* "MuchTree.pyx":595
+    /* "SuchTree/MuchTree.pyx":595
  * 
  *         to_visit = [ node ]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -11361,7 +11361,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":603
+  /* "SuchTree/MuchTree.pyx":603
  *                 to_visit.append( r )
  * 
  *         ajmatrix = np.zeros( (n,n), dtype=float )             # <<<<<<<<<<<<<<
@@ -11401,7 +11401,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_v_ajmatrix = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":605
+  /* "SuchTree/MuchTree.pyx":605
  *         ajmatrix = np.zeros( (n,n), dtype=float )
  * 
  *         for i in xrange( n ) :             # <<<<<<<<<<<<<<
@@ -11413,7 +11413,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
     __pyx_v_i = __pyx_t_15;
 
-    /* "MuchTree.pyx":606
+    /* "SuchTree/MuchTree.pyx":606
  * 
  *         for i in xrange( n ) :
  *             node_id  = self.np_buffer[i]             # <<<<<<<<<<<<<<
@@ -11426,7 +11426,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_node_id = __pyx_t_16;
 
-    /* "MuchTree.pyx":607
+    /* "SuchTree/MuchTree.pyx":607
  *         for i in xrange( n ) :
  *             node_id  = self.np_buffer[i]
  *             parent   = self.data[node_id].parent             # <<<<<<<<<<<<<<
@@ -11436,7 +11436,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_12 = (__pyx_v_self->data[__pyx_v_node_id]).parent;
     __pyx_v_parent = __pyx_t_12;
 
-    /* "MuchTree.pyx":608
+    /* "SuchTree/MuchTree.pyx":608
  *             node_id  = self.np_buffer[i]
  *             parent   = self.data[node_id].parent
  *             if parent == -1 : continue             # <<<<<<<<<<<<<<
@@ -11448,7 +11448,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       goto __pyx_L12_continue;
     }
 
-    /* "MuchTree.pyx":609
+    /* "SuchTree/MuchTree.pyx":609
  *             parent   = self.data[node_id].parent
  *             if parent == -1 : continue
  *             distance = self.data[node_id].distance             # <<<<<<<<<<<<<<
@@ -11458,7 +11458,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_17 = (__pyx_v_self->data[__pyx_v_node_id]).distance;
     __pyx_v_distance = __pyx_t_17;
 
-    /* "MuchTree.pyx":610
+    /* "SuchTree/MuchTree.pyx":610
  *             if parent == -1 : continue
  *             distance = self.data[node_id].distance
  *             if distance == 0 : distance += self.epsilon             # <<<<<<<<<<<<<<
@@ -11470,7 +11470,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __pyx_v_distance = (__pyx_v_distance + __pyx_v_self->epsilon);
     }
 
-    /* "MuchTree.pyx":611
+    /* "SuchTree/MuchTree.pyx":611
  *             distance = self.data[node_id].distance
  *             if distance == 0 : distance += self.epsilon
  *             for j,k in enumerate( self.np_buffer[:n] ) :             # <<<<<<<<<<<<<<
@@ -11526,7 +11526,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __pyx_v_j = __pyx_t_16;
       __pyx_t_16 = (__pyx_t_16 + 1);
 
-      /* "MuchTree.pyx":612
+      /* "SuchTree/MuchTree.pyx":612
  *             if distance == 0 : distance += self.epsilon
  *             for j,k in enumerate( self.np_buffer[:n] ) :
  *                 if k == parent :             # <<<<<<<<<<<<<<
@@ -11536,7 +11536,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __pyx_t_1 = ((__pyx_v_k == __pyx_v_parent) != 0);
       if (__pyx_t_1) {
 
-        /* "MuchTree.pyx":613
+        /* "SuchTree/MuchTree.pyx":613
  *             for j,k in enumerate( self.np_buffer[:n] ) :
  *                 if k == parent :
  *                     ajmatrix[ i,j ] = distance             # <<<<<<<<<<<<<<
@@ -11561,7 +11561,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "MuchTree.pyx":614
+        /* "SuchTree/MuchTree.pyx":614
  *                 if k == parent :
  *                     ajmatrix[ i,j ] = distance
  *                     ajmatrix[ j,i ] = distance             # <<<<<<<<<<<<<<
@@ -11586,7 +11586,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "MuchTree.pyx":612
+        /* "SuchTree/MuchTree.pyx":612
  *             if distance == 0 : distance += self.epsilon
  *             for j,k in enumerate( self.np_buffer[:n] ) :
  *                 if k == parent :             # <<<<<<<<<<<<<<
@@ -11595,7 +11595,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
       }
 
-      /* "MuchTree.pyx":611
+      /* "SuchTree/MuchTree.pyx":611
  *             distance = self.data[node_id].distance
  *             if distance == 0 : distance += self.epsilon
  *             for j,k in enumerate( self.np_buffer[:n] ) :             # <<<<<<<<<<<<<<
@@ -11607,7 +11607,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_L12_continue:;
   }
 
-  /* "MuchTree.pyx":616
+  /* "SuchTree/MuchTree.pyx":616
  *                     ajmatrix[ j,i ] = distance
  * 
  *         return { 'adjacency_matrix' : ajmatrix,             # <<<<<<<<<<<<<<
@@ -11619,7 +11619,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __Pyx_GOTREF(__pyx_t_5);
   if (PyDict_SetItem(__pyx_t_5, __pyx_n_u_adjacency_matrix, __pyx_v_ajmatrix) < 0) __PYX_ERR(0, 616, __pyx_L1_error)
 
-  /* "MuchTree.pyx":617
+  /* "SuchTree/MuchTree.pyx":617
  * 
  *         return { 'adjacency_matrix' : ajmatrix,
  *                  'node_ids' : self.np_buffer[:n] }             # <<<<<<<<<<<<<<
@@ -11634,7 +11634,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":568
+  /* "SuchTree/MuchTree.pyx":568
  *         return col_ids
  * 
  *     def adjacency( self, int node=-1 ) :             # <<<<<<<<<<<<<<
@@ -11649,7 +11649,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("MuchTree.SuchTree.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_to_visit);
@@ -11659,7 +11659,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":619
+/* "SuchTree/MuchTree.pyx":619
  *                  'node_ids' : self.np_buffer[:n] }
  * 
  *     def laplacian( self, int node=-1 ) :             # <<<<<<<<<<<<<<
@@ -11668,9 +11668,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_34laplacian(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_33laplacian[] = "\n        The graph Laplacian matrix of the tree, or if the parameter\n        node is given, return the graph Laplacian matrix of the \n        subtree decendent from node.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_34laplacian(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_34laplacian(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_33laplacian[] = "\n        The graph Laplacian matrix of the tree, or if the parameter\n        node is given, return the graph Laplacian matrix of the \n        subtree decendent from node.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_34laplacian(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_node;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -11719,18 +11719,18 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_34laplacian(PyObject *__pyx_v_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("laplacian", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 619, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_33laplacian(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_node);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_33laplacian(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), __pyx_v_node);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_node) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, int __pyx_v_node) {
   PyObject *__pyx_v_aj = NULL;
   PyObject *__pyx_v_node_ids = NULL;
   PyObject *__pyx_v_lp = NULL;
@@ -11750,7 +11750,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("laplacian", 0);
 
-  /* "MuchTree.pyx":625
+  /* "SuchTree/MuchTree.pyx":625
  *         subtree decendent from node.
  *         """
  *         if node == -1 :             # <<<<<<<<<<<<<<
@@ -11760,7 +11760,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __pyx_t_1 = ((__pyx_v_node == -1L) != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":626
+    /* "SuchTree/MuchTree.pyx":626
  *         """
  *         if node == -1 :
  *             node = self.root             # <<<<<<<<<<<<<<
@@ -11770,7 +11770,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
     __pyx_t_2 = __pyx_v_self->root;
     __pyx_v_node = __pyx_t_2;
 
-    /* "MuchTree.pyx":625
+    /* "SuchTree/MuchTree.pyx":625
  *         subtree decendent from node.
  *         """
  *         if node == -1 :             # <<<<<<<<<<<<<<
@@ -11779,7 +11779,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":628
+  /* "SuchTree/MuchTree.pyx":628
  *             node = self.root
  * 
  *         aj, node_ids = self.adjacency( node=node ).values()             # <<<<<<<<<<<<<<
@@ -11867,7 +11867,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __pyx_v_node_ids = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":629
+  /* "SuchTree/MuchTree.pyx":629
  * 
  *         aj, node_ids = self.adjacency( node=node ).values()
  *         lp = np.zeros( aj.shape )             # <<<<<<<<<<<<<<
@@ -11900,7 +11900,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __pyx_v_lp = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":630
+  /* "SuchTree/MuchTree.pyx":630
  *         aj, node_ids = self.adjacency( node=node ).values()
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )             # <<<<<<<<<<<<<<
@@ -11970,7 +11970,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":631
+  /* "SuchTree/MuchTree.pyx":631
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )
  *         lp = lp - aj             # <<<<<<<<<<<<<<
@@ -11982,7 +11982,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __Pyx_DECREF_SET(__pyx_v_lp, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":633
+  /* "SuchTree/MuchTree.pyx":633
  *         lp = lp - aj
  * 
  *         return { 'laplacian' : lp,             # <<<<<<<<<<<<<<
@@ -11994,7 +11994,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_laplacian, __pyx_v_lp) < 0) __PYX_ERR(0, 633, __pyx_L1_error)
 
-  /* "MuchTree.pyx":634
+  /* "SuchTree/MuchTree.pyx":634
  * 
  *         return { 'laplacian' : lp,
  *                  'node_ids' : node_ids }             # <<<<<<<<<<<<<<
@@ -12006,7 +12006,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":619
+  /* "SuchTree/MuchTree.pyx":619
  *                  'node_ids' : self.np_buffer[:n] }
  * 
  *     def laplacian( self, int node=-1 ) :             # <<<<<<<<<<<<<<
@@ -12021,7 +12021,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("MuchTree.SuchTree.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_aj);
@@ -12032,7 +12032,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":636
+/* "SuchTree/MuchTree.pyx":636
  *                  'node_ids' : node_ids }
  * 
  *     def dump_array( self ) :             # <<<<<<<<<<<<<<
@@ -12041,20 +12041,20 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_36dump_array(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_35dump_array[] = "\n        Print the whole tree. (WARNING : may be huge and useless.)\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_36dump_array(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_36dump_array(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_35dump_array[] = "\n        Print the whole tree. (WARNING : may be huge and useless.)\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_36dump_array(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("dump_array (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_35dump_array(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_35dump_array(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_v_n = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -12069,7 +12069,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dump_array", 0);
 
-  /* "MuchTree.pyx":640
+  /* "SuchTree/MuchTree.pyx":640
  *         Print the whole tree. (WARNING : may be huge and useless.)
  *         """
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
@@ -12124,7 +12124,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_XDECREF_SET(__pyx_v_n, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "MuchTree.pyx":641
+    /* "SuchTree/MuchTree.pyx":641
  *         """
  *         for n in range(self.length) :
  *             print( 'id : %d ->' % n )             # <<<<<<<<<<<<<<
@@ -12138,7 +12138,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":642
+    /* "SuchTree/MuchTree.pyx":642
  *         for n in range(self.length) :
  *             print( 'id : %d ->' % n )
  *             print( '   distance    : %0.3f' % self.data[n].distance    )             # <<<<<<<<<<<<<<
@@ -12156,7 +12156,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":643
+    /* "SuchTree/MuchTree.pyx":643
  *             print( 'id : %d ->' % n )
  *             print( '   distance    : %0.3f' % self.data[n].distance    )
  *             print( '   parent      : %d'    % self.data[n].parent      )             # <<<<<<<<<<<<<<
@@ -12174,7 +12174,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":644
+    /* "SuchTree/MuchTree.pyx":644
  *             print( '   distance    : %0.3f' % self.data[n].distance    )
  *             print( '   parent      : %d'    % self.data[n].parent      )
  *             print( '   left child  : %d'    % self.data[n].left_child  )             # <<<<<<<<<<<<<<
@@ -12192,7 +12192,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":645
+    /* "SuchTree/MuchTree.pyx":645
  *             print( '   parent      : %d'    % self.data[n].parent      )
  *             print( '   left child  : %d'    % self.data[n].left_child  )
  *             print( '   right child : %d'    % self.data[n].right_child )             # <<<<<<<<<<<<<<
@@ -12210,7 +12210,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":640
+    /* "SuchTree/MuchTree.pyx":640
  *         Print the whole tree. (WARNING : may be huge and useless.)
  *         """
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
@@ -12220,7 +12220,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":636
+  /* "SuchTree/MuchTree.pyx":636
  *                  'node_ids' : node_ids }
  * 
  *     def dump_array( self ) :             # <<<<<<<<<<<<<<
@@ -12235,7 +12235,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchTree.dump_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.dump_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_n);
@@ -12243,9 +12243,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_8SuchTree_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "MuchTree.pyx":647
+/* "SuchTree/MuchTree.pyx":647
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
@@ -12254,30 +12254,30 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_38nodes_data(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_37nodes_data[] = "\n        Generator for the node data in the tree, compatible with networkx.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_38nodes_data(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_38nodes_data(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_37nodes_data[] = "\n        Generator for the node data in the tree, compatible with networkx.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_38nodes_data(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("nodes_data (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_37nodes_data(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_37nodes_data(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *__pyx_cur_scope;
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("nodes_data", 0);
-  __pyx_cur_scope = (struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *)__pyx_tp_new_8MuchTree___pyx_scope_struct_1_nodes_data(__pyx_ptype_8MuchTree___pyx_scope_struct_1_nodes_data, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *)__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data(__pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 647, __pyx_L1_error)
   } else {
@@ -12287,7 +12287,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8Muc
   __Pyx_INCREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   __Pyx_GIVEREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8MuchTree_8SuchTree_39generator1, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_nodes_data, __pyx_n_s_SuchTree_nodes_data, __pyx_n_s_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 647, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8SuchTree_8MuchTree_8SuchTree_39generator1, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_nodes_data, __pyx_n_s_SuchTree_nodes_data, __pyx_n_s_SuchTree_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 647, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -12295,7 +12295,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8Muc
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.nodes_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.nodes_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -12303,9 +12303,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8Muc
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_8SuchTree_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *__pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *)__pyx_generator->closure);
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *__pyx_cur_scope = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   unsigned int __pyx_t_1;
   unsigned int __pyx_t_2;
@@ -12329,7 +12329,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
   __pyx_L3_first_run:;
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 647, __pyx_L1_error)
 
-  /* "MuchTree.pyx":651
+  /* "SuchTree/MuchTree.pyx":651
  *         Generator for the node data in the tree, compatible with networkx.
  *         """
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
@@ -12341,7 +12341,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_cur_scope->__pyx_v_n = __pyx_t_3;
 
-    /* "MuchTree.pyx":652
+    /* "SuchTree/MuchTree.pyx":652
  *         """
  *         for n in range(self.length) :
  *             if self.data[n].left_child == -1 :             # <<<<<<<<<<<<<<
@@ -12351,7 +12351,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
     __pyx_t_4 = (((__pyx_cur_scope->__pyx_v_self->data[__pyx_cur_scope->__pyx_v_n]).left_child == -1L) != 0);
     if (__pyx_t_4) {
 
-      /* "MuchTree.pyx":653
+      /* "SuchTree/MuchTree.pyx":653
  *         for n in range(self.length) :
  *             if self.data[n].left_child == -1 :
  *                 leaf_name = self.leafnodes[n]             # <<<<<<<<<<<<<<
@@ -12365,7 +12365,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
       __Pyx_GIVEREF(__pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "MuchTree.pyx":652
+      /* "SuchTree/MuchTree.pyx":652
  *         """
  *         for n in range(self.length) :
  *             if self.data[n].left_child == -1 :             # <<<<<<<<<<<<<<
@@ -12375,7 +12375,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
       goto __pyx_L6;
     }
 
-    /* "MuchTree.pyx":655
+    /* "SuchTree/MuchTree.pyx":655
  *                 leaf_name = self.leafnodes[n]
  *             else :
  *                 leaf_name = ''             # <<<<<<<<<<<<<<
@@ -12390,7 +12390,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
     }
     __pyx_L6:;
 
-    /* "MuchTree.pyx":656
+    /* "SuchTree/MuchTree.pyx":656
  *             else :
  *                 leaf_name = ''
  *             yield ( n, { 'label' : leaf_name } )             # <<<<<<<<<<<<<<
@@ -12429,7 +12429,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "MuchTree.pyx":647
+  /* "SuchTree/MuchTree.pyx":647
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
@@ -12455,9 +12455,9 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_8SuchTree_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "MuchTree.pyx":658
+/* "SuchTree/MuchTree.pyx":658
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
@@ -12466,30 +12466,30 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_41edges_data(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_40edges_data[] = "\n        Generator for the edge (i.e. branch) data in the tree, compatible with networkx.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_41edges_data(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_41edges_data(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_8SuchTree_40edges_data[] = "\n        Generator for the edge (i.e. branch) data in the tree, compatible with networkx.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_41edges_data(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("edges_data (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_40edges_data(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_40edges_data(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *__pyx_cur_scope;
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("edges_data", 0);
-  __pyx_cur_scope = (struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *)__pyx_tp_new_8MuchTree___pyx_scope_struct_2_edges_data(__pyx_ptype_8MuchTree___pyx_scope_struct_2_edges_data, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *)__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data(__pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 658, __pyx_L1_error)
   } else {
@@ -12499,7 +12499,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8Muc
   __Pyx_INCREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   __Pyx_GIVEREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8MuchTree_8SuchTree_42generator2, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_edges_data, __pyx_n_s_SuchTree_edges_data, __pyx_n_s_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 658, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8SuchTree_8MuchTree_8SuchTree_42generator2, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_edges_data, __pyx_n_s_SuchTree_edges_data, __pyx_n_s_SuchTree_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 658, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -12507,7 +12507,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8Muc
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("MuchTree.SuchTree.edges_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.edges_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -12515,9 +12515,9 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8Muc
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_8SuchTree_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *__pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *)__pyx_generator->closure);
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *__pyx_cur_scope = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   unsigned int __pyx_t_1;
   unsigned int __pyx_t_2;
@@ -12542,7 +12542,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
   __pyx_L3_first_run:;
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 658, __pyx_L1_error)
 
-  /* "MuchTree.pyx":662
+  /* "SuchTree/MuchTree.pyx":662
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
  *         """
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
@@ -12554,7 +12554,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_cur_scope->__pyx_v_n = __pyx_t_3;
 
-    /* "MuchTree.pyx":664
+    /* "SuchTree/MuchTree.pyx":664
  *         for n in range(self.length) :
  *             # no edges beyond the root node
  *             if self.data[n].parent == -1 : continue             # <<<<<<<<<<<<<<
@@ -12566,7 +12566,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
       goto __pyx_L4_continue;
     }
 
-    /* "MuchTree.pyx":665
+    /* "SuchTree/MuchTree.pyx":665
  *             # no edges beyond the root node
  *             if self.data[n].parent == -1 : continue
  *             yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )             # <<<<<<<<<<<<<<
@@ -12614,7 +12614,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "MuchTree.pyx":658
+  /* "SuchTree/MuchTree.pyx":658
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
@@ -12642,7 +12642,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":667
+/* "SuchTree/MuchTree.pyx":667
  *             yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )
  * 
  *     def __dealloc__( self ) :             # <<<<<<<<<<<<<<
@@ -12651,21 +12651,21 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
  */
 
 /* Python wrapper */
-static void __pyx_pw_8MuchTree_8SuchTree_44__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_8MuchTree_8SuchTree_44__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_8SuchTree_8MuchTree_8SuchTree_44__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_8SuchTree_8MuchTree_8SuchTree_44__dealloc__(PyObject *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
-  __pyx_pf_8MuchTree_8SuchTree_43__dealloc__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_pf_8SuchTree_8MuchTree_8SuchTree_43__dealloc__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_8MuchTree_8SuchTree_43__dealloc__(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static void __pyx_pf_8SuchTree_8MuchTree_8SuchTree_43__dealloc__(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "MuchTree.pyx":668
+  /* "SuchTree/MuchTree.pyx":668
  * 
  *     def __dealloc__( self ) :
  *         PyMem_Free( self.data )     # no-op if self.data is NULL             # <<<<<<<<<<<<<<
@@ -12674,7 +12674,7 @@ static void __pyx_pf_8MuchTree_8SuchTree_43__dealloc__(struct __pyx_obj_8MuchTre
  */
   PyMem_Free(__pyx_v_self->data);
 
-  /* "MuchTree.pyx":667
+  /* "SuchTree/MuchTree.pyx":667
  *             yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )
  * 
  *     def __dealloc__( self ) :             # <<<<<<<<<<<<<<
@@ -12693,19 +12693,19 @@ static void __pyx_pf_8MuchTree_8SuchTree_43__dealloc__(struct __pyx_obj_8MuchTre
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_46__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_46__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_46__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_46__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_45__reduce_cython__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_45__reduce_cython__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_45__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_45__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -12735,7 +12735,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_45__reduce_cython__(CYTHON_UNUSED 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -12750,19 +12750,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_45__reduce_cython__(CYTHON_UNUSED 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_48__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_48__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_48__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_8SuchTree_48__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_47__setstate_cython__(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_8SuchTree_47__setstate_cython__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_47__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_8SuchTree_47__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -12792,14 +12792,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_47__setstate_cython__(CYTHON_UNUSE
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchTree.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchTree.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":713
+/* "SuchTree/MuchTree.pyx":713
  *     cdef uint64_t modulus
  * 
  *     def __cinit__( self, tree_a, tree_b, link_matrix ) :             # <<<<<<<<<<<<<<
@@ -12808,8 +12808,8 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_47__setstate_cython__(CYTHON_UNUSE
  */
 
 /* Python wrapper */
-static int __pyx_pw_8MuchTree_15SuchLinkedTrees_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8MuchTree_15SuchLinkedTrees_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   CYTHON_UNUSED PyObject *__pyx_v_tree_a = 0;
   CYTHON_UNUSED PyObject *__pyx_v_tree_b = 0;
   PyObject *__pyx_v_link_matrix = 0;
@@ -12871,18 +12871,18 @@ static int __pyx_pw_8MuchTree_15SuchLinkedTrees_1__cinit__(PyObject *__pyx_v_sel
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 713, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_tree_a, __pyx_v_tree_b, __pyx_v_link_matrix);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees___cinit__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_tree_a, __pyx_v_tree_b, __pyx_v_link_matrix);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_tree_a, CYTHON_UNUSED PyObject *__pyx_v_tree_b, PyObject *__pyx_v_link_matrix) {
+static int __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_tree_a, CYTHON_UNUSED PyObject *__pyx_v_tree_b, PyObject *__pyx_v_link_matrix) {
   unsigned int __pyx_v_i;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
@@ -12899,7 +12899,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "MuchTree.pyx":715
+  /* "SuchTree/MuchTree.pyx":715
  *     def __cinit__( self, tree_a, tree_b, link_matrix ) :
  *         cdef unsigned int i
  *         self.table_size = link_matrix.shape[1]             # <<<<<<<<<<<<<<
@@ -12915,16 +12915,16 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_self->table_size = __pyx_t_3;
 
-  /* "MuchTree.pyx":716
+  /* "SuchTree/MuchTree.pyx":716
  *         cdef unsigned int i
  *         self.table_size = link_matrix.shape[1]
  *         self.table = <Column*> PyMem_Malloc( self.table_size * sizeof( Column ) )             # <<<<<<<<<<<<<<
  *         for i in xrange( self.table_size ) :
  *             self.table[i].length = 0
  */
-  __pyx_v_self->table = ((struct __pyx_t_8MuchTree_Column *)PyMem_Malloc((__pyx_v_self->table_size * (sizeof(struct __pyx_t_8MuchTree_Column)))));
+  __pyx_v_self->table = ((struct __pyx_t_8SuchTree_8MuchTree_Column *)PyMem_Malloc((__pyx_v_self->table_size * (sizeof(struct __pyx_t_8SuchTree_8MuchTree_Column)))));
 
-  /* "MuchTree.pyx":717
+  /* "SuchTree/MuchTree.pyx":717
  *         self.table_size = link_matrix.shape[1]
  *         self.table = <Column*> PyMem_Malloc( self.table_size * sizeof( Column ) )
  *         for i in xrange( self.table_size ) :             # <<<<<<<<<<<<<<
@@ -12936,7 +12936,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_i = __pyx_t_5;
 
-    /* "MuchTree.pyx":718
+    /* "SuchTree/MuchTree.pyx":718
  *         self.table = <Column*> PyMem_Malloc( self.table_size * sizeof( Column ) )
  *         for i in xrange( self.table_size ) :
  *             self.table[i].length = 0             # <<<<<<<<<<<<<<
@@ -12945,7 +12945,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
  */
     (__pyx_v_self->table[__pyx_v_i]).length = 0;
 
-    /* "MuchTree.pyx":719
+    /* "SuchTree/MuchTree.pyx":719
  *         for i in xrange( self.table_size ) :
  *             self.table[i].length = 0
  *             self.table[i].leaf_id = 0             # <<<<<<<<<<<<<<
@@ -12954,7 +12954,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
  */
     (__pyx_v_self->table[__pyx_v_i]).leaf_id = 0;
 
-    /* "MuchTree.pyx":720
+    /* "SuchTree/MuchTree.pyx":720
  *             self.table[i].length = 0
  *             self.table[i].leaf_id = 0
  *             self.table[i].links = NULL             # <<<<<<<<<<<<<<
@@ -12964,7 +12964,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
     (__pyx_v_self->table[__pyx_v_i]).links = NULL;
   }
 
-  /* "MuchTree.pyx":723
+  /* "SuchTree/MuchTree.pyx":723
  * 
  *         # initialize random number generator
  *         self.seed = np.random.randint( UINT64_MAX >> 1 )             # <<<<<<<<<<<<<<
@@ -13001,7 +13001,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_self->seed = __pyx_t_8;
 
-  /* "MuchTree.pyx":724
+  /* "SuchTree/MuchTree.pyx":724
  *         # initialize random number generator
  *         self.seed = np.random.randint( UINT64_MAX >> 1 )
  *         self.modulus = 2685821657736338717             # <<<<<<<<<<<<<<
@@ -13010,7 +13010,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
  */
   __pyx_v_self->modulus = 0x2545F4914F6CDD1D;
 
-  /* "MuchTree.pyx":713
+  /* "SuchTree/MuchTree.pyx":713
  *     cdef uint64_t modulus
  * 
  *     def __cinit__( self, tree_a, tree_b, link_matrix ) :             # <<<<<<<<<<<<<<
@@ -13026,14 +13026,14 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":726
+/* "SuchTree/MuchTree.pyx":726
  *         self.modulus = 2685821657736338717
  * 
  *     def __init__( self, tree_a, tree_b, link_matrix ) :             # <<<<<<<<<<<<<<
@@ -13042,8 +13042,8 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
  */
 
 /* Python wrapper */
-static int __pyx_pw_8MuchTree_15SuchLinkedTrees_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8MuchTree_15SuchLinkedTrees_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_tree_a = 0;
   PyObject *__pyx_v_tree_b = 0;
   PyObject *__pyx_v_link_matrix = 0;
@@ -13105,18 +13105,18 @@ static int __pyx_pw_8MuchTree_15SuchLinkedTrees_3__init__(PyObject *__pyx_v_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 726, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_tree_a, __pyx_v_tree_b, __pyx_v_link_matrix);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_2__init__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_tree_a, __pyx_v_tree_b, __pyx_v_link_matrix);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_tree_a, PyObject *__pyx_v_tree_b, PyObject *__pyx_v_link_matrix) {
+static int __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_tree_a, PyObject *__pyx_v_tree_b, PyObject *__pyx_v_link_matrix) {
   PyObject *__pyx_v_n = NULL;
   PyObject *__pyx_v_i = NULL;
   CYTHON_UNUSED PyObject *__pyx_v_colname = NULL;
@@ -13154,7 +13154,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "MuchTree.pyx":729
+  /* "SuchTree/MuchTree.pyx":729
  * 
  *         # these objects are constructed only when first accessed
  *         self.np_table = None             # <<<<<<<<<<<<<<
@@ -13167,7 +13167,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->np_table);
   __pyx_v_self->np_table = Py_None;
 
-  /* "MuchTree.pyx":730
+  /* "SuchTree/MuchTree.pyx":730
  *         # these objects are constructed only when first accessed
  *         self.np_table = None
  *         self.np_linklist = None             # <<<<<<<<<<<<<<
@@ -13180,7 +13180,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->np_linklist);
   __pyx_v_self->np_linklist = Py_None;
 
-  /* "MuchTree.pyx":731
+  /* "SuchTree/MuchTree.pyx":731
  *         self.np_table = None
  *         self.np_linklist = None
  *         self.linked_leafsA = None             # <<<<<<<<<<<<<<
@@ -13193,7 +13193,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->linked_leafsA);
   __pyx_v_self->linked_leafsA = Py_None;
 
-  /* "MuchTree.pyx":732
+  /* "SuchTree/MuchTree.pyx":732
  *         self.np_linklist = None
  *         self.linked_leafsA = None
  *         self.linked_leafsB = None             # <<<<<<<<<<<<<<
@@ -13206,7 +13206,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->linked_leafsB);
   __pyx_v_self->linked_leafsB = Py_None;
 
-  /* "MuchTree.pyx":733
+  /* "SuchTree/MuchTree.pyx":733
  *         self.linked_leafsA = None
  *         self.linked_leafsB = None
  *         self.col_ids = None             # <<<<<<<<<<<<<<
@@ -13219,7 +13219,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->col_ids);
   __pyx_v_self->col_ids = Py_None;
 
-  /* "MuchTree.pyx":734
+  /* "SuchTree/MuchTree.pyx":734
  *         self.linked_leafsB = None
  *         self.col_ids = None
  *         self.row_ids = None             # <<<<<<<<<<<<<<
@@ -13232,7 +13232,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->row_ids);
   __pyx_v_self->row_ids = Py_None;
 
-  /* "MuchTree.pyx":735
+  /* "SuchTree/MuchTree.pyx":735
  *         self.col_ids = None
  *         self.row_ids = None
  *         self.col_names = None             # <<<<<<<<<<<<<<
@@ -13245,7 +13245,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->col_names);
   __pyx_v_self->col_names = Py_None;
 
-  /* "MuchTree.pyx":736
+  /* "SuchTree/MuchTree.pyx":736
  *         self.row_ids = None
  *         self.col_names = None
  *         self.row_names = None             # <<<<<<<<<<<<<<
@@ -13258,7 +13258,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->row_names);
   __pyx_v_self->row_names = Py_None;
 
-  /* "MuchTree.pyx":737
+  /* "SuchTree/MuchTree.pyx":737
  *         self.col_names = None
  *         self.row_names = None
  *         self.subset_columns = None             # <<<<<<<<<<<<<<
@@ -13271,7 +13271,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->subset_columns);
   __pyx_v_self->subset_columns = Py_None;
 
-  /* "MuchTree.pyx":738
+  /* "SuchTree/MuchTree.pyx":738
  *         self.row_names = None
  *         self.subset_columns = None
  *         self.subset_a_leafs = None             # <<<<<<<<<<<<<<
@@ -13284,7 +13284,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->subset_a_leafs);
   __pyx_v_self->subset_a_leafs = Py_None;
 
-  /* "MuchTree.pyx":739
+  /* "SuchTree/MuchTree.pyx":739
  *         self.subset_columns = None
  *         self.subset_a_leafs = None
  *         self.subset_b_leafs = None             # <<<<<<<<<<<<<<
@@ -13297,7 +13297,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->subset_b_leafs);
   __pyx_v_self->subset_b_leafs = Py_None;
 
-  /* "MuchTree.pyx":740
+  /* "SuchTree/MuchTree.pyx":740
  *         self.subset_a_leafs = None
  *         self.subset_b_leafs = None
  *         self.row_map = None             # <<<<<<<<<<<<<<
@@ -13310,7 +13310,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->row_map);
   __pyx_v_self->row_map = Py_None;
 
-  /* "MuchTree.pyx":744
+  /* "SuchTree/MuchTree.pyx":744
  *         # build trees from newick files, URLs to newick files or
  *         # from existing SuchTrees
  *         if isinstance( tree_a, basestring ):             # <<<<<<<<<<<<<<
@@ -13321,14 +13321,14 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":745
+    /* "SuchTree/MuchTree.pyx":745
  *         # from existing SuchTrees
  *         if isinstance( tree_a, basestring ):
  *             self.TreeA = SuchTree( tree_a )             # <<<<<<<<<<<<<<
  *         elif type( tree_a ) == SuchTree :
  *             self.TreeA = tree_a
  */
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8MuchTree_SuchTree), __pyx_v_tree_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 745, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8SuchTree_8MuchTree_SuchTree), __pyx_v_tree_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 745, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_3);
     __Pyx_GOTREF(__pyx_v_self->TreeA);
@@ -13336,7 +13336,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_v_self->TreeA = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":744
+    /* "SuchTree/MuchTree.pyx":744
  *         # build trees from newick files, URLs to newick files or
  *         # from existing SuchTrees
  *         if isinstance( tree_a, basestring ):             # <<<<<<<<<<<<<<
@@ -13346,19 +13346,19 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":746
+  /* "SuchTree/MuchTree.pyx":746
  *         if isinstance( tree_a, basestring ):
  *             self.TreeA = SuchTree( tree_a )
  *         elif type( tree_a ) == SuchTree :             # <<<<<<<<<<<<<<
  *             self.TreeA = tree_a
  *         else :
  */
-  __pyx_t_3 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_tree_a)), ((PyObject *)__pyx_ptype_8MuchTree_SuchTree), Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 746, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_tree_a)), ((PyObject *)__pyx_ptype_8SuchTree_8MuchTree_SuchTree), Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 746, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 746, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (likely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":747
+    /* "SuchTree/MuchTree.pyx":747
  *             self.TreeA = SuchTree( tree_a )
  *         elif type( tree_a ) == SuchTree :
  *             self.TreeA = tree_a             # <<<<<<<<<<<<<<
@@ -13371,7 +13371,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_v_self->TreeA);
     __pyx_v_self->TreeA = __pyx_v_tree_a;
 
-    /* "MuchTree.pyx":746
+    /* "SuchTree/MuchTree.pyx":746
  *         if isinstance( tree_a, basestring ):
  *             self.TreeA = SuchTree( tree_a )
  *         elif type( tree_a ) == SuchTree :             # <<<<<<<<<<<<<<
@@ -13381,7 +13381,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":749
+  /* "SuchTree/MuchTree.pyx":749
  *             self.TreeA = tree_a
  *         else :
  *             raise Exception( 'unknown input for tree', type(tree_a) )             # <<<<<<<<<<<<<<
@@ -13406,7 +13406,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_L3:;
 
-  /* "MuchTree.pyx":753
+  /* "SuchTree/MuchTree.pyx":753
  *         # build trees from newick files, URLs to newick files or
  *         # from existing SuchTrees
  *         if isinstance( tree_b, basestring ):             # <<<<<<<<<<<<<<
@@ -13417,14 +13417,14 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":754
+    /* "SuchTree/MuchTree.pyx":754
  *         # from existing SuchTrees
  *         if isinstance( tree_b, basestring ):
  *             self.TreeB = SuchTree( tree_b )             # <<<<<<<<<<<<<<
  *         elif type( tree_b ) == SuchTree :
  *             self.TreeB = tree_b
  */
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8MuchTree_SuchTree), __pyx_v_tree_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 754, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8SuchTree_8MuchTree_SuchTree), __pyx_v_tree_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 754, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_4);
     __Pyx_GOTREF(__pyx_v_self->TreeB);
@@ -13432,7 +13432,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_v_self->TreeB = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":753
+    /* "SuchTree/MuchTree.pyx":753
  *         # build trees from newick files, URLs to newick files or
  *         # from existing SuchTrees
  *         if isinstance( tree_b, basestring ):             # <<<<<<<<<<<<<<
@@ -13442,19 +13442,19 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     goto __pyx_L4;
   }
 
-  /* "MuchTree.pyx":755
+  /* "SuchTree/MuchTree.pyx":755
  *         if isinstance( tree_b, basestring ):
  *             self.TreeB = SuchTree( tree_b )
  *         elif type( tree_b ) == SuchTree :             # <<<<<<<<<<<<<<
  *             self.TreeB = tree_b
  *         else :
  */
-  __pyx_t_4 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_tree_b)), ((PyObject *)__pyx_ptype_8MuchTree_SuchTree), Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 755, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_tree_b)), ((PyObject *)__pyx_ptype_8SuchTree_8MuchTree_SuchTree), Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 755, __pyx_L1_error)
   __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 755, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (likely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":756
+    /* "SuchTree/MuchTree.pyx":756
  *             self.TreeB = SuchTree( tree_b )
  *         elif type( tree_b ) == SuchTree :
  *             self.TreeB = tree_b             # <<<<<<<<<<<<<<
@@ -13467,7 +13467,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_v_self->TreeB);
     __pyx_v_self->TreeB = __pyx_v_tree_b;
 
-    /* "MuchTree.pyx":755
+    /* "SuchTree/MuchTree.pyx":755
  *         if isinstance( tree_b, basestring ):
  *             self.TreeB = SuchTree( tree_b )
  *         elif type( tree_b ) == SuchTree :             # <<<<<<<<<<<<<<
@@ -13477,7 +13477,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     goto __pyx_L4;
   }
 
-  /* "MuchTree.pyx":758
+  /* "SuchTree/MuchTree.pyx":758
  *             self.TreeB = tree_b
  *         else :
  *             raise Exception( 'unknown input for tree', type(tree_b) )             # <<<<<<<<<<<<<<
@@ -13502,7 +13502,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_L4:;
 
-  /* "MuchTree.pyx":761
+  /* "SuchTree/MuchTree.pyx":761
  * 
  *         # make sure the link matrix connects the trees
  *         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :             # <<<<<<<<<<<<<<
@@ -13531,7 +13531,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_2 = ((!__pyx_t_1) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":762
+    /* "SuchTree/MuchTree.pyx":762
  *         # make sure the link matrix connects the trees
  *         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )             # <<<<<<<<<<<<<<
@@ -13544,7 +13544,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __PYX_ERR(0, 762, __pyx_L1_error)
 
-    /* "MuchTree.pyx":761
+    /* "SuchTree/MuchTree.pyx":761
  * 
  *         # make sure the link matrix connects the trees
  *         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :             # <<<<<<<<<<<<<<
@@ -13553,7 +13553,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":764
+  /* "SuchTree/MuchTree.pyx":764
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :             # <<<<<<<<<<<<<<
@@ -13599,7 +13599,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_1 = ((!__pyx_t_2) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":765
+    /* "SuchTree/MuchTree.pyx":765
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )             # <<<<<<<<<<<<<<
@@ -13612,7 +13612,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __PYX_ERR(0, 765, __pyx_L1_error)
 
-    /* "MuchTree.pyx":764
+    /* "SuchTree/MuchTree.pyx":764
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :             # <<<<<<<<<<<<<<
@@ -13621,7 +13621,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":767
+  /* "SuchTree/MuchTree.pyx":767
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :             # <<<<<<<<<<<<<<
@@ -13667,7 +13667,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_2 = ((!__pyx_t_1) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":768
+    /* "SuchTree/MuchTree.pyx":768
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :
  *             raise Exception( 'axis[1] does not match TreeB leaf names' )             # <<<<<<<<<<<<<<
@@ -13680,7 +13680,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __PYX_ERR(0, 768, __pyx_L1_error)
 
-    /* "MuchTree.pyx":767
+    /* "SuchTree/MuchTree.pyx":767
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :             # <<<<<<<<<<<<<<
@@ -13689,7 +13689,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":771
+  /* "SuchTree/MuchTree.pyx":771
  * 
  *         # set row and column indexes
  *         self.row_ids = np.array( list(self.TreeA.leafs.values()) )             # <<<<<<<<<<<<<<
@@ -13746,7 +13746,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->row_ids = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":772
+  /* "SuchTree/MuchTree.pyx":772
  *         # set row and column indexes
  *         self.row_ids = np.array( list(self.TreeA.leafs.values()) )
  *         self.col_ids = np.array( list(self.TreeB.leafs.values()) )             # <<<<<<<<<<<<<<
@@ -13803,7 +13803,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->col_ids = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":773
+  /* "SuchTree/MuchTree.pyx":773
  *         self.row_ids = np.array( list(self.TreeA.leafs.values()) )
  *         self.col_ids = np.array( list(self.TreeB.leafs.values()) )
  *         self.row_names = list(self.TreeA.leafs.keys())             # <<<<<<<<<<<<<<
@@ -13839,7 +13839,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->row_names = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":774
+  /* "SuchTree/MuchTree.pyx":774
  *         self.col_ids = np.array( list(self.TreeB.leafs.values()) )
  *         self.row_names = list(self.TreeA.leafs.keys())
  *         self.col_names = list(self.TreeB.leafs.keys())             # <<<<<<<<<<<<<<
@@ -13875,7 +13875,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->col_names = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":776
+  /* "SuchTree/MuchTree.pyx":776
  *         self.col_names = list(self.TreeB.leafs.keys())
  * 
  *         self.n_rows = self.TreeA.n_leafs             # <<<<<<<<<<<<<<
@@ -13888,7 +13888,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_v_self->n_rows = __pyx_t_8;
 
-  /* "MuchTree.pyx":777
+  /* "SuchTree/MuchTree.pyx":777
  * 
  *         self.n_rows = self.TreeA.n_leafs
  *         self.n_cols = self.TreeB.n_leafs             # <<<<<<<<<<<<<<
@@ -13901,7 +13901,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_v_self->n_cols = __pyx_t_8;
 
-  /* "MuchTree.pyx":780
+  /* "SuchTree/MuchTree.pyx":780
  * 
  *         # reverse map for row ids
  *         self.row_map = np.zeros( self.TreeA.length, dtype=int )             # <<<<<<<<<<<<<<
@@ -13934,7 +13934,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->row_map = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":781
+  /* "SuchTree/MuchTree.pyx":781
  *         # reverse map for row ids
  *         self.row_map = np.zeros( self.TreeA.length, dtype=int )
  *         for n,i in enumerate(self.row_ids) :             # <<<<<<<<<<<<<<
@@ -13992,7 +13992,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_t_6 = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":782
+    /* "SuchTree/MuchTree.pyx":782
  *         self.row_map = np.zeros( self.TreeA.length, dtype=int )
  *         for n,i in enumerate(self.row_ids) :
  *             self.row_map[i] = n             # <<<<<<<<<<<<<<
@@ -14001,7 +14001,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
     if (unlikely(PyObject_SetItem(__pyx_v_self->row_map, __pyx_v_i, __pyx_v_n) < 0)) __PYX_ERR(0, 782, __pyx_L1_error)
 
-    /* "MuchTree.pyx":781
+    /* "SuchTree/MuchTree.pyx":781
  *         # reverse map for row ids
  *         self.row_map = np.zeros( self.TreeA.length, dtype=int )
  *         for n,i in enumerate(self.row_ids) :             # <<<<<<<<<<<<<<
@@ -14012,7 +14012,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":786
+  /* "SuchTree/MuchTree.pyx":786
  *         # populate the link table
  *         #print id(self), 'allocating columns in', <unsigned int> &self.table
  *         self.n_links = 0             # <<<<<<<<<<<<<<
@@ -14021,7 +14021,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   __pyx_v_self->n_links = 0;
 
-  /* "MuchTree.pyx":787
+  /* "SuchTree/MuchTree.pyx":787
  *         #print id(self), 'allocating columns in', <unsigned int> &self.table
  *         self.n_links = 0
  *         for i,(colname,s) in enumerate( link_matrix.T.reindex( self.col_names ).iterrows() ) :             # <<<<<<<<<<<<<<
@@ -14166,7 +14166,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_t_6 = __pyx_t_7;
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":790
+    /* "SuchTree/MuchTree.pyx":790
  *             # attach leaf nodes in TreeB to corresponding column in
  *             # the link table
  *             self.TreeB.link_leaf( self.col_ids[i], i )             # <<<<<<<<<<<<<<
@@ -14226,7 +14226,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":791
+    /* "SuchTree/MuchTree.pyx":791
  *             # the link table
  *             self.TreeB.link_leaf( self.col_ids[i], i )
  *             l = []             # <<<<<<<<<<<<<<
@@ -14238,7 +14238,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_XDECREF_SET(__pyx_v_l, ((PyObject*)__pyx_t_7));
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":792
+    /* "SuchTree/MuchTree.pyx":792
  *             self.TreeB.link_leaf( self.col_ids[i], i )
  *             l = []
  *             for rowname, value in s.iteritems() :             # <<<<<<<<<<<<<<
@@ -14266,7 +14266,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __Pyx_XDECREF_SET(__pyx_v_value, __pyx_t_14);
       __pyx_t_14 = 0;
 
-      /* "MuchTree.pyx":793
+      /* "SuchTree/MuchTree.pyx":793
  *             l = []
  *             for rowname, value in s.iteritems() :
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )             # <<<<<<<<<<<<<<
@@ -14288,7 +14288,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     }
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":794
+    /* "SuchTree/MuchTree.pyx":794
  *             for rowname, value in s.iteritems() :
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
  *             col_size = len(l)             # <<<<<<<<<<<<<<
@@ -14301,7 +14301,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_XDECREF_SET(__pyx_v_col_size, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":795
+    /* "SuchTree/MuchTree.pyx":795
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
  *             col_size = len(l)
  *             if self.table[i].links == NULL :             # <<<<<<<<<<<<<<
@@ -14312,7 +14312,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_t_2 = (((__pyx_v_self->table[__pyx_t_16]).links == NULL) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":796
+      /* "SuchTree/MuchTree.pyx":796
  *             col_size = len(l)
  *             if self.table[i].links == NULL :
  *                 self.table[i].leaf_id = self.col_ids[i]             # <<<<<<<<<<<<<<
@@ -14326,7 +14326,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 796, __pyx_L1_error)
       (__pyx_v_self->table[__pyx_t_16]).leaf_id = __pyx_t_8;
 
-      /* "MuchTree.pyx":797
+      /* "SuchTree/MuchTree.pyx":797
  *             if self.table[i].links == NULL :
  *                 self.table[i].leaf_id = self.col_ids[i]
  *                 self.n_links += col_size             # <<<<<<<<<<<<<<
@@ -14342,7 +14342,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_v_self->n_links = __pyx_t_8;
 
-      /* "MuchTree.pyx":798
+      /* "SuchTree/MuchTree.pyx":798
  *                 self.table[i].leaf_id = self.col_ids[i]
  *                 self.n_links += col_size
  *                 self.table[i].length = col_size             # <<<<<<<<<<<<<<
@@ -14353,7 +14353,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 798, __pyx_L1_error)
       (__pyx_v_self->table[__pyx_t_16]).length = __pyx_t_8;
 
-      /* "MuchTree.pyx":799
+      /* "SuchTree/MuchTree.pyx":799
  *                 self.n_links += col_size
  *                 self.table[i].length = col_size
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )             # <<<<<<<<<<<<<<
@@ -14370,7 +14370,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 799, __pyx_L1_error)
       (__pyx_v_self->table[__pyx_t_16]).links = ((unsigned int *)PyMem_Malloc(__pyx_t_19));
 
-      /* "MuchTree.pyx":800
+      /* "SuchTree/MuchTree.pyx":800
  *                 self.table[i].length = col_size
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
  *                 for j in xrange( col_size ) :             # <<<<<<<<<<<<<<
@@ -14422,7 +14422,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
         __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_7);
         __pyx_t_7 = 0;
 
-        /* "MuchTree.pyx":801
+        /* "SuchTree/MuchTree.pyx":801
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
  *                 for j in xrange( col_size ) :
  *                     self.table[i].links[j] = l[j]             # <<<<<<<<<<<<<<
@@ -14437,7 +14437,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
         __pyx_t_21 = __Pyx_PyIndex_AsSsize_t(__pyx_v_j); if (unlikely((__pyx_t_21 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 801, __pyx_L1_error)
         ((__pyx_v_self->table[__pyx_t_15]).links[__pyx_t_21]) = __pyx_t_8;
 
-        /* "MuchTree.pyx":800
+        /* "SuchTree/MuchTree.pyx":800
  *                 self.table[i].length = col_size
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
  *                 for j in xrange( col_size ) :             # <<<<<<<<<<<<<<
@@ -14447,7 +14447,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "MuchTree.pyx":795
+      /* "SuchTree/MuchTree.pyx":795
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
  *             col_size = len(l)
  *             if self.table[i].links == NULL :             # <<<<<<<<<<<<<<
@@ -14456,7 +14456,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
     }
 
-    /* "MuchTree.pyx":787
+    /* "SuchTree/MuchTree.pyx":787
  *         #print id(self), 'allocating columns in', <unsigned int> &self.table
  *         self.n_links = 0
  *         for i,(colname,s) in enumerate( link_matrix.T.reindex( self.col_names ).iterrows() ) :             # <<<<<<<<<<<<<<
@@ -14467,7 +14467,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":805
+  /* "SuchTree/MuchTree.pyx":805
  *         # by default, the subset is the whole table
  *         #print 'bulding default subset.'
  *         self.subset_a_root = self.TreeA.root             # <<<<<<<<<<<<<<
@@ -14480,7 +14480,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_self->subset_a_root = __pyx_t_8;
 
-  /* "MuchTree.pyx":806
+  /* "SuchTree/MuchTree.pyx":806
  *         #print 'bulding default subset.'
  *         self.subset_a_root = self.TreeA.root
  *         self.subset_b_root = self.TreeB.root             # <<<<<<<<<<<<<<
@@ -14493,7 +14493,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_self->subset_b_root = __pyx_t_8;
 
-  /* "MuchTree.pyx":807
+  /* "SuchTree/MuchTree.pyx":807
  *         self.subset_a_root = self.TreeA.root
  *         self.subset_b_root = self.TreeB.root
  *         self.subset_a_size = len( self.row_ids )             # <<<<<<<<<<<<<<
@@ -14506,7 +14506,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_self->subset_a_size = __pyx_t_9;
 
-  /* "MuchTree.pyx":808
+  /* "SuchTree/MuchTree.pyx":808
  *         self.subset_b_root = self.TreeB.root
  *         self.subset_a_size = len( self.row_ids )
  *         self.subset_b_size = len( self.col_ids )             # <<<<<<<<<<<<<<
@@ -14519,7 +14519,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_self->subset_b_size = __pyx_t_9;
 
-  /* "MuchTree.pyx":809
+  /* "SuchTree/MuchTree.pyx":809
  *         self.subset_a_size = len( self.row_ids )
  *         self.subset_b_size = len( self.col_ids )
  *         self.subset_n_links = self.n_links             # <<<<<<<<<<<<<<
@@ -14529,7 +14529,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_8 = __pyx_v_self->n_links;
   __pyx_v_self->subset_n_links = __pyx_t_8;
 
-  /* "MuchTree.pyx":810
+  /* "SuchTree/MuchTree.pyx":810
  *         self.subset_b_size = len( self.col_ids )
  *         self.subset_n_links = self.n_links
  *         self.subset_rows    = np.array( range( self.subset_a_size ) )             # <<<<<<<<<<<<<<
@@ -14568,7 +14568,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->subset_rows = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":811
+  /* "SuchTree/MuchTree.pyx":811
  *         self.subset_n_links = self.n_links
  *         self.subset_rows    = np.array( range( self.subset_a_size ) )
  *         self.subset_columns = np.array( range( self.subset_b_size ) )             # <<<<<<<<<<<<<<
@@ -14607,7 +14607,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->subset_columns = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":812
+  /* "SuchTree/MuchTree.pyx":812
  *         self.subset_rows    = np.array( range( self.subset_a_size ) )
  *         self.subset_columns = np.array( range( self.subset_b_size ) )
  *         self.subset_a_leafs = self.row_ids             # <<<<<<<<<<<<<<
@@ -14622,7 +14622,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->subset_a_leafs = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":813
+  /* "SuchTree/MuchTree.pyx":813
  *         self.subset_columns = np.array( range( self.subset_b_size ) )
  *         self.subset_a_leafs = self.row_ids
  *         self.subset_b_leafs = self.col_ids             # <<<<<<<<<<<<<<
@@ -14637,7 +14637,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->subset_b_leafs = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":817
+  /* "SuchTree/MuchTree.pyx":817
  *         # make np_linklist
  *         #print 'bulding default link list.'
  *         self.np_linklist = np.ndarray( ( self.n_links, 2 ), dtype=int )             # <<<<<<<<<<<<<<
@@ -14672,16 +14672,16 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->np_linklist = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":818
+  /* "SuchTree/MuchTree.pyx":818
  *         #print 'bulding default link list.'
  *         self.np_linklist = np.ndarray( ( self.n_links, 2 ), dtype=int )
  *         self._build_linklist()             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__( self ) :
  */
-  ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
+  ((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
 
-  /* "MuchTree.pyx":726
+  /* "SuchTree/MuchTree.pyx":726
  *         self.modulus = 2685821657736338717
  * 
  *     def __init__( self, tree_a, tree_b, link_matrix ) :             # <<<<<<<<<<<<<<
@@ -14700,7 +14700,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_14);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_n);
@@ -14716,7 +14716,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":820
+/* "SuchTree/MuchTree.pyx":820
  *         self._build_linklist()
  * 
  *     def __dealloc__( self ) :             # <<<<<<<<<<<<<<
@@ -14725,17 +14725,17 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
 
 /* Python wrapper */
-static void __pyx_pw_8MuchTree_15SuchLinkedTrees_5__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_8MuchTree_15SuchLinkedTrees_5__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5__dealloc__(PyObject *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
-  __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_4__dealloc__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static void __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   unsigned int __pyx_v_i;
   __Pyx_RefNannyDeclarations
   unsigned int __pyx_t_1;
@@ -14744,7 +14744,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
   int __pyx_t_4;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "MuchTree.pyx":824
+  /* "SuchTree/MuchTree.pyx":824
  *         #print id(self), 'freeing columns in', <unsigned int> &self.table
  * 
  *         for i in xrange( self.table_size ) :             # <<<<<<<<<<<<<<
@@ -14756,7 +14756,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "MuchTree.pyx":825
+    /* "SuchTree/MuchTree.pyx":825
  * 
  *         for i in xrange( self.table_size ) :
  *             if not self.table[i].links == NULL :             # <<<<<<<<<<<<<<
@@ -14766,7 +14766,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
     __pyx_t_4 = ((!(((__pyx_v_self->table[__pyx_v_i]).links == NULL) != 0)) != 0);
     if (__pyx_t_4) {
 
-      /* "MuchTree.pyx":826
+      /* "SuchTree/MuchTree.pyx":826
  *         for i in xrange( self.table_size ) :
  *             if not self.table[i].links == NULL :
  *                 PyMem_Free( self.table[i].links )             # <<<<<<<<<<<<<<
@@ -14775,7 +14775,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
  */
       PyMem_Free((__pyx_v_self->table[__pyx_v_i]).links);
 
-      /* "MuchTree.pyx":825
+      /* "SuchTree/MuchTree.pyx":825
  * 
  *         for i in xrange( self.table_size ) :
  *             if not self.table[i].links == NULL :             # <<<<<<<<<<<<<<
@@ -14785,7 +14785,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
     }
   }
 
-  /* "MuchTree.pyx":830
+  /* "SuchTree/MuchTree.pyx":830
  *         #print id(self), 'freeing table', <unsigned int> &self.table
  * 
  *         PyMem_Free( self.table )             # <<<<<<<<<<<<<<
@@ -14794,7 +14794,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
  */
   PyMem_Free(__pyx_v_self->table);
 
-  /* "MuchTree.pyx":820
+  /* "SuchTree/MuchTree.pyx":820
  *         self._build_linklist()
  * 
  *     def __dealloc__( self ) :             # <<<<<<<<<<<<<<
@@ -14806,7 +14806,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
   __Pyx_RefNannyFinishContext();
 }
 
-/* "MuchTree.pyx":834
+/* "SuchTree/MuchTree.pyx":834
  *     property TreeA :
  *         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -14815,24 +14815,24 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_5TreeA_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_5TreeA_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeA_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeA_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeA___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":835
+  /* "SuchTree/MuchTree.pyx":835
  *         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :
  *             return self.TreeA             # <<<<<<<<<<<<<<
@@ -14844,7 +14844,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __py
   __pyx_r = __pyx_v_self->TreeA;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":834
+  /* "SuchTree/MuchTree.pyx":834
  *     property TreeA :
  *         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -14859,7 +14859,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __py
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":839
+/* "SuchTree/MuchTree.pyx":839
  *     property TreeB :
  *         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -14868,24 +14868,24 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_5TreeB_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_5TreeB_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeB_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeB_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeB___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":840
+  /* "SuchTree/MuchTree.pyx":840
  *         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :
  *             return self.TreeB             # <<<<<<<<<<<<<<
@@ -14897,7 +14897,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __py
   __pyx_r = __pyx_v_self->TreeB;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":839
+  /* "SuchTree/MuchTree.pyx":839
  *     property TreeB :
  *         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -14912,7 +14912,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __py
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":844
+/* "SuchTree/MuchTree.pyx":844
  *     property n_links :
  *         'size of the link list'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -14921,19 +14921,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7n_links_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7n_links_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7n_links_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7n_links_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7n_links___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -14942,7 +14942,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":845
+  /* "SuchTree/MuchTree.pyx":845
  *         'size of the link list'
  *         def __get__( self ) :
  *             return self.n_links             # <<<<<<<<<<<<<<
@@ -14956,7 +14956,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":844
+  /* "SuchTree/MuchTree.pyx":844
  *     property n_links :
  *         'size of the link list'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -14967,7 +14967,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.n_links.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.n_links.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -14975,7 +14975,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":849
+/* "SuchTree/MuchTree.pyx":849
  *     property n_cols :
  *         'Number of columns in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -14984,19 +14984,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_6n_cols_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_6n_cols_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_cols_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_cols_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_cols___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -15005,7 +15005,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":850
+  /* "SuchTree/MuchTree.pyx":850
  *         'Number of columns in the link matrix.'
  *         def __get__( self ) :
  *             return self.n_cols             # <<<<<<<<<<<<<<
@@ -15019,7 +15019,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __p
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":849
+  /* "SuchTree/MuchTree.pyx":849
  *     property n_cols :
  *         'Number of columns in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15030,7 +15030,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __p
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.n_cols.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.n_cols.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15038,7 +15038,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __p
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":854
+/* "SuchTree/MuchTree.pyx":854
  *     property n_rows :
  *         'Number of rows in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15047,19 +15047,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_6n_rows_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_6n_rows_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_rows_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_rows_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_rows___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -15068,7 +15068,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":855
+  /* "SuchTree/MuchTree.pyx":855
  *         'Number of rows in the link matrix.'
  *         def __get__( self ) :
  *             return self.n_rows             # <<<<<<<<<<<<<<
@@ -15082,7 +15082,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __p
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":854
+  /* "SuchTree/MuchTree.pyx":854
  *     property n_rows :
  *         'Number of rows in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15093,7 +15093,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __p
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.n_rows.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.n_rows.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15101,7 +15101,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __p
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":859
+/* "SuchTree/MuchTree.pyx":859
  *     property col_ids :
  *         'ids of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15110,19 +15110,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7col_ids_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7col_ids_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7col_ids_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7col_ids_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7col_ids___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -15135,7 +15135,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":860
+  /* "SuchTree/MuchTree.pyx":860
  *         'ids of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_ids is None :             # <<<<<<<<<<<<<<
@@ -15146,7 +15146,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":861
+    /* "SuchTree/MuchTree.pyx":861
  *         def __get__( self ) :
  *             if self.col_ids is None :
  *                 self.col_ids = self.TreeB.leafs.values()             # <<<<<<<<<<<<<<
@@ -15179,7 +15179,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
     __pyx_v_self->col_ids = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":860
+    /* "SuchTree/MuchTree.pyx":860
  *         'ids of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_ids is None :             # <<<<<<<<<<<<<<
@@ -15188,7 +15188,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
  */
   }
 
-  /* "MuchTree.pyx":862
+  /* "SuchTree/MuchTree.pyx":862
  *             if self.col_ids is None :
  *                 self.col_ids = self.TreeB.leafs.values()
  *             return self.col_ids             # <<<<<<<<<<<<<<
@@ -15200,7 +15200,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   __pyx_r = __pyx_v_self->col_ids;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":859
+  /* "SuchTree/MuchTree.pyx":859
  *     property col_ids :
  *         'ids of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15213,7 +15213,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.col_ids.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.col_ids.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15221,7 +15221,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":866
+/* "SuchTree/MuchTree.pyx":866
  *     property row_ids :
  *         'ids of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15230,19 +15230,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7row_ids_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7row_ids_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7row_ids_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7row_ids_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7row_ids___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -15255,7 +15255,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":867
+  /* "SuchTree/MuchTree.pyx":867
  *         'ids of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :
  *             if self.row_ids is None :             # <<<<<<<<<<<<<<
@@ -15266,7 +15266,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":868
+    /* "SuchTree/MuchTree.pyx":868
  *         def __get__( self ) :
  *             if self.row_ids is None :
  *                 self.row_ids = self.TreeA.leafs.values()             # <<<<<<<<<<<<<<
@@ -15299,7 +15299,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
     __pyx_v_self->row_ids = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":867
+    /* "SuchTree/MuchTree.pyx":867
  *         'ids of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :
  *             if self.row_ids is None :             # <<<<<<<<<<<<<<
@@ -15308,7 +15308,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
  */
   }
 
-  /* "MuchTree.pyx":869
+  /* "SuchTree/MuchTree.pyx":869
  *             if self.row_ids is None :
  *                 self.row_ids = self.TreeA.leafs.values()
  *             return self.row_ids             # <<<<<<<<<<<<<<
@@ -15320,7 +15320,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   __pyx_r = __pyx_v_self->row_ids;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":866
+  /* "SuchTree/MuchTree.pyx":866
  *     property row_ids :
  *         'ids of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15333,7 +15333,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.row_ids.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.row_ids.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15341,7 +15341,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":873
+/* "SuchTree/MuchTree.pyx":873
  *     property col_names :
  *         'Names of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15350,19 +15350,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9col_names_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9col_names_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9col_names_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9col_names_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_9col_names___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -15375,7 +15375,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":874
+  /* "SuchTree/MuchTree.pyx":874
  *         'Names of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_names is None :             # <<<<<<<<<<<<<<
@@ -15386,7 +15386,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":875
+    /* "SuchTree/MuchTree.pyx":875
  *         def __get__( self ) :
  *             if self.col_names is None :
  *                 self.col_names = self.TreeB.leafs.keys()             # <<<<<<<<<<<<<<
@@ -15419,7 +15419,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
     __pyx_v_self->col_names = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":874
+    /* "SuchTree/MuchTree.pyx":874
  *         'Names of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_names is None :             # <<<<<<<<<<<<<<
@@ -15428,7 +15428,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
  */
   }
 
-  /* "MuchTree.pyx":876
+  /* "SuchTree/MuchTree.pyx":876
  *             if self.col_names is None :
  *                 self.col_names = self.TreeB.leafs.keys()
  *             return self.col_names             # <<<<<<<<<<<<<<
@@ -15440,7 +15440,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   __pyx_r = __pyx_v_self->col_names;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":873
+  /* "SuchTree/MuchTree.pyx":873
  *     property col_names :
  *         'Names of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15453,7 +15453,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.col_names.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.col_names.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15461,7 +15461,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":880
+/* "SuchTree/MuchTree.pyx":880
  *     property row_names :
  *         'Names of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15470,19 +15470,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9row_names_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9row_names_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9row_names_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9row_names_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_9row_names___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -15495,7 +15495,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":881
+  /* "SuchTree/MuchTree.pyx":881
  *         'Names of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_ids is None :             # <<<<<<<<<<<<<<
@@ -15506,7 +15506,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":882
+    /* "SuchTree/MuchTree.pyx":882
  *         def __get__( self ) :
  *             if self.col_ids is None :
  *                 self.row_names = self.TreeA.leafs.keys()             # <<<<<<<<<<<<<<
@@ -15539,7 +15539,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
     __pyx_v_self->row_names = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":881
+    /* "SuchTree/MuchTree.pyx":881
  *         'Names of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_ids is None :             # <<<<<<<<<<<<<<
@@ -15548,7 +15548,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
  */
   }
 
-  /* "MuchTree.pyx":883
+  /* "SuchTree/MuchTree.pyx":883
  *             if self.col_ids is None :
  *                 self.row_names = self.TreeA.leafs.keys()
  *             return self.row_names             # <<<<<<<<<<<<<<
@@ -15560,7 +15560,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   __pyx_r = __pyx_v_self->row_names;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":880
+  /* "SuchTree/MuchTree.pyx":880
  *     property row_names :
  *         'Names of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15573,7 +15573,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.row_names.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.row_names.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15581,7 +15581,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":887
+/* "SuchTree/MuchTree.pyx":887
  *     property subset_columns :
  *         'ids of the current subset columns.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15590,24 +15590,24 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_columns_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_columns_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_columns_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_columns_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":888
+  /* "SuchTree/MuchTree.pyx":888
  *         'ids of the current subset columns.'
  *         def __get__( self ) :
  *             return self.subset_columns             # <<<<<<<<<<<<<<
@@ -15619,7 +15619,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(s
   __pyx_r = __pyx_v_self->subset_columns;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":887
+  /* "SuchTree/MuchTree.pyx":887
  *     property subset_columns :
  *         'ids of the current subset columns.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15634,7 +15634,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(s
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":892
+/* "SuchTree/MuchTree.pyx":892
  *     property subset_a_leafs :
  *         'ids of the current subset rows.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15643,24 +15643,24 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(s
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_a_leafs_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_a_leafs_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_a_leafs_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_a_leafs_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":893
+  /* "SuchTree/MuchTree.pyx":893
  *         'ids of the current subset rows.'
  *         def __get__( self ) :
  *             return self.subset_a_leafs             # <<<<<<<<<<<<<<
@@ -15672,7 +15672,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(s
   __pyx_r = __pyx_v_self->subset_a_leafs;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":892
+  /* "SuchTree/MuchTree.pyx":892
  *     property subset_a_leafs :
  *         'ids of the current subset rows.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15687,7 +15687,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(s
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":897
+/* "SuchTree/MuchTree.pyx":897
  *     property subset_b_leafs :
  *         'ids of the current subset columns.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15696,24 +15696,24 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(s
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_b_leafs_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_b_leafs_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_b_leafs_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_b_leafs_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":898
+  /* "SuchTree/MuchTree.pyx":898
  *         'ids of the current subset columns.'
  *         def __get__( self ) :
  *             return self.subset_b_leafs             # <<<<<<<<<<<<<<
@@ -15725,7 +15725,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(s
   __pyx_r = __pyx_v_self->subset_b_leafs;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":897
+  /* "SuchTree/MuchTree.pyx":897
  *     property subset_b_leafs :
  *         'ids of the current subset columns.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15740,7 +15740,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(s
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":902
+/* "SuchTree/MuchTree.pyx":902
  *     property subset_a_size :
  *         'Number of rows in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15749,19 +15749,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(s
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a_size_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a_size_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_size_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_size_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -15770,7 +15770,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":903
+  /* "SuchTree/MuchTree.pyx":903
  *         'Number of rows in the current subset.'
  *         def __get__( self ) :
  *             return self.subset_a_size             # <<<<<<<<<<<<<<
@@ -15784,7 +15784,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(st
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":902
+  /* "SuchTree/MuchTree.pyx":902
  *     property subset_a_size :
  *         'Number of rows in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15795,7 +15795,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(st
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.subset_a_size.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.subset_a_size.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15803,7 +15803,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(st
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":907
+/* "SuchTree/MuchTree.pyx":907
  *     property subset_b_size :
  *         'Number of columns in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15812,19 +15812,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_b_size_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_b_size_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_size_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_size_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -15833,7 +15833,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":908
+  /* "SuchTree/MuchTree.pyx":908
  *         'Number of columns in the current subset.'
  *         def __get__( self ) :
  *             return self.subset_b_size             # <<<<<<<<<<<<<<
@@ -15847,7 +15847,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(st
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":907
+  /* "SuchTree/MuchTree.pyx":907
  *     property subset_b_size :
  *         'Number of columns in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15858,7 +15858,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(st
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.subset_b_size.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.subset_b_size.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15866,7 +15866,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(st
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":912
+/* "SuchTree/MuchTree.pyx":912
  *     property subset_a_root :
  *         'ID of the current subset root in TreeA.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15875,19 +15875,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a_root_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a_root_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_root_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_root_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -15896,7 +15896,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":913
+  /* "SuchTree/MuchTree.pyx":913
  *         'ID of the current subset root in TreeA.'
  *         def __get__( self ) :
  *             return self.subset_a_root             # <<<<<<<<<<<<<<
@@ -15910,7 +15910,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(st
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":912
+  /* "SuchTree/MuchTree.pyx":912
  *     property subset_a_root :
  *         'ID of the current subset root in TreeA.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15921,7 +15921,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(st
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.subset_a_root.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.subset_a_root.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15929,7 +15929,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(st
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":917
+/* "SuchTree/MuchTree.pyx":917
  *     property subset_b_root :
  *         'ID of the current subset root in TreeB.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15938,19 +15938,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_b_root_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_b_root_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_root_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_root_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -15959,7 +15959,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":918
+  /* "SuchTree/MuchTree.pyx":918
  *         'ID of the current subset root in TreeB.'
  *         def __get__( self ) :
  *             return self.subset_b_root             # <<<<<<<<<<<<<<
@@ -15973,7 +15973,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(st
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":917
+  /* "SuchTree/MuchTree.pyx":917
  *     property subset_b_root :
  *         'ID of the current subset root in TreeB.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15984,7 +15984,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(st
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.subset_b_root.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.subset_b_root.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -15992,7 +15992,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(st
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":922
+/* "SuchTree/MuchTree.pyx":922
  *     property subset_n_links :
  *         'Number of links in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16001,19 +16001,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_n_links_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_n_links_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_n_links_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_n_links_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -16022,7 +16022,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(s
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":923
+  /* "SuchTree/MuchTree.pyx":923
  *         'Number of links in the current subset.'
  *         def __get__( self ) :
  *             return self.subset_n_links             # <<<<<<<<<<<<<<
@@ -16036,7 +16036,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(s
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":922
+  /* "SuchTree/MuchTree.pyx":922
  *     property subset_n_links :
  *         'Number of links in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16047,7 +16047,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(s
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.subset_n_links.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.subset_n_links.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -16055,7 +16055,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(s
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":925
+/* "SuchTree/MuchTree.pyx":925
  *             return self.subset_n_links
  * 
  *     def get_column_leafs( self, col, as_row_ids=False ) :             # <<<<<<<<<<<<<<
@@ -16064,8 +16064,8 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(s
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7get_column_leafs(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7get_column_leafs(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7get_column_leafs(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7get_column_leafs(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_col = 0;
   PyObject *__pyx_v_as_row_ids = 0;
   int __pyx_lineno = 0;
@@ -16120,18 +16120,18 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7get_column_leafs(PyObject
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("get_column_leafs", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 925, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.get_column_leafs", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.get_column_leafs", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_col, __pyx_v_as_row_ids);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6get_column_leafs(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_col, __pyx_v_as_row_ids);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_col, PyObject *__pyx_v_as_row_ids) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_col, PyObject *__pyx_v_as_row_ids) {
   PyObject *__pyx_v_col_id = NULL;
   PyObject *__pyx_v_length = NULL;
   PyObject *__pyx_v_column = NULL;
@@ -16152,7 +16152,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_column_leafs", 0);
 
-  /* "MuchTree.pyx":927
+  /* "SuchTree/MuchTree.pyx":927
  *     def get_column_leafs( self, col, as_row_ids=False ) :
  * 
  *         if isinstance(col, basestring) :             # <<<<<<<<<<<<<<
@@ -16163,7 +16163,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":928
+    /* "SuchTree/MuchTree.pyx":928
  * 
  *         if isinstance(col, basestring) :
  *             col_id = self.col_names.index( col )             # <<<<<<<<<<<<<<
@@ -16190,7 +16190,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     __pyx_v_col_id = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":927
+    /* "SuchTree/MuchTree.pyx":927
  *     def get_column_leafs( self, col, as_row_ids=False ) :
  * 
  *         if isinstance(col, basestring) :             # <<<<<<<<<<<<<<
@@ -16200,7 +16200,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":930
+  /* "SuchTree/MuchTree.pyx":930
  *             col_id = self.col_names.index( col )
  *         else :
  *             col_id = col             # <<<<<<<<<<<<<<
@@ -16213,7 +16213,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   }
   __pyx_L3:;
 
-  /* "MuchTree.pyx":932
+  /* "SuchTree/MuchTree.pyx":932
  *             col_id = col
  * 
  *         if col_id > self.n_cols :             # <<<<<<<<<<<<<<
@@ -16228,7 +16228,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":933
+    /* "SuchTree/MuchTree.pyx":933
  * 
  *         if col_id > self.n_cols :
  *             raise Exception( 'col_id out of bounds', col_id )             # <<<<<<<<<<<<<<
@@ -16250,7 +16250,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(0, 933, __pyx_L1_error)
 
-    /* "MuchTree.pyx":932
+    /* "SuchTree/MuchTree.pyx":932
  *             col_id = col
  * 
  *         if col_id > self.n_cols :             # <<<<<<<<<<<<<<
@@ -16259,7 +16259,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
  */
   }
 
-  /* "MuchTree.pyx":935
+  /* "SuchTree/MuchTree.pyx":935
  *             raise Exception( 'col_id out of bounds', col_id )
  * 
  *         length = self.table[ col_id ].length             # <<<<<<<<<<<<<<
@@ -16272,7 +16272,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   __pyx_v_length = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":936
+  /* "SuchTree/MuchTree.pyx":936
  * 
  *         length = self.table[ col_id ].length
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )             # <<<<<<<<<<<<<<
@@ -16297,7 +16297,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   __pyx_v_column = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":937
+  /* "SuchTree/MuchTree.pyx":937
  *         length = self.table[ col_id ].length
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :             # <<<<<<<<<<<<<<
@@ -16349,7 +16349,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":938
+    /* "SuchTree/MuchTree.pyx":938
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :
  *             if as_row_ids :             # <<<<<<<<<<<<<<
@@ -16359,7 +16359,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_as_row_ids); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 938, __pyx_L1_error)
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":939
+      /* "SuchTree/MuchTree.pyx":939
  *         for i in xrange( length ) :
  *             if as_row_ids :
  *                 column[i] = self.row_map[ self.table[ col_id ].links[i] ]             # <<<<<<<<<<<<<<
@@ -16373,7 +16373,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
       if (unlikely(PyObject_SetItem(__pyx_v_column, __pyx_v_i, __pyx_t_5) < 0)) __PYX_ERR(0, 939, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "MuchTree.pyx":938
+      /* "SuchTree/MuchTree.pyx":938
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :
  *             if as_row_ids :             # <<<<<<<<<<<<<<
@@ -16383,7 +16383,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
       goto __pyx_L7;
     }
 
-    /* "MuchTree.pyx":941
+    /* "SuchTree/MuchTree.pyx":941
  *                 column[i] = self.row_map[ self.table[ col_id ].links[i] ]
  *             else :
  *                 column[i] = self.table[ col_id ].links[i]             # <<<<<<<<<<<<<<
@@ -16400,7 +16400,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     }
     __pyx_L7:;
 
-    /* "MuchTree.pyx":937
+    /* "SuchTree/MuchTree.pyx":937
  *         length = self.table[ col_id ].length
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :             # <<<<<<<<<<<<<<
@@ -16410,7 +16410,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":943
+  /* "SuchTree/MuchTree.pyx":943
  *                 column[i] = self.table[ col_id ].links[i]
  * 
  *         return column             # <<<<<<<<<<<<<<
@@ -16422,7 +16422,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   __pyx_r = __pyx_v_column;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":925
+  /* "SuchTree/MuchTree.pyx":925
  *             return self.subset_n_links
  * 
  *     def get_column_leafs( self, col, as_row_ids=False ) :             # <<<<<<<<<<<<<<
@@ -16435,7 +16435,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.get_column_leafs", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.get_column_leafs", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_col_id);
@@ -16447,7 +16447,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":945
+/* "SuchTree/MuchTree.pyx":945
  *         return column
  * 
  *     def get_column_links( self, col ) :             # <<<<<<<<<<<<<<
@@ -16456,19 +16456,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9get_column_links(PyObject *__pyx_v_self, PyObject *__pyx_v_col); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9get_column_links(PyObject *__pyx_v_self, PyObject *__pyx_v_col) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9get_column_links(PyObject *__pyx_v_self, PyObject *__pyx_v_col); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9get_column_links(PyObject *__pyx_v_self, PyObject *__pyx_v_col) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_column_links (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), ((PyObject *)__pyx_v_col));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_8get_column_links(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), ((PyObject *)__pyx_v_col));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_col) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_8get_column_links(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_col) {
   PyObject *__pyx_v_col_id = NULL;
   PyObject *__pyx_v_length = NULL;
   PyObject *__pyx_v_column = NULL;
@@ -16490,7 +16490,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_column_links", 0);
 
-  /* "MuchTree.pyx":947
+  /* "SuchTree/MuchTree.pyx":947
  *     def get_column_links( self, col ) :
  * 
  *         if isinstance(col, basestring) :             # <<<<<<<<<<<<<<
@@ -16501,7 +16501,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":948
+    /* "SuchTree/MuchTree.pyx":948
  * 
  *         if isinstance(col, basestring) :
  *             col_id = self.col_names.index( col )             # <<<<<<<<<<<<<<
@@ -16528,7 +16528,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     __pyx_v_col_id = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":947
+    /* "SuchTree/MuchTree.pyx":947
  *     def get_column_links( self, col ) :
  * 
  *         if isinstance(col, basestring) :             # <<<<<<<<<<<<<<
@@ -16538,7 +16538,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":950
+  /* "SuchTree/MuchTree.pyx":950
  *             col_id = self.col_names.index( col )
  *         else :
  *             col_id = col             # <<<<<<<<<<<<<<
@@ -16551,7 +16551,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   }
   __pyx_L3:;
 
-  /* "MuchTree.pyx":952
+  /* "SuchTree/MuchTree.pyx":952
  *             col_id = col
  * 
  *         if col_id > self.n_cols :             # <<<<<<<<<<<<<<
@@ -16566,7 +16566,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":953
+    /* "SuchTree/MuchTree.pyx":953
  * 
  *         if col_id > self.n_cols :
  *             raise Exception( 'col_id out of bounds', col_id )             # <<<<<<<<<<<<<<
@@ -16588,7 +16588,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(0, 953, __pyx_L1_error)
 
-    /* "MuchTree.pyx":952
+    /* "SuchTree/MuchTree.pyx":952
  *             col_id = col
  * 
  *         if col_id > self.n_cols :             # <<<<<<<<<<<<<<
@@ -16597,7 +16597,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
  */
   }
 
-  /* "MuchTree.pyx":955
+  /* "SuchTree/MuchTree.pyx":955
  *             raise Exception( 'col_id out of bounds', col_id )
  * 
  *         length = self.table[ col_id ].length             # <<<<<<<<<<<<<<
@@ -16610,7 +16610,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __pyx_v_length = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":956
+  /* "SuchTree/MuchTree.pyx":956
  * 
  *         length = self.table[ col_id ].length
  *         column = np.zeros( self.n_rows, dtype=bool )             # <<<<<<<<<<<<<<
@@ -16640,7 +16640,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __pyx_v_column = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":957
+  /* "SuchTree/MuchTree.pyx":957
  *         length = self.table[ col_id ].length
  *         column = np.zeros( self.n_rows, dtype=bool )
  *         for i in xrange( length ) :             # <<<<<<<<<<<<<<
@@ -16692,7 +16692,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":958
+    /* "SuchTree/MuchTree.pyx":958
  *         column = np.zeros( self.n_rows, dtype=bool )
  *         for i in xrange( length ) :
  *             column[ self.row_map[ self.table[ col_id ].links[i] ] ] = True             # <<<<<<<<<<<<<<
@@ -16706,7 +16706,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     if (unlikely(PyObject_SetItem(__pyx_v_column, __pyx_t_7, Py_True) < 0)) __PYX_ERR(0, 958, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":957
+    /* "SuchTree/MuchTree.pyx":957
  *         length = self.table[ col_id ].length
  *         column = np.zeros( self.n_rows, dtype=bool )
  *         for i in xrange( length ) :             # <<<<<<<<<<<<<<
@@ -16716,7 +16716,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":960
+  /* "SuchTree/MuchTree.pyx":960
  *             column[ self.row_map[ self.table[ col_id ].links[i] ] ] = True
  * 
  *         return column             # <<<<<<<<<<<<<<
@@ -16728,7 +16728,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __pyx_r = __pyx_v_column;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":945
+  /* "SuchTree/MuchTree.pyx":945
  *         return column
  * 
  *     def get_column_links( self, col ) :             # <<<<<<<<<<<<<<
@@ -16742,7 +16742,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.get_column_links", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.get_column_links", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_col_id);
@@ -16754,7 +16754,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":964
+/* "SuchTree/MuchTree.pyx":964
  *     property linkmatrix :
  *         'numpy representation of link matrix (generated only on access)'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16763,19 +16763,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_10linkmatrix_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_10linkmatrix_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_10linkmatrix_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_10linkmatrix_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -16784,18 +16784,18 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struc
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":965
+  /* "SuchTree/MuchTree.pyx":965
  *         'numpy representation of link matrix (generated only on access)'
  *         def __get__( self ) :
  *             self._build_linkmatrix()             # <<<<<<<<<<<<<<
  *             return self.np_table
  * 
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linkmatrix(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 965, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linkmatrix(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 965, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":966
+  /* "SuchTree/MuchTree.pyx":966
  *         def __get__( self ) :
  *             self._build_linkmatrix()
  *             return self.np_table             # <<<<<<<<<<<<<<
@@ -16807,7 +16807,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struc
   __pyx_r = __pyx_v_self->np_table;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":964
+  /* "SuchTree/MuchTree.pyx":964
  *     property linkmatrix :
  *         'numpy representation of link matrix (generated only on access)'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16818,7 +16818,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struc
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.linkmatrix.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.linkmatrix.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -16826,7 +16826,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struc
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":969
+/* "SuchTree/MuchTree.pyx":969
  * 
  *     @cython.boundscheck(False)
  *     cdef _build_linkmatrix( self ) :             # <<<<<<<<<<<<<<
@@ -16834,7 +16834,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struc
  *         ## FIXME : This seems to improperly index when subsetting
  */
 
-static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   unsigned int __pyx_v_j;
   unsigned int __pyx_v_l;
   unsigned int __pyx_v_m;
@@ -16860,7 +16860,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_build_linkmatrix", 0);
 
-  /* "MuchTree.pyx":979
+  /* "SuchTree/MuchTree.pyx":979
  *         cdef unsigned int row_id
  * 
  *         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )             # <<<<<<<<<<<<<<
@@ -16903,7 +16903,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   __pyx_v_self->np_table = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":981
+  /* "SuchTree/MuchTree.pyx":981
  *         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )
  * 
  *         for col in self.subset_columns :             # <<<<<<<<<<<<<<
@@ -16952,7 +16952,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
     __Pyx_XDECREF_SET(__pyx_v_col, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":982
+    /* "SuchTree/MuchTree.pyx":982
  * 
  *         for col in self.subset_columns :
  *             for j in xrange( self.table[col].length ) :             # <<<<<<<<<<<<<<
@@ -16965,7 +16965,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_v_j = __pyx_t_10;
 
-      /* "MuchTree.pyx":983
+      /* "SuchTree/MuchTree.pyx":983
  *         for col in self.subset_columns :
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]             # <<<<<<<<<<<<<<
@@ -16975,7 +16975,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
       __pyx_t_7 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col); if (unlikely((__pyx_t_7 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 983, __pyx_L1_error)
       __pyx_v_m = ((__pyx_v_self->table[__pyx_t_7]).links[__pyx_v_j]);
 
-      /* "MuchTree.pyx":984
+      /* "SuchTree/MuchTree.pyx":984
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :             # <<<<<<<<<<<<<<
@@ -17025,7 +17025,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_v_l = __pyx_t_12;
 
-        /* "MuchTree.pyx":985
+        /* "SuchTree/MuchTree.pyx":985
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :
  *                     if l == m :             # <<<<<<<<<<<<<<
@@ -17035,7 +17035,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
         __pyx_t_13 = ((__pyx_v_l == __pyx_v_m) != 0);
         if (__pyx_t_13) {
 
-          /* "MuchTree.pyx":986
+          /* "SuchTree/MuchTree.pyx":986
  *                 for l in self.subset_a_leafs :
  *                     if l == m :
  *                         row_id = self.row_map[ m ]             # <<<<<<<<<<<<<<
@@ -17048,7 +17048,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_v_row_id = __pyx_t_12;
 
-          /* "MuchTree.pyx":987
+          /* "SuchTree/MuchTree.pyx":987
  *                     if l == m :
  *                         row_id = self.row_map[ m ]
  *                         self.np_table[ row_id, col ] = True             # <<<<<<<<<<<<<<
@@ -17068,7 +17068,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
           if (unlikely(PyObject_SetItem(__pyx_v_self->np_table, __pyx_t_2, Py_True) < 0)) __PYX_ERR(0, 987, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-          /* "MuchTree.pyx":988
+          /* "SuchTree/MuchTree.pyx":988
  *                         row_id = self.row_map[ m ]
  *                         self.np_table[ row_id, col ] = True
  *                         continue             # <<<<<<<<<<<<<<
@@ -17077,7 +17077,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
  */
           goto __pyx_L7_continue;
 
-          /* "MuchTree.pyx":985
+          /* "SuchTree/MuchTree.pyx":985
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :
  *                     if l == m :             # <<<<<<<<<<<<<<
@@ -17086,7 +17086,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
  */
         }
 
-        /* "MuchTree.pyx":984
+        /* "SuchTree/MuchTree.pyx":984
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :             # <<<<<<<<<<<<<<
@@ -17098,7 +17098,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
 
-    /* "MuchTree.pyx":981
+    /* "SuchTree/MuchTree.pyx":981
  *         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )
  * 
  *         for col in self.subset_columns :             # <<<<<<<<<<<<<<
@@ -17108,7 +17108,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":969
+  /* "SuchTree/MuchTree.pyx":969
  * 
  *     @cython.boundscheck(False)
  *     cdef _build_linkmatrix( self ) :             # <<<<<<<<<<<<<<
@@ -17124,7 +17124,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees._build_linkmatrix", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees._build_linkmatrix", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_col);
@@ -17133,7 +17133,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":992
+/* "SuchTree/MuchTree.pyx":992
  *     property linklist :
  *         'numpy representation of link list'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -17142,19 +17142,19 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_8linklist_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_8linklist_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_8linklist_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_8linklist_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_8linklist___get__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -17164,7 +17164,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":994
+  /* "SuchTree/MuchTree.pyx":994
  *         def __get__( self ) :
  *             # length will be shorter with subsetted link matrixes
  *             return self.np_linklist[:self.subset_n_links,:]             # <<<<<<<<<<<<<<
@@ -17192,7 +17192,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":992
+  /* "SuchTree/MuchTree.pyx":992
  *     property linklist :
  *         'numpy representation of link list'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -17204,7 +17204,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.linklist.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.linklist.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -17212,7 +17212,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":997
+/* "SuchTree/MuchTree.pyx":997
  * 
  *     @cython.boundscheck(False)
  *     cdef void _build_linklist( self ) :             # <<<<<<<<<<<<<<
@@ -17220,7 +17220,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
  *         cdef unsigned int j
  */
 
-static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static void __pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   unsigned int __pyx_v_i;
   unsigned int __pyx_v_j;
   unsigned int __pyx_v_l;
@@ -17254,7 +17254,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_build_linklist", 0);
 
-  /* "MuchTree.pyx":1004
+  /* "SuchTree/MuchTree.pyx":1004
  *         cdef unsigned int n
  *         cdef unsigned int col
  *         cdef unsigned int k = 0             # <<<<<<<<<<<<<<
@@ -17263,7 +17263,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
   __pyx_v_k = 0;
 
-  /* "MuchTree.pyx":1007
+  /* "SuchTree/MuchTree.pyx":1007
  * 
  *         # Memoryviews into numpy arrays
  *         cdef long [:] col_ids        = self.col_ids             # <<<<<<<<<<<<<<
@@ -17275,7 +17275,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "MuchTree.pyx":1008
+  /* "SuchTree/MuchTree.pyx":1008
  *         # Memoryviews into numpy arrays
  *         cdef long [:] col_ids        = self.col_ids
  *         cdef long [:] subset_columns = self.subset_columns             # <<<<<<<<<<<<<<
@@ -17287,7 +17287,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "MuchTree.pyx":1009
+  /* "SuchTree/MuchTree.pyx":1009
  *         cdef long [:] col_ids        = self.col_ids
  *         cdef long [:] subset_columns = self.subset_columns
  *         cdef long [:] subset_a_leafs = self.subset_a_leafs             # <<<<<<<<<<<<<<
@@ -17299,7 +17299,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "MuchTree.pyx":1010
+  /* "SuchTree/MuchTree.pyx":1010
  *         cdef long [:] subset_columns = self.subset_columns
  *         cdef long [:] subset_a_leafs = self.subset_a_leafs
  *         cdef long [:] subset_b_leafs = self.subset_b_leafs             # <<<<<<<<<<<<<<
@@ -17311,7 +17311,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "MuchTree.pyx":1011
+  /* "SuchTree/MuchTree.pyx":1011
  *         cdef long [:] subset_a_leafs = self.subset_a_leafs
  *         cdef long [:] subset_b_leafs = self.subset_b_leafs
  *         cdef long [:,:] np_linklist  = self.np_linklist             # <<<<<<<<<<<<<<
@@ -17323,7 +17323,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "MuchTree.pyx":1013
+  /* "SuchTree/MuchTree.pyx":1013
  *         cdef long [:,:] np_linklist  = self.np_linklist
  * 
  *         for i in xrange( self.subset_b_size ) :             # <<<<<<<<<<<<<<
@@ -17335,7 +17335,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_i = __pyx_t_5;
 
-    /* "MuchTree.pyx":1014
+    /* "SuchTree/MuchTree.pyx":1014
  * 
  *         for i in xrange( self.subset_b_size ) :
  *             col = subset_columns[i]             # <<<<<<<<<<<<<<
@@ -17345,7 +17345,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
     __pyx_t_6 = __pyx_v_i;
     __pyx_v_col = (*((long *) ( /* dim=0 */ (__pyx_v_subset_columns.data + __pyx_t_6 * __pyx_v_subset_columns.strides[0]) )));
 
-    /* "MuchTree.pyx":1015
+    /* "SuchTree/MuchTree.pyx":1015
  *         for i in xrange( self.subset_b_size ) :
  *             col = subset_columns[i]
  *             for j in xrange( self.table[col].length ) :             # <<<<<<<<<<<<<<
@@ -17357,7 +17357,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
       __pyx_v_j = __pyx_t_9;
 
-      /* "MuchTree.pyx":1016
+      /* "SuchTree/MuchTree.pyx":1016
  *             col = subset_columns[i]
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]             # <<<<<<<<<<<<<<
@@ -17366,7 +17366,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
       __pyx_v_m = ((__pyx_v_self->table[__pyx_v_col]).links[__pyx_v_j]);
 
-      /* "MuchTree.pyx":1017
+      /* "SuchTree/MuchTree.pyx":1017
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]
  *                 for l in xrange( self.subset_a_size ) :             # <<<<<<<<<<<<<<
@@ -17378,7 +17378,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
       for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
         __pyx_v_l = __pyx_t_12;
 
-        /* "MuchTree.pyx":1018
+        /* "SuchTree/MuchTree.pyx":1018
  *                 m = self.table[col].links[j]
  *                 for l in xrange( self.subset_a_size ) :
  *                     n = subset_a_leafs[l]             # <<<<<<<<<<<<<<
@@ -17388,7 +17388,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
         __pyx_t_6 = __pyx_v_l;
         __pyx_v_n = (*((long *) ( /* dim=0 */ (__pyx_v_subset_a_leafs.data + __pyx_t_6 * __pyx_v_subset_a_leafs.strides[0]) )));
 
-        /* "MuchTree.pyx":1019
+        /* "SuchTree/MuchTree.pyx":1019
  *                 for l in xrange( self.subset_a_size ) :
  *                     n = subset_a_leafs[l]
  *                     if n == m :             # <<<<<<<<<<<<<<
@@ -17398,7 +17398,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
         __pyx_t_13 = ((__pyx_v_n == __pyx_v_m) != 0);
         if (__pyx_t_13) {
 
-          /* "MuchTree.pyx":1020
+          /* "SuchTree/MuchTree.pyx":1020
  *                     n = subset_a_leafs[l]
  *                     if n == m :
  *                         np_linklist[ k, 0 ] = col_ids[col]             # <<<<<<<<<<<<<<
@@ -17411,7 +17411,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
           if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_np_linklist.shape[1];
           *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_np_linklist.data + __pyx_t_14 * __pyx_v_np_linklist.strides[0]) ) + __pyx_t_15 * __pyx_v_np_linklist.strides[1]) )) = (*((long *) ( /* dim=0 */ (__pyx_v_col_ids.data + __pyx_t_6 * __pyx_v_col_ids.strides[0]) )));
 
-          /* "MuchTree.pyx":1021
+          /* "SuchTree/MuchTree.pyx":1021
  *                     if n == m :
  *                         np_linklist[ k, 0 ] = col_ids[col]
  *                         np_linklist[ k, 1 ] = m             # <<<<<<<<<<<<<<
@@ -17423,7 +17423,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
           if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_np_linklist.shape[1];
           *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_np_linklist.data + __pyx_t_6 * __pyx_v_np_linklist.strides[0]) ) + __pyx_t_15 * __pyx_v_np_linklist.strides[1]) )) = __pyx_v_m;
 
-          /* "MuchTree.pyx":1022
+          /* "SuchTree/MuchTree.pyx":1022
  *                         np_linklist[ k, 0 ] = col_ids[col]
  *                         np_linklist[ k, 1 ] = m
  *                         k += 1             # <<<<<<<<<<<<<<
@@ -17432,7 +17432,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
           __pyx_v_k = (__pyx_v_k + 1);
 
-          /* "MuchTree.pyx":1023
+          /* "SuchTree/MuchTree.pyx":1023
  *                         np_linklist[ k, 1 ] = m
  *                         k += 1
  *                         continue             # <<<<<<<<<<<<<<
@@ -17441,7 +17441,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
           goto __pyx_L7_continue;
 
-          /* "MuchTree.pyx":1019
+          /* "SuchTree/MuchTree.pyx":1019
  *                 for l in xrange( self.subset_a_size ) :
  *                     n = subset_a_leafs[l]
  *                     if n == m :             # <<<<<<<<<<<<<<
@@ -17454,7 +17454,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
     }
   }
 
-  /* "MuchTree.pyx":1025
+  /* "SuchTree/MuchTree.pyx":1025
  *                         continue
  * 
  *         self.subset_n_links = k             # <<<<<<<<<<<<<<
@@ -17463,7 +17463,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
   __pyx_v_self->subset_n_links = __pyx_v_k;
 
-  /* "MuchTree.pyx":997
+  /* "SuchTree/MuchTree.pyx":997
  * 
  *     @cython.boundscheck(False)
  *     cdef void _build_linklist( self ) :             # <<<<<<<<<<<<<<
@@ -17476,7 +17476,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_2, 1);
-  __Pyx_WriteUnraisable("MuchTree.SuchLinkedTrees._build_linklist", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("SuchTree.MuchTree.SuchLinkedTrees._build_linklist", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_col_ids, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_v_subset_columns, 1);
@@ -17486,7 +17486,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   __Pyx_RefNannyFinishContext();
 }
 
-/* "MuchTree.pyx":1027
+/* "SuchTree/MuchTree.pyx":1027
  *         self.subset_n_links = k
  * 
  *     def subset_b( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -17495,20 +17495,20 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_11subset_b(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
-static char __pyx_doc_8MuchTree_15SuchLinkedTrees_10subset_b[] = "subset the link matrix to leafs desended from node_id in TreeB";
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_11subset_b(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_11subset_b(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_10subset_b[] = "subset the link matrix to leafs desended from node_id in TreeB";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_11subset_b(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("subset_b (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_10subset_b(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -17523,7 +17523,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("subset_b", 0);
 
-  /* "MuchTree.pyx":1030
+  /* "SuchTree/MuchTree.pyx":1030
  *         'subset the link matrix to leafs desended from node_id in TreeB'
  * 
  *         if node_id > self.TreeB.length or node_id < 0 :             # <<<<<<<<<<<<<<
@@ -17548,7 +17548,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":1031
+    /* "SuchTree/MuchTree.pyx":1031
  * 
  *         if node_id > self.TreeB.length or node_id < 0 :
  *             raise Exception( 'Node ID out of bounds.', node_id )             # <<<<<<<<<<<<<<
@@ -17570,7 +17570,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __PYX_ERR(0, 1031, __pyx_L1_error)
 
-    /* "MuchTree.pyx":1030
+    /* "SuchTree/MuchTree.pyx":1030
  *         'subset the link matrix to leafs desended from node_id in TreeB'
  * 
  *         if node_id > self.TreeB.length or node_id < 0 :             # <<<<<<<<<<<<<<
@@ -17579,7 +17579,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
  */
   }
 
-  /* "MuchTree.pyx":1033
+  /* "SuchTree/MuchTree.pyx":1033
  *             raise Exception( 'Node ID out of bounds.', node_id )
  * 
  *         self.subset_b_leafs = self.TreeB.get_leafs( node_id )             # <<<<<<<<<<<<<<
@@ -17609,7 +17609,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   __pyx_v_self->subset_b_leafs = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1034
+  /* "SuchTree/MuchTree.pyx":1034
  * 
  *         self.subset_b_leafs = self.TreeB.get_leafs( node_id )
  *         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )             # <<<<<<<<<<<<<<
@@ -17639,7 +17639,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   __pyx_v_self->subset_columns = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1035
+  /* "SuchTree/MuchTree.pyx":1035
  *         self.subset_b_leafs = self.TreeB.get_leafs( node_id )
  *         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )
  *         self.subset_b_size  = len( self.subset_columns )             # <<<<<<<<<<<<<<
@@ -17652,7 +17652,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_self->subset_b_size = __pyx_t_6;
 
-  /* "MuchTree.pyx":1036
+  /* "SuchTree/MuchTree.pyx":1036
  *         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )
  *         self.subset_b_size  = len( self.subset_columns )
  *         self.subset_b_root  = node_id             # <<<<<<<<<<<<<<
@@ -17662,16 +17662,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_v_node_id); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1036, __pyx_L1_error)
   __pyx_v_self->subset_b_root = __pyx_t_7;
 
-  /* "MuchTree.pyx":1037
+  /* "SuchTree/MuchTree.pyx":1037
  *         self.subset_b_size  = len( self.subset_columns )
  *         self.subset_b_root  = node_id
  *         self._build_linklist()             # <<<<<<<<<<<<<<
  * 
  *     def subset_a( self, node_id ) :
  */
-  ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
+  ((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
 
-  /* "MuchTree.pyx":1027
+  /* "SuchTree/MuchTree.pyx":1027
  *         self.subset_n_links = k
  * 
  *     def subset_b( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -17686,7 +17686,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.subset_b", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.subset_b", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -17694,7 +17694,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1039
+/* "SuchTree/MuchTree.pyx":1039
  *         self._build_linklist()
  * 
  *     def subset_a( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -17703,20 +17703,20 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
-static char __pyx_doc_8MuchTree_15SuchLinkedTrees_12subset_a[] = "subset the link matrix to leafs desended from node_id in TreeA";
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_12subset_a[] = "subset the link matrix to leafs desended from node_id in TreeA";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("subset_a (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_12subset_a(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -17731,7 +17731,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("subset_a", 0);
 
-  /* "MuchTree.pyx":1042
+  /* "SuchTree/MuchTree.pyx":1042
  *         'subset the link matrix to leafs desended from node_id in TreeA'
  * 
  *         if node_id > self.TreeA.length or node_id < 0 :             # <<<<<<<<<<<<<<
@@ -17756,7 +17756,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":1043
+    /* "SuchTree/MuchTree.pyx":1043
  * 
  *         if node_id > self.TreeA.length or node_id < 0 :
  *             raise Exception( 'Node ID out of bounds.', node_id )             # <<<<<<<<<<<<<<
@@ -17778,7 +17778,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __PYX_ERR(0, 1043, __pyx_L1_error)
 
-    /* "MuchTree.pyx":1042
+    /* "SuchTree/MuchTree.pyx":1042
  *         'subset the link matrix to leafs desended from node_id in TreeA'
  * 
  *         if node_id > self.TreeA.length or node_id < 0 :             # <<<<<<<<<<<<<<
@@ -17787,7 +17787,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
  */
   }
 
-  /* "MuchTree.pyx":1045
+  /* "SuchTree/MuchTree.pyx":1045
  *             raise Exception( 'Node ID out of bounds.', node_id )
  * 
  *         self.subset_a_leafs = self.TreeA.get_leafs( node_id )             # <<<<<<<<<<<<<<
@@ -17817,7 +17817,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   __pyx_v_self->subset_a_leafs = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1046
+  /* "SuchTree/MuchTree.pyx":1046
  * 
  *         self.subset_a_leafs = self.TreeA.get_leafs( node_id )
  *         self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )             # <<<<<<<<<<<<<<
@@ -17847,7 +17847,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   __pyx_v_self->subset_rows = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1047
+  /* "SuchTree/MuchTree.pyx":1047
  *         self.subset_a_leafs = self.TreeA.get_leafs( node_id )
  *         self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )
  *         self.subset_a_size  = len( self.subset_rows )             # <<<<<<<<<<<<<<
@@ -17860,7 +17860,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_self->subset_a_size = __pyx_t_6;
 
-  /* "MuchTree.pyx":1048
+  /* "SuchTree/MuchTree.pyx":1048
  *         self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )
  *         self.subset_a_size  = len( self.subset_rows )
  *         self.subset_a_root  = node_id             # <<<<<<<<<<<<<<
@@ -17870,16 +17870,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_v_node_id); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1048, __pyx_L1_error)
   __pyx_v_self->subset_a_root = __pyx_t_7;
 
-  /* "MuchTree.pyx":1049
+  /* "SuchTree/MuchTree.pyx":1049
  *         self.subset_a_size  = len( self.subset_rows )
  *         self.subset_a_root  = node_id
  *         self._build_linklist()             # <<<<<<<<<<<<<<
  * 
  *     @cython.boundscheck(False)
  */
-  ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
+  ((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
 
-  /* "MuchTree.pyx":1039
+  /* "SuchTree/MuchTree.pyx":1039
  *         self._build_linklist()
  * 
  *     def subset_a( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -17894,7 +17894,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.subset_a", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.subset_a", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -17902,7 +17902,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1052
+/* "SuchTree/MuchTree.pyx":1052
  * 
  *     @cython.boundscheck(False)
  *     def linked_distances( self ) :             # <<<<<<<<<<<<<<
@@ -17911,20 +17911,20 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_15linked_distances(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_8MuchTree_15SuchLinkedTrees_14linked_distances[] = "\n        Compute distances for all pairs of links. For large link\n        tables, this will fail on memory allocation.\n        ";
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_15linked_distances(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_15linked_distances(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_14linked_distances[] = "\n        Compute distances for all pairs of links. For large link\n        tables, this will fail on memory allocation.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_15linked_distances(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("linked_distances (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14linked_distances(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_14linked_distances(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   unsigned int __pyx_v_i;
   unsigned int __pyx_v_j;
   unsigned int __pyx_v_k;
@@ -17956,7 +17956,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("linked_distances", 0);
 
-  /* "MuchTree.pyx":1059
+  /* "SuchTree/MuchTree.pyx":1059
  *         cdef unsigned int i
  *         cdef unsigned int j
  *         cdef unsigned int k = 0             # <<<<<<<<<<<<<<
@@ -17965,7 +17965,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  */
   __pyx_v_k = 0;
 
-  /* "MuchTree.pyx":1060
+  /* "SuchTree/MuchTree.pyx":1060
  *         cdef unsigned int j
  *         cdef unsigned int k = 0
  *         cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) // 2             # <<<<<<<<<<<<<<
@@ -17974,7 +17974,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  */
   __pyx_v_size = __Pyx_div_long((__pyx_v_self->subset_n_links * (__pyx_v_self->subset_n_links - 1)), 2);
 
-  /* "MuchTree.pyx":1062
+  /* "SuchTree/MuchTree.pyx":1062
  *         cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) // 2
  * 
  *         ids_a = np.ndarray( ( size, 2 ), dtype=int )             # <<<<<<<<<<<<<<
@@ -18006,7 +18006,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __pyx_v_ids_a = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1063
+  /* "SuchTree/MuchTree.pyx":1063
  * 
  *         ids_a = np.ndarray( ( size, 2 ), dtype=int )
  *         ids_b = np.ndarray( ( size, 2 ), dtype=int )             # <<<<<<<<<<<<<<
@@ -18038,7 +18038,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __pyx_v_ids_b = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1065
+  /* "SuchTree/MuchTree.pyx":1065
  *         ids_b = np.ndarray( ( size, 2 ), dtype=int )
  * 
  *         cdef long [:,:] linklist = self.np_linklist             # <<<<<<<<<<<<<<
@@ -18050,7 +18050,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "MuchTree.pyx":1066
+  /* "SuchTree/MuchTree.pyx":1066
  * 
  *         cdef long [:,:] linklist = self.np_linklist
  *         cdef long [:,:] IDs_a = ids_a             # <<<<<<<<<<<<<<
@@ -18062,7 +18062,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "MuchTree.pyx":1067
+  /* "SuchTree/MuchTree.pyx":1067
  *         cdef long [:,:] linklist = self.np_linklist
  *         cdef long [:,:] IDs_a = ids_a
  *         cdef long [:,:] IDs_b = ids_b             # <<<<<<<<<<<<<<
@@ -18074,7 +18074,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "MuchTree.pyx":1069
+  /* "SuchTree/MuchTree.pyx":1069
  *         cdef long [:,:] IDs_b = ids_b
  * 
  *         with nogil :             # <<<<<<<<<<<<<<
@@ -18089,7 +18089,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
       #endif
       /*try:*/ {
 
-        /* "MuchTree.pyx":1070
+        /* "SuchTree/MuchTree.pyx":1070
  * 
  *         with nogil :
  *             for i in xrange( self.subset_n_links ) :             # <<<<<<<<<<<<<<
@@ -18101,7 +18101,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
         for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
           __pyx_v_i = __pyx_t_7;
 
-          /* "MuchTree.pyx":1071
+          /* "SuchTree/MuchTree.pyx":1071
  *         with nogil :
  *             for i in xrange( self.subset_n_links ) :
  *                 for j in xrange( i ) :             # <<<<<<<<<<<<<<
@@ -18113,7 +18113,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
           for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
             __pyx_v_j = __pyx_t_10;
 
-            /* "MuchTree.pyx":1072
+            /* "SuchTree/MuchTree.pyx":1072
  *             for i in xrange( self.subset_n_links ) :
  *                 for j in xrange( i ) :
  *                     IDs_a[ k, 1 ] = linklist[ i, 1 ]             # <<<<<<<<<<<<<<
@@ -18128,7 +18128,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
             if (__pyx_t_14 < 0) __pyx_t_14 += __pyx_v_IDs_a.shape[1];
             *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_IDs_a.data + __pyx_t_13 * __pyx_v_IDs_a.strides[0]) ) + __pyx_t_14 * __pyx_v_IDs_a.strides[1]) )) = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_11 * __pyx_v_linklist.strides[0]) ) + __pyx_t_12 * __pyx_v_linklist.strides[1]) )));
 
-            /* "MuchTree.pyx":1073
+            /* "SuchTree/MuchTree.pyx":1073
  *                 for j in xrange( i ) :
  *                     IDs_a[ k, 1 ] = linklist[ i, 1 ]
  *                     IDs_a[ k, 0 ] = linklist[ j, 1 ]             # <<<<<<<<<<<<<<
@@ -18143,7 +18143,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
             if (__pyx_t_14 < 0) __pyx_t_14 += __pyx_v_IDs_a.shape[1];
             *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_IDs_a.data + __pyx_t_13 * __pyx_v_IDs_a.strides[0]) ) + __pyx_t_14 * __pyx_v_IDs_a.strides[1]) )) = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_11 * __pyx_v_linklist.strides[0]) ) + __pyx_t_12 * __pyx_v_linklist.strides[1]) )));
 
-            /* "MuchTree.pyx":1074
+            /* "SuchTree/MuchTree.pyx":1074
  *                     IDs_a[ k, 1 ] = linklist[ i, 1 ]
  *                     IDs_a[ k, 0 ] = linklist[ j, 1 ]
  *                     IDs_b[ k, 1 ] = linklist[ i, 0 ]             # <<<<<<<<<<<<<<
@@ -18158,7 +18158,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
             if (__pyx_t_14 < 0) __pyx_t_14 += __pyx_v_IDs_b.shape[1];
             *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_IDs_b.data + __pyx_t_13 * __pyx_v_IDs_b.strides[0]) ) + __pyx_t_14 * __pyx_v_IDs_b.strides[1]) )) = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_11 * __pyx_v_linklist.strides[0]) ) + __pyx_t_12 * __pyx_v_linklist.strides[1]) )));
 
-            /* "MuchTree.pyx":1075
+            /* "SuchTree/MuchTree.pyx":1075
  *                     IDs_a[ k, 0 ] = linklist[ j, 1 ]
  *                     IDs_b[ k, 1 ] = linklist[ i, 0 ]
  *                     IDs_b[ k, 0 ] = linklist[ j, 0 ]             # <<<<<<<<<<<<<<
@@ -18173,7 +18173,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
             if (__pyx_t_14 < 0) __pyx_t_14 += __pyx_v_IDs_b.shape[1];
             *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_IDs_b.data + __pyx_t_13 * __pyx_v_IDs_b.strides[0]) ) + __pyx_t_14 * __pyx_v_IDs_b.strides[1]) )) = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_11 * __pyx_v_linklist.strides[0]) ) + __pyx_t_12 * __pyx_v_linklist.strides[1]) )));
 
-            /* "MuchTree.pyx":1076
+            /* "SuchTree/MuchTree.pyx":1076
  *                     IDs_b[ k, 1 ] = linklist[ i, 0 ]
  *                     IDs_b[ k, 0 ] = linklist[ j, 0 ]
  *                     k += 1             # <<<<<<<<<<<<<<
@@ -18185,7 +18185,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
         }
       }
 
-      /* "MuchTree.pyx":1069
+      /* "SuchTree/MuchTree.pyx":1069
  *         cdef long [:,:] IDs_b = ids_b
  * 
  *         with nogil :             # <<<<<<<<<<<<<<
@@ -18204,7 +18204,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
       }
   }
 
-  /* "MuchTree.pyx":1078
+  /* "SuchTree/MuchTree.pyx":1078
  *                     k += 1
  * 
  *         return { 'TreeA'       : self.TreeA.distances( ids_a ),             # <<<<<<<<<<<<<<
@@ -18234,7 +18234,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeA, __pyx_t_2) < 0) __PYX_ERR(0, 1078, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1079
+  /* "SuchTree/MuchTree.pyx":1079
  * 
  *         return { 'TreeA'       : self.TreeA.distances( ids_a ),
  *                  'TreeB'       : self.TreeB.distances( ids_b ),             # <<<<<<<<<<<<<<
@@ -18261,7 +18261,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeB, __pyx_t_2) < 0) __PYX_ERR(0, 1078, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1080
+  /* "SuchTree/MuchTree.pyx":1080
  *         return { 'TreeA'       : self.TreeA.distances( ids_a ),
  *                  'TreeB'       : self.TreeB.distances( ids_b ),
  *                  'ids_A'       : ids_a,             # <<<<<<<<<<<<<<
@@ -18270,7 +18270,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  */
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_ids_A, __pyx_v_ids_a) < 0) __PYX_ERR(0, 1078, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1081
+  /* "SuchTree/MuchTree.pyx":1081
  *                  'TreeB'       : self.TreeB.distances( ids_b ),
  *                  'ids_A'       : ids_a,
  *                  'ids_B'       : ids_b,             # <<<<<<<<<<<<<<
@@ -18279,7 +18279,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  */
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_ids_B, __pyx_v_ids_b) < 0) __PYX_ERR(0, 1078, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1082
+  /* "SuchTree/MuchTree.pyx":1082
  *                  'ids_A'       : ids_a,
  *                  'ids_B'       : ids_b,
  *                  'n_pairs'     : size,             # <<<<<<<<<<<<<<
@@ -18291,7 +18291,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_pairs, __pyx_t_2) < 0) __PYX_ERR(0, 1078, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1083
+  /* "SuchTree/MuchTree.pyx":1083
  *                  'ids_B'       : ids_b,
  *                  'n_pairs'     : size,
  *                  'n_samples'   : size,             # <<<<<<<<<<<<<<
@@ -18303,7 +18303,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_samples, __pyx_t_2) < 0) __PYX_ERR(0, 1078, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1084
+  /* "SuchTree/MuchTree.pyx":1084
  *                  'n_pairs'     : size,
  *                  'n_samples'   : size,
  *                  'deviation_a' : None,             # <<<<<<<<<<<<<<
@@ -18312,7 +18312,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  */
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_a, Py_None) < 0) __PYX_ERR(0, 1078, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1085
+  /* "SuchTree/MuchTree.pyx":1085
  *                  'n_samples'   : size,
  *                  'deviation_a' : None,
  *                  'deviation_b' : None }             # <<<<<<<<<<<<<<
@@ -18324,7 +18324,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1052
+  /* "SuchTree/MuchTree.pyx":1052
  * 
  *     @cython.boundscheck(False)
  *     def linked_distances( self ) :             # <<<<<<<<<<<<<<
@@ -18339,7 +18339,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __Pyx_XDECREF(__pyx_t_3);
   __PYX_XDEC_MEMVIEW(&__pyx_t_4, 1);
   __Pyx_XDECREF(__pyx_t_15);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.linked_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.linked_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_ids_a);
@@ -18352,7 +18352,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1088
+/* "SuchTree/MuchTree.pyx":1088
  * 
  *     @cython.boundscheck(False)
  *     cdef uint64_t _random_int( self, uint64_t n ) nogil :             # <<<<<<<<<<<<<<
@@ -18360,14 +18360,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  *         An implementation of the xorshift64star pseudorandom number
  */
 
-static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, uint64_t __pyx_v_n) {
+static uint64_t __pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, uint64_t __pyx_v_n) {
   uint64_t __pyx_r;
   uint64_t __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "MuchTree.pyx":1097
+  /* "SuchTree/MuchTree.pyx":1097
  *         http://dx.doi.org/10.18637/jss.v008.i14
  *         '''
  *         self.seed ^= self.seed >> 12 # a             # <<<<<<<<<<<<<<
@@ -18376,7 +18376,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
  */
   __pyx_v_self->seed = (__pyx_v_self->seed ^ (__pyx_v_self->seed >> 12));
 
-  /* "MuchTree.pyx":1098
+  /* "SuchTree/MuchTree.pyx":1098
  *         '''
  *         self.seed ^= self.seed >> 12 # a
  *         self.seed ^= self.seed << 25 # b             # <<<<<<<<<<<<<<
@@ -18385,7 +18385,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
  */
   __pyx_v_self->seed = (__pyx_v_self->seed ^ (__pyx_v_self->seed << 25));
 
-  /* "MuchTree.pyx":1099
+  /* "SuchTree/MuchTree.pyx":1099
  *         self.seed ^= self.seed >> 12 # a
  *         self.seed ^= self.seed << 25 # b
  *         self.seed ^= self.seed >> 27 # c             # <<<<<<<<<<<<<<
@@ -18394,7 +18394,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
  */
   __pyx_v_self->seed = (__pyx_v_self->seed ^ (__pyx_v_self->seed >> 27));
 
-  /* "MuchTree.pyx":1100
+  /* "SuchTree/MuchTree.pyx":1100
  *         self.seed ^= self.seed << 25 # b
  *         self.seed ^= self.seed >> 27 # c
  *         return ( self.seed * self.modulus ) % n             # <<<<<<<<<<<<<<
@@ -18415,7 +18415,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
   __pyx_r = (__pyx_t_1 % __pyx_v_n);
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1088
+  /* "SuchTree/MuchTree.pyx":1088
  * 
  *     @cython.boundscheck(False)
  *     cdef uint64_t _random_int( self, uint64_t n ) nogil :             # <<<<<<<<<<<<<<
@@ -18425,13 +18425,13 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_WriteUnraisable("MuchTree.SuchLinkedTrees._random_int", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 1);
+  __Pyx_WriteUnraisable("SuchTree.MuchTree.SuchLinkedTrees._random_int", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 1);
   __pyx_r = 0;
   __pyx_L0:;
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1103
+/* "SuchTree/MuchTree.pyx":1103
  * 
  *     @cython.boundscheck(False)
  *     def sample_linked_distances( self, float sigma=0.001,             # <<<<<<<<<<<<<<
@@ -18440,8 +18440,8 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_17sample_linked_distances(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_17sample_linked_distances(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_17sample_linked_distances(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_17sample_linked_distances(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   float __pyx_v_sigma;
   unsigned int __pyx_v_buckets;
   unsigned int __pyx_v_n;
@@ -18538,18 +18538,18 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_17sample_linked_distances(
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("sample_linked_distances", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1103, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.sample_linked_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.sample_linked_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_sigma, __pyx_v_buckets, __pyx_v_n, __pyx_v_maxcycles);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_sigma, __pyx_v_buckets, __pyx_v_n, __pyx_v_maxcycles);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, float __pyx_v_sigma, unsigned int __pyx_v_buckets, unsigned int __pyx_v_n, unsigned int __pyx_v_maxcycles) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, float __pyx_v_sigma, unsigned int __pyx_v_buckets, unsigned int __pyx_v_n, unsigned int __pyx_v_maxcycles) {
   PyObject *__pyx_v_np_query_a = NULL;
   PyObject *__pyx_v_np_query_b = NULL;
   PyObject *__pyx_v_np_distances_a = NULL;
@@ -18626,7 +18626,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("sample_linked_distances", 0);
 
-  /* "MuchTree.pyx":1108
+  /* "SuchTree/MuchTree.pyx":1108
  *                                        unsigned int maxcycles=100 ) :
  * 
  *         np_query_a = np.ndarray( ( n, 2 ), dtype=int )             # <<<<<<<<<<<<<<
@@ -18658,7 +18658,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_query_a = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1109
+  /* "SuchTree/MuchTree.pyx":1109
  * 
  *         np_query_a = np.ndarray( ( n, 2 ), dtype=int )
  *         np_query_b = np.ndarray( ( n, 2 ), dtype=int )             # <<<<<<<<<<<<<<
@@ -18690,7 +18690,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_query_b = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1111
+  /* "SuchTree/MuchTree.pyx":1111
  *         np_query_b = np.ndarray( ( n, 2 ), dtype=int )
  * 
  *         np_distances_a = np.ndarray( ( buckets, n ), dtype=float )             # <<<<<<<<<<<<<<
@@ -18724,7 +18724,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_distances_a = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1112
+  /* "SuchTree/MuchTree.pyx":1112
  * 
  *         np_distances_a = np.ndarray( ( buckets, n ), dtype=float )
  *         np_distances_b = np.ndarray( ( buckets, n ), dtype=float )             # <<<<<<<<<<<<<<
@@ -18758,7 +18758,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_distances_b = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1114
+  /* "SuchTree/MuchTree.pyx":1114
  *         np_distances_b = np.ndarray( ( buckets, n ), dtype=float )
  * 
  *         np_dbuffer_a = np.ndarray( n, dtype=float )             # <<<<<<<<<<<<<<
@@ -18782,7 +18782,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_dbuffer_a = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1115
+  /* "SuchTree/MuchTree.pyx":1115
  * 
  *         np_dbuffer_a = np.ndarray( n, dtype=float )
  *         np_dbuffer_b = np.ndarray( n, dtype=float )             # <<<<<<<<<<<<<<
@@ -18806,7 +18806,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_dbuffer_b = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1117
+  /* "SuchTree/MuchTree.pyx":1117
  *         np_dbuffer_b = np.ndarray( n, dtype=float )
  * 
  *         np_sums_a = np.zeros( buckets, dtype=float )             # <<<<<<<<<<<<<<
@@ -18836,7 +18836,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_sums_a = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":1118
+  /* "SuchTree/MuchTree.pyx":1118
  * 
  *         np_sums_a = np.zeros( buckets, dtype=float )
  *         np_sums_b = np.zeros( buckets, dtype=float )             # <<<<<<<<<<<<<<
@@ -18866,7 +18866,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_sums_b = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1120
+  /* "SuchTree/MuchTree.pyx":1120
  *         np_sums_b = np.zeros( buckets, dtype=float )
  * 
  *         np_sumsq_a = np.zeros( buckets, dtype=float )             # <<<<<<<<<<<<<<
@@ -18896,7 +18896,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_sumsq_a = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1121
+  /* "SuchTree/MuchTree.pyx":1121
  * 
  *         np_sumsq_a = np.zeros( buckets, dtype=float )
  *         np_sumsq_b = np.zeros( buckets, dtype=float )             # <<<<<<<<<<<<<<
@@ -18926,7 +18926,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_sumsq_b = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":1123
+  /* "SuchTree/MuchTree.pyx":1123
  *         np_sumsq_b = np.zeros( buckets, dtype=float )
  * 
  *         np_samples_a = np.zeros( buckets, dtype=int )             # <<<<<<<<<<<<<<
@@ -18956,7 +18956,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_samples_a = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1124
+  /* "SuchTree/MuchTree.pyx":1124
  * 
  *         np_samples_a = np.zeros( buckets, dtype=int )
  *         np_samples_b = np.zeros( buckets, dtype=int )             # <<<<<<<<<<<<<<
@@ -18986,7 +18986,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_samples_b = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1126
+  /* "SuchTree/MuchTree.pyx":1126
  *         np_samples_b = np.zeros( buckets, dtype=int )
  * 
  *         np_deviations_a = np.ndarray( buckets, dtype=float )             # <<<<<<<<<<<<<<
@@ -19010,7 +19010,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_deviations_a = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1127
+  /* "SuchTree/MuchTree.pyx":1127
  * 
  *         np_deviations_a = np.ndarray( buckets, dtype=float )
  *         np_deviations_b = np.ndarray( buckets, dtype=float )             # <<<<<<<<<<<<<<
@@ -19034,7 +19034,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_deviations_b = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1129
+  /* "SuchTree/MuchTree.pyx":1129
  *         np_deviations_b = np.ndarray( buckets, dtype=float )
  * 
  *         np_all_distances_a = np.ndarray( buckets * n * maxcycles, dtype=float )             # <<<<<<<<<<<<<<
@@ -19058,7 +19058,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_all_distances_a = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1130
+  /* "SuchTree/MuchTree.pyx":1130
  * 
  *         np_all_distances_a = np.ndarray( buckets * n * maxcycles, dtype=float )
  *         np_all_distances_b = np.ndarray( buckets * n * maxcycles, dtype=float )             # <<<<<<<<<<<<<<
@@ -19082,7 +19082,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_all_distances_b = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1132
+  /* "SuchTree/MuchTree.pyx":1132
  *         np_all_distances_b = np.ndarray( buckets * n * maxcycles, dtype=float )
  * 
  *         cdef long [:,:] query_a = np_query_a             # <<<<<<<<<<<<<<
@@ -19094,7 +19094,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "MuchTree.pyx":1133
+  /* "SuchTree/MuchTree.pyx":1133
  * 
  *         cdef long [:,:] query_a = np_query_a
  *         cdef long [:,:] query_b = np_query_b             # <<<<<<<<<<<<<<
@@ -19106,7 +19106,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "MuchTree.pyx":1135
+  /* "SuchTree/MuchTree.pyx":1135
  *         cdef long [:,:] query_b = np_query_b
  * 
  *         cdef double [:,:] distances_a = np_distances_a             # <<<<<<<<<<<<<<
@@ -19118,7 +19118,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "MuchTree.pyx":1136
+  /* "SuchTree/MuchTree.pyx":1136
  * 
  *         cdef double [:,:] distances_a = np_distances_a
  *         cdef double [:,:] distances_b = np_distances_b             # <<<<<<<<<<<<<<
@@ -19130,7 +19130,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "MuchTree.pyx":1138
+  /* "SuchTree/MuchTree.pyx":1138
  *         cdef double [:,:] distances_b = np_distances_b
  * 
  *         cdef double [:] distances_a_mv = np_dbuffer_a             # <<<<<<<<<<<<<<
@@ -19142,7 +19142,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1139
+  /* "SuchTree/MuchTree.pyx":1139
  * 
  *         cdef double [:] distances_a_mv = np_dbuffer_a
  *         cdef double [:] distances_b_mv = np_dbuffer_b             # <<<<<<<<<<<<<<
@@ -19154,7 +19154,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1141
+  /* "SuchTree/MuchTree.pyx":1141
  *         cdef double [:] distances_b_mv = np_dbuffer_b
  * 
  *         cdef double [:] sums_a = np_sums_a             # <<<<<<<<<<<<<<
@@ -19166,7 +19166,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1142
+  /* "SuchTree/MuchTree.pyx":1142
  * 
  *         cdef double [:] sums_a = np_sums_a
  *         cdef double [:] sums_b = np_sums_b             # <<<<<<<<<<<<<<
@@ -19178,7 +19178,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1144
+  /* "SuchTree/MuchTree.pyx":1144
  *         cdef double [:] sums_b = np_sums_b
  * 
  *         cdef double [:] sumsq_a = np_sumsq_a             # <<<<<<<<<<<<<<
@@ -19190,7 +19190,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1145
+  /* "SuchTree/MuchTree.pyx":1145
  * 
  *         cdef double [:] sumsq_a = np_sumsq_a
  *         cdef double [:] sumsq_b = np_sumsq_b             # <<<<<<<<<<<<<<
@@ -19202,7 +19202,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1147
+  /* "SuchTree/MuchTree.pyx":1147
  *         cdef double [:] sumsq_b = np_sumsq_b
  * 
  *         cdef long [:] samples_a = np_samples_a             # <<<<<<<<<<<<<<
@@ -19214,7 +19214,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "MuchTree.pyx":1148
+  /* "SuchTree/MuchTree.pyx":1148
  * 
  *         cdef long [:] samples_a = np_samples_a
  *         cdef long [:] samples_b = np_samples_b             # <<<<<<<<<<<<<<
@@ -19226,7 +19226,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "MuchTree.pyx":1150
+  /* "SuchTree/MuchTree.pyx":1150
  *         cdef long [:] samples_b = np_samples_b
  * 
  *         cdef double [:] deviations_a = np_deviations_a             # <<<<<<<<<<<<<<
@@ -19238,7 +19238,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1151
+  /* "SuchTree/MuchTree.pyx":1151
  * 
  *         cdef double [:] deviations_a = np_deviations_a
  *         cdef double [:] deviations_b = np_deviations_b             # <<<<<<<<<<<<<<
@@ -19250,7 +19250,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1153
+  /* "SuchTree/MuchTree.pyx":1153
  *         cdef double [:] deviations_b = np_deviations_b
  * 
  *         cdef double [:] all_distances_a = np_all_distances_a             # <<<<<<<<<<<<<<
@@ -19262,7 +19262,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1154
+  /* "SuchTree/MuchTree.pyx":1154
  * 
  *         cdef double [:] all_distances_a = np_all_distances_a
  *         cdef double [:] all_distances_b = np_all_distances_b             # <<<<<<<<<<<<<<
@@ -19274,7 +19274,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1156
+  /* "SuchTree/MuchTree.pyx":1156
  *         cdef double [:] all_distances_b = np_all_distances_b
  * 
  *         cdef long [:,:] linklist = self.np_linklist             # <<<<<<<<<<<<<<
@@ -19286,7 +19286,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "MuchTree.pyx":1172
+  /* "SuchTree/MuchTree.pyx":1172
  *         cdef float sumsq_bucket_b
  * 
  *         cdef unsigned int cycles = 0             # <<<<<<<<<<<<<<
@@ -19295,7 +19295,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
  */
   __pyx_v_cycles = 0;
 
-  /* "MuchTree.pyx":1174
+  /* "SuchTree/MuchTree.pyx":1174
  *         cdef unsigned int cycles = 0
  * 
  *         while True :             # <<<<<<<<<<<<<<
@@ -19304,7 +19304,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
  */
   while (1) {
 
-    /* "MuchTree.pyx":1175
+    /* "SuchTree/MuchTree.pyx":1175
  * 
  *         while True :
  *             for i in xrange( buckets ) :             # <<<<<<<<<<<<<<
@@ -19316,7 +19316,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "MuchTree.pyx":1176
+      /* "SuchTree/MuchTree.pyx":1176
  *         while True :
  *             for i in xrange( buckets ) :
  *                 with nogil :             # <<<<<<<<<<<<<<
@@ -19331,7 +19331,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
           #endif
           /*try:*/ {
 
-            /* "MuchTree.pyx":1177
+            /* "SuchTree/MuchTree.pyx":1177
  *             for i in xrange( buckets ) :
  *                 with nogil :
  *                     for j in xrange( n ) :             # <<<<<<<<<<<<<<
@@ -19343,25 +19343,25 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
             for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
               __pyx_v_j = __pyx_t_14;
 
-              /* "MuchTree.pyx":1178
+              /* "SuchTree/MuchTree.pyx":1178
  *                 with nogil :
  *                     for j in xrange( n ) :
  *                         l1 = self._random_int( self.subset_n_links )             # <<<<<<<<<<<<<<
  *                         l2 = self._random_int( self.subset_n_links )
  *                         #l1 = np.random.randint( self.subset_n_links )
  */
-              __pyx_v_l1 = ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_random_int(__pyx_v_self, __pyx_v_self->subset_n_links);
+              __pyx_v_l1 = ((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_random_int(__pyx_v_self, __pyx_v_self->subset_n_links);
 
-              /* "MuchTree.pyx":1179
+              /* "SuchTree/MuchTree.pyx":1179
  *                     for j in xrange( n ) :
  *                         l1 = self._random_int( self.subset_n_links )
  *                         l2 = self._random_int( self.subset_n_links )             # <<<<<<<<<<<<<<
  *                         #l1 = np.random.randint( self.subset_n_links )
  *                         #l2 = np.random.randint( self.subset_n_links )
  */
-              __pyx_v_l2 = ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_random_int(__pyx_v_self, __pyx_v_self->subset_n_links);
+              __pyx_v_l2 = ((struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_random_int(__pyx_v_self, __pyx_v_self->subset_n_links);
 
-              /* "MuchTree.pyx":1182
+              /* "SuchTree/MuchTree.pyx":1182
  *                         #l1 = np.random.randint( self.subset_n_links )
  *                         #l2 = np.random.randint( self.subset_n_links )
  *                         a1 = linklist[ l1, 1 ]             # <<<<<<<<<<<<<<
@@ -19374,7 +19374,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_16 < 0) __pyx_t_16 += __pyx_v_linklist.shape[1];
               __pyx_v_a1 = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_15 * __pyx_v_linklist.strides[0]) ) + __pyx_t_16 * __pyx_v_linklist.strides[1]) )));
 
-              /* "MuchTree.pyx":1183
+              /* "SuchTree/MuchTree.pyx":1183
  *                         #l2 = np.random.randint( self.subset_n_links )
  *                         a1 = linklist[ l1, 1 ]
  *                         b1 = linklist[ l1, 0 ]             # <<<<<<<<<<<<<<
@@ -19387,7 +19387,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_linklist.shape[1];
               __pyx_v_b1 = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_16 * __pyx_v_linklist.strides[0]) ) + __pyx_t_15 * __pyx_v_linklist.strides[1]) )));
 
-              /* "MuchTree.pyx":1184
+              /* "SuchTree/MuchTree.pyx":1184
  *                         a1 = linklist[ l1, 1 ]
  *                         b1 = linklist[ l1, 0 ]
  *                         a2 = linklist[ l2, 1 ]             # <<<<<<<<<<<<<<
@@ -19400,7 +19400,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_16 < 0) __pyx_t_16 += __pyx_v_linklist.shape[1];
               __pyx_v_a2 = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_15 * __pyx_v_linklist.strides[0]) ) + __pyx_t_16 * __pyx_v_linklist.strides[1]) )));
 
-              /* "MuchTree.pyx":1185
+              /* "SuchTree/MuchTree.pyx":1185
  *                         b1 = linklist[ l1, 0 ]
  *                         a2 = linklist[ l2, 1 ]
  *                         b2 = linklist[ l2, 0 ]             # <<<<<<<<<<<<<<
@@ -19413,7 +19413,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_linklist.shape[1];
               __pyx_v_b2 = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_16 * __pyx_v_linklist.strides[0]) ) + __pyx_t_15 * __pyx_v_linklist.strides[1]) )));
 
-              /* "MuchTree.pyx":1186
+              /* "SuchTree/MuchTree.pyx":1186
  *                         a2 = linklist[ l2, 1 ]
  *                         b2 = linklist[ l2, 0 ]
  *                         query_a[ j, 0 ] = a1             # <<<<<<<<<<<<<<
@@ -19426,7 +19426,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_16 < 0) __pyx_t_16 += __pyx_v_query_a.shape[1];
               *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_query_a.data + __pyx_t_15 * __pyx_v_query_a.strides[0]) ) + __pyx_t_16 * __pyx_v_query_a.strides[1]) )) = __pyx_v_a1;
 
-              /* "MuchTree.pyx":1187
+              /* "SuchTree/MuchTree.pyx":1187
  *                         b2 = linklist[ l2, 0 ]
  *                         query_a[ j, 0 ] = a1
  *                         query_a[ j, 1 ] = a2             # <<<<<<<<<<<<<<
@@ -19439,7 +19439,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_query_a.shape[1];
               *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_query_a.data + __pyx_t_16 * __pyx_v_query_a.strides[0]) ) + __pyx_t_15 * __pyx_v_query_a.strides[1]) )) = __pyx_v_a2;
 
-              /* "MuchTree.pyx":1188
+              /* "SuchTree/MuchTree.pyx":1188
  *                         query_a[ j, 0 ] = a1
  *                         query_a[ j, 1 ] = a2
  *                         query_b[ j, 0 ] = b1             # <<<<<<<<<<<<<<
@@ -19452,7 +19452,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_16 < 0) __pyx_t_16 += __pyx_v_query_b.shape[1];
               *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_query_b.data + __pyx_t_15 * __pyx_v_query_b.strides[0]) ) + __pyx_t_16 * __pyx_v_query_b.strides[1]) )) = __pyx_v_b1;
 
-              /* "MuchTree.pyx":1189
+              /* "SuchTree/MuchTree.pyx":1189
  *                         query_a[ j, 1 ] = a2
  *                         query_b[ j, 0 ] = b1
  *                         query_b[ j, 1 ] = b2             # <<<<<<<<<<<<<<
@@ -19467,7 +19467,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
             }
           }
 
-          /* "MuchTree.pyx":1176
+          /* "SuchTree/MuchTree.pyx":1176
  *         while True :
  *             for i in xrange( buckets ) :
  *                 with nogil :             # <<<<<<<<<<<<<<
@@ -19486,7 +19486,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
           }
       }
 
-      /* "MuchTree.pyx":1190
+      /* "SuchTree/MuchTree.pyx":1190
  *                         query_b[ j, 0 ] = b1
  *                         query_b[ j, 1 ] = b2
  *                 distances_a_mv = self.TreeA.distances( query_a )             # <<<<<<<<<<<<<<
@@ -19520,7 +19520,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1191
+      /* "SuchTree/MuchTree.pyx":1191
  *                         query_b[ j, 1 ] = b2
  *                 distances_a_mv = self.TreeA.distances( query_a )
  *                 distances_b_mv = self.TreeB.distances( query_b )             # <<<<<<<<<<<<<<
@@ -19554,7 +19554,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1192
+      /* "SuchTree/MuchTree.pyx":1192
  *                 distances_a_mv = self.TreeA.distances( query_a )
  *                 distances_b_mv = self.TreeB.distances( query_b )
  *                 distances_a[ i, : ] = distances_a_mv             # <<<<<<<<<<<<<<
@@ -19582,7 +19582,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_a_mv, __pyx_t_7, 1
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1193
+      /* "SuchTree/MuchTree.pyx":1193
  *                 distances_b_mv = self.TreeB.distances( query_b )
  *                 distances_a[ i, : ] = distances_a_mv
  *                 distances_b[ i, : ] = distances_b_mv             # <<<<<<<<<<<<<<
@@ -19610,7 +19610,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1194
+      /* "SuchTree/MuchTree.pyx":1194
  *                 distances_a[ i, : ] = distances_a_mv
  *                 distances_b[ i, : ] = distances_b_mv
  *                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv             # <<<<<<<<<<<<<<
@@ -19643,7 +19643,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_a_mv, __pyx_t_7, 1
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1195
+      /* "SuchTree/MuchTree.pyx":1195
  *                 distances_b[ i, : ] = distances_b_mv
  *                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv
  *                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv             # <<<<<<<<<<<<<<
@@ -19676,7 +19676,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1196
+      /* "SuchTree/MuchTree.pyx":1196
  *                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv
  *                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv
  *                 with nogil :             # <<<<<<<<<<<<<<
@@ -19691,7 +19691,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
           #endif
           /*try:*/ {
 
-            /* "MuchTree.pyx":1197
+            /* "SuchTree/MuchTree.pyx":1197
  *                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv
  *                 with nogil :
  *                     for j in xrange( n ) :             # <<<<<<<<<<<<<<
@@ -19703,7 +19703,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
             for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
               __pyx_v_j = __pyx_t_14;
 
-              /* "MuchTree.pyx":1198
+              /* "SuchTree/MuchTree.pyx":1198
  *                 with nogil :
  *                     for j in xrange( n ) :
  *                         sums_a[i]  += distances_a[ i, j ]             # <<<<<<<<<<<<<<
@@ -19718,7 +19718,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
               if (__pyx_t_17 < 0) __pyx_t_17 += __pyx_v_sums_a.shape[0];
               *((double *) ( /* dim=0 */ (__pyx_v_sums_a.data + __pyx_t_17 * __pyx_v_sums_a.strides[0]) )) += (*((double *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_distances_a.data + __pyx_t_15 * __pyx_v_distances_a.strides[0]) ) + __pyx_t_16 * __pyx_v_distances_a.strides[1]) )));
 
-              /* "MuchTree.pyx":1199
+              /* "SuchTree/MuchTree.pyx":1199
  *                     for j in xrange( n ) :
  *                         sums_a[i]  += distances_a[ i, j ]
  *                         sums_b[i]  += distances_b[ i, j ]             # <<<<<<<<<<<<<<
@@ -19733,7 +19733,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
               if (__pyx_t_17 < 0) __pyx_t_17 += __pyx_v_sums_b.shape[0];
               *((double *) ( /* dim=0 */ (__pyx_v_sums_b.data + __pyx_t_17 * __pyx_v_sums_b.strides[0]) )) += (*((double *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_distances_b.data + __pyx_t_16 * __pyx_v_distances_b.strides[0]) ) + __pyx_t_15 * __pyx_v_distances_b.strides[1]) )));
 
-              /* "MuchTree.pyx":1200
+              /* "SuchTree/MuchTree.pyx":1200
  *                         sums_a[i]  += distances_a[ i, j ]
  *                         sums_b[i]  += distances_b[ i, j ]
  *                         sumsq_a[i] += distances_a[ i, j ]**2             # <<<<<<<<<<<<<<
@@ -19748,7 +19748,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
               if (__pyx_t_17 < 0) __pyx_t_17 += __pyx_v_sumsq_a.shape[0];
               *((double *) ( /* dim=0 */ (__pyx_v_sumsq_a.data + __pyx_t_17 * __pyx_v_sumsq_a.strides[0]) )) += pow((*((double *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_distances_a.data + __pyx_t_15 * __pyx_v_distances_a.strides[0]) ) + __pyx_t_16 * __pyx_v_distances_a.strides[1]) ))), 2.0);
 
-              /* "MuchTree.pyx":1201
+              /* "SuchTree/MuchTree.pyx":1201
  *                         sums_b[i]  += distances_b[ i, j ]
  *                         sumsq_a[i] += distances_a[ i, j ]**2
  *                         sumsq_b[i] += distances_b[ i, j ]**2             # <<<<<<<<<<<<<<
@@ -19765,7 +19765,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
             }
           }
 
-          /* "MuchTree.pyx":1196
+          /* "SuchTree/MuchTree.pyx":1196
  *                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv
  *                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv
  *                 with nogil :             # <<<<<<<<<<<<<<
@@ -19784,7 +19784,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
           }
       }
 
-      /* "MuchTree.pyx":1202
+      /* "SuchTree/MuchTree.pyx":1202
  *                         sumsq_a[i] += distances_a[ i, j ]**2
  *                         sumsq_b[i] += distances_b[ i, j ]**2
  *                 samples_a[i] += n             # <<<<<<<<<<<<<<
@@ -19795,7 +19795,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_samples_a.shape[0];
       *((long *) ( /* dim=0 */ (__pyx_v_samples_a.data + __pyx_t_15 * __pyx_v_samples_a.strides[0]) )) += __pyx_v_n;
 
-      /* "MuchTree.pyx":1203
+      /* "SuchTree/MuchTree.pyx":1203
  *                         sumsq_b[i] += distances_b[ i, j ]**2
  *                 samples_a[i] += n
  *                 samples_b[i] += n             # <<<<<<<<<<<<<<
@@ -19806,7 +19806,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_samples_b.shape[0];
       *((long *) ( /* dim=0 */ (__pyx_v_samples_b.data + __pyx_t_15 * __pyx_v_samples_b.strides[0]) )) += __pyx_v_n;
 
-      /* "MuchTree.pyx":1204
+      /* "SuchTree/MuchTree.pyx":1204
  *                 samples_a[i] += n
  *                 samples_b[i] += n
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]             # <<<<<<<<<<<<<<
@@ -19824,7 +19824,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
         __PYX_ERR(0, 1204, __pyx_L1_error)
       }
 
-      /* "MuchTree.pyx":1205
+      /* "SuchTree/MuchTree.pyx":1205
  *                 samples_b[i] += n
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]
  *                                 - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)             # <<<<<<<<<<<<<<
@@ -19842,7 +19842,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
         __PYX_ERR(0, 1205, __pyx_L1_error)
       }
 
-      /* "MuchTree.pyx":1204
+      /* "SuchTree/MuchTree.pyx":1204
  *                 samples_a[i] += n
  *                 samples_b[i] += n
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]             # <<<<<<<<<<<<<<
@@ -19853,7 +19853,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_deviations_a.shape[0];
       *((double *) ( /* dim=0 */ (__pyx_v_deviations_a.data + __pyx_t_15 * __pyx_v_deviations_a.strides[0]) )) = pow(((__pyx_t_18 / ((double)__pyx_t_19)) - pow((__pyx_t_20 / ((double)__pyx_t_21)), 2.0)), 0.5);
 
-      /* "MuchTree.pyx":1206
+      /* "SuchTree/MuchTree.pyx":1206
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]
  *                                 - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)
  *                 deviations_b[i] = ( sumsq_b[i] / samples_b[i]             # <<<<<<<<<<<<<<
@@ -19871,7 +19871,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
         __PYX_ERR(0, 1206, __pyx_L1_error)
       }
 
-      /* "MuchTree.pyx":1207
+      /* "SuchTree/MuchTree.pyx":1207
  *                                 - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)
  *                 deviations_b[i] = ( sumsq_b[i] / samples_b[i]
  *                                 - ( sums_b[i]  / samples_b[i] )**2 )**(0.5)             # <<<<<<<<<<<<<<
@@ -19889,7 +19889,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
         __PYX_ERR(0, 1207, __pyx_L1_error)
       }
 
-      /* "MuchTree.pyx":1206
+      /* "SuchTree/MuchTree.pyx":1206
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]
  *                                 - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)
  *                 deviations_b[i] = ( sumsq_b[i] / samples_b[i]             # <<<<<<<<<<<<<<
@@ -19901,7 +19901,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       *((double *) ( /* dim=0 */ (__pyx_v_deviations_b.data + __pyx_t_15 * __pyx_v_deviations_b.strides[0]) )) = pow(((__pyx_t_20 / ((double)__pyx_t_21)) - pow((__pyx_t_18 / ((double)__pyx_t_19)), 2.0)), 0.5);
     }
 
-    /* "MuchTree.pyx":1208
+    /* "SuchTree/MuchTree.pyx":1208
  *                 deviations_b[i] = ( sumsq_b[i] / samples_b[i]
  *                                 - ( sums_b[i]  / samples_b[i] )**2 )**(0.5)
  *             deviation_a = 0             # <<<<<<<<<<<<<<
@@ -19910,7 +19910,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_deviation_a = 0.0;
 
-    /* "MuchTree.pyx":1209
+    /* "SuchTree/MuchTree.pyx":1209
  *                                 - ( sums_b[i]  / samples_b[i] )**2 )**(0.5)
  *             deviation_a = 0
  *             deviation_b = 0             # <<<<<<<<<<<<<<
@@ -19919,7 +19919,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_deviation_b = 0.0;
 
-    /* "MuchTree.pyx":1210
+    /* "SuchTree/MuchTree.pyx":1210
  *             deviation_a = 0
  *             deviation_b = 0
  *             sumsq_bucket_a = 0             # <<<<<<<<<<<<<<
@@ -19928,7 +19928,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_sumsq_bucket_a = 0.0;
 
-    /* "MuchTree.pyx":1211
+    /* "SuchTree/MuchTree.pyx":1211
  *             deviation_b = 0
  *             sumsq_bucket_a = 0
  *             sumsq_bucket_b = 0             # <<<<<<<<<<<<<<
@@ -19937,7 +19937,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_sumsq_bucket_b = 0.0;
 
-    /* "MuchTree.pyx":1212
+    /* "SuchTree/MuchTree.pyx":1212
  *             sumsq_bucket_a = 0
  *             sumsq_bucket_b = 0
  *             for i in xrange( buckets ) :             # <<<<<<<<<<<<<<
@@ -19949,7 +19949,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "MuchTree.pyx":1213
+      /* "SuchTree/MuchTree.pyx":1213
  *             sumsq_bucket_b = 0
  *             for i in xrange( buckets ) :
  *                 deviation_a += deviations_a[i]             # <<<<<<<<<<<<<<
@@ -19960,7 +19960,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_deviations_a.shape[0];
       __pyx_v_deviation_a = (__pyx_v_deviation_a + (*((double *) ( /* dim=0 */ (__pyx_v_deviations_a.data + __pyx_t_15 * __pyx_v_deviations_a.strides[0]) ))));
 
-      /* "MuchTree.pyx":1214
+      /* "SuchTree/MuchTree.pyx":1214
  *             for i in xrange( buckets ) :
  *                 deviation_a += deviations_a[i]
  *                 deviation_b += deviations_b[i]             # <<<<<<<<<<<<<<
@@ -19971,7 +19971,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_deviations_b.shape[0];
       __pyx_v_deviation_b = (__pyx_v_deviation_b + (*((double *) ( /* dim=0 */ (__pyx_v_deviations_b.data + __pyx_t_15 * __pyx_v_deviations_b.strides[0]) ))));
 
-      /* "MuchTree.pyx":1215
+      /* "SuchTree/MuchTree.pyx":1215
  *                 deviation_a += deviations_a[i]
  *                 deviation_b += deviations_b[i]
  *                 sumsq_bucket_a += deviations_a[i]**2             # <<<<<<<<<<<<<<
@@ -19982,7 +19982,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_deviations_a.shape[0];
       __pyx_v_sumsq_bucket_a = (__pyx_v_sumsq_bucket_a + pow((*((double *) ( /* dim=0 */ (__pyx_v_deviations_a.data + __pyx_t_15 * __pyx_v_deviations_a.strides[0]) ))), 2.0));
 
-      /* "MuchTree.pyx":1216
+      /* "SuchTree/MuchTree.pyx":1216
  *                 deviation_b += deviations_b[i]
  *                 sumsq_bucket_a += deviations_a[i]**2
  *                 sumsq_bucket_b += deviations_b[i]**2             # <<<<<<<<<<<<<<
@@ -19994,7 +19994,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       __pyx_v_sumsq_bucket_b = (__pyx_v_sumsq_bucket_b + pow((*((double *) ( /* dim=0 */ (__pyx_v_deviations_b.data + __pyx_t_15 * __pyx_v_deviations_b.strides[0]) ))), 2.0));
     }
 
-    /* "MuchTree.pyx":1217
+    /* "SuchTree/MuchTree.pyx":1217
  *                 sumsq_bucket_a += deviations_a[i]**2
  *                 sumsq_bucket_b += deviations_b[i]**2
  *             deviation_a = ( sumsq_bucket_a / buckets - ( deviation_a / buckets )**2 )**(0.5)             # <<<<<<<<<<<<<<
@@ -20011,7 +20011,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
     }
     __pyx_v_deviation_a = pow(((double)((__pyx_v_sumsq_bucket_a / ((float)__pyx_v_buckets)) - powf((__pyx_v_deviation_a / ((float)__pyx_v_buckets)), 2.0))), 0.5);
 
-    /* "MuchTree.pyx":1218
+    /* "SuchTree/MuchTree.pyx":1218
  *                 sumsq_bucket_b += deviations_b[i]**2
  *             deviation_a = ( sumsq_bucket_a / buckets - ( deviation_a / buckets )**2 )**(0.5)
  *             deviation_b = ( sumsq_bucket_b / buckets - ( deviation_b / buckets )**2 )**(0.5)             # <<<<<<<<<<<<<<
@@ -20028,7 +20028,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
     }
     __pyx_v_deviation_b = pow(((double)((__pyx_v_sumsq_bucket_b / ((float)__pyx_v_buckets)) - powf((__pyx_v_deviation_b / ((float)__pyx_v_buckets)), 2.0))), 0.5);
 
-    /* "MuchTree.pyx":1220
+    /* "SuchTree/MuchTree.pyx":1220
  *             deviation_b = ( sumsq_bucket_b / buckets - ( deviation_b / buckets )**2 )**(0.5)
  * 
  *             cycles += 1             # <<<<<<<<<<<<<<
@@ -20037,7 +20037,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_cycles = (__pyx_v_cycles + 1);
 
-    /* "MuchTree.pyx":1222
+    /* "SuchTree/MuchTree.pyx":1222
  *             cycles += 1
  * 
  *             if deviation_a < sigma and deviation_b < sigma : break             # <<<<<<<<<<<<<<
@@ -20057,7 +20057,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       goto __pyx_L4_break;
     }
 
-    /* "MuchTree.pyx":1223
+    /* "SuchTree/MuchTree.pyx":1223
  * 
  *             if deviation_a < sigma and deviation_b < sigma : break
  *             if cycles >= maxcycles : return None             # <<<<<<<<<<<<<<
@@ -20073,7 +20073,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   }
   __pyx_L4_break:;
 
-  /* "MuchTree.pyx":1225
+  /* "SuchTree/MuchTree.pyx":1225
  *             if cycles >= maxcycles : return None
  * 
  *         return { 'TreeA'       : np_all_distances_a[ : n * buckets * cycles ],             # <<<<<<<<<<<<<<
@@ -20088,7 +20088,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeA, __pyx_t_2) < 0) __PYX_ERR(0, 1225, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1226
+  /* "SuchTree/MuchTree.pyx":1226
  * 
  *         return { 'TreeA'       : np_all_distances_a[ : n * buckets * cycles ],
  *                  'TreeB'       : np_all_distances_b[ : n * buckets * cycles ],             # <<<<<<<<<<<<<<
@@ -20100,7 +20100,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeB, __pyx_t_2) < 0) __PYX_ERR(0, 1225, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1227
+  /* "SuchTree/MuchTree.pyx":1227
  *         return { 'TreeA'       : np_all_distances_a[ : n * buckets * cycles ],
  *                  'TreeB'       : np_all_distances_b[ : n * buckets * cycles ],
  *                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,             # <<<<<<<<<<<<<<
@@ -20112,7 +20112,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_pairs, __pyx_t_2) < 0) __PYX_ERR(0, 1225, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1228
+  /* "SuchTree/MuchTree.pyx":1228
  *                  'TreeB'       : np_all_distances_b[ : n * buckets * cycles ],
  *                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,
  *                  'n_samples'   : n * buckets * cycles,             # <<<<<<<<<<<<<<
@@ -20124,7 +20124,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_samples, __pyx_t_2) < 0) __PYX_ERR(0, 1225, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1229
+  /* "SuchTree/MuchTree.pyx":1229
  *                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,
  *                  'n_samples'   : n * buckets * cycles,
  *                  'deviation_a' : deviation_a,             # <<<<<<<<<<<<<<
@@ -20136,7 +20136,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_a, __pyx_t_2) < 0) __PYX_ERR(0, 1225, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1230
+  /* "SuchTree/MuchTree.pyx":1230
  *                  'n_samples'   : n * buckets * cycles,
  *                  'deviation_a' : deviation_a,
  *                  'deviation_b' : deviation_b }             # <<<<<<<<<<<<<<
@@ -20151,7 +20151,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1103
+  /* "SuchTree/MuchTree.pyx":1103
  * 
  *     @cython.boundscheck(False)
  *     def sample_linked_distances( self, float sigma=0.001,             # <<<<<<<<<<<<<<
@@ -20169,7 +20169,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.sample_linked_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.sample_linked_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_np_query_a);
@@ -20210,7 +20210,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1232
+/* "SuchTree/MuchTree.pyx":1232
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -20219,9 +20219,9 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_15SuchLinkedTrees_18adjacency[] = "\n        Build the graph adjacency matrix of the current subsetted\n        trees, applying the specified random permutaitons.\n        ";
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_18adjacency[] = "\n        Build the graph adjacency matrix of the current subsetted\n        trees, applying the specified random permutaitons.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_deletions = 0;
   PyObject *__pyx_v_additions = 0;
   PyObject *__pyx_v_swaps = 0;
@@ -20293,18 +20293,18 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("adjacency", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1232, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_18adjacency(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1259
+/* "SuchTree/MuchTree.pyx":1259
  * 
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )             # <<<<<<<<<<<<<<
@@ -20313,9 +20313,9 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9adjacency_lambda(PyObject *__pyx_self, PyObject *__pyx_v_x); /*proto*/
-static PyMethodDef __pyx_mdef_8MuchTree_15SuchLinkedTrees_9adjacency_lambda = {"lambda", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_9adjacency_lambda, METH_O, 0};
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9adjacency_lambda(PyObject *__pyx_self, PyObject *__pyx_v_x) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_lambda(PyObject *__pyx_self, PyObject *__pyx_v_x); /*proto*/
+static PyMethodDef __pyx_mdef_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_lambda = {"lambda", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_lambda, METH_O, 0};
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_lambda(PyObject *__pyx_self, PyObject *__pyx_v_x) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("lambda (wrapper)", 0);
@@ -20327,8 +20327,8 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9adjacency_lambda(PyObject
 }
 
 static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__pyx_v_x) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_cur_scope;
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_outer_scope;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_cur_scope;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -20338,7 +20338,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__p
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("lambda", 0);
-  __pyx_outer_scope = (struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_cur_scope->__pyx_v_ta_node_ids)) { __Pyx_RaiseClosureNameError("ta_node_ids"); __PYX_ERR(0, 1259, __pyx_L1_error) }
@@ -20368,7 +20368,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__p
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.adjacency.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.adjacency.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -20376,7 +20376,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__p
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1260
+/* "SuchTree/MuchTree.pyx":1260
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )             # <<<<<<<<<<<<<<
@@ -20385,9 +20385,9 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1(PyObject *__pyx_self, PyObject *__pyx_v_x); /*proto*/
-static PyMethodDef __pyx_mdef_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1 = {"lambda1", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1, METH_O, 0};
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1(PyObject *__pyx_self, PyObject *__pyx_v_x) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1(PyObject *__pyx_self, PyObject *__pyx_v_x); /*proto*/
+static PyMethodDef __pyx_mdef_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1 = {"lambda1", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1, METH_O, 0};
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1(PyObject *__pyx_self, PyObject *__pyx_v_x) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("lambda1 (wrapper)", 0);
@@ -20399,8 +20399,8 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1(PyObje
 }
 
 static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__pyx_v_x) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_cur_scope;
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_outer_scope;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_cur_scope;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -20410,7 +20410,7 @@ static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("lambda1", 0);
-  __pyx_outer_scope = (struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_cur_scope->__pyx_v_tb_node_ids)) { __Pyx_RaiseClosureNameError("tb_node_ids"); __PYX_ERR(0, 1260, __pyx_L1_error) }
@@ -20450,7 +20450,7 @@ static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.adjacency.lambda1", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.adjacency.lambda1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -20458,7 +20458,7 @@ static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1232
+/* "SuchTree/MuchTree.pyx":1232
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -20466,8 +20466,8 @@ static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__
  *         Build the graph adjacency matrix of the current subsetted
  */
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_cur_scope;
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps) {
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_cur_scope;
   PyObject *__pyx_v_TA = NULL;
   PyObject *__pyx_v_TB = NULL;
   PyObject *__pyx_v_tb_aj = NULL;
@@ -20502,16 +20502,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("adjacency", 0);
-  __pyx_cur_scope = (struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *)__pyx_tp_new_8MuchTree___pyx_scope_struct_3_adjacency(__pyx_ptype_8MuchTree___pyx_scope_struct_3_adjacency, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *)__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency(__pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 1232, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
 
-  /* "MuchTree.pyx":1237
+  /* "SuchTree/MuchTree.pyx":1237
  *         trees, applying the specified random permutaitons.
  *         """
  *         TA = self.TreeA.adjacency( node = self.subset_a_root )             # <<<<<<<<<<<<<<
@@ -20533,7 +20533,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_TA = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1238
+  /* "SuchTree/MuchTree.pyx":1238
  *         """
  *         TA = self.TreeA.adjacency( node = self.subset_a_root )
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )             # <<<<<<<<<<<<<<
@@ -20555,7 +20555,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_TB = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1239
+  /* "SuchTree/MuchTree.pyx":1239
  *         TA = self.TreeA.adjacency( node = self.subset_a_root )
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )
  *         ta_aj = TA['adjacency_matrix']             # <<<<<<<<<<<<<<
@@ -20568,7 +20568,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_cur_scope->__pyx_v_ta_aj = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1240
+  /* "SuchTree/MuchTree.pyx":1240
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )
  *         ta_aj = TA['adjacency_matrix']
  *         tb_aj = TB['adjacency_matrix']             # <<<<<<<<<<<<<<
@@ -20580,7 +20580,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_tb_aj = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1241
+  /* "SuchTree/MuchTree.pyx":1241
  *         ta_aj = TA['adjacency_matrix']
  *         tb_aj = TB['adjacency_matrix']
  *         ta_node_ids = TA['node_ids'].tolist()             # <<<<<<<<<<<<<<
@@ -20611,7 +20611,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_cur_scope->__pyx_v_ta_node_ids = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1242
+  /* "SuchTree/MuchTree.pyx":1242
  *         tb_aj = TB['adjacency_matrix']
  *         ta_node_ids = TA['node_ids'].tolist()
  *         tb_node_ids = TB['node_ids'].tolist()             # <<<<<<<<<<<<<<
@@ -20642,7 +20642,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_cur_scope->__pyx_v_tb_node_ids = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1245
+  /* "SuchTree/MuchTree.pyx":1245
  * 
  *         # apply random permutations
  *         ll = np.array( self.linklist )             # <<<<<<<<<<<<<<
@@ -20675,7 +20675,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_ll = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1246
+  /* "SuchTree/MuchTree.pyx":1246
  *         # apply random permutations
  *         ll = np.array( self.linklist )
  *         for i in xrange( 1, deletions ) :             # <<<<<<<<<<<<<<
@@ -20736,7 +20736,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":1247
+    /* "SuchTree/MuchTree.pyx":1247
  *         ll = np.array( self.linklist )
  *         for i in xrange( 1, deletions ) :
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )             # <<<<<<<<<<<<<<
@@ -20794,7 +20794,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_DECREF_SET(__pyx_v_ll, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":1246
+    /* "SuchTree/MuchTree.pyx":1246
  *         # apply random permutations
  *         ll = np.array( self.linklist )
  *         for i in xrange( 1, deletions ) :             # <<<<<<<<<<<<<<
@@ -20804,7 +20804,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1248
+  /* "SuchTree/MuchTree.pyx":1248
  *         for i in xrange( 1, deletions ) :
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
  *         for i in xrange( 1, swaps ) :             # <<<<<<<<<<<<<<
@@ -20865,7 +20865,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":1249
+    /* "SuchTree/MuchTree.pyx":1249
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
  *         for i in xrange( 1, swaps ) :
  *             x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )             # <<<<<<<<<<<<<<
@@ -20951,7 +20951,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_y, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":1250
+    /* "SuchTree/MuchTree.pyx":1250
  *         for i in xrange( 1, swaps ) :
  *             x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )
  *             X, Y = ll[x,1], ll[y,1]             # <<<<<<<<<<<<<<
@@ -20985,7 +20985,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_Y, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1251
+    /* "SuchTree/MuchTree.pyx":1251
  *             x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )
  *             X, Y = ll[x,1], ll[y,1]
  *             ll[x,1] = Y             # <<<<<<<<<<<<<<
@@ -21003,7 +21003,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     if (unlikely(PyObject_SetItem(__pyx_v_ll, __pyx_t_4, __pyx_v_Y) < 0)) __PYX_ERR(0, 1251, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1252
+    /* "SuchTree/MuchTree.pyx":1252
  *             X, Y = ll[x,1], ll[y,1]
  *             ll[x,1] = Y
  *             ll[y,1] = X             # <<<<<<<<<<<<<<
@@ -21021,7 +21021,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     if (unlikely(PyObject_SetItem(__pyx_v_ll, __pyx_t_4, __pyx_v_X) < 0)) __PYX_ERR(0, 1252, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1248
+    /* "SuchTree/MuchTree.pyx":1248
  *         for i in xrange( 1, deletions ) :
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
  *         for i in xrange( 1, swaps ) :             # <<<<<<<<<<<<<<
@@ -21031,7 +21031,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1253
+  /* "SuchTree/MuchTree.pyx":1253
  *             ll[x,1] = Y
  *             ll[y,1] = X
  *         for i in xrange( 1, additions ) :             # <<<<<<<<<<<<<<
@@ -21092,7 +21092,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1254
+    /* "SuchTree/MuchTree.pyx":1254
  *             ll[y,1] = X
  *         for i in xrange( 1, additions ) :
  *             a = np.random.choice( self.TreeA.leafs.values() )             # <<<<<<<<<<<<<<
@@ -21146,7 +21146,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_a, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1255
+    /* "SuchTree/MuchTree.pyx":1255
  *         for i in xrange( 1, additions ) :
  *             a = np.random.choice( self.TreeA.leafs.values() )
  *             b = np.random.choice( self.TreeB.leafs.values() )             # <<<<<<<<<<<<<<
@@ -21200,7 +21200,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_b, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1256
+    /* "SuchTree/MuchTree.pyx":1256
  *             a = np.random.choice( self.TreeA.leafs.values() )
  *             b = np.random.choice( self.TreeB.leafs.values() )
  *             ll = np.concatenate( (ll, np.array([[b,a]])), axis=0 )             # <<<<<<<<<<<<<<
@@ -21270,7 +21270,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_DECREF_SET(__pyx_v_ll, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "MuchTree.pyx":1253
+    /* "SuchTree/MuchTree.pyx":1253
  *             ll[x,1] = Y
  *             ll[y,1] = X
  *         for i in xrange( 1, additions ) :             # <<<<<<<<<<<<<<
@@ -21280,14 +21280,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1259
+  /* "SuchTree/MuchTree.pyx":1259
  * 
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )             # <<<<<<<<<<<<<<
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_9adjacency_lambda, 0, __pyx_n_s_adjacency_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_MuchTree, __pyx_d, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1259, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_lambda, 0, __pyx_n_s_adjacency_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_SuchTree_MuchTree, __pyx_d, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1259, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_tuple__9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1259, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
@@ -21305,14 +21305,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_ta_links = __pyx_t_9;
   __pyx_t_9 = 0;
 
-  /* "MuchTree.pyx":1260
+  /* "SuchTree/MuchTree.pyx":1260
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )             # <<<<<<<<<<<<<<
  * 
  *         # build empty graph adjacency matrix
  */
-  __pyx_t_9 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1, 0, __pyx_n_s_adjacency_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_MuchTree, __pyx_d, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1260, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_CyFunction_New(&__pyx_mdef_8SuchTree_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1, 0, __pyx_n_s_adjacency_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_SuchTree_MuchTree, __pyx_d, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1260, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_tuple__10); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1260, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -21330,7 +21330,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_tb_links = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1263
+  /* "SuchTree/MuchTree.pyx":1263
  * 
  *         # build empty graph adjacency matrix
  *         aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0],             # <<<<<<<<<<<<<<
@@ -21357,7 +21357,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1264
+  /* "SuchTree/MuchTree.pyx":1264
  *         # build empty graph adjacency matrix
  *         aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0],
  *                          ta_aj.shape[1] + tb_aj.shape[1] ) )             # <<<<<<<<<<<<<<
@@ -21379,7 +21379,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1263
+  /* "SuchTree/MuchTree.pyx":1263
  * 
  *         # build empty graph adjacency matrix
  *         aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0],             # <<<<<<<<<<<<<<
@@ -21413,7 +21413,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_aj = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1267
+  /* "SuchTree/MuchTree.pyx":1267
  * 
  *         # place the tree adjacency matrixes into the empty graph matrix
  *         aj[ 0:ta_aj.shape[0] , 0:ta_aj.shape[1]  ] = ta_aj / ta_aj.max()             # <<<<<<<<<<<<<<
@@ -21468,7 +21468,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "MuchTree.pyx":1268
+  /* "SuchTree/MuchTree.pyx":1268
  *         # place the tree adjacency matrixes into the empty graph matrix
  *         aj[ 0:ta_aj.shape[0] , 0:ta_aj.shape[1]  ] = ta_aj / ta_aj.max()
  *         aj[   ta_aj.shape[0]:,   ta_aj.shape[1]: ] = tb_aj / tb_aj.max()             # <<<<<<<<<<<<<<
@@ -21523,7 +21523,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1271
+  /* "SuchTree/MuchTree.pyx":1271
  * 
  *         # compute means of all the non-zero-length edges of the trees
  *         ta_mean = np.mean( ta_aj.flatten()[ ta_aj.flatten() > self.TreeA.polytomy_distance ] )             # <<<<<<<<<<<<<<
@@ -21597,7 +21597,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_ta_mean = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1272
+  /* "SuchTree/MuchTree.pyx":1272
  *         # compute means of all the non-zero-length edges of the trees
  *         ta_mean = np.mean( ta_aj.flatten()[ ta_aj.flatten() > self.TreeA.polytomy_distance ] )
  *         tb_mean = np.mean( tb_aj.flatten()[ tb_aj.flatten() > self.TreeB.polytomy_distance ] )             # <<<<<<<<<<<<<<
@@ -21671,7 +21671,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_tb_mean = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1273
+  /* "SuchTree/MuchTree.pyx":1273
  *         ta_mean = np.mean( ta_aj.flatten()[ ta_aj.flatten() > self.TreeA.polytomy_distance ] )
  *         tb_mean = np.mean( tb_aj.flatten()[ tb_aj.flatten() > self.TreeB.polytomy_distance ] )
  *         link_mean = ( ta_mean / ta_aj.max() + tb_mean / tb_aj.max() ) / 2.0             # <<<<<<<<<<<<<<
@@ -21728,7 +21728,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_v_link_mean = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1278
+  /* "SuchTree/MuchTree.pyx":1278
  *         # normalizing their edge weights to the average weight of the
  *         # tree edges
  *         for i,j in zip( tb_links, ta_links ) :             # <<<<<<<<<<<<<<
@@ -21837,7 +21837,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "MuchTree.pyx":1279
+    /* "SuchTree/MuchTree.pyx":1279
  *         # tree edges
  *         for i,j in zip( tb_links, ta_links ) :
  *             aj[i,j] = link_mean             # <<<<<<<<<<<<<<
@@ -21855,7 +21855,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_3, __pyx_v_link_mean) < 0)) __PYX_ERR(0, 1279, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":1280
+    /* "SuchTree/MuchTree.pyx":1280
  *         for i,j in zip( tb_links, ta_links ) :
  *             aj[i,j] = link_mean
  *             aj[j,i] = link_mean             # <<<<<<<<<<<<<<
@@ -21873,7 +21873,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_3, __pyx_v_link_mean) < 0)) __PYX_ERR(0, 1280, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":1278
+    /* "SuchTree/MuchTree.pyx":1278
  *         # normalizing their edge weights to the average weight of the
  *         # tree edges
  *         for i,j in zip( tb_links, ta_links ) :             # <<<<<<<<<<<<<<
@@ -21883,7 +21883,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1282
+  /* "SuchTree/MuchTree.pyx":1282
  *             aj[j,i] = link_mean
  * 
  *         return aj             # <<<<<<<<<<<<<<
@@ -21895,7 +21895,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_r = __pyx_v_aj;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1232
+  /* "SuchTree/MuchTree.pyx":1232
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -21911,7 +21911,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_TA);
@@ -21938,7 +21938,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1284
+/* "SuchTree/MuchTree.pyx":1284
  *         return aj
  * 
  *     def laplacian( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -21947,9 +21947,9 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_21laplacian(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_15SuchLinkedTrees_20laplacian[] = "\n        The graph Laplacian matrix of the current subsetted trees.\n        ";
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_21laplacian(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_21laplacian(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_20laplacian[] = "\n        The graph Laplacian matrix of the current subsetted trees.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_21laplacian(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_deletions = 0;
   PyObject *__pyx_v_additions = 0;
   PyObject *__pyx_v_swaps = 0;
@@ -22021,18 +22021,18 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_21laplacian(PyObject *__py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("laplacian", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1284, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_20laplacian(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps) {
   PyObject *__pyx_v_aj = NULL;
   PyObject *__pyx_v_lp = NULL;
   PyObject *__pyx_r = NULL;
@@ -22048,7 +22048,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("laplacian", 0);
 
-  /* "MuchTree.pyx":1289
+  /* "SuchTree/MuchTree.pyx":1289
  *         """
  * 
  *         aj = self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
@@ -22061,7 +22061,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_deletions, __pyx_v_deletions) < 0) __PYX_ERR(0, 1289, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1290
+  /* "SuchTree/MuchTree.pyx":1290
  * 
  *         aj = self.adjacency( deletions=deletions,
  *                              additions=additions,             # <<<<<<<<<<<<<<
@@ -22070,7 +22070,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
  */
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_additions, __pyx_v_additions) < 0) __PYX_ERR(0, 1289, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1291
+  /* "SuchTree/MuchTree.pyx":1291
  *         aj = self.adjacency( deletions=deletions,
  *                              additions=additions,
  *                              swaps=swaps )             # <<<<<<<<<<<<<<
@@ -22079,7 +22079,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
  */
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_swaps, __pyx_v_swaps) < 0) __PYX_ERR(0, 1289, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1289
+  /* "SuchTree/MuchTree.pyx":1289
  *         """
  * 
  *         aj = self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
@@ -22093,7 +22093,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __pyx_v_aj = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1292
+  /* "SuchTree/MuchTree.pyx":1292
  *                              additions=additions,
  *                              swaps=swaps )
  *         lp = np.zeros( aj.shape )             # <<<<<<<<<<<<<<
@@ -22126,7 +22126,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __pyx_v_lp = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1293
+  /* "SuchTree/MuchTree.pyx":1293
  *                              swaps=swaps )
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )             # <<<<<<<<<<<<<<
@@ -22196,7 +22196,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1294
+  /* "SuchTree/MuchTree.pyx":1294
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )
  *         lp = lp - aj             # <<<<<<<<<<<<<<
@@ -22208,7 +22208,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __Pyx_DECREF_SET(__pyx_v_lp, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1296
+  /* "SuchTree/MuchTree.pyx":1296
  *         lp = lp - aj
  * 
  *         return lp             # <<<<<<<<<<<<<<
@@ -22220,7 +22220,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __pyx_r = __pyx_v_lp;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1284
+  /* "SuchTree/MuchTree.pyx":1284
  *         return aj
  * 
  *     def laplacian( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -22235,7 +22235,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_aj);
@@ -22245,7 +22245,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1298
+/* "SuchTree/MuchTree.pyx":1298
  *         return lp
  * 
  *     def spectrum( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -22254,9 +22254,9 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_23spectrum(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_15SuchLinkedTrees_22spectrum[] = "\n        The eigenvalues of the graph Laplacian matrix of the current\n        subsetted trees.\n        ";
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_23spectrum(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_23spectrum(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_22spectrum[] = "\n        The eigenvalues of the graph Laplacian matrix of the current\n        subsetted trees.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_23spectrum(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_deletions = 0;
   PyObject *__pyx_v_additions = 0;
   PyObject *__pyx_v_swaps = 0;
@@ -22328,18 +22328,18 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_23spectrum(PyObject *__pyx
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("spectrum", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1298, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.spectrum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.spectrum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_22spectrum(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps) {
   PyObject *__pyx_v_lp = NULL;
   int __pyx_v_N;
   int __pyx_v_nb;
@@ -22368,7 +22368,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("spectrum", 0);
 
-  /* "MuchTree.pyx":1303
+  /* "SuchTree/MuchTree.pyx":1303
  *         subsetted trees.
  *         """
  *         lp = self.laplacian( deletions, additions, swaps )             # <<<<<<<<<<<<<<
@@ -22428,7 +22428,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_v_lp = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1305
+  /* "SuchTree/MuchTree.pyx":1305
  *         lp = self.laplacian( deletions, additions, swaps )
  * 
  *         cdef int N     = lp.shape[0]             # <<<<<<<<<<<<<<
@@ -22444,7 +22444,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_N = __pyx_t_4;
 
-  /* "MuchTree.pyx":1306
+  /* "SuchTree/MuchTree.pyx":1306
  * 
  *         cdef int N     = lp.shape[0]
  *         cdef int nb    = 4             # <<<<<<<<<<<<<<
@@ -22453,7 +22453,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   __pyx_v_nb = 4;
 
-  /* "MuchTree.pyx":1307
+  /* "SuchTree/MuchTree.pyx":1307
  *         cdef int N     = lp.shape[0]
  *         cdef int nb    = 4
  *         cdef int lwork = (nb+2)*N             # <<<<<<<<<<<<<<
@@ -22462,7 +22462,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   __pyx_v_lwork = ((__pyx_v_nb + 2) * __pyx_v_N);
 
-  /* "MuchTree.pyx":1309
+  /* "SuchTree/MuchTree.pyx":1309
  *         cdef int lwork = (nb+2)*N
  * 
  *         np_work = np.ndarray( lwork )             # <<<<<<<<<<<<<<
@@ -22477,7 +22477,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_v_np_work = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1310
+  /* "SuchTree/MuchTree.pyx":1310
  * 
  *         np_work = np.ndarray( lwork )
  *         np_w    = np.ndarray( N )             # <<<<<<<<<<<<<<
@@ -22492,7 +22492,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_v_np_w = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1312
+  /* "SuchTree/MuchTree.pyx":1312
  *         np_w    = np.ndarray( N )
  * 
  *         cdef double[:,::1] a = lp             # <<<<<<<<<<<<<<
@@ -22504,7 +22504,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "MuchTree.pyx":1313
+  /* "SuchTree/MuchTree.pyx":1313
  * 
  *         cdef double[:,::1] a = lp
  *         cdef double[:] work  = np_work             # <<<<<<<<<<<<<<
@@ -22516,7 +22516,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1314
+  /* "SuchTree/MuchTree.pyx":1314
  *         cdef double[:,::1] a = lp
  *         cdef double[:] work  = np_work
  *         cdef double[:] w     = np_w             # <<<<<<<<<<<<<<
@@ -22528,7 +22528,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1316
+  /* "SuchTree/MuchTree.pyx":1316
  *         cdef double[:] w     = np_w
  * 
  *         cdef double * b = &a[0,0]             # <<<<<<<<<<<<<<
@@ -22552,7 +22552,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   }
   __pyx_v_b = (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_a.data + __pyx_t_8 * __pyx_v_a.strides[0]) )) + __pyx_t_9)) ))));
 
-  /* "MuchTree.pyx":1317
+  /* "SuchTree/MuchTree.pyx":1317
  * 
  *         cdef double * b = &a[0,0]
  *         cdef int info   = 0             # <<<<<<<<<<<<<<
@@ -22561,7 +22561,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   __pyx_v_info = 0;
 
-  /* "MuchTree.pyx":1319
+  /* "SuchTree/MuchTree.pyx":1319
  *         cdef int info   = 0
  * 
  *         dsyev( 'N', 'U', &N, b, &N, &w[0], &work[0], &lwork, &info )             # <<<<<<<<<<<<<<
@@ -22590,7 +22590,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   }
   __pyx_f_5scipy_6linalg_13cython_lapack_dsyev(((char *)"N"), ((char *)"U"), (&__pyx_v_N), __pyx_v_b, (&__pyx_v_N), (&(*((double *) ( /* dim=0 */ (__pyx_v_w.data + __pyx_t_9 * __pyx_v_w.strides[0]) )))), (&(*((double *) ( /* dim=0 */ (__pyx_v_work.data + __pyx_t_8 * __pyx_v_work.strides[0]) )))), (&__pyx_v_lwork), (&__pyx_v_info));
 
-  /* "MuchTree.pyx":1321
+  /* "SuchTree/MuchTree.pyx":1321
  *         dsyev( 'N', 'U', &N, b, &N, &w[0], &work[0], &lwork, &info )
  * 
  *         if info == 0 :             # <<<<<<<<<<<<<<
@@ -22600,7 +22600,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_t_10 = ((__pyx_v_info == 0) != 0);
   if (__pyx_t_10) {
 
-    /* "MuchTree.pyx":1322
+    /* "SuchTree/MuchTree.pyx":1322
  * 
  *         if info == 0 :
  *             return np_w             # <<<<<<<<<<<<<<
@@ -22612,7 +22612,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
     __pyx_r = __pyx_v_np_w;
     goto __pyx_L0;
 
-    /* "MuchTree.pyx":1321
+    /* "SuchTree/MuchTree.pyx":1321
  *         dsyev( 'N', 'U', &N, b, &N, &w[0], &work[0], &lwork, &info )
  * 
  *         if info == 0 :             # <<<<<<<<<<<<<<
@@ -22621,7 +22621,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   }
 
-  /* "MuchTree.pyx":1324
+  /* "SuchTree/MuchTree.pyx":1324
  *             return np_w
  *         else :
  *             return info             # <<<<<<<<<<<<<<
@@ -22637,7 +22637,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
     goto __pyx_L0;
   }
 
-  /* "MuchTree.pyx":1298
+  /* "SuchTree/MuchTree.pyx":1298
  *         return lp
  * 
  *     def spectrum( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -22653,7 +22653,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __Pyx_XDECREF(__pyx_t_5);
   __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.spectrum", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.spectrum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_lp);
@@ -22667,7 +22667,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1326
+/* "SuchTree/MuchTree.pyx":1326
  *             return info
  * 
  *     def to_igraph( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -22676,9 +22676,9 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_25to_igraph(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8MuchTree_15SuchLinkedTrees_24to_igraph[] = "\n        Return the current SuchLinkedTrees subgraph as a weighted,\n        labled igraph object. The igraph package must be installed.\n        ";
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_25to_igraph(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_25to_igraph(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_24to_igraph[] = "\n        Return the current SuchLinkedTrees subgraph as a weighted,\n        labled igraph object. The igraph package must be installed.\n        ";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_25to_igraph(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_deletions = 0;
   PyObject *__pyx_v_additions = 0;
   PyObject *__pyx_v_swaps = 0;
@@ -22750,18 +22750,18 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_25to_igraph(PyObject *__py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("to_igraph", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1326, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.to_igraph", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.to_igraph", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps);
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_24to_igraph(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, PyObject *__pyx_v_deletions, PyObject *__pyx_v_additions, PyObject *__pyx_v_swaps) {
   PyObject *__pyx_v_g = NULL;
   Py_ssize_t __pyx_v_subset_a_length;
   Py_ssize_t __pyx_v_subset_b_length;
@@ -22784,7 +22784,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("to_igraph", 0);
 
-  /* "MuchTree.pyx":1331
+  /* "SuchTree/MuchTree.pyx":1331
  *         labled igraph object. The igraph package must be installed.
  *         """
  *         if not with_igraph :             # <<<<<<<<<<<<<<
@@ -22798,7 +22798,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "MuchTree.pyx":1332
+    /* "SuchTree/MuchTree.pyx":1332
  *         """
  *         if not with_igraph :
  *             raise Exception( 'igraph package not installed.' )             # <<<<<<<<<<<<<<
@@ -22811,7 +22811,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __PYX_ERR(0, 1332, __pyx_L1_error)
 
-    /* "MuchTree.pyx":1331
+    /* "SuchTree/MuchTree.pyx":1331
  *         labled igraph object. The igraph package must be installed.
  *         """
  *         if not with_igraph :             # <<<<<<<<<<<<<<
@@ -22820,7 +22820,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
  */
   }
 
-  /* "MuchTree.pyx":1334
+  /* "SuchTree/MuchTree.pyx":1334
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
@@ -22833,7 +22833,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1336
+  /* "SuchTree/MuchTree.pyx":1336
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),             # <<<<<<<<<<<<<<
@@ -22843,7 +22843,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_adjacency); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1334, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "MuchTree.pyx":1334
+  /* "SuchTree/MuchTree.pyx":1334
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
@@ -22854,7 +22854,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_GOTREF(__pyx_t_6);
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_deletions, __pyx_v_deletions) < 0) __PYX_ERR(0, 1334, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1335
+  /* "SuchTree/MuchTree.pyx":1335
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  *                                                       additions=additions,             # <<<<<<<<<<<<<<
@@ -22863,7 +22863,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
  */
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_additions, __pyx_v_additions) < 0) __PYX_ERR(0, 1334, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1336
+  /* "SuchTree/MuchTree.pyx":1336
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),             # <<<<<<<<<<<<<<
@@ -22872,7 +22872,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
  */
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_swaps, __pyx_v_swaps) < 0) __PYX_ERR(0, 1334, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1334
+  /* "SuchTree/MuchTree.pyx":1334
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
@@ -22884,7 +22884,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":1336
+  /* "SuchTree/MuchTree.pyx":1336
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),             # <<<<<<<<<<<<<<
@@ -22910,7 +22910,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":1334
+  /* "SuchTree/MuchTree.pyx":1334
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
@@ -22923,7 +22923,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1337
+  /* "SuchTree/MuchTree.pyx":1337
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),
  *                                       mode=ADJ_UNDIRECTED )             # <<<<<<<<<<<<<<
@@ -22937,7 +22937,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mode, __pyx_t_7) < 0) __PYX_ERR(0, 1337, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1334
+  /* "SuchTree/MuchTree.pyx":1334
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
@@ -22952,7 +22952,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __pyx_v_g = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1339
+  /* "SuchTree/MuchTree.pyx":1339
  *                                       mode=ADJ_UNDIRECTED )
  * 
  *         subset_a_length = len( list( self.TreeA.get_descendant_nodes( self.subset_a_root ) ) )             # <<<<<<<<<<<<<<
@@ -22986,7 +22986,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_subset_a_length = __pyx_t_8;
 
-  /* "MuchTree.pyx":1340
+  /* "SuchTree/MuchTree.pyx":1340
  * 
  *         subset_a_length = len( list( self.TreeA.get_descendant_nodes( self.subset_a_root ) ) )
  *         subset_b_length = len( list( self.TreeB.get_descendant_nodes( self.subset_b_root ) ) )             # <<<<<<<<<<<<<<
@@ -23020,7 +23020,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_v_subset_b_length = __pyx_t_8;
 
-  /* "MuchTree.pyx":1342
+  /* "SuchTree/MuchTree.pyx":1342
  *         subset_b_length = len( list( self.TreeB.get_descendant_nodes( self.subset_b_root ) ) )
  * 
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \             # <<<<<<<<<<<<<<
@@ -23037,7 +23037,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
     }
   }
 
-  /* "MuchTree.pyx":1343
+  /* "SuchTree/MuchTree.pyx":1343
  * 
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \
  *                         ['#24878dff'] * subset_b_length             # <<<<<<<<<<<<<<
@@ -23054,7 +23054,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
     }
   }
 
-  /* "MuchTree.pyx":1342
+  /* "SuchTree/MuchTree.pyx":1342
  *         subset_b_length = len( list( self.TreeB.get_descendant_nodes( self.subset_b_root ) ) )
  * 
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \             # <<<<<<<<<<<<<<
@@ -23071,7 +23071,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":1344
+  /* "SuchTree/MuchTree.pyx":1344
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \
  *                         ['#24878dff'] * subset_b_length
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \             # <<<<<<<<<<<<<<
@@ -23099,7 +23099,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   } /* exit inner scope */
   { /* enter inner scope */
 
-    /* "MuchTree.pyx":1345
+    /* "SuchTree/MuchTree.pyx":1345
  *                         ['#24878dff'] * subset_b_length
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \
  *                         [ 'g' + str(i) for i in range( subset_b_length ) ]             # <<<<<<<<<<<<<<
@@ -23125,7 +23125,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
     }
   } /* exit inner scope */
 
-  /* "MuchTree.pyx":1344
+  /* "SuchTree/MuchTree.pyx":1344
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \
  *                         ['#24878dff'] * subset_b_length
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \             # <<<<<<<<<<<<<<
@@ -23142,7 +23142,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1346
+  /* "SuchTree/MuchTree.pyx":1346
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \
  *                         [ 'g' + str(i) for i in range( subset_b_length ) ]
  *         g.vs['tree'] = [ 0 ]  * subset_a_length + [ 1 ] * subset_b_length             # <<<<<<<<<<<<<<
@@ -23177,7 +23177,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":1348
+  /* "SuchTree/MuchTree.pyx":1348
  *         g.vs['tree'] = [ 0 ]  * subset_a_length + [ 1 ] * subset_b_length
  * 
  *         return g             # <<<<<<<<<<<<<<
@@ -23189,7 +23189,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __pyx_r = __pyx_v_g;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1326
+  /* "SuchTree/MuchTree.pyx":1326
  *             return info
  * 
  *     def to_igraph( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -23204,7 +23204,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.to_igraph", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.to_igraph", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_g);
@@ -23213,7 +23213,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1351
+/* "SuchTree/MuchTree.pyx":1351
  * 
  * 
  *     def dump_table( self ) :             # <<<<<<<<<<<<<<
@@ -23222,20 +23222,20 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_27dump_table(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_8MuchTree_15SuchLinkedTrees_26dump_table[] = "Print the link matrix (WARNING : may be huge and useless)";
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_27dump_table(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_27dump_table(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_26dump_table[] = "Print the link matrix (WARNING : may be huge and useless)";
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_27dump_table(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("dump_table (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_26dump_table(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   unsigned int __pyx_v_i;
   PyObject *__pyx_v_col = NULL;
   unsigned int __pyx_v_j;
@@ -23257,7 +23257,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dump_table", 0);
 
-  /* "MuchTree.pyx":1353
+  /* "SuchTree/MuchTree.pyx":1353
  *     def dump_table( self ) :
  *         'Print the link matrix (WARNING : may be huge and useless)'
  *         for i in xrange( self.n_cols ) :             # <<<<<<<<<<<<<<
@@ -23269,7 +23269,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "MuchTree.pyx":1354
+    /* "SuchTree/MuchTree.pyx":1354
  *         'Print the link matrix (WARNING : may be huge and useless)'
  *         for i in xrange( self.n_cols ) :
  *             col = []             # <<<<<<<<<<<<<<
@@ -23281,7 +23281,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
     __Pyx_XDECREF_SET(__pyx_v_col, ((PyObject*)__pyx_t_4));
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1355
+    /* "SuchTree/MuchTree.pyx":1355
  *         for i in xrange( self.n_cols ) :
  *             col = []
  *             for j in xrange( self.table[i].length ) :             # <<<<<<<<<<<<<<
@@ -23293,7 +23293,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      /* "MuchTree.pyx":1357
+      /* "SuchTree/MuchTree.pyx":1357
  *             for j in xrange( self.table[i].length ) :
  *                 #row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
  *                 row_id = self.table[i].links[j]             # <<<<<<<<<<<<<<
@@ -23302,7 +23302,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
  */
       __pyx_v_row_id = ((__pyx_v_self->table[__pyx_v_i]).links[__pyx_v_j]);
 
-      /* "MuchTree.pyx":1358
+      /* "SuchTree/MuchTree.pyx":1358
  *                 #row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
  *                 row_id = self.table[i].links[j]
  *                 col.append( row_id )             # <<<<<<<<<<<<<<
@@ -23314,7 +23314,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
 
-    /* "MuchTree.pyx":1359
+    /* "SuchTree/MuchTree.pyx":1359
  *                 row_id = self.table[i].links[j]
  *                 col.append( row_id )
  *             print( 'column', i, ':', ','.join( map( str, col ) ) )             # <<<<<<<<<<<<<<
@@ -23355,7 +23355,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
 
-  /* "MuchTree.pyx":1351
+  /* "SuchTree/MuchTree.pyx":1351
  * 
  * 
  *     def dump_table( self ) :             # <<<<<<<<<<<<<<
@@ -23370,7 +23370,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.dump_table", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.dump_table", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_col);
@@ -23386,19 +23386,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_29__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_29__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_29__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_29__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_28__reduce_cython__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_28__reduce_cython__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_28__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_28__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -23428,7 +23428,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_28__reduce_cython__(CYTHON
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -23443,19 +23443,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_28__reduce_cython__(CYTHON
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_31__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_31__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_31__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_31__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_15SuchLinkedTrees_30__setstate_cython__(((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_30__setstate_cython__(((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_30__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8MuchTree_SuchLinkedTrees *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_8SuchTree_8MuchTree_15SuchLinkedTrees_30__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -23485,14 +23485,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_30__setstate_cython__(CYTH
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("SuchTree.MuchTree.SuchLinkedTrees.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":735
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":735
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -23509,7 +23509,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":736
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":736
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -23523,7 +23523,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":735
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":735
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -23542,7 +23542,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":738
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":738
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -23559,7 +23559,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":739
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":739
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -23573,7 +23573,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":738
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":738
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -23592,7 +23592,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":741
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":741
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -23609,7 +23609,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":742
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":742
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -23623,7 +23623,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":741
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":741
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -23642,7 +23642,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":744
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":744
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -23659,7 +23659,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":745
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":745
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -23673,7 +23673,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":744
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":744
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -23692,7 +23692,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":747
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":747
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -23709,7 +23709,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":748
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":748
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -23723,7 +23723,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":747
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":747
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -23742,7 +23742,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":750
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":750
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -23756,7 +23756,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":751
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":751
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -23766,7 +23766,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":752
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":752
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -23778,7 +23778,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":751
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":751
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -23787,7 +23787,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":754
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":754
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -23801,7 +23801,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":750
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":750
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -23816,7 +23816,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":929
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":929
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -23828,7 +23828,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":930
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":930
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -23837,7 +23837,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":931
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":931
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -23846,7 +23846,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":929
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":929
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -23858,7 +23858,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":933
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":933
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -23873,7 +23873,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":934
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":934
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -23882,7 +23882,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":935
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":935
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -23892,7 +23892,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":936
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":936
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -23903,7 +23903,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":935
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":935
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -23912,7 +23912,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":937
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":937
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -23924,7 +23924,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":933
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":933
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -23939,7 +23939,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":941
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":941
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -23963,7 +23963,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":942
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -23979,7 +23979,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":943
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":943
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -23988,7 +23988,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 943, __pyx_L3_error)
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":942
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24002,7 +24002,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":944
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":944
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -24017,7 +24017,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":945
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":945
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -24033,7 +24033,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":942
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24048,7 +24048,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":941
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":941
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -24071,7 +24071,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":947
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":947
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -24095,7 +24095,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":948
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24111,7 +24111,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":949
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":949
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -24120,7 +24120,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 949, __pyx_L3_error)
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":948
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24134,7 +24134,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":950
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":950
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -24149,7 +24149,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":951
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":951
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -24165,7 +24165,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":948
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24180,7 +24180,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":947
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":947
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -24203,7 +24203,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":953
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":953
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -24227,7 +24227,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":954
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24243,7 +24243,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":955
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":955
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -24252,7 +24252,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 955, __pyx_L3_error)
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":954
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24266,7 +24266,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":956
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":956
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -24281,7 +24281,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":957
+      /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":957
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -24297,7 +24297,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":954
+    /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24312,7 +24312,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":953
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":953
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -24335,7 +24335,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":967
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":967
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -24348,7 +24348,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_timedelta64_object", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":979
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":979
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyTimedeltaArrType_Type)             # <<<<<<<<<<<<<<
@@ -24358,7 +24358,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyTimedeltaArrType_Type));
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":967
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":967
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -24372,7 +24372,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":982
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":982
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -24385,7 +24385,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_datetime64_object", 0);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":994
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":994
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyDatetimeArrType_Type)             # <<<<<<<<<<<<<<
@@ -24395,7 +24395,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyDatetimeArrType_Type));
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":982
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":982
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -24409,7 +24409,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":997
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":997
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24420,7 +24420,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
 static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *__pyx_v_obj) {
   npy_datetime __pyx_r;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":1004
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":1004
  *     also needed.  That can be found using `get_datetime64_unit`.
  *     """
  *     return (<PyDatetimeScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -24430,7 +24430,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   __pyx_r = ((PyDatetimeScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":997
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":997
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24443,7 +24443,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":1007
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":1007
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24454,7 +24454,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
 static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject *__pyx_v_obj) {
   npy_timedelta __pyx_r;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":1011
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":1011
  *     returns the int64 value underlying scalar numpy timedelta64 object
  *     """
  *     return (<PyTimedeltaScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -24464,7 +24464,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   __pyx_r = ((PyTimedeltaScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":1007
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":1007
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24477,7 +24477,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":1014
+/* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":1014
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24488,7 +24488,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
 static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObject *__pyx_v_obj) {
   NPY_DATETIMEUNIT __pyx_r;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":1018
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":1018
  *     returns the unit part of the dtype for a numpy datetime64 object.
  *     """
  *     return <NPY_DATETIMEUNIT>(<PyDatetimeScalarObject*>obj).obmeta.base             # <<<<<<<<<<<<<<
@@ -24496,7 +24496,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   __pyx_r = ((NPY_DATETIMEUNIT)((PyDatetimeScalarObject *)__pyx_v_obj)->obmeta.base);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":1014
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":1014
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -37530,10 +37530,10 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_8MuchTree_SuchTree __pyx_vtable_8MuchTree_SuchTree;
+static struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchTree __pyx_vtable_8SuchTree_8MuchTree_SuchTree;
 
-static PyObject *__pyx_tp_new_8MuchTree_SuchTree(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_8MuchTree_SuchTree *p;
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree_SuchTree(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -37541,16 +37541,16 @@ static PyObject *__pyx_tp_new_8MuchTree_SuchTree(PyTypeObject *t, CYTHON_UNUSED 
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_8MuchTree_SuchTree *)o);
-  p->__pyx_vtab = __pyx_vtabptr_8MuchTree_SuchTree;
+  p = ((struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)o);
+  p->__pyx_vtab = __pyx_vtabptr_8SuchTree_8MuchTree_SuchTree;
   p->leafs = Py_None; Py_INCREF(Py_None);
   p->leafnodes = Py_None; Py_INCREF(Py_None);
   p->np_buffer = Py_None; Py_INCREF(Py_None);
   return o;
 }
 
-static void __pyx_tp_dealloc_8MuchTree_SuchTree(PyObject *o) {
-  struct __pyx_obj_8MuchTree_SuchTree *p = (struct __pyx_obj_8MuchTree_SuchTree *)o;
+static void __pyx_tp_dealloc_8SuchTree_8MuchTree_SuchTree(PyObject *o) {
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *p = (struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -37561,7 +37561,7 @@ static void __pyx_tp_dealloc_8MuchTree_SuchTree(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_8MuchTree_8SuchTree_44__dealloc__(o);
+    __pyx_pw_8SuchTree_8MuchTree_8SuchTree_44__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
@@ -37571,9 +37571,9 @@ static void __pyx_tp_dealloc_8MuchTree_SuchTree(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_8MuchTree_SuchTree(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_8SuchTree_8MuchTree_SuchTree(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8MuchTree_SuchTree *p = (struct __pyx_obj_8MuchTree_SuchTree *)o;
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *p = (struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *)o;
   if (p->leafs) {
     e = (*v)(p->leafs, a); if (e) return e;
   }
@@ -37586,37 +37586,37 @@ static int __pyx_tp_traverse_8MuchTree_SuchTree(PyObject *o, visitproc v, void *
   return 0;
 }
 
-static PyObject *__pyx_getprop_8MuchTree_8SuchTree_length(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_8SuchTree_6length_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_8SuchTree_length(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_8SuchTree_6length_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_8SuchTree_depth(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_8SuchTree_5depth_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_8SuchTree_depth(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_8SuchTree_5depth_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_8SuchTree_n_leafs(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_8SuchTree_7n_leafs_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_8SuchTree_n_leafs(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_8SuchTree_7n_leafs_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_8SuchTree_leafs(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_8SuchTree_5leafs_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_8SuchTree_leafs(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_8SuchTree_5leafs_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_8SuchTree_leafnodes(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_8SuchTree_9leafnodes_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_8SuchTree_leafnodes(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_8SuchTree_9leafnodes_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_8SuchTree_root(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_8SuchTree_4root_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_8SuchTree_root(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_8SuchTree_4root_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_8SuchTree_polytomy_distance(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_8SuchTree_17polytomy_distance_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_8SuchTree_polytomy_distance(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_1__get__(o);
 }
 
-static int __pyx_setprop_8MuchTree_8SuchTree_polytomy_distance(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_8SuchTree_8MuchTree_8SuchTree_polytomy_distance(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_8MuchTree_8SuchTree_17polytomy_distance_3__set__(o, v);
+    return __pyx_pw_8SuchTree_8MuchTree_8SuchTree_17polytomy_distance_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -37624,48 +37624,48 @@ static int __pyx_setprop_8MuchTree_8SuchTree_polytomy_distance(PyObject *o, PyOb
   }
 }
 
-static PyMethodDef __pyx_methods_8MuchTree_SuchTree[] = {
-  {"get_parent", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_3get_parent, METH_O, __pyx_doc_8MuchTree_8SuchTree_2get_parent},
-  {"get_children", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_5get_children, METH_O, __pyx_doc_8MuchTree_8SuchTree_4get_children},
-  {"get_leafs", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_7get_leafs, METH_O, __pyx_doc_8MuchTree_8SuchTree_6get_leafs},
-  {"get_descendant_nodes", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_9get_descendant_nodes, METH_O, __pyx_doc_8MuchTree_8SuchTree_8get_descendant_nodes},
-  {"get_internal_nodes", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_8SuchTree_12get_internal_nodes, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_11get_internal_nodes},
-  {"get_nodes", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_8SuchTree_14get_nodes, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_13get_nodes},
-  {"get_distance_to_root", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_16get_distance_to_root, METH_O, __pyx_doc_8MuchTree_8SuchTree_15get_distance_to_root},
-  {"is_ancestor", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_8SuchTree_18is_ancestor, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_17is_ancestor},
-  {"mrca", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_8SuchTree_20mrca, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_19mrca},
-  {"distance", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_8SuchTree_22distance, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_21distance},
-  {"distances", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_24distances, METH_O, __pyx_doc_8MuchTree_8SuchTree_23distances},
-  {"distances_by_name", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_26distances_by_name, METH_O, __pyx_doc_8MuchTree_8SuchTree_25distances_by_name},
-  {"link_leaf", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_8SuchTree_28link_leaf, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_27link_leaf},
-  {"get_links", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_30get_links, METH_O, __pyx_doc_8MuchTree_8SuchTree_29get_links},
-  {"adjacency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_8SuchTree_32adjacency, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_31adjacency},
-  {"laplacian", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_8SuchTree_34laplacian, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_33laplacian},
-  {"dump_array", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_36dump_array, METH_NOARGS, __pyx_doc_8MuchTree_8SuchTree_35dump_array},
-  {"nodes_data", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_38nodes_data, METH_NOARGS, __pyx_doc_8MuchTree_8SuchTree_37nodes_data},
-  {"edges_data", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_41edges_data, METH_NOARGS, __pyx_doc_8MuchTree_8SuchTree_40edges_data},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_46__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_8MuchTree_8SuchTree_48__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_8SuchTree_8MuchTree_SuchTree[] = {
+  {"get_parent", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_3get_parent, METH_O, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_2get_parent},
+  {"get_children", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_5get_children, METH_O, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_4get_children},
+  {"get_leafs", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_7get_leafs, METH_O, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_6get_leafs},
+  {"get_descendant_nodes", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_9get_descendant_nodes, METH_O, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_8get_descendant_nodes},
+  {"get_internal_nodes", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_12get_internal_nodes, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_11get_internal_nodes},
+  {"get_nodes", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_14get_nodes, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_13get_nodes},
+  {"get_distance_to_root", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_16get_distance_to_root, METH_O, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_15get_distance_to_root},
+  {"is_ancestor", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_18is_ancestor, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_17is_ancestor},
+  {"mrca", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_20mrca, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_19mrca},
+  {"distance", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_22distance, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_21distance},
+  {"distances", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_24distances, METH_O, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_23distances},
+  {"distances_by_name", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_26distances_by_name, METH_O, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_25distances_by_name},
+  {"link_leaf", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_28link_leaf, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_27link_leaf},
+  {"get_links", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_30get_links, METH_O, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_29get_links},
+  {"adjacency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_32adjacency, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_31adjacency},
+  {"laplacian", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_34laplacian, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_33laplacian},
+  {"dump_array", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_36dump_array, METH_NOARGS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_35dump_array},
+  {"nodes_data", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_38nodes_data, METH_NOARGS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_37nodes_data},
+  {"edges_data", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_41edges_data, METH_NOARGS, __pyx_doc_8SuchTree_8MuchTree_8SuchTree_40edges_data},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_46__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_8SuchTree_48__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_8MuchTree_SuchTree[] = {
-  {(char *)"length", __pyx_getprop_8MuchTree_8SuchTree_length, 0, (char *)"The number of nodes in the tree.", 0},
-  {(char *)"depth", __pyx_getprop_8MuchTree_8SuchTree_depth, 0, (char *)"The maximum depth of the tree.", 0},
-  {(char *)"n_leafs", __pyx_getprop_8MuchTree_8SuchTree_n_leafs, 0, (char *)"The number of leafs in the tree.", 0},
-  {(char *)"leafs", __pyx_getprop_8MuchTree_8SuchTree_leafs, 0, (char *)"A dictionary mapping leaf names to leaf node ids.", 0},
-  {(char *)"leafnodes", __pyx_getprop_8MuchTree_8SuchTree_leafnodes, 0, (char *)"A dictionary mapping leaf node ids to leaf names.", 0},
-  {(char *)"root", __pyx_getprop_8MuchTree_8SuchTree_root, 0, (char *)"The id of the root node.", 0},
-  {(char *)"polytomy_distance", __pyx_getprop_8MuchTree_8SuchTree_polytomy_distance, __pyx_setprop_8MuchTree_8SuchTree_polytomy_distance, (char *)"Tiny, nonzero distance for polytomies in the adjacency matrix.", 0},
+static struct PyGetSetDef __pyx_getsets_8SuchTree_8MuchTree_SuchTree[] = {
+  {(char *)"length", __pyx_getprop_8SuchTree_8MuchTree_8SuchTree_length, 0, (char *)"The number of nodes in the tree.", 0},
+  {(char *)"depth", __pyx_getprop_8SuchTree_8MuchTree_8SuchTree_depth, 0, (char *)"The maximum depth of the tree.", 0},
+  {(char *)"n_leafs", __pyx_getprop_8SuchTree_8MuchTree_8SuchTree_n_leafs, 0, (char *)"The number of leafs in the tree.", 0},
+  {(char *)"leafs", __pyx_getprop_8SuchTree_8MuchTree_8SuchTree_leafs, 0, (char *)"A dictionary mapping leaf names to leaf node ids.", 0},
+  {(char *)"leafnodes", __pyx_getprop_8SuchTree_8MuchTree_8SuchTree_leafnodes, 0, (char *)"A dictionary mapping leaf node ids to leaf names.", 0},
+  {(char *)"root", __pyx_getprop_8SuchTree_8MuchTree_8SuchTree_root, 0, (char *)"The id of the root node.", 0},
+  {(char *)"polytomy_distance", __pyx_getprop_8SuchTree_8MuchTree_8SuchTree_polytomy_distance, __pyx_setprop_8SuchTree_8MuchTree_8SuchTree_polytomy_distance, (char *)"Tiny, nonzero distance for polytomies in the adjacency matrix.", 0},
   {0, 0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_8MuchTree_SuchTree = {
+static PyTypeObject __pyx_type_8SuchTree_8MuchTree_SuchTree = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.SuchTree", /*tp_name*/
-  sizeof(struct __pyx_obj_8MuchTree_SuchTree), /*tp_basicsize*/
+  "SuchTree.MuchTree.SuchTree", /*tp_name*/
+  sizeof(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8MuchTree_SuchTree, /*tp_dealloc*/
+  __pyx_tp_dealloc_8SuchTree_8MuchTree_SuchTree, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -37692,23 +37692,23 @@ static PyTypeObject __pyx_type_8MuchTree_SuchTree = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   "\n    SuchTree extention type. The constructor accepts a filesystem\n    path or URL to a file that describes the tree in NEWICK format.\n    For now, SuchTree uses dendropy to parse the NEWICK file.\n\n    An array of type Node is allocated, and freed when\n    SuchTree.__dealloc__ is invoked.\n    \n    Node.parent, Node.left_child and Node.right_child are integer\n    offsets within this array, describing the tree structure.\n    Nodes where left_child and right_child are -1 are leaf nodes,\n    Nodes where the parent attribute is -1 are the root nodes\n    (there should be only one of these in any given tree).\n    \n    SuchTree expects trees to be strictly bifrucating. There\n    should not be any nodes that have only one child.\n    \n    SuchTrees are immutable; they cannot be modified once\n    initialized. If you need to manipulate your tree before\n    performing computations, you will need to use a different tool\n    to perform those manipulations first.\n    ", /*tp_doc*/
-  __pyx_tp_traverse_8MuchTree_SuchTree, /*tp_traverse*/
+  __pyx_tp_traverse_8SuchTree_8MuchTree_SuchTree, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_8MuchTree_SuchTree, /*tp_methods*/
+  __pyx_methods_8SuchTree_8MuchTree_SuchTree, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_8MuchTree_SuchTree, /*tp_getset*/
+  __pyx_getsets_8SuchTree_8MuchTree_SuchTree, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_8MuchTree_8SuchTree_1__init__, /*tp_init*/
+  __pyx_pw_8SuchTree_8MuchTree_8SuchTree_1__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8MuchTree_SuchTree, /*tp_new*/
+  __pyx_tp_new_8SuchTree_8MuchTree_SuchTree, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -37731,10 +37731,10 @@ static PyTypeObject __pyx_type_8MuchTree_SuchTree = {
   0, /*tp_pypy_flags*/
   #endif
 };
-static struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees __pyx_vtable_8MuchTree_SuchLinkedTrees;
+static struct __pyx_vtabstruct_8SuchTree_8MuchTree_SuchLinkedTrees __pyx_vtable_8SuchTree_8MuchTree_SuchLinkedTrees;
 
-static PyObject *__pyx_tp_new_8MuchTree_SuchLinkedTrees(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_8MuchTree_SuchLinkedTrees *p;
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree_SuchLinkedTrees(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -37742,8 +37742,8 @@ static PyObject *__pyx_tp_new_8MuchTree_SuchLinkedTrees(PyTypeObject *t, PyObjec
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_8MuchTree_SuchLinkedTrees *)o);
-  p->__pyx_vtab = __pyx_vtabptr_8MuchTree_SuchLinkedTrees;
+  p = ((struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)o);
+  p->__pyx_vtab = __pyx_vtabptr_8SuchTree_8MuchTree_SuchLinkedTrees;
   p->TreeA = Py_None; Py_INCREF(Py_None);
   p->TreeB = Py_None; Py_INCREF(Py_None);
   p->row_ids = Py_None; Py_INCREF(Py_None);
@@ -37759,15 +37759,15 @@ static PyObject *__pyx_tp_new_8MuchTree_SuchLinkedTrees(PyTypeObject *t, PyObjec
   p->subset_a_leafs = Py_None; Py_INCREF(Py_None);
   p->subset_b_leafs = Py_None; Py_INCREF(Py_None);
   p->row_map = Py_None; Py_INCREF(Py_None);
-  if (unlikely(__pyx_pw_8MuchTree_15SuchLinkedTrees_1__cinit__(o, a, k) < 0)) goto bad;
+  if (unlikely(__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_8MuchTree_SuchLinkedTrees(PyObject *o) {
-  struct __pyx_obj_8MuchTree_SuchLinkedTrees *p = (struct __pyx_obj_8MuchTree_SuchLinkedTrees *)o;
+static void __pyx_tp_dealloc_8SuchTree_8MuchTree_SuchLinkedTrees(PyObject *o) {
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *p = (struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -37778,7 +37778,7 @@ static void __pyx_tp_dealloc_8MuchTree_SuchLinkedTrees(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_8MuchTree_15SuchLinkedTrees_5__dealloc__(o);
+    __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
@@ -37800,9 +37800,9 @@ static void __pyx_tp_dealloc_8MuchTree_SuchLinkedTrees(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_8MuchTree_SuchLinkedTrees(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_8SuchTree_8MuchTree_SuchLinkedTrees(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8MuchTree_SuchLinkedTrees *p = (struct __pyx_obj_8MuchTree_SuchLinkedTrees *)o;
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *p = (struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)o;
   if (p->TreeA) {
     e = (*v)(p->TreeA, a); if (e) return e;
   }
@@ -37851,9 +37851,9 @@ static int __pyx_tp_traverse_8MuchTree_SuchLinkedTrees(PyObject *o, visitproc v,
   return 0;
 }
 
-static int __pyx_tp_clear_8MuchTree_SuchLinkedTrees(PyObject *o) {
+static int __pyx_tp_clear_8SuchTree_8MuchTree_SuchLinkedTrees(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_8MuchTree_SuchLinkedTrees *p = (struct __pyx_obj_8MuchTree_SuchLinkedTrees *)o;
+  struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *p = (struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *)o;
   tmp = ((PyObject*)p->TreeA);
   p->TreeA = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -37902,128 +37902,128 @@ static int __pyx_tp_clear_8MuchTree_SuchLinkedTrees(PyObject *o) {
   return 0;
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_TreeA(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_5TreeA_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_TreeA(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeA_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_TreeB(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_5TreeB_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_TreeB(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_5TreeB_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_n_links(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_7n_links_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_n_links(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7n_links_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_n_cols(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_6n_cols_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_n_cols(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_cols_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_n_rows(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_6n_rows_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_n_rows(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_6n_rows_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_col_ids(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_7col_ids_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_col_ids(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7col_ids_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_row_ids(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_7row_ids_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_row_ids(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7row_ids_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_col_names(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_9col_names_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_col_names(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9col_names_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_row_names(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_9row_names_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_row_names(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9row_names_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_columns(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_columns_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_columns(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_columns_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_a_leafs(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_a_leafs_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_a_leafs(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_a_leafs_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_b_leafs(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_b_leafs_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_b_leafs(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_b_leafs_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_a_size(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a_size_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_a_size(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_size_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_b_size(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_b_size_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_b_size(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_size_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_a_root(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a_root_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_a_root(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a_root_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_b_root(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_b_root_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_b_root(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_b_root_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_n_links(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_14subset_n_links_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_n_links(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_14subset_n_links_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_linkmatrix(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_10linkmatrix_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_linkmatrix(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_10linkmatrix_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8MuchTree_15SuchLinkedTrees_linklist(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8MuchTree_15SuchLinkedTrees_8linklist_1__get__(o);
+static PyObject *__pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_linklist(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_8linklist_1__get__(o);
 }
 
-static PyMethodDef __pyx_methods_8MuchTree_SuchLinkedTrees[] = {
-  {"get_column_leafs", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_15SuchLinkedTrees_7get_column_leafs, METH_VARARGS|METH_KEYWORDS, 0},
-  {"get_column_links", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_9get_column_links, METH_O, 0},
-  {"subset_b", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_11subset_b, METH_O, __pyx_doc_8MuchTree_15SuchLinkedTrees_10subset_b},
-  {"subset_a", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_13subset_a, METH_O, __pyx_doc_8MuchTree_15SuchLinkedTrees_12subset_a},
-  {"linked_distances", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_15linked_distances, METH_NOARGS, __pyx_doc_8MuchTree_15SuchLinkedTrees_14linked_distances},
-  {"sample_linked_distances", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_15SuchLinkedTrees_17sample_linked_distances, METH_VARARGS|METH_KEYWORDS, 0},
-  {"adjacency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_15SuchLinkedTrees_19adjacency, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_15SuchLinkedTrees_18adjacency},
-  {"laplacian", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_15SuchLinkedTrees_21laplacian, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_15SuchLinkedTrees_20laplacian},
-  {"spectrum", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_15SuchLinkedTrees_23spectrum, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_15SuchLinkedTrees_22spectrum},
-  {"to_igraph", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8MuchTree_15SuchLinkedTrees_25to_igraph, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8MuchTree_15SuchLinkedTrees_24to_igraph},
-  {"dump_table", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_27dump_table, METH_NOARGS, __pyx_doc_8MuchTree_15SuchLinkedTrees_26dump_table},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_29__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_8MuchTree_15SuchLinkedTrees_31__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_8SuchTree_8MuchTree_SuchLinkedTrees[] = {
+  {"get_column_leafs", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_7get_column_leafs, METH_VARARGS|METH_KEYWORDS, 0},
+  {"get_column_links", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_9get_column_links, METH_O, 0},
+  {"subset_b", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_11subset_b, METH_O, __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_10subset_b},
+  {"subset_a", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_13subset_a, METH_O, __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_12subset_a},
+  {"linked_distances", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_15linked_distances, METH_NOARGS, __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_14linked_distances},
+  {"sample_linked_distances", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_17sample_linked_distances, METH_VARARGS|METH_KEYWORDS, 0},
+  {"adjacency", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_19adjacency, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_18adjacency},
+  {"laplacian", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_21laplacian, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_20laplacian},
+  {"spectrum", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_23spectrum, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_22spectrum},
+  {"to_igraph", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_25to_igraph, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_24to_igraph},
+  {"dump_table", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_27dump_table, METH_NOARGS, __pyx_doc_8SuchTree_8MuchTree_15SuchLinkedTrees_26dump_table},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_29__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_31__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_8MuchTree_SuchLinkedTrees[] = {
-  {(char *)"TreeA", __pyx_getprop_8MuchTree_15SuchLinkedTrees_TreeA, 0, (char *)"first tree initialized by SuchLinkedTrees( TreeA, TreeB )", 0},
-  {(char *)"TreeB", __pyx_getprop_8MuchTree_15SuchLinkedTrees_TreeB, 0, (char *)"second tree initialized by SuchLinkedTrees( TreeA, TreeB )", 0},
-  {(char *)"n_links", __pyx_getprop_8MuchTree_15SuchLinkedTrees_n_links, 0, (char *)"size of the link list", 0},
-  {(char *)"n_cols", __pyx_getprop_8MuchTree_15SuchLinkedTrees_n_cols, 0, (char *)"Number of columns in the link matrix.", 0},
-  {(char *)"n_rows", __pyx_getprop_8MuchTree_15SuchLinkedTrees_n_rows, 0, (char *)"Number of rows in the link matrix.", 0},
-  {(char *)"col_ids", __pyx_getprop_8MuchTree_15SuchLinkedTrees_col_ids, 0, (char *)"ids of the columns (TreeB) in the link matrix.", 0},
-  {(char *)"row_ids", __pyx_getprop_8MuchTree_15SuchLinkedTrees_row_ids, 0, (char *)"ids of the rows (TreeA) in the link matrix.", 0},
-  {(char *)"col_names", __pyx_getprop_8MuchTree_15SuchLinkedTrees_col_names, 0, (char *)"Names of the columns (TreeB) in the link matrix.", 0},
-  {(char *)"row_names", __pyx_getprop_8MuchTree_15SuchLinkedTrees_row_names, 0, (char *)"Names of the rows (TreeA) in the link matrix.", 0},
-  {(char *)"subset_columns", __pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_columns, 0, (char *)"ids of the current subset columns.", 0},
-  {(char *)"subset_a_leafs", __pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_a_leafs, 0, (char *)"ids of the current subset rows.", 0},
-  {(char *)"subset_b_leafs", __pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_b_leafs, 0, (char *)"ids of the current subset columns.", 0},
-  {(char *)"subset_a_size", __pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_a_size, 0, (char *)"Number of rows in the current subset.", 0},
-  {(char *)"subset_b_size", __pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_b_size, 0, (char *)"Number of columns in the current subset.", 0},
-  {(char *)"subset_a_root", __pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_a_root, 0, (char *)"ID of the current subset root in TreeA.", 0},
-  {(char *)"subset_b_root", __pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_b_root, 0, (char *)"ID of the current subset root in TreeB.", 0},
-  {(char *)"subset_n_links", __pyx_getprop_8MuchTree_15SuchLinkedTrees_subset_n_links, 0, (char *)"Number of links in the current subset.", 0},
-  {(char *)"linkmatrix", __pyx_getprop_8MuchTree_15SuchLinkedTrees_linkmatrix, 0, (char *)"numpy representation of link matrix (generated only on access)", 0},
-  {(char *)"linklist", __pyx_getprop_8MuchTree_15SuchLinkedTrees_linklist, 0, (char *)"numpy representation of link list", 0},
+static struct PyGetSetDef __pyx_getsets_8SuchTree_8MuchTree_SuchLinkedTrees[] = {
+  {(char *)"TreeA", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_TreeA, 0, (char *)"first tree initialized by SuchLinkedTrees( TreeA, TreeB )", 0},
+  {(char *)"TreeB", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_TreeB, 0, (char *)"second tree initialized by SuchLinkedTrees( TreeA, TreeB )", 0},
+  {(char *)"n_links", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_n_links, 0, (char *)"size of the link list", 0},
+  {(char *)"n_cols", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_n_cols, 0, (char *)"Number of columns in the link matrix.", 0},
+  {(char *)"n_rows", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_n_rows, 0, (char *)"Number of rows in the link matrix.", 0},
+  {(char *)"col_ids", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_col_ids, 0, (char *)"ids of the columns (TreeB) in the link matrix.", 0},
+  {(char *)"row_ids", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_row_ids, 0, (char *)"ids of the rows (TreeA) in the link matrix.", 0},
+  {(char *)"col_names", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_col_names, 0, (char *)"Names of the columns (TreeB) in the link matrix.", 0},
+  {(char *)"row_names", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_row_names, 0, (char *)"Names of the rows (TreeA) in the link matrix.", 0},
+  {(char *)"subset_columns", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_columns, 0, (char *)"ids of the current subset columns.", 0},
+  {(char *)"subset_a_leafs", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_a_leafs, 0, (char *)"ids of the current subset rows.", 0},
+  {(char *)"subset_b_leafs", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_b_leafs, 0, (char *)"ids of the current subset columns.", 0},
+  {(char *)"subset_a_size", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_a_size, 0, (char *)"Number of rows in the current subset.", 0},
+  {(char *)"subset_b_size", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_b_size, 0, (char *)"Number of columns in the current subset.", 0},
+  {(char *)"subset_a_root", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_a_root, 0, (char *)"ID of the current subset root in TreeA.", 0},
+  {(char *)"subset_b_root", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_b_root, 0, (char *)"ID of the current subset root in TreeB.", 0},
+  {(char *)"subset_n_links", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_subset_n_links, 0, (char *)"Number of links in the current subset.", 0},
+  {(char *)"linkmatrix", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_linkmatrix, 0, (char *)"numpy representation of link matrix (generated only on access)", 0},
+  {(char *)"linklist", __pyx_getprop_8SuchTree_8MuchTree_15SuchLinkedTrees_linklist, 0, (char *)"numpy representation of link list", 0},
   {0, 0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_8MuchTree_SuchLinkedTrees = {
+static PyTypeObject __pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.SuchLinkedTrees", /*tp_name*/
-  sizeof(struct __pyx_obj_8MuchTree_SuchLinkedTrees), /*tp_basicsize*/
+  "SuchTree.MuchTree.SuchLinkedTrees", /*tp_name*/
+  sizeof(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8MuchTree_SuchLinkedTrees, /*tp_dealloc*/
+  __pyx_tp_dealloc_8SuchTree_8MuchTree_SuchLinkedTrees, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -38050,23 +38050,23 @@ static PyTypeObject __pyx_type_8MuchTree_SuchLinkedTrees = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_8MuchTree_SuchLinkedTrees, /*tp_traverse*/
-  __pyx_tp_clear_8MuchTree_SuchLinkedTrees, /*tp_clear*/
+  __pyx_tp_traverse_8SuchTree_8MuchTree_SuchLinkedTrees, /*tp_traverse*/
+  __pyx_tp_clear_8SuchTree_8MuchTree_SuchLinkedTrees, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_8MuchTree_SuchLinkedTrees, /*tp_methods*/
+  __pyx_methods_8SuchTree_8MuchTree_SuchLinkedTrees, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_8MuchTree_SuchLinkedTrees, /*tp_getset*/
+  __pyx_getsets_8SuchTree_8MuchTree_SuchLinkedTrees, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_8MuchTree_15SuchLinkedTrees_3__init__, /*tp_init*/
+  __pyx_pw_8SuchTree_8MuchTree_15SuchLinkedTrees_3__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8MuchTree_SuchLinkedTrees, /*tp_new*/
+  __pyx_tp_new_8SuchTree_8MuchTree_SuchLinkedTrees, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -38090,14 +38090,14 @@ static PyTypeObject __pyx_type_8MuchTree_SuchLinkedTrees = {
   #endif
 };
 
-static struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *__pyx_freelist_8MuchTree___pyx_scope_struct__get_descendant_nodes[8];
-static int __pyx_freecount_8MuchTree___pyx_scope_struct__get_descendant_nodes = 0;
+static struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *__pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes[8];
+static int __pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes = 0;
 
-static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct__get_descendant_nodes(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8MuchTree___pyx_scope_struct__get_descendant_nodes > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes)))) {
-    o = (PyObject*)__pyx_freelist_8MuchTree___pyx_scope_struct__get_descendant_nodes[--__pyx_freecount_8MuchTree___pyx_scope_struct__get_descendant_nodes];
-    memset(o, 0, sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes)))) {
+    o = (PyObject*)__pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes[--__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes];
+    memset(o, 0, sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -38107,23 +38107,23 @@ static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct__get_descendant_nodes
   return o;
 }
 
-static void __pyx_tp_dealloc_8MuchTree___pyx_scope_struct__get_descendant_nodes(PyObject *o) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *)o;
+static void __pyx_tp_dealloc_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes(PyObject *o) {
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_node_id);
   Py_CLEAR(p->__pyx_v_self);
   Py_CLEAR(p->__pyx_v_to_visit);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8MuchTree___pyx_scope_struct__get_descendant_nodes < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes)))) {
-    __pyx_freelist_8MuchTree___pyx_scope_struct__get_descendant_nodes[__pyx_freecount_8MuchTree___pyx_scope_struct__get_descendant_nodes++] = ((struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes)))) {
+    __pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes[__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes++] = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_8MuchTree___pyx_scope_struct__get_descendant_nodes(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes *)o;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes *)o;
   if (p->__pyx_v_node_id) {
     e = (*v)(p->__pyx_v_node_id, a); if (e) return e;
   }
@@ -38139,12 +38139,12 @@ static int __pyx_tp_traverse_8MuchTree___pyx_scope_struct__get_descendant_nodes(
   return 0;
 }
 
-static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes = {
+static PyTypeObject __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.__pyx_scope_struct__get_descendant_nodes", /*tp_name*/
-  sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes), /*tp_basicsize*/
+  "SuchTree.MuchTree.__pyx_scope_struct__get_descendant_nodes", /*tp_name*/
+  sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8MuchTree___pyx_scope_struct__get_descendant_nodes, /*tp_dealloc*/
+  __pyx_tp_dealloc_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -38171,7 +38171,7 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct__get_descendant_node
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_8MuchTree___pyx_scope_struct__get_descendant_nodes, /*tp_traverse*/
+  __pyx_tp_traverse_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -38187,7 +38187,7 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct__get_descendant_node
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8MuchTree___pyx_scope_struct__get_descendant_nodes, /*tp_new*/
+  __pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -38211,14 +38211,14 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct__get_descendant_node
   #endif
 };
 
-static struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *__pyx_freelist_8MuchTree___pyx_scope_struct_1_nodes_data[8];
-static int __pyx_freecount_8MuchTree___pyx_scope_struct_1_nodes_data = 0;
+static struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *__pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data[8];
+static int __pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data = 0;
 
-static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_1_nodes_data(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8MuchTree___pyx_scope_struct_1_nodes_data > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data)))) {
-    o = (PyObject*)__pyx_freelist_8MuchTree___pyx_scope_struct_1_nodes_data[--__pyx_freecount_8MuchTree___pyx_scope_struct_1_nodes_data];
-    memset(o, 0, sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data)))) {
+    o = (PyObject*)__pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data[--__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data];
+    memset(o, 0, sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -38228,21 +38228,21 @@ static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_1_nodes_data(PyTypeOb
   return o;
 }
 
-static void __pyx_tp_dealloc_8MuchTree___pyx_scope_struct_1_nodes_data(PyObject *o) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *)o;
+static void __pyx_tp_dealloc_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data(PyObject *o) {
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_leaf_name);
   Py_CLEAR(p->__pyx_v_self);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8MuchTree___pyx_scope_struct_1_nodes_data < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data)))) {
-    __pyx_freelist_8MuchTree___pyx_scope_struct_1_nodes_data[__pyx_freecount_8MuchTree___pyx_scope_struct_1_nodes_data++] = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data)))) {
+    __pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data[__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data++] = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_8MuchTree___pyx_scope_struct_1_nodes_data(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *)o;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data *)o;
   if (p->__pyx_v_leaf_name) {
     e = (*v)(p->__pyx_v_leaf_name, a); if (e) return e;
   }
@@ -38252,12 +38252,12 @@ static int __pyx_tp_traverse_8MuchTree___pyx_scope_struct_1_nodes_data(PyObject 
   return 0;
 }
 
-static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data = {
+static PyTypeObject __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.__pyx_scope_struct_1_nodes_data", /*tp_name*/
-  sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data), /*tp_basicsize*/
+  "SuchTree.MuchTree.__pyx_scope_struct_1_nodes_data", /*tp_name*/
+  sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8MuchTree___pyx_scope_struct_1_nodes_data, /*tp_dealloc*/
+  __pyx_tp_dealloc_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -38284,7 +38284,7 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_8MuchTree___pyx_scope_struct_1_nodes_data, /*tp_traverse*/
+  __pyx_tp_traverse_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -38300,7 +38300,7 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8MuchTree___pyx_scope_struct_1_nodes_data, /*tp_new*/
+  __pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -38324,14 +38324,14 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data = {
   #endif
 };
 
-static struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *__pyx_freelist_8MuchTree___pyx_scope_struct_2_edges_data[8];
-static int __pyx_freecount_8MuchTree___pyx_scope_struct_2_edges_data = 0;
+static struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *__pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data[8];
+static int __pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data = 0;
 
-static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_2_edges_data(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8MuchTree___pyx_scope_struct_2_edges_data > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data)))) {
-    o = (PyObject*)__pyx_freelist_8MuchTree___pyx_scope_struct_2_edges_data[--__pyx_freecount_8MuchTree___pyx_scope_struct_2_edges_data];
-    memset(o, 0, sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data)))) {
+    o = (PyObject*)__pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data[--__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data];
+    memset(o, 0, sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -38341,32 +38341,32 @@ static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_2_edges_data(PyTypeOb
   return o;
 }
 
-static void __pyx_tp_dealloc_8MuchTree___pyx_scope_struct_2_edges_data(PyObject *o) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *)o;
+static void __pyx_tp_dealloc_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data(PyObject *o) {
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_self);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8MuchTree___pyx_scope_struct_2_edges_data < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data)))) {
-    __pyx_freelist_8MuchTree___pyx_scope_struct_2_edges_data[__pyx_freecount_8MuchTree___pyx_scope_struct_2_edges_data++] = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data)))) {
+    __pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data[__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data++] = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_8MuchTree___pyx_scope_struct_2_edges_data(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *)o;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data *)o;
   if (p->__pyx_v_self) {
     e = (*v)(((PyObject *)p->__pyx_v_self), a); if (e) return e;
   }
   return 0;
 }
 
-static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data = {
+static PyTypeObject __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.__pyx_scope_struct_2_edges_data", /*tp_name*/
-  sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data), /*tp_basicsize*/
+  "SuchTree.MuchTree.__pyx_scope_struct_2_edges_data", /*tp_name*/
+  sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8MuchTree___pyx_scope_struct_2_edges_data, /*tp_dealloc*/
+  __pyx_tp_dealloc_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -38393,7 +38393,7 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_8MuchTree___pyx_scope_struct_2_edges_data, /*tp_traverse*/
+  __pyx_tp_traverse_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
@@ -38409,7 +38409,7 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8MuchTree___pyx_scope_struct_2_edges_data, /*tp_new*/
+  __pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -38433,14 +38433,14 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data = {
   #endif
 };
 
-static struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_freelist_8MuchTree___pyx_scope_struct_3_adjacency[8];
-static int __pyx_freecount_8MuchTree___pyx_scope_struct_3_adjacency = 0;
+static struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *__pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency[8];
+static int __pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency = 0;
 
-static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_3_adjacency(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8MuchTree___pyx_scope_struct_3_adjacency > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency)))) {
-    o = (PyObject*)__pyx_freelist_8MuchTree___pyx_scope_struct_3_adjacency[--__pyx_freecount_8MuchTree___pyx_scope_struct_3_adjacency];
-    memset(o, 0, sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency)))) {
+    o = (PyObject*)__pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency[--__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency];
+    memset(o, 0, sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -38450,22 +38450,22 @@ static PyObject *__pyx_tp_new_8MuchTree___pyx_scope_struct_3_adjacency(PyTypeObj
   return o;
 }
 
-static void __pyx_tp_dealloc_8MuchTree___pyx_scope_struct_3_adjacency(PyObject *o) {
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *)o;
+static void __pyx_tp_dealloc_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency(PyObject *o) {
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_ta_aj);
   Py_CLEAR(p->__pyx_v_ta_node_ids);
   Py_CLEAR(p->__pyx_v_tb_node_ids);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8MuchTree___pyx_scope_struct_3_adjacency < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency)))) {
-    __pyx_freelist_8MuchTree___pyx_scope_struct_3_adjacency[__pyx_freecount_8MuchTree___pyx_scope_struct_3_adjacency++] = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency)))) {
+    __pyx_freelist_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency[__pyx_freecount_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency++] = ((struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_8MuchTree___pyx_scope_struct_3_adjacency(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *)o;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *)o;
   if (p->__pyx_v_ta_aj) {
     e = (*v)(p->__pyx_v_ta_aj, a); if (e) return e;
   }
@@ -38478,9 +38478,9 @@ static int __pyx_tp_traverse_8MuchTree___pyx_scope_struct_3_adjacency(PyObject *
   return 0;
 }
 
-static int __pyx_tp_clear_8MuchTree___pyx_scope_struct_3_adjacency(PyObject *o) {
+static int __pyx_tp_clear_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *p = (struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *)o;
+  struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *p = (struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency *)o;
   tmp = ((PyObject*)p->__pyx_v_ta_aj);
   p->__pyx_v_ta_aj = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -38493,12 +38493,12 @@ static int __pyx_tp_clear_8MuchTree___pyx_scope_struct_3_adjacency(PyObject *o) 
   return 0;
 }
 
-static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_3_adjacency = {
+static PyTypeObject __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.__pyx_scope_struct_3_adjacency", /*tp_name*/
-  sizeof(struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency), /*tp_basicsize*/
+  "SuchTree.MuchTree.__pyx_scope_struct_3_adjacency", /*tp_name*/
+  sizeof(struct __pyx_obj_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8MuchTree___pyx_scope_struct_3_adjacency, /*tp_dealloc*/
+  __pyx_tp_dealloc_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -38525,8 +38525,8 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_3_adjacency = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_8MuchTree___pyx_scope_struct_3_adjacency, /*tp_traverse*/
-  __pyx_tp_clear_8MuchTree___pyx_scope_struct_3_adjacency, /*tp_clear*/
+  __pyx_tp_traverse_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency, /*tp_traverse*/
+  __pyx_tp_clear_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -38541,7 +38541,7 @@ static PyTypeObject __pyx_type_8MuchTree___pyx_scope_struct_3_adjacency = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8MuchTree___pyx_scope_struct_3_adjacency, /*tp_new*/
+  __pyx_tp_new_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -38687,7 +38687,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.array", /*tp_name*/
+  "SuchTree.MuchTree.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -38809,7 +38809,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.Enum", /*tp_name*/
+  "SuchTree.MuchTree.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -39073,7 +39073,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree.memoryview", /*tp_name*/
+  "SuchTree.MuchTree.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -39214,7 +39214,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "MuchTree._memoryviewslice", /*tp_name*/
+  "SuchTree.MuchTree._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -39361,7 +39361,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_MemoryError, __pyx_k_MemoryError, sizeof(__pyx_k_MemoryError), 0, 0, 1, 1},
   {&__pyx_kp_s_MemoryView_of_r_at_0x_x, __pyx_k_MemoryView_of_r_at_0x_x, sizeof(__pyx_k_MemoryView_of_r_at_0x_x), 0, 0, 1, 0},
   {&__pyx_kp_s_MemoryView_of_r_object, __pyx_k_MemoryView_of_r_object, sizeof(__pyx_k_MemoryView_of_r_object), 0, 0, 1, 0},
-  {&__pyx_n_s_MuchTree, __pyx_k_MuchTree, sizeof(__pyx_k_MuchTree), 0, 0, 1, 1},
   {&__pyx_kp_u_Node_ID_out_of_bounds, __pyx_k_Node_ID_out_of_bounds, sizeof(__pyx_k_Node_ID_out_of_bounds), 0, 1, 0, 0},
   {&__pyx_kp_u_Node_id_out_of_range, __pyx_k_Node_id_out_of_range, sizeof(__pyx_k_Node_id_out_of_range), 0, 1, 0, 0},
   {&__pyx_n_b_O, __pyx_k_O, sizeof(__pyx_k_O), 0, 0, 0, 1},
@@ -39369,6 +39368,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_PickleError, __pyx_k_PickleError, sizeof(__pyx_k_PickleError), 0, 0, 1, 1},
   {&__pyx_n_s_SuchLinkedTrees, __pyx_k_SuchLinkedTrees, sizeof(__pyx_k_SuchLinkedTrees), 0, 0, 1, 1},
   {&__pyx_n_s_SuchTree, __pyx_k_SuchTree, sizeof(__pyx_k_SuchTree), 0, 0, 1, 1},
+  {&__pyx_n_s_SuchTree_MuchTree, __pyx_k_SuchTree_MuchTree, sizeof(__pyx_k_SuchTree_MuchTree), 0, 0, 1, 1},
   {&__pyx_kp_s_SuchTree_MuchTree_pyx, __pyx_k_SuchTree_MuchTree_pyx, sizeof(__pyx_k_SuchTree_MuchTree_pyx), 0, 0, 1, 0},
   {&__pyx_kp_u_SuchTree_could_not_allocate_memo, __pyx_k_SuchTree_could_not_allocate_memo, sizeof(__pyx_k_SuchTree_could_not_allocate_memo), 0, 1, 0, 0},
   {&__pyx_n_s_SuchTree_edges_data, __pyx_k_SuchTree_edges_data, sizeof(__pyx_k_SuchTree_edges_data), 0, 0, 1, 1},
@@ -39625,7 +39625,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "MuchTree.pyx":121
+  /* "SuchTree/MuchTree.pyx":121
  *         self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )
  *         if self.data == NULL :
  *             raise Exception( 'SuchTree could not allocate memory' )             # <<<<<<<<<<<<<<
@@ -39655,7 +39655,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "MuchTree.pyx":762
+  /* "SuchTree/MuchTree.pyx":762
  *         # make sure the link matrix connects the trees
  *         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )             # <<<<<<<<<<<<<<
@@ -39666,7 +39666,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "MuchTree.pyx":765
+  /* "SuchTree/MuchTree.pyx":765
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )             # <<<<<<<<<<<<<<
@@ -39677,7 +39677,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "MuchTree.pyx":768
+  /* "SuchTree/MuchTree.pyx":768
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :
  *             raise Exception( 'axis[1] does not match TreeB leaf names' )             # <<<<<<<<<<<<<<
@@ -39688,7 +39688,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "MuchTree.pyx":994
+  /* "SuchTree/MuchTree.pyx":994
  *         def __get__( self ) :
  *             # length will be shorter with subsetted link matrixes
  *             return self.np_linklist[:self.subset_n_links,:]             # <<<<<<<<<<<<<<
@@ -39699,7 +39699,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_slice__8);
   __Pyx_GIVEREF(__pyx_slice__8);
 
-  /* "MuchTree.pyx":1259
+  /* "SuchTree/MuchTree.pyx":1259
  * 
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )             # <<<<<<<<<<<<<<
@@ -39710,7 +39710,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "MuchTree.pyx":1260
+  /* "SuchTree/MuchTree.pyx":1260
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )             # <<<<<<<<<<<<<<
@@ -39721,7 +39721,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "MuchTree.pyx":1332
+  /* "SuchTree/MuchTree.pyx":1332
  *         """
  *         if not with_igraph :
  *             raise Exception( 'igraph package not installed.' )             # <<<<<<<<<<<<<<
@@ -39751,7 +39751,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":945
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":945
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -39762,7 +39762,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "../../../../tmp/build-env-lkgftwjv/lib/python3.7/site-packages/numpy/__init__.pxd":951
+  /* "../../../../tmp/build-env-p_t7j200/lib/python3.7/site-packages/numpy/__init__.pxd":951
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -39957,7 +39957,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
 
-  /* "MuchTree.pyx":49
+  /* "SuchTree/MuchTree.pyx":49
  *     return sxy / ( ( sxx * syy ) + 1.0e-20 )**(0.5)
  * 
  * def pearson( double[:] x, double[:] y ) :             # <<<<<<<<<<<<<<
@@ -40101,80 +40101,80 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_8MuchTree_SuchTree = &__pyx_vtable_8MuchTree_SuchTree;
-  __pyx_vtable_8MuchTree_SuchTree._get_distance_to_root = (float (*)(struct __pyx_obj_8MuchTree_SuchTree *, PyObject *))__pyx_f_8MuchTree_8SuchTree__get_distance_to_root;
-  __pyx_vtable_8MuchTree_SuchTree._is_ancestor = (int (*)(struct __pyx_obj_8MuchTree_SuchTree *, int, int))__pyx_f_8MuchTree_8SuchTree__is_ancestor;
-  __pyx_vtable_8MuchTree_SuchTree._mrca = (int (*)(struct __pyx_obj_8MuchTree_SuchTree *, __Pyx_memviewslice, int, int))__pyx_f_8MuchTree_8SuchTree__mrca;
-  __pyx_vtable_8MuchTree_SuchTree._distance = (float (*)(struct __pyx_obj_8MuchTree_SuchTree *, int, int))__pyx_f_8MuchTree_8SuchTree__distance;
-  __pyx_vtable_8MuchTree_SuchTree._distances = (void (*)(struct __pyx_obj_8MuchTree_SuchTree *, unsigned int, __Pyx_memviewslice, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_8MuchTree_8SuchTree__distances;
-  if (PyType_Ready(&__pyx_type_8MuchTree_SuchTree) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_vtabptr_8SuchTree_8MuchTree_SuchTree = &__pyx_vtable_8SuchTree_8MuchTree_SuchTree;
+  __pyx_vtable_8SuchTree_8MuchTree_SuchTree._get_distance_to_root = (float (*)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, PyObject *))__pyx_f_8SuchTree_8MuchTree_8SuchTree__get_distance_to_root;
+  __pyx_vtable_8SuchTree_8MuchTree_SuchTree._is_ancestor = (int (*)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, int, int))__pyx_f_8SuchTree_8MuchTree_8SuchTree__is_ancestor;
+  __pyx_vtable_8SuchTree_8MuchTree_SuchTree._mrca = (int (*)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, __Pyx_memviewslice, int, int))__pyx_f_8SuchTree_8MuchTree_8SuchTree__mrca;
+  __pyx_vtable_8SuchTree_8MuchTree_SuchTree._distance = (float (*)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, int, int))__pyx_f_8SuchTree_8MuchTree_8SuchTree__distance;
+  __pyx_vtable_8SuchTree_8MuchTree_SuchTree._distances = (void (*)(struct __pyx_obj_8SuchTree_8MuchTree_SuchTree *, unsigned int, __Pyx_memviewslice, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_8SuchTree_8MuchTree_8SuchTree__distances;
+  if (PyType_Ready(&__pyx_type_8SuchTree_8MuchTree_SuchTree) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8MuchTree_SuchTree.tp_print = 0;
+  __pyx_type_8SuchTree_8MuchTree_SuchTree.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8MuchTree_SuchTree.tp_dictoffset && __pyx_type_8MuchTree_SuchTree.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8MuchTree_SuchTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8SuchTree_8MuchTree_SuchTree.tp_dictoffset && __pyx_type_8SuchTree_8MuchTree_SuchTree.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_8SuchTree_8MuchTree_SuchTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
   #if CYTHON_UPDATE_DESCRIPTOR_DOC
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_8MuchTree_SuchTree, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(0, 58, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_8SuchTree_8MuchTree_SuchTree, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(0, 58, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_8MuchTree_8SuchTree___init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_8MuchTree_8SuchTree___init__.doc = __pyx_doc_8MuchTree_8SuchTree___init__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_8MuchTree_8SuchTree___init__;
+      __pyx_wrapperbase_8SuchTree_8MuchTree_8SuchTree___init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_8SuchTree_8MuchTree_8SuchTree___init__.doc = __pyx_doc_8SuchTree_8MuchTree_8SuchTree___init__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_8SuchTree_8MuchTree_8SuchTree___init__;
     }
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_type_8MuchTree_SuchTree.tp_dict, __pyx_vtabptr_8MuchTree_SuchTree) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_SuchTree, (PyObject *)&__pyx_type_8MuchTree_SuchTree) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8MuchTree_SuchTree) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
-  __pyx_ptype_8MuchTree_SuchTree = &__pyx_type_8MuchTree_SuchTree;
-  __pyx_vtabptr_8MuchTree_SuchLinkedTrees = &__pyx_vtable_8MuchTree_SuchLinkedTrees;
-  __pyx_vtable_8MuchTree_SuchLinkedTrees._build_linkmatrix = (PyObject *(*)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *))__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix;
-  __pyx_vtable_8MuchTree_SuchLinkedTrees._build_linklist = (void (*)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *))__pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist;
-  __pyx_vtable_8MuchTree_SuchLinkedTrees._random_int = (uint64_t (*)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *, uint64_t))__pyx_f_8MuchTree_15SuchLinkedTrees__random_int;
-  if (PyType_Ready(&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 676, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_8SuchTree_8MuchTree_SuchTree.tp_dict, __pyx_vtabptr_8SuchTree_8MuchTree_SuchTree) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_SuchTree, (PyObject *)&__pyx_type_8SuchTree_8MuchTree_SuchTree) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8SuchTree_8MuchTree_SuchTree) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_ptype_8SuchTree_8MuchTree_SuchTree = &__pyx_type_8SuchTree_8MuchTree_SuchTree;
+  __pyx_vtabptr_8SuchTree_8MuchTree_SuchLinkedTrees = &__pyx_vtable_8SuchTree_8MuchTree_SuchLinkedTrees;
+  __pyx_vtable_8SuchTree_8MuchTree_SuchLinkedTrees._build_linkmatrix = (PyObject *(*)(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *))__pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__build_linkmatrix;
+  __pyx_vtable_8SuchTree_8MuchTree_SuchLinkedTrees._build_linklist = (void (*)(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *))__pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__build_linklist;
+  __pyx_vtable_8SuchTree_8MuchTree_SuchLinkedTrees._random_int = (uint64_t (*)(struct __pyx_obj_8SuchTree_8MuchTree_SuchLinkedTrees *, uint64_t))__pyx_f_8SuchTree_8MuchTree_15SuchLinkedTrees__random_int;
+  if (PyType_Ready(&__pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 676, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8MuchTree_SuchLinkedTrees.tp_print = 0;
+  __pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8MuchTree_SuchLinkedTrees.tp_dictoffset && __pyx_type_8MuchTree_SuchLinkedTrees.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8MuchTree_SuchLinkedTrees.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees.tp_dictoffset && __pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_8MuchTree_SuchLinkedTrees.tp_dict, __pyx_vtabptr_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 676, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_SuchLinkedTrees, (PyObject *)&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 676, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 676, __pyx_L1_error)
-  __pyx_ptype_8MuchTree_SuchLinkedTrees = &__pyx_type_8MuchTree_SuchLinkedTrees;
-  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees.tp_dict, __pyx_vtabptr_8SuchTree_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 676, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_SuchLinkedTrees, (PyObject *)&__pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 676, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 676, __pyx_L1_error)
+  __pyx_ptype_8SuchTree_8MuchTree_SuchLinkedTrees = &__pyx_type_8SuchTree_8MuchTree_SuchLinkedTrees;
+  if (PyType_Ready(&__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_print = 0;
+  __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_dictoffset && __pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_dictoffset && __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_8MuchTree___pyx_scope_struct__get_descendant_nodes = &__pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes;
-  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data) < 0) __PYX_ERR(0, 647, __pyx_L1_error)
+  __pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes = &__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct__get_descendant_nodes;
+  if (PyType_Ready(&__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data) < 0) __PYX_ERR(0, 647, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data.tp_print = 0;
+  __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data.tp_dictoffset && __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data.tp_dictoffset && __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_8MuchTree___pyx_scope_struct_1_nodes_data = &__pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data;
-  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_2_edges_data) < 0) __PYX_ERR(0, 658, __pyx_L1_error)
+  __pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data = &__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_1_nodes_data;
+  if (PyType_Ready(&__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data) < 0) __PYX_ERR(0, 658, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data.tp_print = 0;
+  __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8MuchTree___pyx_scope_struct_2_edges_data.tp_dictoffset && __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data.tp_dictoffset && __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_8MuchTree___pyx_scope_struct_2_edges_data = &__pyx_type_8MuchTree___pyx_scope_struct_2_edges_data;
-  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_3_adjacency) < 0) __PYX_ERR(0, 1232, __pyx_L1_error)
+  __pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data = &__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_2_edges_data;
+  if (PyType_Ready(&__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency) < 0) __PYX_ERR(0, 1232, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8MuchTree___pyx_scope_struct_3_adjacency.tp_print = 0;
+  __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8MuchTree___pyx_scope_struct_3_adjacency.tp_dictoffset && __pyx_type_8MuchTree___pyx_scope_struct_3_adjacency.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8MuchTree___pyx_scope_struct_3_adjacency.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency.tp_dictoffset && __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_8MuchTree___pyx_scope_struct_3_adjacency = &__pyx_type_8MuchTree___pyx_scope_struct_3_adjacency;
+  __pyx_ptype_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency = &__pyx_type_8SuchTree_8MuchTree___pyx_scope_struct_3_adjacency;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
   if (PyType_Ready(&__pyx_type___pyx_array) < 0) __PYX_ERR(1, 105, __pyx_L1_error)
@@ -40500,14 +40500,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_MuchTree) {
+  if (__pyx_module_is_main_SuchTree__MuchTree) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "MuchTree")) {
-      if (unlikely(PyDict_SetItemString(modules, "MuchTree", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "SuchTree.MuchTree")) {
+      if (unlikely(PyDict_SetItemString(modules, "SuchTree.MuchTree", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -40528,7 +40528,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "MuchTree.pyx":3
+  /* "SuchTree/MuchTree.pyx":3
  * import cython
  * from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
  * from dendropy import Tree             # <<<<<<<<<<<<<<
@@ -40549,7 +40549,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":4
+  /* "SuchTree/MuchTree.pyx":4
  * from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
  * from dendropy import Tree
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -40561,7 +40561,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":6
+  /* "SuchTree/MuchTree.pyx":6
  * import numpy as np
  * cimport numpy as np
  * import pandas as pd             # <<<<<<<<<<<<<<
@@ -40573,7 +40573,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pd, __pyx_t_2) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":11
+  /* "SuchTree/MuchTree.pyx":11
  * # if igraph is available, enable
  * # SuchLinkedTrees.to_igraph()
  * try :             # <<<<<<<<<<<<<<
@@ -40589,7 +40589,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_XGOTREF(__pyx_t_5);
     /*try:*/ {
 
-      /* "MuchTree.pyx":12
+      /* "SuchTree/MuchTree.pyx":12
  * # SuchLinkedTrees.to_igraph()
  * try :
  *     from igraph import Graph, ADJ_UNDIRECTED             # <<<<<<<<<<<<<<
@@ -40617,7 +40617,7 @@ if (!__Pyx_RefNanny) {
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":13
+      /* "SuchTree/MuchTree.pyx":13
  * try :
  *     from igraph import Graph, ADJ_UNDIRECTED
  *     with_igraph = True             # <<<<<<<<<<<<<<
@@ -40626,7 +40626,7 @@ if (!__Pyx_RefNanny) {
  */
       if (PyDict_SetItem(__pyx_d, __pyx_n_s_with_igraph, Py_True) < 0) __PYX_ERR(0, 13, __pyx_L2_error)
 
-      /* "MuchTree.pyx":11
+      /* "SuchTree/MuchTree.pyx":11
  * # if igraph is available, enable
  * # SuchLinkedTrees.to_igraph()
  * try :             # <<<<<<<<<<<<<<
@@ -40642,7 +40642,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "MuchTree.pyx":14
+    /* "SuchTree/MuchTree.pyx":14
  *     from igraph import Graph, ADJ_UNDIRECTED
  *     with_igraph = True
  * except ImportError :             # <<<<<<<<<<<<<<
@@ -40651,13 +40651,13 @@ if (!__Pyx_RefNanny) {
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ImportError);
     if (__pyx_t_6) {
-      __Pyx_AddTraceback("MuchTree", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("SuchTree.MuchTree", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_2, &__pyx_t_7) < 0) __PYX_ERR(0, 14, __pyx_L4_except_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "MuchTree.pyx":15
+      /* "SuchTree/MuchTree.pyx":15
  *     with_igraph = True
  * except ImportError :
  *     with_igraph = False             # <<<<<<<<<<<<<<
@@ -40673,7 +40673,7 @@ if (!__Pyx_RefNanny) {
     goto __pyx_L4_except_error;
     __pyx_L4_except_error:;
 
-    /* "MuchTree.pyx":11
+    /* "SuchTree/MuchTree.pyx":11
  * # if igraph is available, enable
  * # SuchLinkedTrees.to_igraph()
  * try :             # <<<<<<<<<<<<<<
@@ -40693,19 +40693,19 @@ if (!__Pyx_RefNanny) {
     __pyx_L7_try_end:;
   }
 
-  /* "MuchTree.pyx":49
+  /* "SuchTree/MuchTree.pyx":49
  *     return sxy / ( ( sxx * syy ) + 1.0e-20 )**(0.5)
  * 
  * def pearson( double[:] x, double[:] y ) :             # <<<<<<<<<<<<<<
  *     if not len(x) == len(y) :
  *         raise Exception( 'vectors must be the same length.', (len(x),len(y)) )
  */
-  __pyx_t_7 = PyCFunction_NewEx(&__pyx_mdef_8MuchTree_1pearson, NULL, __pyx_n_s_MuchTree); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_7 = PyCFunction_NewEx(&__pyx_mdef_8SuchTree_8MuchTree_1pearson, NULL, __pyx_n_s_SuchTree_MuchTree); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pearson, __pyx_t_7) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1
+  /* "SuchTree/MuchTree.pyx":1
  * import cython             # <<<<<<<<<<<<<<
  * from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
  * from dendropy import Tree
@@ -40877,11 +40877,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_7);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init MuchTree", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init SuchTree.MuchTree", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init MuchTree");
+    PyErr_SetString(PyExc_ImportError, "init SuchTree.MuchTree");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
