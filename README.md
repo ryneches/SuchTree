@@ -7,29 +7,27 @@ phylogenetic trees.
 
 ### So problem
 
-You have a phylogenetic tree, and you want to do some statistics with
-it. No problem! There are lots of packages in Python that let you
-manipulate phylogenies, like [`dendropy`](http://www.dendropy.org/),
-[`scikit-bio`](http://scikit-bio.org/docs/latest/tree.html) and
-[`ete3`](http://etetoolkit.org/). Surely one of them will work. And
-indeed they will, if your tree isn't *too* big and your statistical
-method doesn't require *too* many traversals. If you're working with a
-hundred or a thousand organisms, no problem. You should probably
-forget about `SuchTree` and use a tree package that has lots of cool
-features.
+You have a phylogenetic tree. You want to do some statistics with it. No
+problem! There are lots of packages in Python that let you manipulate
+phylogenies, like [`dendropy`](http://www.dendropy.org/),[`scikit-bio`]
+(http://scikit-bio.org/docs/latest/tree.html) and[`ete3`]
+(http://etetoolkit.org/). If your tree isn't *too* big and your statistical
+method doesn't require *too* many traversals, you you have a lot of great
+options. If you're working with about a thousand taxa or less, you should
+have no problem. You can forget about `SuchTree` and use a tree package that
+has lots of cool features.
 
-If, however, you are working with trees that include tens of
-thousands, or maybe even millions of organisms, you are going to run
-into problems. `ete3`, `dendropy` and `scikit-bio`'s `TreeNode` are all
-implemented to give you lots of flexibility. You can re-root trees,
-use different traversal schemes, attach metadata to nodes, attach and
-detach nodes, splice sub-trees into or out of the main tree, and do
-lots of other useful things. However, that power and flexibility comes
-with a price; speed.
+However, if you are working with trees that include tens of thousands, or
+maybe even millions of organisms, you are going to run into problems. `ete3`,
+`dendropy` and `scikit-bio`'s `TreeNode` are all designed to give you lots of
+flexibility. You can re-root trees, use different traversal schemes, attach
+metadata to nodes, attach and detach nodes, splice sub-trees into or out of
+the main tree, plot trees for publication figures and do lots of other useful
+things. That power and flexibility comes with a price -- speed.
 
 For trees of moderate size, it is possible to solve the speed issue by
 working with matrix representations of the tree. Unfortunately, most
-representations scale quadratically with the number of taxa in your tree.
+representations scale quadratically with the number of taxa in the tree.
 A distance matrix for a tree of 100,000 taxa will consume about 20GB 
 of RAM. If your method performs sampling, then almost every operation
 will be a cache miss. Even if you have the RAM, it will be painfully slow.
@@ -43,8 +41,8 @@ graph theory!
 
 Calm yourself! `SuchLinkedTrees` has you covered. At the moment,
 `SuchLinkedTrees` supports trees of two interacting groups, but work is
-under way to generalize it to any number of groups. Like `SuchTree`,
-`SuchLinkedTrees` is not intended to be a general purpose graph theory
+underway to generalize it to any number of groups. Like `SuchTree`,
+`SuchLinkedTrees` is not intended to be a general-purpose graph theory
 package. Instead, it leverages `SuchTree` to efficiently handle the 
 problem-specific tasks of working with co-phylogeny systems. It will load
 your datasets. It will build the graphs. It will let you subset the graphs
@@ -55,22 +53,23 @@ spectral graph theory is your thing.
 
 And, if that doesn't solve your problem, it will emit sugraphs as `Graph`
 objects for use with the [`igraph`](http://igraph.org/) network analysis
-package, or node and edge data for building graphs in [`networkx`](https://networkx.github.io/). Now you can do even more things. Maybe you want to get all crazy
-with some [graph kernels](https://github.com/BorgwardtLab/GraphKernels)? Well,
-now you can just do that.
+package, or node and edge data for building graphs in 
+[`networkx`](https://networkx.github.io/). Now you can do even more things. 
+Maybe you want to get all crazy with some 
+[graph kernels](https://github.com/BorgwardtLab/GraphKernels)?
+Well, now you can.
 
 ### Much solution
 
-`SuchTree` is motivated by the observation that, while a distance
-matrix of 100,000 taxa is quite bulky, the tree it represents can be
-made to fit into about 7.6MB of RAM if implemented simply using only
-`C` primitives.  This is small enough to fit into L3 cache on many
-modern microprocessors. This comes at the cost of traversing the tree
-for every calculation (about 16 hops from leaf to root for a 100,000
-taxa tree), but, as these operations all happen on-chip, the processor
-can take full advantage of
+`SuchTree` is motivated by a simple the observation. A distance matrix of
+100,000 taxa is quite bulky, but the tree it represents can be made to fit
+into about 7.6MB of RAM if implemented using only `C` primitives. This is
+small enough to fit into L2 cache on many modern microprocessors. This comes
+at the cost of traversing the tree for every calculation (about 16 hops from
+leaf to root for a 100,000 taxa tree), but, as these operations all happen
+on-chip, the processor can take full advantage of 
 [pipelining](https://en.wikipedia.org/wiki/Instruction_pipelining),
-[speculative execution](https://en.wikipedia.org/wiki/Speculative_execution)
+[speculative execution](https://en.wikipedia.org/wiki/Speculative_execution) 
 and other optimizations available in modern CPUs.
 
 ### Nice benchmark
@@ -78,7 +77,7 @@ and other optimizations available in modern CPUs.
 Here, we use `SuchTree` to compare the topology of two trees built
 from the same 54,327 sequences using two methods : neighbor joining
 and Morgan Price's [`FastTree`](http://www.microbesonline.org/fasttree/)
-approximate maximum likelihood algorithm. Using a million randomly
+approximate maximum likelihood algorithm. Using one million randomly
 chosen pairs of leaf nodes, we look at the patristic distances in each
 of the two trees, plot them against one another, and compute
 correlation coefficients.
@@ -147,6 +146,14 @@ To install the current release, you can install from PyPI :
 pip install SuchTree
 ```
 
+If you install using `pip`, binary packages([`wheels`]
+(https://realpython.com/python-wheels/)) are available for CPython 3.6, 3.7,
+3.8, 3.9, 3.10 and 3.11 on Linux x86_64 and on MacOS with Intel and Apple
+silicon. If your platform isn't in that list, but it is supported by
+[`cibuildwheel`](https://github.com/pypa/cibuildwheel), please file an issue
+to request your platform! I would be absolutely _delighted_ if someone was
+actually running `SuchTree` on an exotic embedded system or a mainframe.
+
 To install the most recent development version :
 
 ```
@@ -163,7 +170,7 @@ cd SuchTree
 from SuchTre import SuchTree
 
 T = SuchTree( 'test.tree' )
-T = SuchTree( 'http://litoria.eeb.yale.edu/bird-tree/archives/PatchClade/Stage2/set1/Spheniscidae.tre' )
+T = SuchTree( 'https://github.com/ryneches/SuchTree/blob/master/data/gopher-louse/gopher.tree' )
 ```
 
 The available properties are :
