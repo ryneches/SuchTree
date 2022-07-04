@@ -4,14 +4,14 @@
 {
     "distutils": {
         "depends": [
-            "/tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/arrayscalars.h",
-            "/tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/ndarrayobject.h",
-            "/tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/ndarraytypes.h",
-            "/tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/arrayscalars.h",
+            "/tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/ndarrayobject.h",
+            "/tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/ndarraytypes.h",
+            "/tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/core/include/numpy/ufuncobject.h"
         ],
         "include_dirs": [
-            "/tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/core/include"
+            "/tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/core/include"
         ],
         "name": "MuchTree",
         "sources": [
@@ -1074,7 +1074,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":690
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":690
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1083,7 +1083,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":691
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":691
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1092,7 +1092,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":692
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":692
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1101,7 +1101,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":693
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":693
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1110,7 +1110,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":697
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":697
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1119,7 +1119,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":698
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":698
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1128,7 +1128,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":699
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":699
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1137,7 +1137,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":700
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":700
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1146,7 +1146,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":704
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":704
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1155,7 +1155,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":705
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":705
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1164,7 +1164,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":714
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":714
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1173,7 +1173,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":715
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":715
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1182,7 +1182,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":716
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":716
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1191,7 +1191,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":718
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":718
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1200,7 +1200,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":719
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":719
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1209,7 +1209,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":720
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":720
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1218,7 +1218,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":722
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":722
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1227,7 +1227,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":723
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":723
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1236,7 +1236,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":725
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":725
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1245,7 +1245,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":726
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":726
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1254,7 +1254,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":727
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":727
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1317,7 +1317,7 @@ struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":729
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":729
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1326,7 +1326,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":730
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":730
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1335,7 +1335,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":731
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":731
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1344,7 +1344,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":733
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":733
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1441,7 +1441,7 @@ struct __pyx_t_8MuchTree_Node {
   float distance;
 };
 
-/* "MuchTree.pyx":695
+/* "MuchTree.pyx":696
  * 
  * 
  * cdef struct Column :             # <<<<<<<<<<<<<<
@@ -1476,7 +1476,7 @@ struct __pyx_obj_8MuchTree_SuchTree {
 };
 
 
-/* "MuchTree.pyx":700
+/* "MuchTree.pyx":701
  *     unsigned int* links
  * 
  * cdef class SuchLinkedTrees :             # <<<<<<<<<<<<<<
@@ -1537,7 +1537,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes {
 };
 
 
-/* "MuchTree.pyx":671
+/* "MuchTree.pyx":672
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
@@ -1555,7 +1555,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data {
 };
 
 
-/* "MuchTree.pyx":682
+/* "MuchTree.pyx":683
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
@@ -1572,7 +1572,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data {
 };
 
 
-/* "MuchTree.pyx":1256
+/* "MuchTree.pyx":1257
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -1683,7 +1683,7 @@ struct __pyx_vtabstruct_8MuchTree_SuchTree {
 static struct __pyx_vtabstruct_8MuchTree_SuchTree *__pyx_vtabptr_8MuchTree_SuchTree;
 
 
-/* "MuchTree.pyx":700
+/* "MuchTree.pyx":701
  *     unsigned int* links
  * 
  * cdef class SuchLinkedTrees :             # <<<<<<<<<<<<<<
@@ -3426,7 +3426,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_leafs(struct __pyx_obj_8MuchT
 static PyObject *__pyx_pf_8MuchTree_8SuchTree_8get_descendant_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
 static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node); /* proto */
 static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_from_node); /* proto */
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id); /* proto */
+static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a); /* proto */
 static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
 static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
 static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
@@ -6687,7 +6687,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
 
 /* Python wrapper */
 static PyObject *__pyx_pw_8MuchTree_8SuchTree_9get_descendant_nodes(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
-static char __pyx_doc_8MuchTree_8SuchTree_8get_descendant_nodes[] = "\n        Generator for ids of all nodes descendent from a given node,\n        starting with the given node.\n        ";
+static char __pyx_doc_8MuchTree_8SuchTree_8get_descendant_nodes[] = "\n        Generator for ids of all nodes descendent from a given node,\n        starting with the given node. Can only accept a node_ids, \n        returns node_ids for internal and leaf nodes.\n        ";
 static PyObject *__pyx_pw_8MuchTree_8SuchTree_9get_descendant_nodes(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -6770,7 +6770,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
   __pyx_L3_first_run:;
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 260, __pyx_L1_error)
 
-  /* "MuchTree.pyx":268
+  /* "MuchTree.pyx":269
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -6779,14 +6779,14 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  */
   __pyx_cur_scope->__pyx_v_n = 0;
 
-  /* "MuchTree.pyx":270
+  /* "MuchTree.pyx":271
  *         cdef unsigned int n = 0
  * 
  *         to_visit = [node_id]             # <<<<<<<<<<<<<<
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_node_id);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_node_id);
@@ -6795,7 +6795,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
   __pyx_cur_scope->__pyx_v_to_visit = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":271
+  /* "MuchTree.pyx":272
  * 
  *         to_visit = [node_id]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -6806,25 +6806,25 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 272, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
-    __pyx_t_4 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_cur_scope->__pyx_v_i = __pyx_t_4;
 
-    /* "MuchTree.pyx":272
+    /* "MuchTree.pyx":273
  *         to_visit = [node_id]
  *         for i in to_visit :
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
  *             if l == -1 :
  *                 yield i
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_cur_scope->__pyx_v_self), __pyx_n_s_get_children); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_cur_scope->__pyx_v_self), __pyx_n_s_get_children); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -6839,7 +6839,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
     __pyx_t_3 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_7, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 272, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_3))) || (PyList_CheckExact(__pyx_t_3))) {
@@ -6848,7 +6848,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 272, __pyx_L1_error)
+        __PYX_ERR(0, 273, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -6861,15 +6861,15 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
       #else
-      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 272, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 273, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 272, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 273, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       #endif
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 272, __pyx_L1_error)
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 273, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -6877,7 +6877,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       __Pyx_GOTREF(__pyx_t_5);
       index = 1; __pyx_t_6 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_6)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_6);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) __PYX_ERR(0, 272, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) __PYX_ERR(0, 273, __pyx_L1_error)
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L7_unpacking_done;
@@ -6885,17 +6885,17 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 272, __pyx_L1_error)
+      __PYX_ERR(0, 273, __pyx_L1_error)
       __pyx_L7_unpacking_done:;
     }
-    __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_6); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_6); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_cur_scope->__pyx_v_l = __pyx_t_9;
     __pyx_cur_scope->__pyx_v_r = __pyx_t_10;
 
-    /* "MuchTree.pyx":273
+    /* "MuchTree.pyx":274
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -6905,14 +6905,14 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
     __pyx_t_11 = ((__pyx_cur_scope->__pyx_v_l == -1L) != 0);
     if (__pyx_t_11) {
 
-      /* "MuchTree.pyx":274
+      /* "MuchTree.pyx":275
  *             l,r = self.get_children( i )
  *             if l == -1 :
  *                 yield i             # <<<<<<<<<<<<<<
  *                 continue
  *             else :
  */
-      __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 274, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 275, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_r = __pyx_t_3;
       __pyx_t_3 = 0;
@@ -6930,9 +6930,9 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       __pyx_cur_scope->__pyx_t_0 = 0;
       __Pyx_XGOTREF(__pyx_t_1);
       __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
-      if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 274, __pyx_L1_error)
+      if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 275, __pyx_L1_error)
 
-      /* "MuchTree.pyx":275
+      /* "MuchTree.pyx":276
  *             if l == -1 :
  *                 yield i
  *                 continue             # <<<<<<<<<<<<<<
@@ -6941,7 +6941,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  */
       goto __pyx_L4_continue;
 
-      /* "MuchTree.pyx":273
+      /* "MuchTree.pyx":274
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -6950,7 +6950,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  */
     }
 
-    /* "MuchTree.pyx":277
+    /* "MuchTree.pyx":278
  *                 continue
  *             else :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
@@ -6958,31 +6958,31 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
  *                 yield i
  */
     /*else*/ {
-      __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_cur_scope->__pyx_v_l); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 277, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_cur_scope->__pyx_v_l); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 278, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_12 = __Pyx_PyList_Append(__pyx_cur_scope->__pyx_v_to_visit, __pyx_t_3); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 277, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyList_Append(__pyx_cur_scope->__pyx_v_to_visit, __pyx_t_3); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 278, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "MuchTree.pyx":278
+      /* "MuchTree.pyx":279
  *             else :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
  *                 yield i
  * 
  */
-      __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_cur_scope->__pyx_v_r); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 278, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_cur_scope->__pyx_v_r); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 279, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_12 = __Pyx_PyList_Append(__pyx_cur_scope->__pyx_v_to_visit, __pyx_t_3); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 278, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyList_Append(__pyx_cur_scope->__pyx_v_to_visit, __pyx_t_3); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 279, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "MuchTree.pyx":279
+      /* "MuchTree.pyx":280
  *                 to_visit.append( l )
  *                 to_visit.append( r )
  *                 yield i             # <<<<<<<<<<<<<<
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :
  */
-      __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 279, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_i); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 280, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_r = __pyx_t_3;
       __pyx_t_3 = 0;
@@ -7000,10 +7000,10 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
       __pyx_cur_scope->__pyx_t_0 = 0;
       __Pyx_XGOTREF(__pyx_t_1);
       __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
-      if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 279, __pyx_L1_error)
+      if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 280, __pyx_L1_error)
     }
 
-    /* "MuchTree.pyx":271
+    /* "MuchTree.pyx":272
  * 
  *         to_visit = [node_id]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7044,7 +7044,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_10generator(__pyx_CoroutineObject 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":281
+/* "MuchTree.pyx":282
  *                 yield i
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
@@ -7085,7 +7085,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_12get_internal_nodes(PyObject *__p
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_internal_nodes") < 0)) __PYX_ERR(0, 281, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_internal_nodes") < 0)) __PYX_ERR(0, 282, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7099,7 +7099,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_12get_internal_nodes(PyObject *__p
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_internal_nodes", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 281, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get_internal_nodes", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 282, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchTree.get_internal_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7139,7 +7139,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __Pyx_RefNannySetupContext("get_internal_nodes", 0);
   __Pyx_INCREF(__pyx_v_from_node);
 
-  /* "MuchTree.pyx":288
+  /* "MuchTree.pyx":289
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -7148,25 +7148,25 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
   __pyx_v_n = 0;
 
-  /* "MuchTree.pyx":290
+  /* "MuchTree.pyx":291
  *         cdef unsigned int n = 0
  * 
  *         if from_node == -1 : from_node = self.root             # <<<<<<<<<<<<<<
  * 
  *         if self.np_buffer is None :
  */
-  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_v_from_node, __pyx_int_neg_1, -1L, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 290, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_v_from_node, __pyx_int_neg_1, -1L, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 290, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
-    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 290, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF_SET(__pyx_v_from_node, __pyx_t_1);
     __pyx_t_1 = 0;
   }
 
-  /* "MuchTree.pyx":292
+  /* "MuchTree.pyx":293
  *         if from_node == -1 : from_node = self.root
  * 
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -7177,24 +7177,24 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "MuchTree.pyx":293
+    /* "MuchTree.pyx":294
  * 
  *         if self.np_buffer is None :
  *             self.np_buffer = np.ndarray( self.n_leafs, dtype=int )             # <<<<<<<<<<<<<<
  *             # this doesn't look like it should work, but strictly
  *             # bifrucating trees always have one fewer internal nodes
  */
-    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_leafs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_leafs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 293, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 294, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -7204,7 +7204,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
     __pyx_v_self->np_buffer = __pyx_t_5;
     __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":292
+    /* "MuchTree.pyx":293
  *         if from_node == -1 : from_node = self.root
  * 
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -7213,14 +7213,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
   }
 
-  /* "MuchTree.pyx":297
+  /* "MuchTree.pyx":298
  *             # bifrucating trees always have one fewer internal nodes
  *             # than leaf nodes
  *         to_visit = [from_node]             # <<<<<<<<<<<<<<
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  */
-  __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 297, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_INCREF(__pyx_v_from_node);
   __Pyx_GIVEREF(__pyx_v_from_node);
@@ -7228,7 +7228,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __pyx_v_to_visit = ((PyObject*)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":298
+  /* "MuchTree.pyx":299
  *             # than leaf nodes
  *         to_visit = [from_node]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7239,25 +7239,25 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   for (;;) {
     if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_5)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 298, __pyx_L1_error)
+    __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 299, __pyx_L1_error)
     #else
-    __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 298, __pyx_L1_error)
+    __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     #endif
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 298, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 299, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_i = __pyx_t_7;
 
-    /* "MuchTree.pyx":299
+    /* "MuchTree.pyx":300
  *         to_visit = [from_node]
  *         for i in to_visit :
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
  *             if l == -1 :
  *                 continue
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_children); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_children); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_9 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -7272,7 +7272,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
     __pyx_t_1 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_9, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_8);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_1))) || (PyList_CheckExact(__pyx_t_1))) {
@@ -7281,7 +7281,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 299, __pyx_L1_error)
+        __PYX_ERR(0, 300, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -7294,15 +7294,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_8);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 299, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 299, __pyx_L1_error)
+      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 300, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_9 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 299, __pyx_L1_error)
+      __pyx_t_9 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext;
@@ -7310,7 +7310,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       __Pyx_GOTREF(__pyx_t_4);
       index = 1; __pyx_t_8 = __pyx_t_10(__pyx_t_9); if (unlikely(!__pyx_t_8)) goto __pyx_L7_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_8);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 299, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
       __pyx_t_10 = NULL;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       goto __pyx_L8_unpacking_done;
@@ -7318,17 +7318,17 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_10 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 299, __pyx_L1_error)
+      __PYX_ERR(0, 300, __pyx_L1_error)
       __pyx_L8_unpacking_done:;
     }
-    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_8); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_8); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_v_l = __pyx_t_11;
     __pyx_v_r = __pyx_t_12;
 
-    /* "MuchTree.pyx":300
+    /* "MuchTree.pyx":301
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -7338,7 +7338,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
     __pyx_t_3 = ((__pyx_v_l == -1L) != 0);
     if (__pyx_t_3) {
 
-      /* "MuchTree.pyx":301
+      /* "MuchTree.pyx":302
  *             l,r = self.get_children( i )
  *             if l == -1 :
  *                 continue             # <<<<<<<<<<<<<<
@@ -7347,7 +7347,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
       goto __pyx_L5_continue;
 
-      /* "MuchTree.pyx":300
+      /* "MuchTree.pyx":301
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             if l == -1 :             # <<<<<<<<<<<<<<
@@ -7356,7 +7356,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  */
     }
 
-    /* "MuchTree.pyx":303
+    /* "MuchTree.pyx":304
  *                 continue
  *             else :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
@@ -7364,36 +7364,36 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  *                 self.np_buffer[n] = i
  */
     /*else*/ {
-      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_l); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 303, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_l); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 303, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 304, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":304
+      /* "MuchTree.pyx":305
  *             else :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
  *                 self.np_buffer[n] = i
  *                 n += 1
  */
-      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_r); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_r); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 305, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 304, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 305, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":305
+      /* "MuchTree.pyx":306
  *                 to_visit.append( l )
  *                 to_visit.append( r )
  *                 self.np_buffer[n] = i             # <<<<<<<<<<<<<<
  *                 n += 1
  *         return np.array(self.np_buffer[:n])
  */
-      __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 305, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_1, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 305, __pyx_L1_error)
+      if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_1, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":306
+      /* "MuchTree.pyx":307
  *                 to_visit.append( r )
  *                 self.np_buffer[n] = i
  *                 n += 1             # <<<<<<<<<<<<<<
@@ -7403,7 +7403,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
       __pyx_v_n = (__pyx_v_n + 1);
     }
 
-    /* "MuchTree.pyx":298
+    /* "MuchTree.pyx":299
  *             # than leaf nodes
  *         to_visit = [from_node]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7414,7 +7414,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":307
+  /* "MuchTree.pyx":308
  *                 self.np_buffer[n] = i
  *                 n += 1
  *         return np.array(self.np_buffer[:n])             # <<<<<<<<<<<<<<
@@ -7422,12 +7422,12 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
  *     def get_nodes( self, from_node=-1 ) :
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 308, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 307, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 308, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_self->np_buffer, 0, __pyx_v_n, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_self->np_buffer, 0, __pyx_v_n, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 308, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -7442,14 +7442,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   __pyx_t_5 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_4, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 307, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 308, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":281
+  /* "MuchTree.pyx":282
  *                 yield i
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
@@ -7474,7 +7474,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_11get_internal_nodes(struct __pyx_
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":309
+/* "MuchTree.pyx":310
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
@@ -7515,7 +7515,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_14get_nodes(PyObject *__pyx_v_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_nodes") < 0)) __PYX_ERR(0, 309, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_nodes") < 0)) __PYX_ERR(0, 310, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7529,7 +7529,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_14get_nodes(PyObject *__pyx_v_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_nodes", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 309, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get_nodes", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 310, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchTree.get_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7569,7 +7569,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __Pyx_RefNannySetupContext("get_nodes", 0);
   __Pyx_INCREF(__pyx_v_from_node);
 
-  /* "MuchTree.pyx":316
+  /* "MuchTree.pyx":317
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -7578,25 +7578,25 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
   __pyx_v_n = 0;
 
-  /* "MuchTree.pyx":318
+  /* "MuchTree.pyx":319
  *         cdef unsigned int n = 0
  * 
  *         if from_node == -1 : from_node = self.root             # <<<<<<<<<<<<<<
  * 
  *         if self.np_buffer is None :
  */
-  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_v_from_node, __pyx_int_neg_1, -1L, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 318, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_v_from_node, __pyx_int_neg_1, -1L, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 319, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 318, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 319, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
-    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 318, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 319, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF_SET(__pyx_v_from_node, __pyx_t_1);
     __pyx_t_1 = 0;
   }
 
-  /* "MuchTree.pyx":320
+  /* "MuchTree.pyx":321
  *         if from_node == -1 : from_node = self.root
  * 
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -7607,24 +7607,24 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "MuchTree.pyx":321
+    /* "MuchTree.pyx":322
  * 
  *         if self.np_buffer is None :
  *             self.np_buffer = np.ndarray( self.length, dtype=int )             # <<<<<<<<<<<<<<
  * 
  *         to_visit = [from_node]
  */
-    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 321, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 321, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 322, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -7634,7 +7634,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     __pyx_v_self->np_buffer = __pyx_t_5;
     __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":320
+    /* "MuchTree.pyx":321
  *         if from_node == -1 : from_node = self.root
  * 
  *         if self.np_buffer is None :             # <<<<<<<<<<<<<<
@@ -7643,14 +7643,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":323
+  /* "MuchTree.pyx":324
  *             self.np_buffer = np.ndarray( self.length, dtype=int )
  * 
  *         to_visit = [from_node]             # <<<<<<<<<<<<<<
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  */
-  __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 323, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 324, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_INCREF(__pyx_v_from_node);
   __Pyx_GIVEREF(__pyx_v_from_node);
@@ -7658,7 +7658,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __pyx_v_to_visit = ((PyObject*)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":324
+  /* "MuchTree.pyx":325
  * 
  *         to_visit = [from_node]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7669,25 +7669,25 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   for (;;) {
     if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_5)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 324, __pyx_L1_error)
+    __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 325, __pyx_L1_error)
     #else
-    __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 324, __pyx_L1_error)
+    __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 325, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     #endif
-    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 324, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 325, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_i = __pyx_t_7;
 
-    /* "MuchTree.pyx":325
+    /* "MuchTree.pyx":326
  *         to_visit = [from_node]
  *         for i in to_visit :
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
  *             self.np_buffer[n] = i
  *             n += 1
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_children); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 325, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_children); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 325, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_9 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -7702,7 +7702,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     __pyx_t_1 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_9, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_8);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 325, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_1))) || (PyList_CheckExact(__pyx_t_1))) {
@@ -7711,7 +7711,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 325, __pyx_L1_error)
+        __PYX_ERR(0, 326, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -7724,15 +7724,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_8);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 325, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 326, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 325, __pyx_L1_error)
+      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 326, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_9 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 325, __pyx_L1_error)
+      __pyx_t_9 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 326, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext;
@@ -7740,7 +7740,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
       __Pyx_GOTREF(__pyx_t_4);
       index = 1; __pyx_t_8 = __pyx_t_10(__pyx_t_9); if (unlikely(!__pyx_t_8)) goto __pyx_L7_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_8);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 325, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 326, __pyx_L1_error)
       __pyx_t_10 = NULL;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       goto __pyx_L8_unpacking_done;
@@ -7748,29 +7748,29 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_10 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 325, __pyx_L1_error)
+      __PYX_ERR(0, 326, __pyx_L1_error)
       __pyx_L8_unpacking_done:;
     }
-    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 325, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_8); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 325, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_8); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_v_l = __pyx_t_11;
     __pyx_v_r = __pyx_t_12;
 
-    /* "MuchTree.pyx":326
+    /* "MuchTree.pyx":327
  *         for i in to_visit :
  *             l,r = self.get_children( i )
  *             self.np_buffer[n] = i             # <<<<<<<<<<<<<<
  *             n += 1
  *             if l != -1 :
  */
-    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 327, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_1, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 326, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_1, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 327, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "MuchTree.pyx":327
+    /* "MuchTree.pyx":328
  *             l,r = self.get_children( i )
  *             self.np_buffer[n] = i
  *             n += 1             # <<<<<<<<<<<<<<
@@ -7779,7 +7779,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
     __pyx_v_n = (__pyx_v_n + 1);
 
-    /* "MuchTree.pyx":328
+    /* "MuchTree.pyx":329
  *             self.np_buffer[n] = i
  *             n += 1
  *             if l != -1 :             # <<<<<<<<<<<<<<
@@ -7789,31 +7789,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
     __pyx_t_3 = ((__pyx_v_l != -1L) != 0);
     if (__pyx_t_3) {
 
-      /* "MuchTree.pyx":329
+      /* "MuchTree.pyx":330
  *             n += 1
  *             if l != -1 :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
  *                 to_visit.append( r )
  *         return np.array(self.np_buffer[:n])
  */
-      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_l); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 329, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_l); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 330, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 329, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 330, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":330
+      /* "MuchTree.pyx":331
  *             if l != -1 :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
  *         return np.array(self.np_buffer[:n])
  * 
  */
-      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_r); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 330, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_r); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 331, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 330, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 331, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "MuchTree.pyx":328
+      /* "MuchTree.pyx":329
  *             self.np_buffer[n] = i
  *             n += 1
  *             if l != -1 :             # <<<<<<<<<<<<<<
@@ -7822,7 +7822,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
  */
     }
 
-    /* "MuchTree.pyx":324
+    /* "MuchTree.pyx":325
  * 
  *         to_visit = [from_node]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -7832,20 +7832,20 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":331
+  /* "MuchTree.pyx":332
  *                 to_visit.append( l )
  *                 to_visit.append( r )
  *         return np.array(self.np_buffer[:n])             # <<<<<<<<<<<<<<
  * 
- *     def get_distance_to_root( self, node_id ) :
+ *     def get_distance_to_root( self, a ) :
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 331, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 331, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_self->np_buffer, 0, __pyx_v_n, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 331, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_self->np_buffer, 0, __pyx_v_n, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -7860,14 +7860,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   __pyx_t_5 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_4, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 331, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 332, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":309
+  /* "MuchTree.pyx":310
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
@@ -7892,30 +7892,29 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_nodes(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":333
+/* "MuchTree.pyx":334
  *         return np.array(self.np_buffer[:n])
  * 
- *     def get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
+ *     def get_distance_to_root( self, a ) :             # <<<<<<<<<<<<<<
  *         """
  *         Return distance to root for a given node. Will accept node id
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_16get_distance_to_root(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id); /*proto*/
+static PyObject *__pyx_pw_8MuchTree_8SuchTree_16get_distance_to_root(PyObject *__pyx_v_self, PyObject *__pyx_v_a); /*proto*/
 static char __pyx_doc_8MuchTree_8SuchTree_15get_distance_to_root[] = "\n        Return distance to root for a given node. Will accept node id\n        or a leaf name.\n        ";
-static PyObject *__pyx_pw_8MuchTree_8SuchTree_16get_distance_to_root(PyObject *__pyx_v_self, PyObject *__pyx_v_node_id) {
+static PyObject *__pyx_pw_8MuchTree_8SuchTree_16get_distance_to_root(PyObject *__pyx_v_self, PyObject *__pyx_v_a) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_distance_to_root (wrapper)", 0);
-  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_node_id));
+  __pyx_r = __pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(((struct __pyx_obj_8MuchTree_SuchTree *)__pyx_v_self), ((PyObject *)__pyx_v_a));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_node_id) {
-  CYTHON_UNUSED PyObject *__pyx_v_id = NULL;
+static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __pyx_obj_8MuchTree_SuchTree *__pyx_v_self, PyObject *__pyx_v_a) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -7933,23 +7932,24 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_distance_to_root", 0);
+  __Pyx_INCREF(__pyx_v_a);
 
-  /* "MuchTree.pyx":338
+  /* "MuchTree.pyx":339
  *         or a leaf name.
  *         """
- *         if type(node_id) is str :             # <<<<<<<<<<<<<<
+ *         if type(a) is str :             # <<<<<<<<<<<<<<
  *             try :
- *                 id = self.leafs[ node_id ]
+ *                 a = self.leafs[a]
  */
-  __pyx_t_1 = (((PyObject *)Py_TYPE(__pyx_v_node_id)) == ((PyObject *)(&PyUnicode_Type)));
+  __pyx_t_1 = (((PyObject *)Py_TYPE(__pyx_v_a)) == ((PyObject *)(&PyUnicode_Type)));
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":339
+    /* "MuchTree.pyx":340
  *         """
- *         if type(node_id) is str :
+ *         if type(a) is str :
  *             try :             # <<<<<<<<<<<<<<
- *                 id = self.leafs[ node_id ]
+ *                 a = self.leafs[a]
  *             except KeyError :
  */
     {
@@ -7961,23 +7961,23 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
       __Pyx_XGOTREF(__pyx_t_5);
       /*try:*/ {
 
-        /* "MuchTree.pyx":340
- *         if type(node_id) is str :
+        /* "MuchTree.pyx":341
+ *         if type(a) is str :
  *             try :
- *                 id = self.leafs[ node_id ]             # <<<<<<<<<<<<<<
+ *                 a = self.leafs[a]             # <<<<<<<<<<<<<<
  *             except KeyError :
- *                 raise Exception( 'Leaf name not found : ' + node_id )
+ *                 raise Exception( 'Leaf name not found : ' + a )
  */
-        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_node_id); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 340, __pyx_L4_error)
+        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 341, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_v_id = __pyx_t_6;
+        __Pyx_DECREF_SET(__pyx_v_a, __pyx_t_6);
         __pyx_t_6 = 0;
 
-        /* "MuchTree.pyx":339
+        /* "MuchTree.pyx":340
  *         """
- *         if type(node_id) is str :
+ *         if type(a) is str :
  *             try :             # <<<<<<<<<<<<<<
- *                 id = self.leafs[ node_id ]
+ *                 a = self.leafs[a]
  *             except KeyError :
  */
       }
@@ -7988,45 +7988,45 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
       __pyx_L4_error:;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":341
+      /* "MuchTree.pyx":342
  *             try :
- *                 id = self.leafs[ node_id ]
+ *                 a = self.leafs[a]
  *             except KeyError :             # <<<<<<<<<<<<<<
- *                 raise Exception( 'Leaf name not found : ' + node_id )
- *         return self._get_distance_to_root( node_id )
+ *                 raise Exception( 'Leaf name not found : ' + a )
+ *         return self._get_distance_to_root( a )
  */
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
         __Pyx_AddTraceback("MuchTree.SuchTree.get_distance_to_root", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 341, __pyx_L6_except_error)
+        if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 342, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "MuchTree.pyx":342
- *                 id = self.leafs[ node_id ]
+        /* "MuchTree.pyx":343
+ *                 a = self.leafs[a]
  *             except KeyError :
- *                 raise Exception( 'Leaf name not found : ' + node_id )             # <<<<<<<<<<<<<<
- *         return self._get_distance_to_root( node_id )
+ *                 raise Exception( 'Leaf name not found : ' + a )             # <<<<<<<<<<<<<<
+ *         return self._get_distance_to_root( a )
  * 
  */
-        __pyx_t_10 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_node_id); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 342, __pyx_L6_except_error)
+        __pyx_t_10 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_a); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 343, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_11 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 342, __pyx_L6_except_error)
+        __pyx_t_11 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 343, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_Raise(__pyx_t_11, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __PYX_ERR(0, 342, __pyx_L6_except_error)
+        __PYX_ERR(0, 343, __pyx_L6_except_error)
       }
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "MuchTree.pyx":339
+      /* "MuchTree.pyx":340
  *         """
- *         if type(node_id) is str :
+ *         if type(a) is str :
  *             try :             # <<<<<<<<<<<<<<
- *                 id = self.leafs[ node_id ]
+ *                 a = self.leafs[a]
  *             except KeyError :
  */
       __Pyx_XGIVEREF(__pyx_t_3);
@@ -8037,33 +8037,33 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
       __pyx_L9_try_end:;
     }
 
-    /* "MuchTree.pyx":338
+    /* "MuchTree.pyx":339
  *         or a leaf name.
  *         """
- *         if type(node_id) is str :             # <<<<<<<<<<<<<<
+ *         if type(a) is str :             # <<<<<<<<<<<<<<
  *             try :
- *                 id = self.leafs[ node_id ]
+ *                 a = self.leafs[a]
  */
   }
 
-  /* "MuchTree.pyx":343
+  /* "MuchTree.pyx":344
  *             except KeyError :
- *                 raise Exception( 'Leaf name not found : ' + node_id )
- *         return self._get_distance_to_root( node_id )             # <<<<<<<<<<<<<<
+ *                 raise Exception( 'Leaf name not found : ' + a )
+ *         return self._get_distance_to_root( a )             # <<<<<<<<<<<<<<
  * 
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_9 = PyFloat_FromDouble(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_get_distance_to_root(__pyx_v_self, __pyx_v_node_id)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 343, __pyx_L1_error)
+  __pyx_t_9 = PyFloat_FromDouble(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_get_distance_to_root(__pyx_v_self, __pyx_v_a)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_r = __pyx_t_9;
   __pyx_t_9 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":333
+  /* "MuchTree.pyx":334
  *         return np.array(self.np_buffer[:n])
  * 
- *     def get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
+ *     def get_distance_to_root( self, a ) :             # <<<<<<<<<<<<<<
  *         """
  *         Return distance to root for a given node. Will accept node id
  */
@@ -8078,13 +8078,13 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_15get_distance_to_root(struct __py
   __Pyx_AddTraceback("MuchTree.SuchTree.get_distance_to_root", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
-  __Pyx_XDECREF(__pyx_v_id);
+  __Pyx_XDECREF(__pyx_v_a);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":346
+/* "MuchTree.pyx":347
  * 
  *     @cython.boundscheck(False)
  *     cdef float _get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -8108,7 +8108,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_get_distance_to_root", 0);
 
-  /* "MuchTree.pyx":351
+  /* "MuchTree.pyx":352
  *         Will work for both leaf and internal nodes. Private cdef method.
  *         """
  *         cdef float d = 0.0             # <<<<<<<<<<<<<<
@@ -8117,7 +8117,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   __pyx_v_d = 0.0;
 
-  /* "MuchTree.pyx":352
+  /* "MuchTree.pyx":353
  *         """
  *         cdef float d = 0.0
  *         cdef float d_i = 0.0             # <<<<<<<<<<<<<<
@@ -8126,17 +8126,17 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   __pyx_v_d_i = 0.0;
 
-  /* "MuchTree.pyx":353
+  /* "MuchTree.pyx":354
  *         cdef float d = 0.0
  *         cdef float d_i = 0.0
  *         cdef int i = node_id             # <<<<<<<<<<<<<<
  *         cdef int a_depth = 0
  *         cdef int mrca = -1
  */
-  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_node_id); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 353, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_node_id); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 354, __pyx_L1_error)
   __pyx_v_i = __pyx_t_1;
 
-  /* "MuchTree.pyx":354
+  /* "MuchTree.pyx":355
  *         cdef float d_i = 0.0
  *         cdef int i = node_id
  *         cdef int a_depth = 0             # <<<<<<<<<<<<<<
@@ -8145,7 +8145,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   __pyx_v_a_depth = 0;
 
-  /* "MuchTree.pyx":355
+  /* "MuchTree.pyx":356
  *         cdef int i = node_id
  *         cdef int a_depth = 0
  *         cdef int mrca = -1             # <<<<<<<<<<<<<<
@@ -8154,7 +8154,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   __pyx_v_mrca = -1;
 
-  /* "MuchTree.pyx":357
+  /* "MuchTree.pyx":358
  *         cdef int mrca = -1
  * 
  *         while True :             # <<<<<<<<<<<<<<
@@ -8163,7 +8163,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
   while (1) {
 
-    /* "MuchTree.pyx":358
+    /* "MuchTree.pyx":359
  * 
  *         while True :
  *             d_i = self.data[i].distance             # <<<<<<<<<<<<<<
@@ -8173,7 +8173,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
     __pyx_t_2 = (__pyx_v_self->data[__pyx_v_i]).distance;
     __pyx_v_d_i = __pyx_t_2;
 
-    /* "MuchTree.pyx":359
+    /* "MuchTree.pyx":360
  *         while True :
  *             d_i = self.data[i].distance
  *             if d_i == -1 : break             # <<<<<<<<<<<<<<
@@ -8185,7 +8185,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
       goto __pyx_L4_break;
     }
 
-    /* "MuchTree.pyx":360
+    /* "MuchTree.pyx":361
  *             d_i = self.data[i].distance
  *             if d_i == -1 : break
  *             d = d + d_i             # <<<<<<<<<<<<<<
@@ -8194,7 +8194,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  */
     __pyx_v_d = (__pyx_v_d + __pyx_v_d_i);
 
-    /* "MuchTree.pyx":361
+    /* "MuchTree.pyx":362
  *             if d_i == -1 : break
  *             d = d + d_i
  *             i = self.data[i].parent             # <<<<<<<<<<<<<<
@@ -8206,7 +8206,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   }
   __pyx_L4_break:;
 
-  /* "MuchTree.pyx":362
+  /* "MuchTree.pyx":363
  *             d = d + d_i
  *             i = self.data[i].parent
  *         return d             # <<<<<<<<<<<<<<
@@ -8216,7 +8216,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   __pyx_r = __pyx_v_d;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":346
+  /* "MuchTree.pyx":347
  * 
  *     @cython.boundscheck(False)
  *     cdef float _get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -8233,7 +8233,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":364
+/* "MuchTree.pyx":365
  *         return d
  * 
  *     def is_ancestor( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -8276,11 +8276,11 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_18is_ancestor(PyObject *__pyx_v_se
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_b)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("is_ancestor", 1, 2, 2, 1); __PYX_ERR(0, 364, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("is_ancestor", 1, 2, 2, 1); __PYX_ERR(0, 365, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "is_ancestor") < 0)) __PYX_ERR(0, 364, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "is_ancestor") < 0)) __PYX_ERR(0, 365, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -8293,7 +8293,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_18is_ancestor(PyObject *__pyx_v_se
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("is_ancestor", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 364, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("is_ancestor", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 365, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchTree.is_ancestor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -8328,7 +8328,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
   __Pyx_INCREF(__pyx_v_a);
   __Pyx_INCREF(__pyx_v_b);
 
-  /* "MuchTree.pyx":370
+  /* "MuchTree.pyx":371
  *         but only node_ids can be used for internal nodes.
  *         """
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
@@ -8339,7 +8339,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":371
+    /* "MuchTree.pyx":372
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -8355,19 +8355,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
       __Pyx_XGOTREF(__pyx_t_5);
       /*try:*/ {
 
-        /* "MuchTree.pyx":372
+        /* "MuchTree.pyx":373
  *         if isinstance( a, str ) :
  *             try :
  *                 a = self.leafs[a]             # <<<<<<<<<<<<<<
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  */
-        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 372, __pyx_L4_error)
+        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 373, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF_SET(__pyx_v_a, __pyx_t_6);
         __pyx_t_6 = 0;
 
-        /* "MuchTree.pyx":371
+        /* "MuchTree.pyx":372
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -8382,7 +8382,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
       __pyx_L4_error:;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":373
+      /* "MuchTree.pyx":374
  *             try :
  *                 a = self.leafs[a]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -8392,31 +8392,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
         __Pyx_AddTraceback("MuchTree.SuchTree.is_ancestor", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 373, __pyx_L6_except_error)
+        if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 374, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "MuchTree.pyx":374
+        /* "MuchTree.pyx":375
  *                 a = self.leafs[a]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )             # <<<<<<<<<<<<<<
  *         if isinstance( b, str ) :
  *             try :
  */
-        __pyx_t_10 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_a); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 374, __pyx_L6_except_error)
+        __pyx_t_10 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_a); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 375, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_11 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 374, __pyx_L6_except_error)
+        __pyx_t_11 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 375, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_Raise(__pyx_t_11, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __PYX_ERR(0, 374, __pyx_L6_except_error)
+        __PYX_ERR(0, 375, __pyx_L6_except_error)
       }
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "MuchTree.pyx":371
+      /* "MuchTree.pyx":372
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -8431,7 +8431,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
       __pyx_L9_try_end:;
     }
 
-    /* "MuchTree.pyx":370
+    /* "MuchTree.pyx":371
  *         but only node_ids can be used for internal nodes.
  *         """
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
@@ -8440,7 +8440,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
  */
   }
 
-  /* "MuchTree.pyx":375
+  /* "MuchTree.pyx":376
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :             # <<<<<<<<<<<<<<
@@ -8451,7 +8451,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":376
+    /* "MuchTree.pyx":377
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -8467,19 +8467,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
       __Pyx_XGOTREF(__pyx_t_3);
       /*try:*/ {
 
-        /* "MuchTree.pyx":377
+        /* "MuchTree.pyx":378
  *         if isinstance( b, str ) :
  *             try :
  *                 b = self.leafs[b]             # <<<<<<<<<<<<<<
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + b )
  */
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_b); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 377, __pyx_L13_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_b); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 378, __pyx_L13_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF_SET(__pyx_v_b, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "MuchTree.pyx":376
+        /* "MuchTree.pyx":377
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -8498,7 +8498,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "MuchTree.pyx":378
+      /* "MuchTree.pyx":379
  *             try :
  *                 b = self.leafs[b]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -8508,31 +8508,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
         __Pyx_AddTraceback("MuchTree.SuchTree.is_ancestor", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_9, &__pyx_t_8, &__pyx_t_6) < 0) __PYX_ERR(0, 378, __pyx_L15_except_error)
+        if (__Pyx_GetException(&__pyx_t_9, &__pyx_t_8, &__pyx_t_6) < 0) __PYX_ERR(0, 379, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_6);
 
-        /* "MuchTree.pyx":379
+        /* "MuchTree.pyx":380
  *                 b = self.leafs[b]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + b )             # <<<<<<<<<<<<<<
  * 
  *         return self._is_ancestor( a, b )
  */
-        __pyx_t_11 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_b); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 379, __pyx_L15_except_error)
+        __pyx_t_11 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_b); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 380, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_10 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 379, __pyx_L15_except_error)
+        __pyx_t_10 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 380, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_Raise(__pyx_t_10, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __PYX_ERR(0, 379, __pyx_L15_except_error)
+        __PYX_ERR(0, 380, __pyx_L15_except_error)
       }
       goto __pyx_L15_except_error;
       __pyx_L15_except_error:;
 
-      /* "MuchTree.pyx":376
+      /* "MuchTree.pyx":377
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -8547,7 +8547,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
       __pyx_L18_try_end:;
     }
 
-    /* "MuchTree.pyx":375
+    /* "MuchTree.pyx":376
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :             # <<<<<<<<<<<<<<
@@ -8556,7 +8556,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
  */
   }
 
-  /* "MuchTree.pyx":381
+  /* "MuchTree.pyx":382
  *                 raise Exception( 'Leaf name not found : ' + b )
  * 
  *         return self._is_ancestor( a, b )             # <<<<<<<<<<<<<<
@@ -8564,15 +8564,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 381, __pyx_L1_error)
-  __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 381, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyInt_From_int(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_is_ancestor(__pyx_v_self, __pyx_t_7, __pyx_t_12)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 381, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 382, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 382, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_is_ancestor(__pyx_v_self, __pyx_t_7, __pyx_t_12)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 382, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_r = __pyx_t_6;
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":364
+  /* "MuchTree.pyx":365
  *         return d
  * 
  *     def is_ancestor( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -8597,7 +8597,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_17is_ancestor(struct __pyx_obj_8Mu
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":384
+/* "MuchTree.pyx":385
  * 
  *     @cython.boundscheck(False)
  *     cdef int _is_ancestor( self, int a, int b ) nogil :             # <<<<<<<<<<<<<<
@@ -8612,7 +8612,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   int __pyx_t_1;
   int __pyx_t_2;
 
-  /* "MuchTree.pyx":389
+  /* "MuchTree.pyx":390
  * 
  *         # is a an ancestor of b?
  *         i = b             # <<<<<<<<<<<<<<
@@ -8621,7 +8621,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
   __pyx_v_i = __pyx_v_b;
 
-  /* "MuchTree.pyx":390
+  /* "MuchTree.pyx":391
  *         # is a an ancestor of b?
  *         i = b
  *         while True :             # <<<<<<<<<<<<<<
@@ -8630,7 +8630,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
   while (1) {
 
-    /* "MuchTree.pyx":391
+    /* "MuchTree.pyx":392
  *         i = b
  *         while True :
  *             n = self.data[i].parent             # <<<<<<<<<<<<<<
@@ -8640,7 +8640,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_1 = (__pyx_v_self->data[__pyx_v_i]).parent;
     __pyx_v_n = __pyx_t_1;
 
-    /* "MuchTree.pyx":392
+    /* "MuchTree.pyx":393
  *         while True :
  *             n = self.data[i].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8650,7 +8650,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_2 = ((__pyx_v_n == -1L) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":393
+      /* "MuchTree.pyx":394
  *             n = self.data[i].parent
  *             if n == -1 :
  *                 break             # <<<<<<<<<<<<<<
@@ -8659,7 +8659,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
       goto __pyx_L4_break;
 
-      /* "MuchTree.pyx":392
+      /* "MuchTree.pyx":393
  *         while True :
  *             n = self.data[i].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8668,7 +8668,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
     }
 
-    /* "MuchTree.pyx":394
+    /* "MuchTree.pyx":395
  *             if n == -1 :
  *                 break
  *             if n == a :             # <<<<<<<<<<<<<<
@@ -8678,7 +8678,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_2 = ((__pyx_v_n == __pyx_v_a) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":395
+      /* "MuchTree.pyx":396
  *                 break
  *             if n == a :
  *                 return 1             # <<<<<<<<<<<<<<
@@ -8688,7 +8688,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
       __pyx_r = 1;
       goto __pyx_L0;
 
-      /* "MuchTree.pyx":394
+      /* "MuchTree.pyx":395
  *             if n == -1 :
  *                 break
  *             if n == a :             # <<<<<<<<<<<<<<
@@ -8697,7 +8697,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
     }
 
-    /* "MuchTree.pyx":396
+    /* "MuchTree.pyx":397
  *             if n == a :
  *                 return 1
  *             i = n             # <<<<<<<<<<<<<<
@@ -8708,7 +8708,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   }
   __pyx_L4_break:;
 
-  /* "MuchTree.pyx":399
+  /* "MuchTree.pyx":400
  * 
  *         # is b an ancestor of a?
  *         i = a             # <<<<<<<<<<<<<<
@@ -8717,7 +8717,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
   __pyx_v_i = __pyx_v_a;
 
-  /* "MuchTree.pyx":400
+  /* "MuchTree.pyx":401
  *         # is b an ancestor of a?
  *         i = a
  *         while True :             # <<<<<<<<<<<<<<
@@ -8726,7 +8726,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
   while (1) {
 
-    /* "MuchTree.pyx":401
+    /* "MuchTree.pyx":402
  *         i = a
  *         while True :
  *             n = self.data[i].parent             # <<<<<<<<<<<<<<
@@ -8736,7 +8736,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_1 = (__pyx_v_self->data[__pyx_v_i]).parent;
     __pyx_v_n = __pyx_t_1;
 
-    /* "MuchTree.pyx":402
+    /* "MuchTree.pyx":403
  *         while True :
  *             n = self.data[i].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8746,7 +8746,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_2 = ((__pyx_v_n == -1L) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":403
+      /* "MuchTree.pyx":404
  *             n = self.data[i].parent
  *             if n == -1 :
  *                 break             # <<<<<<<<<<<<<<
@@ -8755,7 +8755,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
       goto __pyx_L8_break;
 
-      /* "MuchTree.pyx":402
+      /* "MuchTree.pyx":403
  *         while True :
  *             n = self.data[i].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -8764,7 +8764,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
     }
 
-    /* "MuchTree.pyx":404
+    /* "MuchTree.pyx":405
  *             if n == -1 :
  *                 break
  *             if n == b :             # <<<<<<<<<<<<<<
@@ -8774,7 +8774,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
     __pyx_t_2 = ((__pyx_v_n == __pyx_v_b) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":405
+      /* "MuchTree.pyx":406
  *                 break
  *             if n == b :
  *                 return -1             # <<<<<<<<<<<<<<
@@ -8784,7 +8784,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
       __pyx_r = -1;
       goto __pyx_L0;
 
-      /* "MuchTree.pyx":404
+      /* "MuchTree.pyx":405
  *             if n == -1 :
  *                 break
  *             if n == b :             # <<<<<<<<<<<<<<
@@ -8793,7 +8793,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  */
     }
 
-    /* "MuchTree.pyx":406
+    /* "MuchTree.pyx":407
  *             if n == b :
  *                 return -1
  *             i = n             # <<<<<<<<<<<<<<
@@ -8804,7 +8804,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   }
   __pyx_L8_break:;
 
-  /* "MuchTree.pyx":409
+  /* "MuchTree.pyx":410
  * 
  *         # or neither?
  *         return 0             # <<<<<<<<<<<<<<
@@ -8814,7 +8814,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":384
+  /* "MuchTree.pyx":385
  * 
  *     @cython.boundscheck(False)
  *     cdef int _is_ancestor( self, int a, int b ) nogil :             # <<<<<<<<<<<<<<
@@ -8827,7 +8827,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":411
+/* "MuchTree.pyx":412
  *         return 0
  * 
  *     def mrca( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -8870,11 +8870,11 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_20mrca(PyObject *__pyx_v_self, PyO
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_b)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("mrca", 1, 2, 2, 1); __PYX_ERR(0, 411, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("mrca", 1, 2, 2, 1); __PYX_ERR(0, 412, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "mrca") < 0)) __PYX_ERR(0, 411, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "mrca") < 0)) __PYX_ERR(0, 412, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -8887,7 +8887,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_20mrca(PyObject *__pyx_v_self, PyO
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("mrca", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 411, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("mrca", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 412, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchTree.mrca", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -8924,7 +8924,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __Pyx_INCREF(__pyx_v_a);
   __Pyx_INCREF(__pyx_v_b);
 
-  /* "MuchTree.pyx":417
+  /* "MuchTree.pyx":418
  *         but node_ids must be used for internal nodes.
  *         """
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
@@ -8935,7 +8935,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":418
+    /* "MuchTree.pyx":419
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -8951,19 +8951,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
       __Pyx_XGOTREF(__pyx_t_5);
       /*try:*/ {
 
-        /* "MuchTree.pyx":419
+        /* "MuchTree.pyx":420
  *         if isinstance( a, str ) :
  *             try :
  *                 a = self.leafs[a]             # <<<<<<<<<<<<<<
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  */
-        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 419, __pyx_L4_error)
+        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 420, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF_SET(__pyx_v_a, __pyx_t_6);
         __pyx_t_6 = 0;
 
-        /* "MuchTree.pyx":418
+        /* "MuchTree.pyx":419
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -8978,7 +8978,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
       __pyx_L4_error:;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":420
+      /* "MuchTree.pyx":421
  *             try :
  *                 a = self.leafs[a]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -8988,31 +8988,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
         __Pyx_AddTraceback("MuchTree.SuchTree.mrca", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 420, __pyx_L6_except_error)
+        if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 421, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "MuchTree.pyx":421
+        /* "MuchTree.pyx":422
  *                 a = self.leafs[a]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )             # <<<<<<<<<<<<<<
  *         if isinstance( b, str ) :
  *             try :
  */
-        __pyx_t_10 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_a); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 421, __pyx_L6_except_error)
+        __pyx_t_10 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_a); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_11 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 421, __pyx_L6_except_error)
+        __pyx_t_11 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 422, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_Raise(__pyx_t_11, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __PYX_ERR(0, 421, __pyx_L6_except_error)
+        __PYX_ERR(0, 422, __pyx_L6_except_error)
       }
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "MuchTree.pyx":418
+      /* "MuchTree.pyx":419
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9027,7 +9027,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
       __pyx_L9_try_end:;
     }
 
-    /* "MuchTree.pyx":417
+    /* "MuchTree.pyx":418
  *         but node_ids must be used for internal nodes.
  *         """
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
@@ -9036,7 +9036,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
  */
   }
 
-  /* "MuchTree.pyx":422
+  /* "MuchTree.pyx":423
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :             # <<<<<<<<<<<<<<
@@ -9047,7 +9047,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":423
+    /* "MuchTree.pyx":424
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9063,19 +9063,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
       __Pyx_XGOTREF(__pyx_t_3);
       /*try:*/ {
 
-        /* "MuchTree.pyx":424
+        /* "MuchTree.pyx":425
  *         if isinstance( b, str ) :
  *             try :
  *                 b = self.leafs[b]             # <<<<<<<<<<<<<<
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + b )
  */
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_b); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 424, __pyx_L13_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_b); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 425, __pyx_L13_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF_SET(__pyx_v_b, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "MuchTree.pyx":423
+        /* "MuchTree.pyx":424
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9094,7 +9094,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "MuchTree.pyx":425
+      /* "MuchTree.pyx":426
  *             try :
  *                 b = self.leafs[b]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -9104,31 +9104,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
         __Pyx_AddTraceback("MuchTree.SuchTree.mrca", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_9, &__pyx_t_8, &__pyx_t_6) < 0) __PYX_ERR(0, 425, __pyx_L15_except_error)
+        if (__Pyx_GetException(&__pyx_t_9, &__pyx_t_8, &__pyx_t_6) < 0) __PYX_ERR(0, 426, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_6);
 
-        /* "MuchTree.pyx":426
+        /* "MuchTree.pyx":427
  *                 b = self.leafs[b]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + b )             # <<<<<<<<<<<<<<
  * 
  *         visited = np.zeros( self.depth, dtype=int )
  */
-        __pyx_t_11 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_b); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 426, __pyx_L15_except_error)
+        __pyx_t_11 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_b); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 427, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_10 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 426, __pyx_L15_except_error)
+        __pyx_t_10 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 427, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_Raise(__pyx_t_10, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __PYX_ERR(0, 426, __pyx_L15_except_error)
+        __PYX_ERR(0, 427, __pyx_L15_except_error)
       }
       goto __pyx_L15_except_error;
       __pyx_L15_except_error:;
 
-      /* "MuchTree.pyx":423
+      /* "MuchTree.pyx":424
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9143,7 +9143,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
       __pyx_L18_try_end:;
     }
 
-    /* "MuchTree.pyx":422
+    /* "MuchTree.pyx":423
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :             # <<<<<<<<<<<<<<
@@ -9152,29 +9152,29 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
  */
   }
 
-  /* "MuchTree.pyx":428
+  /* "MuchTree.pyx":429
  *                 raise Exception( 'Leaf name not found : ' + b )
  * 
  *         visited = np.zeros( self.depth, dtype=int )             # <<<<<<<<<<<<<<
  * 
  *         return self._mrca( visited, a, b )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_zeros); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_zeros); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->depth); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->depth); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_GIVEREF(__pyx_t_6);
   PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_6);
   __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 428, __pyx_L1_error)
-  __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_9, __pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 428, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 429, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_9, __pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -9182,7 +9182,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __pyx_v_visited = __pyx_t_10;
   __pyx_t_10 = 0;
 
-  /* "MuchTree.pyx":430
+  /* "MuchTree.pyx":431
  *         visited = np.zeros( self.depth, dtype=int )
  * 
  *         return self._mrca( visited, a, b )             # <<<<<<<<<<<<<<
@@ -9190,10 +9190,10 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_12 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_visited, PyBUF_WRITABLE); if (unlikely(!__pyx_t_12.memview)) __PYX_ERR(0, 430, __pyx_L1_error)
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 430, __pyx_L1_error)
-  __pyx_t_13 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_13 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 430, __pyx_L1_error)
-  __pyx_t_10 = __Pyx_PyInt_From_int(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_mrca(__pyx_v_self, __pyx_t_12, __pyx_t_7, __pyx_t_13)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 430, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_visited, PyBUF_WRITABLE); if (unlikely(!__pyx_t_12.memview)) __PYX_ERR(0, 431, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 431, __pyx_L1_error)
+  __pyx_t_13 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_13 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 431, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyInt_From_int(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_mrca(__pyx_v_self, __pyx_t_12, __pyx_t_7, __pyx_t_13)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 431, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __PYX_XDEC_MEMVIEW(&__pyx_t_12, 1);
   __pyx_t_12.memview = NULL;
@@ -9202,7 +9202,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   __pyx_t_10 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":411
+  /* "MuchTree.pyx":412
  *         return 0
  * 
  *     def mrca( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -9229,7 +9229,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_19mrca(struct __pyx_obj_8MuchTree_
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":433
+/* "MuchTree.pyx":434
  * 
  *     @cython.boundscheck(False)
  *     cdef int _mrca( self, long[:] visited, int a, int b ) nogil :             # <<<<<<<<<<<<<<
@@ -9249,7 +9249,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   unsigned int __pyx_t_4;
   unsigned int __pyx_t_5;
 
-  /* "MuchTree.pyx":436
+  /* "MuchTree.pyx":437
  *         cdef int n
  *         cdef int i
  *         cdef int mrca = -1             # <<<<<<<<<<<<<<
@@ -9258,7 +9258,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_mrca = -1;
 
-  /* "MuchTree.pyx":439
+  /* "MuchTree.pyx":440
  *         cdef int a_depth
  * 
  *         n = a             # <<<<<<<<<<<<<<
@@ -9267,7 +9267,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_n = __pyx_v_a;
 
-  /* "MuchTree.pyx":440
+  /* "MuchTree.pyx":441
  * 
  *         n = a
  *         i = 0             # <<<<<<<<<<<<<<
@@ -9276,7 +9276,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_i = 0;
 
-  /* "MuchTree.pyx":441
+  /* "MuchTree.pyx":442
  *         n = a
  *         i = 0
  *         while True :             # <<<<<<<<<<<<<<
@@ -9285,7 +9285,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   while (1) {
 
-    /* "MuchTree.pyx":442
+    /* "MuchTree.pyx":443
  *         i = 0
  *         while True :
  *             visited[i] = n             # <<<<<<<<<<<<<<
@@ -9296,7 +9296,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     if (__pyx_t_1 < 0) __pyx_t_1 += __pyx_v_visited.shape[0];
     *((long *) ( /* dim=0 */ (__pyx_v_visited.data + __pyx_t_1 * __pyx_v_visited.strides[0]) )) = __pyx_v_n;
 
-    /* "MuchTree.pyx":443
+    /* "MuchTree.pyx":444
  *         while True :
  *             visited[i] = n
  *             n = self.data[n].parent             # <<<<<<<<<<<<<<
@@ -9306,7 +9306,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     __pyx_t_2 = (__pyx_v_self->data[__pyx_v_n]).parent;
     __pyx_v_n = __pyx_t_2;
 
-    /* "MuchTree.pyx":444
+    /* "MuchTree.pyx":445
  *             visited[i] = n
  *             n = self.data[n].parent
  *             i += 1             # <<<<<<<<<<<<<<
@@ -9315,7 +9315,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
     __pyx_v_i = (__pyx_v_i + 1);
 
-    /* "MuchTree.pyx":445
+    /* "MuchTree.pyx":446
  *             n = self.data[n].parent
  *             i += 1
  *             if n == -1 : break             # <<<<<<<<<<<<<<
@@ -9329,7 +9329,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   }
   __pyx_L4_break:;
 
-  /* "MuchTree.pyx":446
+  /* "MuchTree.pyx":447
  *             i += 1
  *             if n == -1 : break
  *         a_depth = i             # <<<<<<<<<<<<<<
@@ -9338,7 +9338,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_a_depth = __pyx_v_i;
 
-  /* "MuchTree.pyx":448
+  /* "MuchTree.pyx":449
  *         a_depth = i
  * 
  *         n = b             # <<<<<<<<<<<<<<
@@ -9347,7 +9347,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   __pyx_v_n = __pyx_v_b;
 
-  /* "MuchTree.pyx":449
+  /* "MuchTree.pyx":450
  * 
  *         n = b
  *         while True :             # <<<<<<<<<<<<<<
@@ -9356,7 +9356,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
   while (1) {
 
-    /* "MuchTree.pyx":450
+    /* "MuchTree.pyx":451
  *         n = b
  *         while True :
  *             i = 0             # <<<<<<<<<<<<<<
@@ -9365,7 +9365,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
     __pyx_v_i = 0;
 
-    /* "MuchTree.pyx":451
+    /* "MuchTree.pyx":452
  *         while True :
  *             i = 0
  *             while True :             # <<<<<<<<<<<<<<
@@ -9374,7 +9374,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
     while (1) {
 
-      /* "MuchTree.pyx":452
+      /* "MuchTree.pyx":453
  *             i = 0
  *             while True :
  *                 if i >= a_depth : break             # <<<<<<<<<<<<<<
@@ -9386,7 +9386,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
         goto __pyx_L9_break;
       }
 
-      /* "MuchTree.pyx":453
+      /* "MuchTree.pyx":454
  *             while True :
  *                 if i >= a_depth : break
  *                 if visited[i] == n :             # <<<<<<<<<<<<<<
@@ -9398,7 +9398,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
       __pyx_t_3 = (((*((long *) ( /* dim=0 */ (__pyx_v_visited.data + __pyx_t_1 * __pyx_v_visited.strides[0]) ))) == __pyx_v_n) != 0);
       if (__pyx_t_3) {
 
-        /* "MuchTree.pyx":454
+        /* "MuchTree.pyx":455
  *                 if i >= a_depth : break
  *                 if visited[i] == n :
  *                     mrca = visited[i]             # <<<<<<<<<<<<<<
@@ -9409,7 +9409,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
         if (__pyx_t_1 < 0) __pyx_t_1 += __pyx_v_visited.shape[0];
         __pyx_v_mrca = (*((long *) ( /* dim=0 */ (__pyx_v_visited.data + __pyx_t_1 * __pyx_v_visited.strides[0]) )));
 
-        /* "MuchTree.pyx":455
+        /* "MuchTree.pyx":456
  *                 if visited[i] == n :
  *                     mrca = visited[i]
  *                     break             # <<<<<<<<<<<<<<
@@ -9418,7 +9418,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
         goto __pyx_L9_break;
 
-        /* "MuchTree.pyx":453
+        /* "MuchTree.pyx":454
  *             while True :
  *                 if i >= a_depth : break
  *                 if visited[i] == n :             # <<<<<<<<<<<<<<
@@ -9427,7 +9427,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
       }
 
-      /* "MuchTree.pyx":456
+      /* "MuchTree.pyx":457
  *                     mrca = visited[i]
  *                     break
  *                 i += 1             # <<<<<<<<<<<<<<
@@ -9438,7 +9438,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     }
     __pyx_L9_break:;
 
-    /* "MuchTree.pyx":457
+    /* "MuchTree.pyx":458
  *                     break
  *                 i += 1
  *             if mrca != -1 : break             # <<<<<<<<<<<<<<
@@ -9450,7 +9450,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
       goto __pyx_L7_break;
     }
 
-    /* "MuchTree.pyx":458
+    /* "MuchTree.pyx":459
  *                 i += 1
  *             if mrca != -1 : break
  *             n = self.data[n].parent             # <<<<<<<<<<<<<<
@@ -9460,7 +9460,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     __pyx_t_2 = (__pyx_v_self->data[__pyx_v_n]).parent;
     __pyx_v_n = __pyx_t_2;
 
-    /* "MuchTree.pyx":459
+    /* "MuchTree.pyx":460
  *             if mrca != -1 : break
  *             n = self.data[n].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -9470,7 +9470,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     __pyx_t_3 = ((__pyx_v_n == -1L) != 0);
     if (__pyx_t_3) {
 
-      /* "MuchTree.pyx":460
+      /* "MuchTree.pyx":461
  *             n = self.data[n].parent
  *             if n == -1 :
  *                 mrca = n             # <<<<<<<<<<<<<<
@@ -9479,7 +9479,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
       __pyx_v_mrca = __pyx_v_n;
 
-      /* "MuchTree.pyx":461
+      /* "MuchTree.pyx":462
  *             if n == -1 :
  *                 mrca = n
  *                 break             # <<<<<<<<<<<<<<
@@ -9488,7 +9488,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  */
       goto __pyx_L7_break;
 
-      /* "MuchTree.pyx":459
+      /* "MuchTree.pyx":460
  *             if mrca != -1 : break
  *             n = self.data[n].parent
  *             if n == -1 :             # <<<<<<<<<<<<<<
@@ -9499,7 +9499,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   }
   __pyx_L7_break:;
 
-  /* "MuchTree.pyx":462
+  /* "MuchTree.pyx":463
  *                 mrca = n
  *                 break
  *         for i in xrange( self.depth ) :             # <<<<<<<<<<<<<<
@@ -9511,7 +9511,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   for (__pyx_t_2 = 0; __pyx_t_2 < __pyx_t_5; __pyx_t_2+=1) {
     __pyx_v_i = __pyx_t_2;
 
-    /* "MuchTree.pyx":463
+    /* "MuchTree.pyx":464
  *                 break
  *         for i in xrange( self.depth ) :
  *             visited[i] = -1             # <<<<<<<<<<<<<<
@@ -9523,7 +9523,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
     *((long *) ( /* dim=0 */ (__pyx_v_visited.data + __pyx_t_1 * __pyx_v_visited.strides[0]) )) = -1L;
   }
 
-  /* "MuchTree.pyx":465
+  /* "MuchTree.pyx":466
  *             visited[i] = -1
  * 
  *         return mrca             # <<<<<<<<<<<<<<
@@ -9533,7 +9533,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   __pyx_r = __pyx_v_mrca;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":433
+  /* "MuchTree.pyx":434
  * 
  *     @cython.boundscheck(False)
  *     cdef int _mrca( self, long[:] visited, int a, int b ) nogil :             # <<<<<<<<<<<<<<
@@ -9546,7 +9546,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":467
+/* "MuchTree.pyx":468
  *         return mrca
  * 
  *     def distance( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -9589,11 +9589,11 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_22distance(PyObject *__pyx_v_self,
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_b)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("distance", 1, 2, 2, 1); __PYX_ERR(0, 467, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("distance", 1, 2, 2, 1); __PYX_ERR(0, 468, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "distance") < 0)) __PYX_ERR(0, 467, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "distance") < 0)) __PYX_ERR(0, 468, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -9606,7 +9606,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_22distance(PyObject *__pyx_v_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("distance", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 467, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("distance", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 468, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -9641,7 +9641,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __Pyx_INCREF(__pyx_v_a);
   __Pyx_INCREF(__pyx_v_b);
 
-  /* "MuchTree.pyx":473
+  /* "MuchTree.pyx":474
  *         leaf name or an integer.
  *         """
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
@@ -9652,7 +9652,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":474
+    /* "MuchTree.pyx":475
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9668,19 +9668,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __Pyx_XGOTREF(__pyx_t_5);
       /*try:*/ {
 
-        /* "MuchTree.pyx":475
+        /* "MuchTree.pyx":476
  *         if isinstance( a, str ) :
  *             try :
  *                 a = self.leafs[a]             # <<<<<<<<<<<<<<
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  */
-        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 475, __pyx_L4_error)
+        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 476, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF_SET(__pyx_v_a, __pyx_t_6);
         __pyx_t_6 = 0;
 
-        /* "MuchTree.pyx":474
+        /* "MuchTree.pyx":475
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9695,7 +9695,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __pyx_L4_error:;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":476
+      /* "MuchTree.pyx":477
  *             try :
  *                 a = self.leafs[a]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -9705,31 +9705,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
         __Pyx_AddTraceback("MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 476, __pyx_L6_except_error)
+        if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_8, &__pyx_t_9) < 0) __PYX_ERR(0, 477, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "MuchTree.pyx":477
+        /* "MuchTree.pyx":478
  *                 a = self.leafs[a]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )             # <<<<<<<<<<<<<<
  *         if isinstance( b, str ) :
  *             try :
  */
-        __pyx_t_10 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_a); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 477, __pyx_L6_except_error)
+        __pyx_t_10 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_a); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 478, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_11 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 477, __pyx_L6_except_error)
+        __pyx_t_11 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 478, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_Raise(__pyx_t_11, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __PYX_ERR(0, 477, __pyx_L6_except_error)
+        __PYX_ERR(0, 478, __pyx_L6_except_error)
       }
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "MuchTree.pyx":474
+      /* "MuchTree.pyx":475
  *         """
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9744,7 +9744,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __pyx_L9_try_end:;
     }
 
-    /* "MuchTree.pyx":473
+    /* "MuchTree.pyx":474
  *         leaf name or an integer.
  *         """
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
@@ -9753,7 +9753,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":478
+  /* "MuchTree.pyx":479
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :             # <<<<<<<<<<<<<<
@@ -9764,7 +9764,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":479
+    /* "MuchTree.pyx":480
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9780,19 +9780,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __Pyx_XGOTREF(__pyx_t_3);
       /*try:*/ {
 
-        /* "MuchTree.pyx":480
+        /* "MuchTree.pyx":481
  *         if isinstance( b, str ) :
  *             try :
  *                 b = self.leafs[b]             # <<<<<<<<<<<<<<
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + b )
  */
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_b); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 480, __pyx_L13_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_b); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 481, __pyx_L13_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF_SET(__pyx_v_b, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "MuchTree.pyx":479
+        /* "MuchTree.pyx":480
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9811,7 +9811,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "MuchTree.pyx":481
+      /* "MuchTree.pyx":482
  *             try :
  *                 b = self.leafs[b]
  *             except KeyError :             # <<<<<<<<<<<<<<
@@ -9821,31 +9821,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
       if (__pyx_t_7) {
         __Pyx_AddTraceback("MuchTree.SuchTree.distance", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_9, &__pyx_t_8, &__pyx_t_6) < 0) __PYX_ERR(0, 481, __pyx_L15_except_error)
+        if (__Pyx_GetException(&__pyx_t_9, &__pyx_t_8, &__pyx_t_6) < 0) __PYX_ERR(0, 482, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GOTREF(__pyx_t_6);
 
-        /* "MuchTree.pyx":482
+        /* "MuchTree.pyx":483
  *                 b = self.leafs[b]
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + b )             # <<<<<<<<<<<<<<
  * 
  *         if a < 0 or a >= self.length :
  */
-        __pyx_t_11 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_b); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 482, __pyx_L15_except_error)
+        __pyx_t_11 = PyNumber_Add(__pyx_kp_u_Leaf_name_not_found, __pyx_v_b); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 483, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_10 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 482, __pyx_L15_except_error)
+        __pyx_t_10 = __Pyx_PyObject_CallOneArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 483, __pyx_L15_except_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_Raise(__pyx_t_10, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __PYX_ERR(0, 482, __pyx_L15_except_error)
+        __PYX_ERR(0, 483, __pyx_L15_except_error)
       }
       goto __pyx_L15_except_error;
       __pyx_L15_except_error:;
 
-      /* "MuchTree.pyx":479
+      /* "MuchTree.pyx":480
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :
  *             try :             # <<<<<<<<<<<<<<
@@ -9860,7 +9860,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
       __pyx_L18_try_end:;
     }
 
-    /* "MuchTree.pyx":478
+    /* "MuchTree.pyx":479
  *             except KeyError :
  *                 raise Exception( 'Leaf name not found : ' + a )
  *         if isinstance( b, str ) :             # <<<<<<<<<<<<<<
@@ -9869,39 +9869,39 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":484
+  /* "MuchTree.pyx":485
  *                 raise Exception( 'Leaf name not found : ' + b )
  * 
  *         if a < 0 or a >= self.length :             # <<<<<<<<<<<<<<
  *             raise Exception( 'node id out of bounds :', a )
  *         if b < 0 or b >= self.length :
  */
-  __pyx_t_6 = PyObject_RichCompare(__pyx_v_a, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 484, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 484, __pyx_L1_error)
+  __pyx_t_6 = PyObject_RichCompare(__pyx_v_a, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 485, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 485, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   if (!__pyx_t_2) {
   } else {
     __pyx_t_1 = __pyx_t_2;
     goto __pyx_L22_bool_binop_done;
   }
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 484, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 485, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = PyObject_RichCompare(__pyx_v_a, __pyx_t_6, Py_GE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 484, __pyx_L1_error)
+  __pyx_t_8 = PyObject_RichCompare(__pyx_v_a, __pyx_t_6, Py_GE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 485, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 484, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 485, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_t_1 = __pyx_t_2;
   __pyx_L22_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":485
+    /* "MuchTree.pyx":486
  * 
  *         if a < 0 or a >= self.length :
  *             raise Exception( 'node id out of bounds :', a )             # <<<<<<<<<<<<<<
  *         if b < 0 or b >= self.length :
  *             raise Exception( 'node id out of bounds :', b )
  */
-    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 485, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 486, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_kp_u_node_id_out_of_bounds_2);
     __Pyx_GIVEREF(__pyx_kp_u_node_id_out_of_bounds_2);
@@ -9909,14 +9909,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
     __Pyx_INCREF(__pyx_v_a);
     __Pyx_GIVEREF(__pyx_v_a);
     PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_v_a);
-    __pyx_t_6 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_8, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 485, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_8, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 486, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_Raise(__pyx_t_6, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __PYX_ERR(0, 485, __pyx_L1_error)
+    __PYX_ERR(0, 486, __pyx_L1_error)
 
-    /* "MuchTree.pyx":484
+    /* "MuchTree.pyx":485
  *                 raise Exception( 'Leaf name not found : ' + b )
  * 
  *         if a < 0 or a >= self.length :             # <<<<<<<<<<<<<<
@@ -9925,39 +9925,39 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":486
+  /* "MuchTree.pyx":487
  *         if a < 0 or a >= self.length :
  *             raise Exception( 'node id out of bounds :', a )
  *         if b < 0 or b >= self.length :             # <<<<<<<<<<<<<<
  *             raise Exception( 'node id out of bounds :', b )
  * 
  */
-  __pyx_t_6 = PyObject_RichCompare(__pyx_v_b, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 486, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 486, __pyx_L1_error)
+  __pyx_t_6 = PyObject_RichCompare(__pyx_v_b, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 487, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 487, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   if (!__pyx_t_2) {
   } else {
     __pyx_t_1 = __pyx_t_2;
     goto __pyx_L25_bool_binop_done;
   }
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 486, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 487, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = PyObject_RichCompare(__pyx_v_b, __pyx_t_6, Py_GE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 486, __pyx_L1_error)
+  __pyx_t_8 = PyObject_RichCompare(__pyx_v_b, __pyx_t_6, Py_GE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 487, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 486, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 487, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_t_1 = __pyx_t_2;
   __pyx_L25_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":487
+    /* "MuchTree.pyx":488
  *             raise Exception( 'node id out of bounds :', a )
  *         if b < 0 or b >= self.length :
  *             raise Exception( 'node id out of bounds :', b )             # <<<<<<<<<<<<<<
  * 
  *         return self._distance( a, b )
  */
-    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 487, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 488, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_kp_u_node_id_out_of_bounds_2);
     __Pyx_GIVEREF(__pyx_kp_u_node_id_out_of_bounds_2);
@@ -9965,14 +9965,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
     __Pyx_INCREF(__pyx_v_b);
     __Pyx_GIVEREF(__pyx_v_b);
     PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_v_b);
-    __pyx_t_6 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_8, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 487, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_8, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 488, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_Raise(__pyx_t_6, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __PYX_ERR(0, 487, __pyx_L1_error)
+    __PYX_ERR(0, 488, __pyx_L1_error)
 
-    /* "MuchTree.pyx":486
+    /* "MuchTree.pyx":487
  *         if a < 0 or a >= self.length :
  *             raise Exception( 'node id out of bounds :', a )
  *         if b < 0 or b >= self.length :             # <<<<<<<<<<<<<<
@@ -9981,7 +9981,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  */
   }
 
-  /* "MuchTree.pyx":489
+  /* "MuchTree.pyx":490
  *             raise Exception( 'node id out of bounds :', b )
  * 
  *         return self._distance( a, b )             # <<<<<<<<<<<<<<
@@ -9989,15 +9989,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 489, __pyx_L1_error)
-  __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 489, __pyx_L1_error)
-  __pyx_t_6 = PyFloat_FromDouble(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_distance(__pyx_v_self, __pyx_t_7, __pyx_t_12)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 489, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_a); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 490, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_v_b); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 490, __pyx_L1_error)
+  __pyx_t_6 = PyFloat_FromDouble(((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_distance(__pyx_v_self, __pyx_t_7, __pyx_t_12)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 490, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_r = __pyx_t_6;
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":467
+  /* "MuchTree.pyx":468
  *         return mrca
  * 
  *     def distance( self, a, b ) :             # <<<<<<<<<<<<<<
@@ -10022,7 +10022,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_21distance(struct __pyx_obj_8MuchT
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":492
+/* "MuchTree.pyx":493
  * 
  *     @cython.boundscheck(False)
  *     cdef float _distance( self, int a, int b ) :             # <<<<<<<<<<<<<<
@@ -10049,7 +10049,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_distance", 0);
 
-  /* "MuchTree.pyx":494
+  /* "MuchTree.pyx":495
  *     cdef float _distance( self, int a, int b ) :
  *         cdef int mrca
  *         cdef float d = 0             # <<<<<<<<<<<<<<
@@ -10058,18 +10058,18 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
   __pyx_v_d = 0.0;
 
-  /* "MuchTree.pyx":497
+  /* "MuchTree.pyx":498
  *         cdef int n
  * 
  *         mrca = self.mrca( a, b )             # <<<<<<<<<<<<<<
  * 
  *         n = a
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_mrca); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 497, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_mrca); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 498, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 497, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 498, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 497, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 498, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -10086,7 +10086,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 497, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 498, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -10096,7 +10096,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 497, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 498, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -10104,7 +10104,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 497, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 498, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -10115,16 +10115,16 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_4);
     __pyx_t_3 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 497, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 498, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 497, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 498, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_mrca = __pyx_t_6;
 
-  /* "MuchTree.pyx":499
+  /* "MuchTree.pyx":500
  *         mrca = self.mrca( a, b )
  * 
  *         n = a             # <<<<<<<<<<<<<<
@@ -10133,7 +10133,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
   __pyx_v_n = __pyx_v_a;
 
-  /* "MuchTree.pyx":500
+  /* "MuchTree.pyx":501
  * 
  *         n = a
  *         while n != mrca :             # <<<<<<<<<<<<<<
@@ -10144,7 +10144,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     __pyx_t_8 = ((__pyx_v_n != __pyx_v_mrca) != 0);
     if (!__pyx_t_8) break;
 
-    /* "MuchTree.pyx":501
+    /* "MuchTree.pyx":502
  *         n = a
  *         while n != mrca :
  *             d += self.data[n].distance             # <<<<<<<<<<<<<<
@@ -10153,7 +10153,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_d = (__pyx_v_d + (__pyx_v_self->data[__pyx_v_n]).distance);
 
-    /* "MuchTree.pyx":502
+    /* "MuchTree.pyx":503
  *         while n != mrca :
  *             d += self.data[n].distance
  *             n =  self.data[n].parent             # <<<<<<<<<<<<<<
@@ -10164,7 +10164,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     __pyx_v_n = __pyx_t_6;
   }
 
-  /* "MuchTree.pyx":503
+  /* "MuchTree.pyx":504
  *             d += self.data[n].distance
  *             n =  self.data[n].parent
  *         n = b             # <<<<<<<<<<<<<<
@@ -10173,7 +10173,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
   __pyx_v_n = __pyx_v_b;
 
-  /* "MuchTree.pyx":504
+  /* "MuchTree.pyx":505
  *             n =  self.data[n].parent
  *         n = b
  *         while n != mrca :             # <<<<<<<<<<<<<<
@@ -10184,7 +10184,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     __pyx_t_8 = ((__pyx_v_n != __pyx_v_mrca) != 0);
     if (!__pyx_t_8) break;
 
-    /* "MuchTree.pyx":505
+    /* "MuchTree.pyx":506
  *         n = b
  *         while n != mrca :
  *             d += self.data[n].distance             # <<<<<<<<<<<<<<
@@ -10193,7 +10193,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_d = (__pyx_v_d + (__pyx_v_self->data[__pyx_v_n]).distance);
 
-    /* "MuchTree.pyx":506
+    /* "MuchTree.pyx":507
  *         while n != mrca :
  *             d += self.data[n].distance
  *             n =  self.data[n].parent             # <<<<<<<<<<<<<<
@@ -10204,7 +10204,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
     __pyx_v_n = __pyx_t_6;
   }
 
-  /* "MuchTree.pyx":507
+  /* "MuchTree.pyx":508
  *             d += self.data[n].distance
  *             n =  self.data[n].parent
  *         return d             # <<<<<<<<<<<<<<
@@ -10214,7 +10214,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   __pyx_r = __pyx_v_d;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":492
+  /* "MuchTree.pyx":493
  * 
  *     @cython.boundscheck(False)
  *     cdef float _distance( self, int a, int b ) :             # <<<<<<<<<<<<<<
@@ -10237,7 +10237,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":509
+/* "MuchTree.pyx":510
  *         return d
  * 
  *     def distances( self, long[:,:] ids ) :             # <<<<<<<<<<<<<<
@@ -10257,7 +10257,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_24distances(PyObject *__pyx_v_self
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("distances (wrapper)", 0);
   assert(__pyx_arg_ids); {
-    __pyx_v_ids = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_arg_ids, PyBUF_WRITABLE); if (unlikely(!__pyx_v_ids.memview)) __PYX_ERR(0, 509, __pyx_L3_error)
+    __pyx_v_ids = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_arg_ids, PyBUF_WRITABLE); if (unlikely(!__pyx_v_ids.memview)) __PYX_ERR(0, 510, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -10289,7 +10289,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("distances", 0);
 
-  /* "MuchTree.pyx":514
+  /* "MuchTree.pyx":515
  *         which are expected as an (n,2) array of type int.
  *         """
  *         if not ids.shape[1] == 2 :             # <<<<<<<<<<<<<<
@@ -10299,26 +10299,26 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_t_1 = ((!(((__pyx_v_ids.shape[1]) == 2) != 0)) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":516
+    /* "MuchTree.pyx":517
  *         if not ids.shape[1] == 2 :
  *             raise Exception( 'expected (n,2) array',
  *                              ids.shape[0], ids.shape[1] )             # <<<<<<<<<<<<<<
  * 
  *         visited = np.zeros( self.depth, dtype=int )
  */
-    __pyx_t_2 = PyInt_FromSsize_t((__pyx_v_ids.shape[0])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 516, __pyx_L1_error)
+    __pyx_t_2 = PyInt_FromSsize_t((__pyx_v_ids.shape[0])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 517, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PyInt_FromSsize_t((__pyx_v_ids.shape[1])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
+    __pyx_t_3 = PyInt_FromSsize_t((__pyx_v_ids.shape[1])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 517, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
 
-    /* "MuchTree.pyx":515
+    /* "MuchTree.pyx":516
  *         """
  *         if not ids.shape[1] == 2 :
  *             raise Exception( 'expected (n,2) array',             # <<<<<<<<<<<<<<
  *                              ids.shape[0], ids.shape[1] )
  * 
  */
-    __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 515, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 516, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_kp_u_expected_n_2_array);
     __Pyx_GIVEREF(__pyx_kp_u_expected_n_2_array);
@@ -10329,14 +10329,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
     PyTuple_SET_ITEM(__pyx_t_4, 2, __pyx_t_3);
     __pyx_t_2 = 0;
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 515, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 515, __pyx_L1_error)
+    __PYX_ERR(0, 516, __pyx_L1_error)
 
-    /* "MuchTree.pyx":514
+    /* "MuchTree.pyx":515
  *         which are expected as an (n,2) array of type int.
  *         """
  *         if not ids.shape[1] == 2 :             # <<<<<<<<<<<<<<
@@ -10345,29 +10345,29 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":518
+  /* "MuchTree.pyx":519
  *                              ids.shape[0], ids.shape[1] )
  * 
  *         visited = np.zeros( self.depth, dtype=int )             # <<<<<<<<<<<<<<
  *         result = np.zeros( ids.shape[0], dtype=float )
  *         self._distances( ids.shape[0], visited, ids, result )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 518, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 519, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 518, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 519, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->depth); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 518, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->depth); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 519, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 518, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 519, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 518, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 519, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 518, __pyx_L1_error)
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 518, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 519, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 519, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -10375,29 +10375,29 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_v_visited = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":519
+  /* "MuchTree.pyx":520
  * 
  *         visited = np.zeros( self.depth, dtype=int )
  *         result = np.zeros( ids.shape[0], dtype=float )             # <<<<<<<<<<<<<<
  *         self._distances( ids.shape[0], visited, ids, result )
  *         return result
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 519, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 519, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyInt_FromSsize_t((__pyx_v_ids.shape[0])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 519, __pyx_L1_error)
+  __pyx_t_5 = PyInt_FromSsize_t((__pyx_v_ids.shape[0])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 519, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 519, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 519, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 519, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 520, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -10405,15 +10405,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_v_result = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":520
+  /* "MuchTree.pyx":521
  *         visited = np.zeros( self.depth, dtype=int )
  *         result = np.zeros( ids.shape[0], dtype=float )
  *         self._distances( ids.shape[0], visited, ids, result )             # <<<<<<<<<<<<<<
  *         return result
  * 
  */
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_visited, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 520, __pyx_L1_error)
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_result, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 520, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_visited, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 521, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_result, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 521, __pyx_L1_error)
   ((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_distances(__pyx_v_self, (__pyx_v_ids.shape[0]), __pyx_t_6, __pyx_v_ids, __pyx_t_7);
   __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
   __pyx_t_6.memview = NULL;
@@ -10422,7 +10422,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":521
+  /* "MuchTree.pyx":522
  *         result = np.zeros( ids.shape[0], dtype=float )
  *         self._distances( ids.shape[0], visited, ids, result )
  *         return result             # <<<<<<<<<<<<<<
@@ -10434,7 +10434,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   __pyx_r = __pyx_v_result;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":509
+  /* "MuchTree.pyx":510
  *         return d
  * 
  *     def distances( self, long[:,:] ids ) :             # <<<<<<<<<<<<<<
@@ -10461,7 +10461,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_23distances(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":524
+/* "MuchTree.pyx":525
  * 
  *     @cython.boundscheck(False)
  *     cdef void _distances( self, unsigned int length,             # <<<<<<<<<<<<<<
@@ -10484,7 +10484,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
   int __pyx_t_6;
   int __pyx_t_7;
 
-  /* "MuchTree.pyx":542
+  /* "MuchTree.pyx":543
  *         cdef unsigned int i
  * 
  *         for i in xrange( ids.shape[0] ) :             # <<<<<<<<<<<<<<
@@ -10496,7 +10496,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "MuchTree.pyx":543
+    /* "MuchTree.pyx":544
  * 
  *         for i in xrange( ids.shape[0] ) :
  *             a = ids[i,0]             # <<<<<<<<<<<<<<
@@ -10508,7 +10508,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
     if (__pyx_t_5 < 0) __pyx_t_5 += __pyx_v_ids.shape[1];
     __pyx_v_a = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_ids.data + __pyx_t_4 * __pyx_v_ids.strides[0]) ) + __pyx_t_5 * __pyx_v_ids.strides[1]) )));
 
-    /* "MuchTree.pyx":544
+    /* "MuchTree.pyx":545
  *         for i in xrange( ids.shape[0] ) :
  *             a = ids[i,0]
  *             b = ids[i,1]             # <<<<<<<<<<<<<<
@@ -10520,7 +10520,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
     if (__pyx_t_5 < 0) __pyx_t_5 += __pyx_v_ids.shape[1];
     __pyx_v_b = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_ids.data + __pyx_t_4 * __pyx_v_ids.strides[0]) ) + __pyx_t_5 * __pyx_v_ids.strides[1]) )));
 
-    /* "MuchTree.pyx":545
+    /* "MuchTree.pyx":546
  *             a = ids[i,0]
  *             b = ids[i,1]
  *             mrca = self._mrca( visited, a, b )             # <<<<<<<<<<<<<<
@@ -10529,7 +10529,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_mrca = ((struct __pyx_vtabstruct_8MuchTree_SuchTree *)__pyx_v_self->__pyx_vtab)->_mrca(__pyx_v_self, __pyx_v_visited, __pyx_v_a, __pyx_v_b);
 
-    /* "MuchTree.pyx":546
+    /* "MuchTree.pyx":547
  *             b = ids[i,1]
  *             mrca = self._mrca( visited, a, b )
  *             n = a             # <<<<<<<<<<<<<<
@@ -10538,7 +10538,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_n = __pyx_v_a;
 
-    /* "MuchTree.pyx":547
+    /* "MuchTree.pyx":548
  *             mrca = self._mrca( visited, a, b )
  *             n = a
  *             d = 0             # <<<<<<<<<<<<<<
@@ -10547,7 +10547,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_d = 0.0;
 
-    /* "MuchTree.pyx":548
+    /* "MuchTree.pyx":549
  *             n = a
  *             d = 0
  *             while n != mrca :             # <<<<<<<<<<<<<<
@@ -10558,7 +10558,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
       __pyx_t_6 = ((__pyx_v_n != __pyx_v_mrca) != 0);
       if (!__pyx_t_6) break;
 
-      /* "MuchTree.pyx":549
+      /* "MuchTree.pyx":550
  *             d = 0
  *             while n != mrca :
  *                 d += self.data[n].distance             # <<<<<<<<<<<<<<
@@ -10567,7 +10567,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
       __pyx_v_d = (__pyx_v_d + (__pyx_v_self->data[__pyx_v_n]).distance);
 
-      /* "MuchTree.pyx":550
+      /* "MuchTree.pyx":551
  *             while n != mrca :
  *                 d += self.data[n].distance
  *                 n =  self.data[n].parent             # <<<<<<<<<<<<<<
@@ -10578,7 +10578,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
       __pyx_v_n = __pyx_t_7;
     }
 
-    /* "MuchTree.pyx":551
+    /* "MuchTree.pyx":552
  *                 d += self.data[n].distance
  *                 n =  self.data[n].parent
  *             n = b             # <<<<<<<<<<<<<<
@@ -10587,7 +10587,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
     __pyx_v_n = __pyx_v_b;
 
-    /* "MuchTree.pyx":552
+    /* "MuchTree.pyx":553
  *                 n =  self.data[n].parent
  *             n = b
  *             while n != mrca :             # <<<<<<<<<<<<<<
@@ -10598,7 +10598,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
       __pyx_t_6 = ((__pyx_v_n != __pyx_v_mrca) != 0);
       if (!__pyx_t_6) break;
 
-      /* "MuchTree.pyx":553
+      /* "MuchTree.pyx":554
  *             n = b
  *             while n != mrca :
  *                 d += self.data[n].distance             # <<<<<<<<<<<<<<
@@ -10607,7 +10607,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  */
       __pyx_v_d = (__pyx_v_d + (__pyx_v_self->data[__pyx_v_n]).distance);
 
-      /* "MuchTree.pyx":554
+      /* "MuchTree.pyx":555
  *             while n != mrca :
  *                 d += self.data[n].distance
  *                 n =  self.data[n].parent             # <<<<<<<<<<<<<<
@@ -10618,7 +10618,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
       __pyx_v_n = __pyx_t_7;
     }
 
-    /* "MuchTree.pyx":555
+    /* "MuchTree.pyx":556
  *                 d += self.data[n].distance
  *                 n =  self.data[n].parent
  *             result[i] = d             # <<<<<<<<<<<<<<
@@ -10629,7 +10629,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
     *((double *) ( /* dim=0 */ (__pyx_v_result.data + __pyx_t_4 * __pyx_v_result.strides[0]) )) = __pyx_v_d;
   }
 
-  /* "MuchTree.pyx":524
+  /* "MuchTree.pyx":525
  * 
  *     @cython.boundscheck(False)
  *     cdef void _distances( self, unsigned int length,             # <<<<<<<<<<<<<<
@@ -10640,7 +10640,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
   /* function exit code */
 }
 
-/* "MuchTree.pyx":557
+/* "MuchTree.pyx":558
  *             result[i] = d
  * 
  *     def distances_by_name( self, id_pairs ) :             # <<<<<<<<<<<<<<
@@ -10684,23 +10684,23 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("distances_by_name", 0);
 
-  /* "MuchTree.pyx":562
+  /* "MuchTree.pyx":563
  *         given (n,2) list of lists. Accepts only leaf names.
  *         """
  *         shape = ( len(id_pairs), len(id_pairs[0]) )             # <<<<<<<<<<<<<<
  *         ids = np.zeros( shape, dtype=int )
  *         for n,(a,b) in enumerate(id_pairs) :
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_id_pairs); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 562, __pyx_L1_error)
-  __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 562, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_v_id_pairs); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 563, __pyx_L1_error)
+  __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_id_pairs, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 562, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_id_pairs, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyObject_Length(__pyx_t_3); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 562, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_t_3); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 563, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 562, __pyx_L1_error)
+  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 562, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
@@ -10711,27 +10711,27 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   __pyx_v_shape = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":563
+  /* "MuchTree.pyx":564
  *         """
  *         shape = ( len(id_pairs), len(id_pairs[0]) )
  *         ids = np.zeros( shape, dtype=int )             # <<<<<<<<<<<<<<
  *         for n,(a,b) in enumerate(id_pairs) :
  *             ids[n][0] = self.leafs[a]
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 563, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 563, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 564, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 563, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_v_shape);
   __Pyx_GIVEREF(__pyx_v_shape);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_shape);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 563, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 564, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 563, __pyx_L1_error)
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 563, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 564, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -10739,7 +10739,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   __pyx_v_ids = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":564
+  /* "MuchTree.pyx":565
  *         shape = ( len(id_pairs), len(id_pairs[0]) )
  *         ids = np.zeros( shape, dtype=int )
  *         for n,(a,b) in enumerate(id_pairs) :             # <<<<<<<<<<<<<<
@@ -10752,26 +10752,26 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
     __pyx_t_2 = __pyx_v_id_pairs; __Pyx_INCREF(__pyx_t_2); __pyx_t_1 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_1 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_id_pairs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_1 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_id_pairs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_6 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 565, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_6)) {
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_1 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_4); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 564, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_4); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 565, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_1 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_4); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 564, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_4); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 565, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -10781,7 +10781,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 564, __pyx_L1_error)
+          else __PYX_ERR(0, 565, __pyx_L1_error)
         }
         break;
       }
@@ -10793,7 +10793,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 564, __pyx_L1_error)
+        __PYX_ERR(0, 565, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -10806,15 +10806,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_7);
       #else
-      __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 564, __pyx_L1_error)
+      __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 565, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 564, __pyx_L1_error)
+      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 565, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 564, __pyx_L1_error)
+      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 565, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_8)->tp_iternext;
@@ -10822,7 +10822,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
       __Pyx_GOTREF(__pyx_t_3);
       index = 1; __pyx_t_7 = __pyx_t_9(__pyx_t_8); if (unlikely(!__pyx_t_7)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_7);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 565, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       goto __pyx_L6_unpacking_done;
@@ -10830,7 +10830,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 564, __pyx_L1_error)
+      __PYX_ERR(0, 565, __pyx_L1_error)
       __pyx_L6_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_a, __pyx_t_3);
@@ -10839,43 +10839,43 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
     __pyx_t_7 = 0;
     __Pyx_INCREF(__pyx_t_5);
     __Pyx_XDECREF_SET(__pyx_v_n, __pyx_t_5);
-    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_5, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_5, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5);
     __pyx_t_5 = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":565
+    /* "MuchTree.pyx":566
  *         ids = np.zeros( shape, dtype=int )
  *         for n,(a,b) in enumerate(id_pairs) :
  *             ids[n][0] = self.leafs[a]             # <<<<<<<<<<<<<<
  *             ids[n][1] = self.leafs[b]
  *         return self.distances( ids )
  */
-    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_a); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 566, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_ids, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 565, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_ids, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 566, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (unlikely(__Pyx_SetItemInt(__pyx_t_7, 0, __pyx_t_4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 565, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_t_7, 0, __pyx_t_4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 566, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":566
+    /* "MuchTree.pyx":567
  *         for n,(a,b) in enumerate(id_pairs) :
  *             ids[n][0] = self.leafs[a]
  *             ids[n][1] = self.leafs[b]             # <<<<<<<<<<<<<<
  *         return self.distances( ids )
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 566, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_self->leafs, __pyx_v_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 567, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_ids, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 566, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_ids, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 567, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (unlikely(__Pyx_SetItemInt(__pyx_t_7, 1, __pyx_t_4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 566, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_t_7, 1, __pyx_t_4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 567, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":564
+    /* "MuchTree.pyx":565
  *         shape = ( len(id_pairs), len(id_pairs[0]) )
  *         ids = np.zeros( shape, dtype=int )
  *         for n,(a,b) in enumerate(id_pairs) :             # <<<<<<<<<<<<<<
@@ -10886,7 +10886,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":567
+  /* "MuchTree.pyx":568
  *             ids[n][0] = self.leafs[a]
  *             ids[n][1] = self.leafs[b]
  *         return self.distances( ids )             # <<<<<<<<<<<<<<
@@ -10894,7 +10894,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_distances); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 567, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_distances); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -10908,14 +10908,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   }
   __pyx_t_5 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_v_ids) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_ids);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 567, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":557
+  /* "MuchTree.pyx":558
  *             result[i] = d
  * 
  *     def distances_by_name( self, id_pairs ) :             # <<<<<<<<<<<<<<
@@ -10944,7 +10944,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_25distances_by_name(struct __pyx_o
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":569
+/* "MuchTree.pyx":570
  *         return self.distances( ids )
  * 
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :             # <<<<<<<<<<<<<<
@@ -10987,11 +10987,11 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_28link_leaf(PyObject *__pyx_v_self
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_col_id)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("link_leaf", 1, 2, 2, 1); __PYX_ERR(0, 569, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("link_leaf", 1, 2, 2, 1); __PYX_ERR(0, 570, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "link_leaf") < 0)) __PYX_ERR(0, 569, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "link_leaf") < 0)) __PYX_ERR(0, 570, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -10999,12 +10999,12 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_28link_leaf(PyObject *__pyx_v_self
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_leaf_id = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_leaf_id == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 569, __pyx_L3_error)
-    __pyx_v_col_id = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_col_id == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 569, __pyx_L3_error)
+    __pyx_v_leaf_id = __Pyx_PyInt_As_unsigned_int(values[0]); if (unlikely((__pyx_v_leaf_id == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 570, __pyx_L3_error)
+    __pyx_v_col_id = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_col_id == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 570, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("link_leaf", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 569, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("link_leaf", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 570, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchTree.link_leaf", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -11031,7 +11031,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("link_leaf", 0);
 
-  /* "MuchTree.pyx":573
+  /* "MuchTree.pyx":574
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
  *         """
  *         if not self.data[leaf_id].left_child == -1 :             # <<<<<<<<<<<<<<
@@ -11041,16 +11041,16 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   __pyx_t_1 = ((!(((__pyx_v_self->data[__pyx_v_leaf_id]).left_child == -1L) != 0)) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":574
+    /* "MuchTree.pyx":575
  *         """
  *         if not self.data[leaf_id].left_child == -1 :
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )             # <<<<<<<<<<<<<<
  *         if not leaf_id in set( self.leafs.values() ) :
  *             raise Exception( 'Unknown leaf id.', leaf_id )
  */
-    __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_leaf_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 574, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_leaf_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 575, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 574, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 575, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_kp_u_Cannot_link_non_leaf_node);
     __Pyx_GIVEREF(__pyx_kp_u_Cannot_link_non_leaf_node);
@@ -11058,14 +11058,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2);
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 574, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 575, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 574, __pyx_L1_error)
+    __PYX_ERR(0, 575, __pyx_L1_error)
 
-    /* "MuchTree.pyx":573
+    /* "MuchTree.pyx":574
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
  *         """
  *         if not self.data[leaf_id].left_child == -1 :             # <<<<<<<<<<<<<<
@@ -11074,16 +11074,16 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":575
+  /* "MuchTree.pyx":576
  *         if not self.data[leaf_id].left_child == -1 :
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )
  *         if not leaf_id in set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'Unknown leaf id.', leaf_id )
  *         # we only use the left child to identify a node as a leaf, so
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_leaf_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 575, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_leaf_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->leafs, __pyx_n_s_values); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 575, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->leafs, __pyx_n_s_values); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -11097,28 +11097,28 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   }
   __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 575, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PySet_New(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 575, __pyx_L1_error)
+  __pyx_t_4 = PySet_New(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_1 = (__Pyx_PySet_ContainsTF(__pyx_t_2, __pyx_t_4, Py_NE)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 575, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PySet_ContainsTF(__pyx_t_2, __pyx_t_4, Py_NE)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 576, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_6 = (__pyx_t_1 != 0);
   if (unlikely(__pyx_t_6)) {
 
-    /* "MuchTree.pyx":576
+    /* "MuchTree.pyx":577
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )
  *         if not leaf_id in set( self.leafs.values() ) :
  *             raise Exception( 'Unknown leaf id.', leaf_id )             # <<<<<<<<<<<<<<
  *         # we only use the left child to identify a node as a leaf, so
  *         # the right child is avalable to store the column index
  */
-    __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_leaf_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 576, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_leaf_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 577, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 576, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 577, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_kp_u_Unknown_leaf_id);
     __Pyx_GIVEREF(__pyx_kp_u_Unknown_leaf_id);
@@ -11126,14 +11126,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 576, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 577, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 576, __pyx_L1_error)
+    __PYX_ERR(0, 577, __pyx_L1_error)
 
-    /* "MuchTree.pyx":575
+    /* "MuchTree.pyx":576
  *         if not self.data[leaf_id].left_child == -1 :
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )
  *         if not leaf_id in set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
@@ -11142,7 +11142,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":579
+  /* "MuchTree.pyx":580
  *         # we only use the left child to identify a node as a leaf, so
  *         # the right child is avalable to store the column index
  *         self.data[leaf_id].right_child = col_id             # <<<<<<<<<<<<<<
@@ -11151,7 +11151,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
  */
   (__pyx_v_self->data[__pyx_v_leaf_id]).right_child = __pyx_v_col_id;
 
-  /* "MuchTree.pyx":569
+  /* "MuchTree.pyx":570
  *         return self.distances( ids )
  * 
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :             # <<<<<<<<<<<<<<
@@ -11175,7 +11175,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_27link_leaf(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":581
+/* "MuchTree.pyx":582
  *         self.data[leaf_id].right_child = col_id
  * 
  *     def get_links( self, leaf_ids ) :             # <<<<<<<<<<<<<<
@@ -11217,16 +11217,16 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_links", 0);
 
-  /* "MuchTree.pyx":585
+  /* "MuchTree.pyx":586
  *         Returns an array of column ids for an array of leaf ids.
  *         """
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
  */
-  __pyx_t_1 = PySet_New(__pyx_v_leaf_ids); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 585, __pyx_L1_error)
+  __pyx_t_1 = PySet_New(__pyx_v_leaf_ids); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 586, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->leafs, __pyx_n_s_values); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 585, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->leafs, __pyx_n_s_values); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 586, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -11240,28 +11240,28 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   }
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 585, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 586, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PySet_New(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 585, __pyx_L1_error)
+  __pyx_t_3 = PySet_New(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 586, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_t_3, Py_LE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 585, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_t_3, Py_LE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 586, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 585, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 586, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_6 = ((!__pyx_t_5) != 0);
   if (unlikely(__pyx_t_6)) {
 
-    /* "MuchTree.pyx":586
+    /* "MuchTree.pyx":587
  *         """
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )             # <<<<<<<<<<<<<<
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
  *         for n,leaf in enumerate( leaf_ids ) :
  */
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 586, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 587, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_kp_u_Unknown_leaf_id_s);
     __Pyx_GIVEREF(__pyx_kp_u_Unknown_leaf_id_s);
@@ -11269,14 +11269,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
     __Pyx_INCREF(__pyx_v_leaf_ids);
     __Pyx_GIVEREF(__pyx_v_leaf_ids);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_v_leaf_ids);
-    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 586, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 587, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 586, __pyx_L1_error)
+    __PYX_ERR(0, 587, __pyx_L1_error)
 
-    /* "MuchTree.pyx":585
+    /* "MuchTree.pyx":586
  *         Returns an array of column ids for an array of leaf ids.
  *         """
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
@@ -11285,32 +11285,32 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":587
+  /* "MuchTree.pyx":588
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )             # <<<<<<<<<<<<<<
  *         for n,leaf in enumerate( leaf_ids ) :
  *             col_ids[n] = self.data[ leaf ].right_child
  */
-  __pyx_t_7 = PyObject_Length(__pyx_v_leaf_ids); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 587, __pyx_L1_error)
-  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 587, __pyx_L1_error)
+  __pyx_t_7 = PyObject_Length(__pyx_v_leaf_ids); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 588, __pyx_L1_error)
+  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 588, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 587, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 587, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 588, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 587, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 587, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 588, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 588, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_col_ids = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":588
+  /* "MuchTree.pyx":589
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
  *         for n,leaf in enumerate( leaf_ids ) :             # <<<<<<<<<<<<<<
@@ -11323,26 +11323,26 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
     __pyx_t_3 = __pyx_v_leaf_ids; __Pyx_INCREF(__pyx_t_3); __pyx_t_7 = 0;
     __pyx_t_8 = NULL;
   } else {
-    __pyx_t_7 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_leaf_ids); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 588, __pyx_L1_error)
+    __pyx_t_7 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_leaf_ids); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 589, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 588, __pyx_L1_error)
+    __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 589, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_8)) {
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_2); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 588, __pyx_L1_error)
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_2); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 589, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       } else {
         if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_2); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 588, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_7); __Pyx_INCREF(__pyx_t_2); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 589, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       }
@@ -11352,7 +11352,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 588, __pyx_L1_error)
+          else __PYX_ERR(0, 589, __pyx_L1_error)
         }
         break;
       }
@@ -11362,26 +11362,26 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
     __pyx_t_2 = 0;
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_XDECREF_SET(__pyx_v_n, __pyx_t_1);
-    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1);
     __pyx_t_1 = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "MuchTree.pyx":589
+    /* "MuchTree.pyx":590
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
  *         for n,leaf in enumerate( leaf_ids ) :
  *             col_ids[n] = self.data[ leaf ].right_child             # <<<<<<<<<<<<<<
  *         return col_ids
  * 
  */
-    __pyx_t_9 = __Pyx_PyIndex_AsSsize_t(__pyx_v_leaf); if (unlikely((__pyx_t_9 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 589, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyInt_From_int((__pyx_v_self->data[__pyx_t_9]).right_child); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyIndex_AsSsize_t(__pyx_v_leaf); if (unlikely((__pyx_t_9 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 590, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int((__pyx_v_self->data[__pyx_t_9]).right_child); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 590, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (unlikely(PyObject_SetItem(__pyx_v_col_ids, __pyx_v_n, __pyx_t_2) < 0)) __PYX_ERR(0, 589, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_col_ids, __pyx_v_n, __pyx_t_2) < 0)) __PYX_ERR(0, 590, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "MuchTree.pyx":588
+    /* "MuchTree.pyx":589
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
  *         for n,leaf in enumerate( leaf_ids ) :             # <<<<<<<<<<<<<<
@@ -11392,7 +11392,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":590
+  /* "MuchTree.pyx":591
  *         for n,leaf in enumerate( leaf_ids ) :
  *             col_ids[n] = self.data[ leaf ].right_child
  *         return col_ids             # <<<<<<<<<<<<<<
@@ -11404,7 +11404,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   __pyx_r = __pyx_v_col_ids;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":581
+  /* "MuchTree.pyx":582
  *         self.data[leaf_id].right_child = col_id
  * 
  *     def get_links( self, leaf_ids ) :             # <<<<<<<<<<<<<<
@@ -11429,7 +11429,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_29get_links(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":592
+/* "MuchTree.pyx":593
  *         return col_ids
  * 
  *     def adjacency( self, int node=-1 ) :             # <<<<<<<<<<<<<<
@@ -11469,7 +11469,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_32adjacency(PyObject *__pyx_v_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "adjacency") < 0)) __PYX_ERR(0, 592, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "adjacency") < 0)) __PYX_ERR(0, 593, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -11480,14 +11480,14 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_32adjacency(PyObject *__pyx_v_self
       }
     }
     if (values[0]) {
-      __pyx_v_node = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_node == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 592, __pyx_L3_error)
+      __pyx_v_node = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_node == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 593, __pyx_L3_error)
     } else {
       __pyx_v_node = ((int)-1);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("adjacency", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 592, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("adjacency", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 593, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchTree.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -11538,7 +11538,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("adjacency", 0);
 
-  /* "MuchTree.pyx":606
+  /* "MuchTree.pyx":607
  *         cdef int l
  *         cdef int r
  *         cdef unsigned int n = 0             # <<<<<<<<<<<<<<
@@ -11547,7 +11547,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
   __pyx_v_n = 0;
 
-  /* "MuchTree.pyx":609
+  /* "MuchTree.pyx":610
  * 
  *         # by default, start from the root node
  *         if node == -1 :             # <<<<<<<<<<<<<<
@@ -11557,7 +11557,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_t_1 = ((__pyx_v_node == -1L) != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":610
+    /* "MuchTree.pyx":611
  *         # by default, start from the root node
  *         if node == -1 :
  *             node = self.root             # <<<<<<<<<<<<<<
@@ -11567,7 +11567,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_2 = __pyx_v_self->root;
     __pyx_v_node = __pyx_t_2;
 
-    /* "MuchTree.pyx":609
+    /* "MuchTree.pyx":610
  * 
  *         # by default, start from the root node
  *         if node == -1 :             # <<<<<<<<<<<<<<
@@ -11576,7 +11576,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":613
+  /* "MuchTree.pyx":614
  * 
  *         # bail if the node isn't in our tree
  *         if node > self.length or node < -1 :             # <<<<<<<<<<<<<<
@@ -11594,16 +11594,16 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_L5_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":614
+    /* "MuchTree.pyx":615
  *         # bail if the node isn't in our tree
  *         if node > self.length or node < -1 :
  *             raise Exception( 'Node id out of range.', node )             # <<<<<<<<<<<<<<
  * 
  *         self.np_buffer = np.ndarray( self.length, dtype=int )
  */
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_node); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 614, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_node); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 615, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 614, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 615, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_kp_u_Node_id_out_of_range);
     __Pyx_GIVEREF(__pyx_kp_u_Node_id_out_of_range);
@@ -11611,14 +11611,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 614, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 615, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 614, __pyx_L1_error)
+    __PYX_ERR(0, 615, __pyx_L1_error)
 
-    /* "MuchTree.pyx":613
+    /* "MuchTree.pyx":614
  * 
  *         # bail if the node isn't in our tree
  *         if node > self.length or node < -1 :             # <<<<<<<<<<<<<<
@@ -11627,24 +11627,24 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":616
+  /* "MuchTree.pyx":617
  *             raise Exception( 'Node id out of range.', node )
  * 
  *         self.np_buffer = np.ndarray( self.length, dtype=int )             # <<<<<<<<<<<<<<
  * 
  *         to_visit = [ node ]
  */
-  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 616, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 617, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 616, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 617, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 616, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 617, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 616, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 616, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 617, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 617, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -11654,16 +11654,16 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_v_self->np_buffer = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":618
+  /* "MuchTree.pyx":619
  *         self.np_buffer = np.ndarray( self.length, dtype=int )
  * 
  *         to_visit = [ node ]             # <<<<<<<<<<<<<<
  *         for i in to_visit :
  *             self.np_buffer[n] = i
  */
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_node); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 618, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_node); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 619, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 618, __pyx_L1_error)
+  __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 619, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_6);
   PyList_SET_ITEM(__pyx_t_4, 0, __pyx_t_6);
@@ -11671,7 +11671,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_v_to_visit = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":619
+  /* "MuchTree.pyx":620
  * 
  *         to_visit = [ node ]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -11682,28 +11682,28 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   for (;;) {
     if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_4)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 619, __pyx_L1_error)
+    __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 620, __pyx_L1_error)
     #else
-    __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 619, __pyx_L1_error)
+    __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 620, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     #endif
-    __pyx_t_2 = __Pyx_PyInt_As_unsigned_int(__pyx_t_6); if (unlikely((__pyx_t_2 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 619, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_As_unsigned_int(__pyx_t_6); if (unlikely((__pyx_t_2 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 620, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_i = __pyx_t_2;
 
-    /* "MuchTree.pyx":620
+    /* "MuchTree.pyx":621
  *         to_visit = [ node ]
  *         for i in to_visit :
  *             self.np_buffer[n] = i             # <<<<<<<<<<<<<<
  *             n += 1
  *             l,r = self.get_children( i )
  */
-    __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 620, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 621, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_6, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 620, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_v_self->np_buffer, __pyx_v_n, __pyx_t_6, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1) < 0)) __PYX_ERR(0, 621, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "MuchTree.pyx":621
+    /* "MuchTree.pyx":622
  *         for i in to_visit :
  *             self.np_buffer[n] = i
  *             n += 1             # <<<<<<<<<<<<<<
@@ -11712,16 +11712,16 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
     __pyx_v_n = (__pyx_v_n + 1);
 
-    /* "MuchTree.pyx":622
+    /* "MuchTree.pyx":623
  *             self.np_buffer[n] = i
  *             n += 1
  *             l,r = self.get_children( i )             # <<<<<<<<<<<<<<
  *             if l != -1 :
  *                 to_visit.append( l )
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_children); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 622, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_children); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 623, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 622, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 623, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_9 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -11736,7 +11736,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_6 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_9, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_8);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 622, __pyx_L1_error)
+    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 623, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_6))) || (PyList_CheckExact(__pyx_t_6))) {
@@ -11745,7 +11745,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 622, __pyx_L1_error)
+        __PYX_ERR(0, 623, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -11758,15 +11758,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_8);
       #else
-      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 622, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 623, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 622, __pyx_L1_error)
+      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 623, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       #endif
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 622, __pyx_L1_error)
+      __pyx_t_9 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 623, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext;
@@ -11774,7 +11774,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __Pyx_GOTREF(__pyx_t_5);
       index = 1; __pyx_t_8 = __pyx_t_10(__pyx_t_9); if (unlikely(!__pyx_t_8)) goto __pyx_L9_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_8);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 622, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 623, __pyx_L1_error)
       __pyx_t_10 = NULL;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       goto __pyx_L10_unpacking_done;
@@ -11782,17 +11782,17 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_10 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 622, __pyx_L1_error)
+      __PYX_ERR(0, 623, __pyx_L1_error)
       __pyx_L10_unpacking_done:;
     }
-    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 622, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 623, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_8); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 622, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_8); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 623, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_v_l = __pyx_t_11;
     __pyx_v_r = __pyx_t_12;
 
-    /* "MuchTree.pyx":623
+    /* "MuchTree.pyx":624
  *             n += 1
  *             l,r = self.get_children( i )
  *             if l != -1 :             # <<<<<<<<<<<<<<
@@ -11802,31 +11802,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_1 = ((__pyx_v_l != -1L) != 0);
     if (__pyx_t_1) {
 
-      /* "MuchTree.pyx":624
+      /* "MuchTree.pyx":625
  *             l,r = self.get_children( i )
  *             if l != -1 :
  *                 to_visit.append( l )             # <<<<<<<<<<<<<<
  *                 to_visit.append( r )
  * 
  */
-      __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_l); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_l); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_6); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_6); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":625
+      /* "MuchTree.pyx":626
  *             if l != -1 :
  *                 to_visit.append( l )
  *                 to_visit.append( r )             # <<<<<<<<<<<<<<
  * 
  *         ajmatrix = np.zeros( (n,n), dtype=float )
  */
-      __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_r); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 625, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_r); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 626, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_6); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 625, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_to_visit, __pyx_t_6); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 626, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "MuchTree.pyx":623
+      /* "MuchTree.pyx":624
  *             n += 1
  *             l,r = self.get_children( i )
  *             if l != -1 :             # <<<<<<<<<<<<<<
@@ -11835,7 +11835,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
     }
 
-    /* "MuchTree.pyx":619
+    /* "MuchTree.pyx":620
  * 
  *         to_visit = [ node ]
  *         for i in to_visit :             # <<<<<<<<<<<<<<
@@ -11845,23 +11845,23 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":627
+  /* "MuchTree.pyx":628
  *                 to_visit.append( r )
  * 
  *         ajmatrix = np.zeros( (n,n), dtype=float )             # <<<<<<<<<<<<<<
  * 
  *         for i in xrange( n ) :
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
@@ -11869,15 +11869,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_8);
   __pyx_t_4 = 0;
   __pyx_t_8 = 0;
-  __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 627, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 627, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 627, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 628, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -11885,7 +11885,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   __pyx_v_ajmatrix = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":629
+  /* "MuchTree.pyx":630
  *         ajmatrix = np.zeros( (n,n), dtype=float )
  * 
  *         for i in xrange( n ) :             # <<<<<<<<<<<<<<
@@ -11897,20 +11897,20 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
     __pyx_v_i = __pyx_t_15;
 
-    /* "MuchTree.pyx":630
+    /* "MuchTree.pyx":631
  * 
  *         for i in xrange( n ) :
  *             node_id  = self.np_buffer[i]             # <<<<<<<<<<<<<<
  *             parent   = self.data[node_id].parent
  *             if parent == -1 : continue
  */
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_self->np_buffer, __pyx_v_i, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 630, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_self->np_buffer, __pyx_v_i, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 631, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_16 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_16 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 630, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_16 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 631, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_node_id = __pyx_t_16;
 
-    /* "MuchTree.pyx":631
+    /* "MuchTree.pyx":632
  *         for i in xrange( n ) :
  *             node_id  = self.np_buffer[i]
  *             parent   = self.data[node_id].parent             # <<<<<<<<<<<<<<
@@ -11920,7 +11920,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_12 = (__pyx_v_self->data[__pyx_v_node_id]).parent;
     __pyx_v_parent = __pyx_t_12;
 
-    /* "MuchTree.pyx":632
+    /* "MuchTree.pyx":633
  *             node_id  = self.np_buffer[i]
  *             parent   = self.data[node_id].parent
  *             if parent == -1 : continue             # <<<<<<<<<<<<<<
@@ -11932,7 +11932,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       goto __pyx_L12_continue;
     }
 
-    /* "MuchTree.pyx":633
+    /* "MuchTree.pyx":634
  *             parent   = self.data[node_id].parent
  *             if parent == -1 : continue
  *             distance = self.data[node_id].distance             # <<<<<<<<<<<<<<
@@ -11942,7 +11942,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_t_17 = (__pyx_v_self->data[__pyx_v_node_id]).distance;
     __pyx_v_distance = __pyx_t_17;
 
-    /* "MuchTree.pyx":634
+    /* "MuchTree.pyx":635
  *             if parent == -1 : continue
  *             distance = self.data[node_id].distance
  *             if distance == 0 : distance += self.epsilon             # <<<<<<<<<<<<<<
@@ -11954,7 +11954,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __pyx_v_distance = (__pyx_v_distance + __pyx_v_self->epsilon);
     }
 
-    /* "MuchTree.pyx":635
+    /* "MuchTree.pyx":636
  *             distance = self.data[node_id].distance
  *             if distance == 0 : distance += self.epsilon
  *             for j,k in enumerate( self.np_buffer[:n] ) :             # <<<<<<<<<<<<<<
@@ -11962,15 +11962,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  *                     ajmatrix[ i,j ] = distance
  */
     __pyx_t_16 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetSlice(__pyx_v_self->np_buffer, 0, __pyx_v_n, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 635, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetSlice(__pyx_v_self->np_buffer, 0, __pyx_v_n, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 636, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     if (likely(PyList_CheckExact(__pyx_t_4)) || PyTuple_CheckExact(__pyx_t_4)) {
       __pyx_t_5 = __pyx_t_4; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
       __pyx_t_18 = NULL;
     } else {
-      __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 635, __pyx_L1_error)
+      __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 636, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_18 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 635, __pyx_L1_error)
+      __pyx_t_18 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 636, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     for (;;) {
@@ -11978,17 +11978,17 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
         if (likely(PyList_CheckExact(__pyx_t_5))) {
           if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 635, __pyx_L1_error)
+          __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 636, __pyx_L1_error)
           #else
-          __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 635, __pyx_L1_error)
+          __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 636, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           #endif
         } else {
           if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 635, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 636, __pyx_L1_error)
           #else
-          __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 635, __pyx_L1_error)
+          __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 636, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           #endif
         }
@@ -11998,19 +11998,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 635, __pyx_L1_error)
+            else __PYX_ERR(0, 636, __pyx_L1_error)
           }
           break;
         }
         __Pyx_GOTREF(__pyx_t_4);
       }
-      __pyx_t_19 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_19 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 635, __pyx_L1_error)
+      __pyx_t_19 = __Pyx_PyInt_As_unsigned_int(__pyx_t_4); if (unlikely((__pyx_t_19 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 636, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_v_k = __pyx_t_19;
       __pyx_v_j = __pyx_t_16;
       __pyx_t_16 = (__pyx_t_16 + 1);
 
-      /* "MuchTree.pyx":636
+      /* "MuchTree.pyx":637
  *             if distance == 0 : distance += self.epsilon
  *             for j,k in enumerate( self.np_buffer[:n] ) :
  *                 if k == parent :             # <<<<<<<<<<<<<<
@@ -12020,20 +12020,20 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
       __pyx_t_1 = ((__pyx_v_k == __pyx_v_parent) != 0);
       if (__pyx_t_1) {
 
-        /* "MuchTree.pyx":637
+        /* "MuchTree.pyx":638
  *             for j,k in enumerate( self.np_buffer[:n] ) :
  *                 if k == parent :
  *                     ajmatrix[ i,j ] = distance             # <<<<<<<<<<<<<<
  *                     ajmatrix[ j,i ] = distance
  * 
  */
-        __pyx_t_4 = PyFloat_FromDouble(__pyx_v_distance); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 637, __pyx_L1_error)
+        __pyx_t_4 = PyFloat_FromDouble(__pyx_v_distance); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 638, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 637, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 638, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_j); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 637, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_j); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 638, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 637, __pyx_L1_error)
+        __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 638, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_GIVEREF(__pyx_t_8);
         PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_8);
@@ -12041,24 +12041,24 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
         PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_6);
         __pyx_t_8 = 0;
         __pyx_t_6 = 0;
-        if (unlikely(PyObject_SetItem(__pyx_v_ajmatrix, __pyx_t_9, __pyx_t_4) < 0)) __PYX_ERR(0, 637, __pyx_L1_error)
+        if (unlikely(PyObject_SetItem(__pyx_v_ajmatrix, __pyx_t_9, __pyx_t_4) < 0)) __PYX_ERR(0, 638, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "MuchTree.pyx":638
+        /* "MuchTree.pyx":639
  *                 if k == parent :
  *                     ajmatrix[ i,j ] = distance
  *                     ajmatrix[ j,i ] = distance             # <<<<<<<<<<<<<<
  * 
  *         return { 'adjacency_matrix' : ajmatrix,
  */
-        __pyx_t_4 = PyFloat_FromDouble(__pyx_v_distance); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 638, __pyx_L1_error)
+        __pyx_t_4 = PyFloat_FromDouble(__pyx_v_distance); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 639, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_9 = __Pyx_PyInt_From_unsigned_int(__pyx_v_j); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 638, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyInt_From_unsigned_int(__pyx_v_j); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 639, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 638, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 639, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 638, __pyx_L1_error)
+        __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 639, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GIVEREF(__pyx_t_9);
         PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_9);
@@ -12066,11 +12066,11 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
         PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_t_6);
         __pyx_t_9 = 0;
         __pyx_t_6 = 0;
-        if (unlikely(PyObject_SetItem(__pyx_v_ajmatrix, __pyx_t_8, __pyx_t_4) < 0)) __PYX_ERR(0, 638, __pyx_L1_error)
+        if (unlikely(PyObject_SetItem(__pyx_v_ajmatrix, __pyx_t_8, __pyx_t_4) < 0)) __PYX_ERR(0, 639, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "MuchTree.pyx":636
+        /* "MuchTree.pyx":637
  *             if distance == 0 : distance += self.epsilon
  *             for j,k in enumerate( self.np_buffer[:n] ) :
  *                 if k == parent :             # <<<<<<<<<<<<<<
@@ -12079,7 +12079,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  */
       }
 
-      /* "MuchTree.pyx":635
+      /* "MuchTree.pyx":636
  *             distance = self.data[node_id].distance
  *             if distance == 0 : distance += self.epsilon
  *             for j,k in enumerate( self.np_buffer[:n] ) :             # <<<<<<<<<<<<<<
@@ -12091,7 +12091,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
     __pyx_L12_continue:;
   }
 
-  /* "MuchTree.pyx":640
+  /* "MuchTree.pyx":641
  *                     ajmatrix[ j,i ] = distance
  * 
  *         return { 'adjacency_matrix' : ajmatrix,             # <<<<<<<<<<<<<<
@@ -12099,26 +12099,26 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 640, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 641, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_u_adjacency_matrix, __pyx_v_ajmatrix) < 0) __PYX_ERR(0, 640, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_u_adjacency_matrix, __pyx_v_ajmatrix) < 0) __PYX_ERR(0, 641, __pyx_L1_error)
 
-  /* "MuchTree.pyx":641
+  /* "MuchTree.pyx":642
  * 
  *         return { 'adjacency_matrix' : ajmatrix,
  *                  'node_ids' : self.np_buffer[:n] }             # <<<<<<<<<<<<<<
  * 
  *     def laplacian( self, int node=-1 ) :
  */
-  __pyx_t_4 = __Pyx_PyObject_GetSlice(__pyx_v_self->np_buffer, 0, __pyx_v_n, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 641, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetSlice(__pyx_v_self->np_buffer, 0, __pyx_v_n, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 642, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_u_node_ids, __pyx_t_4) < 0) __PYX_ERR(0, 640, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_u_node_ids, __pyx_t_4) < 0) __PYX_ERR(0, 641, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":592
+  /* "MuchTree.pyx":593
  *         return col_ids
  * 
  *     def adjacency( self, int node=-1 ) :             # <<<<<<<<<<<<<<
@@ -12143,7 +12143,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_31adjacency(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":643
+/* "MuchTree.pyx":644
  *                  'node_ids' : self.np_buffer[:n] }
  * 
  *     def laplacian( self, int node=-1 ) :             # <<<<<<<<<<<<<<
@@ -12183,7 +12183,7 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_34laplacian(PyObject *__pyx_v_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "laplacian") < 0)) __PYX_ERR(0, 643, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "laplacian") < 0)) __PYX_ERR(0, 644, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -12194,14 +12194,14 @@ static PyObject *__pyx_pw_8MuchTree_8SuchTree_34laplacian(PyObject *__pyx_v_self
       }
     }
     if (values[0]) {
-      __pyx_v_node = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_node == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 643, __pyx_L3_error)
+      __pyx_v_node = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_node == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 644, __pyx_L3_error)
     } else {
       __pyx_v_node = ((int)-1);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("laplacian", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 643, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("laplacian", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 644, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchTree.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -12234,7 +12234,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("laplacian", 0);
 
-  /* "MuchTree.pyx":649
+  /* "MuchTree.pyx":650
  *         subtree decendent from node.
  *         """
  *         if node == -1 :             # <<<<<<<<<<<<<<
@@ -12244,7 +12244,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __pyx_t_1 = ((__pyx_v_node == -1L) != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":650
+    /* "MuchTree.pyx":651
  *         """
  *         if node == -1 :
  *             node = self.root             # <<<<<<<<<<<<<<
@@ -12254,7 +12254,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
     __pyx_t_2 = __pyx_v_self->root;
     __pyx_v_node = __pyx_t_2;
 
-    /* "MuchTree.pyx":649
+    /* "MuchTree.pyx":650
  *         subtree decendent from node.
  *         """
  *         if node == -1 :             # <<<<<<<<<<<<<<
@@ -12263,26 +12263,26 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":652
+  /* "MuchTree.pyx":653
  *             node = self.root
  * 
  *         aj, node_ids = self.adjacency( node=node ).values()             # <<<<<<<<<<<<<<
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_adjacency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 652, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_adjacency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 653, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 652, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 653, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_node); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 652, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_node); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 653, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_node, __pyx_t_6) < 0) __PYX_ERR(0, 652, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_node, __pyx_t_6) < 0) __PYX_ERR(0, 653, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 652, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 653, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_values); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 652, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_values); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 653, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -12297,7 +12297,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   }
   __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 652, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 653, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   if ((likely(PyTuple_CheckExact(__pyx_t_3))) || (PyList_CheckExact(__pyx_t_3))) {
@@ -12306,7 +12306,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
     if (unlikely(size != 2)) {
       if (size > 2) __Pyx_RaiseTooManyValuesError(2);
       else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-      __PYX_ERR(0, 652, __pyx_L1_error)
+      __PYX_ERR(0, 653, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
@@ -12319,15 +12319,15 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
     __Pyx_INCREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_t_6);
     #else
-    __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 652, __pyx_L1_error)
+    __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 653, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 652, __pyx_L1_error)
+    __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 653, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     #endif
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
     Py_ssize_t index = -1;
-    __pyx_t_4 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 652, __pyx_L1_error)
+    __pyx_t_4 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 653, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_7 = Py_TYPE(__pyx_t_4)->tp_iternext;
@@ -12335,7 +12335,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
     __Pyx_GOTREF(__pyx_t_5);
     index = 1; __pyx_t_6 = __pyx_t_7(__pyx_t_4); if (unlikely(!__pyx_t_6)) goto __pyx_L4_unpacking_failed;
     __Pyx_GOTREF(__pyx_t_6);
-    if (__Pyx_IternextUnpackEndCheck(__pyx_t_7(__pyx_t_4), 2) < 0) __PYX_ERR(0, 652, __pyx_L1_error)
+    if (__Pyx_IternextUnpackEndCheck(__pyx_t_7(__pyx_t_4), 2) < 0) __PYX_ERR(0, 653, __pyx_L1_error)
     __pyx_t_7 = NULL;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     goto __pyx_L5_unpacking_done;
@@ -12343,7 +12343,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_7 = NULL;
     if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-    __PYX_ERR(0, 652, __pyx_L1_error)
+    __PYX_ERR(0, 653, __pyx_L1_error)
     __pyx_L5_unpacking_done:;
   }
   __pyx_v_aj = __pyx_t_5;
@@ -12351,19 +12351,19 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __pyx_v_node_ids = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":653
+  /* "MuchTree.pyx":654
  * 
  *         aj, node_ids = self.adjacency( node=node ).values()
  *         lp = np.zeros( aj.shape )             # <<<<<<<<<<<<<<
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )
  *         lp = lp - aj
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 653, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 654, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_zeros); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 653, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_zeros); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 654, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 653, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 654, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -12378,30 +12378,30 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_4, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 653, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 654, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_lp = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":654
+  /* "MuchTree.pyx":655
  *         aj, node_ids = self.adjacency( node=node ).values()
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )             # <<<<<<<<<<<<<<
  *         lp = lp - aj
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 654, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 655, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_fill_diagonal); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 654, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_fill_diagonal); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 655, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_aj, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 654, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_aj, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 655, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 654, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 655, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 654, __pyx_L1_error)
-  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 654, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 655, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 655, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -12420,7 +12420,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_6)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_lp, __pyx_t_8};
-    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 654, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 655, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -12429,14 +12429,14 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_lp, __pyx_t_8};
-    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 654, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 655, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   } else
   #endif
   {
-    __pyx_t_5 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 654, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 655, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -12447,26 +12447,26 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
     __Pyx_GIVEREF(__pyx_t_8);
     PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_9, __pyx_t_8);
     __pyx_t_8 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 654, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 655, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":655
+  /* "MuchTree.pyx":656
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )
  *         lp = lp - aj             # <<<<<<<<<<<<<<
  * 
  *         return { 'laplacian' : lp,
  */
-  __pyx_t_3 = PyNumber_Subtract(__pyx_v_lp, __pyx_v_aj); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 655, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Subtract(__pyx_v_lp, __pyx_v_aj); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 656, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF_SET(__pyx_v_lp, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":657
+  /* "MuchTree.pyx":658
  *         lp = lp - aj
  * 
  *         return { 'laplacian' : lp,             # <<<<<<<<<<<<<<
@@ -12474,23 +12474,23 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 657, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 658, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_laplacian, __pyx_v_lp) < 0) __PYX_ERR(0, 657, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_laplacian, __pyx_v_lp) < 0) __PYX_ERR(0, 658, __pyx_L1_error)
 
-  /* "MuchTree.pyx":658
+  /* "MuchTree.pyx":659
  * 
  *         return { 'laplacian' : lp,
  *                  'node_ids' : node_ids }             # <<<<<<<<<<<<<<
  * 
  *     def dump_array( self ) :
  */
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_node_ids, __pyx_v_node_ids) < 0) __PYX_ERR(0, 657, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_node_ids, __pyx_v_node_ids) < 0) __PYX_ERR(0, 658, __pyx_L1_error)
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":643
+  /* "MuchTree.pyx":644
  *                  'node_ids' : self.np_buffer[:n] }
  * 
  *     def laplacian( self, int node=-1 ) :             # <<<<<<<<<<<<<<
@@ -12516,7 +12516,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_33laplacian(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":660
+/* "MuchTree.pyx":661
  *                  'node_ids' : node_ids }
  * 
  *     def dump_array( self ) :             # <<<<<<<<<<<<<<
@@ -12553,25 +12553,25 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dump_array", 0);
 
-  /* "MuchTree.pyx":664
+  /* "MuchTree.pyx":665
  *         Print the whole tree. (WARNING : may be huge and useless.)
  *         """
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
  *             print( 'id : %d ->' % n )
  *             print( '   distance    : %0.3f' % self.data[n].distance    )
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 664, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 665, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 664, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 665, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
     __pyx_t_1 = __pyx_t_2; __Pyx_INCREF(__pyx_t_1); __pyx_t_3 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_3 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 664, __pyx_L1_error)
+    __pyx_t_3 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 665, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 664, __pyx_L1_error)
+    __pyx_t_4 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 665, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   for (;;) {
@@ -12579,17 +12579,17 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_3); __Pyx_INCREF(__pyx_t_2); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 664, __pyx_L1_error)
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_3); __Pyx_INCREF(__pyx_t_2); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 665, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 664, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 665, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       } else {
         if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_3); __Pyx_INCREF(__pyx_t_2); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 664, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_3); __Pyx_INCREF(__pyx_t_2); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 665, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 664, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 665, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       }
@@ -12599,7 +12599,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 664, __pyx_L1_error)
+          else __PYX_ERR(0, 665, __pyx_L1_error)
         }
         break;
       }
@@ -12608,49 +12608,31 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_XDECREF_SET(__pyx_v_n, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "MuchTree.pyx":665
+    /* "MuchTree.pyx":666
  *         """
  *         for n in range(self.length) :
  *             print( 'id : %d ->' % n )             # <<<<<<<<<<<<<<
  *             print( '   distance    : %0.3f' % self.data[n].distance    )
  *             print( '   parent      : %d'    % self.data[n].parent      )
  */
-    __pyx_t_2 = __Pyx_PyUnicode_FormatSafe(__pyx_kp_u_id_d, __pyx_v_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 665, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyUnicode_FormatSafe(__pyx_kp_u_id_d, __pyx_v_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 666, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 665, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-    /* "MuchTree.pyx":666
- *         for n in range(self.length) :
- *             print( 'id : %d ->' % n )
- *             print( '   distance    : %0.3f' % self.data[n].distance    )             # <<<<<<<<<<<<<<
- *             print( '   parent      : %d'    % self.data[n].parent      )
- *             print( '   left child  : %d'    % self.data[n].left_child  )
- */
-    __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_n); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 666, __pyx_L1_error)
-    __pyx_t_5 = PyFloat_FromDouble((__pyx_v_self->data[__pyx_t_6]).distance); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 666, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = PyUnicode_Format(__pyx_kp_u_distance_0_3f, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 666, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 666, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "MuchTree.pyx":667
+ *         for n in range(self.length) :
  *             print( 'id : %d ->' % n )
- *             print( '   distance    : %0.3f' % self.data[n].distance    )
- *             print( '   parent      : %d'    % self.data[n].parent      )             # <<<<<<<<<<<<<<
+ *             print( '   distance    : %0.3f' % self.data[n].distance    )             # <<<<<<<<<<<<<<
+ *             print( '   parent      : %d'    % self.data[n].parent      )
  *             print( '   left child  : %d'    % self.data[n].left_child  )
- *             print( '   right child : %d'    % self.data[n].right_child )
  */
     __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_n); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 667, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyInt_From_int((__pyx_v_self->data[__pyx_t_6]).parent); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 667, __pyx_L1_error)
+    __pyx_t_5 = PyFloat_FromDouble((__pyx_v_self->data[__pyx_t_6]).distance); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 667, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = PyUnicode_Format(__pyx_kp_u_parent_d, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 667, __pyx_L1_error)
+    __pyx_t_2 = PyUnicode_Format(__pyx_kp_u_distance_0_3f, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 667, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 667, __pyx_L1_error)
@@ -12659,16 +12641,16 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "MuchTree.pyx":668
+ *             print( 'id : %d ->' % n )
  *             print( '   distance    : %0.3f' % self.data[n].distance    )
- *             print( '   parent      : %d'    % self.data[n].parent      )
- *             print( '   left child  : %d'    % self.data[n].left_child  )             # <<<<<<<<<<<<<<
+ *             print( '   parent      : %d'    % self.data[n].parent      )             # <<<<<<<<<<<<<<
+ *             print( '   left child  : %d'    % self.data[n].left_child  )
  *             print( '   right child : %d'    % self.data[n].right_child )
- * 
  */
     __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_n); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyInt_From_int((__pyx_v_self->data[__pyx_t_6]).left_child); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 668, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int((__pyx_v_self->data[__pyx_t_6]).parent); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 668, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = PyUnicode_Format(__pyx_kp_u_left_child_d, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 668, __pyx_L1_error)
+    __pyx_t_2 = PyUnicode_Format(__pyx_kp_u_parent_d, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 668, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 668, __pyx_L1_error)
@@ -12677,16 +12659,16 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "MuchTree.pyx":669
+ *             print( '   distance    : %0.3f' % self.data[n].distance    )
  *             print( '   parent      : %d'    % self.data[n].parent      )
- *             print( '   left child  : %d'    % self.data[n].left_child  )
- *             print( '   right child : %d'    % self.data[n].right_child )             # <<<<<<<<<<<<<<
+ *             print( '   left child  : %d'    % self.data[n].left_child  )             # <<<<<<<<<<<<<<
+ *             print( '   right child : %d'    % self.data[n].right_child )
  * 
- *     def nodes_data( self ) :
  */
     __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_n); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyInt_From_int((__pyx_v_self->data[__pyx_t_6]).right_child); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 669, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int((__pyx_v_self->data[__pyx_t_6]).left_child); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 669, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = PyUnicode_Format(__pyx_kp_u_right_child_d, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 669, __pyx_L1_error)
+    __pyx_t_2 = PyUnicode_Format(__pyx_kp_u_left_child_d, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 669, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 669, __pyx_L1_error)
@@ -12694,7 +12676,25 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":664
+    /* "MuchTree.pyx":670
+ *             print( '   parent      : %d'    % self.data[n].parent      )
+ *             print( '   left child  : %d'    % self.data[n].left_child  )
+ *             print( '   right child : %d'    % self.data[n].right_child )             # <<<<<<<<<<<<<<
+ * 
+ *     def nodes_data( self ) :
+ */
+    __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_n); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 670, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int((__pyx_v_self->data[__pyx_t_6]).right_child); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 670, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_2 = PyUnicode_Format(__pyx_kp_u_right_child_d, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 670, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 670, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+    /* "MuchTree.pyx":665
  *         Print the whole tree. (WARNING : may be huge and useless.)
  *         """
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
@@ -12704,7 +12704,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":660
+  /* "MuchTree.pyx":661
  *                  'node_ids' : node_ids }
  * 
  *     def dump_array( self ) :             # <<<<<<<<<<<<<<
@@ -12729,7 +12729,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_35dump_array(struct __pyx_obj_8Muc
 }
 static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "MuchTree.pyx":671
+/* "MuchTree.pyx":672
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
@@ -12763,7 +12763,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8Muc
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_1_nodes_data *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 671, __pyx_L1_error)
+    __PYX_ERR(0, 672, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -12771,7 +12771,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_37nodes_data(struct __pyx_obj_8Muc
   __Pyx_INCREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   __Pyx_GIVEREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8MuchTree_8SuchTree_39generator1, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_nodes_data, __pyx_n_s_SuchTree_nodes_data, __pyx_n_s_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 671, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8MuchTree_8SuchTree_39generator1, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_nodes_data, __pyx_n_s_SuchTree_nodes_data, __pyx_n_s_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 672, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -12811,9 +12811,9 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 671, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 672, __pyx_L1_error)
 
-  /* "MuchTree.pyx":675
+  /* "MuchTree.pyx":676
  *         Generator for the node data in the tree, compatible with networkx.
  *         """
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
@@ -12825,7 +12825,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_cur_scope->__pyx_v_n = __pyx_t_3;
 
-    /* "MuchTree.pyx":676
+    /* "MuchTree.pyx":677
  *         """
  *         for n in range(self.length) :
  *             if self.data[n].left_child == -1 :             # <<<<<<<<<<<<<<
@@ -12835,21 +12835,21 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
     __pyx_t_4 = (((__pyx_cur_scope->__pyx_v_self->data[__pyx_cur_scope->__pyx_v_n]).left_child == -1L) != 0);
     if (__pyx_t_4) {
 
-      /* "MuchTree.pyx":677
+      /* "MuchTree.pyx":678
  *         for n in range(self.length) :
  *             if self.data[n].left_child == -1 :
  *                 leaf_name = self.leafnodes[n]             # <<<<<<<<<<<<<<
  *             else :
  *                 leaf_name = ''
  */
-      __pyx_t_5 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_self->leafnodes, __pyx_cur_scope->__pyx_v_n, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 677, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_self->leafnodes, __pyx_cur_scope->__pyx_v_n, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 678, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_leaf_name);
       __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_leaf_name, __pyx_t_5);
       __Pyx_GIVEREF(__pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "MuchTree.pyx":676
+      /* "MuchTree.pyx":677
  *         """
  *         for n in range(self.length) :
  *             if self.data[n].left_child == -1 :             # <<<<<<<<<<<<<<
@@ -12859,7 +12859,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
       goto __pyx_L6;
     }
 
-    /* "MuchTree.pyx":679
+    /* "MuchTree.pyx":680
  *                 leaf_name = self.leafnodes[n]
  *             else :
  *                 leaf_name = ''             # <<<<<<<<<<<<<<
@@ -12874,19 +12874,19 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
     }
     __pyx_L6:;
 
-    /* "MuchTree.pyx":680
+    /* "MuchTree.pyx":681
  *             else :
  *                 leaf_name = ''
  *             yield ( n, { 'label' : leaf_name } )             # <<<<<<<<<<<<<<
  * 
  *     def edges_data( self ) :
  */
-    __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_n); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 680, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_n); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 681, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 680, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 681, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    if (PyDict_SetItem(__pyx_t_6, __pyx_n_u_label, __pyx_cur_scope->__pyx_v_leaf_name) < 0) __PYX_ERR(0, 680, __pyx_L1_error)
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 680, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_6, __pyx_n_u_label, __pyx_cur_scope->__pyx_v_leaf_name) < 0) __PYX_ERR(0, 681, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 681, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5);
@@ -12909,11 +12909,11 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
     __pyx_t_1 = __pyx_cur_scope->__pyx_t_0;
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 680, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 681, __pyx_L1_error)
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "MuchTree.pyx":671
+  /* "MuchTree.pyx":672
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
@@ -12941,7 +12941,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_39generator1(__pyx_CoroutineObject
 }
 static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "MuchTree.pyx":682
+/* "MuchTree.pyx":683
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
@@ -12975,7 +12975,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8Muc
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_2_edges_data *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 682, __pyx_L1_error)
+    __PYX_ERR(0, 683, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -12983,7 +12983,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40edges_data(struct __pyx_obj_8Muc
   __Pyx_INCREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   __Pyx_GIVEREF((PyObject *)__pyx_cur_scope->__pyx_v_self);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8MuchTree_8SuchTree_42generator2, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_edges_data, __pyx_n_s_SuchTree_edges_data, __pyx_n_s_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 682, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_8MuchTree_8SuchTree_42generator2, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_edges_data, __pyx_n_s_SuchTree_edges_data, __pyx_n_s_MuchTree); if (unlikely(!gen)) __PYX_ERR(0, 683, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -13024,9 +13024,9 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 682, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 683, __pyx_L1_error)
 
-  /* "MuchTree.pyx":686
+  /* "MuchTree.pyx":687
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
  *         """
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
@@ -13038,7 +13038,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_cur_scope->__pyx_v_n = __pyx_t_3;
 
-    /* "MuchTree.pyx":688
+    /* "MuchTree.pyx":689
  *         for n in range(self.length) :
  *             # no edges beyond the root node
  *             if self.data[n].parent == -1 : continue             # <<<<<<<<<<<<<<
@@ -13050,24 +13050,24 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
       goto __pyx_L4_continue;
     }
 
-    /* "MuchTree.pyx":689
+    /* "MuchTree.pyx":690
  *             # no edges beyond the root node
  *             if self.data[n].parent == -1 : continue
  *             yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__( self ) :
  */
-    __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_n); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 689, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_cur_scope->__pyx_v_n); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 690, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyInt_From_int((__pyx_cur_scope->__pyx_v_self->data[__pyx_cur_scope->__pyx_v_n]).parent); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 689, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_From_int((__pyx_cur_scope->__pyx_v_self->data[__pyx_cur_scope->__pyx_v_n]).parent); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 690, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 689, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 690, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = PyFloat_FromDouble((__pyx_cur_scope->__pyx_v_self->data[__pyx_cur_scope->__pyx_v_n]).distance); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 689, __pyx_L1_error)
+    __pyx_t_8 = PyFloat_FromDouble((__pyx_cur_scope->__pyx_v_self->data[__pyx_cur_scope->__pyx_v_n]).distance); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 690, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    if (PyDict_SetItem(__pyx_t_7, __pyx_n_u_weight, __pyx_t_8) < 0) __PYX_ERR(0, 689, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_7, __pyx_n_u_weight, __pyx_t_8) < 0) __PYX_ERR(0, 690, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 689, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 690, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_5);
@@ -13093,12 +13093,12 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
     __pyx_t_1 = __pyx_cur_scope->__pyx_t_0;
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_3 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 689, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 690, __pyx_L1_error)
     __pyx_L4_continue:;
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "MuchTree.pyx":682
+  /* "MuchTree.pyx":683
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
@@ -13126,7 +13126,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_42generator2(__pyx_CoroutineObject
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":691
+/* "MuchTree.pyx":692
  *             yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )
  * 
  *     def __dealloc__( self ) :             # <<<<<<<<<<<<<<
@@ -13149,7 +13149,7 @@ static void __pyx_pf_8MuchTree_8SuchTree_43__dealloc__(struct __pyx_obj_8MuchTre
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "MuchTree.pyx":692
+  /* "MuchTree.pyx":693
  * 
  *     def __dealloc__( self ) :
  *         PyMem_Free( self.data )     # no-op if self.data is NULL             # <<<<<<<<<<<<<<
@@ -13158,7 +13158,7 @@ static void __pyx_pf_8MuchTree_8SuchTree_43__dealloc__(struct __pyx_obj_8MuchTre
  */
   PyMem_Free(__pyx_v_self->data);
 
-  /* "MuchTree.pyx":691
+  /* "MuchTree.pyx":692
  *             yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )
  * 
  *     def __dealloc__( self ) :             # <<<<<<<<<<<<<<
@@ -13283,7 +13283,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_47__setstate_cython__(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":737
+/* "MuchTree.pyx":738
  *     cdef uint64_t modulus
  * 
  *     def __cinit__( self, tree_a, tree_b, link_matrix ) :             # <<<<<<<<<<<<<<
@@ -13328,17 +13328,17 @@ static int __pyx_pw_8MuchTree_15SuchLinkedTrees_1__cinit__(PyObject *__pyx_v_sel
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_tree_b)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, 1); __PYX_ERR(0, 737, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, 1); __PYX_ERR(0, 738, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_link_matrix)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, 2); __PYX_ERR(0, 737, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, 2); __PYX_ERR(0, 738, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 737, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 738, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -13353,7 +13353,7 @@ static int __pyx_pw_8MuchTree_15SuchLinkedTrees_1__cinit__(PyObject *__pyx_v_sel
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 737, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 738, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -13383,23 +13383,23 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "MuchTree.pyx":739
+  /* "MuchTree.pyx":740
  *     def __cinit__( self, tree_a, tree_b, link_matrix ) :
  *         cdef unsigned int i
  *         self.table_size = link_matrix.shape[1]             # <<<<<<<<<<<<<<
  *         self.table = <Column*> PyMem_Malloc( self.table_size * sizeof( Column ) )
  *         for i in xrange( self.table_size ) :
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 739, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 740, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 739, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 740, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_3 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 739, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_unsigned_int(__pyx_t_2); if (unlikely((__pyx_t_3 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 740, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_self->table_size = __pyx_t_3;
 
-  /* "MuchTree.pyx":740
+  /* "MuchTree.pyx":741
  *         cdef unsigned int i
  *         self.table_size = link_matrix.shape[1]
  *         self.table = <Column*> PyMem_Malloc( self.table_size * sizeof( Column ) )             # <<<<<<<<<<<<<<
@@ -13408,7 +13408,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
  */
   __pyx_v_self->table = ((struct __pyx_t_8MuchTree_Column *)PyMem_Malloc((__pyx_v_self->table_size * (sizeof(struct __pyx_t_8MuchTree_Column)))));
 
-  /* "MuchTree.pyx":741
+  /* "MuchTree.pyx":742
  *         self.table_size = link_matrix.shape[1]
  *         self.table = <Column*> PyMem_Malloc( self.table_size * sizeof( Column ) )
  *         for i in xrange( self.table_size ) :             # <<<<<<<<<<<<<<
@@ -13420,7 +13420,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_i = __pyx_t_5;
 
-    /* "MuchTree.pyx":742
+    /* "MuchTree.pyx":743
  *         self.table = <Column*> PyMem_Malloc( self.table_size * sizeof( Column ) )
  *         for i in xrange( self.table_size ) :
  *             self.table[i].length = 0             # <<<<<<<<<<<<<<
@@ -13429,7 +13429,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
  */
     (__pyx_v_self->table[__pyx_v_i]).length = 0;
 
-    /* "MuchTree.pyx":743
+    /* "MuchTree.pyx":744
  *         for i in xrange( self.table_size ) :
  *             self.table[i].length = 0
  *             self.table[i].leaf_id = 0             # <<<<<<<<<<<<<<
@@ -13438,7 +13438,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
  */
     (__pyx_v_self->table[__pyx_v_i]).leaf_id = 0;
 
-    /* "MuchTree.pyx":744
+    /* "MuchTree.pyx":745
  *             self.table[i].length = 0
  *             self.table[i].leaf_id = 0
  *             self.table[i].links = NULL             # <<<<<<<<<<<<<<
@@ -13448,22 +13448,22 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
     (__pyx_v_self->table[__pyx_v_i]).links = NULL;
   }
 
-  /* "MuchTree.pyx":747
+  /* "MuchTree.pyx":748
  * 
  *         # initialize random number generator
  *         self.seed = np.random.randint( UINT64_MAX >> 1 )             # <<<<<<<<<<<<<<
  *         self.modulus = 2685821657736338717
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 747, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 748, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 747, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 748, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_randint); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 747, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_randint); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 748, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyInt_From_uint64_t((UINT64_MAX >> 1)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 747, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_uint64_t((UINT64_MAX >> 1)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 748, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -13478,14 +13478,14 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   __pyx_t_2 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_7, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 747, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 748, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_8 = __Pyx_PyInt_As_uint64_t(__pyx_t_2); if (unlikely((__pyx_t_8 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 747, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_uint64_t(__pyx_t_2); if (unlikely((__pyx_t_8 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 748, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_self->seed = __pyx_t_8;
 
-  /* "MuchTree.pyx":748
+  /* "MuchTree.pyx":749
  *         # initialize random number generator
  *         self.seed = np.random.randint( UINT64_MAX >> 1 )
  *         self.modulus = 2685821657736338717             # <<<<<<<<<<<<<<
@@ -13494,7 +13494,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
  */
   __pyx_v_self->modulus = 0x2545F4914F6CDD1D;
 
-  /* "MuchTree.pyx":737
+  /* "MuchTree.pyx":738
  *     cdef uint64_t modulus
  * 
  *     def __cinit__( self, tree_a, tree_b, link_matrix ) :             # <<<<<<<<<<<<<<
@@ -13517,7 +13517,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees___cinit__(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":750
+/* "MuchTree.pyx":751
  *         self.modulus = 2685821657736338717
  * 
  *     def __init__( self, tree_a, tree_b, link_matrix ) :             # <<<<<<<<<<<<<<
@@ -13562,17 +13562,17 @@ static int __pyx_pw_8MuchTree_15SuchLinkedTrees_3__init__(PyObject *__pyx_v_self
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_tree_b)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 1); __PYX_ERR(0, 750, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 1); __PYX_ERR(0, 751, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_link_matrix)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 2); __PYX_ERR(0, 750, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 2); __PYX_ERR(0, 751, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 750, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 751, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -13587,7 +13587,7 @@ static int __pyx_pw_8MuchTree_15SuchLinkedTrees_3__init__(PyObject *__pyx_v_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 750, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 751, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -13638,7 +13638,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "MuchTree.pyx":753
+  /* "MuchTree.pyx":754
  * 
  *         # these objects are constructed only when first accessed
  *         self.np_table = None             # <<<<<<<<<<<<<<
@@ -13651,7 +13651,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->np_table);
   __pyx_v_self->np_table = Py_None;
 
-  /* "MuchTree.pyx":754
+  /* "MuchTree.pyx":755
  *         # these objects are constructed only when first accessed
  *         self.np_table = None
  *         self.np_linklist = None             # <<<<<<<<<<<<<<
@@ -13664,7 +13664,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->np_linklist);
   __pyx_v_self->np_linklist = Py_None;
 
-  /* "MuchTree.pyx":755
+  /* "MuchTree.pyx":756
  *         self.np_table = None
  *         self.np_linklist = None
  *         self.linked_leafsA = None             # <<<<<<<<<<<<<<
@@ -13677,7 +13677,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->linked_leafsA);
   __pyx_v_self->linked_leafsA = Py_None;
 
-  /* "MuchTree.pyx":756
+  /* "MuchTree.pyx":757
  *         self.np_linklist = None
  *         self.linked_leafsA = None
  *         self.linked_leafsB = None             # <<<<<<<<<<<<<<
@@ -13690,7 +13690,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->linked_leafsB);
   __pyx_v_self->linked_leafsB = Py_None;
 
-  /* "MuchTree.pyx":757
+  /* "MuchTree.pyx":758
  *         self.linked_leafsA = None
  *         self.linked_leafsB = None
  *         self.col_ids = None             # <<<<<<<<<<<<<<
@@ -13703,7 +13703,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->col_ids);
   __pyx_v_self->col_ids = Py_None;
 
-  /* "MuchTree.pyx":758
+  /* "MuchTree.pyx":759
  *         self.linked_leafsB = None
  *         self.col_ids = None
  *         self.row_ids = None             # <<<<<<<<<<<<<<
@@ -13716,7 +13716,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->row_ids);
   __pyx_v_self->row_ids = Py_None;
 
-  /* "MuchTree.pyx":759
+  /* "MuchTree.pyx":760
  *         self.col_ids = None
  *         self.row_ids = None
  *         self.col_names = None             # <<<<<<<<<<<<<<
@@ -13729,7 +13729,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->col_names);
   __pyx_v_self->col_names = Py_None;
 
-  /* "MuchTree.pyx":760
+  /* "MuchTree.pyx":761
  *         self.row_ids = None
  *         self.col_names = None
  *         self.row_names = None             # <<<<<<<<<<<<<<
@@ -13742,7 +13742,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->row_names);
   __pyx_v_self->row_names = Py_None;
 
-  /* "MuchTree.pyx":761
+  /* "MuchTree.pyx":762
  *         self.col_names = None
  *         self.row_names = None
  *         self.subset_columns = None             # <<<<<<<<<<<<<<
@@ -13755,7 +13755,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->subset_columns);
   __pyx_v_self->subset_columns = Py_None;
 
-  /* "MuchTree.pyx":762
+  /* "MuchTree.pyx":763
  *         self.row_names = None
  *         self.subset_columns = None
  *         self.subset_a_leafs = None             # <<<<<<<<<<<<<<
@@ -13768,7 +13768,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->subset_a_leafs);
   __pyx_v_self->subset_a_leafs = Py_None;
 
-  /* "MuchTree.pyx":763
+  /* "MuchTree.pyx":764
  *         self.subset_columns = None
  *         self.subset_a_leafs = None
  *         self.subset_b_leafs = None             # <<<<<<<<<<<<<<
@@ -13781,7 +13781,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->subset_b_leafs);
   __pyx_v_self->subset_b_leafs = Py_None;
 
-  /* "MuchTree.pyx":764
+  /* "MuchTree.pyx":765
  *         self.subset_a_leafs = None
  *         self.subset_b_leafs = None
  *         self.row_map = None             # <<<<<<<<<<<<<<
@@ -13794,7 +13794,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_v_self->row_map);
   __pyx_v_self->row_map = Py_None;
 
-  /* "MuchTree.pyx":768
+  /* "MuchTree.pyx":769
  *         # build trees from newick files, URLs to newick files or
  *         # from existing SuchTrees
  *         if isinstance( tree_a, basestring ):             # <<<<<<<<<<<<<<
@@ -13805,14 +13805,14 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":769
+    /* "MuchTree.pyx":770
  *         # from existing SuchTrees
  *         if isinstance( tree_a, basestring ):
  *             self.TreeA = SuchTree( tree_a )             # <<<<<<<<<<<<<<
  *         elif type( tree_a ) == SuchTree :
  *             self.TreeA = tree_a
  */
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8MuchTree_SuchTree), __pyx_v_tree_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 769, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8MuchTree_SuchTree), __pyx_v_tree_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 770, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_3);
     __Pyx_GOTREF(__pyx_v_self->TreeA);
@@ -13820,7 +13820,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_v_self->TreeA = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":768
+    /* "MuchTree.pyx":769
  *         # build trees from newick files, URLs to newick files or
  *         # from existing SuchTrees
  *         if isinstance( tree_a, basestring ):             # <<<<<<<<<<<<<<
@@ -13830,19 +13830,19 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":770
+  /* "MuchTree.pyx":771
  *         if isinstance( tree_a, basestring ):
  *             self.TreeA = SuchTree( tree_a )
  *         elif type( tree_a ) == SuchTree :             # <<<<<<<<<<<<<<
  *             self.TreeA = tree_a
  *         else :
  */
-  __pyx_t_3 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_tree_a)), ((PyObject *)__pyx_ptype_8MuchTree_SuchTree), Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 770, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 770, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_tree_a)), ((PyObject *)__pyx_ptype_8MuchTree_SuchTree), Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 771, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 771, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (likely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":771
+    /* "MuchTree.pyx":772
  *             self.TreeA = SuchTree( tree_a )
  *         elif type( tree_a ) == SuchTree :
  *             self.TreeA = tree_a             # <<<<<<<<<<<<<<
@@ -13855,7 +13855,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_v_self->TreeA);
     __pyx_v_self->TreeA = __pyx_v_tree_a;
 
-    /* "MuchTree.pyx":770
+    /* "MuchTree.pyx":771
  *         if isinstance( tree_a, basestring ):
  *             self.TreeA = SuchTree( tree_a )
  *         elif type( tree_a ) == SuchTree :             # <<<<<<<<<<<<<<
@@ -13865,7 +13865,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":773
+  /* "MuchTree.pyx":774
  *             self.TreeA = tree_a
  *         else :
  *             raise Exception( 'unknown input for tree', type(tree_a) )             # <<<<<<<<<<<<<<
@@ -13873,7 +13873,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  *         # build trees from newick files, URLs to newick files or
  */
   /*else*/ {
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 773, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 774, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_kp_u_unknown_input_for_tree);
     __Pyx_GIVEREF(__pyx_kp_u_unknown_input_for_tree);
@@ -13881,16 +13881,16 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_INCREF(((PyObject *)Py_TYPE(__pyx_v_tree_a)));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(__pyx_v_tree_a)));
     PyTuple_SET_ITEM(__pyx_t_3, 1, ((PyObject *)Py_TYPE(__pyx_v_tree_a)));
-    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_3, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 773, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_3, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 774, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 773, __pyx_L1_error)
+    __PYX_ERR(0, 774, __pyx_L1_error)
   }
   __pyx_L3:;
 
-  /* "MuchTree.pyx":777
+  /* "MuchTree.pyx":778
  *         # build trees from newick files, URLs to newick files or
  *         # from existing SuchTrees
  *         if isinstance( tree_b, basestring ):             # <<<<<<<<<<<<<<
@@ -13901,14 +13901,14 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "MuchTree.pyx":778
+    /* "MuchTree.pyx":779
  *         # from existing SuchTrees
  *         if isinstance( tree_b, basestring ):
  *             self.TreeB = SuchTree( tree_b )             # <<<<<<<<<<<<<<
  *         elif type( tree_b ) == SuchTree :
  *             self.TreeB = tree_b
  */
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8MuchTree_SuchTree), __pyx_v_tree_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 778, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8MuchTree_SuchTree), __pyx_v_tree_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 779, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_4);
     __Pyx_GOTREF(__pyx_v_self->TreeB);
@@ -13916,7 +13916,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_v_self->TreeB = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":777
+    /* "MuchTree.pyx":778
  *         # build trees from newick files, URLs to newick files or
  *         # from existing SuchTrees
  *         if isinstance( tree_b, basestring ):             # <<<<<<<<<<<<<<
@@ -13926,19 +13926,19 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     goto __pyx_L4;
   }
 
-  /* "MuchTree.pyx":779
+  /* "MuchTree.pyx":780
  *         if isinstance( tree_b, basestring ):
  *             self.TreeB = SuchTree( tree_b )
  *         elif type( tree_b ) == SuchTree :             # <<<<<<<<<<<<<<
  *             self.TreeB = tree_b
  *         else :
  */
-  __pyx_t_4 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_tree_b)), ((PyObject *)__pyx_ptype_8MuchTree_SuchTree), Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 779, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 779, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_tree_b)), ((PyObject *)__pyx_ptype_8MuchTree_SuchTree), Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 780, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 780, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (likely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":780
+    /* "MuchTree.pyx":781
  *             self.TreeB = SuchTree( tree_b )
  *         elif type( tree_b ) == SuchTree :
  *             self.TreeB = tree_b             # <<<<<<<<<<<<<<
@@ -13951,7 +13951,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_DECREF(__pyx_v_self->TreeB);
     __pyx_v_self->TreeB = __pyx_v_tree_b;
 
-    /* "MuchTree.pyx":779
+    /* "MuchTree.pyx":780
  *         if isinstance( tree_b, basestring ):
  *             self.TreeB = SuchTree( tree_b )
  *         elif type( tree_b ) == SuchTree :             # <<<<<<<<<<<<<<
@@ -13961,7 +13961,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     goto __pyx_L4;
   }
 
-  /* "MuchTree.pyx":782
+  /* "MuchTree.pyx":783
  *             self.TreeB = tree_b
  *         else :
  *             raise Exception( 'unknown input for tree', type(tree_b) )             # <<<<<<<<<<<<<<
@@ -13969,7 +13969,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  *         # make sure the link matrix connects the trees
  */
   /*else*/ {
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 782, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 783, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_kp_u_unknown_input_for_tree);
     __Pyx_GIVEREF(__pyx_kp_u_unknown_input_for_tree);
@@ -13977,29 +13977,29 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __Pyx_INCREF(((PyObject *)Py_TYPE(__pyx_v_tree_b)));
     __Pyx_GIVEREF(((PyObject *)Py_TYPE(__pyx_v_tree_b)));
     PyTuple_SET_ITEM(__pyx_t_4, 1, ((PyObject *)Py_TYPE(__pyx_v_tree_b)));
-    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 782, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 783, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 782, __pyx_L1_error)
+    __PYX_ERR(0, 783, __pyx_L1_error)
   }
   __pyx_L4:;
 
-  /* "MuchTree.pyx":785
+  /* "MuchTree.pyx":786
  * 
  *         # make sure the link matrix connects the trees
  *         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_shape); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 785, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_shape); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 786, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_n_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 785, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_n_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 786, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_n_leafs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 785, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_n_leafs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 786, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 785, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 786, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4);
@@ -14007,28 +14007,28 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_5);
   __pyx_t_4 = 0;
   __pyx_t_5 = 0;
-  __pyx_t_5 = PyObject_RichCompare(__pyx_t_3, __pyx_t_6, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 785, __pyx_L1_error)
+  __pyx_t_5 = PyObject_RichCompare(__pyx_t_3, __pyx_t_6, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 786, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 785, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 786, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_2 = ((!__pyx_t_1) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":786
+    /* "MuchTree.pyx":787
  *         # make sure the link matrix connects the trees
  *         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )             # <<<<<<<<<<<<<<
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :
  */
-    __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 786, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 787, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_Raise(__pyx_t_5, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __PYX_ERR(0, 786, __pyx_L1_error)
+    __PYX_ERR(0, 787, __pyx_L1_error)
 
-    /* "MuchTree.pyx":785
+    /* "MuchTree.pyx":786
  * 
  *         # make sure the link matrix connects the trees
  *         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :             # <<<<<<<<<<<<<<
@@ -14037,24 +14037,24 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":788
+  /* "MuchTree.pyx":789
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_axes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_axes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_GetItemInt(__pyx_t_5, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_GetItemInt(__pyx_t_5, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PySet_New(__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_5 = PySet_New(__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_keys); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_keys); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -14069,34 +14069,34 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_t_6 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 788, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PySet_New(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_4 = PySet_New(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PyObject_RichCompare(__pyx_t_5, __pyx_t_4, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_6 = PyObject_RichCompare(__pyx_t_5, __pyx_t_4, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 788, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 789, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_1 = ((!__pyx_t_2) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":789
+    /* "MuchTree.pyx":790
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )             # <<<<<<<<<<<<<<
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :
  */
-    __pyx_t_6 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 789, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 790, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_Raise(__pyx_t_6, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __PYX_ERR(0, 789, __pyx_L1_error)
+    __PYX_ERR(0, 790, __pyx_L1_error)
 
-    /* "MuchTree.pyx":788
+    /* "MuchTree.pyx":789
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :             # <<<<<<<<<<<<<<
@@ -14105,24 +14105,24 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":791
+  /* "MuchTree.pyx":792
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'axis[1] does not match TreeB leaf names' )
  * 
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_axes); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_axes); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_6, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_6, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PySet_New(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_6 = PySet_New(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_keys); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_keys); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -14137,34 +14137,34 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_t_4 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 791, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PySet_New(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_3 = PySet_New(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyObject_RichCompare(__pyx_t_6, __pyx_t_3, Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(__pyx_t_6, __pyx_t_3, Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_2 = ((!__pyx_t_1) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":792
+    /* "MuchTree.pyx":793
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :
  *             raise Exception( 'axis[1] does not match TreeB leaf names' )             # <<<<<<<<<<<<<<
  * 
  *         # set row and column indexes
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 792, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 793, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 792, __pyx_L1_error)
+    __PYX_ERR(0, 793, __pyx_L1_error)
 
-    /* "MuchTree.pyx":791
+    /* "MuchTree.pyx":792
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :             # <<<<<<<<<<<<<<
@@ -14173,21 +14173,21 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   }
 
-  /* "MuchTree.pyx":795
+  /* "MuchTree.pyx":796
  * 
  *         # set row and column indexes
  *         self.row_ids = np.array( list(self.TreeA.leafs.values()) )             # <<<<<<<<<<<<<<
  *         self.col_ids = np.array( list(self.TreeB.leafs.values()) )
  *         self.row_names = list(self.TreeA.leafs.keys())
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 795, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 796, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 795, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 796, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 795, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 796, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_values); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 795, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_values); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 796, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -14202,10 +14202,10 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 795, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 796, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = PySequence_List(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 795, __pyx_L1_error)
+  __pyx_t_7 = PySequence_List(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 796, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -14221,7 +14221,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_4 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_3, __pyx_t_7) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_7);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 795, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 796, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_GIVEREF(__pyx_t_4);
@@ -14230,21 +14230,21 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->row_ids = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":796
+  /* "MuchTree.pyx":797
  *         # set row and column indexes
  *         self.row_ids = np.array( list(self.TreeA.leafs.values()) )
  *         self.col_ids = np.array( list(self.TreeB.leafs.values()) )             # <<<<<<<<<<<<<<
  *         self.row_names = list(self.TreeA.leafs.keys())
  *         self.col_names = list(self.TreeB.leafs.keys())
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 796, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 796, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 796, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_values); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 796, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_values); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -14259,10 +14259,10 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_t_6 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 796, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PySequence_List(__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 796, __pyx_L1_error)
+  __pyx_t_5 = PySequence_List(__pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -14278,7 +14278,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_7, __pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 796, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_GIVEREF(__pyx_t_4);
@@ -14287,16 +14287,16 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->col_ids = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":797
+  /* "MuchTree.pyx":798
  *         self.row_ids = np.array( list(self.TreeA.leafs.values()) )
  *         self.col_ids = np.array( list(self.TreeB.leafs.values()) )
  *         self.row_names = list(self.TreeA.leafs.keys())             # <<<<<<<<<<<<<<
  *         self.col_names = list(self.TreeB.leafs.keys())
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 797, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 798, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_keys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 797, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_keys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 798, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_t_7 = NULL;
@@ -14311,10 +14311,10 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 797, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 798, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PySequence_List(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 797, __pyx_L1_error)
+  __pyx_t_5 = PySequence_List(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 798, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_GIVEREF(__pyx_t_5);
@@ -14323,16 +14323,16 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->row_names = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":798
+  /* "MuchTree.pyx":799
  *         self.col_ids = np.array( list(self.TreeB.leafs.values()) )
  *         self.row_names = list(self.TreeA.leafs.keys())
  *         self.col_names = list(self.TreeB.leafs.keys())             # <<<<<<<<<<<<<<
  * 
  *         self.n_rows = self.TreeA.n_leafs
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 798, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 799, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_keys); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 798, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_keys); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 799, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -14347,10 +14347,10 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_t_5 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 798, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 799, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = PySequence_List(__pyx_t_5); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 798, __pyx_L1_error)
+  __pyx_t_7 = PySequence_List(__pyx_t_5); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 799, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_GIVEREF(__pyx_t_7);
@@ -14359,55 +14359,55 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->col_names = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":800
+  /* "MuchTree.pyx":801
  *         self.col_names = list(self.TreeB.leafs.keys())
  * 
  *         self.n_rows = self.TreeA.n_leafs             # <<<<<<<<<<<<<<
  *         self.n_cols = self.TreeB.n_leafs
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_n_leafs); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 800, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_n_leafs); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 801, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_7); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 800, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_7); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 801, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_v_self->n_rows = __pyx_t_8;
 
-  /* "MuchTree.pyx":801
+  /* "MuchTree.pyx":802
  * 
  *         self.n_rows = self.TreeA.n_leafs
  *         self.n_cols = self.TreeB.n_leafs             # <<<<<<<<<<<<<<
  * 
  *         # reverse map for row ids
  */
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_n_leafs); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_n_leafs); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_7); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_7); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_v_self->n_cols = __pyx_t_8;
 
-  /* "MuchTree.pyx":804
+  /* "MuchTree.pyx":805
  * 
  *         # reverse map for row ids
  *         self.row_map = np.zeros( self.TreeA.length, dtype=int )             # <<<<<<<<<<<<<<
  *         for n,i in enumerate(self.row_ids) :
  *             self.row_map[i] = n
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_zeros); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_zeros); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_length); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_length); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_7);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_7);
   __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 804, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 804, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -14418,7 +14418,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->row_map = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":805
+  /* "MuchTree.pyx":806
  *         # reverse map for row ids
  *         self.row_map = np.zeros( self.TreeA.length, dtype=int )
  *         for n,i in enumerate(self.row_ids) :             # <<<<<<<<<<<<<<
@@ -14431,26 +14431,26 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_t_7 = __pyx_v_self->row_ids; __Pyx_INCREF(__pyx_t_7); __pyx_t_9 = 0;
     __pyx_t_10 = NULL;
   } else {
-    __pyx_t_9 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_v_self->row_ids); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 805, __pyx_L1_error)
+    __pyx_t_9 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_v_self->row_ids); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 806, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_10 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 805, __pyx_L1_error)
+    __pyx_t_10 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 806, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_10)) {
       if (likely(PyList_CheckExact(__pyx_t_7))) {
         if (__pyx_t_9 >= PyList_GET_SIZE(__pyx_t_7)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_9); __Pyx_INCREF(__pyx_t_4); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 805, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_9); __Pyx_INCREF(__pyx_t_4); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 806, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_7, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 805, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_7, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 806, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_9 >= PyTuple_GET_SIZE(__pyx_t_7)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_9); __Pyx_INCREF(__pyx_t_4); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 805, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_9); __Pyx_INCREF(__pyx_t_4); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 806, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_7, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 805, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_7, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 806, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -14460,7 +14460,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 805, __pyx_L1_error)
+          else __PYX_ERR(0, 806, __pyx_L1_error)
         }
         break;
       }
@@ -14470,22 +14470,22 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_t_4 = 0;
     __Pyx_INCREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_n, __pyx_t_6);
-    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 805, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 806, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6);
     __pyx_t_6 = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":806
+    /* "MuchTree.pyx":807
  *         self.row_map = np.zeros( self.TreeA.length, dtype=int )
  *         for n,i in enumerate(self.row_ids) :
  *             self.row_map[i] = n             # <<<<<<<<<<<<<<
  * 
  *         # populate the link table
  */
-    if (unlikely(PyObject_SetItem(__pyx_v_self->row_map, __pyx_v_i, __pyx_v_n) < 0)) __PYX_ERR(0, 806, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_self->row_map, __pyx_v_i, __pyx_v_n) < 0)) __PYX_ERR(0, 807, __pyx_L1_error)
 
-    /* "MuchTree.pyx":805
+    /* "MuchTree.pyx":806
  *         # reverse map for row ids
  *         self.row_map = np.zeros( self.TreeA.length, dtype=int )
  *         for n,i in enumerate(self.row_ids) :             # <<<<<<<<<<<<<<
@@ -14496,7 +14496,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":810
+  /* "MuchTree.pyx":811
  *         # populate the link table
  *         #print id(self), 'allocating columns in', <unsigned int> &self.table
  *         self.n_links = 0             # <<<<<<<<<<<<<<
@@ -14505,7 +14505,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   __pyx_v_self->n_links = 0;
 
-  /* "MuchTree.pyx":811
+  /* "MuchTree.pyx":812
  *         #print id(self), 'allocating columns in', <unsigned int> &self.table
  *         self.n_links = 0
  *         for i,(colname,s) in enumerate( link_matrix.T.reindex( self.col_names ).iterrows() ) :             # <<<<<<<<<<<<<<
@@ -14514,9 +14514,9 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   __Pyx_INCREF(__pyx_int_0);
   __pyx_t_6 = __pyx_int_0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_T); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 811, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_link_matrix, __pyx_n_s_T); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 812, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_reindex); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 811, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_reindex); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 812, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -14531,10 +14531,10 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_t_4 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_self->col_names) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_self->col_names);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 811, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 812, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_iterrows); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 811, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_iterrows); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 812, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -14549,16 +14549,16 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   }
   __pyx_t_7 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 811, __pyx_L1_error)
+  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 812, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (likely(PyList_CheckExact(__pyx_t_7)) || PyTuple_CheckExact(__pyx_t_7)) {
     __pyx_t_3 = __pyx_t_7; __Pyx_INCREF(__pyx_t_3); __pyx_t_9 = 0;
     __pyx_t_10 = NULL;
   } else {
-    __pyx_t_9 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 811, __pyx_L1_error)
+    __pyx_t_9 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 812, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_10 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 811, __pyx_L1_error)
+    __pyx_t_10 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 812, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   for (;;) {
@@ -14566,17 +14566,17 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_9 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_9); __Pyx_INCREF(__pyx_t_7); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 811, __pyx_L1_error)
+        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_9); __Pyx_INCREF(__pyx_t_7); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 812, __pyx_L1_error)
         #else
-        __pyx_t_7 = PySequence_ITEM(__pyx_t_3, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 811, __pyx_L1_error)
+        __pyx_t_7 = PySequence_ITEM(__pyx_t_3, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 812, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
       } else {
         if (__pyx_t_9 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_9); __Pyx_INCREF(__pyx_t_7); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 811, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_9); __Pyx_INCREF(__pyx_t_7); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 812, __pyx_L1_error)
         #else
-        __pyx_t_7 = PySequence_ITEM(__pyx_t_3, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 811, __pyx_L1_error)
+        __pyx_t_7 = PySequence_ITEM(__pyx_t_3, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 812, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
       }
@@ -14586,7 +14586,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 811, __pyx_L1_error)
+          else __PYX_ERR(0, 812, __pyx_L1_error)
         }
         break;
       }
@@ -14598,7 +14598,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 811, __pyx_L1_error)
+        __PYX_ERR(0, 812, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -14611,15 +14611,15 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_5);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 811, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 812, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 811, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 812, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       #endif
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_11 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 811, __pyx_L1_error)
+      __pyx_t_11 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 812, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_12 = Py_TYPE(__pyx_t_11)->tp_iternext;
@@ -14627,7 +14627,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __Pyx_GOTREF(__pyx_t_4);
       index = 1; __pyx_t_5 = __pyx_t_12(__pyx_t_11); if (unlikely(!__pyx_t_5)) goto __pyx_L12_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_5);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_12(__pyx_t_11), 2) < 0) __PYX_ERR(0, 811, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_12(__pyx_t_11), 2) < 0) __PYX_ERR(0, 812, __pyx_L1_error)
       __pyx_t_12 = NULL;
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       goto __pyx_L13_unpacking_done;
@@ -14635,7 +14635,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       __pyx_t_12 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 811, __pyx_L1_error)
+      __PYX_ERR(0, 812, __pyx_L1_error)
       __pyx_L13_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_colname, __pyx_t_4);
@@ -14644,22 +14644,22 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_t_5 = 0;
     __Pyx_INCREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_6);
-    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 811, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 812, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6);
     __pyx_t_6 = __pyx_t_7;
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":814
+    /* "MuchTree.pyx":815
  *             # attach leaf nodes in TreeB to corresponding column in
  *             # the link table
  *             self.TreeB.link_leaf( self.col_ids[i], i )             # <<<<<<<<<<<<<<
  *             l = []
  *             for rowname, value in s.iteritems() :
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_link_leaf); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 814, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_link_leaf); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 815, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_self->col_ids, __pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 814, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_self->col_ids, __pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 815, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_11 = NULL;
     __pyx_t_13 = 0;
@@ -14676,7 +14676,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_t_4, __pyx_v_i};
-      __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 814, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 815, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -14685,14 +14685,14 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_t_4, __pyx_v_i};
-      __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 814, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_13, 2+__pyx_t_13); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 815, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else
     #endif
     {
-      __pyx_t_14 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 814, __pyx_L1_error)
+      __pyx_t_14 = PyTuple_New(2+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 815, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_14);
       if (__pyx_t_11) {
         __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -14703,26 +14703,26 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __Pyx_GIVEREF(__pyx_v_i);
       PyTuple_SET_ITEM(__pyx_t_14, 1+__pyx_t_13, __pyx_v_i);
       __pyx_t_4 = 0;
-      __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_14, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 814, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_14, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 815, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":815
+    /* "MuchTree.pyx":816
  *             # the link table
  *             self.TreeB.link_leaf( self.col_ids[i], i )
  *             l = []             # <<<<<<<<<<<<<<
  *             for rowname, value in s.iteritems() :
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
  */
-    __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 815, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 816, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_XDECREF_SET(__pyx_v_l, ((PyObject*)__pyx_t_7));
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":816
+    /* "MuchTree.pyx":817
  *             self.TreeB.link_leaf( self.col_ids[i], i )
  *             l = []
  *             for rowname, value in s.iteritems() :             # <<<<<<<<<<<<<<
@@ -14732,9 +14732,9 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     __pyx_t_15 = 0;
     if (unlikely(__pyx_v_s == Py_None)) {
       PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "iteritems");
-      __PYX_ERR(0, 816, __pyx_L1_error)
+      __PYX_ERR(0, 817, __pyx_L1_error)
     }
-    __pyx_t_5 = __Pyx_dict_iterator(__pyx_v_s, 0, __pyx_n_s_iteritems, (&__pyx_t_16), (&__pyx_t_13)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 816, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_dict_iterator(__pyx_v_s, 0, __pyx_n_s_iteritems, (&__pyx_t_16), (&__pyx_t_13)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 817, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_7);
     __pyx_t_7 = __pyx_t_5;
@@ -14742,7 +14742,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
     while (1) {
       __pyx_t_17 = __Pyx_dict_iter_next(__pyx_t_7, __pyx_t_16, &__pyx_t_15, &__pyx_t_5, &__pyx_t_14, NULL, __pyx_t_13);
       if (unlikely(__pyx_t_17 == 0)) break;
-      if (unlikely(__pyx_t_17 == -1)) __PYX_ERR(0, 816, __pyx_L1_error)
+      if (unlikely(__pyx_t_17 == -1)) __PYX_ERR(0, 817, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_XDECREF_SET(__pyx_v_rowname, __pyx_t_5);
@@ -14750,126 +14750,126 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       __Pyx_XDECREF_SET(__pyx_v_value, __pyx_t_14);
       __pyx_t_14 = 0;
 
-      /* "MuchTree.pyx":817
+      /* "MuchTree.pyx":818
  *             l = []
  *             for rowname, value in s.iteritems() :
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )             # <<<<<<<<<<<<<<
  *             col_size = len(l)
  *             if self.table[i].links == NULL :
  */
-      __pyx_t_14 = PyObject_RichCompare(__pyx_v_value, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_14); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 817, __pyx_L1_error)
-      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_14); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 817, __pyx_L1_error)
+      __pyx_t_14 = PyObject_RichCompare(__pyx_v_value, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_14); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 818, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_14); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 818, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
       if (__pyx_t_2) {
-        __pyx_t_14 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 817, __pyx_L1_error)
+        __pyx_t_14 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 818, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_14);
-        __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_14, __pyx_v_rowname); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 817, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_14, __pyx_v_rowname); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 818, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
-        __pyx_t_18 = __Pyx_PyList_Append(__pyx_v_l, __pyx_t_5); if (unlikely(__pyx_t_18 == ((int)-1))) __PYX_ERR(0, 817, __pyx_L1_error)
+        __pyx_t_18 = __Pyx_PyList_Append(__pyx_v_l, __pyx_t_5); if (unlikely(__pyx_t_18 == ((int)-1))) __PYX_ERR(0, 818, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
     }
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":818
+    /* "MuchTree.pyx":819
  *             for rowname, value in s.iteritems() :
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
  *             col_size = len(l)             # <<<<<<<<<<<<<<
  *             if self.table[i].links == NULL :
  *                 self.table[i].leaf_id = self.col_ids[i]
  */
-    __pyx_t_16 = PyList_GET_SIZE(__pyx_v_l); if (unlikely(__pyx_t_16 == ((Py_ssize_t)-1))) __PYX_ERR(0, 818, __pyx_L1_error)
-    __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_16); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 818, __pyx_L1_error)
+    __pyx_t_16 = PyList_GET_SIZE(__pyx_v_l); if (unlikely(__pyx_t_16 == ((Py_ssize_t)-1))) __PYX_ERR(0, 819, __pyx_L1_error)
+    __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_16); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 819, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_XDECREF_SET(__pyx_v_col_size, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":819
+    /* "MuchTree.pyx":820
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
  *             col_size = len(l)
  *             if self.table[i].links == NULL :             # <<<<<<<<<<<<<<
  *                 self.table[i].leaf_id = self.col_ids[i]
  *                 self.n_links += col_size
  */
-    __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 819, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 820, __pyx_L1_error)
     __pyx_t_2 = (((__pyx_v_self->table[__pyx_t_16]).links == NULL) != 0);
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":820
+      /* "MuchTree.pyx":821
  *             col_size = len(l)
  *             if self.table[i].links == NULL :
  *                 self.table[i].leaf_id = self.col_ids[i]             # <<<<<<<<<<<<<<
  *                 self.n_links += col_size
  *                 self.table[i].length = col_size
  */
-      __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_self->col_ids, __pyx_v_i); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 820, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_self->col_ids, __pyx_v_i); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 821, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_7); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 820, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_7); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 821, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 820, __pyx_L1_error)
+      __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 821, __pyx_L1_error)
       (__pyx_v_self->table[__pyx_t_16]).leaf_id = __pyx_t_8;
 
-      /* "MuchTree.pyx":821
+      /* "MuchTree.pyx":822
  *             if self.table[i].links == NULL :
  *                 self.table[i].leaf_id = self.col_ids[i]
  *                 self.n_links += col_size             # <<<<<<<<<<<<<<
  *                 self.table[i].length = col_size
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
  */
-      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_links); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 821, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_links); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 822, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_7, __pyx_v_col_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 821, __pyx_L1_error)
+      __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_7, __pyx_v_col_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 822, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_5); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 821, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_5); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 822, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_v_self->n_links = __pyx_t_8;
 
-      /* "MuchTree.pyx":822
+      /* "MuchTree.pyx":823
  *                 self.table[i].leaf_id = self.col_ids[i]
  *                 self.n_links += col_size
  *                 self.table[i].length = col_size             # <<<<<<<<<<<<<<
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
  *                 for j in xrange( col_size ) :
  */
-      __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_v_col_size); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 822, __pyx_L1_error)
-      __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 822, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_v_col_size); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 823, __pyx_L1_error)
+      __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 823, __pyx_L1_error)
       (__pyx_v_self->table[__pyx_t_16]).length = __pyx_t_8;
 
-      /* "MuchTree.pyx":823
+      /* "MuchTree.pyx":824
  *                 self.n_links += col_size
  *                 self.table[i].length = col_size
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )             # <<<<<<<<<<<<<<
  *                 for j in xrange( col_size ) :
  *                     self.table[i].links[j] = l[j]
  */
-      __pyx_t_5 = __Pyx_PyInt_FromSize_t((sizeof(unsigned int))); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 823, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_FromSize_t((sizeof(unsigned int))); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 824, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_7 = PyNumber_Multiply(__pyx_v_col_size, __pyx_t_5); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 823, __pyx_L1_error)
+      __pyx_t_7 = PyNumber_Multiply(__pyx_v_col_size, __pyx_t_5); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 824, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_19 = __Pyx_PyInt_As_size_t(__pyx_t_7); if (unlikely((__pyx_t_19 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 823, __pyx_L1_error)
+      __pyx_t_19 = __Pyx_PyInt_As_size_t(__pyx_t_7); if (unlikely((__pyx_t_19 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 824, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 823, __pyx_L1_error)
+      __pyx_t_16 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_16 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 824, __pyx_L1_error)
       (__pyx_v_self->table[__pyx_t_16]).links = ((unsigned int *)PyMem_Malloc(__pyx_t_19));
 
-      /* "MuchTree.pyx":824
+      /* "MuchTree.pyx":825
  *                 self.table[i].length = col_size
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
  *                 for j in xrange( col_size ) :             # <<<<<<<<<<<<<<
  *                     self.table[i].links[j] = l[j]
  * 
  */
-      __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_builtin_xrange, __pyx_v_col_size); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 824, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_builtin_xrange, __pyx_v_col_size); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 825, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (likely(PyList_CheckExact(__pyx_t_7)) || PyTuple_CheckExact(__pyx_t_7)) {
         __pyx_t_5 = __pyx_t_7; __Pyx_INCREF(__pyx_t_5); __pyx_t_16 = 0;
         __pyx_t_20 = NULL;
       } else {
-        __pyx_t_16 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 824, __pyx_L1_error)
+        __pyx_t_16 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 825, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_20 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 824, __pyx_L1_error)
+        __pyx_t_20 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 825, __pyx_L1_error)
       }
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       for (;;) {
@@ -14877,17 +14877,17 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
           if (likely(PyList_CheckExact(__pyx_t_5))) {
             if (__pyx_t_16 >= PyList_GET_SIZE(__pyx_t_5)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_7 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_16); __Pyx_INCREF(__pyx_t_7); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 824, __pyx_L1_error)
+            __pyx_t_7 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_16); __Pyx_INCREF(__pyx_t_7); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 825, __pyx_L1_error)
             #else
-            __pyx_t_7 = PySequence_ITEM(__pyx_t_5, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 824, __pyx_L1_error)
+            __pyx_t_7 = PySequence_ITEM(__pyx_t_5, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 825, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_7);
             #endif
           } else {
             if (__pyx_t_16 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_16); __Pyx_INCREF(__pyx_t_7); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 824, __pyx_L1_error)
+            __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_16); __Pyx_INCREF(__pyx_t_7); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 825, __pyx_L1_error)
             #else
-            __pyx_t_7 = PySequence_ITEM(__pyx_t_5, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 824, __pyx_L1_error)
+            __pyx_t_7 = PySequence_ITEM(__pyx_t_5, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 825, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_7);
             #endif
           }
@@ -14897,7 +14897,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 824, __pyx_L1_error)
+              else __PYX_ERR(0, 825, __pyx_L1_error)
             }
             break;
           }
@@ -14906,22 +14906,22 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
         __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_7);
         __pyx_t_7 = 0;
 
-        /* "MuchTree.pyx":825
+        /* "MuchTree.pyx":826
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
  *                 for j in xrange( col_size ) :
  *                     self.table[i].links[j] = l[j]             # <<<<<<<<<<<<<<
  * 
  *         # by default, the subset is the whole table
  */
-        __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_l, __pyx_v_j); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 825, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_l, __pyx_v_j); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 826, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
-        __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_7); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 825, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_7); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 826, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-        __pyx_t_15 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_15 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 825, __pyx_L1_error)
-        __pyx_t_21 = __Pyx_PyIndex_AsSsize_t(__pyx_v_j); if (unlikely((__pyx_t_21 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 825, __pyx_L1_error)
+        __pyx_t_15 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_15 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 826, __pyx_L1_error)
+        __pyx_t_21 = __Pyx_PyIndex_AsSsize_t(__pyx_v_j); if (unlikely((__pyx_t_21 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 826, __pyx_L1_error)
         ((__pyx_v_self->table[__pyx_t_15]).links[__pyx_t_21]) = __pyx_t_8;
 
-        /* "MuchTree.pyx":824
+        /* "MuchTree.pyx":825
  *                 self.table[i].length = col_size
  *                 self.table[i].links = <unsigned int*> PyMem_Malloc( col_size * sizeof( unsigned int ) )
  *                 for j in xrange( col_size ) :             # <<<<<<<<<<<<<<
@@ -14931,7 +14931,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "MuchTree.pyx":819
+      /* "MuchTree.pyx":820
  *                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
  *             col_size = len(l)
  *             if self.table[i].links == NULL :             # <<<<<<<<<<<<<<
@@ -14940,7 +14940,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
     }
 
-    /* "MuchTree.pyx":811
+    /* "MuchTree.pyx":812
  *         #print id(self), 'allocating columns in', <unsigned int> &self.table
  *         self.n_links = 0
  *         for i,(colname,s) in enumerate( link_matrix.T.reindex( self.col_names ).iterrows() ) :             # <<<<<<<<<<<<<<
@@ -14951,33 +14951,33 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":829
+  /* "MuchTree.pyx":830
  *         # by default, the subset is the whole table
  *         #print 'bulding default subset.'
  *         self.subset_a_root = self.TreeA.root             # <<<<<<<<<<<<<<
  *         self.subset_b_root = self.TreeB.root
  *         self.subset_a_size = len( self.row_ids )
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_root); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 829, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_root); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 830, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_6); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 829, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_6); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 830, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_self->subset_a_root = __pyx_t_8;
 
-  /* "MuchTree.pyx":830
+  /* "MuchTree.pyx":831
  *         #print 'bulding default subset.'
  *         self.subset_a_root = self.TreeA.root
  *         self.subset_b_root = self.TreeB.root             # <<<<<<<<<<<<<<
  *         self.subset_a_size = len( self.row_ids )
  *         self.subset_b_size = len( self.col_ids )
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_root); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 830, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_root); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 831, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_6); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 830, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_As_unsigned_int(__pyx_t_6); if (unlikely((__pyx_t_8 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 831, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_self->subset_b_root = __pyx_t_8;
 
-  /* "MuchTree.pyx":831
+  /* "MuchTree.pyx":832
  *         self.subset_a_root = self.TreeA.root
  *         self.subset_b_root = self.TreeB.root
  *         self.subset_a_size = len( self.row_ids )             # <<<<<<<<<<<<<<
@@ -14986,11 +14986,11 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   __pyx_t_6 = __pyx_v_self->row_ids;
   __Pyx_INCREF(__pyx_t_6);
-  __pyx_t_9 = PyObject_Length(__pyx_t_6); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 831, __pyx_L1_error)
+  __pyx_t_9 = PyObject_Length(__pyx_t_6); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 832, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_self->subset_a_size = __pyx_t_9;
 
-  /* "MuchTree.pyx":832
+  /* "MuchTree.pyx":833
  *         self.subset_b_root = self.TreeB.root
  *         self.subset_a_size = len( self.row_ids )
  *         self.subset_b_size = len( self.col_ids )             # <<<<<<<<<<<<<<
@@ -14999,11 +14999,11 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   __pyx_t_6 = __pyx_v_self->col_ids;
   __Pyx_INCREF(__pyx_t_6);
-  __pyx_t_9 = PyObject_Length(__pyx_t_6); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 832, __pyx_L1_error)
+  __pyx_t_9 = PyObject_Length(__pyx_t_6); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 833, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_self->subset_b_size = __pyx_t_9;
 
-  /* "MuchTree.pyx":833
+  /* "MuchTree.pyx":834
  *         self.subset_a_size = len( self.row_ids )
  *         self.subset_b_size = len( self.col_ids )
  *         self.subset_n_links = self.n_links             # <<<<<<<<<<<<<<
@@ -15013,21 +15013,21 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_8 = __pyx_v_self->n_links;
   __pyx_v_self->subset_n_links = __pyx_t_8;
 
-  /* "MuchTree.pyx":834
+  /* "MuchTree.pyx":835
  *         self.subset_b_size = len( self.col_ids )
  *         self.subset_n_links = self.n_links
  *         self.subset_rows    = np.array( range( self.subset_a_size ) )             # <<<<<<<<<<<<<<
  *         self.subset_columns = np.array( range( self.subset_b_size ) )
  *         self.subset_a_leafs = self.row_ids
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 834, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 834, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 834, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 834, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -15043,7 +15043,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_6 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_3, __pyx_t_7) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_7);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 834, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 835, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_GIVEREF(__pyx_t_6);
@@ -15052,21 +15052,21 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->subset_rows = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":835
+  /* "MuchTree.pyx":836
  *         self.subset_n_links = self.n_links
  *         self.subset_rows    = np.array( range( self.subset_a_size ) )
  *         self.subset_columns = np.array( range( self.subset_b_size ) )             # <<<<<<<<<<<<<<
  *         self.subset_a_leafs = self.row_ids
  *         self.subset_b_leafs = self.col_ids
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 835, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 836, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_array); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 835, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_array); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 836, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 835, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_size); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 836, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 835, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 836, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -15082,7 +15082,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_t_6 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_7, __pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 835, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 836, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_GIVEREF(__pyx_t_6);
@@ -15091,7 +15091,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->subset_columns = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":836
+  /* "MuchTree.pyx":837
  *         self.subset_rows    = np.array( range( self.subset_a_size ) )
  *         self.subset_columns = np.array( range( self.subset_b_size ) )
  *         self.subset_a_leafs = self.row_ids             # <<<<<<<<<<<<<<
@@ -15106,7 +15106,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->subset_a_leafs = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":837
+  /* "MuchTree.pyx":838
  *         self.subset_columns = np.array( range( self.subset_b_size ) )
  *         self.subset_a_leafs = self.row_ids
  *         self.subset_b_leafs = self.col_ids             # <<<<<<<<<<<<<<
@@ -15121,16 +15121,16 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->subset_b_leafs = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":841
+  /* "MuchTree.pyx":842
  *         # make np_linklist
  *         #print 'bulding default link list.'
  *         self.np_linklist = np.ndarray( ( self.n_links, 2 ), dtype=int )             # <<<<<<<<<<<<<<
  *         self._build_linklist()
  * 
  */
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_links); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_links); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_6);
   PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6);
@@ -15138,15 +15138,15 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __Pyx_GIVEREF(__pyx_int_2);
   PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_2);
   __pyx_t_6 = 0;
-  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_7);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_7);
   __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 841, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 841, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 842, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -15156,7 +15156,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   __pyx_v_self->np_linklist = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":842
+  /* "MuchTree.pyx":843
  *         #print 'bulding default link list.'
  *         self.np_linklist = np.ndarray( ( self.n_links, 2 ), dtype=int )
  *         self._build_linklist()             # <<<<<<<<<<<<<<
@@ -15165,7 +15165,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
  */
   ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
 
-  /* "MuchTree.pyx":750
+  /* "MuchTree.pyx":751
  *         self.modulus = 2685821657736338717
  * 
  *     def __init__( self, tree_a, tree_b, link_matrix ) :             # <<<<<<<<<<<<<<
@@ -15200,7 +15200,7 @@ static int __pyx_pf_8MuchTree_15SuchLinkedTrees_2__init__(struct __pyx_obj_8Much
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":844
+/* "MuchTree.pyx":845
  *         self._build_linklist()
  * 
  *     def __dealloc__( self ) :             # <<<<<<<<<<<<<<
@@ -15228,7 +15228,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
   int __pyx_t_4;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "MuchTree.pyx":848
+  /* "MuchTree.pyx":849
  *         #print id(self), 'freeing columns in', <unsigned int> &self.table
  * 
  *         for i in xrange( self.table_size ) :             # <<<<<<<<<<<<<<
@@ -15240,7 +15240,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "MuchTree.pyx":849
+    /* "MuchTree.pyx":850
  * 
  *         for i in xrange( self.table_size ) :
  *             if not self.table[i].links == NULL :             # <<<<<<<<<<<<<<
@@ -15250,7 +15250,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
     __pyx_t_4 = ((!(((__pyx_v_self->table[__pyx_v_i]).links == NULL) != 0)) != 0);
     if (__pyx_t_4) {
 
-      /* "MuchTree.pyx":850
+      /* "MuchTree.pyx":851
  *         for i in xrange( self.table_size ) :
  *             if not self.table[i].links == NULL :
  *                 PyMem_Free( self.table[i].links )             # <<<<<<<<<<<<<<
@@ -15259,7 +15259,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
  */
       PyMem_Free((__pyx_v_self->table[__pyx_v_i]).links);
 
-      /* "MuchTree.pyx":849
+      /* "MuchTree.pyx":850
  * 
  *         for i in xrange( self.table_size ) :
  *             if not self.table[i].links == NULL :             # <<<<<<<<<<<<<<
@@ -15269,7 +15269,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
     }
   }
 
-  /* "MuchTree.pyx":854
+  /* "MuchTree.pyx":855
  *         #print id(self), 'freeing table', <unsigned int> &self.table
  * 
  *         PyMem_Free( self.table )             # <<<<<<<<<<<<<<
@@ -15278,7 +15278,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
  */
   PyMem_Free(__pyx_v_self->table);
 
-  /* "MuchTree.pyx":844
+  /* "MuchTree.pyx":845
  *         self._build_linklist()
  * 
  *     def __dealloc__( self ) :             # <<<<<<<<<<<<<<
@@ -15290,7 +15290,7 @@ static void __pyx_pf_8MuchTree_15SuchLinkedTrees_4__dealloc__(struct __pyx_obj_8
   __Pyx_RefNannyFinishContext();
 }
 
-/* "MuchTree.pyx":858
+/* "MuchTree.pyx":859
  *     property TreeA :
  *         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15316,7 +15316,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":859
+  /* "MuchTree.pyx":860
  *         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :
  *             return self.TreeA             # <<<<<<<<<<<<<<
@@ -15328,7 +15328,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __py
   __pyx_r = __pyx_v_self->TreeA;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":858
+  /* "MuchTree.pyx":859
  *     property TreeA :
  *         'first tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15343,7 +15343,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeA___get__(struct __py
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":863
+/* "MuchTree.pyx":864
  *     property TreeB :
  *         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15369,7 +15369,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":864
+  /* "MuchTree.pyx":865
  *         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :
  *             return self.TreeB             # <<<<<<<<<<<<<<
@@ -15381,7 +15381,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __py
   __pyx_r = __pyx_v_self->TreeB;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":863
+  /* "MuchTree.pyx":864
  *     property TreeB :
  *         'second tree initialized by SuchLinkedTrees( TreeA, TreeB )'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15396,7 +15396,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_5TreeB___get__(struct __py
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":868
+/* "MuchTree.pyx":869
  *     property n_links :
  *         'size of the link list'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15426,7 +15426,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":869
+  /* "MuchTree.pyx":870
  *         'size of the link list'
  *         def __get__( self ) :
  *             return self.n_links             # <<<<<<<<<<<<<<
@@ -15434,13 +15434,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __
  *     property n_cols :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_links); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 869, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_links); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 870, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":868
+  /* "MuchTree.pyx":869
  *     property n_links :
  *         'size of the link list'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15459,7 +15459,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7n_links___get__(struct __
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":873
+/* "MuchTree.pyx":874
  *     property n_cols :
  *         'Number of columns in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15489,7 +15489,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":874
+  /* "MuchTree.pyx":875
  *         'Number of columns in the link matrix.'
  *         def __get__( self ) :
  *             return self.n_cols             # <<<<<<<<<<<<<<
@@ -15497,13 +15497,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __p
  *     property n_rows :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_cols); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 874, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_cols); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 875, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":873
+  /* "MuchTree.pyx":874
  *     property n_cols :
  *         'Number of columns in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15522,7 +15522,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_cols___get__(struct __p
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":878
+/* "MuchTree.pyx":879
  *     property n_rows :
  *         'Number of rows in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15552,7 +15552,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":879
+  /* "MuchTree.pyx":880
  *         'Number of rows in the link matrix.'
  *         def __get__( self ) :
  *             return self.n_rows             # <<<<<<<<<<<<<<
@@ -15560,13 +15560,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __p
  *     property col_ids :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_rows); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 879, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_rows); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 880, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":878
+  /* "MuchTree.pyx":879
  *     property n_rows :
  *         'Number of rows in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15585,7 +15585,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6n_rows___get__(struct __p
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":883
+/* "MuchTree.pyx":884
  *     property col_ids :
  *         'ids of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15619,7 +15619,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":884
+  /* "MuchTree.pyx":885
  *         'ids of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_ids is None :             # <<<<<<<<<<<<<<
@@ -15630,16 +15630,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":885
+    /* "MuchTree.pyx":886
  *         def __get__( self ) :
  *             if self.col_ids is None :
  *                 self.col_ids = self.TreeB.leafs.values()             # <<<<<<<<<<<<<<
  *             return self.col_ids
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 885, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 886, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_values); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 885, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_values); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 886, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -15654,7 +15654,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
     }
     __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 885, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 886, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GIVEREF(__pyx_t_3);
@@ -15663,7 +15663,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
     __pyx_v_self->col_ids = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":884
+    /* "MuchTree.pyx":885
  *         'ids of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_ids is None :             # <<<<<<<<<<<<<<
@@ -15672,7 +15672,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
  */
   }
 
-  /* "MuchTree.pyx":886
+  /* "MuchTree.pyx":887
  *             if self.col_ids is None :
  *                 self.col_ids = self.TreeB.leafs.values()
  *             return self.col_ids             # <<<<<<<<<<<<<<
@@ -15684,7 +15684,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   __pyx_r = __pyx_v_self->col_ids;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":883
+  /* "MuchTree.pyx":884
  *     property col_ids :
  *         'ids of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15705,7 +15705,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7col_ids___get__(struct __
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":890
+/* "MuchTree.pyx":891
  *     property row_ids :
  *         'ids of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15739,7 +15739,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":891
+  /* "MuchTree.pyx":892
  *         'ids of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :
  *             if self.row_ids is None :             # <<<<<<<<<<<<<<
@@ -15750,16 +15750,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":892
+    /* "MuchTree.pyx":893
  *         def __get__( self ) :
  *             if self.row_ids is None :
  *                 self.row_ids = self.TreeA.leafs.values()             # <<<<<<<<<<<<<<
  *             return self.row_ids
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 892, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 893, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_values); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 892, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_values); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 893, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -15774,7 +15774,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
     }
     __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 892, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 893, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GIVEREF(__pyx_t_3);
@@ -15783,7 +15783,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
     __pyx_v_self->row_ids = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":891
+    /* "MuchTree.pyx":892
  *         'ids of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :
  *             if self.row_ids is None :             # <<<<<<<<<<<<<<
@@ -15792,7 +15792,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
  */
   }
 
-  /* "MuchTree.pyx":893
+  /* "MuchTree.pyx":894
  *             if self.row_ids is None :
  *                 self.row_ids = self.TreeA.leafs.values()
  *             return self.row_ids             # <<<<<<<<<<<<<<
@@ -15804,7 +15804,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   __pyx_r = __pyx_v_self->row_ids;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":890
+  /* "MuchTree.pyx":891
  *     property row_ids :
  *         'ids of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15825,7 +15825,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_7row_ids___get__(struct __
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":897
+/* "MuchTree.pyx":898
  *     property col_names :
  *         'Names of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15859,7 +15859,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":898
+  /* "MuchTree.pyx":899
  *         'Names of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_names is None :             # <<<<<<<<<<<<<<
@@ -15870,16 +15870,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":899
+    /* "MuchTree.pyx":900
  *         def __get__( self ) :
  *             if self.col_names is None :
  *                 self.col_names = self.TreeB.leafs.keys()             # <<<<<<<<<<<<<<
  *             return self.col_names
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 899, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 900, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_keys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 899, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_keys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 900, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -15894,7 +15894,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
     }
     __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 899, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 900, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GIVEREF(__pyx_t_3);
@@ -15903,7 +15903,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
     __pyx_v_self->col_names = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":898
+    /* "MuchTree.pyx":899
  *         'Names of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_names is None :             # <<<<<<<<<<<<<<
@@ -15912,7 +15912,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
  */
   }
 
-  /* "MuchTree.pyx":900
+  /* "MuchTree.pyx":901
  *             if self.col_names is None :
  *                 self.col_names = self.TreeB.leafs.keys()
  *             return self.col_names             # <<<<<<<<<<<<<<
@@ -15924,7 +15924,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   __pyx_r = __pyx_v_self->col_names;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":897
+  /* "MuchTree.pyx":898
  *     property col_names :
  *         'Names of the columns (TreeB) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15945,7 +15945,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9col_names___get__(struct 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":904
+/* "MuchTree.pyx":905
  *     property row_names :
  *         'Names of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -15979,7 +15979,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":905
+  /* "MuchTree.pyx":906
  *         'Names of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_ids is None :             # <<<<<<<<<<<<<<
@@ -15990,16 +15990,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":906
+    /* "MuchTree.pyx":907
  *         def __get__( self ) :
  *             if self.col_ids is None :
  *                 self.row_names = self.TreeA.leafs.keys()             # <<<<<<<<<<<<<<
  *             return self.row_names
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 906, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 907, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_keys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 906, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_keys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 907, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -16014,7 +16014,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
     }
     __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 906, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 907, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GIVEREF(__pyx_t_3);
@@ -16023,7 +16023,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
     __pyx_v_self->row_names = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":905
+    /* "MuchTree.pyx":906
  *         'Names of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :
  *             if self.col_ids is None :             # <<<<<<<<<<<<<<
@@ -16032,7 +16032,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
  */
   }
 
-  /* "MuchTree.pyx":907
+  /* "MuchTree.pyx":908
  *             if self.col_ids is None :
  *                 self.row_names = self.TreeA.leafs.keys()
  *             return self.row_names             # <<<<<<<<<<<<<<
@@ -16044,7 +16044,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   __pyx_r = __pyx_v_self->row_names;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":904
+  /* "MuchTree.pyx":905
  *     property row_names :
  *         'Names of the rows (TreeA) in the link matrix.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16065,7 +16065,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_9row_names___get__(struct 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":911
+/* "MuchTree.pyx":912
  *     property subset_columns :
  *         'ids of the current subset columns.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16091,7 +16091,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(s
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":912
+  /* "MuchTree.pyx":913
  *         'ids of the current subset columns.'
  *         def __get__( self ) :
  *             return self.subset_columns             # <<<<<<<<<<<<<<
@@ -16103,7 +16103,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(s
   __pyx_r = __pyx_v_self->subset_columns;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":911
+  /* "MuchTree.pyx":912
  *     property subset_columns :
  *         'ids of the current subset columns.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16118,7 +16118,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_columns___get__(s
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":916
+/* "MuchTree.pyx":917
  *     property subset_a_leafs :
  *         'ids of the current subset rows.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16144,7 +16144,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(s
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":917
+  /* "MuchTree.pyx":918
  *         'ids of the current subset rows.'
  *         def __get__( self ) :
  *             return self.subset_a_leafs             # <<<<<<<<<<<<<<
@@ -16156,7 +16156,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(s
   __pyx_r = __pyx_v_self->subset_a_leafs;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":916
+  /* "MuchTree.pyx":917
  *     property subset_a_leafs :
  *         'ids of the current subset rows.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16171,7 +16171,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_a_leafs___get__(s
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":921
+/* "MuchTree.pyx":922
  *     property subset_b_leafs :
  *         'ids of the current subset columns.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16197,7 +16197,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(s
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":922
+  /* "MuchTree.pyx":923
  *         'ids of the current subset columns.'
  *         def __get__( self ) :
  *             return self.subset_b_leafs             # <<<<<<<<<<<<<<
@@ -16209,7 +16209,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(s
   __pyx_r = __pyx_v_self->subset_b_leafs;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":921
+  /* "MuchTree.pyx":922
  *     property subset_b_leafs :
  *         'ids of the current subset columns.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16224,7 +16224,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_b_leafs___get__(s
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":926
+/* "MuchTree.pyx":927
  *     property subset_a_size :
  *         'Number of rows in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16254,7 +16254,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":927
+  /* "MuchTree.pyx":928
  *         'Number of rows in the current subset.'
  *         def __get__( self ) :
  *             return self.subset_a_size             # <<<<<<<<<<<<<<
@@ -16262,13 +16262,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(st
  *     property subset_b_size :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 927, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 928, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":926
+  /* "MuchTree.pyx":927
  *     property subset_a_size :
  *         'Number of rows in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16287,7 +16287,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_size___get__(st
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":931
+/* "MuchTree.pyx":932
  *     property subset_b_size :
  *         'Number of columns in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16317,7 +16317,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":932
+  /* "MuchTree.pyx":933
  *         'Number of columns in the current subset.'
  *         def __get__( self ) :
  *             return self.subset_b_size             # <<<<<<<<<<<<<<
@@ -16325,13 +16325,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(st
  *     property subset_a_root :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 932, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 933, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":931
+  /* "MuchTree.pyx":932
  *     property subset_b_size :
  *         'Number of columns in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16350,7 +16350,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_size___get__(st
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":936
+/* "MuchTree.pyx":937
  *     property subset_a_root :
  *         'ID of the current subset root in TreeA.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16380,7 +16380,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":937
+  /* "MuchTree.pyx":938
  *         'ID of the current subset root in TreeA.'
  *         def __get__( self ) :
  *             return self.subset_a_root             # <<<<<<<<<<<<<<
@@ -16388,13 +16388,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(st
  *     property subset_b_root :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 937, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 938, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":936
+  /* "MuchTree.pyx":937
  *     property subset_a_root :
  *         'ID of the current subset root in TreeA.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16413,7 +16413,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_a_root___get__(st
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":941
+/* "MuchTree.pyx":942
  *     property subset_b_root :
  *         'ID of the current subset root in TreeB.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16443,7 +16443,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":942
+  /* "MuchTree.pyx":943
  *         'ID of the current subset root in TreeB.'
  *         def __get__( self ) :
  *             return self.subset_b_root             # <<<<<<<<<<<<<<
@@ -16451,13 +16451,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(st
  *     property subset_n_links :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 942, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 943, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":941
+  /* "MuchTree.pyx":942
  *     property subset_b_root :
  *         'ID of the current subset root in TreeB.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16476,7 +16476,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_13subset_b_root___get__(st
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":946
+/* "MuchTree.pyx":947
  *     property subset_n_links :
  *         'Number of links in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16506,7 +16506,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(s
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":947
+  /* "MuchTree.pyx":948
  *         'Number of links in the current subset.'
  *         def __get__( self ) :
  *             return self.subset_n_links             # <<<<<<<<<<<<<<
@@ -16514,13 +16514,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(s
  *     def get_column_leafs( self, col, as_row_ids=False ) :
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_n_links); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 947, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_n_links); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 948, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":946
+  /* "MuchTree.pyx":947
  *     property subset_n_links :
  *         'Number of links in the current subset.'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -16539,7 +16539,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14subset_n_links___get__(s
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":949
+/* "MuchTree.pyx":950
  *             return self.subset_n_links
  * 
  *     def get_column_leafs( self, col, as_row_ids=False ) :             # <<<<<<<<<<<<<<
@@ -16586,7 +16586,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7get_column_leafs(PyObject
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_column_leafs") < 0)) __PYX_ERR(0, 949, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_column_leafs") < 0)) __PYX_ERR(0, 950, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -16602,7 +16602,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_7get_column_leafs(PyObject
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_column_leafs", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 949, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get_column_leafs", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 950, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.get_column_leafs", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -16636,7 +16636,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_column_leafs", 0);
 
-  /* "MuchTree.pyx":951
+  /* "MuchTree.pyx":952
  *     def get_column_leafs( self, col, as_row_ids=False ) :
  * 
  *         if isinstance(col, basestring) :             # <<<<<<<<<<<<<<
@@ -16647,14 +16647,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":952
+    /* "MuchTree.pyx":953
  * 
  *         if isinstance(col, basestring) :
  *             col_id = self.col_names.index( col )             # <<<<<<<<<<<<<<
  *         else :
  *             col_id = col
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->col_names, __pyx_n_s_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 952, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->col_names, __pyx_n_s_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 953, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -16668,13 +16668,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     }
     __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_v_col) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_col);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 952, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 953, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_col_id = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":951
+    /* "MuchTree.pyx":952
  *     def get_column_leafs( self, col, as_row_ids=False ) :
  * 
  *         if isinstance(col, basestring) :             # <<<<<<<<<<<<<<
@@ -16684,7 +16684,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":954
+  /* "MuchTree.pyx":955
  *             col_id = self.col_names.index( col )
  *         else :
  *             col_id = col             # <<<<<<<<<<<<<<
@@ -16697,29 +16697,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   }
   __pyx_L3:;
 
-  /* "MuchTree.pyx":956
+  /* "MuchTree.pyx":957
  *             col_id = col
  * 
  *         if col_id > self.n_cols :             # <<<<<<<<<<<<<<
  *             raise Exception( 'col_id out of bounds', col_id )
  * 
  */
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_cols); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 956, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_cols); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 957, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyObject_RichCompare(__pyx_v_col_id, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 956, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(__pyx_v_col_id, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 957, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 956, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 957, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":957
+    /* "MuchTree.pyx":958
  * 
  *         if col_id > self.n_cols :
  *             raise Exception( 'col_id out of bounds', col_id )             # <<<<<<<<<<<<<<
  * 
  *         length = self.table[ col_id ].length
  */
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 957, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 958, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_kp_u_col_id_out_of_bounds);
     __Pyx_GIVEREF(__pyx_kp_u_col_id_out_of_bounds);
@@ -16727,14 +16727,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     __Pyx_INCREF(__pyx_v_col_id);
     __Pyx_GIVEREF(__pyx_v_col_id);
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_col_id);
-    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 957, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 958, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 957, __pyx_L1_error)
+    __PYX_ERR(0, 958, __pyx_L1_error)
 
-    /* "MuchTree.pyx":956
+    /* "MuchTree.pyx":957
  *             col_id = col
  * 
  *         if col_id > self.n_cols :             # <<<<<<<<<<<<<<
@@ -16743,60 +16743,60 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
  */
   }
 
-  /* "MuchTree.pyx":959
+  /* "MuchTree.pyx":960
  *             raise Exception( 'col_id out of bounds', col_id )
  * 
  *         length = self.table[ col_id ].length             # <<<<<<<<<<<<<<
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :
  */
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 959, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int((__pyx_v_self->table[__pyx_t_6]).length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 959, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 960, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int((__pyx_v_self->table[__pyx_t_6]).length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 960, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_v_length = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":960
+  /* "MuchTree.pyx":961
  * 
  *         length = self.table[ col_id ].length
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )             # <<<<<<<<<<<<<<
  *         for i in xrange( length ) :
  *             if as_row_ids :
  */
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 960, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int((__pyx_v_self->table[__pyx_t_6]).length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 960, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 961, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int((__pyx_v_self->table[__pyx_t_6]).length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 961, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 960, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 961, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 960, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 961, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 960, __pyx_L1_error)
-  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 960, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 961, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 961, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_column = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "MuchTree.pyx":961
+  /* "MuchTree.pyx":962
  *         length = self.table[ col_id ].length
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :             # <<<<<<<<<<<<<<
  *             if as_row_ids :
  *                 column[i] = self.row_map[ self.table[ col_id ].links[i] ]
  */
-  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_xrange, __pyx_v_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 961, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_xrange, __pyx_v_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 962, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
     __pyx_t_3 = __pyx_t_5; __Pyx_INCREF(__pyx_t_3); __pyx_t_6 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 961, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 962, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 961, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 962, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   for (;;) {
@@ -16804,17 +16804,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 961, __pyx_L1_error)
+        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 962, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 961, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 962, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       } else {
         if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 961, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 962, __pyx_L1_error)
         #else
-        __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 961, __pyx_L1_error)
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 962, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         #endif
       }
@@ -16824,7 +16824,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 961, __pyx_L1_error)
+          else __PYX_ERR(0, 962, __pyx_L1_error)
         }
         break;
       }
@@ -16833,31 +16833,31 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "MuchTree.pyx":962
+    /* "MuchTree.pyx":963
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :
  *             if as_row_ids :             # <<<<<<<<<<<<<<
  *                 column[i] = self.row_map[ self.table[ col_id ].links[i] ]
  *             else :
  */
-    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_as_row_ids); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 962, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_as_row_ids); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 963, __pyx_L1_error)
     if (__pyx_t_2) {
 
-      /* "MuchTree.pyx":963
+      /* "MuchTree.pyx":964
  *         for i in xrange( length ) :
  *             if as_row_ids :
  *                 column[i] = self.row_map[ self.table[ col_id ].links[i] ]             # <<<<<<<<<<<<<<
  *             else :
  *                 column[i] = self.table[ col_id ].links[i]
  */
-      __pyx_t_8 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_8 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 963, __pyx_L1_error)
-      __pyx_t_9 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_9 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 963, __pyx_L1_error)
-      __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_self->row_map, ((__pyx_v_self->table[__pyx_t_8]).links[__pyx_t_9]), unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 963, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_8 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 964, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_9 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 964, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_self->row_map, ((__pyx_v_self->table[__pyx_t_8]).links[__pyx_t_9]), unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 964, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      if (unlikely(PyObject_SetItem(__pyx_v_column, __pyx_v_i, __pyx_t_5) < 0)) __PYX_ERR(0, 963, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_v_column, __pyx_v_i, __pyx_t_5) < 0)) __PYX_ERR(0, 964, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "MuchTree.pyx":962
+      /* "MuchTree.pyx":963
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :
  *             if as_row_ids :             # <<<<<<<<<<<<<<
@@ -16867,7 +16867,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
       goto __pyx_L7;
     }
 
-    /* "MuchTree.pyx":965
+    /* "MuchTree.pyx":966
  *                 column[i] = self.row_map[ self.table[ col_id ].links[i] ]
  *             else :
  *                 column[i] = self.table[ col_id ].links[i]             # <<<<<<<<<<<<<<
@@ -16875,16 +16875,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
  *         return column
  */
     /*else*/ {
-      __pyx_t_9 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_9 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 965, __pyx_L1_error)
-      __pyx_t_8 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_8 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 965, __pyx_L1_error)
-      __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(((__pyx_v_self->table[__pyx_t_9]).links[__pyx_t_8])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 965, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_9 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 966, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_8 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 966, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_From_unsigned_int(((__pyx_v_self->table[__pyx_t_9]).links[__pyx_t_8])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 966, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      if (unlikely(PyObject_SetItem(__pyx_v_column, __pyx_v_i, __pyx_t_5) < 0)) __PYX_ERR(0, 965, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_v_column, __pyx_v_i, __pyx_t_5) < 0)) __PYX_ERR(0, 966, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
     __pyx_L7:;
 
-    /* "MuchTree.pyx":961
+    /* "MuchTree.pyx":962
  *         length = self.table[ col_id ].length
  *         column = np.ndarray( self.table[ col_id ].length, dtype=int )
  *         for i in xrange( length ) :             # <<<<<<<<<<<<<<
@@ -16894,7 +16894,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":967
+  /* "MuchTree.pyx":968
  *                 column[i] = self.table[ col_id ].links[i]
  * 
  *         return column             # <<<<<<<<<<<<<<
@@ -16906,7 +16906,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   __pyx_r = __pyx_v_column;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":949
+  /* "MuchTree.pyx":950
  *             return self.subset_n_links
  * 
  *     def get_column_leafs( self, col, as_row_ids=False ) :             # <<<<<<<<<<<<<<
@@ -16931,7 +16931,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_6get_column_leafs(struct _
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":969
+/* "MuchTree.pyx":970
  *         return column
  * 
  *     def get_column_links( self, col ) :             # <<<<<<<<<<<<<<
@@ -16974,7 +16974,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_column_links", 0);
 
-  /* "MuchTree.pyx":971
+  /* "MuchTree.pyx":972
  *     def get_column_links( self, col ) :
  * 
  *         if isinstance(col, basestring) :             # <<<<<<<<<<<<<<
@@ -16985,14 +16985,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "MuchTree.pyx":972
+    /* "MuchTree.pyx":973
  * 
  *         if isinstance(col, basestring) :
  *             col_id = self.col_names.index( col )             # <<<<<<<<<<<<<<
  *         else :
  *             col_id = col
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->col_names, __pyx_n_s_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 972, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->col_names, __pyx_n_s_index); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 973, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -17006,13 +17006,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     }
     __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_v_col) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_col);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 972, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 973, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_col_id = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":971
+    /* "MuchTree.pyx":972
  *     def get_column_links( self, col ) :
  * 
  *         if isinstance(col, basestring) :             # <<<<<<<<<<<<<<
@@ -17022,7 +17022,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     goto __pyx_L3;
   }
 
-  /* "MuchTree.pyx":974
+  /* "MuchTree.pyx":975
  *             col_id = self.col_names.index( col )
  *         else :
  *             col_id = col             # <<<<<<<<<<<<<<
@@ -17035,29 +17035,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   }
   __pyx_L3:;
 
-  /* "MuchTree.pyx":976
+  /* "MuchTree.pyx":977
  *             col_id = col
  * 
  *         if col_id > self.n_cols :             # <<<<<<<<<<<<<<
  *             raise Exception( 'col_id out of bounds', col_id )
  * 
  */
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_cols); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 976, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_cols); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 977, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyObject_RichCompare(__pyx_v_col_id, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 976, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(__pyx_v_col_id, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 977, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 976, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 977, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (unlikely(__pyx_t_2)) {
 
-    /* "MuchTree.pyx":977
+    /* "MuchTree.pyx":978
  * 
  *         if col_id > self.n_cols :
  *             raise Exception( 'col_id out of bounds', col_id )             # <<<<<<<<<<<<<<
  * 
  *         length = self.table[ col_id ].length
  */
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 977, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 978, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_kp_u_col_id_out_of_bounds);
     __Pyx_GIVEREF(__pyx_kp_u_col_id_out_of_bounds);
@@ -17065,14 +17065,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     __Pyx_INCREF(__pyx_v_col_id);
     __Pyx_GIVEREF(__pyx_v_col_id);
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_col_id);
-    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 977, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 978, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(0, 977, __pyx_L1_error)
+    __PYX_ERR(0, 978, __pyx_L1_error)
 
-    /* "MuchTree.pyx":976
+    /* "MuchTree.pyx":977
  *             col_id = col
  * 
  *         if col_id > self.n_cols :             # <<<<<<<<<<<<<<
@@ -17081,42 +17081,42 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
  */
   }
 
-  /* "MuchTree.pyx":979
+  /* "MuchTree.pyx":980
  *             raise Exception( 'col_id out of bounds', col_id )
  * 
  *         length = self.table[ col_id ].length             # <<<<<<<<<<<<<<
  *         column = np.zeros( self.n_rows, dtype=bool )
  *         for i in xrange( length ) :
  */
-  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 979, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int((__pyx_v_self->table[__pyx_t_6]).length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 979, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_6 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 980, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int((__pyx_v_self->table[__pyx_t_6]).length); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 980, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_v_length = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":980
+  /* "MuchTree.pyx":981
  * 
  *         length = self.table[ col_id ].length
  *         column = np.zeros( self.n_rows, dtype=bool )             # <<<<<<<<<<<<<<
  *         for i in xrange( length ) :
  *             column[ self.row_map[ self.table[ col_id ].links[i] ] ] = True
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 980, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 981, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 980, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 981, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_rows); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 980, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->n_rows); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 981, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 980, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 981, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 980, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 981, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 980, __pyx_L1_error)
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 980, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 981, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 981, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -17124,22 +17124,22 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __pyx_v_column = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":981
+  /* "MuchTree.pyx":982
  *         length = self.table[ col_id ].length
  *         column = np.zeros( self.n_rows, dtype=bool )
  *         for i in xrange( length ) :             # <<<<<<<<<<<<<<
  *             column[ self.row_map[ self.table[ col_id ].links[i] ] ] = True
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_builtin_xrange, __pyx_v_length); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 981, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_CallOneArg(__pyx_builtin_xrange, __pyx_v_length); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 982, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (likely(PyList_CheckExact(__pyx_t_7)) || PyTuple_CheckExact(__pyx_t_7)) {
     __pyx_t_3 = __pyx_t_7; __Pyx_INCREF(__pyx_t_3); __pyx_t_6 = 0;
     __pyx_t_8 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 981, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 982, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 981, __pyx_L1_error)
+    __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 982, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   for (;;) {
@@ -17147,17 +17147,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 981, __pyx_L1_error)
+        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 982, __pyx_L1_error)
         #else
-        __pyx_t_7 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 981, __pyx_L1_error)
+        __pyx_t_7 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 982, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
       } else {
         if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 981, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 982, __pyx_L1_error)
         #else
-        __pyx_t_7 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 981, __pyx_L1_error)
+        __pyx_t_7 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 982, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
       }
@@ -17167,7 +17167,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 981, __pyx_L1_error)
+          else __PYX_ERR(0, 982, __pyx_L1_error)
         }
         break;
       }
@@ -17176,21 +17176,21 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":982
+    /* "MuchTree.pyx":983
  *         column = np.zeros( self.n_rows, dtype=bool )
  *         for i in xrange( length ) :
  *             column[ self.row_map[ self.table[ col_id ].links[i] ] ] = True             # <<<<<<<<<<<<<<
  * 
  *         return column
  */
-    __pyx_t_9 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_9 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 982, __pyx_L1_error)
-    __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 982, __pyx_L1_error)
-    __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_self->row_map, ((__pyx_v_self->table[__pyx_t_9]).links[__pyx_t_10]), unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 982, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col_id); if (unlikely((__pyx_t_9 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 983, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_v_i); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 983, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_self->row_map, ((__pyx_v_self->table[__pyx_t_9]).links[__pyx_t_10]), unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 983, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (unlikely(PyObject_SetItem(__pyx_v_column, __pyx_t_7, Py_True) < 0)) __PYX_ERR(0, 982, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_column, __pyx_t_7, Py_True) < 0)) __PYX_ERR(0, 983, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":981
+    /* "MuchTree.pyx":982
  *         length = self.table[ col_id ].length
  *         column = np.zeros( self.n_rows, dtype=bool )
  *         for i in xrange( length ) :             # <<<<<<<<<<<<<<
@@ -17200,7 +17200,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":984
+  /* "MuchTree.pyx":985
  *             column[ self.row_map[ self.table[ col_id ].links[i] ] ] = True
  * 
  *         return column             # <<<<<<<<<<<<<<
@@ -17212,7 +17212,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   __pyx_r = __pyx_v_column;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":969
+  /* "MuchTree.pyx":970
  *         return column
  * 
  *     def get_column_links( self, col ) :             # <<<<<<<<<<<<<<
@@ -17238,7 +17238,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8get_column_links(struct _
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":988
+/* "MuchTree.pyx":989
  *     property linkmatrix :
  *         'numpy representation of link matrix (generated only on access)'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -17268,18 +17268,18 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struc
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":989
+  /* "MuchTree.pyx":990
  *         'numpy representation of link matrix (generated only on access)'
  *         def __get__( self ) :
  *             self._build_linkmatrix()             # <<<<<<<<<<<<<<
  *             return self.np_table
  * 
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linkmatrix(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 989, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linkmatrix(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 990, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":990
+  /* "MuchTree.pyx":991
  *         def __get__( self ) :
  *             self._build_linkmatrix()
  *             return self.np_table             # <<<<<<<<<<<<<<
@@ -17291,7 +17291,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struc
   __pyx_r = __pyx_v_self->np_table;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":988
+  /* "MuchTree.pyx":989
  *     property linkmatrix :
  *         'numpy representation of link matrix (generated only on access)'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -17310,7 +17310,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10linkmatrix___get__(struc
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":993
+/* "MuchTree.pyx":994
  * 
  *     @cython.boundscheck(False)
  *     cdef _build_linkmatrix( self ) :             # <<<<<<<<<<<<<<
@@ -17344,23 +17344,23 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_build_linkmatrix", 0);
 
-  /* "MuchTree.pyx":1003
+  /* "MuchTree.pyx":1004
  *         cdef unsigned int row_id
  * 
  *         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )             # <<<<<<<<<<<<<<
  * 
  *         for col in self.subset_columns :
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1003, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1004, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1003, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1004, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1003, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1004, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1003, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1004, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1003, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1004, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
@@ -17368,15 +17368,15 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1003, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1004, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1003, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1004, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 1003, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1003, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 1004, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1004, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -17387,7 +17387,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   __pyx_v_self->np_table = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1005
+  /* "MuchTree.pyx":1006
  *         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )
  * 
  *         for col in self.subset_columns :             # <<<<<<<<<<<<<<
@@ -17398,26 +17398,26 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
     __pyx_t_1 = __pyx_v_self->subset_columns; __Pyx_INCREF(__pyx_t_1); __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_self->subset_columns); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1005, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_self->subset_columns); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1006, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1005, __pyx_L1_error)
+    __pyx_t_6 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1006, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_6)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_4); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1005, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_4); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1006, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1005, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1006, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_4); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1005, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_4); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1006, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1005, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1006, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -17427,7 +17427,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 1005, __pyx_L1_error)
+          else __PYX_ERR(0, 1006, __pyx_L1_error)
         }
         break;
       }
@@ -17436,30 +17436,30 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
     __Pyx_XDECREF_SET(__pyx_v_col, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1006
+    /* "MuchTree.pyx":1007
  * 
  *         for col in self.subset_columns :
  *             for j in xrange( self.table[col].length ) :             # <<<<<<<<<<<<<<
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :
  */
-    __pyx_t_7 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col); if (unlikely((__pyx_t_7 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 1006, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col); if (unlikely((__pyx_t_7 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 1007, __pyx_L1_error)
     __pyx_t_8 = (__pyx_v_self->table[__pyx_t_7]).length;
     __pyx_t_9 = __pyx_t_8;
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_v_j = __pyx_t_10;
 
-      /* "MuchTree.pyx":1007
+      /* "MuchTree.pyx":1008
  *         for col in self.subset_columns :
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]             # <<<<<<<<<<<<<<
  *                 for l in self.subset_a_leafs :
  *                     if l == m :
  */
-      __pyx_t_7 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col); if (unlikely((__pyx_t_7 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 1007, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyIndex_AsSsize_t(__pyx_v_col); if (unlikely((__pyx_t_7 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 1008, __pyx_L1_error)
       __pyx_v_m = ((__pyx_v_self->table[__pyx_t_7]).links[__pyx_v_j]);
 
-      /* "MuchTree.pyx":1008
+      /* "MuchTree.pyx":1009
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :             # <<<<<<<<<<<<<<
@@ -17470,26 +17470,26 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
         __pyx_t_4 = __pyx_v_self->subset_a_leafs; __Pyx_INCREF(__pyx_t_4); __pyx_t_7 = 0;
         __pyx_t_11 = NULL;
       } else {
-        __pyx_t_7 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_v_self->subset_a_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1008, __pyx_L1_error)
+        __pyx_t_7 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_v_self->subset_a_leafs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1009, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 1008, __pyx_L1_error)
+        __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 1009, __pyx_L1_error)
       }
       for (;;) {
         if (likely(!__pyx_t_11)) {
           if (likely(PyList_CheckExact(__pyx_t_4))) {
             if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_4)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_3); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 1008, __pyx_L1_error)
+            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_3); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 1009, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1008, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1009, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           } else {
             if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_3); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 1008, __pyx_L1_error)
+            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_3); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 1009, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1008, __pyx_L1_error)
+            __pyx_t_3 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1009, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_3);
             #endif
           }
@@ -17499,17 +17499,17 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 1008, __pyx_L1_error)
+              else __PYX_ERR(0, 1009, __pyx_L1_error)
             }
             break;
           }
           __Pyx_GOTREF(__pyx_t_3);
         }
-        __pyx_t_12 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_12 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1008, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_12 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1009, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_v_l = __pyx_t_12;
 
-        /* "MuchTree.pyx":1009
+        /* "MuchTree.pyx":1010
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :
  *                     if l == m :             # <<<<<<<<<<<<<<
@@ -17519,29 +17519,29 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
         __pyx_t_13 = ((__pyx_v_l == __pyx_v_m) != 0);
         if (__pyx_t_13) {
 
-          /* "MuchTree.pyx":1010
+          /* "MuchTree.pyx":1011
  *                 for l in self.subset_a_leafs :
  *                     if l == m :
  *                         row_id = self.row_map[ m ]             # <<<<<<<<<<<<<<
  *                         self.np_table[ row_id, col ] = True
  *                         continue
  */
-          __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_self->row_map, __pyx_v_m, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1010, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_self->row_map, __pyx_v_m, unsigned int, 0, __Pyx_PyInt_From_unsigned_int, 0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1011, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_12 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_12 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1010, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PyInt_As_unsigned_int(__pyx_t_3); if (unlikely((__pyx_t_12 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1011, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_v_row_id = __pyx_t_12;
 
-          /* "MuchTree.pyx":1011
+          /* "MuchTree.pyx":1012
  *                     if l == m :
  *                         row_id = self.row_map[ m ]
  *                         self.np_table[ row_id, col ] = True             # <<<<<<<<<<<<<<
  *                         continue
  * 
  */
-          __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_row_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1011, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_row_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1012, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1011, __pyx_L1_error)
+          __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1012, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_GIVEREF(__pyx_t_3);
           PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3);
@@ -17549,10 +17549,10 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
           __Pyx_GIVEREF(__pyx_v_col);
           PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_v_col);
           __pyx_t_3 = 0;
-          if (unlikely(PyObject_SetItem(__pyx_v_self->np_table, __pyx_t_2, Py_True) < 0)) __PYX_ERR(0, 1011, __pyx_L1_error)
+          if (unlikely(PyObject_SetItem(__pyx_v_self->np_table, __pyx_t_2, Py_True) < 0)) __PYX_ERR(0, 1012, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-          /* "MuchTree.pyx":1012
+          /* "MuchTree.pyx":1013
  *                         row_id = self.row_map[ m ]
  *                         self.np_table[ row_id, col ] = True
  *                         continue             # <<<<<<<<<<<<<<
@@ -17561,7 +17561,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
  */
           goto __pyx_L7_continue;
 
-          /* "MuchTree.pyx":1009
+          /* "MuchTree.pyx":1010
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :
  *                     if l == m :             # <<<<<<<<<<<<<<
@@ -17570,7 +17570,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
  */
         }
 
-        /* "MuchTree.pyx":1008
+        /* "MuchTree.pyx":1009
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]
  *                 for l in self.subset_a_leafs :             # <<<<<<<<<<<<<<
@@ -17582,7 +17582,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
 
-    /* "MuchTree.pyx":1005
+    /* "MuchTree.pyx":1006
  *         self.np_table = np.zeros( (self.subset_a_size, self.subset_b_size), dtype=bool )
  * 
  *         for col in self.subset_columns :             # <<<<<<<<<<<<<<
@@ -17592,7 +17592,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":993
+  /* "MuchTree.pyx":994
  * 
  *     @cython.boundscheck(False)
  *     cdef _build_linkmatrix( self ) :             # <<<<<<<<<<<<<<
@@ -17617,7 +17617,7 @@ static PyObject *__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix(struct __
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1016
+/* "MuchTree.pyx":1017
  *     property linklist :
  *         'numpy representation of link list'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -17648,7 +17648,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "MuchTree.pyx":1018
+  /* "MuchTree.pyx":1019
  *         def __get__( self ) :
  *             # length will be shorter with subsetted link matrixes
  *             return self.np_linklist[:self.subset_n_links,:]             # <<<<<<<<<<<<<<
@@ -17656,12 +17656,12 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_n_links); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1018, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_n_links); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1019, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PySlice_New(Py_None, __pyx_t_1, Py_None); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1018, __pyx_L1_error)
+  __pyx_t_2 = PySlice_New(Py_None, __pyx_t_1, Py_None); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1019, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1018, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1019, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
@@ -17669,14 +17669,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
   __Pyx_GIVEREF(__pyx_slice__8);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_slice__8);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_self->np_linklist, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1018, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_self->np_linklist, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1019, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1016
+  /* "MuchTree.pyx":1017
  *     property linklist :
  *         'numpy representation of link list'
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
@@ -17696,7 +17696,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_8linklist___get__(struct _
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1021
+/* "MuchTree.pyx":1022
  * 
  *     @cython.boundscheck(False)
  *     cdef void _build_linklist( self ) :             # <<<<<<<<<<<<<<
@@ -17738,7 +17738,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_build_linklist", 0);
 
-  /* "MuchTree.pyx":1028
+  /* "MuchTree.pyx":1029
  *         cdef unsigned int n
  *         cdef unsigned int col
  *         cdef unsigned int k = 0             # <<<<<<<<<<<<<<
@@ -17747,67 +17747,67 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
   __pyx_v_k = 0;
 
-  /* "MuchTree.pyx":1031
+  /* "MuchTree.pyx":1032
  * 
  *         # Memoryviews into numpy arrays
  *         cdef long [:] col_ids        = self.col_ids             # <<<<<<<<<<<<<<
  *         cdef long [:] subset_columns = self.subset_columns
  *         cdef long [:] subset_a_leafs = self.subset_a_leafs
  */
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_self->col_ids, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 1031, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_self->col_ids, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 1032, __pyx_L1_error)
   __pyx_v_col_ids = __pyx_t_1;
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "MuchTree.pyx":1032
+  /* "MuchTree.pyx":1033
  *         # Memoryviews into numpy arrays
  *         cdef long [:] col_ids        = self.col_ids
  *         cdef long [:] subset_columns = self.subset_columns             # <<<<<<<<<<<<<<
  *         cdef long [:] subset_a_leafs = self.subset_a_leafs
  *         cdef long [:] subset_b_leafs = self.subset_b_leafs
  */
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_self->subset_columns, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 1032, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_self->subset_columns, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 1033, __pyx_L1_error)
   __pyx_v_subset_columns = __pyx_t_1;
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "MuchTree.pyx":1033
+  /* "MuchTree.pyx":1034
  *         cdef long [:] col_ids        = self.col_ids
  *         cdef long [:] subset_columns = self.subset_columns
  *         cdef long [:] subset_a_leafs = self.subset_a_leafs             # <<<<<<<<<<<<<<
  *         cdef long [:] subset_b_leafs = self.subset_b_leafs
  *         cdef long [:,:] np_linklist  = self.np_linklist
  */
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_self->subset_a_leafs, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 1033, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_self->subset_a_leafs, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 1034, __pyx_L1_error)
   __pyx_v_subset_a_leafs = __pyx_t_1;
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "MuchTree.pyx":1034
+  /* "MuchTree.pyx":1035
  *         cdef long [:] subset_columns = self.subset_columns
  *         cdef long [:] subset_a_leafs = self.subset_a_leafs
  *         cdef long [:] subset_b_leafs = self.subset_b_leafs             # <<<<<<<<<<<<<<
  *         cdef long [:,:] np_linklist  = self.np_linklist
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_self->subset_b_leafs, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 1034, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_self->subset_b_leafs, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 1035, __pyx_L1_error)
   __pyx_v_subset_b_leafs = __pyx_t_1;
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "MuchTree.pyx":1035
+  /* "MuchTree.pyx":1036
  *         cdef long [:] subset_a_leafs = self.subset_a_leafs
  *         cdef long [:] subset_b_leafs = self.subset_b_leafs
  *         cdef long [:,:] np_linklist  = self.np_linklist             # <<<<<<<<<<<<<<
  * 
  *         for i in xrange( self.subset_b_size ) :
  */
-  __pyx_t_2 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_self->np_linklist, PyBUF_WRITABLE); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 1035, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_self->np_linklist, PyBUF_WRITABLE); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 1036, __pyx_L1_error)
   __pyx_v_np_linklist = __pyx_t_2;
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "MuchTree.pyx":1037
+  /* "MuchTree.pyx":1038
  *         cdef long [:,:] np_linklist  = self.np_linklist
  * 
  *         for i in xrange( self.subset_b_size ) :             # <<<<<<<<<<<<<<
@@ -17819,7 +17819,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_i = __pyx_t_5;
 
-    /* "MuchTree.pyx":1038
+    /* "MuchTree.pyx":1039
  * 
  *         for i in xrange( self.subset_b_size ) :
  *             col = subset_columns[i]             # <<<<<<<<<<<<<<
@@ -17829,7 +17829,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
     __pyx_t_6 = __pyx_v_i;
     __pyx_v_col = (*((long *) ( /* dim=0 */ (__pyx_v_subset_columns.data + __pyx_t_6 * __pyx_v_subset_columns.strides[0]) )));
 
-    /* "MuchTree.pyx":1039
+    /* "MuchTree.pyx":1040
  *         for i in xrange( self.subset_b_size ) :
  *             col = subset_columns[i]
  *             for j in xrange( self.table[col].length ) :             # <<<<<<<<<<<<<<
@@ -17841,7 +17841,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
       __pyx_v_j = __pyx_t_9;
 
-      /* "MuchTree.pyx":1040
+      /* "MuchTree.pyx":1041
  *             col = subset_columns[i]
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]             # <<<<<<<<<<<<<<
@@ -17850,7 +17850,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
       __pyx_v_m = ((__pyx_v_self->table[__pyx_v_col]).links[__pyx_v_j]);
 
-      /* "MuchTree.pyx":1041
+      /* "MuchTree.pyx":1042
  *             for j in xrange( self.table[col].length ) :
  *                 m = self.table[col].links[j]
  *                 for l in xrange( self.subset_a_size ) :             # <<<<<<<<<<<<<<
@@ -17862,7 +17862,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
       for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
         __pyx_v_l = __pyx_t_12;
 
-        /* "MuchTree.pyx":1042
+        /* "MuchTree.pyx":1043
  *                 m = self.table[col].links[j]
  *                 for l in xrange( self.subset_a_size ) :
  *                     n = subset_a_leafs[l]             # <<<<<<<<<<<<<<
@@ -17872,7 +17872,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
         __pyx_t_6 = __pyx_v_l;
         __pyx_v_n = (*((long *) ( /* dim=0 */ (__pyx_v_subset_a_leafs.data + __pyx_t_6 * __pyx_v_subset_a_leafs.strides[0]) )));
 
-        /* "MuchTree.pyx":1043
+        /* "MuchTree.pyx":1044
  *                 for l in xrange( self.subset_a_size ) :
  *                     n = subset_a_leafs[l]
  *                     if n == m :             # <<<<<<<<<<<<<<
@@ -17882,7 +17882,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
         __pyx_t_13 = ((__pyx_v_n == __pyx_v_m) != 0);
         if (__pyx_t_13) {
 
-          /* "MuchTree.pyx":1044
+          /* "MuchTree.pyx":1045
  *                     n = subset_a_leafs[l]
  *                     if n == m :
  *                         np_linklist[ k, 0 ] = col_ids[col]             # <<<<<<<<<<<<<<
@@ -17895,7 +17895,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
           if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_np_linklist.shape[1];
           *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_np_linklist.data + __pyx_t_14 * __pyx_v_np_linklist.strides[0]) ) + __pyx_t_15 * __pyx_v_np_linklist.strides[1]) )) = (*((long *) ( /* dim=0 */ (__pyx_v_col_ids.data + __pyx_t_6 * __pyx_v_col_ids.strides[0]) )));
 
-          /* "MuchTree.pyx":1045
+          /* "MuchTree.pyx":1046
  *                     if n == m :
  *                         np_linklist[ k, 0 ] = col_ids[col]
  *                         np_linklist[ k, 1 ] = m             # <<<<<<<<<<<<<<
@@ -17907,7 +17907,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
           if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_np_linklist.shape[1];
           *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_np_linklist.data + __pyx_t_6 * __pyx_v_np_linklist.strides[0]) ) + __pyx_t_15 * __pyx_v_np_linklist.strides[1]) )) = __pyx_v_m;
 
-          /* "MuchTree.pyx":1046
+          /* "MuchTree.pyx":1047
  *                         np_linklist[ k, 0 ] = col_ids[col]
  *                         np_linklist[ k, 1 ] = m
  *                         k += 1             # <<<<<<<<<<<<<<
@@ -17916,7 +17916,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
           __pyx_v_k = (__pyx_v_k + 1);
 
-          /* "MuchTree.pyx":1047
+          /* "MuchTree.pyx":1048
  *                         np_linklist[ k, 1 ] = m
  *                         k += 1
  *                         continue             # <<<<<<<<<<<<<<
@@ -17925,7 +17925,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
           goto __pyx_L7_continue;
 
-          /* "MuchTree.pyx":1043
+          /* "MuchTree.pyx":1044
  *                 for l in xrange( self.subset_a_size ) :
  *                     n = subset_a_leafs[l]
  *                     if n == m :             # <<<<<<<<<<<<<<
@@ -17938,7 +17938,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
     }
   }
 
-  /* "MuchTree.pyx":1049
+  /* "MuchTree.pyx":1050
  *                         continue
  * 
  *         self.subset_n_links = k             # <<<<<<<<<<<<<<
@@ -17947,7 +17947,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
  */
   __pyx_v_self->subset_n_links = __pyx_v_k;
 
-  /* "MuchTree.pyx":1021
+  /* "MuchTree.pyx":1022
  * 
  *     @cython.boundscheck(False)
  *     cdef void _build_linklist( self ) :             # <<<<<<<<<<<<<<
@@ -17970,7 +17970,7 @@ static void __pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist(struct __pyx_obj
   __Pyx_RefNannyFinishContext();
 }
 
-/* "MuchTree.pyx":1051
+/* "MuchTree.pyx":1052
  *         self.subset_n_links = k
  * 
  *     def subset_b( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -18007,39 +18007,39 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("subset_b", 0);
 
-  /* "MuchTree.pyx":1054
+  /* "MuchTree.pyx":1055
  *         'subset the link matrix to leafs desended from node_id in TreeB'
  * 
  *         if node_id > self.TreeB.length or node_id < 0 :             # <<<<<<<<<<<<<<
  *             raise Exception( 'Node ID out of bounds.', node_id )
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1054, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1055, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_v_node_id, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1054, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_v_node_id, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1055, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 1054, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 1055, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (!__pyx_t_4) {
   } else {
     __pyx_t_1 = __pyx_t_4;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = PyObject_RichCompare(__pyx_v_node_id, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1054, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 1054, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_v_node_id, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1055, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 1055, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_1 = __pyx_t_4;
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":1055
+    /* "MuchTree.pyx":1056
  * 
  *         if node_id > self.TreeB.length or node_id < 0 :
  *             raise Exception( 'Node ID out of bounds.', node_id )             # <<<<<<<<<<<<<<
  * 
  *         self.subset_b_leafs = self.TreeB.get_leafs( node_id )
  */
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1055, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1056, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_kp_u_Node_ID_out_of_bounds);
     __Pyx_GIVEREF(__pyx_kp_u_Node_ID_out_of_bounds);
@@ -18047,14 +18047,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
     __Pyx_INCREF(__pyx_v_node_id);
     __Pyx_GIVEREF(__pyx_v_node_id);
     PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_node_id);
-    __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1055, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1056, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1055, __pyx_L1_error)
+    __PYX_ERR(0, 1056, __pyx_L1_error)
 
-    /* "MuchTree.pyx":1054
+    /* "MuchTree.pyx":1055
  *         'subset the link matrix to leafs desended from node_id in TreeB'
  * 
  *         if node_id > self.TreeB.length or node_id < 0 :             # <<<<<<<<<<<<<<
@@ -18063,14 +18063,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
  */
   }
 
-  /* "MuchTree.pyx":1057
+  /* "MuchTree.pyx":1058
  *             raise Exception( 'Node ID out of bounds.', node_id )
  * 
  *         self.subset_b_leafs = self.TreeB.get_leafs( node_id )             # <<<<<<<<<<<<<<
  *         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )
  *         self.subset_b_size  = len( self.subset_columns )
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_get_leafs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1057, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_get_leafs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1058, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -18084,7 +18084,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   }
   __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_node_id) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_node_id);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1057, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1058, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
@@ -18093,14 +18093,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   __pyx_v_self->subset_b_leafs = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1058
+  /* "MuchTree.pyx":1059
  * 
  *         self.subset_b_leafs = self.TreeB.get_leafs( node_id )
  *         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )             # <<<<<<<<<<<<<<
  *         self.subset_b_size  = len( self.subset_columns )
  *         self.subset_b_root  = node_id
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_get_links); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1058, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_get_links); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1059, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -18114,7 +18114,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   }
   __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_self->subset_b_leafs) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_self->subset_b_leafs);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1058, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1059, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
@@ -18123,7 +18123,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   __pyx_v_self->subset_columns = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1059
+  /* "MuchTree.pyx":1060
  *         self.subset_b_leafs = self.TreeB.get_leafs( node_id )
  *         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )
  *         self.subset_b_size  = len( self.subset_columns )             # <<<<<<<<<<<<<<
@@ -18132,21 +18132,21 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
  */
   __pyx_t_2 = __pyx_v_self->subset_columns;
   __Pyx_INCREF(__pyx_t_2);
-  __pyx_t_6 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1059, __pyx_L1_error)
+  __pyx_t_6 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1060, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_self->subset_b_size = __pyx_t_6;
 
-  /* "MuchTree.pyx":1060
+  /* "MuchTree.pyx":1061
  *         self.subset_columns = self.TreeB.get_links( self.subset_b_leafs )
  *         self.subset_b_size  = len( self.subset_columns )
  *         self.subset_b_root  = node_id             # <<<<<<<<<<<<<<
  *         self._build_linklist()
  * 
  */
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_v_node_id); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1060, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_v_node_id); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1061, __pyx_L1_error)
   __pyx_v_self->subset_b_root = __pyx_t_7;
 
-  /* "MuchTree.pyx":1061
+  /* "MuchTree.pyx":1062
  *         self.subset_b_size  = len( self.subset_columns )
  *         self.subset_b_root  = node_id
  *         self._build_linklist()             # <<<<<<<<<<<<<<
@@ -18155,7 +18155,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
  */
   ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
 
-  /* "MuchTree.pyx":1051
+  /* "MuchTree.pyx":1052
  *         self.subset_n_links = k
  * 
  *     def subset_b( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -18178,7 +18178,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_10subset_b(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1063
+/* "MuchTree.pyx":1064
  *         self._build_linklist()
  * 
  *     def subset_a( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -18215,39 +18215,39 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("subset_a", 0);
 
-  /* "MuchTree.pyx":1066
+  /* "MuchTree.pyx":1067
  *         'subset the link matrix to leafs desended from node_id in TreeA'
  * 
  *         if node_id > self.TreeA.length or node_id < 0 :             # <<<<<<<<<<<<<<
  *             raise Exception( 'Node ID out of bounds.', node_id )
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1066, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_length); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1067, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_v_node_id, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1066, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_v_node_id, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1067, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 1066, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 1067, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (!__pyx_t_4) {
   } else {
     __pyx_t_1 = __pyx_t_4;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = PyObject_RichCompare(__pyx_v_node_id, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1066, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 1066, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_v_node_id, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1067, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 1067, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_1 = __pyx_t_4;
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "MuchTree.pyx":1067
+    /* "MuchTree.pyx":1068
  * 
  *         if node_id > self.TreeA.length or node_id < 0 :
  *             raise Exception( 'Node ID out of bounds.', node_id )             # <<<<<<<<<<<<<<
  * 
  *         self.subset_a_leafs = self.TreeA.get_leafs( node_id )
  */
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1067, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1068, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_kp_u_Node_ID_out_of_bounds);
     __Pyx_GIVEREF(__pyx_kp_u_Node_ID_out_of_bounds);
@@ -18255,14 +18255,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
     __Pyx_INCREF(__pyx_v_node_id);
     __Pyx_GIVEREF(__pyx_v_node_id);
     PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_node_id);
-    __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1067, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1068, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 1067, __pyx_L1_error)
+    __PYX_ERR(0, 1068, __pyx_L1_error)
 
-    /* "MuchTree.pyx":1066
+    /* "MuchTree.pyx":1067
  *         'subset the link matrix to leafs desended from node_id in TreeA'
  * 
  *         if node_id > self.TreeA.length or node_id < 0 :             # <<<<<<<<<<<<<<
@@ -18271,14 +18271,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
  */
   }
 
-  /* "MuchTree.pyx":1069
+  /* "MuchTree.pyx":1070
  *             raise Exception( 'Node ID out of bounds.', node_id )
  * 
  *         self.subset_a_leafs = self.TreeA.get_leafs( node_id )             # <<<<<<<<<<<<<<
  *         self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )
  *         self.subset_a_size  = len( self.subset_rows )
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_get_leafs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1069, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_get_leafs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1070, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -18292,7 +18292,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   }
   __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_node_id) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_node_id);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1069, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1070, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
@@ -18301,14 +18301,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   __pyx_v_self->subset_a_leafs = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1070
+  /* "MuchTree.pyx":1071
  * 
  *         self.subset_a_leafs = self.TreeA.get_leafs( node_id )
  *         self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )             # <<<<<<<<<<<<<<
  *         self.subset_a_size  = len( self.subset_rows )
  *         self.subset_a_root  = node_id
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_get_links); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1070, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_get_links); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1071, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -18322,7 +18322,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   }
   __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_self->subset_a_leafs) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_self->subset_a_leafs);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1070, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1071, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
@@ -18331,7 +18331,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   __pyx_v_self->subset_rows = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1071
+  /* "MuchTree.pyx":1072
  *         self.subset_a_leafs = self.TreeA.get_leafs( node_id )
  *         self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )
  *         self.subset_a_size  = len( self.subset_rows )             # <<<<<<<<<<<<<<
@@ -18340,21 +18340,21 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
  */
   __pyx_t_2 = __pyx_v_self->subset_rows;
   __Pyx_INCREF(__pyx_t_2);
-  __pyx_t_6 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1071, __pyx_L1_error)
+  __pyx_t_6 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1072, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_self->subset_a_size = __pyx_t_6;
 
-  /* "MuchTree.pyx":1072
+  /* "MuchTree.pyx":1073
  *         self.subset_rows    = self.TreeA.get_links( self.subset_a_leafs )
  *         self.subset_a_size  = len( self.subset_rows )
  *         self.subset_a_root  = node_id             # <<<<<<<<<<<<<<
  *         self._build_linklist()
  * 
  */
-  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_v_node_id); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1072, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_unsigned_int(__pyx_v_node_id); if (unlikely((__pyx_t_7 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1073, __pyx_L1_error)
   __pyx_v_self->subset_a_root = __pyx_t_7;
 
-  /* "MuchTree.pyx":1073
+  /* "MuchTree.pyx":1074
  *         self.subset_a_size  = len( self.subset_rows )
  *         self.subset_a_root  = node_id
  *         self._build_linklist()             # <<<<<<<<<<<<<<
@@ -18363,7 +18363,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
  */
   ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_build_linklist(__pyx_v_self);
 
-  /* "MuchTree.pyx":1063
+  /* "MuchTree.pyx":1064
  *         self._build_linklist()
  * 
  *     def subset_a( self, node_id ) :             # <<<<<<<<<<<<<<
@@ -18386,7 +18386,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1076
+/* "MuchTree.pyx":1077
  * 
  *     @cython.boundscheck(False)
  *     def linked_distances( self ) :             # <<<<<<<<<<<<<<
@@ -18440,7 +18440,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("linked_distances", 0);
 
-  /* "MuchTree.pyx":1083
+  /* "MuchTree.pyx":1084
  *         cdef unsigned int i
  *         cdef unsigned int j
  *         cdef unsigned int k = 0             # <<<<<<<<<<<<<<
@@ -18449,7 +18449,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  */
   __pyx_v_k = 0;
 
-  /* "MuchTree.pyx":1084
+  /* "MuchTree.pyx":1085
  *         cdef unsigned int j
  *         cdef unsigned int k = 0
  *         cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) // 2             # <<<<<<<<<<<<<<
@@ -18458,16 +18458,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  */
   __pyx_v_size = __Pyx_div_long((__pyx_v_self->subset_n_links * (__pyx_v_self->subset_n_links - 1)), 2);
 
-  /* "MuchTree.pyx":1086
+  /* "MuchTree.pyx":1087
  *         cdef unsigned int size = ( self.subset_n_links * (self.subset_n_links-1) ) // 2
  * 
  *         ids_a = np.ndarray( ( size, 2 ), dtype=int )             # <<<<<<<<<<<<<<
  *         ids_b = np.ndarray( ( size, 2 ), dtype=int )
  * 
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1086, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1087, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1086, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1087, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -18475,31 +18475,31 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __Pyx_GIVEREF(__pyx_int_2);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_2);
   __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1086, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1087, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1086, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1087, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1086, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1086, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1087, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1087, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_ids_a = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1087
+  /* "MuchTree.pyx":1088
  * 
  *         ids_a = np.ndarray( ( size, 2 ), dtype=int )
  *         ids_b = np.ndarray( ( size, 2 ), dtype=int )             # <<<<<<<<<<<<<<
  * 
  *         cdef long [:,:] linklist = self.np_linklist
  */
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1087, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1088, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1087, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1088, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3);
@@ -18507,58 +18507,58 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   __Pyx_GIVEREF(__pyx_int_2);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_2);
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1087, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1088, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1087, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1088, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1087, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1087, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1088, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1088, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_ids_b = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1089
+  /* "MuchTree.pyx":1090
  *         ids_b = np.ndarray( ( size, 2 ), dtype=int )
  * 
  *         cdef long [:,:] linklist = self.np_linklist             # <<<<<<<<<<<<<<
  *         cdef long [:,:] IDs_a = ids_a
  *         cdef long [:,:] IDs_b = ids_b
  */
-  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_self->np_linklist, PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 1089, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_self->np_linklist, PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 1090, __pyx_L1_error)
   __pyx_v_linklist = __pyx_t_4;
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "MuchTree.pyx":1090
+  /* "MuchTree.pyx":1091
  * 
  *         cdef long [:,:] linklist = self.np_linklist
  *         cdef long [:,:] IDs_a = ids_a             # <<<<<<<<<<<<<<
  *         cdef long [:,:] IDs_b = ids_b
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_ids_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 1090, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_ids_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 1091, __pyx_L1_error)
   __pyx_v_IDs_a = __pyx_t_4;
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "MuchTree.pyx":1091
+  /* "MuchTree.pyx":1092
  *         cdef long [:,:] linklist = self.np_linklist
  *         cdef long [:,:] IDs_a = ids_a
  *         cdef long [:,:] IDs_b = ids_b             # <<<<<<<<<<<<<<
  * 
  *         with nogil :
  */
-  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_ids_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 1091, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_ids_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 1092, __pyx_L1_error)
   __pyx_v_IDs_b = __pyx_t_4;
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "MuchTree.pyx":1093
+  /* "MuchTree.pyx":1094
  *         cdef long [:,:] IDs_b = ids_b
  * 
  *         with nogil :             # <<<<<<<<<<<<<<
@@ -18573,7 +18573,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
       #endif
       /*try:*/ {
 
-        /* "MuchTree.pyx":1094
+        /* "MuchTree.pyx":1095
  * 
  *         with nogil :
  *             for i in xrange( self.subset_n_links ) :             # <<<<<<<<<<<<<<
@@ -18585,7 +18585,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
         for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
           __pyx_v_i = __pyx_t_7;
 
-          /* "MuchTree.pyx":1095
+          /* "MuchTree.pyx":1096
  *         with nogil :
  *             for i in xrange( self.subset_n_links ) :
  *                 for j in xrange( i ) :             # <<<<<<<<<<<<<<
@@ -18597,7 +18597,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
           for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
             __pyx_v_j = __pyx_t_10;
 
-            /* "MuchTree.pyx":1096
+            /* "MuchTree.pyx":1097
  *             for i in xrange( self.subset_n_links ) :
  *                 for j in xrange( i ) :
  *                     IDs_a[ k, 1 ] = linklist[ i, 1 ]             # <<<<<<<<<<<<<<
@@ -18612,7 +18612,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
             if (__pyx_t_14 < 0) __pyx_t_14 += __pyx_v_IDs_a.shape[1];
             *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_IDs_a.data + __pyx_t_13 * __pyx_v_IDs_a.strides[0]) ) + __pyx_t_14 * __pyx_v_IDs_a.strides[1]) )) = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_11 * __pyx_v_linklist.strides[0]) ) + __pyx_t_12 * __pyx_v_linklist.strides[1]) )));
 
-            /* "MuchTree.pyx":1097
+            /* "MuchTree.pyx":1098
  *                 for j in xrange( i ) :
  *                     IDs_a[ k, 1 ] = linklist[ i, 1 ]
  *                     IDs_a[ k, 0 ] = linklist[ j, 1 ]             # <<<<<<<<<<<<<<
@@ -18627,7 +18627,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
             if (__pyx_t_14 < 0) __pyx_t_14 += __pyx_v_IDs_a.shape[1];
             *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_IDs_a.data + __pyx_t_13 * __pyx_v_IDs_a.strides[0]) ) + __pyx_t_14 * __pyx_v_IDs_a.strides[1]) )) = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_11 * __pyx_v_linklist.strides[0]) ) + __pyx_t_12 * __pyx_v_linklist.strides[1]) )));
 
-            /* "MuchTree.pyx":1098
+            /* "MuchTree.pyx":1099
  *                     IDs_a[ k, 1 ] = linklist[ i, 1 ]
  *                     IDs_a[ k, 0 ] = linklist[ j, 1 ]
  *                     IDs_b[ k, 1 ] = linklist[ i, 0 ]             # <<<<<<<<<<<<<<
@@ -18642,7 +18642,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
             if (__pyx_t_14 < 0) __pyx_t_14 += __pyx_v_IDs_b.shape[1];
             *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_IDs_b.data + __pyx_t_13 * __pyx_v_IDs_b.strides[0]) ) + __pyx_t_14 * __pyx_v_IDs_b.strides[1]) )) = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_11 * __pyx_v_linklist.strides[0]) ) + __pyx_t_12 * __pyx_v_linklist.strides[1]) )));
 
-            /* "MuchTree.pyx":1099
+            /* "MuchTree.pyx":1100
  *                     IDs_a[ k, 0 ] = linklist[ j, 1 ]
  *                     IDs_b[ k, 1 ] = linklist[ i, 0 ]
  *                     IDs_b[ k, 0 ] = linklist[ j, 0 ]             # <<<<<<<<<<<<<<
@@ -18657,7 +18657,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
             if (__pyx_t_14 < 0) __pyx_t_14 += __pyx_v_IDs_b.shape[1];
             *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_IDs_b.data + __pyx_t_13 * __pyx_v_IDs_b.strides[0]) ) + __pyx_t_14 * __pyx_v_IDs_b.strides[1]) )) = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_11 * __pyx_v_linklist.strides[0]) ) + __pyx_t_12 * __pyx_v_linklist.strides[1]) )));
 
-            /* "MuchTree.pyx":1100
+            /* "MuchTree.pyx":1101
  *                     IDs_b[ k, 1 ] = linklist[ i, 0 ]
  *                     IDs_b[ k, 0 ] = linklist[ j, 0 ]
  *                     k += 1             # <<<<<<<<<<<<<<
@@ -18669,7 +18669,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
         }
       }
 
-      /* "MuchTree.pyx":1093
+      /* "MuchTree.pyx":1094
  *         cdef long [:,:] IDs_b = ids_b
  * 
  *         with nogil :             # <<<<<<<<<<<<<<
@@ -18688,7 +18688,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
       }
   }
 
-  /* "MuchTree.pyx":1102
+  /* "MuchTree.pyx":1103
  *                     k += 1
  * 
  *         return { 'TreeA'       : self.TreeA.distances( ids_a ),             # <<<<<<<<<<<<<<
@@ -18696,9 +18696,9 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  *                  'ids_A'       : ids_a,
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_distances); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1102, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_distances); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_15 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -18712,20 +18712,20 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   }
   __pyx_t_2 = (__pyx_t_15) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_15, __pyx_v_ids_a) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_ids_a);
   __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeA, __pyx_t_2) < 0) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeA, __pyx_t_2) < 0) __PYX_ERR(0, 1103, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1103
+  /* "MuchTree.pyx":1104
  * 
  *         return { 'TreeA'       : self.TreeA.distances( ids_a ),
  *                  'TreeB'       : self.TreeB.distances( ids_b ),             # <<<<<<<<<<<<<<
  *                  'ids_A'       : ids_a,
  *                  'ids_B'       : ids_b,
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_distances); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1103, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_distances); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_15 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -18739,76 +18739,76 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   }
   __pyx_t_2 = (__pyx_t_15) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_15, __pyx_v_ids_b) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_ids_b);
   __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1103, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeB, __pyx_t_2) < 0) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeB, __pyx_t_2) < 0) __PYX_ERR(0, 1103, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1104
+  /* "MuchTree.pyx":1105
  *         return { 'TreeA'       : self.TreeA.distances( ids_a ),
  *                  'TreeB'       : self.TreeB.distances( ids_b ),
  *                  'ids_A'       : ids_a,             # <<<<<<<<<<<<<<
  *                  'ids_B'       : ids_b,
  *                  'n_pairs'     : size,
  */
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_ids_A, __pyx_v_ids_a) < 0) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_ids_A, __pyx_v_ids_a) < 0) __PYX_ERR(0, 1103, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1105
+  /* "MuchTree.pyx":1106
  *                  'TreeB'       : self.TreeB.distances( ids_b ),
  *                  'ids_A'       : ids_a,
  *                  'ids_B'       : ids_b,             # <<<<<<<<<<<<<<
  *                  'n_pairs'     : size,
  *                  'n_samples'   : size,
  */
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_ids_B, __pyx_v_ids_b) < 0) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_ids_B, __pyx_v_ids_b) < 0) __PYX_ERR(0, 1103, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1106
+  /* "MuchTree.pyx":1107
  *                  'ids_A'       : ids_a,
  *                  'ids_B'       : ids_b,
  *                  'n_pairs'     : size,             # <<<<<<<<<<<<<<
  *                  'n_samples'   : size,
  *                  'deviation_a' : None,
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1106, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_pairs, __pyx_t_2) < 0) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_pairs, __pyx_t_2) < 0) __PYX_ERR(0, 1103, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1107
+  /* "MuchTree.pyx":1108
  *                  'ids_B'       : ids_b,
  *                  'n_pairs'     : size,
  *                  'n_samples'   : size,             # <<<<<<<<<<<<<<
  *                  'deviation_a' : None,
  *                  'deviation_b' : None }
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1107, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_samples, __pyx_t_2) < 0) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_samples, __pyx_t_2) < 0) __PYX_ERR(0, 1103, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1108
+  /* "MuchTree.pyx":1109
  *                  'n_pairs'     : size,
  *                  'n_samples'   : size,
  *                  'deviation_a' : None,             # <<<<<<<<<<<<<<
  *                  'deviation_b' : None }
  * 
  */
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_a, Py_None) < 0) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_a, Py_None) < 0) __PYX_ERR(0, 1103, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1109
+  /* "MuchTree.pyx":1110
  *                  'n_samples'   : size,
  *                  'deviation_a' : None,
  *                  'deviation_b' : None }             # <<<<<<<<<<<<<<
  * 
  *     @cython.boundscheck(False)
  */
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_b, Py_None) < 0) __PYX_ERR(0, 1102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_b, Py_None) < 0) __PYX_ERR(0, 1103, __pyx_L1_error)
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1076
+  /* "MuchTree.pyx":1077
  * 
  *     @cython.boundscheck(False)
  *     def linked_distances( self ) :             # <<<<<<<<<<<<<<
@@ -18836,7 +18836,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1112
+/* "MuchTree.pyx":1113
  * 
  *     @cython.boundscheck(False)
  *     cdef uint64_t _random_int( self, uint64_t n ) nogil :             # <<<<<<<<<<<<<<
@@ -18851,7 +18851,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "MuchTree.pyx":1121
+  /* "MuchTree.pyx":1122
  *         http://dx.doi.org/10.18637/jss.v008.i14
  *         '''
  *         self.seed ^= self.seed >> 12 # a             # <<<<<<<<<<<<<<
@@ -18860,7 +18860,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
  */
   __pyx_v_self->seed = (__pyx_v_self->seed ^ (__pyx_v_self->seed >> 12));
 
-  /* "MuchTree.pyx":1122
+  /* "MuchTree.pyx":1123
  *         '''
  *         self.seed ^= self.seed >> 12 # a
  *         self.seed ^= self.seed << 25 # b             # <<<<<<<<<<<<<<
@@ -18869,7 +18869,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
  */
   __pyx_v_self->seed = (__pyx_v_self->seed ^ (__pyx_v_self->seed << 25));
 
-  /* "MuchTree.pyx":1123
+  /* "MuchTree.pyx":1124
  *         self.seed ^= self.seed >> 12 # a
  *         self.seed ^= self.seed << 25 # b
  *         self.seed ^= self.seed >> 27 # c             # <<<<<<<<<<<<<<
@@ -18878,7 +18878,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
  */
   __pyx_v_self->seed = (__pyx_v_self->seed ^ (__pyx_v_self->seed >> 27));
 
-  /* "MuchTree.pyx":1124
+  /* "MuchTree.pyx":1125
  *         self.seed ^= self.seed << 25 # b
  *         self.seed ^= self.seed >> 27 # c
  *         return ( self.seed * self.modulus ) % n             # <<<<<<<<<<<<<<
@@ -18894,12 +18894,12 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
-    __PYX_ERR(0, 1124, __pyx_L1_error)
+    __PYX_ERR(0, 1125, __pyx_L1_error)
   }
   __pyx_r = (__pyx_t_1 % __pyx_v_n);
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1112
+  /* "MuchTree.pyx":1113
  * 
  *     @cython.boundscheck(False)
  *     cdef uint64_t _random_int( self, uint64_t n ) nogil :             # <<<<<<<<<<<<<<
@@ -18915,7 +18915,7 @@ static uint64_t __pyx_f_8MuchTree_15SuchLinkedTrees__random_int(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1127
+/* "MuchTree.pyx":1128
  * 
  *     @cython.boundscheck(False)
  *     def sample_linked_distances( self, float sigma=0.001,             # <<<<<<<<<<<<<<
@@ -18981,7 +18981,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_17sample_linked_distances(
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "sample_linked_distances") < 0)) __PYX_ERR(0, 1127, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "sample_linked_distances") < 0)) __PYX_ERR(0, 1128, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -18998,29 +18998,29 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_17sample_linked_distances(
       }
     }
     if (values[0]) {
-      __pyx_v_sigma = __pyx_PyFloat_AsFloat(values[0]); if (unlikely((__pyx_v_sigma == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 1127, __pyx_L3_error)
+      __pyx_v_sigma = __pyx_PyFloat_AsFloat(values[0]); if (unlikely((__pyx_v_sigma == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 1128, __pyx_L3_error)
     } else {
       __pyx_v_sigma = ((float)0.001);
     }
     if (values[1]) {
-      __pyx_v_buckets = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_buckets == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1128, __pyx_L3_error)
+      __pyx_v_buckets = __Pyx_PyInt_As_unsigned_int(values[1]); if (unlikely((__pyx_v_buckets == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1129, __pyx_L3_error)
     } else {
       __pyx_v_buckets = ((unsigned int)64);
     }
     if (values[2]) {
-      __pyx_v_n = __Pyx_PyInt_As_unsigned_int(values[2]); if (unlikely((__pyx_v_n == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1129, __pyx_L3_error)
+      __pyx_v_n = __Pyx_PyInt_As_unsigned_int(values[2]); if (unlikely((__pyx_v_n == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1130, __pyx_L3_error)
     } else {
       __pyx_v_n = ((unsigned int)0x1000);
     }
     if (values[3]) {
-      __pyx_v_maxcycles = __Pyx_PyInt_As_unsigned_int(values[3]); if (unlikely((__pyx_v_maxcycles == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1130, __pyx_L3_error)
+      __pyx_v_maxcycles = __Pyx_PyInt_As_unsigned_int(values[3]); if (unlikely((__pyx_v_maxcycles == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1131, __pyx_L3_error)
     } else {
       __pyx_v_maxcycles = ((unsigned int)0x64);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("sample_linked_distances", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1127, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("sample_linked_distances", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1128, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.sample_linked_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -19110,16 +19110,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("sample_linked_distances", 0);
 
-  /* "MuchTree.pyx":1132
+  /* "MuchTree.pyx":1133
  *                                        unsigned int maxcycles=100 ) :
  * 
  *         np_query_a = np.ndarray( ( n, 2 ), dtype=int )             # <<<<<<<<<<<<<<
  *         np_query_b = np.ndarray( ( n, 2 ), dtype=int )
  * 
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1132, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1132, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -19127,31 +19127,31 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __Pyx_GIVEREF(__pyx_int_2);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_2);
   __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1132, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1132, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1132, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1132, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1133, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_np_query_a = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1133
+  /* "MuchTree.pyx":1134
  * 
  *         np_query_a = np.ndarray( ( n, 2 ), dtype=int )
  *         np_query_b = np.ndarray( ( n, 2 ), dtype=int )             # <<<<<<<<<<<<<<
  * 
  *         np_distances_a = np.ndarray( ( buckets, n ), dtype=float )
  */
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1133, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1133, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3);
@@ -19159,33 +19159,33 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __Pyx_GIVEREF(__pyx_int_2);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_2);
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1133, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1133, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1133, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1133, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1134, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_np_query_b = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1135
+  /* "MuchTree.pyx":1136
  *         np_query_b = np.ndarray( ( n, 2 ), dtype=int )
  * 
  *         np_distances_a = np.ndarray( ( buckets, n ), dtype=float )             # <<<<<<<<<<<<<<
  *         np_distances_b = np.ndarray( ( buckets, n ), dtype=float )
  * 
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1135, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1135, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1135, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -19193,33 +19193,33 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2);
   __pyx_t_1 = 0;
   __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1135, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1135, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1135, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1135, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1136, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_np_distances_a = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1136
+  /* "MuchTree.pyx":1137
  * 
  *         np_distances_a = np.ndarray( ( buckets, n ), dtype=float )
  *         np_distances_b = np.ndarray( ( buckets, n ), dtype=float )             # <<<<<<<<<<<<<<
  * 
  *         np_dbuffer_a = np.ndarray( n, dtype=float )
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1136, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1136, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1136, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -19227,92 +19227,92 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1136, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1136, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1136, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1136, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1137, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_np_distances_b = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1138
+  /* "MuchTree.pyx":1139
  *         np_distances_b = np.ndarray( ( buckets, n ), dtype=float )
  * 
  *         np_dbuffer_a = np.ndarray( n, dtype=float )             # <<<<<<<<<<<<<<
  *         np_dbuffer_b = np.ndarray( n, dtype=float )
  * 
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1138, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1138, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1138, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1138, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1138, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1139, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_np_dbuffer_a = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1139
+  /* "MuchTree.pyx":1140
  * 
  *         np_dbuffer_a = np.ndarray( n, dtype=float )
  *         np_dbuffer_b = np.ndarray( n, dtype=float )             # <<<<<<<<<<<<<<
  * 
  *         np_sums_a = np.zeros( buckets, dtype=float )
  */
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1139, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_n); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1139, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1139, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1139, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1139, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1140, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_np_dbuffer_b = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1141
+  /* "MuchTree.pyx":1142
  *         np_dbuffer_b = np.ndarray( n, dtype=float )
  * 
  *         np_sums_a = np.zeros( buckets, dtype=float )             # <<<<<<<<<<<<<<
  *         np_sums_b = np.zeros( buckets, dtype=float )
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1141, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1141, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1141, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1141, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1141, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1141, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1141, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1142, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19320,29 +19320,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_sums_a = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":1142
+  /* "MuchTree.pyx":1143
  * 
  *         np_sums_a = np.zeros( buckets, dtype=float )
  *         np_sums_b = np.zeros( buckets, dtype=float )             # <<<<<<<<<<<<<<
  * 
  *         np_sumsq_a = np.zeros( buckets, dtype=float )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1142, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1142, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1142, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1142, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1142, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1142, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1142, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1143, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19350,29 +19350,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_sums_b = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1144
+  /* "MuchTree.pyx":1145
  *         np_sums_b = np.zeros( buckets, dtype=float )
  * 
  *         np_sumsq_a = np.zeros( buckets, dtype=float )             # <<<<<<<<<<<<<<
  *         np_sumsq_b = np.zeros( buckets, dtype=float )
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1144, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1144, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1144, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1144, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1144, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1144, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1144, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1145, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19380,29 +19380,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_sumsq_a = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1145
+  /* "MuchTree.pyx":1146
  * 
  *         np_sumsq_a = np.zeros( buckets, dtype=float )
  *         np_sumsq_b = np.zeros( buckets, dtype=float )             # <<<<<<<<<<<<<<
  * 
  *         np_samples_a = np.zeros( buckets, dtype=int )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1145, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1145, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1145, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1145, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1145, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1145, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1145, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1146, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19410,29 +19410,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_sumsq_b = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "MuchTree.pyx":1147
+  /* "MuchTree.pyx":1148
  *         np_sumsq_b = np.zeros( buckets, dtype=float )
  * 
  *         np_samples_a = np.zeros( buckets, dtype=int )             # <<<<<<<<<<<<<<
  *         np_samples_b = np.zeros( buckets, dtype=int )
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1147, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1147, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1147, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1147, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1147, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1147, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1147, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1148, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19440,29 +19440,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_samples_a = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1148
+  /* "MuchTree.pyx":1149
  * 
  *         np_samples_a = np.zeros( buckets, dtype=int )
  *         np_samples_b = np.zeros( buckets, dtype=int )             # <<<<<<<<<<<<<<
  * 
  *         np_deviations_a = np.ndarray( buckets, dtype=float )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1148, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1148, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1148, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1148, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1148, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1148, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1148, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyInt_Type))) < 0) __PYX_ERR(0, 1149, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19470,307 +19470,307 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
   __pyx_v_np_samples_b = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1150
+  /* "MuchTree.pyx":1151
  *         np_samples_b = np.zeros( buckets, dtype=int )
  * 
  *         np_deviations_a = np.ndarray( buckets, dtype=float )             # <<<<<<<<<<<<<<
  *         np_deviations_b = np.ndarray( buckets, dtype=float )
  * 
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1150, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1150, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1150, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1150, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1150, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1151, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_np_deviations_a = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1151
+  /* "MuchTree.pyx":1152
  * 
  *         np_deviations_a = np.ndarray( buckets, dtype=float )
  *         np_deviations_b = np.ndarray( buckets, dtype=float )             # <<<<<<<<<<<<<<
  * 
  *         np_all_distances_a = np.ndarray( buckets * n * maxcycles, dtype=float )
  */
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1151, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_buckets); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1151, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1151, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1151, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1151, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1152, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_np_deviations_b = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1153
+  /* "MuchTree.pyx":1154
  *         np_deviations_b = np.ndarray( buckets, dtype=float )
  * 
  *         np_all_distances_a = np.ndarray( buckets * n * maxcycles, dtype=float )             # <<<<<<<<<<<<<<
  *         np_all_distances_b = np.ndarray( buckets * n * maxcycles, dtype=float )
  * 
  */
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(((__pyx_v_buckets * __pyx_v_n) * __pyx_v_maxcycles)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1153, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(((__pyx_v_buckets * __pyx_v_n) * __pyx_v_maxcycles)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1153, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1153, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1153, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1153, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1154, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_np_all_distances_a = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1154
+  /* "MuchTree.pyx":1155
  * 
  *         np_all_distances_a = np.ndarray( buckets * n * maxcycles, dtype=float )
  *         np_all_distances_b = np.ndarray( buckets * n * maxcycles, dtype=float )             # <<<<<<<<<<<<<<
  * 
  *         cdef long [:,:] query_a = np_query_a
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(((__pyx_v_buckets * __pyx_v_n) * __pyx_v_maxcycles)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1154, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(((__pyx_v_buckets * __pyx_v_n) * __pyx_v_maxcycles)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1154, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1154, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1154, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1154, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, ((PyObject *)(&PyFloat_Type))) < 0) __PYX_ERR(0, 1155, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_np_all_distances_b = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1156
+  /* "MuchTree.pyx":1157
  *         np_all_distances_b = np.ndarray( buckets * n * maxcycles, dtype=float )
  * 
  *         cdef long [:,:] query_a = np_query_a             # <<<<<<<<<<<<<<
  *         cdef long [:,:] query_b = np_query_b
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_np_query_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 1156, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_np_query_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 1157, __pyx_L1_error)
   __pyx_v_query_a = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "MuchTree.pyx":1157
+  /* "MuchTree.pyx":1158
  * 
  *         cdef long [:,:] query_a = np_query_a
  *         cdef long [:,:] query_b = np_query_b             # <<<<<<<<<<<<<<
  * 
  *         cdef double [:,:] distances_a = np_distances_a
  */
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_np_query_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 1157, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_np_query_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 1158, __pyx_L1_error)
   __pyx_v_query_b = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "MuchTree.pyx":1159
+  /* "MuchTree.pyx":1160
  *         cdef long [:,:] query_b = np_query_b
  * 
  *         cdef double [:,:] distances_a = np_distances_a             # <<<<<<<<<<<<<<
  *         cdef double [:,:] distances_b = np_distances_b
  * 
  */
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds_double(__pyx_v_np_distances_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 1159, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds_double(__pyx_v_np_distances_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 1160, __pyx_L1_error)
   __pyx_v_distances_a = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "MuchTree.pyx":1160
+  /* "MuchTree.pyx":1161
  * 
  *         cdef double [:,:] distances_a = np_distances_a
  *         cdef double [:,:] distances_b = np_distances_b             # <<<<<<<<<<<<<<
  * 
  *         cdef double [:] distances_a_mv = np_dbuffer_a
  */
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds_double(__pyx_v_np_distances_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 1160, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds_double(__pyx_v_np_distances_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 1161, __pyx_L1_error)
   __pyx_v_distances_b = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "MuchTree.pyx":1162
+  /* "MuchTree.pyx":1163
  *         cdef double [:,:] distances_b = np_distances_b
  * 
  *         cdef double [:] distances_a_mv = np_dbuffer_a             # <<<<<<<<<<<<<<
  *         cdef double [:] distances_b_mv = np_dbuffer_b
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_dbuffer_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1162, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_dbuffer_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1163, __pyx_L1_error)
   __pyx_v_distances_a_mv = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1163
+  /* "MuchTree.pyx":1164
  * 
  *         cdef double [:] distances_a_mv = np_dbuffer_a
  *         cdef double [:] distances_b_mv = np_dbuffer_b             # <<<<<<<<<<<<<<
  * 
  *         cdef double [:] sums_a = np_sums_a
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_dbuffer_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1163, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_dbuffer_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1164, __pyx_L1_error)
   __pyx_v_distances_b_mv = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1165
+  /* "MuchTree.pyx":1166
  *         cdef double [:] distances_b_mv = np_dbuffer_b
  * 
  *         cdef double [:] sums_a = np_sums_a             # <<<<<<<<<<<<<<
  *         cdef double [:] sums_b = np_sums_b
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_sums_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1165, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_sums_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1166, __pyx_L1_error)
   __pyx_v_sums_a = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1166
+  /* "MuchTree.pyx":1167
  * 
  *         cdef double [:] sums_a = np_sums_a
  *         cdef double [:] sums_b = np_sums_b             # <<<<<<<<<<<<<<
  * 
  *         cdef double [:] sumsq_a = np_sumsq_a
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_sums_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1166, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_sums_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1167, __pyx_L1_error)
   __pyx_v_sums_b = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1168
+  /* "MuchTree.pyx":1169
  *         cdef double [:] sums_b = np_sums_b
  * 
  *         cdef double [:] sumsq_a = np_sumsq_a             # <<<<<<<<<<<<<<
  *         cdef double [:] sumsq_b = np_sumsq_b
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_sumsq_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1168, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_sumsq_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1169, __pyx_L1_error)
   __pyx_v_sumsq_a = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1169
+  /* "MuchTree.pyx":1170
  * 
  *         cdef double [:] sumsq_a = np_sumsq_a
  *         cdef double [:] sumsq_b = np_sumsq_b             # <<<<<<<<<<<<<<
  * 
  *         cdef long [:] samples_a = np_samples_a
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_sumsq_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1169, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_sumsq_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1170, __pyx_L1_error)
   __pyx_v_sumsq_b = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1171
+  /* "MuchTree.pyx":1172
  *         cdef double [:] sumsq_b = np_sumsq_b
  * 
  *         cdef long [:] samples_a = np_samples_a             # <<<<<<<<<<<<<<
  *         cdef long [:] samples_b = np_samples_b
  * 
  */
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_np_samples_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 1171, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_np_samples_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 1172, __pyx_L1_error)
   __pyx_v_samples_a = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "MuchTree.pyx":1172
+  /* "MuchTree.pyx":1173
  * 
  *         cdef long [:] samples_a = np_samples_a
  *         cdef long [:] samples_b = np_samples_b             # <<<<<<<<<<<<<<
  * 
  *         cdef double [:] deviations_a = np_deviations_a
  */
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_np_samples_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 1172, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_long(__pyx_v_np_samples_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 1173, __pyx_L1_error)
   __pyx_v_samples_b = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "MuchTree.pyx":1174
+  /* "MuchTree.pyx":1175
  *         cdef long [:] samples_b = np_samples_b
  * 
  *         cdef double [:] deviations_a = np_deviations_a             # <<<<<<<<<<<<<<
  *         cdef double [:] deviations_b = np_deviations_b
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_deviations_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1174, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_deviations_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1175, __pyx_L1_error)
   __pyx_v_deviations_a = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1175
+  /* "MuchTree.pyx":1176
  * 
  *         cdef double [:] deviations_a = np_deviations_a
  *         cdef double [:] deviations_b = np_deviations_b             # <<<<<<<<<<<<<<
  * 
  *         cdef double [:] all_distances_a = np_all_distances_a
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_deviations_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1175, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_deviations_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1176, __pyx_L1_error)
   __pyx_v_deviations_b = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1177
+  /* "MuchTree.pyx":1178
  *         cdef double [:] deviations_b = np_deviations_b
  * 
  *         cdef double [:] all_distances_a = np_all_distances_a             # <<<<<<<<<<<<<<
  *         cdef double [:] all_distances_b = np_all_distances_b
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_all_distances_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1177, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_all_distances_a, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1178, __pyx_L1_error)
   __pyx_v_all_distances_a = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1178
+  /* "MuchTree.pyx":1179
  * 
  *         cdef double [:] all_distances_a = np_all_distances_a
  *         cdef double [:] all_distances_b = np_all_distances_b             # <<<<<<<<<<<<<<
  * 
  *         cdef long [:,:] linklist = self.np_linklist
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_all_distances_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1178, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_all_distances_b, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1179, __pyx_L1_error)
   __pyx_v_all_distances_b = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1180
+  /* "MuchTree.pyx":1181
  *         cdef double [:] all_distances_b = np_all_distances_b
  * 
  *         cdef long [:,:] linklist = self.np_linklist             # <<<<<<<<<<<<<<
  * 
  *         cdef int i
  */
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_self->np_linklist, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 1180, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dsds_long(__pyx_v_self->np_linklist, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 1181, __pyx_L1_error)
   __pyx_v_linklist = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "MuchTree.pyx":1196
+  /* "MuchTree.pyx":1197
  *         cdef float sumsq_bucket_b
  * 
  *         cdef unsigned int cycles = 0             # <<<<<<<<<<<<<<
@@ -19779,7 +19779,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
  */
   __pyx_v_cycles = 0;
 
-  /* "MuchTree.pyx":1198
+  /* "MuchTree.pyx":1199
  *         cdef unsigned int cycles = 0
  * 
  *         while True :             # <<<<<<<<<<<<<<
@@ -19788,7 +19788,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
  */
   while (1) {
 
-    /* "MuchTree.pyx":1199
+    /* "MuchTree.pyx":1200
  * 
  *         while True :
  *             for i in xrange( buckets ) :             # <<<<<<<<<<<<<<
@@ -19800,7 +19800,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "MuchTree.pyx":1200
+      /* "MuchTree.pyx":1201
  *         while True :
  *             for i in xrange( buckets ) :
  *                 with nogil :             # <<<<<<<<<<<<<<
@@ -19815,7 +19815,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
           #endif
           /*try:*/ {
 
-            /* "MuchTree.pyx":1201
+            /* "MuchTree.pyx":1202
  *             for i in xrange( buckets ) :
  *                 with nogil :
  *                     for j in xrange( n ) :             # <<<<<<<<<<<<<<
@@ -19827,7 +19827,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
             for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
               __pyx_v_j = __pyx_t_14;
 
-              /* "MuchTree.pyx":1202
+              /* "MuchTree.pyx":1203
  *                 with nogil :
  *                     for j in xrange( n ) :
  *                         l1 = self._random_int( self.subset_n_links )             # <<<<<<<<<<<<<<
@@ -19836,7 +19836,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
  */
               __pyx_v_l1 = ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_random_int(__pyx_v_self, __pyx_v_self->subset_n_links);
 
-              /* "MuchTree.pyx":1203
+              /* "MuchTree.pyx":1204
  *                     for j in xrange( n ) :
  *                         l1 = self._random_int( self.subset_n_links )
  *                         l2 = self._random_int( self.subset_n_links )             # <<<<<<<<<<<<<<
@@ -19845,7 +19845,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
  */
               __pyx_v_l2 = ((struct __pyx_vtabstruct_8MuchTree_SuchLinkedTrees *)__pyx_v_self->__pyx_vtab)->_random_int(__pyx_v_self, __pyx_v_self->subset_n_links);
 
-              /* "MuchTree.pyx":1206
+              /* "MuchTree.pyx":1207
  *                         #l1 = np.random.randint( self.subset_n_links )
  *                         #l2 = np.random.randint( self.subset_n_links )
  *                         a1 = linklist[ l1, 1 ]             # <<<<<<<<<<<<<<
@@ -19858,7 +19858,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_16 < 0) __pyx_t_16 += __pyx_v_linklist.shape[1];
               __pyx_v_a1 = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_15 * __pyx_v_linklist.strides[0]) ) + __pyx_t_16 * __pyx_v_linklist.strides[1]) )));
 
-              /* "MuchTree.pyx":1207
+              /* "MuchTree.pyx":1208
  *                         #l2 = np.random.randint( self.subset_n_links )
  *                         a1 = linklist[ l1, 1 ]
  *                         b1 = linklist[ l1, 0 ]             # <<<<<<<<<<<<<<
@@ -19871,7 +19871,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_linklist.shape[1];
               __pyx_v_b1 = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_16 * __pyx_v_linklist.strides[0]) ) + __pyx_t_15 * __pyx_v_linklist.strides[1]) )));
 
-              /* "MuchTree.pyx":1208
+              /* "MuchTree.pyx":1209
  *                         a1 = linklist[ l1, 1 ]
  *                         b1 = linklist[ l1, 0 ]
  *                         a2 = linklist[ l2, 1 ]             # <<<<<<<<<<<<<<
@@ -19884,7 +19884,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_16 < 0) __pyx_t_16 += __pyx_v_linklist.shape[1];
               __pyx_v_a2 = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_15 * __pyx_v_linklist.strides[0]) ) + __pyx_t_16 * __pyx_v_linklist.strides[1]) )));
 
-              /* "MuchTree.pyx":1209
+              /* "MuchTree.pyx":1210
  *                         b1 = linklist[ l1, 0 ]
  *                         a2 = linklist[ l2, 1 ]
  *                         b2 = linklist[ l2, 0 ]             # <<<<<<<<<<<<<<
@@ -19897,7 +19897,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_linklist.shape[1];
               __pyx_v_b2 = (*((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_linklist.data + __pyx_t_16 * __pyx_v_linklist.strides[0]) ) + __pyx_t_15 * __pyx_v_linklist.strides[1]) )));
 
-              /* "MuchTree.pyx":1210
+              /* "MuchTree.pyx":1211
  *                         a2 = linklist[ l2, 1 ]
  *                         b2 = linklist[ l2, 0 ]
  *                         query_a[ j, 0 ] = a1             # <<<<<<<<<<<<<<
@@ -19910,7 +19910,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_16 < 0) __pyx_t_16 += __pyx_v_query_a.shape[1];
               *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_query_a.data + __pyx_t_15 * __pyx_v_query_a.strides[0]) ) + __pyx_t_16 * __pyx_v_query_a.strides[1]) )) = __pyx_v_a1;
 
-              /* "MuchTree.pyx":1211
+              /* "MuchTree.pyx":1212
  *                         b2 = linklist[ l2, 0 ]
  *                         query_a[ j, 0 ] = a1
  *                         query_a[ j, 1 ] = a2             # <<<<<<<<<<<<<<
@@ -19923,7 +19923,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_query_a.shape[1];
               *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_query_a.data + __pyx_t_16 * __pyx_v_query_a.strides[0]) ) + __pyx_t_15 * __pyx_v_query_a.strides[1]) )) = __pyx_v_a2;
 
-              /* "MuchTree.pyx":1212
+              /* "MuchTree.pyx":1213
  *                         query_a[ j, 0 ] = a1
  *                         query_a[ j, 1 ] = a2
  *                         query_b[ j, 0 ] = b1             # <<<<<<<<<<<<<<
@@ -19936,7 +19936,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
               if (__pyx_t_16 < 0) __pyx_t_16 += __pyx_v_query_b.shape[1];
               *((long *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_query_b.data + __pyx_t_15 * __pyx_v_query_b.strides[0]) ) + __pyx_t_16 * __pyx_v_query_b.strides[1]) )) = __pyx_v_b1;
 
-              /* "MuchTree.pyx":1213
+              /* "MuchTree.pyx":1214
  *                         query_a[ j, 1 ] = a2
  *                         query_b[ j, 0 ] = b1
  *                         query_b[ j, 1 ] = b2             # <<<<<<<<<<<<<<
@@ -19951,7 +19951,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
             }
           }
 
-          /* "MuchTree.pyx":1200
+          /* "MuchTree.pyx":1201
  *         while True :
  *             for i in xrange( buckets ) :
  *                 with nogil :             # <<<<<<<<<<<<<<
@@ -19970,50 +19970,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
           }
       }
 
-      /* "MuchTree.pyx":1214
+      /* "MuchTree.pyx":1215
  *                         query_b[ j, 0 ] = b1
  *                         query_b[ j, 1 ] = b2
  *                 distances_a_mv = self.TreeA.distances( query_a )             # <<<<<<<<<<<<<<
  *                 distances_b_mv = self.TreeB.distances( query_b )
  *                 distances_a[ i, : ] = distances_a_mv
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_distances); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1214, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_distances); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1215, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_query_a, 2, (PyObject *(*)(char *)) __pyx_memview_get_long, (int (*)(char *, PyObject *)) __pyx_memview_set_long, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1214, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = NULL;
-      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-        __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_2);
-        if (likely(__pyx_t_4)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-          __Pyx_INCREF(__pyx_t_4);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_2, function);
-        }
-      }
-      __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3);
-      __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1214, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_1);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1214, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_XDEC_MEMVIEW(&__pyx_v_distances_a_mv, 1);
-      __pyx_v_distances_a_mv = __pyx_t_7;
-      __pyx_t_7.memview = NULL;
-      __pyx_t_7.data = NULL;
-
-      /* "MuchTree.pyx":1215
- *                         query_b[ j, 1 ] = b2
- *                 distances_a_mv = self.TreeA.distances( query_a )
- *                 distances_b_mv = self.TreeB.distances( query_b )             # <<<<<<<<<<<<<<
- *                 distances_a[ i, : ] = distances_a_mv
- *                 distances_b[ i, : ] = distances_b_mv
- */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_distances); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1215, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_query_b, 2, (PyObject *(*)(char *)) __pyx_memview_get_long, (int (*)(char *, PyObject *)) __pyx_memview_set_long, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1215, __pyx_L1_error)
+      __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_query_a, 2, (PyObject *(*)(char *)) __pyx_memview_get_long, (int (*)(char *, PyObject *)) __pyx_memview_set_long, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1215, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_4 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -20033,12 +19999,46 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_16sample_linked_distances(
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1215, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __PYX_XDEC_MEMVIEW(&__pyx_v_distances_a_mv, 1);
+      __pyx_v_distances_a_mv = __pyx_t_7;
+      __pyx_t_7.memview = NULL;
+      __pyx_t_7.data = NULL;
+
+      /* "MuchTree.pyx":1216
+ *                         query_b[ j, 1 ] = b2
+ *                 distances_a_mv = self.TreeA.distances( query_a )
+ *                 distances_b_mv = self.TreeB.distances( query_b )             # <<<<<<<<<<<<<<
+ *                 distances_a[ i, : ] = distances_a_mv
+ *                 distances_b[ i, : ] = distances_b_mv
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_distances); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1216, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_query_b, 2, (PyObject *(*)(char *)) __pyx_memview_get_long, (int (*)(char *, PyObject *)) __pyx_memview_set_long, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1216, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_4 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_4)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_4);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3);
+      __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1216, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1216, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __PYX_XDEC_MEMVIEW(&__pyx_v_distances_b_mv, 1);
       __pyx_v_distances_b_mv = __pyx_t_7;
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1216
+      /* "MuchTree.pyx":1217
  *                 distances_a_mv = self.TreeA.distances( query_a )
  *                 distances_b_mv = self.TreeB.distances( query_b )
  *                 distances_a[ i, : ] = distances_a_mv             # <<<<<<<<<<<<<<
@@ -20061,12 +20061,12 @@ __pyx_t_7.shape[0] = __pyx_v_distances_a.shape[1];
 __pyx_t_7.strides[0] = __pyx_v_distances_a.strides[1];
     __pyx_t_7.suboffsets[0] = -1;
 
-if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_a_mv, __pyx_t_7, 1, 1, 0) < 0)) __PYX_ERR(0, 1216, __pyx_L1_error)
+if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_a_mv, __pyx_t_7, 1, 1, 0) < 0)) __PYX_ERR(0, 1217, __pyx_L1_error)
       __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1217
+      /* "MuchTree.pyx":1218
  *                 distances_b_mv = self.TreeB.distances( query_b )
  *                 distances_a[ i, : ] = distances_a_mv
  *                 distances_b[ i, : ] = distances_b_mv             # <<<<<<<<<<<<<<
@@ -20089,12 +20089,12 @@ __pyx_t_7.shape[0] = __pyx_v_distances_b.shape[1];
 __pyx_t_7.strides[0] = __pyx_v_distances_b.strides[1];
     __pyx_t_7.suboffsets[0] = -1;
 
-if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1, 1, 0) < 0)) __PYX_ERR(0, 1217, __pyx_L1_error)
+if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1, 1, 0) < 0)) __PYX_ERR(0, 1218, __pyx_L1_error)
       __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1218
+      /* "MuchTree.pyx":1219
  *                 distances_a[ i, : ] = distances_a_mv
  *                 distances_b[ i, : ] = distances_b_mv
  *                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv             # <<<<<<<<<<<<<<
@@ -20119,15 +20119,15 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 1218, __pyx_L1_error)
+    __PYX_ERR(0, 1219, __pyx_L1_error)
 }
 
-if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_a_mv, __pyx_t_7, 1, 1, 0) < 0)) __PYX_ERR(0, 1218, __pyx_L1_error)
+if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_a_mv, __pyx_t_7, 1, 1, 0) < 0)) __PYX_ERR(0, 1219, __pyx_L1_error)
       __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1219
+      /* "MuchTree.pyx":1220
  *                 distances_b[ i, : ] = distances_b_mv
  *                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv
  *                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv             # <<<<<<<<<<<<<<
@@ -20152,15 +20152,15 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_a_mv, __pyx_t_7, 1
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 1219, __pyx_L1_error)
+    __PYX_ERR(0, 1220, __pyx_L1_error)
 }
 
-if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1, 1, 0) < 0)) __PYX_ERR(0, 1219, __pyx_L1_error)
+if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1, 1, 0) < 0)) __PYX_ERR(0, 1220, __pyx_L1_error)
       __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "MuchTree.pyx":1220
+      /* "MuchTree.pyx":1221
  *                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv
  *                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv
  *                 with nogil :             # <<<<<<<<<<<<<<
@@ -20175,7 +20175,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
           #endif
           /*try:*/ {
 
-            /* "MuchTree.pyx":1221
+            /* "MuchTree.pyx":1222
  *                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv
  *                 with nogil :
  *                     for j in xrange( n ) :             # <<<<<<<<<<<<<<
@@ -20187,7 +20187,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
             for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
               __pyx_v_j = __pyx_t_14;
 
-              /* "MuchTree.pyx":1222
+              /* "MuchTree.pyx":1223
  *                 with nogil :
  *                     for j in xrange( n ) :
  *                         sums_a[i]  += distances_a[ i, j ]             # <<<<<<<<<<<<<<
@@ -20202,7 +20202,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
               if (__pyx_t_17 < 0) __pyx_t_17 += __pyx_v_sums_a.shape[0];
               *((double *) ( /* dim=0 */ (__pyx_v_sums_a.data + __pyx_t_17 * __pyx_v_sums_a.strides[0]) )) += (*((double *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_distances_a.data + __pyx_t_15 * __pyx_v_distances_a.strides[0]) ) + __pyx_t_16 * __pyx_v_distances_a.strides[1]) )));
 
-              /* "MuchTree.pyx":1223
+              /* "MuchTree.pyx":1224
  *                     for j in xrange( n ) :
  *                         sums_a[i]  += distances_a[ i, j ]
  *                         sums_b[i]  += distances_b[ i, j ]             # <<<<<<<<<<<<<<
@@ -20217,7 +20217,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
               if (__pyx_t_17 < 0) __pyx_t_17 += __pyx_v_sums_b.shape[0];
               *((double *) ( /* dim=0 */ (__pyx_v_sums_b.data + __pyx_t_17 * __pyx_v_sums_b.strides[0]) )) += (*((double *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_distances_b.data + __pyx_t_16 * __pyx_v_distances_b.strides[0]) ) + __pyx_t_15 * __pyx_v_distances_b.strides[1]) )));
 
-              /* "MuchTree.pyx":1224
+              /* "MuchTree.pyx":1225
  *                         sums_a[i]  += distances_a[ i, j ]
  *                         sums_b[i]  += distances_b[ i, j ]
  *                         sumsq_a[i] += distances_a[ i, j ]**2             # <<<<<<<<<<<<<<
@@ -20232,7 +20232,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
               if (__pyx_t_17 < 0) __pyx_t_17 += __pyx_v_sumsq_a.shape[0];
               *((double *) ( /* dim=0 */ (__pyx_v_sumsq_a.data + __pyx_t_17 * __pyx_v_sumsq_a.strides[0]) )) += pow((*((double *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_distances_a.data + __pyx_t_15 * __pyx_v_distances_a.strides[0]) ) + __pyx_t_16 * __pyx_v_distances_a.strides[1]) ))), 2.0);
 
-              /* "MuchTree.pyx":1225
+              /* "MuchTree.pyx":1226
  *                         sums_b[i]  += distances_b[ i, j ]
  *                         sumsq_a[i] += distances_a[ i, j ]**2
  *                         sumsq_b[i] += distances_b[ i, j ]**2             # <<<<<<<<<<<<<<
@@ -20249,7 +20249,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
             }
           }
 
-          /* "MuchTree.pyx":1220
+          /* "MuchTree.pyx":1221
  *                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv
  *                 all_distances_b[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_b_mv
  *                 with nogil :             # <<<<<<<<<<<<<<
@@ -20268,7 +20268,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
           }
       }
 
-      /* "MuchTree.pyx":1226
+      /* "MuchTree.pyx":1227
  *                         sumsq_a[i] += distances_a[ i, j ]**2
  *                         sumsq_b[i] += distances_b[ i, j ]**2
  *                 samples_a[i] += n             # <<<<<<<<<<<<<<
@@ -20279,7 +20279,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_samples_a.shape[0];
       *((long *) ( /* dim=0 */ (__pyx_v_samples_a.data + __pyx_t_15 * __pyx_v_samples_a.strides[0]) )) += __pyx_v_n;
 
-      /* "MuchTree.pyx":1227
+      /* "MuchTree.pyx":1228
  *                         sumsq_b[i] += distances_b[ i, j ]**2
  *                 samples_a[i] += n
  *                 samples_b[i] += n             # <<<<<<<<<<<<<<
@@ -20290,7 +20290,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_samples_b.shape[0];
       *((long *) ( /* dim=0 */ (__pyx_v_samples_b.data + __pyx_t_15 * __pyx_v_samples_b.strides[0]) )) += __pyx_v_n;
 
-      /* "MuchTree.pyx":1228
+      /* "MuchTree.pyx":1229
  *                 samples_a[i] += n
  *                 samples_b[i] += n
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]             # <<<<<<<<<<<<<<
@@ -20305,10 +20305,10 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       __pyx_t_19 = (*((long *) ( /* dim=0 */ (__pyx_v_samples_a.data + __pyx_t_15 * __pyx_v_samples_a.strides[0]) )));
       if (unlikely(__pyx_t_19 == 0)) {
         PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-        __PYX_ERR(0, 1228, __pyx_L1_error)
+        __PYX_ERR(0, 1229, __pyx_L1_error)
       }
 
-      /* "MuchTree.pyx":1229
+      /* "MuchTree.pyx":1230
  *                 samples_b[i] += n
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]
  *                                 - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)             # <<<<<<<<<<<<<<
@@ -20323,10 +20323,10 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       __pyx_t_21 = (*((long *) ( /* dim=0 */ (__pyx_v_samples_a.data + __pyx_t_15 * __pyx_v_samples_a.strides[0]) )));
       if (unlikely(__pyx_t_21 == 0)) {
         PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-        __PYX_ERR(0, 1229, __pyx_L1_error)
+        __PYX_ERR(0, 1230, __pyx_L1_error)
       }
 
-      /* "MuchTree.pyx":1228
+      /* "MuchTree.pyx":1229
  *                 samples_a[i] += n
  *                 samples_b[i] += n
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]             # <<<<<<<<<<<<<<
@@ -20337,7 +20337,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_deviations_a.shape[0];
       *((double *) ( /* dim=0 */ (__pyx_v_deviations_a.data + __pyx_t_15 * __pyx_v_deviations_a.strides[0]) )) = pow(((__pyx_t_18 / ((double)__pyx_t_19)) - pow((__pyx_t_20 / ((double)__pyx_t_21)), 2.0)), 0.5);
 
-      /* "MuchTree.pyx":1230
+      /* "MuchTree.pyx":1231
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]
  *                                 - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)
  *                 deviations_b[i] = ( sumsq_b[i] / samples_b[i]             # <<<<<<<<<<<<<<
@@ -20352,10 +20352,10 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       __pyx_t_21 = (*((long *) ( /* dim=0 */ (__pyx_v_samples_b.data + __pyx_t_15 * __pyx_v_samples_b.strides[0]) )));
       if (unlikely(__pyx_t_21 == 0)) {
         PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-        __PYX_ERR(0, 1230, __pyx_L1_error)
+        __PYX_ERR(0, 1231, __pyx_L1_error)
       }
 
-      /* "MuchTree.pyx":1231
+      /* "MuchTree.pyx":1232
  *                                 - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)
  *                 deviations_b[i] = ( sumsq_b[i] / samples_b[i]
  *                                 - ( sums_b[i]  / samples_b[i] )**2 )**(0.5)             # <<<<<<<<<<<<<<
@@ -20370,10 +20370,10 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       __pyx_t_19 = (*((long *) ( /* dim=0 */ (__pyx_v_samples_b.data + __pyx_t_15 * __pyx_v_samples_b.strides[0]) )));
       if (unlikely(__pyx_t_19 == 0)) {
         PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-        __PYX_ERR(0, 1231, __pyx_L1_error)
+        __PYX_ERR(0, 1232, __pyx_L1_error)
       }
 
-      /* "MuchTree.pyx":1230
+      /* "MuchTree.pyx":1231
  *                 deviations_a[i] = ( sumsq_a[i] / samples_a[i]
  *                                 - ( sums_a[i]  / samples_a[i] )**2 )**(0.5)
  *                 deviations_b[i] = ( sumsq_b[i] / samples_b[i]             # <<<<<<<<<<<<<<
@@ -20385,7 +20385,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       *((double *) ( /* dim=0 */ (__pyx_v_deviations_b.data + __pyx_t_15 * __pyx_v_deviations_b.strides[0]) )) = pow(((__pyx_t_20 / ((double)__pyx_t_21)) - pow((__pyx_t_18 / ((double)__pyx_t_19)), 2.0)), 0.5);
     }
 
-    /* "MuchTree.pyx":1232
+    /* "MuchTree.pyx":1233
  *                 deviations_b[i] = ( sumsq_b[i] / samples_b[i]
  *                                 - ( sums_b[i]  / samples_b[i] )**2 )**(0.5)
  *             deviation_a = 0             # <<<<<<<<<<<<<<
@@ -20394,7 +20394,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_deviation_a = 0.0;
 
-    /* "MuchTree.pyx":1233
+    /* "MuchTree.pyx":1234
  *                                 - ( sums_b[i]  / samples_b[i] )**2 )**(0.5)
  *             deviation_a = 0
  *             deviation_b = 0             # <<<<<<<<<<<<<<
@@ -20403,7 +20403,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_deviation_b = 0.0;
 
-    /* "MuchTree.pyx":1234
+    /* "MuchTree.pyx":1235
  *             deviation_a = 0
  *             deviation_b = 0
  *             sumsq_bucket_a = 0             # <<<<<<<<<<<<<<
@@ -20412,7 +20412,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_sumsq_bucket_a = 0.0;
 
-    /* "MuchTree.pyx":1235
+    /* "MuchTree.pyx":1236
  *             deviation_b = 0
  *             sumsq_bucket_a = 0
  *             sumsq_bucket_b = 0             # <<<<<<<<<<<<<<
@@ -20421,7 +20421,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_sumsq_bucket_b = 0.0;
 
-    /* "MuchTree.pyx":1236
+    /* "MuchTree.pyx":1237
  *             sumsq_bucket_a = 0
  *             sumsq_bucket_b = 0
  *             for i in xrange( buckets ) :             # <<<<<<<<<<<<<<
@@ -20433,7 +20433,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
     for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "MuchTree.pyx":1237
+      /* "MuchTree.pyx":1238
  *             sumsq_bucket_b = 0
  *             for i in xrange( buckets ) :
  *                 deviation_a += deviations_a[i]             # <<<<<<<<<<<<<<
@@ -20444,7 +20444,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_deviations_a.shape[0];
       __pyx_v_deviation_a = (__pyx_v_deviation_a + (*((double *) ( /* dim=0 */ (__pyx_v_deviations_a.data + __pyx_t_15 * __pyx_v_deviations_a.strides[0]) ))));
 
-      /* "MuchTree.pyx":1238
+      /* "MuchTree.pyx":1239
  *             for i in xrange( buckets ) :
  *                 deviation_a += deviations_a[i]
  *                 deviation_b += deviations_b[i]             # <<<<<<<<<<<<<<
@@ -20455,7 +20455,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_deviations_b.shape[0];
       __pyx_v_deviation_b = (__pyx_v_deviation_b + (*((double *) ( /* dim=0 */ (__pyx_v_deviations_b.data + __pyx_t_15 * __pyx_v_deviations_b.strides[0]) ))));
 
-      /* "MuchTree.pyx":1239
+      /* "MuchTree.pyx":1240
  *                 deviation_a += deviations_a[i]
  *                 deviation_b += deviations_b[i]
  *                 sumsq_bucket_a += deviations_a[i]**2             # <<<<<<<<<<<<<<
@@ -20466,7 +20466,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       if (__pyx_t_15 < 0) __pyx_t_15 += __pyx_v_deviations_a.shape[0];
       __pyx_v_sumsq_bucket_a = (__pyx_v_sumsq_bucket_a + pow((*((double *) ( /* dim=0 */ (__pyx_v_deviations_a.data + __pyx_t_15 * __pyx_v_deviations_a.strides[0]) ))), 2.0));
 
-      /* "MuchTree.pyx":1240
+      /* "MuchTree.pyx":1241
  *                 deviation_b += deviations_b[i]
  *                 sumsq_bucket_a += deviations_a[i]**2
  *                 sumsq_bucket_b += deviations_b[i]**2             # <<<<<<<<<<<<<<
@@ -20478,7 +20478,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       __pyx_v_sumsq_bucket_b = (__pyx_v_sumsq_bucket_b + pow((*((double *) ( /* dim=0 */ (__pyx_v_deviations_b.data + __pyx_t_15 * __pyx_v_deviations_b.strides[0]) ))), 2.0));
     }
 
-    /* "MuchTree.pyx":1241
+    /* "MuchTree.pyx":1242
  *                 sumsq_bucket_a += deviations_a[i]**2
  *                 sumsq_bucket_b += deviations_b[i]**2
  *             deviation_a = ( sumsq_bucket_a / buckets - ( deviation_a / buckets )**2 )**(0.5)             # <<<<<<<<<<<<<<
@@ -20487,15 +20487,15 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     if (unlikely(__pyx_v_buckets == 0)) {
       PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 1241, __pyx_L1_error)
+      __PYX_ERR(0, 1242, __pyx_L1_error)
     }
     if (unlikely(__pyx_v_buckets == 0)) {
       PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 1241, __pyx_L1_error)
+      __PYX_ERR(0, 1242, __pyx_L1_error)
     }
     __pyx_v_deviation_a = pow(((double)((__pyx_v_sumsq_bucket_a / ((float)__pyx_v_buckets)) - powf((__pyx_v_deviation_a / ((float)__pyx_v_buckets)), 2.0))), 0.5);
 
-    /* "MuchTree.pyx":1242
+    /* "MuchTree.pyx":1243
  *                 sumsq_bucket_b += deviations_b[i]**2
  *             deviation_a = ( sumsq_bucket_a / buckets - ( deviation_a / buckets )**2 )**(0.5)
  *             deviation_b = ( sumsq_bucket_b / buckets - ( deviation_b / buckets )**2 )**(0.5)             # <<<<<<<<<<<<<<
@@ -20504,15 +20504,15 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     if (unlikely(__pyx_v_buckets == 0)) {
       PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 1242, __pyx_L1_error)
+      __PYX_ERR(0, 1243, __pyx_L1_error)
     }
     if (unlikely(__pyx_v_buckets == 0)) {
       PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 1242, __pyx_L1_error)
+      __PYX_ERR(0, 1243, __pyx_L1_error)
     }
     __pyx_v_deviation_b = pow(((double)((__pyx_v_sumsq_bucket_b / ((float)__pyx_v_buckets)) - powf((__pyx_v_deviation_b / ((float)__pyx_v_buckets)), 2.0))), 0.5);
 
-    /* "MuchTree.pyx":1244
+    /* "MuchTree.pyx":1245
  *             deviation_b = ( sumsq_bucket_b / buckets - ( deviation_b / buckets )**2 )**(0.5)
  * 
  *             cycles += 1             # <<<<<<<<<<<<<<
@@ -20521,7 +20521,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  */
     __pyx_v_cycles = (__pyx_v_cycles + 1);
 
-    /* "MuchTree.pyx":1246
+    /* "MuchTree.pyx":1247
  *             cycles += 1
  * 
  *             if deviation_a < sigma and deviation_b < sigma : break             # <<<<<<<<<<<<<<
@@ -20541,7 +20541,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
       goto __pyx_L4_break;
     }
 
-    /* "MuchTree.pyx":1247
+    /* "MuchTree.pyx":1248
  * 
  *             if deviation_a < sigma and deviation_b < sigma : break
  *             if cycles >= maxcycles : return None             # <<<<<<<<<<<<<<
@@ -20557,7 +20557,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   }
   __pyx_L4_break:;
 
-  /* "MuchTree.pyx":1249
+  /* "MuchTree.pyx":1250
  *             if cycles >= maxcycles : return None
  * 
  *         return { 'TreeA'       : np_all_distances_a[ : n * buckets * cycles ],             # <<<<<<<<<<<<<<
@@ -20565,77 +20565,77 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
  *                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1249, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_np_all_distances_a, 0, ((__pyx_v_n * __pyx_v_buckets) * __pyx_v_cycles), NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1249, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_np_all_distances_a, 0, ((__pyx_v_n * __pyx_v_buckets) * __pyx_v_cycles), NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeA, __pyx_t_2) < 0) __PYX_ERR(0, 1249, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeA, __pyx_t_2) < 0) __PYX_ERR(0, 1250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1250
+  /* "MuchTree.pyx":1251
  * 
  *         return { 'TreeA'       : np_all_distances_a[ : n * buckets * cycles ],
  *                  'TreeB'       : np_all_distances_b[ : n * buckets * cycles ],             # <<<<<<<<<<<<<<
  *                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,
  *                  'n_samples'   : n * buckets * cycles,
  */
-  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_np_all_distances_b, 0, ((__pyx_v_n * __pyx_v_buckets) * __pyx_v_cycles), NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1250, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_np_all_distances_b, 0, ((__pyx_v_n * __pyx_v_buckets) * __pyx_v_cycles), NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1251, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeB, __pyx_t_2) < 0) __PYX_ERR(0, 1249, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_TreeB, __pyx_t_2) < 0) __PYX_ERR(0, 1250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1251
+  /* "MuchTree.pyx":1252
  *         return { 'TreeA'       : np_all_distances_a[ : n * buckets * cycles ],
  *                  'TreeB'       : np_all_distances_b[ : n * buckets * cycles ],
  *                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,             # <<<<<<<<<<<<<<
  *                  'n_samples'   : n * buckets * cycles,
  *                  'deviation_a' : deviation_a,
  */
-  __pyx_t_2 = PyFloat_FromDouble((((double)(__pyx_v_self->subset_n_links * (__pyx_v_self->subset_n_links - 1))) / 2.0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1251, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble((((double)(__pyx_v_self->subset_n_links * (__pyx_v_self->subset_n_links - 1))) / 2.0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1252, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_pairs, __pyx_t_2) < 0) __PYX_ERR(0, 1249, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_pairs, __pyx_t_2) < 0) __PYX_ERR(0, 1250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1252
+  /* "MuchTree.pyx":1253
  *                  'TreeB'       : np_all_distances_b[ : n * buckets * cycles ],
  *                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,
  *                  'n_samples'   : n * buckets * cycles,             # <<<<<<<<<<<<<<
  *                  'deviation_a' : deviation_a,
  *                  'deviation_b' : deviation_b }
  */
-  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(((__pyx_v_n * __pyx_v_buckets) * __pyx_v_cycles)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1252, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_unsigned_int(((__pyx_v_n * __pyx_v_buckets) * __pyx_v_cycles)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1253, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_samples, __pyx_t_2) < 0) __PYX_ERR(0, 1249, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_n_samples, __pyx_t_2) < 0) __PYX_ERR(0, 1250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1253
+  /* "MuchTree.pyx":1254
  *                  'n_pairs'     : ( self.subset_n_links * ( self.subset_n_links - 1 ) ) / 2,
  *                  'n_samples'   : n * buckets * cycles,
  *                  'deviation_a' : deviation_a,             # <<<<<<<<<<<<<<
  *                  'deviation_b' : deviation_b }
  * 
  */
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_deviation_a); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1253, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_deviation_a); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_a, __pyx_t_2) < 0) __PYX_ERR(0, 1249, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_a, __pyx_t_2) < 0) __PYX_ERR(0, 1250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1254
+  /* "MuchTree.pyx":1255
  *                  'n_samples'   : n * buckets * cycles,
  *                  'deviation_a' : deviation_a,
  *                  'deviation_b' : deviation_b }             # <<<<<<<<<<<<<<
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :
  */
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_deviation_b); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1254, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_deviation_b); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_b, __pyx_t_2) < 0) __PYX_ERR(0, 1249, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_deviation_b, __pyx_t_2) < 0) __PYX_ERR(0, 1250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1127
+  /* "MuchTree.pyx":1128
  * 
  *     @cython.boundscheck(False)
  *     def sample_linked_distances( self, float sigma=0.001,             # <<<<<<<<<<<<<<
@@ -20694,7 +20694,7 @@ if (unlikely(__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 1
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1256
+/* "MuchTree.pyx":1257
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -20755,7 +20755,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "adjacency") < 0)) __PYX_ERR(0, 1256, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "adjacency") < 0)) __PYX_ERR(0, 1257, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -20775,7 +20775,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("adjacency", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1256, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("adjacency", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1257, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -20788,7 +20788,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_19adjacency(PyObject *__py
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1283
+/* "MuchTree.pyx":1284
  * 
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )             # <<<<<<<<<<<<<<
@@ -20825,8 +20825,8 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__p
   __pyx_outer_scope = (struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_cur_scope->__pyx_v_ta_node_ids)) { __Pyx_RaiseClosureNameError("ta_node_ids"); __PYX_ERR(0, 1283, __pyx_L1_error) }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_node_ids, __pyx_n_s_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1283, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_v_ta_node_ids)) { __Pyx_RaiseClosureNameError("ta_node_ids"); __PYX_ERR(0, 1284, __pyx_L1_error) }
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_node_ids, __pyx_n_s_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -20840,7 +20840,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__p
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_x) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_x);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1283, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
@@ -20860,7 +20860,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__p
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1284
+/* "MuchTree.pyx":1285
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )             # <<<<<<<<<<<<<<
@@ -20897,8 +20897,8 @@ static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__
   __pyx_outer_scope = (struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_cur_scope->__pyx_v_tb_node_ids)) { __Pyx_RaiseClosureNameError("tb_node_ids"); __PYX_ERR(0, 1284, __pyx_L1_error) }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_tb_node_ids, __pyx_n_s_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_v_tb_node_ids)) { __Pyx_RaiseClosureNameError("tb_node_ids"); __PYX_ERR(0, 1285, __pyx_L1_error) }
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_tb_node_ids, __pyx_n_s_index); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -20912,16 +20912,16 @@ static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_x) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_x);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_cur_scope->__pyx_v_ta_aj)) { __Pyx_RaiseClosureNameError("ta_aj"); __PYX_ERR(0, 1284, __pyx_L1_error) }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_v_ta_aj)) { __Pyx_RaiseClosureNameError("ta_aj"); __PYX_ERR(0, 1285, __pyx_L1_error) }
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyNumber_Add(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Add(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -20942,7 +20942,7 @@ static PyObject *__pyx_lambda_funcdef_lambda1(PyObject *__pyx_self, PyObject *__
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1256
+/* "MuchTree.pyx":1257
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -20990,90 +20990,90 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_8MuchTree___pyx_scope_struct_3_adjacency *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 1256, __pyx_L1_error)
+    __PYX_ERR(0, 1257, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
 
-  /* "MuchTree.pyx":1261
+  /* "MuchTree.pyx":1262
  *         trees, applying the specified random permutaitons.
  *         """
  *         TA = self.TreeA.adjacency( node = self.subset_a_root )             # <<<<<<<<<<<<<<
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )
  *         ta_aj = TA['adjacency_matrix']
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_adjacency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1261, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_adjacency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1261, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_root); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1261, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_root); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_node, __pyx_t_3) < 0) __PYX_ERR(0, 1261, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_node, __pyx_t_3) < 0) __PYX_ERR(0, 1262, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1261, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_TA = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1262
+  /* "MuchTree.pyx":1263
  *         """
  *         TA = self.TreeA.adjacency( node = self.subset_a_root )
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )             # <<<<<<<<<<<<<<
  *         ta_aj = TA['adjacency_matrix']
  *         tb_aj = TB['adjacency_matrix']
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_adjacency); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1262, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_adjacency); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1263, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1262, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1263, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1262, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1263, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_node, __pyx_t_1) < 0) __PYX_ERR(0, 1262, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_node, __pyx_t_1) < 0) __PYX_ERR(0, 1263, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1262, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1263, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_TB = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1263
+  /* "MuchTree.pyx":1264
  *         TA = self.TreeA.adjacency( node = self.subset_a_root )
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )
  *         ta_aj = TA['adjacency_matrix']             # <<<<<<<<<<<<<<
  *         tb_aj = TB['adjacency_matrix']
  *         ta_node_ids = TA['node_ids'].tolist()
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_TA, __pyx_n_u_adjacency_matrix); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1263, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_TA, __pyx_n_u_adjacency_matrix); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1264, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __pyx_cur_scope->__pyx_v_ta_aj = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1264
+  /* "MuchTree.pyx":1265
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )
  *         ta_aj = TA['adjacency_matrix']
  *         tb_aj = TB['adjacency_matrix']             # <<<<<<<<<<<<<<
  *         ta_node_ids = TA['node_ids'].tolist()
  *         tb_node_ids = TB['node_ids'].tolist()
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_TB, __pyx_n_u_adjacency_matrix); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1264, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_TB, __pyx_n_u_adjacency_matrix); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1265, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_tb_aj = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1265
+  /* "MuchTree.pyx":1266
  *         ta_aj = TA['adjacency_matrix']
  *         tb_aj = TB['adjacency_matrix']
  *         ta_node_ids = TA['node_ids'].tolist()             # <<<<<<<<<<<<<<
  *         tb_node_ids = TB['node_ids'].tolist()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_v_TA, __pyx_n_u_node_ids); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1265, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_v_TA, __pyx_n_u_node_ids); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1266, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_tolist); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1265, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_tolist); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1266, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -21088,23 +21088,23 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1265, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1266, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_GIVEREF(__pyx_t_1);
   __pyx_cur_scope->__pyx_v_ta_node_ids = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1266
+  /* "MuchTree.pyx":1267
  *         tb_aj = TB['adjacency_matrix']
  *         ta_node_ids = TA['node_ids'].tolist()
  *         tb_node_ids = TB['node_ids'].tolist()             # <<<<<<<<<<<<<<
  * 
  *         # apply random permutations
  */
-  __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_TB, __pyx_n_u_node_ids); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1266, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_TB, __pyx_n_u_node_ids); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1267, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_tolist); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1266, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_tolist); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1267, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -21119,26 +21119,26 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1266, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1267, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_GIVEREF(__pyx_t_1);
   __pyx_cur_scope->__pyx_v_tb_node_ids = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1269
+  /* "MuchTree.pyx":1270
  * 
  *         # apply random permutations
  *         ll = np.array( self.linklist )             # <<<<<<<<<<<<<<
  *         for i in xrange( 1, deletions ) :
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1269, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1269, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_linklist); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1269, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_linklist); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -21153,20 +21153,20 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1269, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_ll = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1270
+  /* "MuchTree.pyx":1271
  *         # apply random permutations
  *         ll = np.array( self.linklist )
  *         for i in xrange( 1, deletions ) :             # <<<<<<<<<<<<<<
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
  *         for i in xrange( 1, swaps ) :
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1270, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_int_1);
   __Pyx_GIVEREF(__pyx_int_1);
@@ -21174,16 +21174,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_INCREF(__pyx_v_deletions);
   __Pyx_GIVEREF(__pyx_v_deletions);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_deletions);
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_xrange, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1270, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_xrange, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
     __pyx_t_1 = __pyx_t_3; __Pyx_INCREF(__pyx_t_1); __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1270, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1270, __pyx_L1_error)
+    __pyx_t_6 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1271, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -21191,17 +21191,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1270, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1271, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1270, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1271, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1270, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1271, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1270, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1271, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -21211,7 +21211,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 1270, __pyx_L1_error)
+          else __PYX_ERR(0, 1271, __pyx_L1_error)
         }
         break;
       }
@@ -21220,28 +21220,28 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":1271
+    /* "MuchTree.pyx":1272
  *         ll = np.array( self.linklist )
  *         for i in xrange( 1, deletions ) :
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )             # <<<<<<<<<<<<<<
  *         for i in xrange( 1, swaps ) :
  *             x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_delete); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_delete); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_randint); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_randint); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_8 = PyObject_Length(__pyx_v_ll); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1271, __pyx_L1_error)
-    __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    __pyx_t_8 = PyObject_Length(__pyx_v_ll); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1272, __pyx_L1_error)
+    __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_9 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -21256,10 +21256,10 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __pyx_t_3 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_9, __pyx_t_7) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_7);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_ll);
     __Pyx_GIVEREF(__pyx_v_ll);
@@ -21267,10 +21267,10 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 1271, __pyx_L1_error)
-    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1271, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 1272, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -21278,7 +21278,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_DECREF_SET(__pyx_v_ll, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":1270
+    /* "MuchTree.pyx":1271
  *         # apply random permutations
  *         ll = np.array( self.linklist )
  *         for i in xrange( 1, deletions ) :             # <<<<<<<<<<<<<<
@@ -21288,14 +21288,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1272
+  /* "MuchTree.pyx":1273
  *         for i in xrange( 1, deletions ) :
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
  *         for i in xrange( 1, swaps ) :             # <<<<<<<<<<<<<<
  *             x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )
  *             X, Y = ll[x,1], ll[y,1]
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1272, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1273, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_int_1);
   __Pyx_GIVEREF(__pyx_int_1);
@@ -21303,16 +21303,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_INCREF(__pyx_v_swaps);
   __Pyx_GIVEREF(__pyx_v_swaps);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_swaps);
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_builtin_xrange, __pyx_t_1, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1272, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_builtin_xrange, __pyx_t_1, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1273, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (likely(PyList_CheckExact(__pyx_t_7)) || PyTuple_CheckExact(__pyx_t_7)) {
     __pyx_t_1 = __pyx_t_7; __Pyx_INCREF(__pyx_t_1); __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1272, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1272, __pyx_L1_error)
+    __pyx_t_6 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1273, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   for (;;) {
@@ -21320,17 +21320,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_7); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1272, __pyx_L1_error)
+        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_7); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1273, __pyx_L1_error)
         #else
-        __pyx_t_7 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1272, __pyx_L1_error)
+        __pyx_t_7 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1273, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_7); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1272, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_7); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1273, __pyx_L1_error)
         #else
-        __pyx_t_7 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1272, __pyx_L1_error)
+        __pyx_t_7 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1273, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
       }
@@ -21340,7 +21340,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 1272, __pyx_L1_error)
+          else __PYX_ERR(0, 1273, __pyx_L1_error)
         }
         break;
       }
@@ -21349,37 +21349,37 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "MuchTree.pyx":1273
+    /* "MuchTree.pyx":1274
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
  *         for i in xrange( 1, swaps ) :
  *             x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )             # <<<<<<<<<<<<<<
  *             X, Y = ll[x,1], ll[y,1]
  *             ll[x,1] = Y
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1273, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_random); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1273, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_random); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_choice); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1273, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_choice); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_8 = PyObject_Length(__pyx_v_ll); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1273, __pyx_L1_error)
-    __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1273, __pyx_L1_error)
+    __pyx_t_8 = PyObject_Length(__pyx_v_ll); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1274, __pyx_L1_error)
+    __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_xrange, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1273, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_xrange, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1273, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1273, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_size, __pyx_int_2) < 0) __PYX_ERR(0, 1273, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_replace, Py_False) < 0) __PYX_ERR(0, 1273, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1273, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_size, __pyx_int_2) < 0) __PYX_ERR(0, 1274, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_replace, Py_False) < 0) __PYX_ERR(0, 1274, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -21390,7 +21390,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 1273, __pyx_L1_error)
+        __PYX_ERR(0, 1274, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -21403,15 +21403,15 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_3);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1273, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1274, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1273, __pyx_L1_error)
+      __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1274, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       #endif
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1273, __pyx_L1_error)
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1274, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_10 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -21419,7 +21419,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       __Pyx_GOTREF(__pyx_t_4);
       index = 1; __pyx_t_3 = __pyx_t_10(__pyx_t_7); if (unlikely(!__pyx_t_3)) goto __pyx_L7_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_3);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_7), 2) < 0) __PYX_ERR(0, 1273, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_7), 2) < 0) __PYX_ERR(0, 1274, __pyx_L1_error)
       __pyx_t_10 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L8_unpacking_done;
@@ -21427,7 +21427,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_10 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 1273, __pyx_L1_error)
+      __PYX_ERR(0, 1274, __pyx_L1_error)
       __pyx_L8_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_x, __pyx_t_4);
@@ -21435,14 +21435,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_y, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":1274
+    /* "MuchTree.pyx":1275
  *         for i in xrange( 1, swaps ) :
  *             x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )
  *             X, Y = ll[x,1], ll[y,1]             # <<<<<<<<<<<<<<
  *             ll[x,1] = Y
  *             ll[y,1] = X
  */
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1274, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_v_x);
     __Pyx_GIVEREF(__pyx_v_x);
@@ -21450,10 +21450,10 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_INCREF(__pyx_int_1);
     __Pyx_GIVEREF(__pyx_int_1);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_1);
-    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1274, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1274, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_v_y);
     __Pyx_GIVEREF(__pyx_v_y);
@@ -21461,7 +21461,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_INCREF(__pyx_int_1);
     __Pyx_GIVEREF(__pyx_int_1);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_int_1);
-    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1274, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_XDECREF_SET(__pyx_v_X, __pyx_t_3);
@@ -21469,14 +21469,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_Y, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1275
+    /* "MuchTree.pyx":1276
  *             x, y = np.random.choice( xrange( len(ll) ), size=2, replace=False )
  *             X, Y = ll[x,1], ll[y,1]
  *             ll[x,1] = Y             # <<<<<<<<<<<<<<
  *             ll[y,1] = X
  *         for i in xrange( 1, additions ) :
  */
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1275, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_x);
     __Pyx_GIVEREF(__pyx_v_x);
@@ -21484,17 +21484,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_INCREF(__pyx_int_1);
     __Pyx_GIVEREF(__pyx_int_1);
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_int_1);
-    if (unlikely(PyObject_SetItem(__pyx_v_ll, __pyx_t_4, __pyx_v_Y) < 0)) __PYX_ERR(0, 1275, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_ll, __pyx_t_4, __pyx_v_Y) < 0)) __PYX_ERR(0, 1276, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1276
+    /* "MuchTree.pyx":1277
  *             X, Y = ll[x,1], ll[y,1]
  *             ll[x,1] = Y
  *             ll[y,1] = X             # <<<<<<<<<<<<<<
  *         for i in xrange( 1, additions ) :
  *             a = np.random.choice( self.TreeA.leafs.values() )
  */
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1276, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1277, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_y);
     __Pyx_GIVEREF(__pyx_v_y);
@@ -21502,10 +21502,10 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_INCREF(__pyx_int_1);
     __Pyx_GIVEREF(__pyx_int_1);
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_int_1);
-    if (unlikely(PyObject_SetItem(__pyx_v_ll, __pyx_t_4, __pyx_v_X) < 0)) __PYX_ERR(0, 1276, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_ll, __pyx_t_4, __pyx_v_X) < 0)) __PYX_ERR(0, 1277, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1272
+    /* "MuchTree.pyx":1273
  *         for i in xrange( 1, deletions ) :
  *             ll = np.delete( ll, np.random.randint(len(ll)), axis=0 )
  *         for i in xrange( 1, swaps ) :             # <<<<<<<<<<<<<<
@@ -21515,14 +21515,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1277
+  /* "MuchTree.pyx":1278
  *             ll[x,1] = Y
  *             ll[y,1] = X
  *         for i in xrange( 1, additions ) :             # <<<<<<<<<<<<<<
  *             a = np.random.choice( self.TreeA.leafs.values() )
  *             b = np.random.choice( self.TreeB.leafs.values() )
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1277, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1278, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_int_1);
   __Pyx_GIVEREF(__pyx_int_1);
@@ -21530,16 +21530,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_INCREF(__pyx_v_additions);
   __Pyx_GIVEREF(__pyx_v_additions);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_additions);
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_xrange, __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1277, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_xrange, __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1278, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (likely(PyList_CheckExact(__pyx_t_4)) || PyTuple_CheckExact(__pyx_t_4)) {
     __pyx_t_1 = __pyx_t_4; __Pyx_INCREF(__pyx_t_1); __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1277, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1277, __pyx_L1_error)
+    __pyx_t_6 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1278, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   for (;;) {
@@ -21547,17 +21547,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_4); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1277, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_4); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1278, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1277, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1278, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_4); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1277, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_4); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1278, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1277, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1278, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -21567,7 +21567,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 1277, __pyx_L1_error)
+          else __PYX_ERR(0, 1278, __pyx_L1_error)
         }
         break;
       }
@@ -21576,24 +21576,24 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1278
+    /* "MuchTree.pyx":1279
  *             ll[y,1] = X
  *         for i in xrange( 1, additions ) :
  *             a = np.random.choice( self.TreeA.leafs.values() )             # <<<<<<<<<<<<<<
  *             b = np.random.choice( self.TreeB.leafs.values() )
  *             ll = np.concatenate( (ll, np.array([[b,a]])), axis=0 )
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1278, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1278, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_choice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1278, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_choice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1278, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_leafs); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_values); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1278, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_values); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __pyx_t_7 = NULL;
@@ -21608,7 +21608,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     }
     __pyx_t_2 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1278, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_9 = NULL;
@@ -21624,30 +21624,30 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __pyx_t_4 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_9, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1278, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF_SET(__pyx_v_a, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1279
+    /* "MuchTree.pyx":1280
  *         for i in xrange( 1, additions ) :
  *             a = np.random.choice( self.TreeA.leafs.values() )
  *             b = np.random.choice( self.TreeB.leafs.values() )             # <<<<<<<<<<<<<<
  *             ll = np.concatenate( (ll, np.array([[b,a]])), axis=0 )
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1279, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1279, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_choice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1279, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_choice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1279, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_leafs); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_values); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1279, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_values); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_9 = NULL;
@@ -21662,7 +21662,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     }
     __pyx_t_2 = (__pyx_t_9) ? __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_9) : __Pyx_PyObject_CallNoArg(__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1279, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __pyx_t_7 = NULL;
@@ -21678,30 +21678,30 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_7, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1279, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF_SET(__pyx_v_b, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1280
+    /* "MuchTree.pyx":1281
  *             a = np.random.choice( self.TreeA.leafs.values() )
  *             b = np.random.choice( self.TreeB.leafs.values() )
  *             ll = np.concatenate( (ll, np.array([[b,a]])), axis=0 )             # <<<<<<<<<<<<<<
  * 
  *         # map node ids to matrix coordinates
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_concatenate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_concatenate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_v_b);
     __Pyx_GIVEREF(__pyx_v_b);
@@ -21709,7 +21709,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_INCREF(__pyx_v_a);
     __Pyx_GIVEREF(__pyx_v_a);
     PyList_SET_ITEM(__pyx_t_2, 1, __pyx_v_a);
-    __pyx_t_9 = PyList_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __pyx_t_9 = PyList_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_GIVEREF(__pyx_t_2);
     PyList_SET_ITEM(__pyx_t_9, 0, __pyx_t_2);
@@ -21727,10 +21727,10 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __pyx_t_4 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_7, __pyx_t_2, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_9);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_ll);
     __Pyx_GIVEREF(__pyx_v_ll);
@@ -21738,15 +21738,15 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_7);
     __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 1280, __pyx_L1_error)
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1280, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 1281, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -21754,7 +21754,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_DECREF_SET(__pyx_v_ll, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "MuchTree.pyx":1277
+    /* "MuchTree.pyx":1278
  *             ll[x,1] = Y
  *             ll[y,1] = X
  *         for i in xrange( 1, additions ) :             # <<<<<<<<<<<<<<
@@ -21764,18 +21764,18 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1283
+  /* "MuchTree.pyx":1284
  * 
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )             # <<<<<<<<<<<<<<
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_9adjacency_lambda, 0, __pyx_n_s_adjacency_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_MuchTree, __pyx_d, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1283, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_9adjacency_lambda, 0, __pyx_n_s_adjacency_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_MuchTree, __pyx_d, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_tuple__9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1283, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_tuple__9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1283, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_1);
@@ -21783,24 +21783,24 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_t_9);
   __pyx_t_1 = 0;
   __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_7, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1283, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_7, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_v_ta_links = __pyx_t_9;
   __pyx_t_9 = 0;
 
-  /* "MuchTree.pyx":1284
+  /* "MuchTree.pyx":1285
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )             # <<<<<<<<<<<<<<
  * 
  *         # build empty graph adjacency matrix
  */
-  __pyx_t_9 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1, 0, __pyx_n_s_adjacency_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_MuchTree, __pyx_d, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_9adjacency_1lambda1, 0, __pyx_n_s_adjacency_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_MuchTree, __pyx_d, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_tuple__10); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_ll, __pyx_tuple__10); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_9);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_9);
@@ -21808,69 +21808,69 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_7);
   __pyx_t_9 = 0;
   __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_1, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_1, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_tb_links = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1287
+  /* "MuchTree.pyx":1288
  * 
  *         # build empty graph adjacency matrix
  *         aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0],             # <<<<<<<<<<<<<<
  *                          ta_aj.shape[1] + tb_aj.shape[1] ) )
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyNumber_Add(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Add(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1288
+  /* "MuchTree.pyx":1289
  *         # build empty graph adjacency matrix
  *         aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0],
  *                          ta_aj.shape[1] + tb_aj.shape[1] ) )             # <<<<<<<<<<<<<<
  * 
  *         # place the tree adjacency matrixes into the empty graph matrix
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1288, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1289, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_3, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1288, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_3, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1289, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1288, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1289, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_3, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1288, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_3, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1289, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyNumber_Add(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1288, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Add(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1289, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1287
+  /* "MuchTree.pyx":1288
  * 
  *         # build empty graph adjacency matrix
  *         aj = np.zeros( ( ta_aj.shape[0] + tb_aj.shape[0],             # <<<<<<<<<<<<<<
  *                          ta_aj.shape[1] + tb_aj.shape[1] ) )
  * 
  */
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -21891,20 +21891,20 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_t_7 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1287, __pyx_L1_error)
+  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_v_aj = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1291
+  /* "MuchTree.pyx":1292
  * 
  *         # place the tree adjacency matrixes into the empty graph matrix
  *         aj[ 0:ta_aj.shape[0] , 0:ta_aj.shape[1]  ] = ta_aj / ta_aj.max()             # <<<<<<<<<<<<<<
  *         aj[   ta_aj.shape[0]:,   ta_aj.shape[1]: ] = tb_aj / tb_aj.max()
  * 
  */
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_max); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_max); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
@@ -21918,29 +21918,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_7 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyNumber_Divide(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyNumber_Divide(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_7, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_7, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = PySlice_New(__pyx_int_0, __pyx_t_2, Py_None); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_7 = PySlice_New(__pyx_int_0, __pyx_t_2, Py_None); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_2, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_2, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PySlice_New(__pyx_int_0, __pyx_t_3, Py_None); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_2 = PySlice_New(__pyx_int_0, __pyx_t_3, Py_None); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_7);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7);
@@ -21948,18 +21948,18 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2);
   __pyx_t_7 = 0;
   __pyx_t_2 = 0;
-  if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_3, __pyx_t_9) < 0)) __PYX_ERR(0, 1291, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_3, __pyx_t_9) < 0)) __PYX_ERR(0, 1292, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "MuchTree.pyx":1292
+  /* "MuchTree.pyx":1293
  *         # place the tree adjacency matrixes into the empty graph matrix
  *         aj[ 0:ta_aj.shape[0] , 0:ta_aj.shape[1]  ] = ta_aj / ta_aj.max()
  *         aj[   ta_aj.shape[0]:,   ta_aj.shape[1]: ] = tb_aj / tb_aj.max()             # <<<<<<<<<<<<<<
  * 
  *         # compute means of all the non-zero-length edges of the trees
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -21973,29 +21973,29 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_9 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyNumber_Divide(__pyx_v_tb_aj, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyNumber_Divide(__pyx_v_tb_aj, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_9, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_9, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = PySlice_New(__pyx_t_2, Py_None, Py_None); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_9 = PySlice_New(__pyx_t_2, Py_None, Py_None); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __Pyx_GetItemInt(__pyx_t_2, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_GetItemInt(__pyx_t_2, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PySlice_New(__pyx_t_7, Py_None, Py_None); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_2 = PySlice_New(__pyx_t_7, Py_None, Py_None); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_9);
   PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_9);
@@ -22003,23 +22003,23 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_t_2);
   __pyx_t_9 = 0;
   __pyx_t_2 = 0;
-  if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_7, __pyx_t_3) < 0)) __PYX_ERR(0, 1292, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_7, __pyx_t_3) < 0)) __PYX_ERR(0, 1293, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1295
+  /* "MuchTree.pyx":1296
  * 
  *         # compute means of all the non-zero-length edges of the trees
  *         ta_mean = np.mean( ta_aj.flatten()[ ta_aj.flatten() > self.TreeA.polytomy_distance ] )             # <<<<<<<<<<<<<<
  *         tb_mean = np.mean( tb_aj.flatten()[ tb_aj.flatten() > self.TreeB.polytomy_distance ] )
  *         link_mean = ( ta_mean / ta_aj.max() + tb_mean / tb_aj.max() ) / 2.0
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_mean); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_mean); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_flatten); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_flatten); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_t_1 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
@@ -22033,10 +22033,10 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_7 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_flatten); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_flatten); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -22050,15 +22050,15 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_9 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_polytomy_distance); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_polytomy_distance); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = PyObject_RichCompare(__pyx_t_9, __pyx_t_1, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(__pyx_t_9, __pyx_t_1, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_7, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_7, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -22075,25 +22075,25 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1295, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1296, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_ta_mean = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1296
+  /* "MuchTree.pyx":1297
  *         # compute means of all the non-zero-length edges of the trees
  *         ta_mean = np.mean( ta_aj.flatten()[ ta_aj.flatten() > self.TreeA.polytomy_distance ] )
  *         tb_mean = np.mean( tb_aj.flatten()[ tb_aj.flatten() > self.TreeB.polytomy_distance ] )             # <<<<<<<<<<<<<<
  *         link_mean = ( ta_mean / ta_aj.max() + tb_mean / tb_aj.max() ) / 2.0
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_mean); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_mean); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_flatten); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_flatten); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -22107,10 +22107,10 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_2 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_flatten); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_flatten); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __pyx_t_9 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -22124,15 +22124,15 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_4 = (__pyx_t_9) ? __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_9) : __Pyx_PyObject_CallNoArg(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_polytomy_distance); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_polytomy_distance); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_9 = PyObject_RichCompare(__pyx_t_4, __pyx_t_7, Py_GT); __Pyx_XGOTREF(__pyx_t_9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  __pyx_t_9 = PyObject_RichCompare(__pyx_t_4, __pyx_t_7, Py_GT); __Pyx_XGOTREF(__pyx_t_9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_t_2, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_t_2, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -22149,20 +22149,20 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_t_3 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_9, __pyx_t_7) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_7);
   __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1296, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_tb_mean = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1297
+  /* "MuchTree.pyx":1298
  *         ta_mean = np.mean( ta_aj.flatten()[ ta_aj.flatten() > self.TreeA.polytomy_distance ] )
  *         tb_mean = np.mean( tb_aj.flatten()[ tb_aj.flatten() > self.TreeB.polytomy_distance ] )
  *         link_mean = ( ta_mean / ta_aj.max() + tb_mean / tb_aj.max() ) / 2.0             # <<<<<<<<<<<<<<
  * 
  *         # place the link edges into graph adjacency matrix,
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_max); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1297, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ta_aj, __pyx_n_s_max); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -22176,13 +22176,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_3 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1297, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ta_mean, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1297, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_v_ta_mean, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_max); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1297, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_tb_aj, __pyx_n_s_max); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __pyx_t_9 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -22196,30 +22196,30 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __pyx_t_3 = (__pyx_t_9) ? __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_9) : __Pyx_PyObject_CallNoArg(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1297, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyNumber_Divide(__pyx_v_tb_mean, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1297, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyNumber_Divide(__pyx_v_tb_mean, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1297, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyFloat_TrueDivideObjC(__pyx_t_3, __pyx_float_2_0, 2.0, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1297, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyFloat_TrueDivideObjC(__pyx_t_3, __pyx_float_2_0, 2.0, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_link_mean = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1302
+  /* "MuchTree.pyx":1303
  *         # normalizing their edge weights to the average weight of the
  *         # tree edges
  *         for i,j in zip( tb_links, ta_links ) :             # <<<<<<<<<<<<<<
  *             aj[i,j] = link_mean
  *             aj[j,i] = link_mean
  */
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1302, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1303, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_INCREF(__pyx_v_tb_links);
   __Pyx_GIVEREF(__pyx_v_tb_links);
@@ -22227,16 +22227,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __Pyx_INCREF(__pyx_v_ta_links);
   __Pyx_GIVEREF(__pyx_v_ta_links);
   PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_v_ta_links);
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1302, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1303, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
     __pyx_t_7 = __pyx_t_3; __Pyx_INCREF(__pyx_t_7); __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1302, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1303, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_6 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1302, __pyx_L1_error)
+    __pyx_t_6 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1303, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -22244,17 +22244,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       if (likely(PyList_CheckExact(__pyx_t_7))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_7)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1302, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1303, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_7, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1302, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_7, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1303, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_7)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1302, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 1303, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_7, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1302, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_7, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1303, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -22264,7 +22264,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 1302, __pyx_L1_error)
+          else __PYX_ERR(0, 1303, __pyx_L1_error)
         }
         break;
       }
@@ -22276,7 +22276,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 1302, __pyx_L1_error)
+        __PYX_ERR(0, 1303, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -22289,15 +22289,15 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_9);
       #else
-      __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1302, __pyx_L1_error)
+      __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1303, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_9 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1302, __pyx_L1_error)
+      __pyx_t_9 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1303, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       #endif
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1302, __pyx_L1_error)
+      __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1303, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_10 = Py_TYPE(__pyx_t_2)->tp_iternext;
@@ -22305,7 +22305,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       __Pyx_GOTREF(__pyx_t_1);
       index = 1; __pyx_t_9 = __pyx_t_10(__pyx_t_2); if (unlikely(!__pyx_t_9)) goto __pyx_L13_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_9);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_2), 2) < 0) __PYX_ERR(0, 1302, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_2), 2) < 0) __PYX_ERR(0, 1303, __pyx_L1_error)
       __pyx_t_10 = NULL;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       goto __pyx_L14_unpacking_done;
@@ -22313,7 +22313,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_10 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 1302, __pyx_L1_error)
+      __PYX_ERR(0, 1303, __pyx_L1_error)
       __pyx_L14_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_1);
@@ -22321,14 +22321,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "MuchTree.pyx":1303
+    /* "MuchTree.pyx":1304
  *         # tree edges
  *         for i,j in zip( tb_links, ta_links ) :
  *             aj[i,j] = link_mean             # <<<<<<<<<<<<<<
  *             aj[j,i] = link_mean
  * 
  */
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1303, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1304, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_v_i);
     __Pyx_GIVEREF(__pyx_v_i);
@@ -22336,17 +22336,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_INCREF(__pyx_v_j);
     __Pyx_GIVEREF(__pyx_v_j);
     PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_j);
-    if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_3, __pyx_v_link_mean) < 0)) __PYX_ERR(0, 1303, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_3, __pyx_v_link_mean) < 0)) __PYX_ERR(0, 1304, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":1304
+    /* "MuchTree.pyx":1305
  *         for i,j in zip( tb_links, ta_links ) :
  *             aj[i,j] = link_mean
  *             aj[j,i] = link_mean             # <<<<<<<<<<<<<<
  * 
  *         return aj
  */
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1304, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1305, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_v_j);
     __Pyx_GIVEREF(__pyx_v_j);
@@ -22354,10 +22354,10 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
     __Pyx_INCREF(__pyx_v_i);
     __Pyx_GIVEREF(__pyx_v_i);
     PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_i);
-    if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_3, __pyx_v_link_mean) < 0)) __PYX_ERR(0, 1304, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_aj, __pyx_t_3, __pyx_v_link_mean) < 0)) __PYX_ERR(0, 1305, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "MuchTree.pyx":1302
+    /* "MuchTree.pyx":1303
  *         # normalizing their edge weights to the average weight of the
  *         # tree edges
  *         for i,j in zip( tb_links, ta_links ) :             # <<<<<<<<<<<<<<
@@ -22367,7 +22367,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1306
+  /* "MuchTree.pyx":1307
  *             aj[j,i] = link_mean
  * 
  *         return aj             # <<<<<<<<<<<<<<
@@ -22379,7 +22379,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_r = __pyx_v_aj;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1256
+  /* "MuchTree.pyx":1257
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -22422,7 +22422,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1308
+/* "MuchTree.pyx":1309
  *         return aj
  * 
  *     def laplacian( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -22483,7 +22483,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_21laplacian(PyObject *__py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "laplacian") < 0)) __PYX_ERR(0, 1308, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "laplacian") < 0)) __PYX_ERR(0, 1309, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -22503,7 +22503,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_21laplacian(PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("laplacian", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1308, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("laplacian", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1309, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.laplacian", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -22532,64 +22532,64 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("laplacian", 0);
 
-  /* "MuchTree.pyx":1313
+  /* "MuchTree.pyx":1314
  *         """
  * 
  *         aj = self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                              additions=additions,
  *                              swaps=swaps )
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_adjacency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1313, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_adjacency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1313, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_deletions, __pyx_v_deletions) < 0) __PYX_ERR(0, 1313, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_deletions, __pyx_v_deletions) < 0) __PYX_ERR(0, 1314, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1314
+  /* "MuchTree.pyx":1315
  * 
  *         aj = self.adjacency( deletions=deletions,
  *                              additions=additions,             # <<<<<<<<<<<<<<
  *                              swaps=swaps )
  *         lp = np.zeros( aj.shape )
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_additions, __pyx_v_additions) < 0) __PYX_ERR(0, 1313, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_additions, __pyx_v_additions) < 0) __PYX_ERR(0, 1314, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1315
+  /* "MuchTree.pyx":1316
  *         aj = self.adjacency( deletions=deletions,
  *                              additions=additions,
  *                              swaps=swaps )             # <<<<<<<<<<<<<<
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_swaps, __pyx_v_swaps) < 0) __PYX_ERR(0, 1313, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_swaps, __pyx_v_swaps) < 0) __PYX_ERR(0, 1314, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1313
+  /* "MuchTree.pyx":1314
  *         """
  * 
  *         aj = self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                              additions=additions,
  *                              swaps=swaps )
  */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1313, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_aj = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1316
+  /* "MuchTree.pyx":1317
  *                              additions=additions,
  *                              swaps=swaps )
  *         lp = np.zeros( aj.shape )             # <<<<<<<<<<<<<<
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )
  *         lp = lp - aj
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1316, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1316, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1316, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_aj, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
@@ -22604,30 +22604,30 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1316, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_lp = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1317
+  /* "MuchTree.pyx":1318
  *                              swaps=swaps )
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )             # <<<<<<<<<<<<<<
  *         lp = lp - aj
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1317, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_fill_diagonal); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1317, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_fill_diagonal); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_aj, __pyx_n_s_sum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1317, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_aj, __pyx_n_s_sum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1317, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 1317, __pyx_L1_error)
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1317, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 1318, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -22646,7 +22646,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_lp, __pyx_t_5};
-    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1317, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1318, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -22655,14 +22655,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_lp, __pyx_t_5};
-    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1317, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1318, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   } else
   #endif
   {
-    __pyx_t_1 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1317, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1318, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -22673,26 +22673,26 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_1, 1+__pyx_t_6, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1317, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1318, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1318
+  /* "MuchTree.pyx":1319
  *         lp = np.zeros( aj.shape )
  *         np.fill_diagonal( lp, aj.sum( axis=0 ) )
  *         lp = lp - aj             # <<<<<<<<<<<<<<
  * 
  *         return lp
  */
-  __pyx_t_3 = PyNumber_Subtract(__pyx_v_lp, __pyx_v_aj); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1318, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Subtract(__pyx_v_lp, __pyx_v_aj); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1319, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF_SET(__pyx_v_lp, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "MuchTree.pyx":1320
+  /* "MuchTree.pyx":1321
  *         lp = lp - aj
  * 
  *         return lp             # <<<<<<<<<<<<<<
@@ -22704,7 +22704,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __pyx_r = __pyx_v_lp;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1308
+  /* "MuchTree.pyx":1309
  *         return aj
  * 
  *     def laplacian( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -22729,7 +22729,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1322
+/* "MuchTree.pyx":1323
  *         return lp
  * 
  *     def spectrum( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -22790,7 +22790,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_23spectrum(PyObject *__pyx
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "spectrum") < 0)) __PYX_ERR(0, 1322, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "spectrum") < 0)) __PYX_ERR(0, 1323, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -22810,7 +22810,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_23spectrum(PyObject *__pyx
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("spectrum", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1322, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("spectrum", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1323, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.spectrum", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -22852,14 +22852,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("spectrum", 0);
 
-  /* "MuchTree.pyx":1327
+  /* "MuchTree.pyx":1328
  *         subsetted trees.
  *         """
  *         lp = self.laplacian( deletions, additions, swaps )             # <<<<<<<<<<<<<<
  * 
  *         cdef int N     = lp.shape[0]
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_laplacian); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1327, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_laplacian); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1328, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
@@ -22876,7 +22876,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[4] = {__pyx_t_3, __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 3+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1327, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 3+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1328, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
@@ -22884,13 +22884,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[4] = {__pyx_t_3, __pyx_v_deletions, __pyx_v_additions, __pyx_v_swaps};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 3+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1327, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 3+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1328, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
   #endif
   {
-    __pyx_t_5 = PyTuple_New(3+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1327, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(3+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1328, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -22904,7 +22904,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
     __Pyx_INCREF(__pyx_v_swaps);
     __Pyx_GIVEREF(__pyx_v_swaps);
     PyTuple_SET_ITEM(__pyx_t_5, 2+__pyx_t_4, __pyx_v_swaps);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1327, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1328, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
@@ -22912,23 +22912,23 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_v_lp = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1329
+  /* "MuchTree.pyx":1330
  *         lp = self.laplacian( deletions, additions, swaps )
  * 
  *         cdef int N     = lp.shape[0]             # <<<<<<<<<<<<<<
  *         cdef int nb    = 4
  *         cdef int lwork = (nb+2)*N
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_lp, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1329, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_lp, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1330, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1329, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1330, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1329, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 1330, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_N = __pyx_t_4;
 
-  /* "MuchTree.pyx":1330
+  /* "MuchTree.pyx":1331
  * 
  *         cdef int N     = lp.shape[0]
  *         cdef int nb    = 4             # <<<<<<<<<<<<<<
@@ -22937,7 +22937,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   __pyx_v_nb = 4;
 
-  /* "MuchTree.pyx":1331
+  /* "MuchTree.pyx":1332
  *         cdef int N     = lp.shape[0]
  *         cdef int nb    = 4
  *         cdef int lwork = (nb+2)*N             # <<<<<<<<<<<<<<
@@ -22946,73 +22946,73 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   __pyx_v_lwork = ((__pyx_v_nb + 2) * __pyx_v_N);
 
-  /* "MuchTree.pyx":1333
+  /* "MuchTree.pyx":1334
  *         cdef int lwork = (nb+2)*N
  * 
  *         np_work = np.ndarray( lwork )             # <<<<<<<<<<<<<<
  *         np_w    = np.ndarray( N )
  * 
  */
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_lwork); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1333, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_lwork); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1334, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1333, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1334, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_np_work = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1334
+  /* "MuchTree.pyx":1335
  * 
  *         np_work = np.ndarray( lwork )
  *         np_w    = np.ndarray( N )             # <<<<<<<<<<<<<<
  * 
  *         cdef double[:,::1] a = lp
  */
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_N); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1334, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_N); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1335, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1334, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_5numpy_ndarray), __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1335, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_np_w = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "MuchTree.pyx":1336
+  /* "MuchTree.pyx":1337
  *         np_w    = np.ndarray( N )
  * 
  *         cdef double[:,::1] a = lp             # <<<<<<<<<<<<<<
  *         cdef double[:] work  = np_work
  *         cdef double[:] w     = np_w
  */
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(__pyx_v_lp, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 1336, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(__pyx_v_lp, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 1337, __pyx_L1_error)
   __pyx_v_a = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "MuchTree.pyx":1337
+  /* "MuchTree.pyx":1338
  * 
  *         cdef double[:,::1] a = lp
  *         cdef double[:] work  = np_work             # <<<<<<<<<<<<<<
  *         cdef double[:] w     = np_w
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_work, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1337, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_work, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1338, __pyx_L1_error)
   __pyx_v_work = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1338
+  /* "MuchTree.pyx":1339
  *         cdef double[:,::1] a = lp
  *         cdef double[:] work  = np_work
  *         cdef double[:] w     = np_w             # <<<<<<<<<<<<<<
  * 
  *         cdef double * b = &a[0,0]
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_w, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1338, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_v_np_w, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 1339, __pyx_L1_error)
   __pyx_v_w = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "MuchTree.pyx":1340
+  /* "MuchTree.pyx":1341
  *         cdef double[:] w     = np_w
  * 
  *         cdef double * b = &a[0,0]             # <<<<<<<<<<<<<<
@@ -23032,11 +23032,11 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   } else if (unlikely(__pyx_t_9 >= __pyx_v_a.shape[1])) __pyx_t_4 = 1;
   if (unlikely(__pyx_t_4 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
-    __PYX_ERR(0, 1340, __pyx_L1_error)
+    __PYX_ERR(0, 1341, __pyx_L1_error)
   }
   __pyx_v_b = (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_a.data + __pyx_t_8 * __pyx_v_a.strides[0]) )) + __pyx_t_9)) ))));
 
-  /* "MuchTree.pyx":1341
+  /* "MuchTree.pyx":1342
  * 
  *         cdef double * b = &a[0,0]
  *         cdef int info   = 0             # <<<<<<<<<<<<<<
@@ -23045,7 +23045,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   __pyx_v_info = 0;
 
-  /* "MuchTree.pyx":1343
+  /* "MuchTree.pyx":1344
  *         cdef int info   = 0
  * 
  *         dsyev( 'N', 'U', &N, b, &N, &w[0], &work[0], &lwork, &info )             # <<<<<<<<<<<<<<
@@ -23060,7 +23060,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   } else if (unlikely(__pyx_t_9 >= __pyx_v_w.shape[0])) __pyx_t_4 = 0;
   if (unlikely(__pyx_t_4 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
-    __PYX_ERR(0, 1343, __pyx_L1_error)
+    __PYX_ERR(0, 1344, __pyx_L1_error)
   }
   __pyx_t_8 = 0;
   __pyx_t_4 = -1;
@@ -23070,11 +23070,11 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   } else if (unlikely(__pyx_t_8 >= __pyx_v_work.shape[0])) __pyx_t_4 = 0;
   if (unlikely(__pyx_t_4 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
-    __PYX_ERR(0, 1343, __pyx_L1_error)
+    __PYX_ERR(0, 1344, __pyx_L1_error)
   }
   __pyx_f_5scipy_6linalg_13cython_lapack_dsyev(((char *)"N"), ((char *)"U"), (&__pyx_v_N), __pyx_v_b, (&__pyx_v_N), (&(*((double *) ( /* dim=0 */ (__pyx_v_w.data + __pyx_t_9 * __pyx_v_w.strides[0]) )))), (&(*((double *) ( /* dim=0 */ (__pyx_v_work.data + __pyx_t_8 * __pyx_v_work.strides[0]) )))), (&__pyx_v_lwork), (&__pyx_v_info));
 
-  /* "MuchTree.pyx":1345
+  /* "MuchTree.pyx":1346
  *         dsyev( 'N', 'U', &N, b, &N, &w[0], &work[0], &lwork, &info )
  * 
  *         if info == 0 :             # <<<<<<<<<<<<<<
@@ -23084,7 +23084,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   __pyx_t_10 = ((__pyx_v_info == 0) != 0);
   if (__pyx_t_10) {
 
-    /* "MuchTree.pyx":1346
+    /* "MuchTree.pyx":1347
  * 
  *         if info == 0 :
  *             return np_w             # <<<<<<<<<<<<<<
@@ -23096,7 +23096,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
     __pyx_r = __pyx_v_np_w;
     goto __pyx_L0;
 
-    /* "MuchTree.pyx":1345
+    /* "MuchTree.pyx":1346
  *         dsyev( 'N', 'U', &N, b, &N, &w[0], &work[0], &lwork, &info )
  * 
  *         if info == 0 :             # <<<<<<<<<<<<<<
@@ -23105,7 +23105,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   }
 
-  /* "MuchTree.pyx":1348
+  /* "MuchTree.pyx":1349
  *             return np_w
  *         else :
  *             return info             # <<<<<<<<<<<<<<
@@ -23114,14 +23114,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_info); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1348, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_info); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1349, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
   }
 
-  /* "MuchTree.pyx":1322
+  /* "MuchTree.pyx":1323
  *         return lp
  * 
  *     def spectrum( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -23151,7 +23151,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1350
+/* "MuchTree.pyx":1351
  *             return info
  * 
  *     def to_igraph( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -23212,7 +23212,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_25to_igraph(PyObject *__py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "to_igraph") < 0)) __PYX_ERR(0, 1350, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "to_igraph") < 0)) __PYX_ERR(0, 1351, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -23232,7 +23232,7 @@ static PyObject *__pyx_pw_8MuchTree_15SuchLinkedTrees_25to_igraph(PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("to_igraph", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1350, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("to_igraph", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1351, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("MuchTree.SuchLinkedTrees.to_igraph", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -23268,34 +23268,34 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("to_igraph", 0);
 
-  /* "MuchTree.pyx":1355
+  /* "MuchTree.pyx":1356
  *         labled igraph object. The igraph package must be installed.
  *         """
  *         if not with_igraph :             # <<<<<<<<<<<<<<
  *             raise Exception( 'igraph package not installed.' )
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_with_igraph); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1355, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_with_igraph); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1356, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 1355, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 1356, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = ((!__pyx_t_2) != 0);
   if (unlikely(__pyx_t_3)) {
 
-    /* "MuchTree.pyx":1356
+    /* "MuchTree.pyx":1357
  *         """
  *         if not with_igraph :
  *             raise Exception( 'igraph package not installed.' )             # <<<<<<<<<<<<<<
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1356, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])), __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1357, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 1356, __pyx_L1_error)
+    __PYX_ERR(0, 1357, __pyx_L1_error)
 
-    /* "MuchTree.pyx":1355
+    /* "MuchTree.pyx":1356
  *         labled igraph object. The igraph package must be installed.
  *         """
  *         if not with_igraph :             # <<<<<<<<<<<<<<
@@ -23304,78 +23304,78 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
  */
   }
 
-  /* "MuchTree.pyx":1358
+  /* "MuchTree.pyx":1359
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Graph); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1358, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Graph); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_Weighted_Adjacency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1358, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_Weighted_Adjacency); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1360
+  /* "MuchTree.pyx":1361
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),             # <<<<<<<<<<<<<<
  *                                       mode=ADJ_UNDIRECTED )
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_adjacency); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1358, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_adjacency); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "MuchTree.pyx":1358
+  /* "MuchTree.pyx":1359
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),
  */
-  __pyx_t_6 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1358, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_deletions, __pyx_v_deletions) < 0) __PYX_ERR(0, 1358, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_deletions, __pyx_v_deletions) < 0) __PYX_ERR(0, 1359, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1359
+  /* "MuchTree.pyx":1360
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  *                                                       additions=additions,             # <<<<<<<<<<<<<<
  *                                                       swaps=swaps ).tolist(),
  *                                       mode=ADJ_UNDIRECTED )
  */
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_additions, __pyx_v_additions) < 0) __PYX_ERR(0, 1358, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_additions, __pyx_v_additions) < 0) __PYX_ERR(0, 1359, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1360
+  /* "MuchTree.pyx":1361
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),             # <<<<<<<<<<<<<<
  *                                       mode=ADJ_UNDIRECTED )
  * 
  */
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_swaps, __pyx_v_swaps) < 0) __PYX_ERR(0, 1358, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_swaps, __pyx_v_swaps) < 0) __PYX_ERR(0, 1359, __pyx_L1_error)
 
-  /* "MuchTree.pyx":1358
+  /* "MuchTree.pyx":1359
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),
  */
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1358, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":1360
+  /* "MuchTree.pyx":1361
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),             # <<<<<<<<<<<<<<
  *                                       mode=ADJ_UNDIRECTED )
  * 
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_tolist); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1360, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_tolist); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1361, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_t_7 = NULL;
@@ -23390,45 +23390,45 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   }
   __pyx_t_1 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1360, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1361, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":1358
+  /* "MuchTree.pyx":1359
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),
  */
-  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1358, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "MuchTree.pyx":1361
+  /* "MuchTree.pyx":1362
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),
  *                                       mode=ADJ_UNDIRECTED )             # <<<<<<<<<<<<<<
  * 
  *         subset_a_length = len( list( self.TreeA.get_descendant_nodes( self.subset_a_root ) ) )
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1361, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1362, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_ADJ_UNDIRECTED); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1361, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_ADJ_UNDIRECTED); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1362, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mode, __pyx_t_7) < 0) __PYX_ERR(0, 1361, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mode, __pyx_t_7) < 0) __PYX_ERR(0, 1362, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1358
+  /* "MuchTree.pyx":1359
  *             raise Exception( 'igraph package not installed.' )
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                                                       additions=additions,
  *                                                       swaps=swaps ).tolist(),
  */
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1358, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -23436,16 +23436,16 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __pyx_v_g = __pyx_t_7;
   __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1363
+  /* "MuchTree.pyx":1364
  *                                       mode=ADJ_UNDIRECTED )
  * 
  *         subset_a_length = len( list( self.TreeA.get_descendant_nodes( self.subset_a_root ) ) )             # <<<<<<<<<<<<<<
  *         subset_b_length = len( list( self.TreeB.get_descendant_nodes( self.subset_b_root ) ) )
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_get_descendant_nodes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1363, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeA, __pyx_n_s_get_descendant_nodes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1364, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_root); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1363, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_a_root); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1364, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -23460,26 +23460,26 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __pyx_t_7 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1363, __pyx_L1_error)
+  if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1364, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PySequence_List(__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1363, __pyx_L1_error)
+  __pyx_t_1 = PySequence_List(__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1364, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_8 = PyList_GET_SIZE(__pyx_t_1); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1363, __pyx_L1_error)
+  __pyx_t_8 = PyList_GET_SIZE(__pyx_t_1); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1364, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_subset_a_length = __pyx_t_8;
 
-  /* "MuchTree.pyx":1364
+  /* "MuchTree.pyx":1365
  * 
  *         subset_a_length = len( list( self.TreeA.get_descendant_nodes( self.subset_a_root ) ) )
  *         subset_b_length = len( list( self.TreeB.get_descendant_nodes( self.subset_b_root ) ) )             # <<<<<<<<<<<<<<
  * 
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \
  */
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_get_descendant_nodes); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1364, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self->TreeB, __pyx_n_s_get_descendant_nodes); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1365, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_root); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1364, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->subset_b_root); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1365, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -23494,24 +23494,24 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_7, __pyx_t_4, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1364, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1365, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = PySequence_List(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1364, __pyx_L1_error)
+  __pyx_t_7 = PySequence_List(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1365, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_8 = PyList_GET_SIZE(__pyx_t_7); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1364, __pyx_L1_error)
+  __pyx_t_8 = PyList_GET_SIZE(__pyx_t_7); if (unlikely(__pyx_t_8 == ((Py_ssize_t)-1))) __PYX_ERR(0, 1365, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_v_subset_b_length = __pyx_t_8;
 
-  /* "MuchTree.pyx":1366
+  /* "MuchTree.pyx":1367
  *         subset_b_length = len( list( self.TreeB.get_descendant_nodes( self.subset_b_root ) ) )
  * 
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \             # <<<<<<<<<<<<<<
  *                         ['#24878dff'] * subset_b_length
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \
  */
-  __pyx_t_7 = PyList_New(1 * ((__pyx_v_subset_a_length<0) ? 0:__pyx_v_subset_a_length)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1366, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(1 * ((__pyx_v_subset_a_length<0) ? 0:__pyx_v_subset_a_length)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1367, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   { Py_ssize_t __pyx_temp;
     for (__pyx_temp=0; __pyx_temp < __pyx_v_subset_a_length; __pyx_temp++) {
@@ -23521,14 +23521,14 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
     }
   }
 
-  /* "MuchTree.pyx":1367
+  /* "MuchTree.pyx":1368
  * 
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \
  *                         ['#24878dff'] * subset_b_length             # <<<<<<<<<<<<<<
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \
  *                         [ 'g' + str(i) for i in range( subset_b_length ) ]
  */
-  __pyx_t_1 = PyList_New(1 * ((__pyx_v_subset_b_length<0) ? 0:__pyx_v_subset_b_length)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1367, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1 * ((__pyx_v_subset_b_length<0) ? 0:__pyx_v_subset_b_length)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1368, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   { Py_ssize_t __pyx_temp;
     for (__pyx_temp=0; __pyx_temp < __pyx_v_subset_b_length; __pyx_temp++) {
@@ -23538,24 +23538,24 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
     }
   }
 
-  /* "MuchTree.pyx":1366
+  /* "MuchTree.pyx":1367
  *         subset_b_length = len( list( self.TreeB.get_descendant_nodes( self.subset_b_root ) ) )
  * 
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \             # <<<<<<<<<<<<<<
  *                         ['#24878dff'] * subset_b_length
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \
  */
-  __pyx_t_6 = PyNumber_Add(__pyx_t_7, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1366, __pyx_L1_error)
+  __pyx_t_6 = PyNumber_Add(__pyx_t_7, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1367, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_vs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1366, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_vs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1367, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_n_u_color, __pyx_t_6) < 0)) __PYX_ERR(0, 1366, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_n_u_color, __pyx_t_6) < 0)) __PYX_ERR(0, 1367, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":1368
+  /* "MuchTree.pyx":1369
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \
  *                         ['#24878dff'] * subset_b_length
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \             # <<<<<<<<<<<<<<
@@ -23563,77 +23563,77 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
  *         g.vs['tree'] = [ 0 ]  * subset_a_length + [ 1 ] * subset_b_length
  */
   { /* enter inner scope */
-    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1368, __pyx_L1_error)
+    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1369, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = __pyx_v_subset_a_length;
     __pyx_t_9 = __pyx_t_8;
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_8genexpr1__pyx_v_i = __pyx_t_10;
-      __pyx_t_1 = PyInt_FromSsize_t(__pyx_8genexpr1__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1368, __pyx_L1_error)
+      __pyx_t_1 = PyInt_FromSsize_t(__pyx_8genexpr1__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1369, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_7 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyUnicode_Type)), __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1368, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyUnicode_Type)), __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1369, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_PyUnicode_Concat(__pyx_n_u_h, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1368, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyUnicode_Concat(__pyx_n_u_h, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1369, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_t_1))) __PYX_ERR(0, 1368, __pyx_L1_error)
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_t_1))) __PYX_ERR(0, 1369, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
   } /* exit inner scope */
   { /* enter inner scope */
 
-    /* "MuchTree.pyx":1369
+    /* "MuchTree.pyx":1370
  *                         ['#24878dff'] * subset_b_length
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \
  *                         [ 'g' + str(i) for i in range( subset_b_length ) ]             # <<<<<<<<<<<<<<
  *         g.vs['tree'] = [ 0 ]  * subset_a_length + [ 1 ] * subset_b_length
  * 
  */
-    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1369, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1370, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_8 = __pyx_v_subset_b_length;
     __pyx_t_9 = __pyx_t_8;
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_8genexpr2__pyx_v_i = __pyx_t_10;
-      __pyx_t_7 = PyInt_FromSsize_t(__pyx_8genexpr2__pyx_v_i); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1369, __pyx_L1_error)
+      __pyx_t_7 = PyInt_FromSsize_t(__pyx_8genexpr2__pyx_v_i); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1370, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyUnicode_Type)), __pyx_t_7); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1369, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyUnicode_Type)), __pyx_t_7); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1370, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_n_u_g, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1369, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyUnicode_Concat(__pyx_n_u_g, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1370, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_7))) __PYX_ERR(0, 1369, __pyx_L1_error)
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_7))) __PYX_ERR(0, 1370, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
   } /* exit inner scope */
 
-  /* "MuchTree.pyx":1368
+  /* "MuchTree.pyx":1369
  *         g.vs['color'] = ['#e1e329ff'] * subset_a_length + \
  *                         ['#24878dff'] * subset_b_length
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \             # <<<<<<<<<<<<<<
  *                         [ 'g' + str(i) for i in range( subset_b_length ) ]
  *         g.vs['tree'] = [ 0 ]  * subset_a_length + [ 1 ] * subset_b_length
  */
-  __pyx_t_7 = PyNumber_Add(__pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1368, __pyx_L1_error)
+  __pyx_t_7 = PyNumber_Add(__pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1369, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_vs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1368, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_vs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1369, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_n_u_label, __pyx_t_7) < 0)) __PYX_ERR(0, 1368, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_n_u_label, __pyx_t_7) < 0)) __PYX_ERR(0, 1369, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "MuchTree.pyx":1370
+  /* "MuchTree.pyx":1371
  *         g.vs['label'] = [ 'h' + str(i) for i in range( subset_a_length ) ] + \
  *                         [ 'g' + str(i) for i in range( subset_b_length ) ]
  *         g.vs['tree'] = [ 0 ]  * subset_a_length + [ 1 ] * subset_b_length             # <<<<<<<<<<<<<<
  * 
  *         return g
  */
-  __pyx_t_7 = PyList_New(1 * ((__pyx_v_subset_a_length<0) ? 0:__pyx_v_subset_a_length)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1370, __pyx_L1_error)
+  __pyx_t_7 = PyList_New(1 * ((__pyx_v_subset_a_length<0) ? 0:__pyx_v_subset_a_length)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1371, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   { Py_ssize_t __pyx_temp;
     for (__pyx_temp=0; __pyx_temp < __pyx_v_subset_a_length; __pyx_temp++) {
@@ -23642,7 +23642,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
       PyList_SET_ITEM(__pyx_t_7, __pyx_temp, __pyx_int_0);
     }
   }
-  __pyx_t_1 = PyList_New(1 * ((__pyx_v_subset_b_length<0) ? 0:__pyx_v_subset_b_length)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1370, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1 * ((__pyx_v_subset_b_length<0) ? 0:__pyx_v_subset_b_length)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1371, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   { Py_ssize_t __pyx_temp;
     for (__pyx_temp=0; __pyx_temp < __pyx_v_subset_b_length; __pyx_temp++) {
@@ -23651,17 +23651,17 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
       PyList_SET_ITEM(__pyx_t_1, __pyx_temp, __pyx_int_1);
     }
   }
-  __pyx_t_6 = PyNumber_Add(__pyx_t_7, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1370, __pyx_L1_error)
+  __pyx_t_6 = PyNumber_Add(__pyx_t_7, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1371, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_vs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1370, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_vs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1371, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_n_u_tree, __pyx_t_6) < 0)) __PYX_ERR(0, 1370, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_n_u_tree, __pyx_t_6) < 0)) __PYX_ERR(0, 1371, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "MuchTree.pyx":1372
+  /* "MuchTree.pyx":1373
  *         g.vs['tree'] = [ 0 ]  * subset_a_length + [ 1 ] * subset_b_length
  * 
  *         return g             # <<<<<<<<<<<<<<
@@ -23673,7 +23673,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   __pyx_r = __pyx_v_g;
   goto __pyx_L0;
 
-  /* "MuchTree.pyx":1350
+  /* "MuchTree.pyx":1351
  *             return info
  * 
  *     def to_igraph( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
@@ -23697,7 +23697,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   return __pyx_r;
 }
 
-/* "MuchTree.pyx":1375
+/* "MuchTree.pyx":1376
  * 
  * 
  *     def dump_table( self ) :             # <<<<<<<<<<<<<<
@@ -23741,7 +23741,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dump_table", 0);
 
-  /* "MuchTree.pyx":1377
+  /* "MuchTree.pyx":1378
  *     def dump_table( self ) :
  *         'Print the link matrix (WARNING : may be huge and useless)'
  *         for i in xrange( self.n_cols ) :             # <<<<<<<<<<<<<<
@@ -23753,19 +23753,19 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "MuchTree.pyx":1378
+    /* "MuchTree.pyx":1379
  *         'Print the link matrix (WARNING : may be huge and useless)'
  *         for i in xrange( self.n_cols ) :
  *             col = []             # <<<<<<<<<<<<<<
  *             for j in xrange( self.table[i].length ) :
  *                 #row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
  */
-    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1378, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1379, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_XDECREF_SET(__pyx_v_col, ((PyObject*)__pyx_t_4));
     __pyx_t_4 = 0;
 
-    /* "MuchTree.pyx":1379
+    /* "MuchTree.pyx":1380
  *         for i in xrange( self.n_cols ) :
  *             col = []
  *             for j in xrange( self.table[i].length ) :             # <<<<<<<<<<<<<<
@@ -23777,7 +23777,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      /* "MuchTree.pyx":1381
+      /* "MuchTree.pyx":1382
  *             for j in xrange( self.table[i].length ) :
  *                 #row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
  *                 row_id = self.table[i].links[j]             # <<<<<<<<<<<<<<
@@ -23786,26 +23786,26 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
  */
       __pyx_v_row_id = ((__pyx_v_self->table[__pyx_v_i]).links[__pyx_v_j]);
 
-      /* "MuchTree.pyx":1382
+      /* "MuchTree.pyx":1383
  *                 #row_id = np.where( self.row_ids == self.table[i].links[j] )[0][0]
  *                 row_id = self.table[i].links[j]
  *                 col.append( row_id )             # <<<<<<<<<<<<<<
  *             print( 'column', i, ':', ','.join( map( str, col ) ) )
  */
-      __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_row_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1382, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_row_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1383, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_col, __pyx_t_4); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 1382, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_col, __pyx_t_4); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 1383, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
 
-    /* "MuchTree.pyx":1383
+    /* "MuchTree.pyx":1384
  *                 row_id = self.table[i].links[j]
  *                 col.append( row_id )
  *             print( 'column', i, ':', ','.join( map( str, col ) ) )             # <<<<<<<<<<<<<<
  */
-    __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1383, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_unsigned_int(__pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1384, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1383, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1384, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_INCREF(((PyObject *)(&PyUnicode_Type)));
     __Pyx_GIVEREF(((PyObject *)(&PyUnicode_Type)));
@@ -23813,13 +23813,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
     __Pyx_INCREF(__pyx_v_col);
     __Pyx_GIVEREF(__pyx_v_col);
     PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_v_col);
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_9, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1383, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_9, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1384, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = PyUnicode_Join(__pyx_kp_u__13, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1383, __pyx_L1_error)
+    __pyx_t_9 = PyUnicode_Join(__pyx_kp_u__13, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1384, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __pyx_t_10 = PyTuple_New(4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1383, __pyx_L1_error)
+    __pyx_t_10 = PyTuple_New(4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1384, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_INCREF(__pyx_n_u_column);
     __Pyx_GIVEREF(__pyx_n_u_column);
@@ -23833,13 +23833,13 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_26dump_table(struct __pyx_
     PyTuple_SET_ITEM(__pyx_t_10, 3, __pyx_t_9);
     __pyx_t_4 = 0;
     __pyx_t_9 = 0;
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_10, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1383, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_10, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 1384, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
 
-  /* "MuchTree.pyx":1375
+  /* "MuchTree.pyx":1376
  * 
  * 
  *     def dump_table( self ) :             # <<<<<<<<<<<<<<
@@ -23976,7 +23976,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_30__setstate_cython__(CYTH
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":735
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":735
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -23993,7 +23993,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":736
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":736
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -24007,7 +24007,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":735
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":735
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -24026,7 +24026,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":738
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":738
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -24043,7 +24043,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":739
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":739
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -24057,7 +24057,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":738
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":738
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -24076,7 +24076,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":741
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":741
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -24093,7 +24093,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":742
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":742
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -24107,7 +24107,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":741
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":741
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -24126,7 +24126,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":744
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":744
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -24143,7 +24143,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":745
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":745
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -24157,7 +24157,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":744
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":744
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -24176,7 +24176,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":747
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":747
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -24193,7 +24193,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":748
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":748
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -24207,7 +24207,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":747
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":747
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -24226,7 +24226,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":750
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":750
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -24240,7 +24240,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":751
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":751
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -24250,7 +24250,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":752
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":752
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -24262,7 +24262,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":751
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":751
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -24271,7 +24271,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":754
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":754
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -24285,7 +24285,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":750
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":750
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -24300,7 +24300,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":929
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":929
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -24312,7 +24312,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":930
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":930
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -24321,7 +24321,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":931
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":931
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -24330,7 +24330,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":929
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":929
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -24342,7 +24342,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":933
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":933
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -24357,7 +24357,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":934
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":934
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -24366,7 +24366,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":935
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":935
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -24376,7 +24376,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":936
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":936
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -24387,7 +24387,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":935
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":935
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -24396,7 +24396,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":937
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":937
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -24408,7 +24408,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":933
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":933
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -24423,7 +24423,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":941
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":941
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -24447,7 +24447,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":942
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24463,7 +24463,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":943
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":943
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -24472,7 +24472,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 943, __pyx_L3_error)
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":942
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24486,7 +24486,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":944
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":944
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -24501,7 +24501,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":945
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":945
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -24517,7 +24517,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":942
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":942
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24532,7 +24532,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":941
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":941
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -24555,7 +24555,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":947
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":947
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -24579,7 +24579,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":948
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24595,7 +24595,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":949
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":949
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -24604,7 +24604,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 949, __pyx_L3_error)
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":948
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24618,7 +24618,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":950
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":950
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -24633,7 +24633,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":951
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":951
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -24649,7 +24649,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":948
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":948
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24664,7 +24664,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":947
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":947
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -24687,7 +24687,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":953
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":953
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -24711,7 +24711,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":954
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24727,7 +24727,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":955
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":955
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -24736,7 +24736,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 955, __pyx_L3_error)
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":954
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24750,7 +24750,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":956
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":956
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -24765,7 +24765,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":957
+      /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":957
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -24781,7 +24781,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":954
+    /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":954
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -24796,7 +24796,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":953
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":953
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -24819,7 +24819,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":967
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":967
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -24832,7 +24832,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_timedelta64_object", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":979
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":979
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyTimedeltaArrType_Type)             # <<<<<<<<<<<<<<
@@ -24842,7 +24842,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyTimedeltaArrType_Type));
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":967
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":967
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -24856,7 +24856,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":982
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":982
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -24869,7 +24869,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_datetime64_object", 0);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":994
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":994
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyDatetimeArrType_Type)             # <<<<<<<<<<<<<<
@@ -24879,7 +24879,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyDatetimeArrType_Type));
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":982
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":982
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -24893,7 +24893,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":997
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":997
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24904,7 +24904,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
 static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *__pyx_v_obj) {
   npy_datetime __pyx_r;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1004
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1004
  *     also needed.  That can be found using `get_datetime64_unit`.
  *     """
  *     return (<PyDatetimeScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -24914,7 +24914,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   __pyx_r = ((PyDatetimeScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":997
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":997
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24927,7 +24927,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1007
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1007
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24938,7 +24938,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
 static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject *__pyx_v_obj) {
   npy_timedelta __pyx_r;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1011
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1011
  *     returns the int64 value underlying scalar numpy timedelta64 object
  *     """
  *     return (<PyTimedeltaScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -24948,7 +24948,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   __pyx_r = ((PyTimedeltaScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1007
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1007
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24961,7 +24961,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   return __pyx_r;
 }
 
-/* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1014
+/* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1014
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -24972,7 +24972,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
 static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObject *__pyx_v_obj) {
   NPY_DATETIMEUNIT __pyx_r;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1018
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1018
  *     returns the unit part of the dtype for a numpy datetime64 object.
  *     """
  *     return <NPY_DATETIMEUNIT>(<PyDatetimeScalarObject*>obj).obmeta.base             # <<<<<<<<<<<<<<
@@ -24980,7 +24980,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   __pyx_r = ((NPY_DATETIMEUNIT)((PyDatetimeScalarObject *)__pyx_v_obj)->obmeta.base);
   goto __pyx_L0;
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1014
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":1014
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -40091,11 +40091,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 125, __pyx_L1_error)
   __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 129, __pyx_L1_error)
   __pyx_builtin_KeyError = __Pyx_GetBuiltinName(__pyx_n_s_KeyError); if (!__pyx_builtin_KeyError) __PYX_ERR(0, 218, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 664, __pyx_L1_error)
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 665, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 665, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 666, __pyx_L1_error)
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(1, 2, __pyx_L1_error)
-  __pyx_builtin_map = __Pyx_GetBuiltinName(__pyx_n_s_map); if (!__pyx_builtin_map) __PYX_ERR(0, 1283, __pyx_L1_error)
-  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 1302, __pyx_L1_error)
+  __pyx_builtin_map = __Pyx_GetBuiltinName(__pyx_n_s_map); if (!__pyx_builtin_map) __PYX_ERR(0, 1284, __pyx_L1_error)
+  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 1303, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 133, __pyx_L1_error)
   __pyx_builtin_Ellipsis = __Pyx_GetBuiltinName(__pyx_n_s_Ellipsis); if (!__pyx_builtin_Ellipsis) __PYX_ERR(1, 404, __pyx_L1_error)
   __pyx_builtin_id = __Pyx_GetBuiltinName(__pyx_n_s_id); if (!__pyx_builtin_id) __PYX_ERR(1, 613, __pyx_L1_error)
@@ -40139,80 +40139,80 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "MuchTree.pyx":786
+  /* "MuchTree.pyx":787
  *         # make sure the link matrix connects the trees
  *         if not link_matrix.shape == ( self.TreeA.n_leafs, self.TreeB.n_leafs ) :
  *             raise Exception( 'link_matrix shape must match tree leaf counts' )             # <<<<<<<<<<<<<<
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :
  */
-  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_u_link_matrix_shape_must_match_tre); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 786, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_u_link_matrix_shape_must_match_tre); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 787, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "MuchTree.pyx":789
+  /* "MuchTree.pyx":790
  * 
  *         if not set(link_matrix.axes[0]) == set(self.TreeA.leafs.keys()) :
  *             raise Exception( 'axis[0] does not match TreeA leaf names' )             # <<<<<<<<<<<<<<
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :
  */
-  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_u_axis_0_does_not_match_TreeA_leaf); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 789, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_u_axis_0_does_not_match_TreeA_leaf); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 790, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "MuchTree.pyx":792
+  /* "MuchTree.pyx":793
  * 
  *         if not set(link_matrix.axes[1]) == set(self.TreeB.leafs.keys()) :
  *             raise Exception( 'axis[1] does not match TreeB leaf names' )             # <<<<<<<<<<<<<<
  * 
  *         # set row and column indexes
  */
-  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_u_axis_1_does_not_match_TreeB_leaf); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 792, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_u_axis_1_does_not_match_TreeB_leaf); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 793, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "MuchTree.pyx":1018
+  /* "MuchTree.pyx":1019
  *         def __get__( self ) :
  *             # length will be shorter with subsetted link matrixes
  *             return self.np_linklist[:self.subset_n_links,:]             # <<<<<<<<<<<<<<
  * 
  *     @cython.boundscheck(False)
  */
-  __pyx_slice__8 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__8)) __PYX_ERR(0, 1018, __pyx_L1_error)
+  __pyx_slice__8 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__8)) __PYX_ERR(0, 1019, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__8);
   __Pyx_GIVEREF(__pyx_slice__8);
 
-  /* "MuchTree.pyx":1283
+  /* "MuchTree.pyx":1284
  * 
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )             # <<<<<<<<<<<<<<
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )
  * 
  */
-  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_slice__8, __pyx_int_1); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 1283, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_slice__8, __pyx_int_1); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 1284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "MuchTree.pyx":1284
+  /* "MuchTree.pyx":1285
  *         # map node ids to matrix coordinates
  *         ta_links = map( lambda x : ta_node_ids.index(x), ll[:,1] )
  *         tb_links = map( lambda x : tb_node_ids.index(x) + ta_aj.shape[0], ll[:,0] )             # <<<<<<<<<<<<<<
  * 
  *         # build empty graph adjacency matrix
  */
-  __pyx_tuple__10 = PyTuple_Pack(2, __pyx_slice__8, __pyx_int_0); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 1284, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(2, __pyx_slice__8, __pyx_int_0); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 1285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "MuchTree.pyx":1356
+  /* "MuchTree.pyx":1357
  *         """
  *         if not with_igraph :
  *             raise Exception( 'igraph package not installed.' )             # <<<<<<<<<<<<<<
  * 
  *         g = Graph.Weighted_Adjacency( self.adjacency( deletions=deletions,
  */
-  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_u_igraph_package_not_installed); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 1356, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_u_igraph_package_not_installed); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 1357, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
@@ -40235,7 +40235,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":945
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":945
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -40246,7 +40246,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "../../../../tmp/pip-build-env-h2edssup/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":951
+  /* "../../../../tmp/pip-build-env-4zwh1e3h/overlay/lib/python3.7/site-packages/numpy/__init__.pxd":951
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -40616,16 +40616,16 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_vtable_8MuchTree_SuchLinkedTrees._build_linkmatrix = (PyObject *(*)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *))__pyx_f_8MuchTree_15SuchLinkedTrees__build_linkmatrix;
   __pyx_vtable_8MuchTree_SuchLinkedTrees._build_linklist = (void (*)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *))__pyx_f_8MuchTree_15SuchLinkedTrees__build_linklist;
   __pyx_vtable_8MuchTree_SuchLinkedTrees._random_int = (uint64_t (*)(struct __pyx_obj_8MuchTree_SuchLinkedTrees *, uint64_t))__pyx_f_8MuchTree_15SuchLinkedTrees__random_int;
-  if (PyType_Ready(&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 700, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 701, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_8MuchTree_SuchLinkedTrees.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8MuchTree_SuchLinkedTrees.tp_dictoffset && __pyx_type_8MuchTree_SuchLinkedTrees.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_8MuchTree_SuchLinkedTrees.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_8MuchTree_SuchLinkedTrees.tp_dict, __pyx_vtabptr_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 700, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_SuchLinkedTrees, (PyObject *)&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 700, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 700, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_8MuchTree_SuchLinkedTrees.tp_dict, __pyx_vtabptr_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 701, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_SuchLinkedTrees, (PyObject *)&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 701, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8MuchTree_SuchLinkedTrees) < 0) __PYX_ERR(0, 701, __pyx_L1_error)
   __pyx_ptype_8MuchTree_SuchLinkedTrees = &__pyx_type_8MuchTree_SuchLinkedTrees;
   if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
@@ -40635,7 +40635,7 @@ static int __Pyx_modinit_type_init_code(void) {
     __pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_8MuchTree___pyx_scope_struct__get_descendant_nodes = &__pyx_type_8MuchTree___pyx_scope_struct__get_descendant_nodes;
-  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data) < 0) __PYX_ERR(0, 671, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data.tp_print = 0;
   #endif
@@ -40643,7 +40643,7 @@ static int __Pyx_modinit_type_init_code(void) {
     __pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_8MuchTree___pyx_scope_struct_1_nodes_data = &__pyx_type_8MuchTree___pyx_scope_struct_1_nodes_data;
-  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_2_edges_data) < 0) __PYX_ERR(0, 682, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_2_edges_data) < 0) __PYX_ERR(0, 683, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data.tp_print = 0;
   #endif
@@ -40651,7 +40651,7 @@ static int __Pyx_modinit_type_init_code(void) {
     __pyx_type_8MuchTree___pyx_scope_struct_2_edges_data.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_8MuchTree___pyx_scope_struct_2_edges_data = &__pyx_type_8MuchTree___pyx_scope_struct_2_edges_data;
-  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_3_adjacency) < 0) __PYX_ERR(0, 1256, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_8MuchTree___pyx_scope_struct_3_adjacency) < 0) __PYX_ERR(0, 1257, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_8MuchTree___pyx_scope_struct_3_adjacency.tp_print = 0;
   #endif

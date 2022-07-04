@@ -331,17 +331,17 @@ cdef class SuchTree :
                 to_visit.append( r )
         return np.array(self.np_buffer[:n])
      
-    def get_distance_to_root( self, node_id ) :
+    def get_distance_to_root( self, a ) :
         """
         Return distance to root for a given node. Will accept node id
         or a leaf name.
         """
-        if type(node_id) is str :
+        if type(a) is str :
             try :
-                id = self.leafs[ node_id ]
+                a = self.leafs[a]
             except KeyError :
-                raise Exception( 'Leaf name not found : ' + node_id )
-        return self._get_distance_to_root( node_id )
+                raise Exception( 'Leaf name not found : ' + a )
+        return self._get_distance_to_root( a )
         
     @cython.boundscheck(False)
     cdef float _get_distance_to_root( self, node_id ) :

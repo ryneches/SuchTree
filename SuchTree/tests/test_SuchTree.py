@@ -39,6 +39,11 @@ def test_get_distance_to_root() :
     for leaf in dpt.leaf_node_iter() :
         assert T.get_distance_to_root( leaf.label ) == approx( leaf.distance_from_root(), 0.001 )
 
+def test_get_distance_to_root_inputs() :
+    T = SuchTree( test_tree )
+    for leaf in T.leafs.keys() :
+        assert T.get_distance_to_root( leaf ) == T.get_distance_to_root( T.leafs[leaf] )
+
 def test_distance() :
     T = SuchTree( test_tree )
     for line in open( 'SuchTree/tests/test.matrix' ) :
