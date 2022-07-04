@@ -260,7 +260,8 @@ cdef class SuchTree :
     def get_descendant_nodes( self, node_id ) :
         """
         Generator for ids of all nodes descendent from a given node,
-        starting with the given node.
+        starting with the given node. Can only accept a node_ids, 
+        returns node_ids for internal and leaf nodes.
         """
         cdef unsigned int i
         cdef int l
@@ -329,7 +330,7 @@ cdef class SuchTree :
                 to_visit.append( l )
                 to_visit.append( r )
         return np.array(self.np_buffer[:n])
- 
+     
     def get_distance_to_root( self, node_id ) :
         """
         Return distance to root for a given node. Will accept node id
@@ -364,8 +365,20 @@ cdef class SuchTree :
     def is_ancestor( self, a, b ) :
         """
         Tristate : returns 1 if a is an ancestor of b, -1 if b is an
-        ancestor of a, or 0 otherwise. Accepts node ids.
+        ancestor of a, or 0 otherwise. Accepts node_ids or leaf names,
+        but only node_ids can be used for internal nodes.
         """
+        if isinstance( a, str ) :
+            try :
+                a = self.leafs[a]
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + a )
+        if isinstance( b, str ) :
+            try :
+                b = self.leafs[b]
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + b )
+ 
         return self._is_ancestor( a, b )
         
     @cython.boundscheck(False)
@@ -399,8 +412,20 @@ cdef class SuchTree :
     def mrca( self, a, b ) :
         """
         Return the id of the most recent common ancestor of two nodes
-        if given ids.
+        if given ids. Leaf names or node_ids can be used for leafs,
+        but node_ids must be used for internal nodes.
         """
+        if isinstance( a, str ) :
+            try :
+                a = self.leafs[a]
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + a )
+        if isinstance( b, str ) :
+            try :
+                b = self.leafs[b]
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + b )
+        
         visited = np.zeros( self.depth, dtype=int )
         
         return self._mrca( visited, a, b )

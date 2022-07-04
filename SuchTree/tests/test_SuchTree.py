@@ -109,6 +109,28 @@ def test_is_ancestor() :
     assert 1 - T.length == sum( map( lambda x : T.is_ancestor( x, T.root ),
                                 T.get_descendant_nodes( T.root ) ) )
 
+def test_mrca_by_id() :
+    T = SuchTree( test_tree )
+    leaf_ids = T.leafs.values()
+    for a,b in combinations( leaf_ids, 2 ) :
+        assert T.mrca( a, b ) == T.mrca( b, a )
+        mrca = T.mrca( a, b )
+        assert T.is_ancestor( mrca, a )
+        assert T.is_ancestor( mrca, b )
+        assert a in T.get_descendant_nodes( mrca )
+        assert b in T.get_descendant_nodes( mrca )
+
+def test_mrca_by_name() :
+    T = SuchTree( test_tree )
+    leafs = T.leafs.keys()
+    for a,b in combinations( leafs, 2 ) :
+        assert T.mrca( a, b ) == T.mrca( b, a )
+        mrca = T.mrca( a, b )
+        assert T.is_ancestor( mrca, a )
+        assert T.is_ancestor( mrca, b )
+        assert T.leafs[a] in T.get_descendant_nodes( mrca )
+        assert T.leafs[b] in T.get_descendant_nodes( mrca )
+
 @pytest.mark.skipif(not has_networkx, reason="networkx not installed")
 def test_networkx() :
     T = SuchTree( test_tree )
