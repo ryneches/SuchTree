@@ -1,6 +1,8 @@
 import cython
 from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
 from dendropy import Tree
+from random import sample
+from itertools import combinations
 import numpy as np
 cimport numpy as np
 import pandas as pd
@@ -692,6 +694,27 @@ cdef class SuchTree :
     def __dealloc__( self ) :
         PyMem_Free( self.data )     # no-op if self.data is NULL
 
+    def relationships( self ) :
+        '''
+        Return a Pandas DataFrame of describing the relationships among leas in the tree.
+        '''
+        pairs = [ sample([a,b],2) for a,b, in combinations( self.leafs.keys(), 2 ) ]
+        distances = self.distances_by_name( pairs )
+        mrca = [ self.mrca( a, b ) for a,b in pairs ]
+        mrca_to_root = [ self.get_distance_to_root(m) for m in mrca ]
+        a_to_root = [ self.get_distance_to_root(a) for a in list( zip( *pairs ) )[0] ]
+        b_to_root = [ self.get_distance_to_root(b) for b in list( zip( *pairs ) )[1] ]
+        a_to_mrca = [ a2r-a2m for a2r,a2m in zip( a_to_root, mrca_to_root ) ]
+        b_to_mrca = [ b2r-b2m for b2r,b2m in zip( b_to_root, mrca_to_root ) ]
+
+        return pd.DataFrame( { 'a'            : list( zip( *pairs ) )[0],
+                               'b'            : list( zip( *pairs ) )[1],
+                               'a_to_root'    : a_to_root,
+                               'b_to_root'    : b_to_root,
+                               'mrca'         : mrca,
+                               'mrca_to_root' : mrca_to_root,
+                               'a_to_mrca'    : a_to_mrca,
+                               'b_to_mrca'    : b_to_mrca } )
 
 cdef struct Column :
     unsigned int length
