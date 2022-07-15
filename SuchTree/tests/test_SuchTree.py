@@ -136,6 +136,19 @@ def test_mrca_by_name() :
         assert T.leafs[a] in T.get_descendant_nodes( mrca )
         assert T.leafs[b] in T.get_descendant_nodes( mrca )
 
+def test_bipartitions() :
+    # a tree should have no conflicting bipartitions with itself
+    T = SuchTree( test_tree )
+    S = []
+    for A,B in combinations( T.bipartitions(), 2 ) :
+        A0,A1 = A
+        B0,B1 = B
+        S.append( ( not bool( A0 & B0 ) ) \
+                | ( not bool( A1 & B0 ) ) \
+                | ( not bool( A0 & B1 ) ) \
+                | ( not bool( A1 & B1 ) ) )
+        assert sum(S)/len(S) == 1.0
+
 @pytest.mark.skipif(not has_networkx, reason="networkx not installed")
 def test_networkx() :
     T = SuchTree( test_tree )
