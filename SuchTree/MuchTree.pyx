@@ -281,6 +281,32 @@ cdef class SuchTree :
                 to_visit.append( r )
                 yield i
     
+    def get_bipartition( self, node_id, by_id=False ) :
+        """
+        Find the two sets of leaf nodes partitioned at an internal
+        node in the tree.
+        """
+        left,right = self.get_children(node_id)
+        if not by_id :
+            return frozenset(
+                    ( frozenset( self.leafnodes[i] for i in self.get_leafs(left) ),
+                      frozenset( self.leafnodes[i] for i in self.get_leafs(right) ) ) )
+        else :
+            return frozenset(
+                    ( frozenset( self.get_leafs(left), 
+                      frozenset( self.get_leafs(right) ) ) ) )
+    
+    def bipartitions( self, by_id=False ) :
+        """
+        Generator for the bipartitions of the tree. Each bipartition
+        is the pair of sets of leaf nodes partitioned by an internal
+        node in the tree. By default, leaf nodes are returned by name
+        so that bypartitions of other SuchTree instances (which may
+        not have the same leaf node_ids) to be compared.
+        """
+        for node in self.get_internal_nodes() :
+            yield self.get_bipartition( node, by_id=by_id )
+
     def get_internal_nodes( self, from_node=-1 ) :
         """
         Return an array of the ids of all internal nodes.
@@ -698,17 +724,18 @@ cdef class SuchTree :
         '''
         Return a Pandas DataFrame of describing the relationships among leas in the tree.
         '''
-        pairs = [ sample([a,b],2) for a,b, in combinations( self.leafs.keys(), 2 ) ]
-        distances = self.distances_by_name( pairs )
-        mrca = [ self.mrca( a, b ) for a,b in pairs ]
+        pairs        = [ sample([a,b],2) for a,b, in combinations( self.leafs.keys(), 2 ) ]
+        distances    = self.distances_by_name( pairs )
+        mrca         = [ self.mrca( a, b ) for a,b in pairs ]
         mrca_to_root = [ self.get_distance_to_root(m) for m in mrca ]
-        a_to_root = [ self.get_distance_to_root(a) for a in list( zip( *pairs ) )[0] ]
-        b_to_root = [ self.get_distance_to_root(b) for b in list( zip( *pairs ) )[1] ]
-        a_to_mrca = [ a2r-a2m for a2r,a2m in zip( a_to_root, mrca_to_root ) ]
-        b_to_mrca = [ b2r-b2m for b2r,b2m in zip( b_to_root, mrca_to_root ) ]
+        a_to_root    = [ self.get_distance_to_root(a) for a in list( zip( *pairs ) )[0] ]
+        b_to_root    = [ self.get_distance_to_root(b) for b in list( zip( *pairs ) )[1] ]
+        a_to_mrca    = [ a2r-a2m for a2r,a2m in zip( a_to_root, mrca_to_root ) ]
+        b_to_mrca    = [ b2r-b2m for b2r,b2m in zip( b_to_root, mrca_to_root ) ]
 
         return pd.DataFrame( { 'a'            : list( zip( *pairs ) )[0],
                                'b'            : list( zip( *pairs ) )[1],
+                               'distance'     : distances,
                                'a_to_root'    : a_to_root,
                                'b_to_root'    : b_to_root,
                                'mrca'         : mrca,
