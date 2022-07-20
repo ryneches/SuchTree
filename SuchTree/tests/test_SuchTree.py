@@ -161,7 +161,8 @@ def test_bipartitions() :
 
 def test_in_order() :
     T = SuchTree( test_tree )
-    assert set( node for node,d in T.in_order() ) == set( T.get_nodes() )
+    traversal = set( node for node,d in T.in_order() ) 
+    assert traversal == set( T.get_nodes() )
 
 @pytest.mark.skipif(not has_networkx, reason="networkx not installed")
 def test_networkx() :

@@ -270,6 +270,8 @@ cdef class SuchTree :
         starting with the given node. Can only accept a node_ids, 
         returns node_ids for internal and leaf nodes.
         """
+        if not isinstance( node_id, Integral ) :
+            raise Exception( 'node_id must be an integer.' )
         cdef unsigned int i
         cdef int l
         cdef int r
@@ -369,8 +371,17 @@ cdef class SuchTree :
         Generator for traversing the tree in order, yilding tuples
         of node_ids with distances to parent nodes.
         """
-        stack = [ self.root ]
-        for i in stack :
+        stack = []
+        i = self.root
+        while True :
+            stack.append( i )
+            l = self.data[i].left_child
+            if l == -1 :
+                break
+            i = l
+
+        while stack :
+            i = stack.pop()
             l = self.data[i].left_child
             r = self.data[i].right_child
             if l != -1 :
