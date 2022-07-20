@@ -24,6 +24,10 @@ cdef extern from 'stdint.h' :
 # Trees are built from arrays of Node structs. 'parent', 'left_child'
 # and 'right_child' attributes represent integer offsets within the
 # array that specify other Node structs.
+#
+# WARNING : When part of a SuchLinkedTree, the right_child is used to
+# store the column ID for leaf nodes. Check *ONLY* left_child == -1 to
+# to see if a Node is a leaf!
 cdef struct Node :
     int parent
     int left_child
