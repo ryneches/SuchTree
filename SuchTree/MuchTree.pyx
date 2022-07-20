@@ -371,27 +371,23 @@ cdef class SuchTree :
         Generator for traversing the tree in order, yilding tuples
         of node_ids with distances to parent nodes.
         """
-        stack = []
         i = self.root
+        stack = []
+        
         while True :
-            stack.append( i )
-            l = self.data[i].left_child
-            if l == -1 :
-                break
-            i = l
-
-        while stack :
-            i = stack.pop()
-            l = self.data[i].left_child
-            r = self.data[i].right_child
-            if l != -1 :
-                stack.append( l )
-                stack.append( r )
-            if distances :
-                yield ( i, self.data[i].distance )
+            if i != -1 :
+                stack.append( i )
+                i = self.data[i].left_child
+            elif stack :
+                i = stack.pop()
+                if distances :
+                    yield i, self.data[i].distance
+                else :
+                    yield i
+                i = self.data[i].right_child
             else :
-                yield i
-
+                break
+    
     def get_distance_to_root( self, a ) :
         """
         Return distance to root for a given node. Will accept node id
