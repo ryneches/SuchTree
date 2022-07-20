@@ -363,7 +363,24 @@ cdef class SuchTree :
                 to_visit.append( l )
                 to_visit.append( r )
         return np.array(self.np_buffer[:n])
-     
+    
+    def in_order( self, distances=True ) :
+        """
+        Generator for traversing the tree in order, yilding tuples
+        of node_ids with distances to parent nodes.
+        """
+        stack = [ self.root ]
+        for i in stack :
+            l = self.data[i].left_child
+            r = self.data[i].right_child
+            if l != -1 :
+                stack.append( l )
+                stack.append( r )
+            if distances :
+                yield ( i, self.data[i].distance )
+            else :
+                yield i
+
     def get_distance_to_root( self, a ) :
         """
         Return distance to root for a given node. Will accept node id

@@ -159,6 +159,10 @@ def test_bipartitions() :
                 | ( not bool( A1 & B1 ) ) )
         assert sum(S)/len(S) == 1.0
 
+def test_in_order() :
+    T = SuchTree( test_tree )
+    assert set( node for node,d in T.in_order() ) == set( T.get_nodes() )
+
 @pytest.mark.skipif(not has_networkx, reason="networkx not installed")
 def test_networkx() :
     T = SuchTree( test_tree )
