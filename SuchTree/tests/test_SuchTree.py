@@ -114,6 +114,16 @@ def test_is_ancestor() :
     assert 1 - T.length == sum( map( lambda x : T.is_ancestor( x, T.root ),
                                 T.get_descendant_nodes( T.root ) ) )
 
+def test_is_leaf() :
+    T = SuchTree( test_tree )
+    for leaf in T.leafs.values() :
+        assert T.is_leaf( leaf )
+
+def test_is_internal_node() :
+    T = SuchTree( test_tree )
+    for node in T.get_internal_nodes() :
+        assert T.is_internal_node( node )
+
 def test_mrca_by_id() :
     T = SuchTree( test_tree )
     leaf_ids = T.leafs.values()

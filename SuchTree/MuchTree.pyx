@@ -7,6 +7,7 @@ import numpy as np
 cimport numpy as np
 import pandas as pd
 from scipy.linalg.cython_lapack cimport dsyev
+from numbers import Integral, Real
 
 # if igraph is available, enable
 # SuchLinkedTrees.to_igraph()
@@ -214,7 +215,7 @@ cdef class SuchTree :
         Return the id of the parent of a given node. Will accept node
         id or leaf name.
         """
-        if type(query) is str :
+        if isinstance( query, str ) :
             try :
                 node_id = self.leafs[ query ]
             except KeyError :
@@ -364,7 +365,7 @@ cdef class SuchTree :
         Return distance to root for a given node. Will accept node id
         or a leaf name.
         """
-        if type(a) is str :
+        if isinstance( a, str ) :
             try :
                 a = self.leafs[a]
             except KeyError :
@@ -390,6 +391,31 @@ cdef class SuchTree :
             i = self.data[i].parent
         return d
     
+    def is_leaf( self, node_id ) :
+        """
+        Returns True if node_id is a leaf node, False otherwise.
+        """
+        if not isinstance( node_id, Integral ) :
+            raise Exception( 'node_id must be an integer.' )
+        
+        return self._is_leaf( node_id )
+    
+    def is_internal_node( self, node_id ) :
+        """
+        Returns True if node_id is an internal node, False otherwise.
+        """
+        if not isinstance( node_id, Integral ) :
+            raise Exception( 'node_id must be an integer.' )
+        
+        return not self._is_leaf( node_id )
+
+    @cython.boundscheck(False)
+    cdef bint _is_leaf( self, int node_id ) nogil :
+        if self.data[node_id].left_child == -1 :
+            return True
+        else :
+            return False
+
     def is_ancestor( self, a, b ) :
         """
         Tristate : returns 1 if a is an ancestor of b, -1 if b is an
