@@ -514,8 +514,6 @@ cdef class SuchTree :
             if n == -1 :
                 mrca = n
                 break
-        for i in xrange( self.depth ) :
-            visited[i] = -1
             
         return mrca
         
