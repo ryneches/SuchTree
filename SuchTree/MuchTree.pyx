@@ -744,10 +744,7 @@ cdef class SuchTree :
             # no edges beyond the root node
             if self.data[n].parent == -1 : continue
             yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )
-
-    def __dealloc__( self ) :
-        PyMem_Free( self.data )     # no-op if self.data is NULL
-
+        
     def relationships( self ) :
         '''
         Return a Pandas DataFrame of describing the relationships among leas in the tree.
@@ -760,7 +757,7 @@ cdef class SuchTree :
         b_to_root    = [ self.get_distance_to_root(b) for b in list( zip( *pairs ) )[1] ]
         a_to_mrca    = [ a2r-a2m for a2r,a2m in zip( a_to_root, mrca_to_root ) ]
         b_to_mrca    = [ b2r-b2m for b2r,b2m in zip( b_to_root, mrca_to_root ) ]
-
+        
         return pd.DataFrame( { 'a'            : list( zip( *pairs ) )[0],
                                'b'            : list( zip( *pairs ) )[1],
                                'distance'     : distances,
@@ -770,6 +767,10 @@ cdef class SuchTree :
                                'mrca_to_root' : mrca_to_root,
                                'a_to_mrca'    : a_to_mrca,
                                'b_to_mrca'    : b_to_mrca } )
+
+    def __dealloc__( self ) :
+        PyMem_Free( self.data )     # no-op if self.data is NULL
+
 
 cdef struct Column :
     unsigned int length
