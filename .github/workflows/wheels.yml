@@ -12,10 +12,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-20.04, macOS-10.15]
+        os: [ubuntu-20.04, macOS-latest]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # Set up miniconda env
       #- uses: conda-incubator/setup-miniconda@v2
@@ -31,7 +31,7 @@ jobs:
       #  run : conda install numpy scipy
 
       # Used to host cibuildwheel
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v3
 
       - name: Install cibuildwheel
         run: python -m pip install cibuildwheel==2.6.1
@@ -50,6 +50,6 @@ jobs:
               # doesn't seem to set up LAPACK, BLAS and ATLAS, so the
               # scipy build fails.
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           path: ./wheelhouse/*.whl
