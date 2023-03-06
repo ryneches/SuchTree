@@ -388,6 +388,22 @@ cdef class SuchTree :
             else :
                 break
     
+    def pre_order( self ) :
+        """
+        Generator for traversing the tree in pre-order.
+        """
+        stack = [ self.root ]
+        
+        while len(stack) > 0 :
+            i = stack.pop()
+            r = self.data[i].right_child
+            l = self.data[i].left_child
+            if r != -1 :
+                stack.append(r)
+            if l != -1 :
+                stack.append(l)
+            yield i
+
     def get_distance_to_root( self, a ) :
         """
         Return distance to root for a given node. Will accept node id
