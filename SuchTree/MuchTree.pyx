@@ -95,6 +95,7 @@ cdef class SuchTree :
     cdef object leafs
     cdef object leafnodes
     cdef object np_buffer
+    cdef object RED
     
     def __init__( self, tree_file ) :
         """
@@ -176,7 +177,10 @@ cdef class SuchTree :
                 n += 1
             if n > self.depth :
                 self.depth = n
-                
+    
+        # RED dictionary stub
+        self.RED = {}
+    
     property length :
         'The number of nodes in the tree.'
         def __get__( self ) :
@@ -213,7 +217,34 @@ cdef class SuchTree :
             return self.epsilon
         def __set__( self, np.float64_t new_epsilon ) :
             self.epsilon = new_epsilon
+    
+    property RED :
+        """ 
+        The relative evolutionary divergence (RED) of the nodes in the tree.
+        The RED of a node is the relative placement between the root and its
+        descending tips (Parks et al. 2018). RED is defined to range from
+        0 at the root node to 1 at each leaf. Traversing the tree in pre-order,
+        RED is P+(a/(a+b))*(1-P), where P is the RED of the node's parent,
+        a is the distance to its parent, and b is the average distance from
+        the node to its leaf descendants.
+        
+        RED is calculated for every node in the tree and returned as
+        a dictionary. Once computed, the RED dictionary will be cached and made
+        available as the SuchTree.RED attribute.
+        """
+        def __get__( self ) :
+            if not self.RED :
             
+                self.RED = { self.root : 0 }
+            
+                for node in list( self.pre_order() )[1:] :
+                    P = self.RED[ self.get_parent(node) ]
+                    a = self.distance( node, self.get_parent(node) )
+                    b = np.mean( [ self.distance( node, leaf ) for leaf in self.get_leafs(node) ] )
+                    self.RED[ node ] = P+(a/(a+b))*(1-P)
+        
+            return self.RED
+
     def get_parent( self, query ) :
         """
         Return the id of the parent of a given node. Will accept node
@@ -403,7 +434,7 @@ cdef class SuchTree :
             if l != -1 :
                 stack.append(l)
             yield i
-
+    
     def get_distance_to_root( self, a ) :
         """
         Return distance to root for a given node. Will accept node id
