@@ -933,7 +933,7 @@ cdef class SuchLinkedTrees :
             # the link table
             self.TreeB.link_leaf( self.col_ids[i], i )
             l = []
-            for rowname, value in s.iteritems() :
+            for rowname, value in s.items() :
                 if value > 0 : l.append( self.TreeA.leafs[rowname] )
             col_size = len(l)
             if self.table[i].links == NULL :
