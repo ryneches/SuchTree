@@ -31,7 +31,7 @@ jobs:
       #  run : conda install numpy scipy
 
       # Used to host cibuildwheel
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v4
 
       - name: Install cibuildwheel
         run: python -m pip install cibuildwheel==2.6.1
