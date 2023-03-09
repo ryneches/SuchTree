@@ -149,9 +149,12 @@ cdef class SuchTree :
                 self.root = node_id
             else :
                 if not node.edge_length :
-                    distance = 0.0
+                    distance = self.epsilon
                 else :
-                    distance = node.edge_length
+                    if node.edge_length == 0 :
+                        distance = self.epsilon
+                    else :
+                        distance = node.edge_length
                 parent   = node.parent_node.label
             if node.taxon :
                 left_child, right_child = -1, -1
@@ -241,6 +244,8 @@ cdef class SuchTree :
                     P = self.RED[ self.get_parent(node) ]
                     a = self.distance( node, self.get_parent(node) )
                     b = np.mean( [ self.distance( node, leaf ) for leaf in self.get_leafs(node) ] )
+                    if a+b == 0 :
+                        raise Exception( 'node {n} : a={a}, b={b}'.format( n=node, a=a, b=b ) )
                     self.RED[ node ] = P+(a/(a+b))*(1-P)
         
             return self.RED
