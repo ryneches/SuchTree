@@ -361,11 +361,12 @@ cdef class SuchTree :
         
         if from_node == -1 : from_node = self.root
         
-        if self.np_buffer is None :
-            self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
-            # this doesn't look like it should work, but strictly
-            # bifrucating trees always have one fewer internal nodes
-            # than leaf nodes
+        self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
+        
+        # this doesn't look like it should work, but strictly
+        # bifrucating trees always have one fewer internal nodes
+        # than leaf nodes
+        
         to_visit = [from_node]
         for i in to_visit :
             l,r = self.get_children( i )
@@ -380,7 +381,7 @@ cdef class SuchTree :
         
     def get_nodes( self, from_node=-1 ) :
         """
-        Return an array of the ids of all internal nodes.
+        Return an array of the ids of all nodes.
         """
         cdef unsigned int i
         cdef int l
