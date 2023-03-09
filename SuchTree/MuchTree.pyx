@@ -389,8 +389,7 @@ cdef class SuchTree :
         
         if from_node == -1 : from_node = self.root
         
-        if self.np_buffer is None :
-            self.np_buffer = np.ndarray( self.length, dtype=int )
+        self.np_buffer = np.ndarray( self.length, dtype=int )
         
         to_visit = [from_node]
         for i in to_visit :
