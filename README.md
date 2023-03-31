@@ -3,15 +3,15 @@
 A Python library for doing fast, thread-safe computations with
 phylogenetic trees.
 
-[![Actions Status](https://github.com/ryneches/SuchTree/workflows/Python%20package/badge.svg)](https://github.com/ryneches/SuchTree/actions) [![codecov](https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg)](https://codecov.io/gh/ryneches/SuchTree) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE) [![JOSS](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg)](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610)
+[![Actions Status](https://github.com/ryneches/SuchTree/workflows/Python%20package/badge.svg)](https://github.com/ryneches/SuchTree/actions) [![codecov](https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg)](https://codecov.io/gh/ryneches/SuchTree) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE) [![JOSS](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg)](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610) ![Downloads](https://img.shields.io/github/downloads/ryneches/SuchTree/total?style=flat-square)
 
 ### So problem
 
 You have a phylogenetic tree. You want to do some statistics with it. No
 problem! There are lots of packages in Python that let you manipulate
-phylogenies, like [`dendropy`](http://www.dendropy.org/),[`scikit-bio`]
-(http://scikit-bio.org/docs/latest/tree.html) and[`ete3`]
-(http://etetoolkit.org/). If your tree isn't *too* big and your statistical
+phylogenies, like [`dendropy`](http://www.dendropy.org/),
+[`scikit-bio`](http://scikit-bio.org/docs/latest/tree.html) and
+[`ete3`](http://etetoolkit.org/). If your tree isn't *too* big and your statistical
 method doesn't require *too* many traversals, you you have a lot of great
 options. If you're working with about a thousand taxa or less, you should
 have no problem. You can forget about `SuchTree` and use a tree package that
@@ -146,8 +146,8 @@ To install the current release, you can install from PyPI :
 pip install SuchTree
 ```
 
-If you install using `pip`, binary packages([`wheels`]
-(https://realpython.com/python-wheels/)) are available for CPython 3.6, 3.7,
+If you install using `pip`, binary packages
+([`wheels`](https://realpython.com/python-wheels/)) are available for CPython 3.6, 3.7,
 3.8, 3.9, 3.10 and 3.11 on Linux x86_64 and on MacOS with Intel and Apple
 silicon. If your platform isn't in that list, but it is supported by
 [`cibuildwheel`](https://github.com/pypa/cibuildwheel), please file an issue
