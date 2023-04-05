@@ -167,7 +167,7 @@ cd SuchTree
 `SuchTree` will accept either a URL or a file path :
 
 ```python
-from SuchTre import SuchTree
+from SuchTree import SuchTree
 
 T = SuchTree( 'test.tree' )
 T = SuchTree( 'https://github.com/ryneches/SuchTree/blob/master/data/gopher-louse/gopher.tree' )
