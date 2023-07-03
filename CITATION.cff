@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Neches
+    given-names: Russell Y.
+    orcid: https://orcid.org/0000-0002-2055-8381
+  - family-names: Scott
+    given-names: Camille
+    orcid: https://orcid.org/0000-0001-8822-8779
+title: "SuchTree: Fast, thread-safe computations with phylogenetic trees"
+version: 1.0
+doi: https://doi.org/10.21105/joss.00678
+date-released: 2022-06-20
