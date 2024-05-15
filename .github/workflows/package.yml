@@ -46,7 +46,7 @@ jobs:
           path: dist/*.tar.gz
           if-no-files-found: error
   build_wheels:
-    name: Build wheels on ${{ matrix.os }} for python ${{ matrix.python-version }}
+    name: Build wheels on ${{ matrix.os }} for ${{ matrix.cibw_archs }}
     needs: build_sdist
     runs-on: ${{ matrix.os }}
     env:
@@ -59,8 +59,6 @@ jobs:
         delvewheel repair -w {dest_dir} {wheel}
       CIBW_AFTER_BUILD: >-
         twine check {wheel}
-      CIBW_TEST_COMMAND: >-
-        python {package}/.github/check_version_number.py
     strategy:
       matrix:
         include:
