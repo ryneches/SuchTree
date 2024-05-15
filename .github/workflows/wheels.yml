@@ -12,7 +12,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: [ "3.8", "3.8", "3.10", "3.11" ]
+        python-version: [ "3.8", "3.10", "3.11", "3.12" ]
         os: [ ubuntu-20.04, macOS-latest ]
 
     steps:
@@ -53,6 +53,6 @@ jobs:
               # doesn't seem to set up LAPACK, BLAS and ATLAS, so the
               # scipy build fails.
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           path: ./wheelhouse/*.whl
