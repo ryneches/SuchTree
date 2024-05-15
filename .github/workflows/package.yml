@@ -38,7 +38,7 @@ jobs:
         id: sdist
         run: |
           python -m build --sdist
-          python -m .github/export_sdist_name.py
+          python .github/export_sdist_name.py
       - name: Upload sdist result
         uses: actions/upload-artifact@v4
         with:
