@@ -8,12 +8,11 @@ on:
 
 jobs:
   build_wheels:
-    # name: Build wheels on ${{ matrix.os }} for python ${{ matrix.python-version }}
-    name: Build wheels on ${{ matrix.os }}
+    name: Build wheels on ${{ matrix.os }} for python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: [ "3.8", "3.10", "3.11", "3.12" ]
+        python-version: [ "3.8", "3.9", "3.10", "3.11", "3.12" ]
         os: [ ubuntu-latest, macOS-latest ]
         exclude:
           - os: macOS-latest
