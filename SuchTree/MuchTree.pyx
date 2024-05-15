@@ -32,6 +32,7 @@ cdef struct Node :
     int parent
     int left_child
     int right_child
+    float support
     float distance
 
 @cython.boundscheck(False)
@@ -124,7 +125,7 @@ cdef class SuchTree :
         t.resolve_polytomies()
         size = len( t.nodes() )
         # allocate some memory
-        self.data = <Node*> PyMem_Malloc( size * sizeof(Node) )
+        self.data    = <Node*> PyMem_Malloc( size * sizeof(Node) )
         if self.data == NULL :
             raise Exception( 'SuchTree could not allocate memory' )
         
@@ -135,13 +136,13 @@ cdef class SuchTree :
         self.leafs = {}
         self.leafnodes = {}
         for node_id,node in enumerate( t.inorder_node_iter() ) :
-            node.label = node_id
+            node.node_id = node_id
             if node_id >= size :
                 raise Exception( 'node label out of bounds : ' + str(node_id) )
             if node.taxon :
                 self.leafs[ node.taxon.label ] = node_id
                 self.leafnodes[ node_id ] = node.taxon.label
-
+        
         for node_id,node in enumerate( t.inorder_node_iter() ) :
             if not node.parent_node :
                 distance = -1.0
@@ -155,14 +156,14 @@ cdef class SuchTree :
                         distance = self.epsilon
                     else :
                         distance = node.edge_length
-                parent   = node.parent_node.label
+                parent   = node.parent_node.node_id
             if node.taxon :
                 left_child, right_child = -1, -1
                 self.n_leafs += 1
             else :
                 l_child, r_child = node.child_nodes()
-                left_child  = l_child.label
-                right_child = r_child.label
+                left_child  = l_child.node_id
+                right_child = r_child.node_id
             
             if node_id >= size :
                 raise Exception( 'node label out of bounds : ' + str(node_id) )
