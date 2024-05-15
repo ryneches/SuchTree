@@ -276,7 +276,8 @@ cdef class SuchTree :
         
     def get_support( self, node_id ) :
         """
-        Return the support value of a given node. 
+        Return the support value of a given node. Will accept node id
+        or leaf name.
         """
         if isinstance( node_id, str ) :
             try :
