@@ -13,7 +13,11 @@ try :
 except ImportError :
     has_networkx = False
 
-test_tree = 'SuchTree/tests/test.tree'
+test_tree            = 'SuchTree/tests/test.tree'
+support_tree_int     = 'SuchTree/tests/support_int.tree'
+support_tree_float   = 'SuchTree/tests/support_float.tree'
+support_tree_comment = 'SuchTree/tests/support_comment.tree'
+
 dpt = Tree.get( file=open(test_tree), schema='newick' )
 dpt.resolve_polytomies()
 for n,node in enumerate( dpt.inorder_node_iter() ) :
@@ -77,6 +81,26 @@ def test_distances_by_name() :
     result = T.distances_by_name( ids )
     for D1,D2 in zip( d1,result ) :
         assert D1 == approx( D2, 0.001 )
+
+def test_get_int_support_by_id() :
+    T = SuchTree( support_tree_int )
+    for node_id in T.get_nodes() :
+        assert T.get_support( node_id ) != 0
+
+def test_get_int_support_by_name() :
+    T = SuchTree( support_tree_int )
+    for leaf in T.leafs.keys() :
+        assert T.get_support( leaf ) < 0
+
+def test_get_float_support_by_id() :
+    T = SuchTree( support_tree_float )
+    for node_id in T.get_nodes() :
+        assert T.get_support( node_id ) != 0
+
+def test_get_comment_support_by_id() :
+    T = SuchTree( support_tree_comment )
+    for node_id in T.get_nodes() :
+        assert T.get_support( node_id ) != 0
 
 def test_get_leafs() :
     T = SuchTree( test_tree )

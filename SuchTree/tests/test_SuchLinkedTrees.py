@@ -133,7 +133,7 @@ def test_get_column_leafs() :
                           index=list(T.leafs.keys()) )
     SLT = SuchLinkedTrees( T, T, links )
     for n,colname in enumerate( links.columns ) :
-        s = links.applymap(bool)[ colname ]
+        s = links.map(bool)[ colname ]
         leafs1 = set( map( lambda x : T.leafs[x],  s[ s > 0 ].index ) )
         leafs2 = set( SLT.get_column_leafs(n) )
         assert leafs1 == leafs2
@@ -145,7 +145,7 @@ def test_get_column_leafs_by_name() :
                           index=list(T.leafs.keys()) )
     SLT = SuchLinkedTrees( T, T, links )
     for colname in links.columns :
-        s = links.applymap(bool)[ colname ]
+        s = links.map(bool)[ colname ]
         leafs1 = set( map( lambda x : T.leafs[x],  s[ s > 0 ].index ) )
         #print( colname )
         leafs2 = set( SLT.get_column_leafs( colname ) )
@@ -158,7 +158,7 @@ def test_get_column_leafs_as_row_ids() :
                           index=list(T.leafs.keys()) )
     SLT = SuchLinkedTrees( T, T, links )
     for n,colname in enumerate( links.columns ) :
-        s = links.applymap(bool)[ colname ]
+        s = links.map(bool)[ colname ]
         leafs1 = set( map( list(SLT.col_ids).index, map( lambda x : T.leafs[x],  s[ s > 0 ].index ) ) )
         leafs2 = set( SLT.get_column_leafs(n, as_row_ids=True) )
         assert leafs1 == leafs2
@@ -170,7 +170,7 @@ def test_get_column_leafs_by_name_as_row_ids() :
                           index=list(T.leafs.keys()) )
     SLT = SuchLinkedTrees( T, T, links )
     for colname in links.columns :
-        s = links.applymap(bool)[ colname ]
+        s = links.map(bool)[ colname ]
         leafs1 = set( map( list(SLT.col_ids).index, map( lambda x : T.leafs[x],  s[ s > 0 ].index ) ) )
         leafs2 = set( SLT.get_column_leafs( colname, as_row_ids=True ) )
         assert leafs1 == leafs2
@@ -184,7 +184,7 @@ def test_get_column_links() :
                           index=row_names )
     SLT = SuchLinkedTrees( T, T, links )
     for n,colname in enumerate( links.columns ) :
-        s = links.applymap(bool)[ colname ]
+        s = links.map(bool)[ colname ]
         c = SLT.get_column_links(n)
         for m,rowname in enumerate( SLT.row_names ) :
             assert s[rowname] == c[m]

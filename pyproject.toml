@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 # build wheels for amd64
 [tool.cibuildwheel.linux]
-before-all = "yum -y install lapack-devel blas-devel openblas-devel atlas-devel"
-archs = "x86_64"
+before-all = "yum -y install lapack-devel blas-devel atlas-devel"
+archs = "aarch64 x86_64"
 skip = "*musllinux* pp*"
 
 # build wheels for Intel and Apple silicon
