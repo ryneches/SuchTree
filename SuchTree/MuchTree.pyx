@@ -172,7 +172,7 @@ cdef class SuchTree :
                 support = float( node.label )
             except ( TypeError, ValueError ) :
                 support = -1
-
+            
             self.data[node_id].parent      = parent
             self.data[node_id].left_child  = left_child
             self.data[node_id].right_child = right_child
@@ -187,7 +187,7 @@ cdef class SuchTree :
                 n += 1
             if n > self.depth :
                 self.depth = n
-    
+        
         # RED dictionary stub
         self.RED = {}
     
@@ -274,17 +274,29 @@ cdef class SuchTree :
             
         return self.data[node_id].parent
         
-    def get_children( self, node_id ) :
+    def get_support( self, node_id ) :
         """
-        Return the ids of child nodes of given node. Will accept node
-        id or a leaf name.
+        Return the support value of a given node. 
         """
-        if type(node_id) is str :
+        if isinstance( node_id, str ) :
             try :
                 node_id = self.leafs[ node_id ]
             except KeyError :
                 raise Exception( 'Leaf name not found : ' + node_id )
-        return ( self.data[node_id].left_child, self.data[node_id].right_child )
+        return self.data[node_id].support
+
+    def get_children( self, node_id ) :
+        """
+        Return the ids of child nodes of a given node. Will accept node
+        id or a leaf name.
+        """
+        if isinstance( node_id, str ) :
+            try :
+                node_id = self.leafs[ node_id ]
+            except KeyError :
+                raise Exception( 'Leaf name not found : ' + node_id )
+        return ( self.data[node_id].left_child,
+                 self.data[node_id].right_child )
         
     def get_leafs( self, node_id ) :
         """
