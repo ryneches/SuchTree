@@ -168,11 +168,17 @@ cdef class SuchTree :
             if node_id >= size :
                 raise Exception( 'node label out of bounds : ' + str(node_id) )
             
+            try :
+                support = float( node.label )
+            except ( TypeError, ValueError ) :
+                support = -1
+
             self.data[node_id].parent      = parent
             self.data[node_id].left_child  = left_child
             self.data[node_id].right_child = right_child
             self.data[node_id].distance    = distance
-            
+            self.data[node_id].support     = support
+        
         for node_id in self.leafs.values() :
             n = 1
             while True :
