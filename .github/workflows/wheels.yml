@@ -27,7 +27,7 @@ jobs:
       
       - name: Upgrade pip
         run: python -m pip install --upgrade pip
-
+      
       - name: Install test dependencies
         run: |
           python -m pip install flake8 pytest
@@ -38,7 +38,7 @@ jobs:
         run: |
           # stop the build if there are Python syntax errors or undefined names
           flake8 SuchTree --count --ignore=E201,E202,E203 --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 SuchTree --count --ignore=E201,E202,E203 --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       
       - name: Test with pytest
