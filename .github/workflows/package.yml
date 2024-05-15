@@ -79,6 +79,12 @@ jobs:
           name: cibw-sdist
           path: dist/
       
+      - name: Set up QEMU
+        if: matrix.cibw_archs == 'aarch64'
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+      
       - name: Build wheels for CPython 3.12
         uses: pypa/cibuildwheel@v2.18.0
         with:
