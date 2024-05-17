@@ -5,6 +5,16 @@ phylogenetic trees.
 
 [![Actions Status](https://github.com/ryneches/SuchTree/workflows/Build/badge.svg)](https://github.com/ryneches/SuchTree/actions) [![codecov](https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg)](https://codecov.io/gh/ryneches/SuchTree) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE) [![JOSS](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg)](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610) ![GitHub all releases](https://img.shields.io/github/downloads/ryneches/SuchTree/total?label=downloads&logo=github) ![PyPI - Downloads](https://img.shields.io/pypi/dd/SuchTree?logo=PyPI)
 
+### Release notes
+
+New for SuchTree v1.1
+
+* Basic support for support values provided by `SuchTree.get_support( node_id )`
+* Relative evolutionary divergence (RED)
+* Bipartitions
+* Node generators for in-order and preorder traversal
+* Summary of leaf relationships via `SuchTree.relationships()`
+
 ### High-performance sampling of very large trees
 
 You have a phylogenetic tree. You want to do some statistics with it. No
