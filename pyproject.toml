@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "SuchTree"
 dynamic = [ "version" ]
-authors = { name="Russell Neches", email="science@vort.org" }
+authors = [ { name="Russell Neches", email="science@vort.org" } ]
 keywords = [ "trees", "phylogenetics", "mcmc", "bioinformatics", 
-             "genome", "genomics", "evolution" ]
+             "genome", "genomics", "evolution", "biology", "bio" ]
 classifiers = [
   "License :: OSI Approved :: BSD License",
 
