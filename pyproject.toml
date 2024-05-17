@@ -2,29 +2,6 @@
 requires = [ "setuptools", "wheel", "Cython", "numpy", "scipy" ]
 build-backend = "setuptools.build_meta"
 
-[project]
-name = "SuchTree"
-dynamic = [ "version" ]
-authors = [ { name="Russell Neches", email="science@vort.org" } ]
-keywords = [ "trees", "phylogenetics", "mcmc", "bioinformatics", 
-             "genome", "genomics", "evolution", "biology", "bio" ]
-classifiers = [
-  "License :: OSI Approved :: BSD License",
-
-  "Intended Audience :: Science/Research",
-  "Topic :: Scientific/Engineering :: Bio-Informatics",
-
-  "Programming Language :: Cython",
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-]
-
-[project.urls]
-Repository = "https://github.com/ryneches/SuchTree"
-"Bug Tracker" = "https://github.com/ryneches/SuchTree/issues"
-
 # build wheels for amd64 x86_64
 [tool.cibuildwheel.linux]
 before-all = "yum -y install lapack-devel blas-devel atlas-devel"

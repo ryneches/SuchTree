@@ -585,7 +585,7 @@ cdef class SuchTree :
         return self._mrca( visited, a, b )
         
     @cython.boundscheck(False)
-    cdef int _mrca( self, long[:] visited, int a, int b ) nogil :
+    cdef int _mrca( self, long[:] visited, int a, int b ) nogil noexcept :
         cdef int n
         cdef int i
         cdef int mrca = -1
