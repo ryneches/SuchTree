@@ -4,14 +4,14 @@
 {
     "distutils": {
         "depends": [
-            "/tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/core/include/numpy/arrayscalars.h",
-            "/tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/core/include/numpy/ndarrayobject.h",
-            "/tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/core/include/numpy/ndarraytypes.h",
-            "/tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/core/include/numpy/arrayscalars.h",
+            "/tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/core/include/numpy/ndarrayobject.h",
+            "/tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/core/include/numpy/ndarraytypes.h",
+            "/tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/core/include/numpy/ufuncobject.h"
         ],
         "include_dirs": [
-            "/tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/core/include"
+            "/tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/core/include"
         ],
         "name": "MuchTree",
         "sources": [
@@ -1673,7 +1673,7 @@ typedef struct {
 
 /* #### Code section: numeric_typedefs ### */
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":730
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":730
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1682,7 +1682,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":731
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":731
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1691,7 +1691,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":732
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":732
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1700,7 +1700,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":733
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":733
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1709,7 +1709,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":737
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":737
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1718,7 +1718,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":738
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":738
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1727,7 +1727,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":739
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":739
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1736,7 +1736,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":740
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":740
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1745,7 +1745,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":744
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":744
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1754,7 +1754,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":745
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":745
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1763,7 +1763,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":754
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":754
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1772,7 +1772,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":755
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":755
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1781,7 +1781,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":757
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":757
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1790,7 +1790,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":758
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":758
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1799,7 +1799,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":760
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":760
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1808,7 +1808,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":761
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":761
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1817,7 +1817,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":763
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":763
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1826,7 +1826,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":764
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":764
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1835,7 +1835,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":765
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":765
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1906,7 +1906,7 @@ struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":767
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":767
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1915,7 +1915,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":768
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":768
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1924,7 +1924,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":769
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":769
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1933,7 +1933,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":771
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":771
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -2048,7 +2048,7 @@ struct __pyx_t_8MuchTree_Column {
  * 
  * @cython.no_gc_clear
  * cdef class SuchTree :             # <<<<<<<<<<<<<<
- *     """
+ *     '''
  *     SuchTree extention type. The constructor accepts a filesystem
  */
 struct __pyx_obj_8MuchTree_SuchTree {
@@ -2111,7 +2111,7 @@ struct __pyx_obj_8MuchTree_SuchLinkedTrees {
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_descendant_nodes( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for ids of all nodes descendent from a given node,
  */
 struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes {
@@ -2132,7 +2132,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct__get_descendant_nodes {
  *                 yield i
  * 
  *     def get_bipartition( self, node_id, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Find the two sets of leaf nodes partitioned at an internal
  */
 struct __pyx_obj_8MuchTree___pyx_scope_struct_1_get_bipartition {
@@ -2181,7 +2181,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct_3_genexpr {
  *                       frozenset( self.get_leafs(right) ) ) ) )
  * 
  *     def bipartitions( self, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the bipartitions of the tree. Each bipartition
  */
 struct __pyx_obj_8MuchTree___pyx_scope_struct_4_bipartitions {
@@ -2199,7 +2199,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct_4_bipartitions {
  *         return np.array(self.np_buffer[:n])
  * 
  *     def in_order( self, distances=True ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in order, yilding tuples
  */
 struct __pyx_obj_8MuchTree___pyx_scope_struct_5_in_order {
@@ -2215,7 +2215,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct_5_in_order {
  *                 break
  * 
  *     def pre_order( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in pre-order.
  */
 struct __pyx_obj_8MuchTree___pyx_scope_struct_6_pre_order {
@@ -2232,7 +2232,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct_6_pre_order {
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the node data in the tree, compatible with networkx.
  */
 struct __pyx_obj_8MuchTree___pyx_scope_struct_7_nodes_data {
@@ -2250,7 +2250,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct_7_nodes_data {
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
  */
 struct __pyx_obj_8MuchTree___pyx_scope_struct_8_edges_data {
@@ -2267,7 +2267,7 @@ struct __pyx_obj_8MuchTree___pyx_scope_struct_8_edges_data {
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Build the graph adjacency matrix of the current subsetted
  */
 struct __pyx_obj_8MuchTree___pyx_scope_struct_9_adjacency {
@@ -2359,7 +2359,7 @@ struct __pyx_memoryviewslice_obj {
  * 
  * @cython.no_gc_clear
  * cdef class SuchTree :             # <<<<<<<<<<<<<<
- *     """
+ *     '''
  *     SuchTree extention type. The constructor accepts a filesystem
  */
 
@@ -21088,7 +21088,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":245
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":245
  * 
  *         @property
  *         cdef inline PyObject* base(self) nogil:             # <<<<<<<<<<<<<<
@@ -21099,7 +21099,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
 static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject *__pyx_v_self) {
   PyObject *__pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":248
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":248
  *             """Returns a borrowed reference to the object owning the data/memory.
  *             """
  *             return PyArray_BASE(self)             # <<<<<<<<<<<<<<
@@ -21109,7 +21109,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   __pyx_r = PyArray_BASE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":245
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":245
  * 
  *         @property
  *         cdef inline PyObject* base(self) nogil:             # <<<<<<<<<<<<<<
@@ -21122,7 +21122,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":251
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":251
  * 
  *         @property
  *         cdef inline dtype descr(self):             # <<<<<<<<<<<<<<
@@ -21136,7 +21136,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   PyArray_Descr *__pyx_t_1;
   __Pyx_RefNannySetupContext("descr", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":254
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":254
  *             """Returns an owned reference to the dtype of the array.
  *             """
  *             return <dtype>PyArray_DESCR(self)             # <<<<<<<<<<<<<<
@@ -21149,7 +21149,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   __pyx_r = ((PyArray_Descr *)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":251
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":251
  * 
  *         @property
  *         cdef inline dtype descr(self):             # <<<<<<<<<<<<<<
@@ -21164,7 +21164,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":257
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":257
  * 
  *         @property
  *         cdef inline int ndim(self) nogil:             # <<<<<<<<<<<<<<
@@ -21175,7 +21175,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
 static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx_v_self) {
   int __pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":260
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":260
  *             """Returns the number of dimensions in the array.
  *             """
  *             return PyArray_NDIM(self)             # <<<<<<<<<<<<<<
@@ -21185,7 +21185,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   __pyx_r = PyArray_NDIM(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":257
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":257
  * 
  *         @property
  *         cdef inline int ndim(self) nogil:             # <<<<<<<<<<<<<<
@@ -21198,7 +21198,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":263
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":263
  * 
  *         @property
  *         cdef inline npy_intp *shape(self) nogil:             # <<<<<<<<<<<<<<
@@ -21209,7 +21209,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
 static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObject *__pyx_v_self) {
   npy_intp *__pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":268
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":268
  *             Can return NULL for 0-dimensional arrays.
  *             """
  *             return PyArray_DIMS(self)             # <<<<<<<<<<<<<<
@@ -21219,7 +21219,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   __pyx_r = PyArray_DIMS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":263
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":263
  * 
  *         @property
  *         cdef inline npy_intp *shape(self) nogil:             # <<<<<<<<<<<<<<
@@ -21232,7 +21232,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":271
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":271
  * 
  *         @property
  *         cdef inline npy_intp *strides(self) nogil:             # <<<<<<<<<<<<<<
@@ -21243,7 +21243,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
 static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayObject *__pyx_v_self) {
   npy_intp *__pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":275
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":275
  *             The number of elements matches the number of dimensions of the array (ndim).
  *             """
  *             return PyArray_STRIDES(self)             # <<<<<<<<<<<<<<
@@ -21253,7 +21253,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   __pyx_r = PyArray_STRIDES(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":271
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":271
  * 
  *         @property
  *         cdef inline npy_intp *strides(self) nogil:             # <<<<<<<<<<<<<<
@@ -21266,7 +21266,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":278
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":278
  * 
  *         @property
  *         cdef inline npy_intp size(self) nogil:             # <<<<<<<<<<<<<<
@@ -21277,7 +21277,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":281
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":281
  *             """Returns the total size (in number of elements) of the array.
  *             """
  *             return PyArray_SIZE(self)             # <<<<<<<<<<<<<<
@@ -21287,7 +21287,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   __pyx_r = PyArray_SIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":278
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":278
  * 
  *         @property
  *         cdef inline npy_intp size(self) nogil:             # <<<<<<<<<<<<<<
@@ -21300,7 +21300,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":284
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":284
  * 
  *         @property
  *         cdef inline char* data(self) nogil:             # <<<<<<<<<<<<<<
@@ -21311,7 +21311,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
 static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__pyx_v_self) {
   char *__pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":290
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":290
  *             of `PyArray_DATA()` instead, which returns a 'void*'.
  *             """
  *             return PyArray_BYTES(self)             # <<<<<<<<<<<<<<
@@ -21321,7 +21321,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   __pyx_r = PyArray_BYTES(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":284
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":284
  * 
  *         @property
  *         cdef inline char* data(self) nogil:             # <<<<<<<<<<<<<<
@@ -21334,7 +21334,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":773
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":773
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -21351,7 +21351,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":774
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":774
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -21365,7 +21365,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":773
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":773
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -21384,7 +21384,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":776
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":776
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -21401,7 +21401,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":777
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":777
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -21415,7 +21415,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":776
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":776
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -21434,7 +21434,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":779
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":779
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -21451,7 +21451,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":780
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":780
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -21465,7 +21465,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":779
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":779
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -21484,7 +21484,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":782
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":782
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -21501,7 +21501,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":783
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":783
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -21515,7 +21515,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":782
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":782
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -21534,7 +21534,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":785
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":785
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -21551,7 +21551,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":786
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":786
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -21565,7 +21565,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":785
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":785
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -21584,7 +21584,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":788
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":788
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -21598,7 +21598,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":789
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":789
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -21608,7 +21608,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = PyDataType_HASSUBARRAY(__pyx_v_d);
   if (__pyx_t_1) {
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":790
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":790
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -21620,7 +21620,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":789
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":789
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -21629,7 +21629,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":792
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":792
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -21643,7 +21643,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":788
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":788
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -21658,7 +21658,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":968
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":968
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -21672,7 +21672,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":969
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":969
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -21681,7 +21681,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":970
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":970
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -21690,7 +21690,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   __pyx_t_1 = PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(2, 970, __pyx_L1_error)
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":968
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":968
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -21705,7 +21705,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __pyx_L0:;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":972
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":972
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -21720,7 +21720,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":973
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":973
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -21729,7 +21729,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":974
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":974
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -21739,7 +21739,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = (__pyx_v_base == NULL);
   if (__pyx_t_1) {
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":975
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":975
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -21750,7 +21750,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":974
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":974
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -21759,7 +21759,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":976
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":976
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -21771,7 +21771,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":972
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":972
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -21786,7 +21786,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":980
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":980
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -21810,7 +21810,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":981
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":981
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21826,7 +21826,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":982
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":982
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -21835,7 +21835,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 982, __pyx_L3_error)
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":981
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":981
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21849,7 +21849,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":983
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":983
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -21864,7 +21864,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":984
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":984
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -21879,7 +21879,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":981
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":981
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21895,7 +21895,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":980
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":980
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -21918,7 +21918,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":986
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":986
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -21942,7 +21942,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":987
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":987
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21958,7 +21958,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":988
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":988
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -21967,7 +21967,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 988, __pyx_L3_error)
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":987
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":987
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21981,7 +21981,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":989
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":989
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -21996,7 +21996,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":990
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":990
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -22011,7 +22011,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":987
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":987
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -22027,7 +22027,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":986
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":986
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -22050,7 +22050,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":992
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":992
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -22074,7 +22074,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 1);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":993
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":993
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -22090,7 +22090,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":994
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":994
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -22099,7 +22099,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 994, __pyx_L3_error)
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":993
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":993
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -22113,7 +22113,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":995
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":995
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -22128,7 +22128,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":996
+      /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":996
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -22143,7 +22143,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":993
+    /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":993
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -22159,7 +22159,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":992
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":992
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -22182,7 +22182,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":999
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":999
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -22193,7 +22193,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
 static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_obj) {
   int __pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1011
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1011
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyTimedeltaArrType_Type)             # <<<<<<<<<<<<<<
@@ -22203,7 +22203,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyTimedeltaArrType_Type));
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":999
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":999
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -22216,7 +22216,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1014
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1014
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -22227,7 +22227,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
 static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_obj) {
   int __pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1026
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1026
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyDatetimeArrType_Type)             # <<<<<<<<<<<<<<
@@ -22237,7 +22237,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyDatetimeArrType_Type));
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1014
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1014
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -22250,7 +22250,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1029
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1029
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -22261,7 +22261,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
 static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *__pyx_v_obj) {
   npy_datetime __pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1036
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1036
  *     also needed.  That can be found using `get_datetime64_unit`.
  *     """
  *     return (<PyDatetimeScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -22271,7 +22271,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   __pyx_r = ((PyDatetimeScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1029
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1029
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -22284,7 +22284,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1039
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1039
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -22295,7 +22295,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
 static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject *__pyx_v_obj) {
   npy_timedelta __pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1043
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1043
  *     returns the int64 value underlying scalar numpy timedelta64 object
  *     """
  *     return (<PyTimedeltaScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -22305,7 +22305,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   __pyx_r = ((PyTimedeltaScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1039
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1039
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -22318,7 +22318,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   return __pyx_r;
 }
 
-/* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1046
+/* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1046
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -22329,7 +22329,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
 static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObject *__pyx_v_obj) {
   NPY_DATETIMEUNIT __pyx_r;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1050
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1050
  *     returns the unit part of the dtype for a numpy datetime64 object.
  *     """
  *     return <NPY_DATETIMEUNIT>(<PyDatetimeScalarObject*>obj).obmeta.base             # <<<<<<<<<<<<<<
@@ -22337,7 +22337,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   __pyx_r = ((NPY_DATETIMEUNIT)((PyDatetimeScalarObject *)__pyx_v_obj)->obmeta.base);
   goto __pyx_L0;
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1046
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1046
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -22899,7 +22899,7 @@ static PyObject *__pyx_pf_8MuchTree_pearson(CYTHON_UNUSED PyObject *__pyx_self, 
  *     cdef object RED
  * 
  *     def __init__( self, tree_file ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         SuchTree constructor.
  */
 
@@ -24439,7 +24439,7 @@ static int __pyx_pf_8MuchTree_8SuchTree___init__(struct __pyx_obj_8MuchTree_Such
  *     cdef object RED
  * 
  *     def __init__( self, tree_file ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         SuchTree constructor.
  */
 
@@ -24968,7 +24968,7 @@ static int __pyx_pf_8MuchTree_8SuchTree_17polytomy_distance_2__set__(struct __py
 
 /* "MuchTree.pyx":245
  *         available as the SuchTree.RED attribute.
- *         """
+ *         '''
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
  *             if not self.RED :
  * 
@@ -25017,7 +25017,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_3RED___get__(struct __pyx_obj_8Muc
   __Pyx_RefNannySetupContext("__get__", 1);
 
   /* "MuchTree.pyx":246
- *         """
+ *         '''
  *         def __get__( self ) :
  *             if not self.RED :             # <<<<<<<<<<<<<<
  * 
@@ -25436,7 +25436,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_3RED___get__(struct __pyx_obj_8Muc
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "MuchTree.pyx":246
- *         """
+ *         '''
  *         def __get__( self ) :
  *             if not self.RED :             # <<<<<<<<<<<<<<
  * 
@@ -25458,7 +25458,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_3RED___get__(struct __pyx_obj_8Muc
 
   /* "MuchTree.pyx":245
  *         available as the SuchTree.RED attribute.
- *         """
+ *         '''
  *         def __get__( self ) :             # <<<<<<<<<<<<<<
  *             if not self.RED :
  * 
@@ -25491,7 +25491,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_3RED___get__(struct __pyx_obj_8Muc
  *             return self.RED
  * 
  *     def get_parent( self, query ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the id of the parent of a given node. Will accept node
  */
 
@@ -25615,7 +25615,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
 
   /* "MuchTree.pyx":265
  *         id or leaf name.
- *         """
+ *         '''
  *         if isinstance( query, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 node_id = self.leafs[ query ]
@@ -25624,7 +25624,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
   if (__pyx_t_1) {
 
     /* "MuchTree.pyx":266
- *         """
+ *         '''
  *         if isinstance( query, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ query ]
@@ -25652,7 +25652,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
         __pyx_t_5 = 0;
 
         /* "MuchTree.pyx":266
- *         """
+ *         '''
  *         if isinstance( query, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ query ]
@@ -25700,7 +25700,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
       goto __pyx_L6_except_error;
 
       /* "MuchTree.pyx":266
- *         """
+ *         '''
  *         if isinstance( query, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ query ]
@@ -25717,7 +25717,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
 
     /* "MuchTree.pyx":265
  *         id or leaf name.
- *         """
+ *         '''
  *         if isinstance( query, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 node_id = self.leafs[ query ]
@@ -25815,7 +25815,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
  *             return self.RED
  * 
  *     def get_parent( self, query ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the id of the parent of a given node. Will accept node
  */
 
@@ -25839,7 +25839,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_2get_parent(struct __pyx_obj_8Much
  *         return self.data[node_id].parent
  * 
  *     def get_support( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the support value of a given node. Will accept node id
  */
 
@@ -25962,7 +25962,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_support(struct __pyx_obj_8Muc
 
   /* "MuchTree.pyx":282
  *         or leaf name.
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 node_id = self.leafs[ node_id ]
@@ -25971,7 +25971,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_support(struct __pyx_obj_8Muc
   if (__pyx_t_1) {
 
     /* "MuchTree.pyx":283
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ node_id ]
@@ -25999,7 +25999,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_support(struct __pyx_obj_8Muc
         __pyx_t_5 = 0;
 
         /* "MuchTree.pyx":283
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ node_id ]
@@ -26047,7 +26047,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_support(struct __pyx_obj_8Muc
       goto __pyx_L6_except_error;
 
       /* "MuchTree.pyx":283
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ node_id ]
@@ -26064,7 +26064,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_support(struct __pyx_obj_8Muc
 
     /* "MuchTree.pyx":282
  *         or leaf name.
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 node_id = self.leafs[ node_id ]
@@ -26090,7 +26090,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_support(struct __pyx_obj_8Muc
  *         return self.data[node_id].parent
  * 
  *     def get_support( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the support value of a given node. Will accept node id
  */
 
@@ -26114,7 +26114,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_4get_support(struct __pyx_obj_8Muc
  *         return self.data[node_id].support
  * 
  *     def get_children( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the ids of child nodes of a given node. Will accept node
  */
 
@@ -26237,7 +26237,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_children(struct __pyx_obj_8Mu
 
   /* "MuchTree.pyx":294
  *         id or a leaf name.
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 node_id = self.leafs[ node_id ]
@@ -26246,7 +26246,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_children(struct __pyx_obj_8Mu
   if (__pyx_t_1) {
 
     /* "MuchTree.pyx":295
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ node_id ]
@@ -26274,7 +26274,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_children(struct __pyx_obj_8Mu
         __pyx_t_5 = 0;
 
         /* "MuchTree.pyx":295
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ node_id ]
@@ -26322,7 +26322,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_children(struct __pyx_obj_8Mu
       goto __pyx_L6_except_error;
 
       /* "MuchTree.pyx":295
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 node_id = self.leafs[ node_id ]
@@ -26339,7 +26339,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_children(struct __pyx_obj_8Mu
 
     /* "MuchTree.pyx":294
  *         id or a leaf name.
- *         """
+ *         '''
  *         if isinstance( node_id, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 node_id = self.leafs[ node_id ]
@@ -26392,7 +26392,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_children(struct __pyx_obj_8Mu
  *         return self.data[node_id].support
  * 
  *     def get_children( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the ids of child nodes of a given node. Will accept node
  */
 
@@ -26416,7 +26416,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_6get_children(struct __pyx_obj_8Mu
  *                  self.data[node_id].right_child )
  * 
  *     def get_leafs( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of ids of all leaf nodes descendent from a given node.
  */
 
@@ -26850,7 +26850,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_8get_leafs(struct __pyx_obj_8MuchT
  *                  self.data[node_id].right_child )
  * 
  *     def get_leafs( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of ids of all leaf nodes descendent from a given node.
  */
 
@@ -26875,7 +26875,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_12generator(__pyx_CoroutineObject 
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_descendant_nodes( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for ids of all nodes descendent from a given node,
  */
 
@@ -27050,7 +27050,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_12generator(__pyx_CoroutineObject 
 
   /* "MuchTree.pyx":329
  *         returns node_ids for internal and leaf nodes.
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'node_id must be an integer.' )
  *         cdef unsigned int i
@@ -27063,7 +27063,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_12generator(__pyx_CoroutineObject 
   if (unlikely(__pyx_t_3)) {
 
     /* "MuchTree.pyx":330
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :
  *             raise Exception( 'node_id must be an integer.' )             # <<<<<<<<<<<<<<
  *         cdef unsigned int i
@@ -27077,7 +27077,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_12generator(__pyx_CoroutineObject 
 
     /* "MuchTree.pyx":329
  *         returns node_ids for internal and leaf nodes.
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'node_id must be an integer.' )
  *         cdef unsigned int i
@@ -27347,7 +27347,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_12generator(__pyx_CoroutineObject 
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_descendant_nodes( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for ids of all nodes descendent from a given node,
  */
 
@@ -27377,7 +27377,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_12generator(__pyx_CoroutineObject 
  *                 yield i
  * 
  *     def get_bipartition( self, node_id, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Find the two sets of leaf nodes partitioned at an internal
  */
 
@@ -27842,7 +27842,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_15get_bipartition_5generator7(__py
  *                 yield i
  * 
  *     def get_bipartition( self, node_id, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Find the two sets of leaf nodes partitioned at an internal
  */
 
@@ -27880,7 +27880,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_bipartition(struct __pyx_obj
 
   /* "MuchTree.pyx":352
  *         node in the tree.
- *         """
+ *         '''
  *         left,right = self.get_children(node_id)             # <<<<<<<<<<<<<<
  *         if not by_id :
  *             return frozenset(
@@ -27961,7 +27961,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_bipartition(struct __pyx_obj
   __pyx_t_3 = 0;
 
   /* "MuchTree.pyx":353
- *         """
+ *         '''
  *         left,right = self.get_children(node_id)
  *         if not by_id :             # <<<<<<<<<<<<<<
  *             return frozenset(
@@ -28087,7 +28087,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_bipartition(struct __pyx_obj
     goto __pyx_L0;
 
     /* "MuchTree.pyx":353
- *         """
+ *         '''
  *         left,right = self.get_children(node_id)
  *         if not by_id :             # <<<<<<<<<<<<<<
  *             return frozenset(
@@ -28199,7 +28199,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_13get_bipartition(struct __pyx_obj
  *                 yield i
  * 
  *     def get_bipartition( self, node_id, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Find the two sets of leaf nodes partitioned at an internal
  */
 
@@ -28227,7 +28227,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_17generator1(__pyx_CoroutineObject
  *                       frozenset( self.get_leafs(right) ) ) ) )
  * 
  *     def bipartitions( self, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the bipartitions of the tree. Each bipartition
  */
 
@@ -28399,7 +28399,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_17generator1(__pyx_CoroutineObject
 
   /* "MuchTree.pyx":370
  *         not have the same leaf node_ids) to be compared.
- *         """
+ *         '''
  *         for node in self.get_internal_nodes() :             # <<<<<<<<<<<<<<
  *             yield self.get_bipartition( node, by_id=by_id )
  * 
@@ -28487,7 +28487,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_17generator1(__pyx_CoroutineObject
     __pyx_t_1 = 0;
 
     /* "MuchTree.pyx":371
- *         """
+ *         '''
  *         for node in self.get_internal_nodes() :
  *             yield self.get_bipartition( node, by_id=by_id )             # <<<<<<<<<<<<<<
  * 
@@ -28530,7 +28530,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_17generator1(__pyx_CoroutineObject
 
     /* "MuchTree.pyx":370
  *         not have the same leaf node_ids) to be compared.
- *         """
+ *         '''
  *         for node in self.get_internal_nodes() :             # <<<<<<<<<<<<<<
  *             yield self.get_bipartition( node, by_id=by_id )
  * 
@@ -28543,7 +28543,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_17generator1(__pyx_CoroutineObject
  *                       frozenset( self.get_leafs(right) ) ) ) )
  * 
  *     def bipartitions( self, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the bipartitions of the tree. Each bipartition
  */
 
@@ -28573,7 +28573,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_17generator1(__pyx_CoroutineObject
  *             yield self.get_bipartition( node, by_id=by_id )
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of the ids of all internal nodes.
  */
 
@@ -29015,7 +29015,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_18get_internal_nodes(struct __pyx_
  *             yield self.get_bipartition( node, by_id=by_id )
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of the ids of all internal nodes.
  */
 
@@ -29040,7 +29040,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_18get_internal_nodes(struct __pyx_
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of the ids of all nodes.
  */
 
@@ -29470,7 +29470,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_20get_nodes(struct __pyx_obj_8Much
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of the ids of all nodes.
  */
 
@@ -29496,7 +29496,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_24generator2(__pyx_CoroutineObject
  *         return np.array(self.np_buffer[:n])
  * 
  *     def in_order( self, distances=True ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in order, yilding tuples
  */
 
@@ -29666,7 +29666,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_24generator2(__pyx_CoroutineObject
 
   /* "MuchTree.pyx":430
  *         of node_ids with distances to parent nodes.
- *         """
+ *         '''
  *         i = self.root             # <<<<<<<<<<<<<<
  *         stack = []
  * 
@@ -29678,7 +29678,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_24generator2(__pyx_CoroutineObject
   __pyx_t_1 = 0;
 
   /* "MuchTree.pyx":431
- *         """
+ *         '''
  *         i = self.root
  *         stack = []             # <<<<<<<<<<<<<<
  * 
@@ -29881,7 +29881,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_24generator2(__pyx_CoroutineObject
  *         return np.array(self.np_buffer[:n])
  * 
  *     def in_order( self, distances=True ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in order, yilding tuples
  */
 
@@ -29909,7 +29909,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_27generator3(__pyx_CoroutineObject
  *                 break
  * 
  *     def pre_order( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in pre-order.
  */
 
@@ -30017,7 +30017,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_27generator3(__pyx_CoroutineObject
 
   /* "MuchTree.pyx":451
  *         Generator for traversing the tree in pre-order.
- *         """
+ *         '''
  *         stack = [ self.root ]             # <<<<<<<<<<<<<<
  * 
  *         while len(stack) > 0 :
@@ -30169,7 +30169,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_27generator3(__pyx_CoroutineObject
  *                 break
  * 
  *     def pre_order( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in pre-order.
  */
 
@@ -30196,7 +30196,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_27generator3(__pyx_CoroutineObject
  *             yield i
  * 
  *     def get_distance_to_root( self, a ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return distance to root for a given node. Will accept node id
  */
 
@@ -30319,7 +30319,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_28get_distance_to_root(struct __py
 
   /* "MuchTree.pyx":468
  *         or a leaf name.
- *         """
+ *         '''
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 a = self.leafs[a]
@@ -30328,7 +30328,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_28get_distance_to_root(struct __py
   if (__pyx_t_1) {
 
     /* "MuchTree.pyx":469
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -30356,7 +30356,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_28get_distance_to_root(struct __py
         __pyx_t_5 = 0;
 
         /* "MuchTree.pyx":469
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -30404,7 +30404,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_28get_distance_to_root(struct __py
       goto __pyx_L6_except_error;
 
       /* "MuchTree.pyx":469
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -30421,7 +30421,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_28get_distance_to_root(struct __py
 
     /* "MuchTree.pyx":468
  *         or a leaf name.
- *         """
+ *         '''
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 a = self.leafs[a]
@@ -30447,7 +30447,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_28get_distance_to_root(struct __py
  *             yield i
  * 
  *     def get_distance_to_root( self, a ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return distance to root for a given node. Will accept node id
  */
 
@@ -30471,7 +30471,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_28get_distance_to_root(struct __py
  * 
  *     @cython.boundscheck(False)
  *     cdef float _get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Calculate the distance from a node of a given id to the root node.
  */
 
@@ -30491,7 +30491,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
 
   /* "MuchTree.pyx":481
  *         Will work for both leaf and internal nodes. Private cdef method.
- *         """
+ *         '''
  *         cdef float d = 0.0             # <<<<<<<<<<<<<<
  *         cdef float d_i = 0.0
  *         cdef int i = node_id
@@ -30499,7 +30499,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
   __pyx_v_d = 0.0;
 
   /* "MuchTree.pyx":482
- *         """
+ *         '''
  *         cdef float d = 0.0
  *         cdef float d_i = 0.0             # <<<<<<<<<<<<<<
  *         cdef int i = node_id
@@ -30601,7 +30601,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  * 
  *     @cython.boundscheck(False)
  *     cdef float _get_distance_to_root( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Calculate the distance from a node of a given id to the root node.
  */
 
@@ -30617,7 +30617,7 @@ static float __pyx_f_8MuchTree_8SuchTree__get_distance_to_root(struct __pyx_obj_
  *         return d
  * 
  *     def is_leaf( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns True if node_id is a leaf node, False otherwise.
  */
 
@@ -30732,7 +30732,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_30is_leaf(struct __pyx_obj_8MuchTr
 
   /* "MuchTree.pyx":498
  *         Returns True if node_id is a leaf node, False otherwise.
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'node_id must be an integer.' )
  * 
@@ -30745,7 +30745,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_30is_leaf(struct __pyx_obj_8MuchTr
   if (unlikely(__pyx_t_3)) {
 
     /* "MuchTree.pyx":499
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :
  *             raise Exception( 'node_id must be an integer.' )             # <<<<<<<<<<<<<<
  * 
@@ -30759,7 +30759,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_30is_leaf(struct __pyx_obj_8MuchTr
 
     /* "MuchTree.pyx":498
  *         Returns True if node_id is a leaf node, False otherwise.
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'node_id must be an integer.' )
  * 
@@ -30786,7 +30786,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_30is_leaf(struct __pyx_obj_8MuchTr
  *         return d
  * 
  *     def is_leaf( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns True if node_id is a leaf node, False otherwise.
  */
 
@@ -30805,7 +30805,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_30is_leaf(struct __pyx_obj_8MuchTr
  *         return self._is_leaf( node_id )
  * 
  *     def is_internal_node( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns True if node_id is an internal node, False otherwise.
  */
 
@@ -30920,7 +30920,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_32is_internal_node(struct __pyx_ob
 
   /* "MuchTree.pyx":507
  *         Returns True if node_id is an internal node, False otherwise.
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'node_id must be an integer.' )
  * 
@@ -30933,7 +30933,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_32is_internal_node(struct __pyx_ob
   if (unlikely(__pyx_t_3)) {
 
     /* "MuchTree.pyx":508
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :
  *             raise Exception( 'node_id must be an integer.' )             # <<<<<<<<<<<<<<
  * 
@@ -30947,7 +30947,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_32is_internal_node(struct __pyx_ob
 
     /* "MuchTree.pyx":507
  *         Returns True if node_id is an internal node, False otherwise.
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'node_id must be an integer.' )
  * 
@@ -30974,7 +30974,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_32is_internal_node(struct __pyx_ob
  *         return self._is_leaf( node_id )
  * 
  *     def is_internal_node( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns True if node_id is an internal node, False otherwise.
  */
 
@@ -31059,7 +31059,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_leaf(struct __pyx_obj_8MuchTree_SuchT
  *             return False
  * 
  *     def is_ancestor( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Tristate : returns 1 if a is an ancestor of b, -1 if b is an
  */
 
@@ -31199,7 +31199,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_34is_ancestor(struct __pyx_obj_8Mu
 
   /* "MuchTree.pyx":525
  *         but only node_ids can be used for internal nodes.
- *         """
+ *         '''
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 a = self.leafs[a]
@@ -31208,7 +31208,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_34is_ancestor(struct __pyx_obj_8Mu
   if (__pyx_t_1) {
 
     /* "MuchTree.pyx":526
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -31236,7 +31236,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_34is_ancestor(struct __pyx_obj_8Mu
         __pyx_t_5 = 0;
 
         /* "MuchTree.pyx":526
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -31284,7 +31284,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_34is_ancestor(struct __pyx_obj_8Mu
       goto __pyx_L6_except_error;
 
       /* "MuchTree.pyx":526
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -31301,7 +31301,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_34is_ancestor(struct __pyx_obj_8Mu
 
     /* "MuchTree.pyx":525
  *         but only node_ids can be used for internal nodes.
- *         """
+ *         '''
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 a = self.leafs[a]
@@ -31444,7 +31444,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_34is_ancestor(struct __pyx_obj_8Mu
  *             return False
  * 
  *     def is_ancestor( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Tristate : returns 1 if a is an ancestor of b, -1 if b is an
  */
 
@@ -31699,7 +31699,7 @@ static int __pyx_f_8MuchTree_8SuchTree__is_ancestor(struct __pyx_obj_8MuchTree_S
  *         return 0
  * 
  *     def mrca( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the id of the most recent common ancestor of two nodes
  */
 
@@ -31841,7 +31841,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_36mrca(struct __pyx_obj_8MuchTree_
 
   /* "MuchTree.pyx":572
  *         but node_ids must be used for internal nodes.
- *         """
+ *         '''
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 a = self.leafs[a]
@@ -31850,7 +31850,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_36mrca(struct __pyx_obj_8MuchTree_
   if (__pyx_t_1) {
 
     /* "MuchTree.pyx":573
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -31878,7 +31878,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_36mrca(struct __pyx_obj_8MuchTree_
         __pyx_t_5 = 0;
 
         /* "MuchTree.pyx":573
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -31926,7 +31926,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_36mrca(struct __pyx_obj_8MuchTree_
       goto __pyx_L6_except_error;
 
       /* "MuchTree.pyx":573
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -31943,7 +31943,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_36mrca(struct __pyx_obj_8MuchTree_
 
     /* "MuchTree.pyx":572
  *         but node_ids must be used for internal nodes.
- *         """
+ *         '''
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 a = self.leafs[a]
@@ -32119,7 +32119,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_36mrca(struct __pyx_obj_8MuchTree_
  *         return 0
  * 
  *     def mrca( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the id of the most recent common ancestor of two nodes
  */
 
@@ -32437,7 +32437,7 @@ static int __pyx_f_8MuchTree_8SuchTree__mrca(struct __pyx_obj_8MuchTree_SuchTree
  *         return mrca
  * 
  *     def distance( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return distnace between a pair of nodes. Will treat strings as
  */
 
@@ -32578,7 +32578,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_38distance(struct __pyx_obj_8MuchT
 
   /* "MuchTree.pyx":626
  *         leaf name or an integer.
- *         """
+ *         '''
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 a = self.leafs[a]
@@ -32587,7 +32587,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_38distance(struct __pyx_obj_8MuchT
   if (__pyx_t_1) {
 
     /* "MuchTree.pyx":627
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -32615,7 +32615,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_38distance(struct __pyx_obj_8MuchT
         __pyx_t_5 = 0;
 
         /* "MuchTree.pyx":627
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -32663,7 +32663,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_38distance(struct __pyx_obj_8MuchT
       goto __pyx_L6_except_error;
 
       /* "MuchTree.pyx":627
- *         """
+ *         '''
  *         if isinstance( a, str ) :
  *             try :             # <<<<<<<<<<<<<<
  *                 a = self.leafs[a]
@@ -32680,7 +32680,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_38distance(struct __pyx_obj_8MuchT
 
     /* "MuchTree.pyx":626
  *         leaf name or an integer.
- *         """
+ *         '''
  *         if isinstance( a, str ) :             # <<<<<<<<<<<<<<
  *             try :
  *                 a = self.leafs[a]
@@ -32935,7 +32935,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_38distance(struct __pyx_obj_8MuchT
  *         return mrca
  * 
  *     def distance( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return distnace between a pair of nodes. Will treat strings as
  */
 
@@ -33148,7 +33148,7 @@ static float __pyx_f_8MuchTree_8SuchTree__distance(struct __pyx_obj_8MuchTree_Su
  *         return d
  * 
  *     def distances( self, long[:,:] ids ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of distances between pairs of node ids,
  */
 
@@ -33270,7 +33270,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40distances(struct __pyx_obj_8Much
 
   /* "MuchTree.pyx":667
  *         which are expected as an (n,2) array of type int.
- *         """
+ *         '''
  *         if not ids.shape[1] == 2 :             # <<<<<<<<<<<<<<
  *             raise Exception( 'expected (n,2) array',
  *                              ids.shape[0], ids.shape[1] )
@@ -33291,7 +33291,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40distances(struct __pyx_obj_8Much
     __Pyx_GOTREF(__pyx_t_3);
 
     /* "MuchTree.pyx":668
- *         """
+ *         '''
  *         if not ids.shape[1] == 2 :
  *             raise Exception( 'expected (n,2) array',             # <<<<<<<<<<<<<<
  *                              ids.shape[0], ids.shape[1] )
@@ -33317,7 +33317,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40distances(struct __pyx_obj_8Much
 
     /* "MuchTree.pyx":667
  *         which are expected as an (n,2) array of type int.
- *         """
+ *         '''
  *         if not ids.shape[1] == 2 :             # <<<<<<<<<<<<<<
  *             raise Exception( 'expected (n,2) array',
  *                              ids.shape[0], ids.shape[1] )
@@ -33415,7 +33415,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_40distances(struct __pyx_obj_8Much
  *         return d
  * 
  *     def distances( self, long[:,:] ids ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of distances between pairs of node ids,
  */
 
@@ -33637,7 +33637,7 @@ static void __pyx_f_8MuchTree_8SuchTree__distances(struct __pyx_obj_8MuchTree_Su
  *             result[i] = d
  * 
  *     def distances_by_name( self, id_pairs ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of distances between pairs of leaf names in a
  */
 
@@ -33763,7 +33763,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_42distances_by_name(struct __pyx_o
 
   /* "MuchTree.pyx":715
  *         given (n,2) list of lists. Accepts only leaf names.
- *         """
+ *         '''
  *         shape = ( len(id_pairs), len(id_pairs[0]) )             # <<<<<<<<<<<<<<
  *         ids = np.zeros( shape, dtype=int )
  *         for n,(a,b) in enumerate(id_pairs) :
@@ -33789,7 +33789,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_42distances_by_name(struct __pyx_o
   __pyx_t_4 = 0;
 
   /* "MuchTree.pyx":716
- *         """
+ *         '''
  *         shape = ( len(id_pairs), len(id_pairs[0]) )
  *         ids = np.zeros( shape, dtype=int )             # <<<<<<<<<<<<<<
  *         for n,(a,b) in enumerate(id_pairs) :
@@ -34016,7 +34016,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_42distances_by_name(struct __pyx_o
  *             result[i] = d
  * 
  *     def distances_by_name( self, id_pairs ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of distances between pairs of leaf names in a
  */
 
@@ -34045,7 +34045,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_42distances_by_name(struct __pyx_o
  *         return self.distances( ids )
  * 
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
  */
 
@@ -34177,7 +34177,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_44link_leaf(struct __pyx_obj_8Much
 
   /* "MuchTree.pyx":726
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
- *         """
+ *         '''
  *         if not self.data[leaf_id].left_child == -1 :             # <<<<<<<<<<<<<<
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )
  *         if not leaf_id in set( self.leafs.values() ) :
@@ -34186,7 +34186,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_44link_leaf(struct __pyx_obj_8Much
   if (unlikely(__pyx_t_1)) {
 
     /* "MuchTree.pyx":727
- *         """
+ *         '''
  *         if not self.data[leaf_id].left_child == -1 :
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )             # <<<<<<<<<<<<<<
  *         if not leaf_id in set( self.leafs.values() ) :
@@ -34211,7 +34211,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_44link_leaf(struct __pyx_obj_8Much
 
     /* "MuchTree.pyx":726
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
- *         """
+ *         '''
  *         if not self.data[leaf_id].left_child == -1 :             # <<<<<<<<<<<<<<
  *             raise Exception( 'Cannot link non-leaf node.', leaf_id )
  *         if not leaf_id in set( self.leafs.values() ) :
@@ -34305,7 +34305,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_44link_leaf(struct __pyx_obj_8Much
  *         return self.distances( ids )
  * 
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
  */
 
@@ -34329,7 +34329,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_44link_leaf(struct __pyx_obj_8Much
  *         self.data[leaf_id].right_child = col_id
  * 
  *     def get_links( self, leaf_ids ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of column ids for an array of leaf ids.
  */
 
@@ -34453,7 +34453,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_46get_links(struct __pyx_obj_8Much
 
   /* "MuchTree.pyx":738
  *         Returns an array of column ids for an array of leaf ids.
- *         """
+ *         '''
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
@@ -34496,7 +34496,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_46get_links(struct __pyx_obj_8Much
   if (unlikely(__pyx_t_7)) {
 
     /* "MuchTree.pyx":739
- *         """
+ *         '''
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )             # <<<<<<<<<<<<<<
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
@@ -34519,7 +34519,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_46get_links(struct __pyx_obj_8Much
 
     /* "MuchTree.pyx":738
  *         Returns an array of column ids for an array of leaf ids.
- *         """
+ *         '''
  *         if not set( leaf_ids ) <= set( self.leafs.values() ) :             # <<<<<<<<<<<<<<
  *             raise Exception( 'Unknown leaf id(s).', leaf_ids )
  *         col_ids = np.ndarray( len(leaf_ids), dtype=int )
@@ -34662,7 +34662,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_46get_links(struct __pyx_obj_8Much
  *         self.data[leaf_id].right_child = col_id
  * 
  *     def get_links( self, leaf_ids ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of column ids for an array of leaf ids.
  */
 
@@ -34687,7 +34687,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_46get_links(struct __pyx_obj_8Much
  *         return col_ids
  * 
  *     def adjacency( self, int node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph adjacency matrix of the tree. If parameter
  */
 
@@ -35443,7 +35443,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_48adjacency(struct __pyx_obj_8Much
  *         return col_ids
  * 
  *     def adjacency( self, int node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph adjacency matrix of the tree. If parameter
  */
 
@@ -35468,7 +35468,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_48adjacency(struct __pyx_obj_8Much
  *                  'node_ids' : self.np_buffer[:n] }
  * 
  *     def laplacian( self, int node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph Laplacian matrix of the tree, or if the parameter
  */
 
@@ -35597,7 +35597,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_50laplacian(struct __pyx_obj_8Much
 
   /* "MuchTree.pyx":802
  *         subtree decendent from node.
- *         """
+ *         '''
  *         if node == -1 :             # <<<<<<<<<<<<<<
  *             node = self.root
  * 
@@ -35606,7 +35606,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_50laplacian(struct __pyx_obj_8Much
   if (__pyx_t_1) {
 
     /* "MuchTree.pyx":803
- *         """
+ *         '''
  *         if node == -1 :
  *             node = self.root             # <<<<<<<<<<<<<<
  * 
@@ -35617,7 +35617,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_50laplacian(struct __pyx_obj_8Much
 
     /* "MuchTree.pyx":802
  *         subtree decendent from node.
- *         """
+ *         '''
  *         if node == -1 :             # <<<<<<<<<<<<<<
  *             node = self.root
  * 
@@ -35845,7 +35845,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_50laplacian(struct __pyx_obj_8Much
  *                  'node_ids' : self.np_buffer[:n] }
  * 
  *     def laplacian( self, int node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph Laplacian matrix of the tree, or if the parameter
  */
 
@@ -35871,7 +35871,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_50laplacian(struct __pyx_obj_8Much
  *                  'node_ids' : node_ids }
  * 
  *     def dump_array( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Print the whole tree. (WARNING : may be huge and useless.)
  */
 
@@ -35934,7 +35934,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_52dump_array(struct __pyx_obj_8Muc
 
   /* "MuchTree.pyx":817
  *         Print the whole tree. (WARNING : may be huge and useless.)
- *         """
+ *         '''
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
  *             print( 'id : %d ->' % n )
  *             print( '   distance    : %0.3f' % self.data[n].distance    )
@@ -36001,7 +36001,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_52dump_array(struct __pyx_obj_8Muc
     __pyx_t_2 = 0;
 
     /* "MuchTree.pyx":818
- *         """
+ *         '''
  *         for n in range(self.length) :
  *             print( 'id : %d ->' % n )             # <<<<<<<<<<<<<<
  *             print( '   distance    : %0.3f' % self.data[n].distance    )
@@ -36088,7 +36088,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_52dump_array(struct __pyx_obj_8Muc
 
     /* "MuchTree.pyx":817
  *         Print the whole tree. (WARNING : may be huge and useless.)
- *         """
+ *         '''
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
  *             print( 'id : %d ->' % n )
  *             print( '   distance    : %0.3f' % self.data[n].distance    )
@@ -36100,7 +36100,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_52dump_array(struct __pyx_obj_8Muc
  *                  'node_ids' : node_ids }
  * 
  *     def dump_array( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Print the whole tree. (WARNING : may be huge and useless.)
  */
 
@@ -36125,7 +36125,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_56generator4(__pyx_CoroutineObject
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the node data in the tree, compatible with networkx.
  */
 
@@ -36235,7 +36235,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_56generator4(__pyx_CoroutineObject
 
   /* "MuchTree.pyx":828
  *         Generator for the node data in the tree, compatible with networkx.
- *         """
+ *         '''
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
  *             if self.data[n].left_child == -1 :
  *                 leaf_name = self.leafnodes[n]
@@ -36246,7 +36246,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_56generator4(__pyx_CoroutineObject
     __pyx_cur_scope->__pyx_v_n = __pyx_t_3;
 
     /* "MuchTree.pyx":829
- *         """
+ *         '''
  *         for n in range(self.length) :
  *             if self.data[n].left_child == -1 :             # <<<<<<<<<<<<<<
  *                 leaf_name = self.leafnodes[n]
@@ -36270,7 +36270,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_56generator4(__pyx_CoroutineObject
       __pyx_t_5 = 0;
 
       /* "MuchTree.pyx":829
- *         """
+ *         '''
  *         for n in range(self.length) :
  *             if self.data[n].left_child == -1 :             # <<<<<<<<<<<<<<
  *                 leaf_name = self.leafnodes[n]
@@ -36337,7 +36337,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_56generator4(__pyx_CoroutineObject
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the node data in the tree, compatible with networkx.
  */
 
@@ -36366,7 +36366,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_59generator5(__pyx_CoroutineObject
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
  */
 
@@ -36477,7 +36477,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_59generator5(__pyx_CoroutineObject
 
   /* "MuchTree.pyx":839
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
- *         """
+ *         '''
  *         for n in range(self.length) :             # <<<<<<<<<<<<<<
  *             # no edges beyond the root node
  *             if self.data[n].parent == -1 : continue
@@ -36551,7 +36551,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_59generator5(__pyx_CoroutineObject
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
  */
 
@@ -36581,7 +36581,7 @@ static PyObject *__pyx_gb_8MuchTree_8SuchTree_59generator5(__pyx_CoroutineObject
  * 
  *     def relationships( self ) :             # <<<<<<<<<<<<<<
  *         '''
- *         Return a Pandas DataFrame of describing the relationships among leas in the tree.
+ *         Return a Pandas DataFrame of describing the relationships among leafs in the tree.
  */
 
 /* Python wrapper */
@@ -36592,7 +36592,7 @@ PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_8MuchTree_8SuchTree_60relationships, "\n        Return a Pandas DataFrame of describing the relationships among leas in the tree.\n        ");
+PyDoc_STRVAR(__pyx_doc_8MuchTree_8SuchTree_60relationships, "\n        Return a Pandas DataFrame of describing the relationships among leafs in the tree.\n        ");
 static PyMethodDef __pyx_mdef_8MuchTree_8SuchTree_61relationships = {"relationships", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8MuchTree_8SuchTree_61relationships, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8MuchTree_8SuchTree_60relationships};
 static PyObject *__pyx_pw_8MuchTree_8SuchTree_61relationships(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
@@ -36664,7 +36664,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_60relationships(struct __pyx_obj_8
   __Pyx_RefNannySetupContext("relationships", 1);
 
   /* "MuchTree.pyx":848
- *         Return a Pandas DataFrame of describing the relationships among leas in the tree.
+ *         Return a Pandas DataFrame of describing the relationships among leafs in the tree.
  *         '''
  *         pairs        = [ sample([a,b],2) for a,b, in combinations( self.leafs.keys(), 2 ) ]             # <<<<<<<<<<<<<<
  *         distances    = self.distances_by_name( pairs )
@@ -37746,7 +37746,7 @@ static PyObject *__pyx_pf_8MuchTree_8SuchTree_60relationships(struct __pyx_obj_8
  * 
  *     def relationships( self ) :             # <<<<<<<<<<<<<<
  *         '''
- *         Return a Pandas DataFrame of describing the relationships among leas in the tree.
+ *         Return a Pandas DataFrame of describing the relationships among leafs in the tree.
  */
 
   /* function exit code */
@@ -43765,7 +43765,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_12subset_a(struct __pyx_ob
  * 
  *     @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  *     def linked_distances( self ) :
- *         """
+ *         '''
  */
 
 /* Python wrapper */
@@ -44231,7 +44231,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_14linked_distances(struct 
  * 
  *     @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  *     def linked_distances( self ) :
- *         """
+ *         '''
  */
 
   /* function exit code */
@@ -46190,7 +46190,7 @@ if (unlikely((__pyx_memoryview_copy_contents(__pyx_v_distances_b_mv, __pyx_t_7, 
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Build the graph adjacency matrix of the current subsetted
  */
 
@@ -46660,7 +46660,7 @@ static PyObject *__pyx_lambda_funcdef_lambda3(PyObject *__pyx_self, PyObject *__
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Build the graph adjacency matrix of the current subsetted
  */
 
@@ -46712,7 +46712,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
 
   /* "MuchTree.pyx":1437
  *         trees, applying the specified random permutaitons.
- *         """
+ *         '''
  *         TA = self.TreeA.adjacency( node = self.subset_a_root )             # <<<<<<<<<<<<<<
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )
  *         ta_aj = TA['adjacency_matrix']
@@ -46733,7 +46733,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
   __pyx_t_3 = 0;
 
   /* "MuchTree.pyx":1438
- *         """
+ *         '''
  *         TA = self.TreeA.adjacency( node = self.subset_a_root )
  *         TB = self.TreeB.adjacency( node = self.subset_b_root )             # <<<<<<<<<<<<<<
  *         ta_aj = TA['adjacency_matrix']
@@ -48290,7 +48290,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Build the graph adjacency matrix of the current subsetted
  */
 
@@ -48333,7 +48333,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_18adjacency(struct __pyx_o
  *         return aj
  * 
  *     def laplacian( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph Laplacian matrix of the current subsetted trees.
  */
 
@@ -48482,7 +48482,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   __Pyx_RefNannySetupContext("laplacian", 1);
 
   /* "MuchTree.pyx":1489
- *         """
+ *         '''
  * 
  *         aj = self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                              additions=additions,
@@ -48513,7 +48513,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_swaps, __pyx_v_swaps) < 0) __PYX_ERR(0, 1489, __pyx_L1_error)
 
   /* "MuchTree.pyx":1489
- *         """
+ *         '''
  * 
  *         aj = self.adjacency( deletions=deletions,             # <<<<<<<<<<<<<<
  *                              additions=additions,
@@ -48640,7 +48640,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
  *         return aj
  * 
  *     def laplacian( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph Laplacian matrix of the current subsetted trees.
  */
 
@@ -48665,7 +48665,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_20laplacian(struct __pyx_o
  *         return lp
  * 
  *     def spectrum( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The eigenvalues of the graph Laplacian matrix of the current
  */
 
@@ -48827,7 +48827,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
 
   /* "MuchTree.pyx":1503
  *         subsetted trees.
- *         """
+ *         '''
  *         lp = self.laplacian( deletions, additions, swaps )             # <<<<<<<<<<<<<<
  * 
  *         cdef int N     = lp.shape[0]
@@ -49072,7 +49072,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  *         return lp
  * 
  *     def spectrum( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The eigenvalues of the graph Laplacian matrix of the current
  */
 
@@ -49101,7 +49101,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_22spectrum(struct __pyx_ob
  *             return info
  * 
  *     def to_igraph( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the current SuchLinkedTrees subgraph as a weighted,
  */
 
@@ -49259,7 +49259,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
 
   /* "MuchTree.pyx":1531
  *         labled igraph object. The igraph package must be installed.
- *         """
+ *         '''
  *         if not with_igraph :             # <<<<<<<<<<<<<<
  *             raise Exception( 'igraph package not installed.' )
  * 
@@ -49272,7 +49272,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
   if (unlikely(__pyx_t_3)) {
 
     /* "MuchTree.pyx":1532
- *         """
+ *         '''
  *         if not with_igraph :
  *             raise Exception( 'igraph package not installed.' )             # <<<<<<<<<<<<<<
  * 
@@ -49286,7 +49286,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
 
     /* "MuchTree.pyx":1531
  *         labled igraph object. The igraph package must be installed.
- *         """
+ *         '''
  *         if not with_igraph :             # <<<<<<<<<<<<<<
  *             raise Exception( 'igraph package not installed.' )
  * 
@@ -49687,7 +49687,7 @@ static PyObject *__pyx_pf_8MuchTree_15SuchLinkedTrees_24to_igraph(struct __pyx_o
  *             return info
  * 
  *     def to_igraph( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the current SuchLinkedTrees subgraph as a weighted,
  */
 
@@ -54019,7 +54019,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":984
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":984
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -54030,7 +54030,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "../../../../tmp/build-env-ov5a8etq/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":990
+  /* "../../../../tmp/pip-build-env-ybzrgdn3/overlay/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":990
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -54053,7 +54053,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__11);
 
   /* "MuchTree.pyx":330
- *         """
+ *         '''
  *         if not isinstance( node_id, Integral ) :
  *             raise Exception( 'node_id must be an integer.' )             # <<<<<<<<<<<<<<
  *         cdef unsigned int i
@@ -54119,7 +54119,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__24);
 
   /* "MuchTree.pyx":1532
- *         """
+ *         '''
  *         if not with_igraph :
  *             raise Exception( 'igraph package not installed.' )             # <<<<<<<<<<<<<<
  * 
@@ -54246,7 +54246,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             return self.RED
  * 
  *     def get_parent( self, query ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the id of the parent of a given node. Will accept node
  */
   __pyx_tuple__41 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_query, __pyx_n_s_node_id); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 260, __pyx_L1_error)
@@ -54258,7 +54258,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return self.data[node_id].parent
  * 
  *     def get_support( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the support value of a given node. Will accept node id
  */
   __pyx_tuple__43 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_node_id); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 277, __pyx_L1_error)
@@ -54270,7 +54270,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return self.data[node_id].support
  * 
  *     def get_children( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the ids of child nodes of a given node. Will accept node
  */
   __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_SuchTree_MuchTree_pyx, __pyx_n_s_get_children, 289, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 289, __pyx_L1_error)
@@ -54279,7 +54279,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                  self.data[node_id].right_child )
  * 
  *     def get_leafs( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of ids of all leaf nodes descendent from a given node.
  */
   __pyx_tuple__46 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_node_id, __pyx_n_s_i, __pyx_n_s_l, __pyx_n_s_r, __pyx_n_s_n, __pyx_n_s_to_visit); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 302, __pyx_L1_error)
@@ -54291,7 +54291,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_descendant_nodes( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for ids of all nodes descendent from a given node,
  */
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_GENERATOR, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_SuchTree_MuchTree_pyx, __pyx_n_s_get_descendant_nodes, 323, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 323, __pyx_L1_error)
@@ -54300,7 +54300,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                 yield i
  * 
  *     def get_bipartition( self, node_id, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Find the two sets of leaf nodes partitioned at an internal
  */
   __pyx_tuple__48 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_node_id, __pyx_n_s_by_id, __pyx_n_s_left, __pyx_n_s_right, __pyx_n_s_genexpr, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 347, __pyx_L1_error)
@@ -54315,7 +54315,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                       frozenset( self.get_leafs(right) ) ) ) )
  * 
  *     def bipartitions( self, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the bipartitions of the tree. Each bipartition
  */
   __pyx_tuple__51 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_by_id, __pyx_n_s_node); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 362, __pyx_L1_error)
@@ -54327,7 +54327,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             yield self.get_bipartition( node, by_id=by_id )
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of the ids of all internal nodes.
  */
   __pyx_tuple__52 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_from_node, __pyx_n_s_i, __pyx_n_s_l, __pyx_n_s_r, __pyx_n_s_n, __pyx_n_s_to_visit); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 373, __pyx_L1_error)
@@ -54339,7 +54339,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of the ids of all nodes.
  */
   __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_SuchTree_MuchTree_pyx, __pyx_n_s_get_nodes, 402, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 402, __pyx_L1_error)
@@ -54348,7 +54348,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return np.array(self.np_buffer[:n])
  * 
  *     def in_order( self, distances=True ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in order, yilding tuples
  */
   __pyx_tuple__55 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_distances, __pyx_n_s_i, __pyx_n_s_stack); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 425, __pyx_L1_error)
@@ -54363,7 +54363,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                 break
  * 
  *     def pre_order( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in pre-order.
  */
   __pyx_tuple__57 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_stack, __pyx_n_s_i, __pyx_n_s_r, __pyx_n_s_l); if (unlikely(!__pyx_tuple__57)) __PYX_ERR(0, 447, __pyx_L1_error)
@@ -54375,7 +54375,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             yield i
  * 
  *     def get_distance_to_root( self, a ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return distance to root for a given node. Will accept node id
  */
   __pyx_tuple__58 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_a); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 463, __pyx_L1_error)
@@ -54387,7 +54387,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return d
  * 
  *     def is_leaf( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns True if node_id is a leaf node, False otherwise.
  */
   __pyx_codeobj__60 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_SuchTree_MuchTree_pyx, __pyx_n_s_is_leaf, 494, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__60)) __PYX_ERR(0, 494, __pyx_L1_error)
@@ -54396,7 +54396,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return self._is_leaf( node_id )
  * 
  *     def is_internal_node( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns True if node_id is an internal node, False otherwise.
  */
   __pyx_codeobj__61 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_SuchTree_MuchTree_pyx, __pyx_n_s_is_internal_node, 503, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__61)) __PYX_ERR(0, 503, __pyx_L1_error)
@@ -54405,7 +54405,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             return False
  * 
  *     def is_ancestor( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Tristate : returns 1 if a is an ancestor of b, -1 if b is an
  */
   __pyx_tuple__62 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_a, __pyx_n_s_b); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 519, __pyx_L1_error)
@@ -54417,7 +54417,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return 0
  * 
  *     def mrca( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the id of the most recent common ancestor of two nodes
  */
   __pyx_tuple__64 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_visited); if (unlikely(!__pyx_tuple__64)) __PYX_ERR(0, 566, __pyx_L1_error)
@@ -54429,7 +54429,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return mrca
  * 
  *     def distance( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return distnace between a pair of nodes. Will treat strings as
  */
   __pyx_codeobj__66 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__62, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_SuchTree_MuchTree_pyx, __pyx_n_s_distance, 620, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__66)) __PYX_ERR(0, 620, __pyx_L1_error)
@@ -54438,7 +54438,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return d
  * 
  *     def distances( self, long[:,:] ids ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of distances between pairs of node ids,
  */
   __pyx_tuple__67 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_ids, __pyx_n_s_visited, __pyx_n_s_result); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(0, 662, __pyx_L1_error)
@@ -54450,7 +54450,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             result[i] = d
  * 
  *     def distances_by_name( self, id_pairs ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of distances between pairs of leaf names in a
  */
   __pyx_tuple__69 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_id_pairs, __pyx_n_s_shape, __pyx_n_s_ids, __pyx_n_s_n, __pyx_n_s_a, __pyx_n_s_b); if (unlikely(!__pyx_tuple__69)) __PYX_ERR(0, 710, __pyx_L1_error)
@@ -54462,7 +54462,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return self.distances( ids )
  * 
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
  */
   __pyx_tuple__71 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_leaf_id, __pyx_n_s_col_id); if (unlikely(!__pyx_tuple__71)) __PYX_ERR(0, 722, __pyx_L1_error)
@@ -54474,7 +54474,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.data[leaf_id].right_child = col_id
  * 
  *     def get_links( self, leaf_ids ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of column ids for an array of leaf ids.
  */
   __pyx_tuple__73 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_leaf_ids, __pyx_n_s_col_ids, __pyx_n_s_n, __pyx_n_s_leaf); if (unlikely(!__pyx_tuple__73)) __PYX_ERR(0, 734, __pyx_L1_error)
@@ -54486,7 +54486,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return col_ids
  * 
  *     def adjacency( self, int node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph adjacency matrix of the tree. If parameter
  */
   __pyx_tuple__75 = PyTuple_Pack(13, __pyx_n_s_self, __pyx_n_s_node, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_k, __pyx_n_s_node_id, __pyx_n_s_parent, __pyx_n_s_distance, __pyx_n_s_l, __pyx_n_s_r, __pyx_n_s_n, __pyx_n_s_to_visit, __pyx_n_s_ajmatrix); if (unlikely(!__pyx_tuple__75)) __PYX_ERR(0, 745, __pyx_L1_error)
@@ -54498,7 +54498,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                  'node_ids' : self.np_buffer[:n] }
  * 
  *     def laplacian( self, int node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph Laplacian matrix of the tree, or if the parameter
  */
   __pyx_tuple__77 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_node, __pyx_n_s_aj, __pyx_n_s_node_ids, __pyx_n_s_lp); if (unlikely(!__pyx_tuple__77)) __PYX_ERR(0, 796, __pyx_L1_error)
@@ -54510,7 +54510,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                  'node_ids' : node_ids }
  * 
  *     def dump_array( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Print the whole tree. (WARNING : may be huge and useless.)
  */
   __pyx_tuple__79 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_n); if (unlikely(!__pyx_tuple__79)) __PYX_ERR(0, 813, __pyx_L1_error)
@@ -54522,7 +54522,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the node data in the tree, compatible with networkx.
  */
   __pyx_tuple__81 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_n, __pyx_n_s_leaf_name); if (unlikely(!__pyx_tuple__81)) __PYX_ERR(0, 824, __pyx_L1_error)
@@ -54534,7 +54534,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
  */
   __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_GENERATOR, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__79, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_SuchTree_MuchTree_pyx, __pyx_n_s_edges_data, 835, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 835, __pyx_L1_error)
@@ -54544,7 +54544,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  *     def relationships( self ) :             # <<<<<<<<<<<<<<
  *         '''
- *         Return a Pandas DataFrame of describing the relationships among leas in the tree.
+ *         Return a Pandas DataFrame of describing the relationships among leafs in the tree.
  */
   __pyx_tuple__82 = PyTuple_Pack(20, __pyx_n_s_self, __pyx_n_s_pairs, __pyx_n_s_distances, __pyx_n_s_mrca, __pyx_n_s_mrca_to_root, __pyx_n_s_a_to_root, __pyx_n_s_b_to_root, __pyx_n_s_a_to_mrca, __pyx_n_s_b_to_mrca, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_m, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_a2r, __pyx_n_s_a2m, __pyx_n_s_b2r, __pyx_n_s_b2m); if (unlikely(!__pyx_tuple__82)) __PYX_ERR(0, 844, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__82);
@@ -54619,7 +54619,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  *     @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  *     def linked_distances( self ) :
- *         """
+ *         '''
  */
   __pyx_tuple__94 = PyTuple_Pack(10, __pyx_n_s_self, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_k, __pyx_n_s_size, __pyx_n_s_ids_a, __pyx_n_s_ids_b, __pyx_n_s_linklist, __pyx_n_s_IDs_a, __pyx_n_s_IDs_b); if (unlikely(!__pyx_tuple__94)) __PYX_ERR(0, 1251, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__94);
@@ -54645,7 +54645,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Build the graph adjacency matrix of the current subsetted
  */
   __pyx_tuple__99 = PyTuple_Pack(25, __pyx_n_s_self, __pyx_n_s_deletions, __pyx_n_s_additions, __pyx_n_s_swaps, __pyx_n_s_TA, __pyx_n_s_TB, __pyx_n_s_ta_aj, __pyx_n_s_tb_aj, __pyx_n_s_ta_node_ids, __pyx_n_s_tb_node_ids, __pyx_n_s_ll, __pyx_n_s_i, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_ta_links, __pyx_n_s_tb_links, __pyx_n_s_aj, __pyx_n_s_ta_mean, __pyx_n_s_tb_mean, __pyx_n_s_link_mean, __pyx_n_s_j); if (unlikely(!__pyx_tuple__99)) __PYX_ERR(0, 1432, __pyx_L1_error)
@@ -54660,7 +54660,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return aj
  * 
  *     def laplacian( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph Laplacian matrix of the current subsetted trees.
  */
   __pyx_tuple__102 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_deletions, __pyx_n_s_additions, __pyx_n_s_swaps, __pyx_n_s_aj, __pyx_n_s_lp); if (unlikely(!__pyx_tuple__102)) __PYX_ERR(0, 1484, __pyx_L1_error)
@@ -54672,7 +54672,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         return lp
  * 
  *     def spectrum( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The eigenvalues of the graph Laplacian matrix of the current
  */
   __pyx_tuple__104 = PyTuple_Pack(15, __pyx_n_s_self, __pyx_n_s_deletions, __pyx_n_s_additions, __pyx_n_s_swaps, __pyx_n_s_lp, __pyx_n_s_N, __pyx_n_s_nb, __pyx_n_s_lwork, __pyx_n_s_np_work, __pyx_n_s_np_w, __pyx_n_s_a, __pyx_n_s_work, __pyx_n_s_w, __pyx_n_s_b, __pyx_n_s_info); if (unlikely(!__pyx_tuple__104)) __PYX_ERR(0, 1498, __pyx_L1_error)
@@ -54684,7 +54684,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             return info
  * 
  *     def to_igraph( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the current SuchLinkedTrees subgraph as a weighted,
  */
   __pyx_tuple__106 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_deletions, __pyx_n_s_additions, __pyx_n_s_swaps, __pyx_n_s_g, __pyx_n_s_subset_a_length, __pyx_n_s_subset_b_length, __pyx_n_s_i, __pyx_n_s_i); if (unlikely(!__pyx_tuple__106)) __PYX_ERR(0, 1526, __pyx_L1_error)
@@ -56365,7 +56365,7 @@ if (!__Pyx_RefNanny) {
  *             return self.RED
  * 
  *     def get_parent( self, query ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the id of the parent of a given node. Will accept node
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_3get_parent, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_parent, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 260, __pyx_L1_error)
@@ -56378,7 +56378,7 @@ if (!__Pyx_RefNanny) {
  *         return self.data[node_id].parent
  * 
  *     def get_support( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the support value of a given node. Will accept node id
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_5get_support, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_support, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
@@ -56391,7 +56391,7 @@ if (!__Pyx_RefNanny) {
  *         return self.data[node_id].support
  * 
  *     def get_children( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the ids of child nodes of a given node. Will accept node
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_7get_children, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_children, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__45)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 289, __pyx_L1_error)
@@ -56404,7 +56404,7 @@ if (!__Pyx_RefNanny) {
  *                  self.data[node_id].right_child )
  * 
  *     def get_leafs( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of ids of all leaf nodes descendent from a given node.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_9get_leafs, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_leafs, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__47)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 302, __pyx_L1_error)
@@ -56417,7 +56417,7 @@ if (!__Pyx_RefNanny) {
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_descendant_nodes( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for ids of all nodes descendent from a given node,
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_11get_descendant_nodes, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_descendant_nodes, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 323, __pyx_L1_error)
@@ -56430,7 +56430,7 @@ if (!__Pyx_RefNanny) {
  *                 yield i
  * 
  *     def get_bipartition( self, node_id, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Find the two sets of leaf nodes partitioned at an internal
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_14get_bipartition, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_bipartition, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__49)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 347, __pyx_L1_error)
@@ -56444,7 +56444,7 @@ if (!__Pyx_RefNanny) {
  *                       frozenset( self.get_leafs(right) ) ) ) )
  * 
  *     def bipartitions( self, by_id=False ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the bipartitions of the tree. Each bipartition
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_16bipartitions, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_bipartitions, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 362, __pyx_L1_error)
@@ -56458,7 +56458,7 @@ if (!__Pyx_RefNanny) {
  *             yield self.get_bipartition( node, by_id=by_id )
  * 
  *     def get_internal_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of the ids of all internal nodes.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_19get_internal_nodes, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_internal_nodes, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__53)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 373, __pyx_L1_error)
@@ -56472,7 +56472,7 @@ if (!__Pyx_RefNanny) {
  *         return np.array(self.np_buffer[:n])
  * 
  *     def get_nodes( self, from_node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return an array of the ids of all nodes.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_21get_nodes, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_nodes, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__54)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 402, __pyx_L1_error)
@@ -56486,7 +56486,7 @@ if (!__Pyx_RefNanny) {
  *         return np.array(self.np_buffer[:n])
  * 
  *     def in_order( self, distances=True ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in order, yilding tuples
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_23in_order, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_in_order, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 425, __pyx_L1_error)
@@ -56500,7 +56500,7 @@ if (!__Pyx_RefNanny) {
  *                 break
  * 
  *     def pre_order( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for traversing the tree in pre-order.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_26pre_order, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_pre_order, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 447, __pyx_L1_error)
@@ -56513,7 +56513,7 @@ if (!__Pyx_RefNanny) {
  *             yield i
  * 
  *     def get_distance_to_root( self, a ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return distance to root for a given node. Will accept node id
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_29get_distance_to_root, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_distance_to_root, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__59)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 463, __pyx_L1_error)
@@ -56526,7 +56526,7 @@ if (!__Pyx_RefNanny) {
  *         return d
  * 
  *     def is_leaf( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns True if node_id is a leaf node, False otherwise.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_31is_leaf, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_is_leaf, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__60)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 494, __pyx_L1_error)
@@ -56539,7 +56539,7 @@ if (!__Pyx_RefNanny) {
  *         return self._is_leaf( node_id )
  * 
  *     def is_internal_node( self, node_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns True if node_id is an internal node, False otherwise.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_33is_internal_node, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_is_internal_node, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__61)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 503, __pyx_L1_error)
@@ -56552,7 +56552,7 @@ if (!__Pyx_RefNanny) {
  *             return False
  * 
  *     def is_ancestor( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Tristate : returns 1 if a is an ancestor of b, -1 if b is an
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_35is_ancestor, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_is_ancestor, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__63)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 519, __pyx_L1_error)
@@ -56565,7 +56565,7 @@ if (!__Pyx_RefNanny) {
  *         return 0
  * 
  *     def mrca( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the id of the most recent common ancestor of two nodes
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_37mrca, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_mrca, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__65)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 566, __pyx_L1_error)
@@ -56578,7 +56578,7 @@ if (!__Pyx_RefNanny) {
  *         return mrca
  * 
  *     def distance( self, a, b ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return distnace between a pair of nodes. Will treat strings as
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_39distance, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_distance, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__66)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 620, __pyx_L1_error)
@@ -56591,7 +56591,7 @@ if (!__Pyx_RefNanny) {
  *         return d
  * 
  *     def distances( self, long[:,:] ids ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of distances between pairs of node ids,
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_41distances, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_distances, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__68)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 662, __pyx_L1_error)
@@ -56604,7 +56604,7 @@ if (!__Pyx_RefNanny) {
  *             result[i] = d
  * 
  *     def distances_by_name( self, id_pairs ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of distances between pairs of leaf names in a
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_43distances_by_name, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_distances_by_name, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__70)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 710, __pyx_L1_error)
@@ -56617,7 +56617,7 @@ if (!__Pyx_RefNanny) {
  *         return self.distances( ids )
  * 
  *     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Attaches a leaf node to SuchLinkedTrees link matrix column.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_45link_leaf, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_link_leaf, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__72)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 722, __pyx_L1_error)
@@ -56630,7 +56630,7 @@ if (!__Pyx_RefNanny) {
  *         self.data[leaf_id].right_child = col_id
  * 
  *     def get_links( self, leaf_ids ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Returns an array of column ids for an array of leaf ids.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_47get_links, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_get_links, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__74)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 734, __pyx_L1_error)
@@ -56643,7 +56643,7 @@ if (!__Pyx_RefNanny) {
  *         return col_ids
  * 
  *     def adjacency( self, int node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph adjacency matrix of the tree. If parameter
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_49adjacency, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_adjacency, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__76)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 745, __pyx_L1_error)
@@ -56657,7 +56657,7 @@ if (!__Pyx_RefNanny) {
  *                  'node_ids' : self.np_buffer[:n] }
  * 
  *     def laplacian( self, int node=-1 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph Laplacian matrix of the tree, or if the parameter
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_51laplacian, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_laplacian, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__78)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 796, __pyx_L1_error)
@@ -56671,7 +56671,7 @@ if (!__Pyx_RefNanny) {
  *                  'node_ids' : node_ids }
  * 
  *     def dump_array( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Print the whole tree. (WARNING : may be huge and useless.)
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_53dump_array, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_dump_array, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__80)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 813, __pyx_L1_error)
@@ -56684,7 +56684,7 @@ if (!__Pyx_RefNanny) {
  *             print( '   right child : %d'    % self.data[n].right_child )
  * 
  *     def nodes_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the node data in the tree, compatible with networkx.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_55nodes_data, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_nodes_data, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 824, __pyx_L1_error)
@@ -56697,7 +56697,7 @@ if (!__Pyx_RefNanny) {
  *             yield ( n, { 'label' : leaf_name } )
  * 
  *     def edges_data( self ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_58edges_data, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_edges_data, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 835, __pyx_L1_error)
@@ -56711,7 +56711,7 @@ if (!__Pyx_RefNanny) {
  * 
  *     def relationships( self ) :             # <<<<<<<<<<<<<<
  *         '''
- *         Return a Pandas DataFrame of describing the relationships among leas in the tree.
+ *         Return a Pandas DataFrame of describing the relationships among leafs in the tree.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_8SuchTree_61relationships, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchTree_relationships, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__83)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 844, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -56798,7 +56798,7 @@ if (!__Pyx_RefNanny) {
  * 
  *     @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  *     def linked_distances( self ) :
- *         """
+ *         '''
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_15linked_distances, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchLinkedTrees_linked_distances, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__95)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1251, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -56824,7 +56824,7 @@ if (!__Pyx_RefNanny) {
  *                  'deviation_b' : deviation_b }
  * 
  *     def adjacency( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Build the graph adjacency matrix of the current subsetted
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_19adjacency, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchLinkedTrees_adjacency, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__100)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1432, __pyx_L1_error)
@@ -56838,7 +56838,7 @@ if (!__Pyx_RefNanny) {
  *         return aj
  * 
  *     def laplacian( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The graph Laplacian matrix of the current subsetted trees.
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_21laplacian, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchLinkedTrees_laplacian, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__103)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1484, __pyx_L1_error)
@@ -56852,7 +56852,7 @@ if (!__Pyx_RefNanny) {
  *         return lp
  * 
  *     def spectrum( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         The eigenvalues of the graph Laplacian matrix of the current
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_23spectrum, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchLinkedTrees_spectrum, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__105)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1498, __pyx_L1_error)
@@ -56866,7 +56866,7 @@ if (!__Pyx_RefNanny) {
  *             return info
  * 
  *     def to_igraph( self, deletions=0, additions=0, swaps=0 ) :             # <<<<<<<<<<<<<<
- *         """
+ *         '''
  *         Return the current SuchLinkedTrees subgraph as a weighted,
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8MuchTree_15SuchLinkedTrees_25to_igraph, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_SuchLinkedTrees_to_igraph, NULL, __pyx_n_s_MuchTree, __pyx_d, ((PyObject *)__pyx_codeobj__107)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1526, __pyx_L1_error)
