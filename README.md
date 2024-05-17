@@ -3,9 +3,9 @@
 A Python library for doing fast, thread-safe computations with
 phylogenetic trees.
 
-[![Actions Status](https://github.com/ryneches/SuchTree/workflows/Python%20package/badge.svg)](https://github.com/ryneches/SuchTree/actions) [![codecov](https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg)](https://codecov.io/gh/ryneches/SuchTree) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE) [![JOSS](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg)](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610) ![GitHub all releases](https://img.shields.io/github/downloads/ryneches/SuchTree/total?label=downloads&logo=github) ![PyPI - Downloads](https://img.shields.io/pypi/dd/SuchTree?logo=PyPI)
+[![Actions Status](https://github.com/ryneches/SuchTree/workflows/Build/badge.svg)](https://github.com/ryneches/SuchTree/actions) [![codecov](https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg)](https://codecov.io/gh/ryneches/SuchTree) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE) [![JOSS](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg)](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610) ![GitHub all releases](https://img.shields.io/github/downloads/ryneches/SuchTree/total?label=downloads&logo=github) ![PyPI - Downloads](https://img.shields.io/pypi/dd/SuchTree?logo=PyPI)
 
-### So problem
+### High-performance sampling of very large trees
 
 You have a phylogenetic tree. You want to do some statistics with it. No
 problem! There are lots of packages in Python that let you manipulate
@@ -32,7 +32,7 @@ A distance matrix for a tree of 100,000 taxa will consume about 20GB
 of RAM. If your method performs sampling, then almost every operation
 will be a cache miss. Even if you have the RAM, it will be painfully slow.
 
-### So problem, again
+### Sampling linked trees
 
 Suppose you have more than one group of organisms, and you want to study
 the way their interactions have influenced their evolution. Now, you have
@@ -59,7 +59,7 @@ Maybe you want to get all crazy with some
 [graph kernels](https://github.com/BorgwardtLab/GraphKernels)?
 Well, now you can.
 
-### Much solution
+### Benchmarks
 
 `SuchTree` is motivated by a simple the observation. A distance matrix of
 100,000 taxa is quite bulky, but the tree it represents can be made to fit
@@ -71,8 +71,6 @@ on-chip, the processor can take full advantage of
 [pipelining](https://en.wikipedia.org/wiki/Instruction_pipelining),
 [speculative execution](https://en.wikipedia.org/wiki/Speculative_execution) 
 and other optimizations available in modern CPUs.
-
-### Nice benchmark
 
 Here, we use `SuchTree` to compare the topology of two trees built
 from the same 54,327 sequences using two methods : neighbor joining
@@ -130,7 +128,7 @@ Kendall's tau : 0.709
 Pearson's r   : 0.969
 ```
 
-### Many installation
+### Installation
 
 `SuchTree` depends on the following packages :
 
@@ -162,7 +160,7 @@ cd SuchTree
 ./setup.py install
 ```
 
-### How usage
+### Basic usage
 
 `SuchTree` will accept either a URL or a file path :
 
@@ -200,7 +198,7 @@ an (n) list of patristic distances between each pair
 * `dump_array` : print out the entire tree (for debugging only! May
 produce pathologically gigantic output.)
 
-### Very dataset
+### Example datasets
 
 For analysis of ecological interactions, `SuchTree` is distributed
 with a curated collection of several different examples from the
@@ -293,7 +291,7 @@ These were originally collected by Enrico Rezende *et al.* :
 * **wyth**	Snow B.K. & Snow D.W. 1988. *Birds and berries, Calton, England.*
 
 
-### Wow
+### Thanks
 
 Special thanks to [@camillescott](https://github.com/camillescott) and 
 [@pmarkowsky](https://github.com/pmarkowsky) for their many helpful
