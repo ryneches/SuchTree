@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "SuchTree"
 dynamic = [ "version" ]
-authors = { "Russell Neches", email="science@vort.org" }
+authors = { name="Russell Neches", email="science@vort.org" }
 keywords = [ "trees", "phylogenetics", "mcmc", "bioinformatics", 
              "genome", "genomics", "evolution" ]
 classifiers = [
