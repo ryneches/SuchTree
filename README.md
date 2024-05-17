@@ -3,7 +3,7 @@
 A Python library for doing fast, thread-safe computations with
 phylogenetic trees.
 
-[![Actions Status](https://github.com/ryneches/SuchTree/workflows/package/badge.svg)](https://github.com/ryneches/SuchTree/actions) [![codecov](https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg)](https://codecov.io/gh/ryneches/SuchTree) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE) [![JOSS](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg)](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610) ![GitHub all releases](https://img.shields.io/github/downloads/ryneches/SuchTree/total?label=downloads&logo=github) ![PyPI - Downloads](https://img.shields.io/pypi/dd/SuchTree?logo=PyPI)
+[![Actions Status](https://github.com/ryneches/SuchTree/workflows/Build wheels/badge.svg)](https://github.com/ryneches/SuchTree/actions) [![codecov](https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg)](https://codecov.io/gh/ryneches/SuchTree) [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE) [![JOSS](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg)](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610) ![GitHub all releases](https://img.shields.io/github/downloads/ryneches/SuchTree/total?label=downloads&logo=github) ![PyPI - Downloads](https://img.shields.io/pypi/dd/SuchTree?logo=PyPI)
 
 ### Release notes
 
