@@ -3,6 +3,7 @@ from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
 from dendropy import Tree
 from random import sample
 from itertools import combinations
+from pathlib import Path
 import numpy as np
 cimport numpy as np
 import pandas as pd
@@ -98,7 +99,7 @@ cdef class SuchTree :
     cdef object np_buffer
     cdef object RED
     
-    def __init__( self, tree_file ) :
+    def __init__( self, tree_input ) :
         '''
         SuchTree constructor.
         '''
@@ -112,16 +113,22 @@ cdef class SuchTree :
         
         url_strings = [ 'http://', 'https://', 'ftp://' ]
 
-        if any( [ tree_file.startswith(x) for x in url_strings ] ) :
-            t = Tree.get( url=tree_file,
+        if any( [ tree_input.startswith(x) for x in url_strings ] ) :
+            t = Tree.get( url=tree_input,
+                          schema='newick',
+                          preserve_underscores=True,
+                          suppress_internal_node_taxa=True )
+        if tree_input.count('(') > 2 and tree_input.count('(') == tree_input.count(')') :
+            t = Tree.get( data=tree_input,
                           schema='newick',
                           preserve_underscores=True,
                           suppress_internal_node_taxa=True )
         else :
-            t = Tree.get( file=open(tree_file),
+            t = Tree.get( file=open(tree_input),
                           schema='newick',
                           preserve_underscores=True,
                           suppress_internal_node_taxa=True )
+       
         t.resolve_polytomies()
         size = len( t.nodes() )
         # allocate some memory
