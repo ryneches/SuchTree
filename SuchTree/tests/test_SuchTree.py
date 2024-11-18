@@ -13,6 +13,7 @@ try :
 except ImportError :
     has_networkx = False
 
+test_tree_str        = '(A,B,(C,D));'
 test_tree            = 'SuchTree/tests/test.tree'
 support_tree_int     = 'SuchTree/tests/support_int.tree'
 support_tree_float   = 'SuchTree/tests/support_float.tree'
@@ -25,6 +26,10 @@ for n,node in enumerate( dpt.inorder_node_iter() ) :
 
 def test_init() :
     T = SuchTree( test_tree )
+    assert type(T) == SuchTree
+
+def test_newick_input() :
+    T = SuchTree ( test_tree_str )
     assert type(T) == SuchTree
 
 def test_get_children() :
@@ -182,6 +187,12 @@ def test_bipartitions() :
                 | ( not bool( A0 & B1 ) ) \
                 | ( not bool( A1 & B1 ) ) )
         assert sum(S)/len(S) == 1.0
+
+def test_quartet_topology() :
+    T = SuchTree( '(A,B,(C,D));' )
+    r = T.quartet_topology( 'A', 'B', 'C', 'D' )
+    assert r == frozenset( ( frozenset( ( 'A', 'B' ) ),
+                             frozenset( ( 'C', 'D' ) ) ) )
 
 def test_in_order() :
     T = SuchTree( test_tree )

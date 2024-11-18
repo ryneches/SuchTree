@@ -118,7 +118,9 @@ cdef class SuchTree :
                           schema='newick',
                           preserve_underscores=True,
                           suppress_internal_node_taxa=True )
-        if tree_input.count('(') > 2 and tree_input.count('(') == tree_input.count(')') :
+        if all( [ '(' in tree_input,
+                  ')' in tree_input,
+                  tree_input.count( '(' ) == tree_input.count( ')' ) ] ) :
             t = Tree.get( data=tree_input,
                           schema='newick',
                           preserve_underscores=True,
