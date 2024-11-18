@@ -590,9 +590,48 @@ cdef class SuchTree :
         visited = np.zeros( self.depth, dtype=int )
         
         return self._mrca( visited, a, b )
+
+    def quartet_topology( self, a, b, c, d ) :
+        '''
+        For a given quartet of taxa, return the topology of the quartet
+        as a pair of tuples.
+        '''
+        names = []
+        ids   = []
+        for n,i in enumerate( ( a, b, c, d ) ) :
+            if isinstance( i, int ) :
+                ids.append( i )
+                try :
+                    names.append( self.leafnodes[ i ] )
+                except KeyError :
+                    raise Exception( 'Leaf not found : ' + i )
+            else :
+                names.append( i )
+                try :
+                    ids.append( self.leafs[i] )
+                except KeyError :
+                    raise Exception( 'Leaf not found : ' + i )
         
+        visited = np.zeros( self.depth, dtype=int )
+        
+        pairs = [ frozenset( ( x, y ) ) for x,y in combinations( ids, 2 ) ]
+        
+        M = [ self._mrca( visited, x, y ) for x,y in pairs ]
+      
+        sisters = [ pairs[ M.index(i) ] for i in M if M.count(i) == 1 ]
+        
+        if len( sisters ) == 1 :
+            sisters.append( sisters[0] ^ frozenset( ids ) )
+       
+        if any( [ isinstance( i, str ) for i in ( a, b, c, d ) ] ) :
+            (w,x),(y,z) = sisters
+            return frozenset( ( frozenset( ( self.leafnodes[w], self.leafnodes[x] ) ), 
+                                frozenset( ( self.leafnodes[y], self.leafnodes[z] ) ) ) )
+        else :
+            return frozenset( sisters )
+
     @cython.boundscheck(False)
-    cdef int _mrca( self, long[:] visited, int a, int b ) nogil noexcept :
+    cdef int _mrca( self, long[:] visited, int a, int b ) noexcept nogil :
         cdef int n
         cdef int i
         cdef int mrca = -1
