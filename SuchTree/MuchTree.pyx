@@ -378,7 +378,7 @@ cdef class SuchTree :
         '''
         for node in self.get_internal_nodes() :
             yield self.get_bipartition( node, by_id=by_id )
-
+    
     def get_internal_nodes( self, from_node=-1 ) :
         '''
         Return an array of the ids of all internal nodes.
@@ -548,7 +548,7 @@ cdef class SuchTree :
     cdef int _is_ancestor( self, int a, int b ) nogil :
         cdef int i
         cdef int n
-
+        
         # is a an ancestor of b?
         i = b
         while True :
@@ -558,7 +558,7 @@ cdef class SuchTree :
             if n == a :
                 return 1
             i = n
-
+        
         # is b an ancestor of a?
         i = a
         while True :
@@ -571,7 +571,7 @@ cdef class SuchTree :
         
         # or neither?
         return 0
-
+    
     def mrca( self, a, b ) :
         '''
         Return the id of the most recent common ancestor of two nodes
@@ -631,7 +631,66 @@ cdef class SuchTree :
                                 frozenset( ( self.leafnodes[y], self.leafnodes[z] ) ) ) )
         else :
             return frozenset( sisters )
+    
+    def quartet_topologies( self, long[:,:] quartets ) :
+        
+        topologies = np.zeros( ( len(quartets), 4 ), dtype=int )
+        
+        visited = np.zeros( self.depth, dtype=int )
+        
+        M = np.zeros( 6, dtype=int )
+        C = np.zeros( 6, dtype=int )
+        
+        # possible topologies
+        I = np.array( [ [ 0, 1, 2, 3 ], [ 0, 2, 1, 3 ], [ 0, 3, 1, 2 ],
+                        [ 1, 2, 0, 3 ], [ 1, 3, 0, 2 ], [ 2, 3, 0, 1 ] ] )
+ 
+        
+        self._quartet_topologies( quartets, topologies, visited, M, C, I )
+        
+        return topologies
 
+    cdef _quartet_topologies( self, long[:,:] quartets,
+                                    long[:,:] topologies,
+                                    long[:]   visited,
+                                    long[:]   M,
+                                    long[:]   C,
+                                    long[:,:] I ) :
+        '''
+        [ [ a, b, c, d ], [ a, b, c, d ], ... ]
+        
+        '''
+        cdef int i
+        cdef int j
+        cdef int k
+        
+        cdef int a
+        cdef int b
+        cdef int c
+        cdef int d
+        
+        for i in range( len( quartets ) ) :
+            a,b,c,d = quartets[i,]
+            
+            # find MRCAs
+            for j,(x,y) in enumerate( ( ( a, b ), ( a, c ), ( a, d ),
+                                        ( b, c ), ( b, d ), ( c, d ) ) ) :
+                M[j]  = self._mrca( visited, x, y )
+            
+            # find unique MCRA(s)
+            for j in range( 6 ) :
+                C[j] = 0
+            for j in range( 6 ) :
+                for k in range( 6 ) :
+                    if M[j] == M[k] :
+                        C[j] = C[j] + 1
+            for j in range( 6 ) :
+                if C[j] == 1 : break
+            
+            # reorder quartet ids by topology
+            for k in range( 4 ) :
+                topologies[i,k] = quartets[ i, I[j,k] ]
+   
     @cython.boundscheck(False)
     cdef int _mrca( self, long[:] visited, int a, int b ) noexcept nogil :
         cdef int n
