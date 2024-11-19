@@ -601,7 +601,7 @@ cdef class SuchTree :
         names = []
         ids   = []
         for n,i in enumerate( ( a, b, c, d ) ) :
-            if isinstance( i, int ) :
+            if isinstance( i, ( int, np.integer ) ) :
                 ids.append( i )
                 try :
                     names.append( self.leafnodes[ i ] )
@@ -654,9 +654,9 @@ cdef class SuchTree :
         
         visited = np.zeros( self.depth, dtype=int )
         
-        M = np.zeros( 6, dtype=int )
-        C = np.zeros( 6, dtype=int )
-        
+        M = np.zeros( 6,     dtype=int )
+        C = np.zeros( 6,     dtype=int )
+
         # possible topologies
         I = np.array( [ [ 0, 1, 2, 3 ], [ 0, 2, 1, 3 ], [ 0, 3, 1, 2 ],
                         [ 1, 2, 0, 3 ], [ 1, 3, 0, 2 ], [ 2, 3, 0, 1 ] ] )
@@ -667,12 +667,12 @@ cdef class SuchTree :
         return topologies
 
     @cython.boundscheck(False)
-    cdef _quartet_topologies( self, long[:,:] quartets,
-                                    long[:,:] topologies,
-                                    long[:]   visited,
-                                    long[:]   M,
-                                    long[:]   C,
-                                    long[:,:] I ) noexcept nogil : 
+    cdef void _quartet_topologies( self, long[:,:] quartets,
+                                         long[:,:] topologies,
+                                         long[:]   visited,
+                                         long[:]   M,
+                                         long[:]   C,
+                                         long[:,:] I ) noexcept nogil : 
         cdef int i
         cdef int j
         cdef int k
@@ -682,13 +682,22 @@ cdef class SuchTree :
         cdef int c
         cdef int d
         
+        cdef int x
+        cdef int y
+
         for i in range( len( quartets ) ) :
-            a,b,c,d = quartets[i,]
+            a = quartets[i,0]
+            b = quartets[i,1]
+            c = quartets[i,2]
+            d = quartets[i,3]
             
             # find MRCAs
-            for j,(x,y) in enumerate( ( ( a, b ), ( a, c ), ( a, d ),
-                                        ( b, c ), ( b, d ), ( c, d ) ) ) :
-                M[j]  = self._mrca( visited, x, y )
+            M[0] = self._mrca( visited, a, b )
+            M[1] = self._mrca( visited, a, c )
+            M[2] = self._mrca( visited, a, d )
+            M[3] = self._mrca( visited, b, c )
+            M[4] = self._mrca( visited, b, d )
+            M[5] = self._mrca( visited, c, d )
             
             # find unique MCRA(s)
             for j in range( 6 ) :

@@ -194,6 +194,15 @@ def test_get_quartet_topology() :
     assert r == frozenset( ( frozenset( ( 'A', 'B' ) ),
                              frozenset( ( 'C', 'D' ) ) ) )
 
+def test_quartet_topologies() :
+    T = SuchTree( test_tree )
+    Q = numpy.array( list( combinations( T.leafs.values(), 4 ) ) )
+    q = T.quartet_topologies( Q )
+    for a,b,c,d in q :
+        t = T.get_quartet_topology( d, c, b, a )
+        assert t == frozenset( ( frozenset( ( a, b ) ),
+                                 frozenset( ( c, d ) ) ) )
+
 def test_in_order() :
     T = SuchTree( test_tree )
     traversal = set( node for node,d in T.in_order() ) 
