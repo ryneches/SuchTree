@@ -633,7 +633,23 @@ cdef class SuchTree :
             return frozenset( sisters )
     
     def quartet_topologies( self, long[:,:] quartets ) :
+        '''
+        Bulk processing function for computing quartet topologies.
+        Takes an [N,4] matrix of taxon IDs, where the IDs are in
+        arbitrary order
         
+            [ [ a, b, c, d ], [ e, f, g, h ], ... ]
+        
+        and returns an [N,4] matrix of taxon IDs ordered such that
+            
+            [ { { a, b }, { c, d } }, { { e, f }, { g, h } }, ... ]
+        
+        Ordered taxa can be represented as a topology like so :
+        
+            topology = frozenset( ( frozenset( ( T[i,0], T[i,1] ),
+                                    frozenset( ( T[i,2], T[i,3] ) ) ) ) )
+        '''
+       
         topologies = np.zeros( ( len(quartets), 4 ), dtype=int )
         
         visited = np.zeros( self.depth, dtype=int )
@@ -650,16 +666,13 @@ cdef class SuchTree :
         
         return topologies
 
+    @cython.boundscheck(False)
     cdef _quartet_topologies( self, long[:,:] quartets,
                                     long[:,:] topologies,
                                     long[:]   visited,
                                     long[:]   M,
                                     long[:]   C,
-                                    long[:,:] I ) :
-        '''
-        [ [ a, b, c, d ], [ a, b, c, d ], ... ]
-        
-        '''
+                                    long[:,:] I ) noexcept nogil : 
         cdef int i
         cdef int j
         cdef int k
