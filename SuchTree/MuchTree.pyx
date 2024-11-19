@@ -593,7 +593,7 @@ cdef class SuchTree :
         
         return self._mrca( visited, a, b )
 
-    def quartet_topology( self, a, b, c, d ) :
+    def get_quartet_topology( self, a, b, c, d ) :
         '''
         For a given quartet of taxa, return the topology of the quartet
         as a pair of tuples.

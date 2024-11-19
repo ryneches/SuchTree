@@ -188,9 +188,9 @@ def test_bipartitions() :
                 | ( not bool( A1 & B1 ) ) )
         assert sum(S)/len(S) == 1.0
 
-def test_quartet_topology() :
+def test_get_quartet_topology() :
     T = SuchTree( '(A,B,(C,D));' )
-    r = T.quartet_topology( 'A', 'B', 'C', 'D' )
+    r = T.get_quartet_topology( 'A', 'B', 'C', 'D' )
     assert r == frozenset( ( frozenset( ( 'A', 'B' ) ),
                              frozenset( ( 'C', 'D' ) ) ) )
 
