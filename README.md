@@ -7,6 +7,12 @@ phylogenetic trees.
 
 ### Release notes
 
+New for SuchTree v1.2
+
+* Quartet topology tests provided by `SuchTree.get_quartet_topology( a, b, c, d )`
+* Optimized, thread-safe bulk quartet topology tests provided by
+  `SuchTree.quartet_topologies( [N,4] )`
+
 New for SuchTree v1.1
 
 * Basic support for support values provided by `SuchTree.get_support( node_id )`

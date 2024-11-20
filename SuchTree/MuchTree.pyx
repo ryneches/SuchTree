@@ -619,7 +619,7 @@ cdef class SuchTree :
         pairs = [ frozenset( ( x, y ) ) for x,y in combinations( ids, 2 ) ]
         
         M = [ self._mrca( visited, x, y ) for x,y in pairs ]
-      
+        
         sisters = [ pairs[ M.index(i) ] for i in M if M.count(i) == 1 ]
         
         if len( sisters ) == 1 :
@@ -632,6 +632,15 @@ cdef class SuchTree :
         else :
             return frozenset( sisters )
     
+    def quartet_topologies_by_name( self, quartets ) :
+        
+        Q = np.array( [ [ self.leafs[a], self.leafs[b], self.leafs[c], self.leafs[d] ]
+                        for a,b,c,d in quartets ] )
+        
+        return [ frozenset( ( frozenset( ( self.leafnodes[a], self.leafnodes[b] ) ),
+                              frozenset( ( self.leafnodes[c], self.leafnodes[d] ) ) ) )
+                 for a,b,c,d in self.quartet_topologies( Q ) ]
+
     def quartet_topologies( self, long[:,:] quartets ) :
         '''
         Bulk processing function for computing quartet topologies.
@@ -649,18 +658,17 @@ cdef class SuchTree :
             topology = frozenset( ( frozenset( ( T[i,0], T[i,1] ),
                                     frozenset( ( T[i,2], T[i,3] ) ) ) ) )
         '''
-       
+        
         topologies = np.zeros( ( len(quartets), 4 ), dtype=int )
         
         visited = np.zeros( self.depth, dtype=int )
         
         M = np.zeros( 6,     dtype=int )
         C = np.zeros( 6,     dtype=int )
-
+        
         # possible topologies
         I = np.array( [ [ 0, 1, 2, 3 ], [ 0, 2, 1, 3 ], [ 0, 3, 1, 2 ],
                         [ 1, 2, 0, 3 ], [ 1, 3, 0, 2 ], [ 2, 3, 0, 1 ] ] )
- 
         
         self._quartet_topologies( quartets, topologies, visited, M, C, I )
         
