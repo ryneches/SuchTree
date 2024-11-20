@@ -12,6 +12,7 @@ New for SuchTree v1.2
 * Quartet topology tests provided by `SuchTree.get_quartet_topology( a, b, c, d )`
 * Optimized, thread-safe bulk quartet topology tests provided by
   `SuchTree.quartet_topologies( [N,4] )`
+* SuchTree now automatically detects and uses NEWICK strings as for initialization
 
 New for SuchTree v1.1
 
