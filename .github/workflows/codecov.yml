@@ -1,3 +1,11 @@
+name: Codecov
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_requst:
+    branches: [ "master" ]
+
 jobs:
   unit-test:
     name: Run unit tests
