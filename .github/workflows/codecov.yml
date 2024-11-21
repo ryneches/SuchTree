@@ -3,7 +3,7 @@ name: Codecov
 on:
   push:
     branches: [ "master" ]
-  pull_requst:
+  pull_request:
     branches: [ "master" ]
 
 jobs:
