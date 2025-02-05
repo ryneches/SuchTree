@@ -283,6 +283,26 @@ cdef class SuchTree :
             
         return self.data[node_id].parent
         
+    def get_lineage( self, query ) :
+        '''
+        Generator of parent nodes up to the root node. Will accept
+        node id of leaf name.
+        '''
+        if isinstance( query, str ) :
+            try :
+                node_id = self.leafs[ query ]
+            except KeyError :
+                raise Exception( 'leaf name not found : ' + query )
+        else :
+            node_id = int( query )
+        if node_id < 0 or node_id >= self.length :
+            raise Exception( 'node id out of bounds : ', node_id )
+ 
+        while True :
+            node_id = self.data[node_id].parent
+            if node_id == -1 : break
+            yield node_id
+
     def get_support( self, node_id ) :
         '''
         Return the support value of a given node. Will accept node id

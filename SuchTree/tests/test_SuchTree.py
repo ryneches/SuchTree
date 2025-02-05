@@ -143,6 +143,12 @@ def test_is_ancestor() :
     assert 1 - T.length == sum( map( lambda x : T.is_ancestor( x, T.root ),
                                 T.get_descendant_nodes( T.root ) ) )
 
+def test_get_lineage() :
+    T = SuchTree( test_tree )
+    for leaf in T.leafs.keys() :
+        for node in T.get_lineage( leaf ) :
+            assert T.is_ancestor( node, leaf ) == 1
+
 def test_is_leaf() :
     T = SuchTree( test_tree )
     for leaf in T.leafs.values() :
