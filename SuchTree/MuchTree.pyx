@@ -9,6 +9,7 @@ cimport numpy as np
 import pandas as pd
 from scipy.linalg.cython_lapack cimport dsyev
 from numbers import Integral, Real
+from typing import Union, Dict
 
 from exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
 
@@ -202,6 +203,10 @@ cdef class SuchTree :
         # RED dictionary stub
         self.RED = {}
     
+    def __dealloc__( self ) :
+        '''SuchTree destructor.'''
+        PyMem_Free( self.data )     # no-op if self.data is NULL
+
     property length :
         'The number of nodes in the tree.'
         def __get__( self ) :
@@ -1023,10 +1028,129 @@ cdef class SuchTree :
                                'a_to_mrca'    : a_to_mrca,
                                'b_to_mrca'    : b_to_mrca } )
 
-    def __dealloc__( self ) :
-        PyMem_Free( self.data )     # no-op if self.data is NULL
+    # ====== Validation helper functions ======
+
+    def _validate_node( self,
+                        node : Union[ int, str ] ) -> int :
+        '''
+        Convert node reference to node ID with validation.
+        
+        Args
+            node : Node ID (int) or leaf name (str)
+            
+        Returns
+            int : Validated node ID
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+            TypeError         : If node is not int or str
+        '''
+
+        if isinstance( node, str ) :
+            if node not in self.leaves :
+                raise NodeNotFoundError( node )
+            return self.leaves[ node ]
+        
+        if not isinstance( node, Integral ) :
+            raise TypeError( 'Node must be int or str, got {t}'.format( t=str( type(node) ) ) )
+        
+        node_id = int(node)
+        if node_id < 0 or node_id >= self.size :
+            raise InvalidNodeError( node_id, self.size )
+        
+        return node_id
 
 
+    def _validate_node_pair( self,
+                             a : Union[ int, str ],
+                             b : Union[ int, str ] ) -> tuple[ int, int ] :
+        '''
+        Validate a pair of nodes and return their IDs.
+        
+        Args
+            a : First node (ID or name)
+            b : Second node (ID or name)
+            
+        Returns
+            tuple[ int, int ] : Tuple of validated node IDs
+        '''
+
+        return self._validate_node(a), self._validate_node(b)
+
+
+    def _validate_leaf_node( self,
+                             node : Union[ int, str ] ) -> int :
+        '''
+        Validate that a node reference points to a leaf node.
+        
+        Args
+            node: Node ID or leaf name
+            
+        Returns
+            int : Validated leaf node ID
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds or not a leaf
+        '''
+
+        node_id = self._validate_node( node )
+        
+        if not self._is_leaf( node_id ) :
+            raise InvalidNodeError( node_id, 
+                                    message='Node {node_id} is not a leaf node'.format( node_id=str(node_id) ) )
+        
+        return node_id
+
+
+    def _validate_internal_node( self,
+                                 node : Union[int, str]) -> int :
+        '''
+        Validate that a node reference points to an internal node.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            int : Validated internal node ID
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds or not internal
+        '''
+
+        node_id = self._validate_node( node )
+        
+        if self._is_leaf( node_id ) :
+            raise InvalidNodeError( node_id,
+                                    message='Node {node_id} is not an internal node'.format( node_id=str(node_id) ) )
+        
+        return node_id
+
+
+    def _convert_to_leaf_names( self,
+                                node_ids : list ) -> list[str] :
+        '''        
+        Convert a list of leaf node IDs to leaf names.
+        
+        Args
+            node_ids : List of node IDs
+            
+        Returns
+            list[str] : List of leaf names
+            
+        Raises
+            InvalidNodeError : If any node ID is not a leaf node
+        '''        
+        names = []
+        for node_id in node_ids :
+            if not self._is_leaf( node_id ) :
+                raise InvalidNodeError( node_id,
+                                        message='Node {node_id} is not a leaf'.format( node_id=str(node_id) ) )
+            names.append( self.leaf_nodes[node_id] )
+        return names
+   
 cdef struct Column :
     unsigned int length
     unsigned int leaf_id
@@ -1716,4 +1840,7 @@ cdef class SuchLinkedTrees :
                 row_id = self.table[i].links[j]
                 col.append( row_id )
             print( 'column', i, ':', ','.join( map( str, col ) ) )
+
+
+
 

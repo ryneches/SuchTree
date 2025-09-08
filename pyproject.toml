@@ -13,4 +13,8 @@ skip = "*musllinux* pp*"
 archs = "arm64 x86_64"
 skip = "pp*"
 
-
+# pytest config for testing in place
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["SuchTree/tests"]
+pythonpath = ["SuchTree"]
