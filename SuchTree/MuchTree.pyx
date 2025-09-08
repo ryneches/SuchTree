@@ -11,6 +11,7 @@ from scipy.linalg.cython_lapack cimport dsyev
 from numbers import Integral, Real
 from typing import Union, Dict
 
+from warnings import warn
 from exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
 
 # if igraph is available, enable
@@ -207,44 +208,80 @@ cdef class SuchTree :
         '''SuchTree destructor.'''
         PyMem_Free( self.data )     # no-op if self.data is NULL
 
-    property length :
-        'The number of nodes in the tree.'
-        def __get__( self ) :
-            return self.length
-            
-    property depth :
-        'The maximum depth of the tree.'
-        def __get__( self ) :
-            return self.depth
-            
-    property n_leafs :
-        'The number of leafs in the tree.'
-        def __get__( self ) :
-            return self.n_leafs
-            
-    property leafs :
-        'A dictionary mapping leaf names to leaf node ids.'
-        def __get__( self ) :
-            return self.leafs
+    # ====== SuchTree properties ======
     
-    property leafnodes :
-        'A dictionary mapping leaf node ids to leaf names.'
-        def __get__( self ) :
-            return self.leafnodes
-
-    property root :
-        'The id of the root node.'
-        def __get__( self ) :
-            return self.root
-            
-    property polytomy_distance :
-        'Tiny, nonzero distance for polytomies in the adjacency matrix.'
-        def __get__( self ) :
-            return self.epsilon
-        def __set__( self, np.float64_t new_epsilon ) :
-            self.epsilon = new_epsilon
+    @property
+    def size( self ) -> int :
+        '''The number of nodes in the tree.'''
+        # renamed from 'length'
+        return self.length
     
-    property RED :
+    @property
+    def depth( self ) -> int :
+        '''The maximum depth of the tree.'''
+        return self.depth
+    
+    @property
+    def num_leaves( self ) -> int :
+        '''The number of leaf nodes in the tree.'''
+        # renamed from 'n_leafs'
+        return self.n_leafs
+    
+    @property
+    def leaves( self ) -> Dict[ str, int ] :
+        '''Dictionary mapping leaf names to node IDs.'''
+        # renamed from 'leafs'
+        return self.leafs
+    
+    @property
+    def leaf_nodes( self ) -> Dict[ int, str ] :
+        '''Dictionary mapping leaf node IDs to names.'''
+        # renamed from leafnodes
+        return self.leafnodes
+    
+    @property
+    def root_node( self ) -> int :
+        '''The ID of the root node.'''
+        # renamed from root
+        return self.root
+    
+    @property
+    def internal_nodes( self ) -> np.ndarray :
+        '''Array of internal node IDs (cached property).'''
+        if not hasattr( self, '_cached_internal_nodes' ) :
+            self._cached_internal_nodes = self.get_internal_nodes()
+        return self._cached_internal_nodes
+    
+    @property
+    def all_nodes( self ) -> np.ndarray :
+        '''Array of all node IDs in the tree (cached property).'''
+        if not hasattr( self, '_cached_all_nodes' ) :
+            self._cached_all_nodes = self.get_nodes()
+        return self._cached_all_nodes
+    
+    @property
+    def leaf_node_ids( self ) -> np.ndarray :
+        '''Array of leaf node IDs.'''
+        return np.array( list( self.leaves.values() ) )
+    
+    @property
+    def leaf_names( self ) -> list :
+        '''List of all leaf names.'''
+        return list( self.leaves.keys() )
+    
+    @property
+    def polytomy_epsilon(self) -> float :
+        '''Tiny, arbitrary, nonzero distance for polytomies.'''
+        # renamed from polytomy_distance
+        return self.epsilon
+    
+    @polytomy_epsilon.setter
+    def polytomy_epsilon( self, new_epsilon: float ) -> None :
+        '''Set the polytomy epsilon value.'''
+        self.epsilon = new_epsilon
+    
+    @property
+    def relative_evolutionary_divergence( self ) -> Dict[ int, float ] :
         ''' 
         The relative evolutionary divergence (RED) of the nodes in the tree.
         The RED of a node is the relative placement between the root and its
@@ -258,20 +295,75 @@ cdef class SuchTree :
         a dictionary. Once computed, the RED dictionary will be cached and made
         available as the SuchTree.RED attribute.
         '''
-        def __get__( self ) :
-            if not self.RED :
-            
-                self.RED = { self.root : 0 }
-            
-                for node in list( self.pre_order() )[1:] :
-                    P = self.RED[ self.get_parent(node) ]
-                    a = self.distance( node, self.get_parent(node) )
-                    b = np.mean( [ self.distance( node, leaf ) for leaf in self.get_leafs(node) ] )
-                    if a+b == 0 :
-                        raise Exception( 'node {n} : a={a}, b={b}'.format( n=node, a=a, b=b ) )
-                    self.RED[ node ] = P+(a/(a+b))*(1-P)
+        if not self.RED :
         
-            return self.RED
+            self.RED = { self.root : 0 }
+        
+            for node in list( self.pre_order() )[1:] :
+                P = self.RED[ self.get_parent(node) ]
+                a = self.distance( node, self.get_parent(node) )
+                b = np.mean( [ self.distance( node, leaf ) for leaf in self.get_leafs(node) ] )
+                if a+b == 0 :
+                    raise Exception( 'node {n} : a={a}, b={b}'.format( n=node, a=a, b=b ) )
+                self.RED[ node ] = P+(a/(a+b))*(1-P)
+    
+        return self.RED
+    
+    # ====== Depricated properties ======
+    
+    property length :
+        'The number of nodes in the tree.'
+        def __get__( self ) :
+            warn( 'SuchTree.length is depiracted in favor of SuchTree.size',
+                  category=DeprecationWarning, stacklevel=2 )
+            return self.length
+            
+    property n_leafs :
+        'The number of leafs in the tree.'
+        def __get__( self ) :
+            warn( 'SuchTree.n_leafs is depricated in favor of SuchTree.num_leafs',
+                  category=DeprecationWarning, stacklevel=2 )
+            return self.n_leafs
+            
+    property leafs :
+        'A dictionary mapping leaf names to leaf node ids.'
+        def __get__( self ) :
+            warn( 'SuchTree.leafs is depricated in favor of SuchTree.leaves',
+                  category=DeprecationWarning, stacklevel=2 )
+            return self.leafs
+    
+    property leafnodes :
+        'A dictionary mapping leaf node ids to leaf names.'
+        def __get__( self ) :
+            warn( 'SuchTree.leafnodes is depricated in favor of SuchTree.leaf_nodes',
+                  category=DeprecationWarning, stacklevel=2 )
+            return self.leafnodes
+
+    property root :
+        'The id of the root node.'
+        def __get__( self ) :
+            warn( 'SuchTree.root is depriacted in favor of SuchTree.root_node',
+                  category=DeprecationWarning, stacklevel=2 )
+            return self.root
+            
+    property polytomy_distance :
+        'Tiny, nonzero distance for polytomies in the adjacency matrix.'
+        def __get__( self ) :
+            warn( 'SuchTree.polytomy_distance is depricated in favor of SuchTree.polytomy.epsilon',
+                  category=DeprecationWarning, stacklevel=2 )
+            return self.epsilon
+        def __set__( self, np.float64_t new_epsilon ) :
+            warn( 'SuchTree.polytomy_distance is depricated in favor of SuchTree.polytomy.epsilon',
+                  category=DeprecationWarning, stacklevel=2 )
+            self.epsilon = new_epsilon
+    
+    @property
+    def RED( self ) -> Dict[ int, float ] :
+        'Alias for relative_evolutionary_divergence (deprecated).'''
+        warn( 'SuchTree.RED is deprecated in favor of SuchTree.relative_evolutionary_divergence', 
+              category=DeprecationWarning, stacklevel=2 )
+        return self.relative_evolutionary_divergence
+
 
     def get_parent( self, query ) :
         '''
