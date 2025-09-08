@@ -9,7 +9,7 @@ cimport numpy as np
 import pandas as pd
 from scipy.linalg.cython_lapack cimport dsyev
 from numbers import Integral, Real
-from typing import Union, Dict
+from typing import Union, Dict, Tuple, Generator
 
 from warnings import warn
 from exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
@@ -363,90 +363,111 @@ cdef class SuchTree :
         warn( 'SuchTree.RED is deprecated in favor of SuchTree.relative_evolutionary_divergence', 
               category=DeprecationWarning, stacklevel=2 )
         return self.relative_evolutionary_divergence
+    
+    # ====== Node query methods ======
 
-
-    def get_parent( self, query ) :
+    def get_parent( self,
+                    node : Union[ int, str ] ) -> int :
         '''
-        Return the id of the parent of a given node. Will accept node
-        id or leaf name.
-        '''
-        if isinstance( query, str ) :
-            try :
-                node_id = self.leafs[ query ]
-            except KeyError :
-                raise Exception( 'leaf name not found : ' + query )
-        else :
-            node_id = int( query )
-        if node_id < 0 or node_id >= self.length :
-            raise Exception( 'node id out of bounds : ', node_id )
-            
-        return self.data[node_id].parent
+        Return the parent node ID for a given node.
         
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            int : Parent node ID (parent of root is -1)
+            
+        Raises:
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        node_id = self._validate_node( node )
+        return self.data[ node_id ].parent
+    
+    def get_children(self, node: Union[int, str]) -> Tuple[int, int]:
+        '''
+        Return the child node IDs for a given node.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            Tuple[ int, int ] : Left and right child node IDs (child of leaf is -1)
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        node_id = self._validate_node( node )
+        return ( self.data[ node_id ].left_child,
+                 self.data[ node_id ].right_child )
+    
+    def get_ancestors( self, 
+                       node : Union[ int, str ] ) -> Generator[ int, None, None ] :
+        '''
+        Generator yielding ancestor node IDs from node to root.
+        
+        Renamed from get_lineage() for clarity.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Yields
+            int : Ancestor node IDs in order from parent to root
+            
+        Raises
+            NodeNotFoundError: If leaf name is not found
+            InvalidNodeError: If node ID is out of bounds
+        '''
+        node_id = self._validate_node( node )
+        
+        while True :
+            parent_id = self.data[ node_id ].parent
+            if parent_id == -1 :
+                break
+            yield parent_id
+            node_id = parent_id
+
     def get_lineage( self, query ) :
         '''
         Generator of parent nodes up to the root node. Will accept
         node id of leaf name.
         '''
-        if isinstance( query, str ) :
-            try :
-                node_id = self.leafs[ query ]
-            except KeyError :
-                raise Exception( 'leaf name not found : ' + query )
-        else :
-            node_id = int( query )
-        if node_id < 0 or node_id >= self.length :
-            raise Exception( 'node id out of bounds : ', node_id )
- 
-        while True :
-            node_id = self.data[node_id].parent
-            if node_id == -1 : break
-            yield node_id
+        # FIXME : Not sure if this will work as a pass-through for a generator
+        warn( 'SuchTree.get_lineage is depricated in favor of SuchTree.get_ancestors',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.get_ancestors( query )
 
-    def get_support( self, node_id ) :
+    def get_descendants( self,
+                         node_id : int ) -> Generator[ int, None, None ] :
         '''
-        Return the support value of a given node. Will accept node id
-        or leaf name.
-        '''
-        if isinstance( node_id, str ) :
-            try :
-                node_id = self.leafs[ node_id ]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + node_id )
-        return self.data[node_id].support
-
-    def get_children( self, node_id ) :
-        '''
-        Return the ids of child nodes of a given node. Will accept node
-        id or a leaf name.
-        '''
-        if isinstance( node_id, str ) :
-            try :
-                node_id = self.leafs[ node_id ]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + node_id )
-        return ( self.data[node_id].left_child,
-                 self.data[node_id].right_child )
+        Generator yielding all descendant node IDs from a given node.
         
-    def get_leafs( self, node_id ) :
+        Renamed from get_descendant_nodes() for consistency.
+        
+        Args
+            node_id : Node ID
+            
+        Yields
+            int : Descendant node IDs including the starting node
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
         '''
-        Return an array of ids of all leaf nodes descendent from a given node.
-        '''
-        cdef unsigned int i
-        cdef int l
-        cdef int r
-        cdef unsigned int n = 0
-        if self.np_buffer is None :
-            self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
-        to_visit = [node_id]
-        for i in to_visit :
-            l,r = self.get_children( i )
-            if l == -1 :
-                self.np_buffer[n] = i
-                n += 1
+        node_id = self._validate_node( node_id )
+        
+        to_visit = [ node_id ]
+        for current_id in to_visit :
+            left_child, right_child = self.get_children( current_id )
+            if left_child == -1 :
+                # Leaf node
+                yield current_id
             else :
-                to_visit.append( l )
-                to_visit.append( r )
-        return np.array(self.np_buffer[:n])
+                # Internal node
+                to_visit.append( left_child  )
+                to_visit.append( right_child )
+                yield current_id
     
     def get_descendant_nodes( self, node_id ) :
         '''
@@ -454,24 +475,153 @@ cdef class SuchTree :
         starting with the given node. Can only accept a node_ids, 
         returns node_ids for internal and leaf nodes.
         '''
-        if not isinstance( node_id, Integral ) :
-            raise Exception( 'node_id must be an integer.' )
-        cdef unsigned int i
-        cdef int l
-        cdef int r
-        cdef unsigned int n = 0
+        # FIXME : Not sure if this will work as a pass-through for a generator
+        warn( 'SuchTree.get_lineage is depricated in favor of SuchTree.get_ancestors',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.get_descendants( node_id )
+
+    def get_leaves( self,
+                    node : Union[ int, str ] ) -> np.ndarray :
+        '''
+        Return array of leaf node IDs descended from a given node.
         
-        to_visit = [node_id]
-        for i in to_visit :
-            l,r = self.get_children( i )
-            if l == -1 :
-                yield i
+        Renamed from get_leafs() with corrected pluralization.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            np.ndarray : Array of leaf node IDs
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        node_id = self._validate_node( node )
+        
+        if self.np_buffer is None:
+            self.np_buffer = np.ndarray( self.num_leaves, dtype=int )
+        
+        to_visit = [ node_id ]
+        leaf_count = 0
+        
+        for current_id in to_visit :
+            left_child, right_child = self.get_children( current_id )
+            if left_child == -1 :
+                # This is a leaf node
+                self.np_buffer[ leaf_count ] = current_id
+                leaf_count += 1
+            else :
+                # This is an internal node, add children to visit
+                to_visit.append( left_child  )
+                to_visit.append( right_child )
+        
+        return np.array( self.np_buffer[ : leaf_count ] )
+
+    def get_leafs( self, node_id ) :
+        '''
+        Return an array of ids of all leaf nodes descendent from a given node.
+        '''
+        # FIXME : Not sure if this will work as a pass-through for a generator
+        warn( 'SuchTree.get_leafs is depricated in favor of SuchTree.get_leaves',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.get_leaves( node_id )
+    
+    def get_support( self,
+                     node : Union[ int, str ] ) -> float :
+        '''
+        Return the support value for a given node.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            float : Support value (-1 if no support available)
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        node_id = self._validate_node(node)
+        return self.data[node_id].support
+    
+    def get_internal_nodes( self,
+                            from_node : Union[ int, str ] = None ) -> np.ndarray :
+        '''
+        Return array of internal node IDs.
+        
+        Args
+            from_node : Starting node (default: root)
+            
+        Returns
+            np.ndarray : Array of internal node IDs
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            from_node = self.root_node
+        else:
+            from_node = self._validate_node( from_node )
+        
+        if self.np_buffer is None :
+            self.np_buffer = np.ndarray( self.num_leaves, dtype=int )
+        
+        to_visit = [ from_node ]
+        internal_count = 0
+        
+        for current_id in to_visit :
+            left_child, right_child = self.get_children( current_id )
+            if left_child == -1 :
+                # Leaf node, skip
                 continue
             else :
-                to_visit.append( l )
-                to_visit.append( r )
-                yield i
+                # Internal node
+                to_visit.append( left_child  )
+                to_visit.append( right_child )
+                self.np_buffer[ internal_count ] = current_id
+                internal_count += 1
+        
+        return np.array( self.np_buffer[ : internal_count ] )
     
+    def get_nodes( self,
+                   from_node : Union[ int, str ] = None ) -> np.ndarray :
+        '''
+        Return array of all node IDs.
+        
+        Args
+            from_node : Starting node (default: root)
+            
+        Returns
+            np.ndarray : Array of all node IDs
+            
+        Raises:
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            from_node = self.root_node
+        else :
+            from_node = self._validate_node( from_node )
+        
+        if self.np_buffer is None :
+            self.np_buffer = np.ndarray( self.size, dtype=int )
+        
+        to_visit = [ from_node ]
+        node_count = 0
+        
+        for current_id in to_visit :
+            self.np_buffer[ node_count ] = current_id
+            node_count += 1
+            
+            left_child, right_child = self.get_children( current_id )
+            if left_child != -1 :
+                to_visit.append( left_child  )
+                to_visit.append( right_child )
+        
+        return np.array( self.np_buffer[ : node_count ] )
+
     def get_bipartition( self, node_id, by_id=False ) :
         '''
         Find the two sets of leaf nodes partitioned at an internal
@@ -1932,7 +2082,3 @@ cdef class SuchLinkedTrees :
                 row_id = self.table[i].links[j]
                 col.append( row_id )
             print( 'column', i, ':', ','.join( map( str, col ) ) )
-
-
-
-
