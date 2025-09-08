@@ -621,6 +621,58 @@ cdef class SuchTree :
                 to_visit.append( right_child )
         
         return np.array( self.np_buffer[ : node_count ] )
+
+    def get_internal_nodes( self, from_node=-1 ) :
+        '''
+        Return an array of the ids of all internal nodes.
+        '''
+        cdef unsigned int i
+        cdef int l
+        cdef int r
+        cdef unsigned int n = 0
+        
+        if from_node == -1 : from_node = self.root
+        
+        self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
+        
+        # this doesn't look like it should work, but strictly
+        # bifrucating trees always have one fewer internal nodes
+        # than leaf nodes
+        
+        to_visit = [from_node]
+        for i in to_visit :
+            l,r = self.get_children( i )
+            if l == -1 :
+                continue
+            else :
+                to_visit.append( l )
+                to_visit.append( r )
+                self.np_buffer[n] = i
+                n += 1
+        return np.array(self.np_buffer[:n])
+        
+    def get_nodes( self, from_node=-1 ) :
+        '''
+        Return an array of the ids of all nodes.
+        '''
+        cdef unsigned int i
+        cdef int l
+        cdef int r
+        cdef unsigned int n = 0
+        
+        if from_node == -1 : from_node = self.root
+        
+        self.np_buffer = np.ndarray( self.length, dtype=int )
+        
+        to_visit = [from_node]
+        for i in to_visit :
+            l,r = self.get_children( i )
+            self.np_buffer[n] = i
+            n += 1
+            if l != -1 :
+                to_visit.append( l )
+                to_visit.append( r )
+        return np.array(self.np_buffer[:n])
     
     # ====== Node test methods ======    
     
@@ -861,6 +913,25 @@ cdef class SuchTree :
               category=DeprecationWarning, stacklevel=2 )
         return self.distance_to_root( a )
     
+    @cython.boundscheck(False)
+    cdef float _get_distance_to_root( self, node_id ) :
+        '''
+        Calculate the distance from a node of a given id to the root node.
+        Will work for both leaf and internal nodes. Private cdef method.
+        '''
+        cdef float d = 0.0
+        cdef float d_i = 0.0
+        cdef int i = node_id
+        cdef int a_depth = 0
+        cdef int mrca = -1
+        
+        while True :
+            d_i = self.data[i].distance
+            if d_i == -1 : break
+            d = d + d_i
+            i = self.data[i].parent
+        return d
+ 
     def distance( self, 
                   a : Union[ int, str ],
                   b : Union[ int, str ] ) -> float :
@@ -1053,7 +1124,8 @@ cdef class SuchTree :
     def nearest_neighbors( self,
                            node : Union[ int, str ],
                            k : int = 1,
-                           from_nodes : List[ Union[ int, str ] ] = None ) -> List[ Tuple[ Union[ int, str ], float ] ] :
+                           from_nodes : List[ Union[ int, str ] ] = None ) -> List[ Tuple[ Union[ int, str ],
+                                                                                           float ] ] :
         '''
         Find the k nearest neighbors to a given node.
         
@@ -1125,6 +1197,7 @@ cdef class SuchTree :
         distance_matrix = np.zeros( (n, n), dtype=float )
         
         # Generate all pairs (upper triangle)
+        # FIXME : use combinations()
         pairs = []
         pair_indices = []
         for i in range(n) :
@@ -1144,213 +1217,195 @@ cdef class SuchTree :
     
     # ====== Topology Methods ======
     
-    def get_bipartition( self, node_id, by_id=False ) :
+    def common_ancestor( self,
+                         a : Union[ int, str ],
+                         b : Union[ int, str ] ) -> int :
         '''
-        Find the two sets of leaf nodes partitioned at an internal
-        node in the tree.
-        '''
-        left,right = self.get_children(node_id)
-        if not by_id :
-            return frozenset(
-                    ( frozenset( self.leafnodes[i] for i in self.get_leafs(left) ),
-                      frozenset( self.leafnodes[i] for i in self.get_leafs(right) ) ) )
-        else :
-            return frozenset(
-                    ( frozenset( self.get_leafs(left), 
-                      frozenset( self.get_leafs(right) ) ) ) )
-     
-    def bipartitions( self, by_id=False ) :
-        '''
-        Generator for the bipartitions of the tree. Each bipartition
-        is the pair of sets of leaf nodes partitioned by an internal
-        node in the tree. By default, leaf nodes are returned by name
-        so that bypartitions of other SuchTree instances (which may
-        not have the same leaf node_ids) to be compared.
-        '''
-        for node in self.get_internal_nodes() :
-            yield self.get_bipartition( node, by_id=by_id )
-    
-    def get_internal_nodes( self, from_node=-1 ) :
-        '''
-        Return an array of the ids of all internal nodes.
-        '''
-        cdef unsigned int i
-        cdef int l
-        cdef int r
-        cdef unsigned int n = 0
+        Find the most recent common ancestor of two nodes.
         
-        if from_node == -1 : from_node = self.root
+        Renamed from mrca().
         
-        self.np_buffer = np.ndarray( self.n_leafs, dtype=int )
-        
-        # this doesn't look like it should work, but strictly
-        # bifrucating trees always have one fewer internal nodes
-        # than leaf nodes
-        
-        to_visit = [from_node]
-        for i in to_visit :
-            l,r = self.get_children( i )
-            if l == -1 :
-                continue
-            else :
-                to_visit.append( l )
-                to_visit.append( r )
-                self.np_buffer[n] = i
-                n += 1
-        return np.array(self.np_buffer[:n])
-        
-    def get_nodes( self, from_node=-1 ) :
+        Args
+            a : First node (ID or name)
+            b : Second node (ID or name)
+            
+        Returns
+            int : Node ID of most recent common ancestor
+            
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
         '''
-        Return an array of the ids of all nodes.
-        '''
-        cdef unsigned int i
-        cdef int l
-        cdef int r
-        cdef unsigned int n = 0
-        
-        if from_node == -1 : from_node = self.root
-        
-        self.np_buffer = np.ndarray( self.length, dtype=int )
-        
-        to_visit = [from_node]
-        for i in to_visit :
-            l,r = self.get_children( i )
-            self.np_buffer[n] = i
-            n += 1
-            if l != -1 :
-                to_visit.append( l )
-                to_visit.append( r )
-        return np.array(self.np_buffer[:n])
-    
-    def in_order( self, distances=True ) :
-        '''
-        Generator for traversing the tree in order, yilding tuples
-        of node_ids with distances to parent nodes.
-        '''
-        i = self.root
-        stack = []
-        
-        while True :
-            if i != -1 :
-                stack.append( i )
-                i = self.data[i].left_child
-            elif stack :
-                i = stack.pop()
-                if distances :
-                    yield i, self.data[i].distance
-                else :
-                    yield i
-                i = self.data[i].right_child
-            else :
-                break
-    
-    def pre_order( self ) :
-        '''
-        Generator for traversing the tree in pre-order.
-        '''
-        stack = [ self.root ]
-        
-        while len(stack) > 0 :
-            i = stack.pop()
-            r = self.data[i].right_child
-            l = self.data[i].left_child
-            if r != -1 :
-                stack.append(r)
-            if l != -1 :
-                stack.append(l)
-            yield i
-    
-       
-    @cython.boundscheck(False)
-    cdef float _get_distance_to_root( self, node_id ) :
-        '''
-        Calculate the distance from a node of a given id to the root node.
-        Will work for both leaf and internal nodes. Private cdef method.
-        '''
-        cdef float d = 0.0
-        cdef float d_i = 0.0
-        cdef int i = node_id
-        cdef int a_depth = 0
-        cdef int mrca = -1
-        
-        while True :
-            d_i = self.data[i].distance
-            if d_i == -1 : break
-            d = d + d_i
-            i = self.data[i].parent
-        return d
-    
-        
+        node_a, node_b = self._validate_node_pair( a, b )
+        visited = np.zeros( self.depth, dtype=int )
+        return self._mrca( visited, node_a, node_b )
+
     def mrca( self, a, b ) :
         '''
         Return the id of the most recent common ancestor of two nodes
         if given ids. Leaf names or node_ids can be used for leafs,
         but node_ids must be used for internal nodes.
         '''
-        if isinstance( a, str ) :
-            try :
-                a = self.leafs[a]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + a )
-        if isinstance( b, str ) :
-            try :
-                b = self.leafs[b]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + b )
+        warn( 'SuchTree.mrca is depricated in favor of SuchTree.common_ancestor',
+              category=DeprecationWarning, stacklevel=2 )
+        visited = np.zeros( self.depth, dtyoe=int )
+        return self._mrca( visited, a, b )
+    
+    def bipartition( self,
+                     node  : Union[ int, str ],
+                     by_id : bool = False ) -> frozenset :
+        '''
+        Get the bipartition created by an internal node.
+        
+        Renamed from get_bipartition() for consistency.
+        
+        Args
+            node  : Internal node (ID or name)
+            by_id : If True, return node IDs; if False, return leaf names
+            
+        Returns
+            frozenset : Frozenset of two frozensets representing the bipartition
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds or is a leaf node
+        '''
+        node_id = self._validate_internal_node( node )
+        left_child, right_child = self.get_children( node_id )
+        
+        if by_id :
+            return frozenset((
+                frozenset( self.get_leaves( left_child  )),
+                frozenset( self.get_leaves( right_child ))
+            ))
+        else :
+            left_leaves  = self._convert_to_leaf_names( self.get_leaves( left_child  ))
+            right_leaves = self._convert_to_leaf_names( self.get_leaves( right_child ))
+            return frozenset((
+                frozenset( left_leaves  ),
+                frozenset( right_leaves )
+            ))
+
+    def get_bipartition( self, node_id, by_id=False ) :
+        '''
+        Find the two sets of leaf nodes partitioned at an internal
+        node in the tree.
+        '''
+        warn( 'SuchTree.get_bipartition is depricated in favor of SuchTree.bipartition',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.bipartition( node_id, by_id=by_id )
+    
+    def bipartitions( self,
+                      by_id : bool = False ) -> Generator[ frozenset, None, None ] :
+        '''
+        Generate all bipartitions in the tree. Each bipartition is
+        the pair of sets of leaf nodes partitioned by an internal
+        node in the tree. 
+        
+        Args
+            by_id : If True, yield node IDs; if False, yield leaf names
+            
+        Yields
+            frozenset : Bipartition as frozenset of two frozensets
+        '''
+        for node_id in self.get_internal_nodes():
+            yield self.bipartition(node_id, by_id=by_id)
+   
+    def quartet_topology( self,
+                          a : Union[ int, str ],
+                          b : Union[ int, str ], 
+                          c : Union[ int, str ],
+                          d : Union[ int, str ] ) -> frozenset :
+        '''
+        Determine the topology of a quartet of taxa.
+        
+        Renamed from get_quartet_topology() for consistency.
+        
+        Args
+            ( a, b ), ( c, d ) : Four nodes (IDs or names) forming the quartet
+            
+        Returns
+            frozenset : Topology as frozenset of two frozensets representing sister pairs
+            
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
+        '''
+        # Validate inputs
+        nodes = [ a, b, c, d ]
+        node_ids = [ self._validate_node(node) for node in nodes ]
+        
+        # Keep track of original input types for return value
+        has_strings = any( isinstance( node, str ) for node in nodes )
         
         visited = np.zeros( self.depth, dtype=int )
         
-        return self._mrca( visited, a, b )
+        # Calculate all pairwise MRCAs
+        pairs = list( combinations( node_ids, 2 ) )
+        mrcas = [ self._mrca( visited, x, y ) for x, y in pairs ]
+        
+        # Find unique MRCA (appears only once)
+        unique_mrcas = [ mrca for mrca in mrcas if mrcas.count(mrca) == 1 ]
+        
+        if len( unique_mrcas ) == 1 :
+            unique_mrca     = unique_mrcas[0]
+            unique_pair_idx = mrcas.index( unique_mrca )
+            sisters_ids     = pairs[ unique_pair_idx ]
+            
+            # The other two nodes form the second sister pair
+            remaining_ids = frozenset( node_ids ) - frozenset( sisters_ids )
+            
+            if has_strings :
+                # Convert back to original names if input had strings
+                def id_to_original( node_id ) :
+                    for orig, nid in zip( nodes, node_ids ) :
+                        if nid == node_id :
+                            return orig if isinstance( orig, str ) else self.leaf_nodes[ node_id ]
+                    return self.leaf_nodes[node_id]
+                
+                sister_pair1 = frozenset( id_to_original( nid ) for nid in sisters_ids   )
+                sister_pair2 = frozenset( id_to_original( nid ) for nid in remaining_ids )
+            else:
+                sister_pair1 = frozenset( sisters_ids   )
+                sister_pair2 = frozenset( remaining_ids )
+                
+            return frozenset( ( sister_pair1, sister_pair2 ) )
+        
+        # Should not happen with valid quartet
+        raise TreeStructureError( 'Could not determine unique topology for quartet {nodes}'.format( nodes=nodes ) )
     
     def get_quartet_topology( self, a, b, c, d ) :
         '''
         For a given quartet of taxa, return the topology of the quartet
         as a pair of tuples.
         '''
-        names = []
-        ids   = []
-        for n,i in enumerate( ( a, b, c, d ) ) :
-            if isinstance( i, ( int, np.integer ) ) :
-                ids.append( i )
-                try :
-                    names.append( self.leafnodes[ i ] )
-                except KeyError :
-                    raise Exception( 'Leaf not found : ' + i )
-            else :
-                names.append( i )
-                try :
-                    ids.append( self.leafs[i] )
-                except KeyError :
-                    raise Exception( 'Leaf not found : ' + i )
-        
-        visited = np.zeros( self.depth, dtype=int )
-        
-        pairs = [ frozenset( ( x, y ) ) for x,y in combinations( ids, 2 ) ]
-        
-        M = [ self._mrca( visited, x, y ) for x,y in pairs ]
-        
-        sisters = [ pairs[ M.index(i) ] for i in M if M.count(i) == 1 ]
-        
-        if len( sisters ) == 1 :
-            sisters.append( sisters[0] ^ frozenset( ids ) )
-       
-        if any( [ isinstance( i, str ) for i in ( a, b, c, d ) ] ) :
-            (w,x),(y,z) = sisters
-            return frozenset( ( frozenset( ( self.leafnodes[w], self.leafnodes[x] ) ), 
-                                frozenset( ( self.leafnodes[y], self.leafnodes[z] ) ) ) )
-        else :
-            return frozenset( sisters )
+        warn( 'SuchTree.get_quartet_topology is depricated in favor of SuchTree.quartet_topology',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.quartet_topology( a, b, c, d )
     
     def quartet_topologies_by_name( self, quartets ) :
-        
-        Q = np.array( [ [ self.leafs[a], self.leafs[b], self.leafs[c], self.leafs[d] ]
+        '''
+        Wrapper method for quartet_topologies_bulk that accepts leaf names in
+        the form
+
+            [ [ a, b, c, d ], [ e, f, g, h ], ... ]
+        '''
+        # FIXME : This function should be merged with quartet_topologies_bulk
+        #         so that it works the same way as quartet_topology
+        Q = np.array( [ [ self.leaves[a],
+                          self.leaves[b],
+                          self.leaves[c],
+                          self.leaves[d] ]
                         for a,b,c,d in quartets ] )
         
-        return [ frozenset( ( frozenset( ( self.leafnodes[a], self.leafnodes[b] ) ),
-                              frozenset( ( self.leafnodes[c], self.leafnodes[d] ) ) ) )
-                 for a,b,c,d in self.quartet_topologies( Q ) ]
-    
-    def quartet_topologies( self, long[:,:] quartets ) :
+        return [ frozenset( ( frozenset( ( self.leaf_nodes[a],
+                                           self.leaf_nodes[b] ) ),
+                              frozenset( ( self.leaf_nodes[c],
+                                           self.leaf_nodes[d] ) ) ) )
+                 for a,b,c,d in self.quartet_topologies_bulk( Q ) ]
+     
+    def quartet_topologies_bulk( self,
+                                 quartets : np.ndarray ) -> np.ndarray :
         '''
         Bulk processing function for computing quartet topologies.
         Takes an [N,4] matrix of taxon IDs, where the IDs are in
@@ -1366,16 +1421,42 @@ cdef class SuchTree :
         
             topology = frozenset( ( frozenset( ( T[i,0], T[i,1] ),
                                     frozenset( ( T[i,2], T[i,3] ) ) ) ) )
+        
+        Renamed from quartet_topologies() for clarity.
+        
+        Args
+            quartets : (n, 4) array of node IDs
+            
+        Returns
+            np.ndarray : (n, 4) array where each row contains ordered node IDs 
+                    representing the quartet topology
+            
+        Raises:
+            ValueError       : If quartets array shape is incorrect
+            InvalidNodeError : If any node ID is out of bounds
         '''
+        if not isinstance(quartets, np.ndarray) :
+            quartets = np.array( quartets, dtype=np.int64 )
+        
+        if quartets.ndim != 2 or quartets.shape[1] != 4 :
+            shape = (<object>quartets).shape
+            raise ValueError( f'Expected (n, 4) array, got shape {shape}' )
+        
+        # Validate all node IDs
+        max_id = quartets.max()
+        min_id = quartets.min()
+        if min_id < 0 or max_id >= self.size :
+            raise InvalidNodeError(
+                max_id if max_id >= self.size else min_id,
+                self.size
+            )
         
         topologies = np.zeros( ( len(quartets), 4 ), dtype=int )
-        
         visited = np.zeros( self.depth, dtype=int )
+        M = np.zeros( 6, dtype=int )
+        C = np.zeros( 6, dtype=int )
         
-        M = np.zeros( 6,     dtype=int )
-        C = np.zeros( 6,     dtype=int )
-        
-        # possible topologies
+        # Possible topologies matrix
         I = np.array( [ [ 0, 1, 2, 3 ], [ 0, 2, 1, 3 ], [ 0, 3, 1, 2 ],
                         [ 1, 2, 0, 3 ], [ 1, 3, 0, 2 ], [ 2, 3, 0, 1 ] ] )
         
@@ -1430,6 +1511,134 @@ cdef class SuchTree :
             for k in range( 4 ) :
                 topologies[i,k] = quartets[ i, I[j,k] ]
     
+    def quartet_topologies_by_name( self,
+                                    quartets : List[ Tuple[ str, 
+                                                            str,
+                                                            str,
+                                                            str ] ] ) -> List[frozenset] :
+        '''
+        Compute quartet topologies for quartets specified by leaf names.
+        
+        Args
+            quartets : List of tuples containing four leaf names each
+            
+        Returns
+            List[frozenset] : List of quartet topologies as frozensets
+            
+        Raises:
+            NodeNotFoundError : If any leaf name is not found
+            TypeError         : If input format is incorrect
+        '''
+        # Convert names to IDs
+        quartet_ids = []
+        for i, (a, b, c, d) in enumerate(quartets) :
+            if not all( isinstance( name, str ) for name in ( a, b, c, d ) ) :
+                raise TypeError( f'Quartet {i}: all elements must be strings' )
+            
+            try :
+                quartet_ids.append([
+                    self.leaves[a], self.leaves[b], 
+                    self.leaves[c], self.leaves[d]
+                ])
+            except KeyError as e :
+                raise NodeNotFoundError( str(e).strip("'") )
+        
+        # Use bulk calculation
+        quartet_array = np.array( quartet_ids, dtype=np.int64 )
+        topologies = self.quartet_topologies_bulk( quartet_array )
+        
+        # Convert back to names and format as frozensets
+        result = []
+        for topology in topologies :
+            a, b, c, d = topology
+            sister1 = frozenset( ( self.leaf_nodes[a], self.leaf_nodes[b] ) )
+            sister2 = frozenset( ( self.leaf_nodes[c], self.leaf_nodes[d] ) )
+            result.append( frozenset( ( sister1, sister2 ) ) )
+        
+        return result
+    
+   
+    def path_between_nodes(self, a: Union[int, str], b: Union[int, str]) -> List[int]:
+        """Find the path between two nodes through their common ancestor.
+        
+        New convenience method.
+        
+        Args:
+            a: First node (ID or name)
+            b: Second node (ID or name)
+            
+        Returns:
+            List[int]: List of node IDs forming the path from a to b
+            
+        Raises:
+            NodeNotFoundError: If any leaf name is not found
+            InvalidNodeError: If any node ID is out of bounds
+        """
+        node_a, node_b = self._validate_node_pair(a, b)
+        
+        if node_a == node_b:
+            return [node_a]
+        
+        # Find common ancestor
+        mrca = self.common_ancestor(node_a, node_b)
+        
+        # Path from a to MRCA (excluding MRCA)
+        path_a = []
+        current = node_a
+        while current != mrca:
+            path_a.append(current)
+            current = self.data[current].parent
+        
+        # Path from b to MRCA (excluding MRCA)  
+        path_b = []
+        current = node_b
+        while current != mrca:
+            path_b.append(current)
+            current = self.data[current].parent
+        
+        # Combine: a->mrca + mrca + mrca->b (reversed)
+        return path_a + [mrca] + list(reversed(path_b))  
+    
+    # ====== Traversal methods ======
+        
+    def pre_order( self ) :
+        '''
+        Generator for traversing the tree in pre-order.
+        '''
+        stack = [ self.root ]
+        
+        while len(stack) > 0 :
+            i = stack.pop()
+            r = self.data[i].right_child
+            l = self.data[i].left_child
+            if r != -1 :
+                stack.append(r)
+            if l != -1 :
+                stack.append(l)
+            yield i
+    
+    def in_order( self, distances=True ) :
+        '''
+        Generator for traversing the tree in order, yilding tuples
+        of node_ids with distances to parent nodes.
+        '''
+        i = self.root
+        stack = []
+        
+        while True :
+            if i != -1 :
+                stack.append( i )
+                i = self.data[i].left_child
+            elif stack :
+                i = stack.pop()
+                if distances :
+                    yield i, self.data[i].distance
+                else :
+                    yield i
+                i = self.data[i].right_child
+            else :
+                break
+      
     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :
         '''
         Attaches a leaf node to SuchLinkedTrees link matrix column.
@@ -2383,6 +2592,5 @@ cdef class SuchLinkedTrees :
                 row_id = self.table[i].links[j]
                 col.append( row_id )
             print( 'column', i, ':', ','.join( map( str, col ) ) )
-
 
 
