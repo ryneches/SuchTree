@@ -10,6 +10,8 @@ import pandas as pd
 from scipy.linalg.cython_lapack cimport dsyev
 from numbers import Integral, Real
 
+from exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
+
 # if igraph is available, enable
 # SuchLinkedTrees.to_igraph()
 try :
@@ -1714,3 +1716,4 @@ cdef class SuchLinkedTrees :
                 row_id = self.table[i].links[j]
                 col.append( row_id )
             print( 'column', i, ':', ','.join( map( str, col ) ) )
+
