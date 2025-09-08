@@ -699,7 +699,7 @@ cdef class SuchTree :
         '''
         ancestor_id, descendant_id = self._validate_node_pair( ancestor, descendant )
         return self._is_ancestor( ancestor_id, descendant_id )
-
+    
     def is_descendant( self,
                        descendant : Union[ int, str ],
                        ancestor   : Union[ int, str ] ) -> bool:
@@ -721,7 +721,7 @@ cdef class SuchTree :
         '''
         ancestor_id, descendant_id = self._validate_node_pair( ancestor, descendant )
         return self._is_ancestor( ancestor_id, descendant_id ) == 1
-
+    
     @cython.boundscheck(False)
     cdef int _is_ancestor( self, int a, int b ) nogil :
         cdef int i
@@ -749,7 +749,7 @@ cdef class SuchTree :
         
         # or neither?
         return 0
-
+    
     def is_root( self,
                  node : Union[ int, str ] ) -> bool :
         '''
@@ -767,7 +767,7 @@ cdef class SuchTree :
         '''
         node_id = self._validate_node( node )
         return node_id == self.root_node
-
+    
     def is_sibling( self,
                     node1 : Union[ int, str ],
                     node2 : Union[ int, str ] ) -> bool :
@@ -795,7 +795,7 @@ cdef class SuchTree :
         parent2 = self.data[node2_id].parent
         
         return parent1 == parent2 and parent1 != -1
-
+    
     def has_children( self,
                       node : Union[ int, str ] ) -> bool :
         '''
@@ -812,7 +812,7 @@ cdef class SuchTree :
             InvalidNodeError  : If node ID is out of bounds
         '''
         return self.is_internal(node)
-
+    
     def has_parent( self,
                     node : Union[ int, str ] ) -> bool :
         '''
@@ -831,7 +831,319 @@ cdef class SuchTree :
         return not self.is_root(node)
     
     # ====== Distance methods ======
-
+    
+    def distance_to_root( self,
+                          node : Union[ int, str ] ) -> float :
+        '''
+        Return distance from a node to the root.
+        
+        Renamed from get_distance_to_root() for consistency.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            float : Distance to root node
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        node_id = self._validate_node(node)
+        return self._get_distance_to_root(node_id)
+    
+    def get_distance_to_root( self, a ) :
+        '''
+        Return distance to root for a given node. Will accept node id
+        or a leaf name.
+        '''
+        warn( 'SuchTree.get_distance_to_root is depricated in favor of SuchTree.distance_to_root',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.distance_to_root( a )
+    
+    def distance( self, 
+                  a : Union[ int, str ],
+                  b : Union[ int, str ] ) -> float :
+        '''
+        Calculate patristic distance between two nodes.
+        
+        Args
+            a : First node (ID or name)
+            b : Second node (ID or name)
+            
+        Returns
+            float : Patristic distance between the nodes
+            
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
+        '''
+        node_a, node_b = self._validate_node_pair( a, b )
+        return self._distance( node_a, node_b )
+    
+    def distances_bulk( self,
+                        pairs : np.ndarray ) -> np.ndarray :
+        '''
+        Calculate distances for multiple node pairs efficiently.
+        
+        Renamed from distances() for clarity about bulk operation.
+        
+        Args
+            pairs : (n, 2) array of node ID pairs
+            
+        Returns
+            np.ndarray : Array of n distances
+            
+        Raises
+            ValueError       : If pairs array shape is incorrect
+            InvalidNodeError : If any node ID is out of bounds
+        '''
+        if not isinstance( pairs, np.ndarray ) :
+            pairs = np.array( pairs, dtype=np.int64 )
+        
+        if pairs.ndim != 2 or pairs.shape[1] != 2 :
+            shape = str( ( pairs.shape[0], pairs.shape[1] ) )
+            raise ValueError( 'Expected (n, 2) array, got shape {shape}'.format( shape=shape ) )
+        
+        # Validate all node IDs in the array
+        max_id = pairs.max()
+        min_id = pairs.min()
+        if min_id < 0 or max_id >= self.size :
+            raise InvalidNodeError(
+                max_id if max_id >= self.size else min_id, 
+                self.size
+            )
+        
+        # Use optimized Cython method
+        visited = np.zeros( self.depth, dtype=int )
+        result = np.zeros( pairs.shape[0], dtype=float )
+        self._distances( pairs.shape[0], visited, pairs, result )
+        return result
+    
+    def distances( self, long[:,:] ids ) :
+        '''
+        Returns an array of distances between pairs of node ids,
+        which are expected as an (n,2) array of type int.
+        '''
+        warn( 'SuchTree.distances is depricated in favor of SuchTree.distances_bulk',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.distances_bulk( ids )
+        
+    @cython.boundscheck(False)
+    cdef void _distances( self, unsigned int length,
+                                long[:] visited,
+                                long[:,:] ids,
+                                double[:] result ) nogil :
+        '''
+        For each pair of node ids in the given (n,2) array, calculate the
+        distance to the root node for each pair and store their differece
+        in the given (1,n) result array. Calculations are performed within
+        a 'nogil' context, allowing the interpreter to perform other tasks
+        concurrently if desired. Private cdef method.
+        '''
+        cdef unsigned int mrca
+        cdef float d
+        cdef unsigned int n
+        cdef unsigned int a
+        cdef unsigned int b
+        cdef unsigned int i
+        
+        for i in xrange( ids.shape[0] ) :
+            a = ids[i,0]
+            b = ids[i,1]
+            mrca = self._mrca( visited, a, b )
+            n = a
+            d = 0
+            while n != mrca :
+                d += self.data[n].distance
+                n =  self.data[n].parent
+            n = b
+            while n != mrca :
+                d += self.data[n].distance
+                n =  self.data[n].parent
+            result[i] = d
+    
+    def distances_by_name( self,
+                           pairs : List[ Tuple[ str, str ] ] ) -> List[ float ] :
+        '''
+        Calculate distances for pairs of leaf names.
+        
+        Args
+            pairs : List of (leaf_name1, leaf_name2) tuples
+            
+        Returns
+            List[ float ] : List of patristic distances
+            
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            TypeError         : If pairs is not a list of tuples
+        '''
+        if not isinstance( pairs, list ) :
+            raise TypeError( 'pairs must be a list of tuples' )
+        
+        # Convert names to IDs
+        node_pairs = []
+        for i, ( name_a, name_b ) in enumerate( pairs ) :
+            if not isinstance( name_a, str ) or not isinstance( name_b, str ) :
+                raise TypeError( 'Pair {i}: both elements must be strings'.format( i=str(i) ) )
+            
+            if not name_a in self.leaves :
+                raise NodeNotFoundError( name_a )
+            if not name_b in self.leaves :
+                raise NodeNotFoundError( name_b )
+            
+            node_pairs.append( ( self.leaves[name_a],
+                                 self.leaves[name_b] ) )
+        
+        # Use bulk calculation
+        pairs_array = np.array( node_pairs, dtype=np.int64 )
+        return self.distances_bulk( pairs_array ).tolist()
+    
+    @cython.boundscheck(False)
+    cdef float _distance( self, int a, int b ) :
+        cdef int mrca
+        cdef float d = 0
+        cdef int n
+        
+        mrca = self.mrca( a, b )
+        
+        n = a
+        while n != mrca :
+            d += self.data[n].distance
+            n =  self.data[n].parent
+        n = b
+        while n != mrca :
+            d += self.data[n].distance
+            n =  self.data[n].parent
+        return d
+    
+    @cython.boundscheck(False)
+    cdef int _mrca( self, long[:] visited, int a, int b ) noexcept nogil :
+        cdef int n
+        cdef int i
+        cdef int mrca = -1
+        cdef int a_depth
+        
+        n = a
+        i = 0
+        while True :
+            visited[i] = n
+            n = self.data[n].parent
+            i += 1
+            if n == -1 : break
+        a_depth = i
+        
+        n = b
+        while True :
+            i = 0
+            while True :
+                if i >= a_depth : break
+                if visited[i] == n :
+                    mrca = visited[i]
+                    break
+                i += 1
+            if mrca != -1 : break
+            n = self.data[n].parent
+            if n == -1 :
+                mrca = n
+                break
+            
+        return mrca
+    
+    def nearest_neighbors( self,
+                           node : Union[ int, str ],
+                           k : int = 1,
+                           from_nodes : List[ Union[ int, str ] ] = None ) -> List[ Tuple[ Union[ int, str ], float ] ] :
+        '''
+        Find the k nearest neighbors to a given node.
+        
+        Args
+            node       : Query node (ID or name)
+            k          : Number of nearest neighbors to return
+            from_nodes : Nodes to search among (default: all leaves except query)
+            
+        Returns
+            List[ Tuple[ Union[ int, str ], float ] ] : List of (node, distance) pairs
+            
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
+            ValueError        : If k is not positive
+        '''
+        if k <= 0:
+            raise ValueError( 'k must be positive' )
+        
+        query_node_id = self._validate_node(node)
+        
+        if from_nodes is None :
+            # Use all leaves except the query node (if it's a leaf)
+            if self.is_leaf(query_node_id) :
+                from_node_ids   = [ nid for nid in self.leaf_node_ids if nid != query_node_id ]
+                from_nodes_orig = [ self.leaf_nodes[nid] for nid in from_node_ids ]
+            else :
+                from_node_ids   = self.leaf_node_ids
+                from_nodes_orig = [ self.leaf_nodes[nid] for nid in from_node_ids ]
+        else :
+            from_node_ids   = [ self._validate_node(n) for n in from_nodes ]
+            from_nodes_orig = from_nodes.copy()
+        
+        # Calculate distances to all candidate nodes
+        pairs = [ (query_node_id, nid) for nid in from_node_ids ]
+        distances = self.distances_bulk( np.array( pairs, dtype=np.int64 ) )
+        
+        # Sort by distance and return top k
+        sorted_indices = np.argsort( distances )
+        result = []
+        for i in sorted_indices[:k] :
+            result.append( ( from_nodes_orig[i], distances[i] ) )
+        
+        return result
+    
+    def pairwise_distances( self,
+                            nodes : List[ Union[ int, str ] ] = None ) -> np.ndarray :
+        '''
+        Calculate all pairwise distances between given nodes.
+        
+        Args
+            nodes : List of nodes (IDs or names). If None, uses all leaves.
+            
+        Returns
+            np.ndarray : Symmetric distance matrix
+            
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
+        '''
+        if nodes is None :
+            # Use all leaf nodes by default
+            node_ids = self.leaf_node_ids
+        else :
+            # Validate and convert to node IDs
+            node_ids = np.array( [ self._validate_node(node) for node in nodes ] )
+        
+        n = len(node_ids)
+        distance_matrix = np.zeros( (n, n), dtype=float )
+        
+        # Generate all pairs (upper triangle)
+        pairs = []
+        pair_indices = []
+        for i in range(n) :
+            for j in range(i + 1, n) :
+                pairs.append( ( node_ids[i], node_ids[j] ) )
+                pair_indices.append( (i, j) )
+        
+        if pairs :  # Only calculate if there are pairs
+            distances = self.distances_bulk( np.array( pairs, dtype=np.int64 ) )
+            
+            # Fill in the distance matrix
+            for dist, (i, j) in zip( distances, pair_indices ) :
+                distance_matrix[i, j] = dist
+                distance_matrix[j, i] = dist  # Symmetric
+        
+        return distance_matrix
+    
+    # ====== Topology Methods ======
+    
     def get_bipartition( self, node_id, by_id=False ) :
         '''
         Find the two sets of leaf nodes partitioned at an internal
@@ -846,7 +1158,7 @@ cdef class SuchTree :
             return frozenset(
                     ( frozenset( self.get_leafs(left), 
                       frozenset( self.get_leafs(right) ) ) ) )
-    
+     
     def bipartitions( self, by_id=False ) :
         '''
         Generator for the bipartitions of the tree. Each bipartition
@@ -948,18 +1260,7 @@ cdef class SuchTree :
                 stack.append(l)
             yield i
     
-    def get_distance_to_root( self, a ) :
-        '''
-        Return distance to root for a given node. Will accept node id
-        or a leaf name.
-        '''
-        if isinstance( a, str ) :
-            try :
-                a = self.leafs[a]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + a )
-        return self._get_distance_to_root( a )
-        
+       
     @cython.boundscheck(False)
     cdef float _get_distance_to_root( self, node_id ) :
         '''
@@ -1000,7 +1301,7 @@ cdef class SuchTree :
         visited = np.zeros( self.depth, dtype=int )
         
         return self._mrca( visited, a, b )
-
+    
     def get_quartet_topology( self, a, b, c, d ) :
         '''
         For a given quartet of taxa, return the topology of the quartet
@@ -1048,7 +1349,7 @@ cdef class SuchTree :
         return [ frozenset( ( frozenset( ( self.leafnodes[a], self.leafnodes[b] ) ),
                               frozenset( ( self.leafnodes[c], self.leafnodes[d] ) ) ) )
                  for a,b,c,d in self.quartet_topologies( Q ) ]
-
+    
     def quartet_topologies( self, long[:,:] quartets ) :
         '''
         Bulk processing function for computing quartet topologies.
@@ -1081,7 +1382,7 @@ cdef class SuchTree :
         self._quartet_topologies( quartets, topologies, visited, M, C, I )
         
         return topologies
-
+    
     @cython.boundscheck(False)
     cdef void _quartet_topologies( self, long[:,:] quartets,
                                          long[:,:] topologies,
@@ -1128,142 +1429,7 @@ cdef class SuchTree :
             # reorder quartet ids by topology
             for k in range( 4 ) :
                 topologies[i,k] = quartets[ i, I[j,k] ]
-   
-    @cython.boundscheck(False)
-    cdef int _mrca( self, long[:] visited, int a, int b ) noexcept nogil :
-        cdef int n
-        cdef int i
-        cdef int mrca = -1
-        cdef int a_depth
-        
-        n = a
-        i = 0
-        while True :
-            visited[i] = n
-            n = self.data[n].parent
-            i += 1
-            if n == -1 : break
-        a_depth = i
-        
-        n = b
-        while True :
-            i = 0
-            while True :
-                if i >= a_depth : break
-                if visited[i] == n :
-                    mrca = visited[i]
-                    break
-                i += 1
-            if mrca != -1 : break
-            n = self.data[n].parent
-            if n == -1 :
-                mrca = n
-                break
-            
-        return mrca
-        
-    def distance( self, a, b ) :
-        '''
-        Return distnace between a pair of nodes. Will treat strings as
-        leaf names and integers as node ids. Either argument can be a
-        leaf name or an integer.
-        '''
-        if isinstance( a, str ) :
-            try :
-                a = self.leafs[a]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + a )
-        if isinstance( b, str ) :
-            try :
-                b = self.leafs[b]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + b )
-        
-        if a < 0 or a >= self.length :
-            raise Exception( 'node id out of bounds :', a )
-        if b < 0 or b >= self.length :
-            raise Exception( 'node id out of bounds :', b )
-        
-        return self._distance( a, b )
     
-    @cython.boundscheck(False)
-    cdef float _distance( self, int a, int b ) :
-        cdef int mrca
-        cdef float d = 0
-        cdef int n
-        
-        mrca = self.mrca( a, b )
-        
-        n = a
-        while n != mrca :
-            d += self.data[n].distance
-            n =  self.data[n].parent
-        n = b
-        while n != mrca :
-            d += self.data[n].distance
-            n =  self.data[n].parent
-        return d
-    
-    def distances( self, long[:,:] ids ) :
-        '''
-        Returns an array of distances between pairs of node ids,
-        which are expected as an (n,2) array of type int.
-        '''
-        if not ids.shape[1] == 2 :
-            raise Exception( 'expected (n,2) array',
-                             ids.shape[0], ids.shape[1] )
-        
-        visited = np.zeros( self.depth, dtype=int )
-        result = np.zeros( ids.shape[0], dtype=float )
-        self._distances( ids.shape[0], visited, ids, result )
-        return result
-        
-    @cython.boundscheck(False)
-    cdef void _distances( self, unsigned int length,
-                                long[:] visited,
-                                long[:,:] ids,
-                                double[:] result ) nogil :
-        '''
-        For each pair of node ids in the given (n,2) array, calculate the
-        distance to the root node for each pair and store their differece
-        in the given (1,n) result array. Calculations are performed within
-        a 'nogil' context, allowing the interpreter to perform other tasks
-        concurrently if desired. Private cdef method.
-        '''
-        cdef unsigned int mrca
-        cdef float d
-        cdef unsigned int n
-        cdef unsigned int a
-        cdef unsigned int b
-        cdef unsigned int i
-        
-        for i in xrange( ids.shape[0] ) :
-            a = ids[i,0]
-            b = ids[i,1]
-            mrca = self._mrca( visited, a, b )
-            n = a
-            d = 0
-            while n != mrca :
-                d += self.data[n].distance
-                n =  self.data[n].parent
-            n = b
-            while n != mrca :
-                d += self.data[n].distance
-                n =  self.data[n].parent
-            result[i] = d
-    
-    def distances_by_name( self, id_pairs ) :
-        '''
-        Returns an array of distances between pairs of leaf names in a
-        given (n,2) list of lists. Accepts only leaf names.
-        '''
-        shape = ( len(id_pairs), len(id_pairs[0]) )
-        ids = np.zeros( shape, dtype=int )
-        for n,(a,b) in enumerate(id_pairs) :
-            ids[n][0] = self.leafs[a]
-            ids[n][1] = self.leafs[b]
-        return self.distances( ids )
-        
     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :
         '''
         Attaches a leaf node to SuchLinkedTrees link matrix column.
