@@ -365,7 +365,7 @@ cdef class SuchTree :
         return self.relative_evolutionary_divergence
     
     # ====== Node query methods ======
-
+    
     def get_parent( self,
                     node : Union[ int, str ] ) -> int :
         '''
@@ -377,7 +377,7 @@ cdef class SuchTree :
         Returns
             int : Parent node ID (parent of root is -1)
             
-        Raises:
+        Raises
             NodeNotFoundError : If leaf name is not found
             InvalidNodeError  : If node ID is out of bounds
         '''
@@ -427,7 +427,7 @@ cdef class SuchTree :
                 break
             yield parent_id
             node_id = parent_id
-
+    
     def get_lineage( self, query ) :
         '''
         Generator of parent nodes up to the root node. Will accept
@@ -437,7 +437,7 @@ cdef class SuchTree :
         warn( 'SuchTree.get_lineage is depricated in favor of SuchTree.get_ancestors',
               category=DeprecationWarning, stacklevel=2 )
         return self.get_ancestors( query )
-
+    
     def get_descendants( self,
                          node_id : int ) -> Generator[ int, None, None ] :
         '''
@@ -479,7 +479,7 @@ cdef class SuchTree :
         warn( 'SuchTree.get_lineage is depricated in favor of SuchTree.get_ancestors',
               category=DeprecationWarning, stacklevel=2 )
         return self.get_descendants( node_id )
-
+    
     def get_leaves( self,
                     node : Union[ int, str ] ) -> np.ndarray :
         '''
@@ -517,7 +517,7 @@ cdef class SuchTree :
                 to_visit.append( right_child )
         
         return np.array( self.np_buffer[ : leaf_count ] )
-
+    
     def get_leafs( self, node_id ) :
         '''
         Return an array of ids of all leaf nodes descendent from a given node.
@@ -621,6 +621,216 @@ cdef class SuchTree :
                 to_visit.append( right_child )
         
         return np.array( self.np_buffer[ : node_count ] )
+    
+    # ====== Node test methods ======    
+    
+    def is_leaf( self,
+                 node : Union[ int, str ] ) -> bool :
+        '''
+        Test if a node is a leaf node.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            bool : True if node is a leaf, False otherwise
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        node_id = self._validate_node( node )
+        return self._is_leaf( node_id )
+    
+    def is_internal( self,
+                     node : Union[ int, str ] ) -> bool :
+        '''
+        Test if a node is an internal node.
+        
+        Renamed from is_internal_node() for consistency.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            bool : True if node is internal, False otherwise
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        node_id = self._validate_node( node )
+        return not self._is_leaf( node_id )
+    
+    def is_internal_node( self, node_id ) :
+        '''
+        Returns True if node_id is an internal node, False otherwise.
+        '''
+        # FIXME : Not sure if this will work as a pass-through for a generator
+        warn( 'SuchTree.is_internal_node is depricated in favor of SuchTree.is_internal',
+              category=DeprecationWarning, stacklevel=2 )
+        return not self._is_leaf( node_id )
+    
+    @cython.boundscheck(False)
+    cdef bint _is_leaf( self, int node_id ) nogil :
+        if self.data[node_id].left_child == -1 :
+            return True
+        else :
+            return False
+    
+    def is_ancestor( self,
+                     ancestor   : Union[ int, str ],
+                     descendant : Union[ int, str ] ) -> int :
+        '''
+        Test ancestral relationship between two nodes.
+        
+        Args
+            ancestor   : Potential ancestor node (ID or name)
+            descendant : Potential descendant node (ID or name)
+            
+        Returns
+            int :  1 if ancestor is ancestor of descendant,
+                  -1 if descendant is ancestor of ancestor,
+                   0 if neither is ancestor of the other
+                
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
+        '''
+        ancestor_id, descendant_id = self._validate_node_pair( ancestor, descendant )
+        return self._is_ancestor( ancestor_id, descendant_id )
+
+    def is_descendant( self,
+                       descendant : Union[ int, str ],
+                       ancestor   : Union[ int, str ] ) -> bool:
+        '''
+        Test if descendant is a descendant of ancestor.
+        
+        New method for clarity - complements is_ancestor().
+        
+        Args
+            descendant : Potential descendant node (ID or name)
+            ancestor   : Potential ancestor node (ID or name)
+            
+        Returns
+            bool : True if descendant is a descendant of ancestor
+            
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
+        '''
+        ancestor_id, descendant_id = self._validate_node_pair( ancestor, descendant )
+        return self._is_ancestor( ancestor_id, descendant_id ) == 1
+
+    @cython.boundscheck(False)
+    cdef int _is_ancestor( self, int a, int b ) nogil :
+        cdef int i
+        cdef int n
+        
+        # is a an ancestor of b?
+        i = b
+        while True :
+            n = self.data[i].parent
+            if n == -1 :
+                break
+            if n == a :
+                return 1
+            i = n
+        
+        # is b an ancestor of a?
+        i = a
+        while True :
+            n = self.data[i].parent
+            if n == -1 :
+                break
+            if n == b :
+                return -1
+            i = n
+        
+        # or neither?
+        return 0
+
+    def is_root( self,
+                 node : Union[ int, str ] ) -> bool :
+        '''
+        Test if a node is the root node.
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            bool : True if node is the root
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        node_id = self._validate_node( node )
+        return node_id == self.root_node
+
+    def is_sibling( self,
+                    node1 : Union[ int, str ],
+                    node2 : Union[ int, str ] ) -> bool :
+        '''
+        Test if two nodes are siblings (share the same parent).
+        
+        Args
+            node1 : First node (ID or name)
+            node2 : Second node (ID or name)
+            
+        Returns
+            bool : True if nodes are siblings
+            
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
+        '''
+        node1_id, node2_id = self._validate_node_pair( node1, node2 )
+        
+        # Root node has no siblings
+        if node1_id == self.root_node or node2_id == self.root_node :
+            return False
+        
+        parent1 = self.data[node1_id].parent
+        parent2 = self.data[node2_id].parent
+        
+        return parent1 == parent2 and parent1 != -1
+
+    def has_children( self,
+                      node : Union[ int, str ] ) -> bool :
+        '''
+        Test if a node has children (i.e., is not a leaf).
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            bool : True if node has children
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        return self.is_internal(node)
+
+    def has_parent( self,
+                    node : Union[ int, str ] ) -> bool :
+        '''
+        Test if a node has a parent (i.e., is not the root).
+        
+        Args
+            node : Node ID or leaf name
+            
+        Returns
+            bool : True if node has a parent
+            
+        Raises
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
+        '''
+        return not self.is_root(node)
+    
+    # ====== Distance methods ======
 
     def get_bipartition( self, node_id, by_id=False ) :
         '''
@@ -769,78 +979,7 @@ cdef class SuchTree :
             i = self.data[i].parent
         return d
     
-    def is_leaf( self, node_id ) :
-        '''
-        Returns True if node_id is a leaf node, False otherwise.
-        '''
-        if not isinstance( node_id, Integral ) :
-            raise Exception( 'node_id must be an integer.' )
         
-        return self._is_leaf( node_id )
-    
-    def is_internal_node( self, node_id ) :
-        '''
-        Returns True if node_id is an internal node, False otherwise.
-        '''
-        if not isinstance( node_id, Integral ) :
-            raise Exception( 'node_id must be an integer.' )
-        
-        return not self._is_leaf( node_id )
-
-    @cython.boundscheck(False)
-    cdef bint _is_leaf( self, int node_id ) nogil :
-        if self.data[node_id].left_child == -1 :
-            return True
-        else :
-            return False
-
-    def is_ancestor( self, a, b ) :
-        '''
-        Tristate : returns 1 if a is an ancestor of b, -1 if b is an
-        ancestor of a, or 0 otherwise. Accepts node_ids or leaf names,
-        but only node_ids can be used for internal nodes.
-        '''
-        if isinstance( a, str ) :
-            try :
-                a = self.leafs[a]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + a )
-        if isinstance( b, str ) :
-            try :
-                b = self.leafs[b]
-            except KeyError :
-                raise Exception( 'Leaf name not found : ' + b )
- 
-        return self._is_ancestor( a, b )
-        
-    @cython.boundscheck(False)
-    cdef int _is_ancestor( self, int a, int b ) nogil :
-        cdef int i
-        cdef int n
-        
-        # is a an ancestor of b?
-        i = b
-        while True :
-            n = self.data[i].parent
-            if n == -1 :
-                break
-            if n == a :
-                return 1
-            i = n
-        
-        # is b an ancestor of a?
-        i = a
-        while True :
-            n = self.data[i].parent
-            if n == -1 :
-                break
-            if n == b :
-                return -1
-            i = n
-        
-        # or neither?
-        return 0
-    
     def mrca( self, a, b ) :
         '''
         Return the id of the most recent common ancestor of two nodes
@@ -1269,9 +1408,9 @@ cdef class SuchTree :
                                'mrca_to_root' : mrca_to_root,
                                'a_to_mrca'    : a_to_mrca,
                                'b_to_mrca'    : b_to_mrca } )
-
+    
     # ====== Validation helper functions ======
-
+    
     def _validate_node( self,
                         node : Union[ int, str ] ) -> int :
         '''
@@ -1302,8 +1441,7 @@ cdef class SuchTree :
             raise InvalidNodeError( node_id, self.size )
         
         return node_id
-
-
+    
     def _validate_node_pair( self,
                              a : Union[ int, str ],
                              b : Union[ int, str ] ) -> tuple[ int, int ] :
@@ -1319,8 +1457,7 @@ cdef class SuchTree :
         '''
 
         return self._validate_node(a), self._validate_node(b)
-
-
+    
     def _validate_leaf_node( self,
                              node : Union[ int, str ] ) -> int :
         '''
@@ -1344,8 +1481,7 @@ cdef class SuchTree :
                                     message='Node {node_id} is not a leaf node'.format( node_id=str(node_id) ) )
         
         return node_id
-
-
+    
     def _validate_internal_node( self,
                                  node : Union[int, str]) -> int :
         '''
@@ -1369,8 +1505,7 @@ cdef class SuchTree :
                                     message='Node {node_id} is not an internal node'.format( node_id=str(node_id) ) )
         
         return node_id
-
-
+    
     def _convert_to_leaf_names( self,
                                 node_ids : list ) -> list[str] :
         '''        
@@ -2082,3 +2217,6 @@ cdef class SuchLinkedTrees :
                 row_id = self.table[i].links[j]
                 col.append( row_id )
             print( 'column', i, ':', ','.join( map( str, col ) ) )
+
+
+
