@@ -10,7 +10,7 @@ cimport numpy as np
 import pandas as pd
 from scipy.linalg.cython_lapack cimport dsyev
 from numbers import Integral, Real
-from typing import Union, Dict, Tuple, Generator, Optional
+from typing import Any, Union, Dict, Tuple, Generator, Optional
 
 from warnings import warn
 from exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
@@ -1645,7 +1645,6 @@ cdef class SuchTree :
         '''
         warn( 'SuchTree.in_order is depricated in favor of SuchTree.traverse_inorder',
               category=DeprecationWarning, stacklevel=2 )
-         
         return self.traverse_inorder 
 
     def traverse_preorder( self,
@@ -1904,7 +1903,270 @@ cdef class SuchTree :
                 stack.append( ( left_child,  next_dist ) )
     
     # ====== Graph and matrix methods ======
+    
+    def adjacency_matrix( self,
+                          from_node : Union[ int, str ] = None ) -> Dict[ str, Any ] :
+        '''
+        Build the graph adjacency matrix of the tree or subtree.
+        
+        Renamed from adjacency().
+        
+        Args
+            from_node : Root node for subtree (default: tree root)
             
+        Returns
+            Dict[ str, Any ] : Dictionary with keys:
+                - 'adjacency_matrix' : np.ndarray of edge weights
+                - 'node_ids'         : np.ndarray of corresponding node IDs
+                
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        # Get all nodes in the subtree
+        if self.np_buffer is None :
+            self.np_buffer = np.ndarray( self.size, dtype=int )
+        
+        to_visit = [start_node]
+        node_count = 0
+        
+        for current_id in to_visit :
+            self.np_buffer[node_count] = current_id
+            node_count += 1
+            
+            left_child, right_child = self.get_children(current_id)
+            if left_child != -1 :
+                to_visit.append(left_child)
+                to_visit.append(right_child)
+        
+        node_ids   = np.array( self.np_buffer[ : node_count ] )
+        adj_matrix = np.zeros( ( node_count, node_count ), dtype=float )
+        
+        # Fill adjacency matrix
+        for i in range( node_count ) :
+            node_id   = node_ids[i]
+            parent_id = self.data[node_id].parent
+            
+            if parent_id == -1 :  # Root node
+                continue
+                
+            distance = self.data[node_id].distance
+            if distance == 0 :
+                distance += self.polytomy_epsilon
+            
+            # Find parent index in the node list
+            parent_idx = np.where(node_ids == parent_id)[0]
+            if len( parent_idx ) > 0 :
+                parent_idx = parent_idx[0]
+                adj_matrix[i, parent_idx] = distance
+                adj_matrix[parent_idx, i] = distance  # Symmetric
+        
+        return {
+            'adjacency_matrix' : adj_matrix,
+            'node_ids'         : node_ids
+        }
+
+    def adjacency( self, int node=-1 ) :
+        '''
+        The graph adjacency matrix of the tree. If parameter 
+        node is given, return graph adjacency matrix of the
+        subtree descendent from node_id.
+        '''
+        warn( 'SuchTree.adjacency is depricated in favor of SuchTree.adjacency_matrix',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.adjacency_matrix( from_node=node )
+
+    def laplacian_matrix( self,
+                          from_node : Union[ int, str ] = None ) -> Dict[ str, Any ] :
+        '''
+        Build the graph Laplacian matrix of the tree or subtree.
+        
+        Renamed from laplacian().
+        
+        Args
+            from_node : Root node for subtree (default: tree root)
+            
+        Returns
+            Dict[ str, Any ] : Dictionary with keys:
+                - 'laplacian' : np.ndarray of Laplacian matrix
+                - 'node_ids'  : np.ndarray of corresponding node IDs
+                
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        # Get adjacency matrix first
+        adj_result = self.adjacency_matrix(start_node)
+        adj_matrix = adj_result['adjacency_matrix']
+        node_ids   = adj_result['node_ids']
+        
+        # Compute Laplacian: L = D - A, where D is degree matrix
+        laplacian = np.zeros( adj_matrix.shape, dtype=float )
+        np.fill_diagonal( laplacian, adj_matrix.sum( axis=0 ) )
+        laplacian = laplacian - adj_matrix
+        
+        return {
+            'laplacian' : laplacian,
+            'node_ids'  : node_ids
+        }
+
+    def laplacian( self, int node=-1 ) :
+        '''
+        The graph Laplacian matrix of the tree, or if the parameter
+        node is given, return the graph Laplacian matrix of the 
+        subtree decendent from node.
+        '''
+        warn( 'SuchTree.laplacian is depricated in favor of SuchTree.laplacian_matrix',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.laplacian_matrix( from_node=node )
+
+    def incidence_matrix( self,
+                          from_node : Union[ int, str ] = None ) -> Dict[ str, Any ] :
+        '''
+        Build the incidence matrix of the tree or subtree.
+        
+        Args
+            from_node : Root node for subtree (default: tree root)
+            
+        Returns
+            Dict[ str, Any ] : Dictionary with keys :
+                - 'incidence_matrix' : np.ndarray where rows=nodes, cols=edges
+                - 'node_ids'         : np.ndarray of node IDs
+                - 'edge_list'        : List of (parent, child) tuples
+                
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        # Get all nodes and edges in subtree
+        if self.np_buffer is None:
+            self.np_buffer = np.ndarray( self.size, dtype=int )
+        
+        to_visit = [start_node]
+        node_count = 0
+        edges = []
+        
+        for current_id in to_visit :
+            self.np_buffer[node_count] = current_id
+            node_count += 1
+            
+            parent_id = self.data[current_id].parent
+            if parent_id != -1:  # Not root
+                edges.append((parent_id, current_id))
+            
+            left_child, right_child = self.get_children(current_id)
+            if left_child != -1:
+                to_visit.append(left_child)
+                to_visit.append(right_child)
+        
+        node_ids = np.array(self.np_buffer[:node_count])
+        num_edges = len(edges)
+        
+        # Build incidence matrix
+        incidence = np.zeros((node_count, num_edges), dtype=int)
+        
+        for edge_idx, (parent_id, child_id) in enumerate(edges) :
+            parent_idx = np.where(node_ids == parent_id )[0][0]
+            child_idx  = np.where(node_ids == child_id  )[0][0]
+            
+            incidence[ parent_idx, edge_idx] =  1   # Outgoing edge
+            incidence[ child_idx,  edge_idx] = -1   # Incoming edge
+        
+        return {
+            'incidence_matrix' : incidence,
+            'node_ids'         : node_ids,
+            'edge_list'        : edges
+        }
+
+    def distance_matrix( self,
+                         nodes: list = None ) -> Dict[ str, Any ] :
+        '''
+        Build a distance matrix for specified nodes. Wraps pairwise_distances.
+        
+        Args
+            nodes : List of nodes (IDs or names). If None, uses all leaves.
+            
+        Returns
+            Dict[ str, Any ] : Dictionary with keys :
+                - 'distance_matrix' : np.ndarray of pairwise distances
+                - 'node_ids'        : np.ndarray of corresponding node IDs
+                - 'node_names'      : List of node names (if applicable)
+                
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : If any node ID is out of bounds
+        '''
+        if nodes is None :
+            # Use all leaf nodes
+            node_ids   = self.leaf_node_ids
+            node_names = [self.leaf_nodes[nid] for nid in node_ids]
+        else :
+            node_ids   = np.array( [ self._validate_node(node) for node in nodes ] )
+            node_names = []
+            for node_id in node_ids :
+                if self._is_leaf(node_id) :
+                    node_names.append( self.leaf_nodes[node_id] )
+                else:
+                    node_names.append( f'node_{node_id}' )
+        
+        dist_matrix = self.pairwise_distances( nodes )
+        
+        return {
+            'distance_matrix' : dist_matrix,
+            'node_ids'        : node_ids,
+            'node_names'      : node_names
+        }
+    
+    def degree_sequence( self,
+                         from_node : Union[ int, str ] = None ) -> Dict[ str, Any ] :
+        '''
+        Compute the degree sequence of the tree.
+        
+        Args
+            from_node : Root node for subtree (default: tree root)
+        
+        Returns
+            Dict[ str, Any ] : Dictionary with keys :
+                - 'degrees'    : np.ndarray of node degrees
+                - 'node_ids'   : np.ndarray of corresponding node IDs
+                - 'max_degree' : Maximum degree
+                - 'min_degree' : Minimum degree
+                
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        adj_result = self.adjacency_matrix( from_node )
+        adj_matrix = adj_result[ 'adjacency_matrix' ]
+        node_ids   = adj_result[ 'node_ids' ]
+        
+        # Degree is sum of each row (or column, since symmetric)
+        degrees = np.sum( adj_matrix > 0, axis=1 )  # Count non-zero entries
+        
+        return {
+            'degrees'    : degrees,
+            'node_ids'   : node_ids,
+            'max_degree' : degrees.max(),
+            'min_degree' : degrees.min()
+        }
+    
+    # ====== SuchLinkedTree methods ======
+
     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :
         '''
         Attaches a leaf node to SuchLinkedTrees link matrix column.
@@ -1928,106 +2190,157 @@ cdef class SuchTree :
             col_ids[n] = self.data[ leaf ].right_child
         return col_ids
         
-    def adjacency( self, int node=-1 ) :
+    # ====== Export and integration methods ======
+ 
+    def to_networkx_nodes( self,
+                           from_node : Union[ int, str ] = None ) -> Generator[ Tuple[ int,
+                                                                                       Dict[ str, Any ] ],
+                                                                                None,
+                                                                                None ] :
         '''
-        The graph adjacency matrix of the tree. If parameter 
-        node is given, return graph adjacency matrix of the
-        subtree descendent from node_id.
+        Generate node data compatible with NetworkX.
+        
+        Renamed from nodes_data().
+        
+        Args
+            from_node : Root node for subtree (default: tree root)
+            
+        Yields
+            Tuple[ int, Dict[ str, Any ] ] : ( node_id, attributes_dict) pairs
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
         '''
-        cdef unsigned int i
-        cdef unsigned int j
-        cdef unsigned int k
-        cdef unsigned int node_id
-        cdef unsigned int parent
-        cdef float distance
-        cdef int l
-        cdef int r
-        cdef unsigned int n = 0
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
         
-        # by default, start from the root node
-        if node == -1 :
-            node = self.root
-        
-        # bail if the node isn't in our tree
-        if node > self.length or node < -1 :
-            raise Exception( 'Node id out of range.', node )
-        
-        self.np_buffer = np.ndarray( self.length, dtype=int )
-        
-        to_visit = [ node ]
-        for i in to_visit :
-            self.np_buffer[n] = i
-            n += 1
-            l,r = self.get_children( i )
-            if l != -1 :
-                to_visit.append( l )
-                to_visit.append( r )
-        
-        ajmatrix = np.zeros( (n,n), dtype=float )
-        
-        for i in xrange( n ) :
-            node_id  = self.np_buffer[i]
-            parent   = self.data[node_id].parent
-            if parent == -1 : continue
+        for node_id in self.get_descendants(start_node) :
+            attributes = {}
+            
+            # Add node type
+            if self._is_leaf(node_id) :
+                attributes['type']  = 'leaf'
+                attributes['label'] = self.leaf_nodes[node_id]
+            else :
+                attributes['type']  = 'internal'
+                attributes['label'] = f'node_{node_id}'
+            
+            # Add support value if available
+            support = self.data[node_id].support
+            if support != -1 :
+                attributes['support'] = support
+            
+            # Add distance to parent
             distance = self.data[node_id].distance
-            if distance == 0 : distance += self.epsilon
-            for j,k in enumerate( self.np_buffer[:n] ) :
-                if k == parent :
-                    ajmatrix[ i,j ] = distance
-                    ajmatrix[ j,i ] = distance
-        
-        return { 'adjacency_matrix' : ajmatrix,
-                 'node_ids' : self.np_buffer[:n] }
-        
-    def laplacian( self, int node=-1 ) :
-        '''
-        The graph Laplacian matrix of the tree, or if the parameter
-        node is given, return the graph Laplacian matrix of the 
-        subtree decendent from node.
-        '''
-        if node == -1 :
-            node = self.root
-        
-        aj, node_ids = self.adjacency( node=node ).values()
-        lp = np.zeros( aj.shape )
-        np.fill_diagonal( lp, aj.sum( axis=0 ) )
-        lp = lp - aj
-        
-        return { 'laplacian' : lp,
-                 'node_ids' : node_ids }
-        
-    def dump_array( self ) :
-        '''
-        Print the whole tree. (WARNING : may be huge and useless.)
-        '''
-        for n in range(self.length) :
-            print( 'id : %d ->' % n )
-            print( '   distance    : %0.3f' % self.data[n].distance    )
-            print( '   parent      : %d'    % self.data[n].parent      )
-            print( '   left child  : %d'    % self.data[n].left_child  )
-            print( '   right child : %d'    % self.data[n].right_child )
-        
+            if distance != -1 :
+                attributes['distance_to_parent'] = distance
+            
+            # Add distance to root
+            attributes['distance_to_root'] = self.distance_to_root(node_id)
+            
+            # Add depth
+            depth = 0
+            current = node_id
+            while current != self.root_node and self.data[current].parent != -1 :
+                current = self.data[current].parent
+                depth += 1
+            attributes['depth'] = depth
+            
+            yield (node_id, attributes)
+    
     def nodes_data( self ) :
         '''
         Generator for the node data in the tree, compatible with networkx.
         '''
-        for n in range(self.length) :
-            if self.data[n].left_child == -1 :
-                leaf_name = self.leafnodes[n]
-            else :
-                leaf_name = ''
-            yield ( n, { 'label' : leaf_name } )
-    
-    def edges_data( self ) :
+        warn( 'SuchTree.nodes_data is depricated in favor of SuchTree.to_networkx_nodes',
+              category=DeprecationWarning, stacklevel=2 )
+        return self.to_networkx_nodes()
+
+    def to_networkx_edges( self,
+                           from_node: Union[ int, str ] = None ) -> Generator[ Tuple[ int,
+                                                                                      int,
+                                                                                      Dict[ str,
+                                                                                            Any ] ],
+                                                                               None,
+                                                                               None ] :
         '''
-        Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
-        '''
-        for n in range(self.length) :
-            # no edges beyond the root node
-            if self.data[n].parent == -1 : continue
-            yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )
+        Generate edge data compatible with NetworkX.
         
-    def relationships( self ) :
+        Renamed from edges_data().
+        
+        Args
+            from_node : Root node for subtree (default: tree root)
+            
+        Yields
+            Tuple[ int, int, Dict[ str, Any ] ] : tuples like ( child_id,
+                                                                parent_id,
+                                                                attributes_dict)
+        
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        for node_id in self.get_descendants(start_node) :
+            parent_id = self.data[node_id].parent
+            
+            if parent_id == -1 :  # Root node has no parent
+                continue
+            
+            attributes = {
+                'weight': self.data[node_id].distance,
+                'length': self.data[node_id].distance
+            }
+            
+            # Add support value if this is an edge to an internal node
+            if not self._is_leaf(node_id) :
+                support = self.data[node_id].support
+                if support != -1 :
+                    attributes['support'] = support
+            
+            yield (node_id, parent_id, attributes)
+
+    def to_networkx_graph( self,
+                           from_node : Union[ int, str ] = None ) :
+        '''
+        Create a NetworkX Graph object from the tree.
+        
+        Args
+            from_node : Root node for subtree (default: tree root)
+            
+        Returns
+            networkx.Graph : NetworkX graph representation
+            
+        Raises
+            ImportError       : If NetworkX is not installed
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        try :
+            import networkx as nx
+        except ImportError :
+            raise ImportError( 'NetworkX is required for to_networkx_graph()' )
+        
+        G = nx.Graph()
+        
+        # Add nodes with attributes
+        for node_id, attributes in self.to_networkx_nodes(from_node) :
+            G.add_node(node_id, **attributes)
+        
+        # Add edges with attributes
+        for child_id, parent_id, attributes in self.to_networkx_edges(from_node) :
+            G.add_edge(child_id, parent_id, **attributes)
+        
+        return G
+
+    def relationships( self ) -> pd.DataFrame :
         '''
         Return a Pandas DataFrame of describing the relationships among leafs in the tree.
         '''
@@ -2050,6 +2363,78 @@ cdef class SuchTree :
                                'a_to_mrca'    : a_to_mrca,
                                'b_to_mrca'    : b_to_mrca } )
     
+    def to_newick( self,
+                   from_node : Union[ int, str ] = None,
+                                                   include_support   : bool = True, 
+                                                   include_distances : bool = True ) -> str :
+        '''
+        Export tree or subtree to Newick format.
+        
+        Args
+            from_node         : Root node for subtree (default: tree root)
+            include_support   : Include support values in output
+            include_distances : Include branch lengths in output
+            
+        Returns
+            str : Newick format string
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        def _node_to_newick( node_id: int ) -> str :
+            left_child, right_child = self.get_children(node_id)
+            
+            if left_child == -1 :  # Leaf node
+                result = self.leaf_nodes[node_id]
+            else :  # Internal node
+                left_newick = _node_to_newick(left_child)
+                right_newick = _node_to_newick(right_child)
+                result = f'({left_newick},{right_newick})'
+                
+                # Add support value for internal nodes
+                if include_support :
+                    support = self.data[node_id].support
+                    if support != -1 :
+                        result += str(support)
+            
+            # Add branch length (distance to parent)
+            if include_distances and node_id != start_node :  # Don't add distance for root
+                distance = self.data[node_id].distance
+                if distance != -1 :
+                    result += f':{distance}'
+            
+            return result
+        
+        return _node_to_newick(start_node) + ';'
+
+    def dump_array( self ) :
+        '''
+        Print the whole tree. (WARNING : may be huge and useless.)
+        '''
+        for n in range(self.length) :
+            print( 'id : %d ->' % n )
+            print( '   distance    : %0.3f' % self.data[n].distance    )
+            print( '   parent      : %d'    % self.data[n].parent      )
+            print( '   left child  : %d'    % self.data[n].left_child  )
+            print( '   right child : %d'    % self.data[n].right_child )
+        
+   
+    def edges_data( self ) :
+        '''
+        Generator for the edge (i.e. branch) data in the tree, compatible with networkx.
+        '''
+        for n in range(self.length) :
+            # no edges beyond the root node
+            if self.data[n].parent == -1 : continue
+            yield ( n, self.data[n].parent, { 'weight' : self.data[n].distance } )
+        
+
     # ====== Validation helper functions ======
     
     def _validate_node( self,
@@ -2858,6 +3243,7 @@ cdef class SuchLinkedTrees :
                 row_id = self.table[i].links[j]
                 col.append( row_id )
             print( 'column', i, ':', ','.join( map( str, col ) ) )
+
 
 
 
