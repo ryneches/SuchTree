@@ -3,13 +3,14 @@ from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
 from dendropy import Tree
 from random import sample
 from itertools import combinations
+from collections import deque
 from pathlib import Path
 import numpy as np
 cimport numpy as np
 import pandas as pd
 from scipy.linalg.cython_lapack cimport dsyev
 from numbers import Integral, Real
-from typing import Union, Dict, Tuple, Generator
+from typing import Union, Dict, Tuple, Generator, Optional
 
 from warnings import warn
 from exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
@@ -99,6 +100,7 @@ cdef class SuchTree :
     cdef unsigned int root
     cdef np.float64_t epsilon
     cdef object leafs
+    cdef object internal_nodes
     cdef object leafnodes
     cdef object np_buffer
     cdef object RED
@@ -116,7 +118,7 @@ cdef class SuchTree :
         self.epsilon = np.finfo( np.float64 ).eps
         
         url_strings = [ 'http://', 'https://', 'ftp://' ]
-
+        
         if any( [ tree_input.startswith(x) for x in url_strings ] ) :
             t = Tree.get( url=tree_input,
                           schema='newick',
@@ -134,7 +136,7 @@ cdef class SuchTree :
                           schema='newick',
                           preserve_underscores=True,
                           suppress_internal_node_taxa=True )
-       
+        
         t.resolve_polytomies()
         size = len( t.nodes() )
         # allocate some memory
@@ -148,6 +150,7 @@ cdef class SuchTree :
         
         self.leafs = {}
         self.leafnodes = {}
+        self.internal_nodes = []
         for node_id,node in enumerate( t.inorder_node_iter() ) :
             node.node_id = node_id
             if node_id >= size :
@@ -155,6 +158,8 @@ cdef class SuchTree :
             if node.taxon :
                 self.leafs[ node.taxon.label ] = node_id
                 self.leafnodes[ node_id ] = node.taxon.label
+            else :
+                self.internal_nodes.append( node_id )
         
         for node_id,node in enumerate( t.inorder_node_iter() ) :
             if not node.parent_node :
@@ -247,17 +252,14 @@ cdef class SuchTree :
     
     @property
     def internal_nodes( self ) -> np.ndarray :
-        '''Array of internal node IDs (cached property).'''
-        if not hasattr( self, '_cached_internal_nodes' ) :
-            self._cached_internal_nodes = self.get_internal_nodes()
-        return self._cached_internal_nodes
+        '''Array of internal node IDs.'''
+        return self.internal_nodes
     
     @property
     def all_nodes( self ) -> np.ndarray :
-        '''Array of all node IDs in the tree (cached property).'''
-        if not hasattr( self, '_cached_all_nodes' ) :
-            self._cached_all_nodes = self.get_nodes()
-        return self._cached_all_nodes
+        '''Array of all node IDs in the tree.'''
+        return np.concatiante( np.array( self.leaves.values() ),
+                               np.array( self.internal_nodes ) )
     
     @property
     def leaf_node_ids( self ) -> np.ndarray :
@@ -1248,7 +1250,7 @@ cdef class SuchTree :
         '''
         warn( 'SuchTree.mrca is depricated in favor of SuchTree.common_ancestor',
               category=DeprecationWarning, stacklevel=2 )
-        visited = np.zeros( self.depth, dtyoe=int )
+        visited = np.zeros( self.depth, dtype=int )
         return self._mrca( visited, a, b )
     
     def bipartition( self,
@@ -1600,45 +1602,309 @@ cdef class SuchTree :
         return path_a + [mrca] + list(reversed(path_b))  
     
     # ====== Traversal methods ======
-        
-    def pre_order( self ) :
+
+    def traverse_inorder( self,
+                          include_distances : bool = True) -> Generator[ Union[ int,
+                                                                                Tuple[ int,
+                                                                                       float] ],
+                                                                                None,
+                                                                                None ] :
         '''
-        Generator for traversing the tree in pre-order.
-        '''
-        stack = [ self.root ]
+        Traverse the tree in inorder (left, root, right).
         
-        while len(stack) > 0 :
-            i = stack.pop()
-            r = self.data[i].right_child
-            l = self.data[i].left_child
-            if r != -1 :
-                stack.append(r)
-            if l != -1 :
-                stack.append(l)
-            yield i
-    
+        Renamed from in_order().
+        
+        Args
+            include_distances : If True, yield (node_id, distance_to_parent) tuples
+                                If False, yield only node_ids
+            
+        Yields
+            Union[ int, Tuple[ int, float ] ] : Node ID or (node_id, distance) tuple
+        '''
+        current = self.root_node
+        stack = []
+        
+        while True :
+            if current != -1 :
+                stack.append(current)
+                current = self.data[current].left_child
+            elif stack :
+                current = stack.pop()
+                if include_distances :
+                    yield ( current, self.data[current].distance )
+                else :
+                    yield current
+                current = self.data[current].right_child
+            else :
+                break
+
     def in_order( self, distances=True ) :
         '''
         Generator for traversing the tree in order, yilding tuples
         of node_ids with distances to parent nodes.
         '''
-        i = self.root
-        stack = []
+        warn( 'SuchTree.in_order is depricated in favor of SuchTree.traverse_inorder',
+              category=DeprecationWarning, stacklevel=2 )
+         
+        return self.traverse_inorder 
+
+    def traverse_preorder( self,
+                           from_node : Union[ int, str ] = None ) -> Generator[ int, None, None ] :
+        '''
+        Traverse the tree in preorder (root, left, right).
         
-        while True :
-            if i != -1 :
-                stack.append( i )
-                i = self.data[i].left_child
-            elif stack :
-                i = stack.pop()
-                if distances :
-                    yield i, self.data[i].distance
-                else :
-                    yield i
-                i = self.data[i].right_child
+        Renamed from pre_order(), plus new from_node parameter.
+        
+        Args
+            from_node : Starting node (default: root)
+            
+        Yields
+            int : Node IDs in preorder traversal
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        stack = [start_node]
+        
+        while stack :
+            current = stack.pop()
+            right_child = self.data[current].right_child
+            left_child  = self.data[current].left_child
+            
+            if right_child != -1 :
+                stack.append(right_child)
+            if left_child != -1 :
+                stack.append(left_child)
+            
+            yield current
+
+    def pre_order( self ) :
+        '''
+        Generator for traversing the tree in pre-order.
+        '''
+        warn( 'SuchTree.pre_order is depricated in favor of SuchTree.traverse_preorder',
+              category=DeprecationWarning, stacklevel=2 )
+ 
+        return self.traverse_preorder
+
+    def traverse_postorder( self,
+                            from_node : Union[ int, str ] = None ) -> Generator[ int,
+                                                                                 None,
+                                                                                 None ] :
+        '''
+        Traverse the tree in postorder (left, right, root).
+        
+        Args
+            from_node : Starting node (default: root)
+            
+        Yields
+            int : Node IDs in postorder traversal
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        stack = []
+        last_visited = None
+        current = start_node
+
+        while stack or current != -1 :
+            if current != -1 :
+                stack.append(current)
+                current = self.data[current].left_child
             else :
-                break
-      
+                peek_node = stack[-1]
+                right_child = self.data[peek_node].right_child
+                
+                if right_child != -1 and last_visited != right_child :
+                    current = right_child
+                else :
+                    yield peek_node
+                    last_visited = stack.pop()
+    
+    def traverse_levelorder( self,
+                             from_node: Union[ int, str ] = None ) -> Generator[ int,
+                                                                                 None,
+                                                                                 None ] :
+        '''
+        Traverse the tree level by level (breadth-first).
+        
+        Args
+            from_node : Starting node (default: root)
+            
+        Yields
+            int : Node IDs in level order traversal
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        queue = deque([start_node])
+        
+        while queue :
+            current = queue.popleft()
+            yield current
+            
+            left_child  = self.data[current].left_child
+            right_child = self.data[current].right_child
+            
+            if left_child != -1 :
+                queue.append(left_child)
+            if right_child != -1 :
+                queue.append(right_child)
+
+    def traverse_leaves_only( self,
+                              from_node : Union[ int, str ] = None ) -> Generator[ int,
+                                                                                   None,
+                                                                                   None ] :
+        '''
+        Traverse only the leaf nodes.
+        
+        Args
+            from_node : Starting node (default: root)
+            
+        Yields
+            int : Leaf node IDs
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found  
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        for node_id in self.traverse_preorder(start_node) :
+            if self._is_leaf(node_id):
+                yield node_id
+    
+    def traverse_internal_only( self,
+                                from_node : Union[ int, str ] = None ) -> Generator[ int,
+                                                                                     None,
+                                                                                     None ] :
+        '''
+        Traverse only the internal nodes.
+        
+        Args
+            from_node : Starting node (default: root)
+            
+        Yields
+            int : Internal node IDs
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        for node_id in self.traverse_preorder(start_node) :
+            if not self._is_leaf(node_id) :
+                yield node_id
+
+    def traverse_with_depth( self,
+                             from_node : Union[ int, str ] = None ) -> Generator[ Tuple[ int,
+                                                                                         int ],
+                                                                                  None,
+                                                                                  None ] :
+        '''
+        Traverse the tree with depth information.
+        
+        Args
+            from_node : Starting node (default: root)
+            
+        Yields
+            Tuple[int, int] : (node_id, depth) pairs
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        stack = [(start_node, 0)]  # (node_id, depth)
+        
+        while stack :
+            current, depth = stack.pop()
+            yield (current, depth)
+            
+            right_child = self.data[current].right_child
+            left_child = self.data[current].left_child
+            
+            if right_child != -1 :
+                stack.append( ( right_child, depth + 1 ) )
+            if left_child != -1 :
+                stack.append( ( left_child,  depth + 1 ) )
+
+    def traverse_with_distances( self,
+                                 from_node : Union[ int, str ] = None ) -> Generator[ Tuple[ int,
+                                                                                             float,
+                                                                                             float],
+                                                                                      None,
+                                                                                      None ] :
+        '''
+        Traverse the tree with distance information.
+
+        Args
+            from_node : Starting node (default: root)
+            
+        Yields
+            Tuple[ int, float, float ] : tuples ( node_id, 
+                                                  distance_to_parent, 
+                                                  distance_to_root)
+            
+        Raises
+            NodeNotFoundError : If from_node leaf name is not found
+            InvalidNodeError  : If from_node ID is out of bounds
+        '''
+        if from_node is None :
+            start_node = self.root_node
+        else :
+            start_node = self._validate_node(from_node)
+        
+        stack = [(start_node, 0.0)]  # (node_id, cumulative_distance_to_root)
+        
+        while stack :
+            current, dist_to_root = stack.pop()
+            dist_to_parent = self.data[current].distance
+            
+            yield ( current, dist_to_parent, dist_to_root )
+            
+            right_child = self.data[current].right_child
+            left_child  = self.data[current].left_child
+            
+            # Add distance to parent unless it's the root (-1 means root)
+            next_dist = dist_to_root + (dist_to_parent if dist_to_parent != -1 else 0)
+            
+            if right_child != -1 :
+                stack.append( ( right_child, next_dist ) )
+            if left_child != -1 :
+                stack.append( ( left_child,  next_dist ) )
+    
+    # ====== Graph and matrix methods ======
+            
     def link_leaf( self, unsigned int leaf_id, unsigned int col_id ) :
         '''
         Attaches a leaf node to SuchLinkedTrees link matrix column.
@@ -2592,5 +2858,6 @@ cdef class SuchLinkedTrees :
                 row_id = self.table[i].links[j]
                 col.append( row_id )
             print( 'column', i, ':', ','.join( map( str, col ) ) )
+
 
 
