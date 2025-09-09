@@ -23,6 +23,19 @@ try :
 except ImportError :
     with_igraph = False
 
+# === Deprication warning helper ===
+
+def _deprecation_warning( old_name : str,
+                          new_name : str,
+                          version  : str = '2.0' ) -> None :
+    '''Deprecation warning helper function.'''
+    warn(
+        f'{old_name} is deprecated and will be removed in SuchTree {version}.'
+        f'Use {new_name} instead.',
+        DeprecationWarning,
+        stacklevel=3
+    )
+
 cdef extern from 'stdint.h' :
     ctypedef unsigned long int uint64_t
     uint64_t UINT64_MAX
@@ -311,61 +324,6 @@ cdef class SuchTree :
     
         return self.RED
     
-    # ====== Depricated properties ======
-    
-    property length :
-        'The number of nodes in the tree.'
-        def __get__( self ) :
-            warn( 'SuchTree.length is depiracted in favor of SuchTree.size',
-                  category=DeprecationWarning, stacklevel=2 )
-            return self.length
-            
-    property n_leafs :
-        'The number of leafs in the tree.'
-        def __get__( self ) :
-            warn( 'SuchTree.n_leafs is depricated in favor of SuchTree.num_leafs',
-                  category=DeprecationWarning, stacklevel=2 )
-            return self.n_leafs
-            
-    property leafs :
-        'A dictionary mapping leaf names to leaf node ids.'
-        def __get__( self ) :
-            warn( 'SuchTree.leafs is depricated in favor of SuchTree.leaves',
-                  category=DeprecationWarning, stacklevel=2 )
-            return self.leafs
-    
-    property leafnodes :
-        'A dictionary mapping leaf node ids to leaf names.'
-        def __get__( self ) :
-            warn( 'SuchTree.leafnodes is depricated in favor of SuchTree.leaf_nodes',
-                  category=DeprecationWarning, stacklevel=2 )
-            return self.leafnodes
-
-    property root :
-        'The id of the root node.'
-        def __get__( self ) :
-            warn( 'SuchTree.root is depriacted in favor of SuchTree.root_node',
-                  category=DeprecationWarning, stacklevel=2 )
-            return self.root
-            
-    property polytomy_distance :
-        'Tiny, nonzero distance for polytomies in the adjacency matrix.'
-        def __get__( self ) :
-            warn( 'SuchTree.polytomy_distance is depricated in favor of SuchTree.polytomy.epsilon',
-                  category=DeprecationWarning, stacklevel=2 )
-            return self.epsilon
-        def __set__( self, np.float64_t new_epsilon ) :
-            warn( 'SuchTree.polytomy_distance is depricated in favor of SuchTree.polytomy.epsilon',
-                  category=DeprecationWarning, stacklevel=2 )
-            self.epsilon = new_epsilon
-    
-    @property
-    def RED( self ) -> Dict[ int, float ] :
-        'Alias for relative_evolutionary_divergence (deprecated).'''
-        warn( 'SuchTree.RED is deprecated in favor of SuchTree.relative_evolutionary_divergence', 
-              category=DeprecationWarning, stacklevel=2 )
-        return self.relative_evolutionary_divergence
-    
     # ====== Node query methods ======
     
     def get_parent( self,
@@ -430,16 +388,6 @@ cdef class SuchTree :
             yield parent_id
             node_id = parent_id
     
-    def get_lineage( self, query ) :
-        '''
-        Generator of parent nodes up to the root node. Will accept
-        node id of leaf name.
-        '''
-        # FIXME : Not sure if this will work as a pass-through for a generator
-        warn( 'SuchTree.get_lineage is depricated in favor of SuchTree.get_ancestors',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.get_ancestors( query )
-    
     def get_descendants( self,
                          node_id : int ) -> Generator[ int, None, None ] :
         '''
@@ -470,17 +418,6 @@ cdef class SuchTree :
                 to_visit.append( left_child  )
                 to_visit.append( right_child )
                 yield current_id
-    
-    def get_descendant_nodes( self, node_id ) :
-        '''
-        Generator for ids of all nodes descendent from a given node,
-        starting with the given node. Can only accept a node_ids, 
-        returns node_ids for internal and leaf nodes.
-        '''
-        # FIXME : Not sure if this will work as a pass-through for a generator
-        warn( 'SuchTree.get_lineage is depricated in favor of SuchTree.get_ancestors',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.get_descendants( node_id )
     
     def get_leaves( self,
                     node : Union[ int, str ] ) -> np.ndarray :
@@ -519,15 +456,6 @@ cdef class SuchTree :
                 to_visit.append( right_child )
         
         return np.array( self.np_buffer[ : leaf_count ] )
-    
-    def get_leafs( self, node_id ) :
-        '''
-        Return an array of ids of all leaf nodes descendent from a given node.
-        '''
-        # FIXME : Not sure if this will work as a pass-through for a generator
-        warn( 'SuchTree.get_leafs is depricated in favor of SuchTree.get_leaves',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.get_leaves( node_id )
     
     def get_support( self,
                      node : Union[ int, str ] ) -> float :
@@ -716,15 +644,6 @@ cdef class SuchTree :
         node_id = self._validate_node( node )
         return not self._is_leaf( node_id )
     
-    def is_internal_node( self, node_id ) :
-        '''
-        Returns True if node_id is an internal node, False otherwise.
-        '''
-        # FIXME : Not sure if this will work as a pass-through for a generator
-        warn( 'SuchTree.is_internal_node is depricated in favor of SuchTree.is_internal',
-              category=DeprecationWarning, stacklevel=2 )
-        return not self._is_leaf( node_id )
-    
     @cython.boundscheck(False)
     cdef bint _is_leaf( self, int node_id ) nogil :
         if self.data[node_id].left_child == -1 :
@@ -906,15 +825,6 @@ cdef class SuchTree :
         node_id = self._validate_node(node)
         return self._get_distance_to_root(node_id)
     
-    def get_distance_to_root( self, a ) :
-        '''
-        Return distance to root for a given node. Will accept node id
-        or a leaf name.
-        '''
-        warn( 'SuchTree.get_distance_to_root is depricated in favor of SuchTree.distance_to_root',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.distance_to_root( a )
-    
     @cython.boundscheck(False)
     cdef float _get_distance_to_root( self, node_id ) :
         '''
@@ -993,15 +903,6 @@ cdef class SuchTree :
         self._distances( pairs.shape[0], visited, pairs, result )
         return result
     
-    def distances( self, long[:,:] ids ) :
-        '''
-        Returns an array of distances between pairs of node ids,
-        which are expected as an (n,2) array of type int.
-        '''
-        warn( 'SuchTree.distances is depricated in favor of SuchTree.distances_bulk',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.distances_bulk( ids )
-        
     @cython.boundscheck(False)
     cdef void _distances( self, unsigned int length,
                                 long[:] visited,
@@ -1242,17 +1143,6 @@ cdef class SuchTree :
         visited = np.zeros( self.depth, dtype=int )
         return self._mrca( visited, node_a, node_b )
 
-    def mrca( self, a, b ) :
-        '''
-        Return the id of the most recent common ancestor of two nodes
-        if given ids. Leaf names or node_ids can be used for leafs,
-        but node_ids must be used for internal nodes.
-        '''
-        warn( 'SuchTree.mrca is depricated in favor of SuchTree.common_ancestor',
-              category=DeprecationWarning, stacklevel=2 )
-        visited = np.zeros( self.depth, dtype=int )
-        return self._mrca( visited, a, b )
-    
     def bipartition( self,
                      node  : Union[ int, str ],
                      by_id : bool = False ) -> frozenset :
@@ -1288,15 +1178,6 @@ cdef class SuchTree :
                 frozenset( right_leaves )
             ))
 
-    def get_bipartition( self, node_id, by_id=False ) :
-        '''
-        Find the two sets of leaf nodes partitioned at an internal
-        node in the tree.
-        '''
-        warn( 'SuchTree.get_bipartition is depricated in favor of SuchTree.bipartition',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.bipartition( node_id, by_id=by_id )
-    
     def bipartitions( self,
                       by_id : bool = False ) -> Generator[ frozenset, None, None ] :
         '''
@@ -1375,15 +1256,6 @@ cdef class SuchTree :
         
         # Should not happen with valid quartet
         raise TreeStructureError( 'Could not determine unique topology for quartet {nodes}'.format( nodes=nodes ) )
-    
-    def get_quartet_topology( self, a, b, c, d ) :
-        '''
-        For a given quartet of taxa, return the topology of the quartet
-        as a pair of tuples.
-        '''
-        warn( 'SuchTree.get_quartet_topology is depricated in favor of SuchTree.quartet_topology',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.quartet_topology( a, b, c, d )
     
     def quartet_topologies_by_name( self, quartets ) :
         '''
@@ -1559,7 +1431,6 @@ cdef class SuchTree :
         
         return result
     
-   
     def path_between_nodes(self, a: Union[int, str], b: Union[int, str]) -> List[int]:
         """Find the path between two nodes through their common ancestor.
         
@@ -1638,15 +1509,6 @@ cdef class SuchTree :
             else :
                 break
 
-    def in_order( self, distances=True ) :
-        '''
-        Generator for traversing the tree in order, yilding tuples
-        of node_ids with distances to parent nodes.
-        '''
-        warn( 'SuchTree.in_order is depricated in favor of SuchTree.traverse_inorder',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.traverse_inorder 
-
     def traverse_preorder( self,
                            from_node : Union[ int, str ] = None ) -> Generator[ int, None, None ] :
         '''
@@ -1682,15 +1544,6 @@ cdef class SuchTree :
                 stack.append(left_child)
             
             yield current
-
-    def pre_order( self ) :
-        '''
-        Generator for traversing the tree in pre-order.
-        '''
-        warn( 'SuchTree.pre_order is depricated in favor of SuchTree.traverse_preorder',
-              category=DeprecationWarning, stacklevel=2 )
- 
-        return self.traverse_preorder
 
     def traverse_postorder( self,
                             from_node : Union[ int, str ] = None ) -> Generator[ int,
@@ -1970,17 +1823,7 @@ cdef class SuchTree :
             'adjacency_matrix' : adj_matrix,
             'node_ids'         : node_ids
         }
-
-    def adjacency( self, int node=-1 ) :
-        '''
-        The graph adjacency matrix of the tree. If parameter 
-        node is given, return graph adjacency matrix of the
-        subtree descendent from node_id.
-        '''
-        warn( 'SuchTree.adjacency is depricated in favor of SuchTree.adjacency_matrix',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.adjacency_matrix( from_node=node )
-
+    
     def laplacian_matrix( self,
                           from_node : Union[ int, str ] = None ) -> Dict[ str, Any ] :
         '''
@@ -2019,17 +1862,7 @@ cdef class SuchTree :
             'laplacian' : laplacian,
             'node_ids'  : node_ids
         }
-
-    def laplacian( self, int node=-1 ) :
-        '''
-        The graph Laplacian matrix of the tree, or if the parameter
-        node is given, return the graph Laplacian matrix of the 
-        subtree decendent from node.
-        '''
-        warn( 'SuchTree.laplacian is depricated in favor of SuchTree.laplacian_matrix',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.laplacian_matrix( from_node=node )
-
+    
     def incidence_matrix( self,
                           from_node : Union[ int, str ] = None ) -> Dict[ str, Any ] :
         '''
@@ -2251,14 +2084,6 @@ cdef class SuchTree :
             
             yield (node_id, attributes)
     
-    def nodes_data( self ) :
-        '''
-        Generator for the node data in the tree, compatible with networkx.
-        '''
-        warn( 'SuchTree.nodes_data is depricated in favor of SuchTree.to_networkx_nodes',
-              category=DeprecationWarning, stacklevel=2 )
-        return self.to_networkx_nodes()
-
     def to_networkx_edges( self,
                            from_node: Union[ int, str ] = None ) -> Generator[ Tuple[ int,
                                                                                       int,
@@ -2553,7 +2378,155 @@ cdef class SuchTree :
                                         message='Node {node_id} is not a leaf'.format( node_id=str(node_id) ) )
             names.append( self.leaf_nodes[node_id] )
         return names
-   
+    
+    # === PROPERTY DEPRECATION WRAPPERS ===
+    
+    @property
+    def length( self ) -> int :
+        '''Deprecated : Use size instead.'''
+        _deprecation_warning( 'length property', 'size' )
+        return self.size
+    
+    @property
+    def leafs( self ) -> dict :
+        '''Deprecated : Use leaves instead.'''
+        _deprecation_warning( 'leafs property', 'leaves' )
+        return self.leaves
+
+    @property
+    def leafnodes( self ) -> dict :
+        '''Deprecated : Use leaf_nodes instead.'''
+        _deprecation_warning( 'leafnodes property', 'leaf_nodes' )
+        return self.leaf_nodes
+    
+    @property
+    def n_leafs( self ) -> int :
+        '''Deprecated : Use num_leaves instead.'''
+        _deprecation_warning( 'n_leafs property', 'num_leaves' )
+        return self.num_leaves
+    
+    @property
+    def root( self ) -> int :
+        '''Deprecated : Use root_node instead.'''
+        _deprecation_warning( 'root property', 'root_node' )
+        return self.root_node
+    
+    @property
+    def polytomy_distance( self ) -> float :
+        '''Deprecated : Use polytomy_epsilon instead.'''
+        _deprecation_warning( 'polytomy_distance property', 'polytomy_epsilon' )
+        return self.polytomy_epsilon
+
+    @polytomy_distance.setter
+    def polytomy_distance( self, value: float ) -> None :
+        '''Deprecated : Use polytomy_epsilon instead.'''
+        _deprecation_warning( 'polytomy_distance property', 'polytomy_epsilon' )
+        self.polytomy_epsilon = value
+    
+    # === NODE QUERY METHOD DEPRECATION WRAPPERS ===
+    
+    def get_lineage( self, node: Union[ int, str ] ) :
+        '''Deprecated : Use get_ancestors instead.'''
+        _deprecation_warning( 'get_lineage()', 'get_ancestors()' )
+        return self.get_ancestors(node)
+    
+    def get_descendant_nodes( self, node: Union[ int, str ] ) :
+        '''Deprecated : Use get_descendants instead.'''
+        _deprecation_warning( 'get_descendant_nodes()', 'get_descendants()' )
+        return self.get_descendants(node)
+
+    def get_leafs( self, node: Union[ int, str ] ) :
+        '''Deprecated : Use get_leaves instead.'''
+        _deprecation_warning( 'get_leafs()', 'get_leaves()' )
+        return self.get_leaves(node)
+    
+    # === NODE TEST METHOD DEPRECATION WRAPPERS ===
+    
+    def is_internal_node( self, node: Union[ int, str ] ) -> bool :
+        '''Deprecated : Use is_internal instead.'''
+        _deprecation_warning( 'is_internal_node()', 'is_internal()' )
+        return self.is_internal(node)
+    
+    # === DISTANCE METHOD DEPRECATION WRAPPERS ===
+    
+    def get_distance_to_root( self, node: Union[ int, str ] ) -> float :
+        '''Deprecated : Use distance_to_root instead.'''
+        _deprecation_warning( 'get_distance_to_root()', 'distance_to_root()')
+        return self.distance_to_root(node)
+    
+    def distances( self, pairs ) :
+        '''Deprecated : Use distances_bulk instead.'''
+        _deprecation_warning( 'distances()', 'distances_bulk()' )
+        return self.distances_bulk(pairs)
+    
+    # === TOPOLOGY METHOD DEPRECATION WRAPPERS ===
+    
+    def mrca( self,
+              a : Union[ int, str ],
+              b : Union[ int, str ] ) -> int :
+        '''Deprecated : Use common_ancestor instead.'''
+        _deprecation_warning( 'mrca()', 'common_ancestor()' )
+        return self.common_ancestor( a, b )
+    
+    def get_bipartition( self,
+                         node: Union[ int, str], by_id: bool = False) :
+        '''Deprecated : Use bipartition instead.'''
+        _deprecation_warning( 'get_bipartition()', 'bipartition()' )
+        return self.bipartition( node, by_id=by_id )
+    
+    def get_quartet_topology( self, a, b, c, d ) :
+        '''Deprecated : Use quartet_topology instead.'''
+        _deprecation_warning( 'get_quartet_topology()', 'quartet_topology()' )
+        return self.quartet_topology( a, b, c, d )
+    
+    def quartet_topologies( self, quartets ) :
+        '''Deprecated : Use quartet_topologies_bulk instead.'''
+        _deprecation_warning( 'quartet_topologies()', 'quartet_topologies_bulk()' )
+        return self.quartet_topologies_bulk( quartets )
+    
+    # === TRAVERSAL METHOD DEPRECATION WRAPPERS ===
+    
+    def in_order( self, distances: bool = True ) :
+        '''Deprecated : Use traverse_inorder instead.'''
+        _deprecation_warning( 'in_order()', 'traverse_inorder()' )
+        return self.traverse_inorder( include_distances=distances )
+    
+    def pre_order( self ) :
+        '''Deprecated : Use traverse_preorder instead.'''
+        _deprecation_warning( 'pre_order()', 'traverse_preorder()' )
+        return self.traverse_preorder()
+    
+    # === GRAPH/MATRIX METHOD DEPRECATION WRAPPERS ===
+    
+    def adjacency( self, node: int = -1 ) :
+        '''Deprecated : Use adjacency_matrix instead.'''
+        _deprecation_warning( 'adjacency()', 'adjacency_matrix()' )
+        from_node = None if node == -1 else node
+        return self.adjacency_matrix( from_node )
+    
+    def laplacian( self, node: int = -1 ) :
+        '''Deprecated : Use laplacian_matrix instead.'''
+        _deprecation_warning( 'laplacian()', 'laplacian_matrix()' )
+        from_node = None if node == -1 else node
+        return self.laplacian_matrix( from_node )
+    
+    # === EXPORT/INTEGRATION METHOD DEPRECATION WRAPPERS ===
+    
+    def nodes_data( self ) :
+        '''Deprecated : Use to_networkx_nodes instead.'''
+        _deprecation_warning( 'nodes_data()', 'to_networkx_nodes()' )
+        return self.to_networkx_nodes()
+    
+    def edges_data( self ) :
+        '''Deprecated : Use to_networkx_edges instead.'''
+        _deprecation_warning( 'edges_data()', 'to_networkx_edges()' )
+        return self.to_networkx_edges()
+    
+    def relationships( self ) :
+        '''Deprecated : Use to_dataframe instead.'''
+        _deprecation_warning( 'relationships()', 'to_dataframe()' )
+        return self.to_dataframe()
+    
 cdef struct Column :
     unsigned int length
     unsigned int leaf_id
