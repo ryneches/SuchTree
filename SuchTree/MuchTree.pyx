@@ -30,7 +30,7 @@ def _deprecation_warning( old_name : str,
                           version  : str = '2.0' ) -> None :
     '''Deprecation warning helper function.'''
     warn(
-        f'{old_name} is deprecated and will be removed in SuchTree {version}.'
+        f'{old_name} is deprecated and will be removed in SuchTree {version}. '
         f'Use {new_name} instead.',
         DeprecationWarning,
         stacklevel=3
@@ -271,7 +271,7 @@ cdef class SuchTree :
     @property
     def all_nodes( self ) -> np.ndarray :
         '''Array of all node IDs in the tree.'''
-        return np.concatiante( np.array( self.leaves.values() ),
+        return np.concatenate( np.array( self.leaves.values() ),
                                np.array( self.internal_nodes ) )
     
     @property
@@ -1167,8 +1167,8 @@ cdef class SuchTree :
         
         if by_id :
             return frozenset((
-                frozenset( self.get_leaves( left_child  )),
-                frozenset( self.get_leaves( right_child ))
+                frozenset( self.get_leaves( left_child  ) ),
+                frozenset( self.get_leaves( right_child ) )
             ))
         else :
             left_leaves  = self._convert_to_leaf_names( self.get_leaves( left_child  ))
@@ -2358,7 +2358,7 @@ cdef class SuchTree :
         return node_id
     
     def _convert_to_leaf_names( self,
-                                node_ids : list ) -> list[str] :
+                                node_ids : Union( list, np.ndarray ) ) -> list[str] :
         '''        
         Convert a list of leaf node IDs to leaf names.
         
