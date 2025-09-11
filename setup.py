@@ -16,5 +16,8 @@ setup(
     ext_modules = extensions,
     py_modules = [ 'SuchTree' ],
     long_description=long_description,
-    long_description_content_type='text/markdown'
+    long_description_content_type='text/markdown',
+    use_scm_version = { 'write_to' : 'SuchTree/__version__.py',
+                        'local_scheme' : 'no-local-version' },
+    setup_requires = [ 'setuptools_scm' ]
 )

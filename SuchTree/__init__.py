@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 from __future__ import absolute_import
 from MuchTree import SuchTree, SuchLinkedTrees
-from . import exceptions
+from .exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
+from .__version__ import __version__
 
-__version__ = 1.2
+__all__ = [ 'SuchTreeError',
+            'NodeNotFoundError', 
+            'InvalidNodeError',
+            'TreeStructureError', 
+            '__version__' ]
+

@@ -4,16 +4,15 @@ class SuchTreeError( Exception ) :
     '''Base exception class errors.'''
     pass
 
-
 class NodeNotFoundError( SuchTreeError ) :
     '''Raised when a node ID or leaf name is not found in the tree.'''
     
     def __init__( self, node, message=None ):
         if message is None :
             if isinstance( node, str ) :
-                message = 'Leaf name not found: {node}.'.format( str(node) )
+                message = 'Leaf name not found: {node}.'.format( node=str(node) )
             else :
-                message = 'Node not found: {node}'.format( str(node) )
+                message = 'Node not found: {node}'.format( node=str(node) )
         super().__init__( message )
         self.node = node
 

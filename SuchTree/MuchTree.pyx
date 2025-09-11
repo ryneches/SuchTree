@@ -13,7 +13,7 @@ from numbers import Integral, Real
 from typing import Any, Union, Dict, Tuple, Generator, Optional
 
 from warnings import warn
-from exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
+from SuchTree.exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
 
 # if igraph is available, enable
 # SuchLinkedTrees.to_igraph()
@@ -271,8 +271,8 @@ cdef class SuchTree :
     @property
     def all_nodes( self ) -> np.ndarray :
         '''Array of all node IDs in the tree.'''
-        return np.concatenate( np.array( self.leaves.values() ),
-                               np.array( self.internal_nodes ) )
+        return np.concatenate( ( np.array( list( self.leaves.values() ) ),
+                                 np.array( list( self.internal_nodes ) ) ) )
     
     @property
     def leaf_node_ids( self ) -> np.ndarray :
@@ -344,7 +344,7 @@ cdef class SuchTree :
         node_id = self._validate_node( node )
         return self.data[ node_id ].parent
     
-    def get_children(self, node: Union[int, str]) -> Tuple[int, int]:
+    def get_children(self, node: Union[int, str]) -> Tuple[int, int] :
         '''
         Return the child node IDs for a given node.
         
@@ -376,8 +376,8 @@ cdef class SuchTree :
             int : Ancestor node IDs in order from parent to root
             
         Raises
-            NodeNotFoundError: If leaf name is not found
-            InvalidNodeError: If node ID is out of bounds
+            NodeNotFoundError : If leaf name is not found
+            InvalidNodeError  : If node ID is out of bounds
         '''
         node_id = self._validate_node( node )
         
@@ -1279,7 +1279,7 @@ cdef class SuchTree :
                  for a,b,c,d in self.quartet_topologies_bulk( Q ) ]
      
     def quartet_topologies_bulk( self,
-                                 quartets : np.ndarray ) -> np.ndarray :
+                                 quartets : Union[ list, np.ndarray ] ) -> np.ndarray :
         '''
         Bulk processing function for computing quartet topologies.
         Takes an [N,4] matrix of taxon IDs, where the IDs are in
@@ -2278,9 +2278,9 @@ cdef class SuchTree :
             InvalidNodeError  : If node ID is out of bounds
             TypeError         : If node is not int or str
         '''
-
+        
         if isinstance( node, str ) :
-            if node not in self.leaves :
+            if not node in self.leaves :
                 raise NodeNotFoundError( node )
             return self.leaves[ node ]
         
