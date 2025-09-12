@@ -435,7 +435,7 @@ cdef class SuchTree :
             
         Raises
             NodeNotFoundError : If leaf name is not found
-            InvalidNodeError  : If node ID is out of bounds
+            InvalidNodeError  : I.f node ID is out of bounds
         '''
         node_id = self._validate_node( node )
         
@@ -480,7 +480,7 @@ cdef class SuchTree :
                             from_node : Union[ int, str ] = None ) -> np.ndarray :
         '''
         Return array of internal node IDs.
-        
+        .
         Args
             from_node : Starting node (default: root)
             
@@ -1224,36 +1224,21 @@ cdef class SuchTree :
         
         visited = np.zeros( self.depth, dtype=int )
         
-        # Calculate all pairwise MRCAs
-        pairs = list( combinations( node_ids, 2 ) )
-        mrcas = [ self._mrca( visited, x, y ) for x, y in pairs ]
+        pairs = [ frozenset( ( x, y ) ) for x,y in combinations( node_ids, 2 ) ]
         
-        # Find unique MRCA (appears only once)
-        unique_mrcas = [ mrca for mrca in mrcas if mrcas.count(mrca) == 1 ]
+        M = [ self._mrca( visited, x, y ) for x,y in pairs ]
         
-        if len( unique_mrcas ) == 1 :
-            unique_mrca     = unique_mrcas[0]
-            unique_pair_idx = mrcas.index( unique_mrca )
-            sisters_ids     = pairs[ unique_pair_idx ]
-            
-            # The other two nodes form the second sister pair
-            remaining_ids = frozenset( node_ids ) - frozenset( sisters_ids )
-            
-            if has_strings :
-                # Convert back to original names if input had strings
-                def id_to_original( node_id ) :
-                    for orig, nid in zip( nodes, node_ids ) :
-                        if nid == node_id :
-                            return orig if isinstance( orig, str ) else self.leaf_nodes[ node_id ]
-                    return self.leaf_nodes[node_id]
-                
-                sister_pair1 = frozenset( id_to_original( nid ) for nid in sisters_ids   )
-                sister_pair2 = frozenset( id_to_original( nid ) for nid in remaining_ids )
-            else:
-                sister_pair1 = frozenset( sisters_ids   )
-                sister_pair2 = frozenset( remaining_ids )
-                
-            return frozenset( ( sister_pair1, sister_pair2 ) )
+        sisters = [ pairs[ M.index(i) ] for i in M if M.count(i) == 1 ]
+        
+        if len( sisters ) == 1 :
+            sisters.append( sisters[0] ^ frozenset( node_ids ) )
+        
+        if has_strings :
+            (w,x),(y,z) = sisters
+            return frozenset( ( frozenset( ( self.leafnodes[w], self.leafnodes[x] ) ),
+                                frozenset( ( self.leafnodes[y], self.leafnodes[z] ) ) ) )
+        else :
+            return frozenset( sisters )
         
         # Should not happen with valid quartet
         raise TreeStructureError( 'Could not determine unique topology for quartet {nodes}'.format( nodes=nodes ) )
