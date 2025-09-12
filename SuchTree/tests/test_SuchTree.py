@@ -158,6 +158,7 @@ def test_is_internal_node() :
     T = SuchTree( test_tree )
     for node in T.get_internal_nodes() :
         assert T.is_internal_node( node )
+        assert not T.is_leaf( node )
 
 def test_mrca_by_id() :
     T = SuchTree( test_tree )
