@@ -163,7 +163,7 @@ cdef class SuchTree :
         
         self.leafs = {}
         self.leafnodes = {}
-        self.internal_nodes = []
+        internal_nodes = []
         for node_id,node in enumerate( t.inorder_node_iter() ) :
             node.node_id = node_id
             if node_id >= size :
@@ -172,7 +172,8 @@ cdef class SuchTree :
                 self.leafs[ node.taxon.label ] = node_id
                 self.leafnodes[ node_id ] = node.taxon.label
             else :
-                self.internal_nodes.append( node_id )
+                internal_nodes.append( node_id )
+        self.internal_nodes = np.array( internal_nodes )
         
         for node_id,node in enumerate( t.inorder_node_iter() ) :
             if not node.parent_node :
