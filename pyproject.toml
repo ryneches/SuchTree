@@ -32,7 +32,7 @@ dynamic = ["version"]
 # Use the __version__ attribute from the package
 [tool.setuptools_scm]
 local_scheme = "no-local-version"
-version_scheme = "guess-next-dev"
+version_scheme = "only-version"
 write_to = "SuchTree/__version__.py"
 
 
