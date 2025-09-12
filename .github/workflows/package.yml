@@ -45,6 +45,7 @@ jobs:
           name: cibw-sdist
           path: dist/*.tar.gz
           if-no-files-found: error
+  
   build_wheels:
     name: Build wheels on ${{ matrix.os }} for ${{ matrix.cibw_archs }}
     needs: build_sdist
@@ -88,7 +89,7 @@ jobs:
       - name: Build wheels for CPython 3.13
         uses: pypa/cibuildwheel@v3.1.4
         with:
-          package-dir: dist/${{ needs.build_dist.outputs.SDIST_NAME }}
+          package-dir: dist/${{ needs.build_sdist.outputs.SDIST_NAME }}
         env:
           CIBW_BUILD: "cp313-*"
           CIBW_ARCHS: ${{ matrix.cibw_archs }}
