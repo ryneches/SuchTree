@@ -50,12 +50,42 @@ tree = SuchTree("https://example.com/tree.newick")
 ```python
 get_parent(node: Union[int, str]) -> int
 ```
-Return parent node ID for a given node. Handles both node IDs and leaf names. Raises `NodeNotFoundError` for invalid names and `InvalidNodeError` for invalid IDs.
+Get immediate parent node for a given node.
+
+Args:
+    node: Node identifier as either integer ID or leaf name string
+    
+Returns:
+    Integer ID of parent node. Returns -1 if called on root node.
+    
+Raises:
+    NodeNotFoundError: If leaf name doesn't exist in the tree
+    InvalidNodeError: If node ID is out of valid range (0 <= id < tree.size)
+
+Example:
+```python
+parent_id = tree.get_parent("A")
+parent_id = tree.get_parent(5)
+```
 
 ```python
 get_children(node: Union[int, str]) -> Tuple[int, int]
 ```
-Return left and right child node IDs. Returns (-1, -1) for leaf nodes. Validates input and raises appropriate errors.
+Get direct children of a node. 
+
+Args:
+    node: Node identifier as either integer ID or leaf name string
+    
+Returns:
+    Tuple of (left_child, right_child) node IDs. Returns (-1, -1) for leaf nodes.
+    
+Raises:
+    NodeNotFoundError: If leaf name doesn't exist
+    InvalidNodeError: If node ID is invalid
+
+Note:
+    For multifurcating trees, only the first two children are returned. Use 
+    `traverse_children()` method for complete child iteration.
 
 ```python
 get_ancestors(node: Union[int, str]) -> Generator[int, None, None]
@@ -135,7 +165,29 @@ Get node IDs forming the path between two nodes through their common ancestor. R
 ```python
 distance(a: Union[int, str], b: Union[int, str]) -> float
 ```
-Calculate patristic distance between two nodes. Uses MRCA-based distance summation for accuracy.
+Calculate patristic distance between two nodes along the tree.
+
+Args:
+    a: First node identifier (ID or name)
+    b: Second node identifier (ID or name)
+    
+Returns:
+    Sum of branch lengths along the path between nodes via their most recent 
+    common ancestor (MRCA)
+    
+Raises:
+    NodeNotFoundError: If either node name doesn't exist
+    InvalidNodeError: If either node ID is invalid
+
+Complexity:
+    O(h) where h is the height of the tree. Uses cached ancestor paths for
+    optimal performance.
+
+Example:
+```python
+dist = tree.distance("A", "B")
+dist = tree.distance(2, 5)
+```
 
 ```python
 distance_to_root(node: Union[int, str]) -> float
@@ -170,8 +222,27 @@ In-order traversal (left, root, right). Yields node IDs or (ID, distance) tuples
 
 ```python
 traverse_preorder(from_node: Union[int, str] = None) -> Generator
+"""
+Iterate through nodes in pre-order traversal (parent before children).
+
+Args:
+    from_node: Starting node (default: root). Can be ID or name.
+    
+Yields:
+    Node IDs in traversal order
+    
+Raises:
+    NodeNotFoundError: If from_node name doesn't exist
+    InvalidNodeError: If from_node ID is invalid
+
+Memory:
+    O(h) space complexity due to stack implementation, where h is tree height
+
+Example:
+```python
+for node_id in tree.traverse_preorder():
+    print(f"Visiting node {node_id}")
 ```
-Pre-order traversal (root, left, right). Defaults to root node if not specified.
 
 ```python
 traverse_postorder(from_node: Union[int, str] = None) -> Generator
