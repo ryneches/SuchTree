@@ -49,48 +49,159 @@ tree = SuchTree("https://example.com/tree.newick")
 ### Node Relationships
 ```python
 get_parent(node: Union[int, str]) -> int
+```
+Return parent node ID for a given node. Handles both node IDs and leaf names. Raises `NodeNotFoundError` for invalid names and `InvalidNodeError` for invalid IDs.
+
+```python
 get_children(node: Union[int, str]) -> Tuple[int, int]
+```
+Return left and right child node IDs. Returns (-1, -1) for leaf nodes. Validates input and raises appropriate errors.
+
+```python
 get_ancestors(node: Union[int, str]) -> Generator[int, None, None]
+```
+Generate ancestor node IDs from node to root. Yields parent IDs in ascending order from immediate parent to root.
+
+```python
 get_descendants(node_id: int) -> Generator[int, None, None]
+```
+Generate all descendant node IDs in depth-first order. Includes the starting node in the output.
+
+```python
 get_leaves(node: Union[int, str]) -> np.ndarray
+```
+Get array of leaf node IDs descended from a given node. Uses efficient buffer reuse for performance.
+
+```python
 get_support(node: Union[int, str]) -> float
 ```
+Retrieve node support value. Returns -1 if no support available. Works for both internal nodes and leaves.
 
 ### Tree Navigation
 ```python
 is_leaf(node: Union[int, str]) -> bool
+```
+Check if node is a leaf. Uses optimized Cython implementation for fast checking.
+
+```python
 is_internal(node: Union[int, str]) -> bool
+```
+Check if node is internal. Simply returns negation of `is_leaf` but provides clearer intent.
+
+```python
 is_ancestor(ancestor: Union[int, str], descendant: Union[int, str]) -> int
+```
+Test ancestral relationship. Returns:  
+- `1` if ancestor of descendant  
+- `-1` if descendant is ancestor  
+- `0` if no direct relationship
+
+```python
 is_descendant(descendant: Union[int, str], ancestor: Union[int, str]) -> bool
+```
+Convenience method that returns True if descendant is indeed a descendant of ancestor.
+
+```python
 is_root(node: Union[int, str]) -> bool
+```
+Check if node is the tree root. Uses direct comparison with stored root node ID.
+
+```python
 is_sibling(node1: Union[int, str], node2: Union[int, str]) -> bool
+```
+Check if two nodes share the same parent. Automatically returns False if either node is root.
+
+```python
 has_children(node: Union[int, str]) -> bool
+```
+Determine if node has any children. Equivalent to `is_internal` but may be more intuitive for some users.
+
+```python
 has_parent(node: Union[int, str]) -> bool
+```
+Check if node has a parent (i.e., is not root). Returns negation of `is_root`.
+
+```python
 common_ancestor(a: Union[int, str], b: Union[int, str]) -> int
+```
+Find most recent common ancestor of two nodes. Uses optimized MRCA algorithm with visited node tracking.
+
+```python
 path_between_nodes(a: Union[int, str], b: Union[int, str]) -> List[int]
 ```
+Get node IDs forming the path between two nodes through their common ancestor. Returns list from a -> MRCA -> b.
 
 ### Distance Analysis
 ```python
 distance(a: Union[int, str], b: Union[int, str]) -> float
+```
+Calculate patristic distance between two nodes. Uses MRCA-based distance summation for accuracy.
+
+```python
 distance_to_root(node: Union[int, str]) -> float
+```
+Calculate total branch length from node to root. Optimized with cumulative distance caching.
+
+```python
 distances_bulk(pairs: np.ndarray) -> np.ndarray
+```
+Efficiently compute distances for multiple node pairs. Accepts (n, 2) array of node IDs. Uses Cython nogil implementation.
+
+```python
 distances_by_name(pairs: List[Tuple[str, str]]) -> List[float]
+```
+Convenience wrapper for bulk distance calculation using leaf names instead of IDs.
+
+```python
 pairwise_distances(nodes: list = None) -> np.ndarray
+```
+Generate full distance matrix for specified nodes (all leaves by default). Returns symmetric numpy array.
+
+```python
 nearest_neighbors(node: Union[int, str], k=1) -> List[Tuple[Union[int, str], float]]
 ```
+Find k nearest neighbors to a node. Can search among specific nodes or all leaves by default.
 
 ### Tree Traversal
 ```python
 traverse_inorder(include_distances: bool = True) -> Generator
+```
+In-order traversal (left, root, right). Yields node IDs or (ID, distance) tuples.
+
+```python
 traverse_preorder(from_node: Union[int, str] = None) -> Generator
+```
+Pre-order traversal (root, left, right). Defaults to root node if not specified.
+
+```python
 traverse_postorder(from_node: Union[int, str] = None) -> Generator
+```
+Post-order traversal (left, right, root). Useful for dependency resolution.
+
+```python
 traverse_levelorder(from_node: Union[int, str] = None) -> Generator
+```
+Breadth-first level order traversal. Yields nodes by depth level.
+
+```python
 traverse_leaves_only(from_node: Union[int, str] = None) -> Generator
+```
+Efficient traversal that only yields leaf nodes. Skips internal nodes.
+
+```python
 traverse_internal_only(from_node: Union[int, str] = None) -> Generator
+```
+Traversal that skips leaf nodes. Useful for operations only on internal nodes.
+
+```python
 traverse_with_depth(from_node: Union[int, str] = None) -> Generator[Tuple[int, int], None, None]
+```
+Traversal yielding (node ID, depth) pairs. Depth starts at 0 for root.
+
+```python
 traverse_with_distances(from_node: Union[int, str] = None) -> Generator[Tuple[int, float, float], None, None]
 ```
+Traversal yielding (node ID, distance to parent, cumulative distance to root).
 
 ### Topological Analysis
 ```python
