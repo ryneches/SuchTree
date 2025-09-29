@@ -2,3 +2,5 @@ mkdocs-material
 mkdocstrings[python]
 pymdown-extensions
 jupyter
+cython
+setuptools

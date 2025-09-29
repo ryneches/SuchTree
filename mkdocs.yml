@@ -33,4 +33,12 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
-- mkdocstrings
+- mkdocstrings:
+    handlers:
+      python:
+        options:
+          import:
+            - https://docs.python.org/3/objects.inv
+          show_root_heading: true
+          show_source: false
+          import_cython: true
