@@ -31,10 +31,6 @@ markdown_extensions:
   - admonition
   - pymdownx.highlight
   - pymdownx.superfences
-  - mkdocstrings:
-      default_handler: python
-      handlers:
-        python:
-          options:
-            show_root_heading: true
-            show_source: false
+
+plugins:
+- mkdocstrings
