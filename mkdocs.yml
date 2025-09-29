@@ -19,12 +19,15 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
-repo_url: https://github.com/yourusername/suchtree
+repo_url: https://github.com/ryneches/suchtree
 repo_name: GitHub
 
 nav:
   - Home: index.md
-  - Examples: examples.md
+  - SuchTree Example: examples/SuchTree_examples.md
+  - SuchLinkedTrees Example : examples/SuchLinkedTree_examples.md
+  - Example Datasets: datasets.md
+  - Release Notes : release_notes.md
   - API Reference: api.md
 
 markdown_extensions:
@@ -36,9 +39,11 @@ plugins:
 - mkdocstrings:
     handlers:
       python:
-        options:
+        options-extra:
           import:
             - https://docs.python.org/3/objects.inv
           show_root_heading: true
           show_source: false
+          show_source_link: true
+          source_link_template: "https://github.com/ryneches/suchtree/blob/main/{path}#L{line}"
           import_cython: true

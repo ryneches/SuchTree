@@ -1,55 +1,73 @@
 import os
+import sys
 import subprocess
 from pathlib import Path
 from nbconvert import MarkdownExporter
 
-DOCS_DIR = Path(__file__).parent
-EXAMPLES_DIR = DOCS_DIR / "examples"
-NOTEBOOKS_DIR = Path("examples")  # Update this to your notebooks path
+DOCS_DIR      = Path(__file__).parent
+EXAMPLES_DIR  = Path( os.path.join( DOCS_DIR, 'examples' ) )
+NOTEBOOKS_DIR = EXAMPLES_DIR # Update this to your notebooks path
+PROJECT_ROOT  = DOCS_DIR.parent
 
-def compile_cython_module():
-    """Compile the Cython module for documentation generation"""
-    import sys
-    from setuptools import Extension, setup
-    from Cython.Build import cythonize
+def build_package_inplace() :
+    '''Build the package in place using its existing setup configuration'''
+    print( 'Building package in place with existing Cython configuration...' )
     
-    extensions = [
-        Extension("SuchTree.MuchTree",
-                  ["SuchTree/MuchTree.pyx"],
-                  extra_compile_args=["-O3"])
-    ]
+    # Change to project root directory
+    original_dir = os.getcwd()
+    os.chdir(PROJECT_ROOT)
     
-    # Build in a temporary directory and add to Python path
-    build_dir = "build/temp"
-    setup(
-        name="SuchTree",
-        ext_modules=cythonize(extensions, language_level="3"),
-        script_args=["build_ext", "--build-temp", build_dir]
-    )
-    sys.path.insert(0, build_dir)
-    return build_dir
+    try:
+        # Build extension modules in place without installing
+        # This uses the existing setup.py/pyproject.toml configuration
+        result = subprocess.run(
+            [ sys.executable, 'setup.py', 'build_ext', '--inplace' ],
+            check          = True,
+            capture_output = True,
+            text           = True
+        )
+        print( 'Package built in place successfully' )
+        print( result.stdout )
+        
+    except subprocess.CalledProcessError as e :
+        print( f'Error building package: {e}' )
+        print( f'stdout: {e.stdout}' )
+        print( f'stderr: {e.stderr}' )
+        raise
+    finally :
+        os.chdir( original_dir )
 
 def generate_api_docs():
-    """Generate API documentation using compiled module"""
-    # Ensure the module is compiled first and get build directory
-    build_dir = compile_cython_module()
+    '''Generate API documentation using built package'''
+    # Ensure the package is built first
+    build_package_inplace()
     
-    # Import the compiled module for mkdocstrings
-    import SuchTree.MuchTree
+    # The module should now be importable from the built package
+    try :
+        import SuchTree
+        print( f'Successfully imported SuchTree from {SuchTree.__file__}' )
+    except ImportError as e :
+        print( f'Warning: Could not import SuchTree : {e}' )
+        print( 'API documentation generation may be incomplete' )
 
-def convert_notebooks():
-    """Convert Jupyter notebooks to Markdown"""
+def convert_notebooks() :
+    '''Convert Jupyter notebooks to Markdown'''
     md_exporter = MarkdownExporter()
-    os.makedirs(EXAMPLES_DIR, exist_ok=True)
+    os.makedirs( EXAMPLES_DIR, exist_ok=True )
     
-    for nb_path in NOTEBOOKS_DIR.glob("*.ipynb"):
-        output_path = EXAMPLES_DIR / f"{nb_path.stem}.md"
-        body, _ = md_exporter.from_filename(nb_path)
-        with open(output_path, "w") as f:
-            f.write(f"# {nb_path.stem}\n\n")
-            f.write(body)
+    notebook_count = 0
+    for nb_path in NOTEBOOKS_DIR.glob( '*.ipynb' ) :
+        output_path = os.path.join( EXAMPLES_DIR, f'{nb_path.stem}.md' )
+        print( f'Converting {nb_path} to {output_path}' )
+        body, _ = md_exporter.from_filename( nb_path )
+        with open(output_path, 'w' ) as f :
+            f.write( f'# {nb_path.stem}\n\n' )
+            f.write( body )
+        notebook_count += 1
+    
+    print( f'Converted {notebook_count} notebook(s) to Markdown' )
 
-if __name__ == "__main__":
+if __name__ == '__main__' :
     generate_api_docs()
     convert_notebooks()
-    print("Documentation generated successfully!")
+    print( 'Documentation generated successfully!' )

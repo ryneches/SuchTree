@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from __future__ import absolute_import
-from MuchTree import SuchTree, SuchLinkedTrees
+from SuchTree.MuchTree import SuchTree, SuchLinkedTrees
 from .exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
 from .__version__ import __version__
 

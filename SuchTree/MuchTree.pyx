@@ -3203,7 +3203,3 @@ cdef class SuchLinkedTrees :
                 col.append( row_id )
             print( 'column', i, ':', ','.join( map( str, col ) ) )
 
-
-
-
-[The full contents of MuchTree.pyx as shown in previous message]
