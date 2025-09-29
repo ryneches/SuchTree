@@ -1,19 +1,14 @@
 # API Reference
 
-::: SuchTree.MuchTree.SuchTree
+::: SuchTree.MuchTree
     options:
       heading_level: 2
       show_root_heading: true
-      show_source: false
+      show_source: true
+      show_signature_annotations: true
 
-::: SuchTree.MuchTree.SuchLinkedTrees
+::: SuchTree.exceptions
     options:
       heading_level: 2
       show_root_heading: true
-      show_source: false
-
-::: SuchTree.MuchTree.exceptions
-    options:
-      heading_level: 2
-      show_root_heading: true
-      show_source: false
+      show_source: true
