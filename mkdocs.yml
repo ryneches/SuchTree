@@ -1,0 +1,40 @@
+site_name: SuchTree Documentation
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.top
+  palette:
+    - scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+repo_url: https://github.com/yourusername/suchtree
+repo_name: GitHub
+
+nav:
+  - Home: index.md
+  - Examples: examples.md
+  - API Reference: api.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_root_heading: true
+            show_source: false
