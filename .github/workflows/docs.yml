@@ -20,7 +20,7 @@ jobs:
           python -m pip install -r requirements-docs.txt
       
       - name: Run doc prebuild script
-        run: python docs/gen-docs.py
+        run: python docs/gen_docs.py
           
       - name: Build docs
         run: mkdocs build --site-dir site
