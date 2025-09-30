@@ -1,5 +1,6 @@
 mkdocs-material
-mkdocstrings[python]
+mkdocstrings
+mkdocstrings-python
 pymdown-extensions
 jupyter
 pyzmq==26
