@@ -15,6 +15,9 @@ from typing import Any, Union, Dict, Tuple, Generator, Optional
 from warnings import warn
 from SuchTree.exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
 
+# set module name
+#__module__ = 'SuchTree'
+
 # if igraph is available, enable
 # SuchLinkedTrees.to_igraph()
 try :

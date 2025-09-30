@@ -39,14 +39,18 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
-- mkdocstrings:
-    handlers:
-      python:
-        options-extra:
-          import:
-            - https://docs.python.org/3/objects.inv
-          show_root_heading: true
-          show_source: false
-          show_source_link: true
-          source_link_template: "https://github.com/ryneches/suchtree/blob/main/{path}#L{line}"
-          import_cython: true
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          inventories:
+              - https://docs.python.org/3/objects.inv
+          options.extra:
+            find_stubs_package: true
+            resolve_aliases: false
+            allow_introspection: true
+            show_root_heading: false
+            show_source: false
+            show_source_link: true
+            source_link_template: "https://github.com/ryneches/suchtree/blob/main/{path}#L{line}"
+            import_cython: true

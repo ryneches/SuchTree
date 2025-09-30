@@ -6,7 +6,7 @@
     options:
       heading_level: 3
       show_root_heading: false
-      show_source: true
+      show_source: false
       show_signature_annotations: true
       group_by_category: true
       show_category_heading: true
@@ -25,7 +25,7 @@
     options:
       heading_level: 3
       show_root_heading: false
-      show_source: true
+      show_source: false
       show_signature_annotations: true
       group_by_category: true
       show_category_heading: true
