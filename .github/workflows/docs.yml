@@ -13,11 +13,14 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.13'
           
       - name: Install dependencies
         run: |
-          python -m pip install mkdocs mkdocs-material
+          python -m pip install -r requirements-docs.txt
+      
+      - name: Run doc prebuild script
+        run: python docs/gen-docs.py
           
       - name: Build docs
         run: mkdocs build --site-dir site
