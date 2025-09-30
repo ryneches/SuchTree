@@ -1,0 +1,7 @@
+.aider*
+.coverage
+.ipynb_checkpoints*
+.obsidian*
+__pycache__*
+*.egg*
+*.*cache*
