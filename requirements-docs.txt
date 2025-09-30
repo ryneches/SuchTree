@@ -5,6 +5,7 @@ jupyter
 pyzmq==26
 cython
 setuptools
+scipy
 numpy
 dendropy
 pandas >= 2.1.0
