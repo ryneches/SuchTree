@@ -1,0 +1,1098 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../SuchLinkedTree_examples/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Working Example - SuchTree Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#suchtree_examples" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SuchTree Documentation" class="md-header__button md-logo" aria-label="SuchTree Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SuchTree Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Working Example
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ryneches/suchtree" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Working Example
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../SuchLinkedTree_examples/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Linked Trees
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../datasets.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Example Datasets
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../release_notes/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../paper/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Publication
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../benchmarks/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Benchmarks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../SuchTree_API/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../api/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SuchTree Documentation" class="md-nav__button md-logo" aria-label="SuchTree Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SuchTree Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ryneches/suchtree" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working Example
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SuchLinkedTree_examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linked Trees
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datasets.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Example Datasets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release Notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../paper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Publication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Benchmarks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SuchTree_API/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="suchtree_examples">SuchTree_examples</h1>
+<h1 id="suchtree">SuchTree</h1>
+<p>There are a lot of packages for working with and manipulating phylogenetic trees
+using python. Rather than compete with packages like <code>dendropy</code> and <code>ete3</code> on the
+basis of features, <code>SuchTree</code> does one thing well -- its memory usage and algorithmic
+complexity linearly with the number of taxa in your tree. If you need to work with
+very large trees, this is very helpful.</p>
+<p>Let's have a look at some useful things you can do with trees using the <code>SuchTree</code>
+class. First, let's get our modules loaded. I'm going to suppress some warnings </p>
+<p>To run this notebook on an Ubuntu host, you will need the following system
+packages installed for <code>ete3</code> to work :</p>
+<ul>
+<li><code>python3-pyqt4.qtopengl</code></li>
+<li><code>python3-pyqt5.qtopengl</code></li>
+</ul>
+<p>and python packages :</p>
+<ul>
+<li><code>SuchTree</code></li>
+<li><code>pandas</code></li>
+<li><code>cython</code></li>
+<li><code>scipy</code></li>
+<li><code>numpy</code></li>
+<li><code>matplotlib</code></li>
+<li><code>seaborn</code></li>
+<li><code>fastcluster</code></li>
+<li><code>dendropy</code></li>
+<li><code>ete3</code></li>
+</ul>
+<p>and obviously you'll want <code>jupyter</code> installed so you can run the notebook server. The
+Internet is full of opinions about how to set up your python environment. You
+should find one that works for you, but <a href="https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14">this guide is as good as any</a> to get you started.</p>
+<p>I'm going to start off by loading the required packages and suppressing some warnings
+that <a href="https://github.com/mwaskom/seaborn/issues/1392">should be fixed</a> in the next
+stable release of <code>seaborn</code>.</p>
+<p>I'm going to assume that you are running this notebook out of a local copy of the 
+<a href="https://github.com/ryneches/SuchTree/">SuchTree repository</a> for any local file paths.</p>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
+<span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span><span class="o">=</span><span class="s1">&#39;retina&#39;</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">SuchTree</span><span class="w"> </span><span class="kn">import</span> <span class="n">SuchTree</span><span class="p">,</span> <span class="n">SuchLinkedTrees</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.cluster.hierarchy</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClusterWarning</span>
+
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span> <span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">UserWarning</span> <span class="p">)</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span> <span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">FutureWarning</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Populating the interactive namespace from numpy and matplotlib
+</code></pre></div>
+<p>Let's have a look at some example data. Here is a tree of cichlid fishes
+from my dissertation :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">ete3</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tree</span><span class="p">,</span> <span class="n">TreeStyle</span><span class="p">,</span> <span class="n">NodeStyle</span><span class="p">,</span> <span class="n">TextFace</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">linspace</span>
+
+<span class="n">ts</span> <span class="o">=</span> <span class="n">TreeStyle</span><span class="p">()</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">show_leaf_name</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">branch_vertical_margin</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">scale</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">show_leaf_name</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">show_scale</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="n">nstyle</span> <span class="o">=</span> <span class="n">NodeStyle</span><span class="p">()</span>
+<span class="n">nstyle</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">ete_tree</span> <span class="o">=</span> <span class="n">Tree</span><span class="p">(</span> <span class="s1">&#39;data/bigtrees/host.tree&#39;</span> <span class="p">)</span>
+
+<span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">ete_tree</span><span class="o">.</span><span class="n">traverse</span><span class="p">()</span> <span class="p">:</span>
+    <span class="n">node</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="n">nstyle</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">is_leaf</span> <span class="p">:</span>
+        <span class="n">tf</span> <span class="o">=</span> <span class="n">TextFace</span><span class="p">(</span> <span class="n">node</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">)</span>
+        <span class="n">tf</span><span class="o">.</span><span class="n">fsize</span> <span class="o">=</span> <span class="mi">10</span>
+        <span class="n">tf</span><span class="o">.</span><span class="n">hz_align</span> <span class="o">=</span> <span class="mi">100</span>
+        <span class="n">node</span><span class="o">.</span><span class="n">add_face</span><span class="p">(</span> <span class="n">tf</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
+
+<span class="n">ete_tree</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%%</span><span class="s2">inline&quot;</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s2">&quot;mm&quot;</span><span class="p">,</span> <span class="n">tree_style</span><span class="o">=</span><span class="n">ts</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="png" src="../output_3_0.png" /></p>
+<p>Loading tree data into <code>SuchTree</code> is pretty simple -- just give it a path
+to a valid Newick file. Under the hood, <code>SuchTree</code> uses <code>dendropy</code> for 
+parsing. I figured it was better to introduce another dependency than
+to inflict yet another Newick parser on the world (the Newick file format
+has some slight ambiguities that can lead to annoying incompatibilities).</p>
+<div class="highlight"><pre><span></span><code><span class="n">T</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;data/bigtrees/host.tree&#39;</span> <span class="p">)</span>
+</code></pre></div>
+<p>The <code>SuchTree</code> object has a dictionary called <code>leafs</code> that maps leaf names onto their
+node ids. We'll make extensive use of this as we put the utility through its paces.</p>
+<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="o">.</span><span class="n">leafs</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>{&#39;Tropheus_moorii&#39;: 0,
+ &#39;Lobochilotes_labiatus&#39;: 2,
+ &#39;Tanganicodus_irsacae&#39;: 4,
+ &#39;Cyprichromis_coloratus&#39;: 6,
+ &#39;Haplotaxodon_microlepis&#39;: 8,
+ &#39;Perissodus_microlepis&#39;: 10,
+ &#39;Plecodus_straeleni&#39;: 12,
+ &#39;Xenotilapia_flavipinnis&#39;: 14,
+ &#39;Triglachromis_otostigma&#39;: 16,
+ &#39;Reganochromis_calliurus&#39;: 18,
+ &#39;Trematochromis_benthicola&#39;: 20,
+ &#39;Lepidiolamprologus_profundicola&#39;: 22,
+ &#39;Neolamprologus_buescheri&#39;: 24,
+ &#39;Chalinochromis_brichardi&#39;: 26}
+</code></pre></div>
+<h3 id="calculating-distances">Calculating distances</h3>
+<p><code>SuchTree</code> has two ways to calculate distances; one pair a time, or
+in batches. Batches are more efficient because it does each calculation without 
+the interpreter's overhead.</p>
+<p>Here's how to measure distances one at a time :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;taxon 1  : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">a</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;taxon 2  : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">b</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;distance : </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">d</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>taxon 1  : 6
+taxon 2  : 24
+distance : 0.446084
+</code></pre></div>
+<p>The <code>distance()</code> function will accept either node ids (which are integers),
+or taxon names (which are strings).</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;taxon 1  : </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">a</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;taxon 2  : </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">b</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;distance : </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">d</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>taxon 1  : Lepidiolamprologus_profundicola
+taxon 2  : Reganochromis_calliurus
+distance : 0.274808
+</code></pre></div>
+<p>You can loop over all of the distances one at a time to construct a distance matrix...</p>
+<div class="highlight"><pre><span></span><code><span class="n">D1</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span> <span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">:</span>
+        <span class="n">D1</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">)</span>
+</code></pre></div>
+<p>Let's look at the distance matrix using a nice <code>seaborn</code> clustermap plot.</p>
+<p>It's worth noting that <code>seaborn</code> is using scipy's <code>cluster.hierarchy</code> functions to build
+those dendrograms from the distance matrix. They aren't going to have exactly the same
+topology as the input tree, which was build with <a href="https://github.com/stamatak/standard-RAxML">RAxML</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D1</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7fa057c9a080&gt;
+</code></pre></div>
+<p><img alt="png" src="../output_15_1.png" /></p>
+<p>To calculate the distances in a batch, we can use the <code>distances()</code> function,
+which takes an $n \times 2$ array of node ids (make sure your array is representing
+them as integers).</p>
+<div class="highlight"><pre><span></span><code><span class="n">D2_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">:</span>
+        <span class="n">D2_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">)</span> <span class="p">)</span>
+<span class="n">D2_array</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span> <span class="n">D2_list</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">D2_array</span><span class="o">.</span><span class="n">shape</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">D2_array</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>(196, 2)
+[[0 0]
+ [0 2]
+ [0 4]
+ [0 6]
+ [0 8]]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">D2</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">distances</span><span class="p">(</span> <span class="n">D2_array</span> <span class="p">)</span>
+
+<span class="n">D2</span> <span class="o">=</span> <span class="n">D2</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span> <span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+</code></pre></div>
+<p>We should get the same distance matrix and clustermap as before.</p>
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D2</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7fa04c09bf28&gt;
+</code></pre></div>
+<p><img alt="png" src="../output_20_1.png" /></p>
+<p>If you want to use taxon names instead, <code>distances_by_name()</code> accepts an $n \times 2$ list
+of tuples of taxon names, and looks up the node ids for you.</p>
+<h3 id="loading-data-from-urls">Loading data from URLs</h3>
+<p>SuchTree can also import data from the internets. Here is the distance matrix for 
+the penguins, from the <a href="http://birdtree.org/">Global Phylogeny of Birds</a> (I've
+copied some of their data into a Gist post because their data repository forbids
+programatic queries).</p>
+<div class="highlight"><pre><span></span><code><span class="n">T3</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://git.io/flbcP&#39;</span> <span class="p">)</span>
+
+<span class="n">D3_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span> <span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">:</span>
+        <span class="n">D3_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">)</span> <span class="p">)</span>
+<span class="n">D3_array</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span> <span class="n">D3_list</span> <span class="p">)</span>
+<span class="n">D3</span> <span class="o">=</span> <span class="n">T3</span><span class="o">.</span><span class="n">distances</span><span class="p">(</span> <span class="n">D3_array</span> <span class="p">)</span>
+<span class="n">D3</span> <span class="o">=</span> <span class="n">D3</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span> <span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D3</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7fa0440a9400&gt;
+</code></pre></div>
+<p><img alt="png" src="../output_23_1.png" /></p>
+<h3 id="comparing-the-topologies-of-two-large-trees">Comparing the topologies of two large trees</h3>
+<p>So far, we haven't done anything you couldn't do with other phylogenetics packages. 
+<code>SuchTree</code> really shines when you have to do a lot of distance calculations on very
+large trees.</p>
+<p>Here, we use <code>SuchTree</code> to compare the topology of a two trees containing the taxa
+but constructed with different methods (<a href="http://www.microbesonline.org/fasttree/"><code>FastTree</code></a> and 
+<a href="https://en.wikipedia.org/wiki/Neighbor_joining"><code>neighbor joining</code></a>). One million random pairs are 
+sampled from each tree, and the distances compared.</p>
+<div class="highlight"><pre><span></span><code><span class="n">T1</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://git.io/flbcM&#39;</span> <span class="p">)</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://git.io/flbcH&#39;</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;nodes : </span><span class="si">%d</span><span class="s1">, leafs : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span> <span class="n">T1</span><span class="o">.</span><span class="n">length</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">T1</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;nodes : </span><span class="si">%d</span><span class="s1">, leafs : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span> <span class="n">T2</span><span class="o">.</span><span class="n">length</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">T2</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>nodes : 108653, leafs : 54327
+nodes : 108653, leafs : 54327
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">N</span> <span class="o">=</span> <span class="mi">1000000</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T1</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span>
+
+<span class="n">pairs</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="p">:</span>
+    <span class="n">pairs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="n">v</span> <span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="n">v</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="o">%</span><span class="n">time</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span> <span class="o">=</span> <span class="n">T1</span><span class="o">.</span><span class="n">distances_by_name</span><span class="p">(</span> <span class="n">pairs</span> <span class="p">),</span> <span class="n">T2</span><span class="o">.</span><span class="n">distances_by_name</span><span class="p">(</span> <span class="n">pairs</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>CPU times: user 15.6 s, sys: 43.2 ms, total: 15.6 s
+Wall time: 15.6 s
+</code></pre></div>
+<p>The <code>distances()</code> function, which uses node ids rather than taxa names,
+would be a little bit faster. However, because the trees have different topologies,
+the taxa have different node ids in each tree. <code>SuchTree</code>'s <code>distances_by_name()</code>
+function untangles the leaf name to leaf node id mappings for you.</p>
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="p">{</span> <span class="s1">&#39;ML&#39;</span> <span class="p">:</span> <span class="n">D1</span><span class="p">,</span> <span class="s1">&#39;neighbor joining&#39;</span> <span class="p">:</span> <span class="n">D2</span> <span class="p">}</span> <span class="p">)</span>
+
+<span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="s1">&#39;ML&#39;</span><span class="p">,</span> <span class="s1">&#39;neighbor joining&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">6</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&lt;seaborn.axisgrid.JointGrid at 0x7fa02a460668&gt;
+</code></pre></div>
+<p><img alt="png" src="../output_28_1.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">spearmanr</span><span class="p">,</span> <span class="n">kendalltau</span><span class="p">,</span> <span class="n">pearsonr</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;Spearman</span><span class="se">\&#39;</span><span class="s1">s rs : </span><span class="si">%0.3f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">spearmanr</span><span class="p">(</span>  <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span> <span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;Kendall</span><span class="se">\&#39;</span><span class="s1">s tau : </span><span class="si">%0.3f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">kendalltau</span><span class="p">(</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span> <span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;Pearson</span><span class="se">\&#39;</span><span class="s1">s r   : </span><span class="si">%0.3f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">pearsonr</span><span class="p">(</span>   <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span> <span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Spearman&#39;s rs : 0.961
+Kendall&#39;s tau : 0.824
+Pearson&#39;s r   : 0.969
+</code></pre></div>
+<h3 id="running-with-multiple-threads">Running with multiple threads</h3>
+<p>Another advantage of <code>SuchTree</code>'s support for performing batches of distance 
+calculations is that these calculations can run outside of Python's 
+<a href="https://lbolla.info/blog/2013/12/23/python-threads-cython-gil">global interpreter lock</a>.
+This makes it possible to parallelize with <a href="https://docs.python.org/2/library/threading.html">Threads</a>.
+Python's <code>Thread</code> has less overhead than the
+<a href="https://docs.python.org/2/library/multiprocessing.html">multiprocessing</a> package's
+<code>Process</code>, and <code>Thread</code> objects can access the same memory. </p>
+<p><code>SuchTree</code> intentionally does not allow the user to alter trees once they are created,
+and so distance calculations are always thread safe. This makes it possible to use only 
+<em>one</em> instance of a tree for all threads, which ought to give you the best chance of
+keeping it within L3 cache.</p>
+<p>First, let's create a Cython function that calls <code>SuchTree</code> outside of the GIL.</p>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">load_ext</span> <span class="n">Cython</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">%%</span><span class="n">cython</span>
+<span class="k">import</span><span class="w"> </span><span class="nn">cython</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">correlation</span><span class="p">(</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">x</span><span class="p">,</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">y</span> <span class="p">)</span> <span class="p">:</span>
+    <span class="k">return</span> <span class="n">_correlation</span><span class="p">(</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="p">)</span>
+
+<span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+<span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">_correlation</span><span class="p">(</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">x</span><span class="p">,</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">y</span> <span class="p">)</span> <span class="k">nogil</span> <span class="p">:</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">int</span> <span class="nf">n</span><span class="w"> </span><span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">int</span> <span class="nf">i</span><span class="w"> </span><span class="o">=</span> <span class="mf">0</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">r</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">xbar</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">ybar</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">sx</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">sy</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">xbar</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">ybar</span> <span class="o">+=</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">xbar</span> <span class="o">/=</span> <span class="n">n</span>
+    <span class="n">ybar</span> <span class="o">/=</span> <span class="n">n</span>
+
+    <span class="c"># compute standard deviation of x and y</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">sx</span> <span class="o">+=</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">xbar</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">xbar</span><span class="p">)</span>
+        <span class="n">sy</span> <span class="o">+=</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">ybar</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">ybar</span><span class="p">)</span>
+
+    <span class="n">sx</span> <span class="o">=</span> <span class="p">(</span> <span class="n">sx</span> <span class="o">/</span> <span class="n">n</span> <span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">sy</span> <span class="o">=</span> <span class="p">(</span> <span class="n">sy</span> <span class="o">/</span> <span class="n">n</span> <span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="c"># compute r, the correlation coefficient between the two arrays</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">r</span> <span class="o">+=</span> <span class="p">(((</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">xbar</span><span class="p">)</span><span class="o">/</span><span class="n">sx</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">ybar</span><span class="p">)</span><span class="o">/</span><span class="n">sy</span><span class="p">));</span>
+    <span class="n">r</span> <span class="o">/=</span> <span class="p">(</span><span class="n">n</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">r</span>
+</code></pre></div>
+<p>Let's set up two queues, one for uncompleted tasks, which we'll call <code>work_q</code>,
+and one for finished results, which we'll call <code>done_q</code>. The worker threads will
+pop tasks from the <code>work_q</code>, do some work, and push the results into the <code>done_q</code>.</p>
+<p>Let's also push sentinels at the end of the <code>work_q</code> so the workers have a convenient
+way to know when to shut down.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">threading</span><span class="w"> </span><span class="kn">import</span> <span class="n">Thread</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">queue</span><span class="w"> </span><span class="kn">import</span> <span class="n">Queue</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># number of threads</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1"># number of work units</span>
+
+<span class="n">work_q</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">()</span>
+<span class="n">done_q</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">()</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T1</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;building work blocks...&#39;</span> <span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="n">m</span> <span class="p">)</span> <span class="p">:</span>
+    <span class="n">pairs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="mi">100000</span> <span class="p">)</span> <span class="p">:</span>
+        <span class="n">pairs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">T1</span><span class="o">.</span><span class="n">leafs</span><span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="n">v</span> <span class="p">)</span> <span class="p">],</span>
+                        <span class="n">T2</span><span class="o">.</span><span class="n">leafs</span><span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="n">v</span> <span class="p">)</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+    <span class="n">work_q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span> <span class="n">array</span><span class="p">(</span> <span class="n">pairs</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="n">n</span> <span class="p">)</span> <span class="p">:</span>
+    <span class="n">work_q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span> <span class="s1">&#39;STOP&#39;</span> <span class="p">)</span> <span class="c1"># sentinel elements, one for each worker</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>building work blocks...
+</code></pre></div>
+<p>The worker process takes the two queues as arguments, and returns <code>True</code>
+when it completes successfully.</p>
+<p>Note that we're not using <code>distances_by_name()</code> because it requires a call
+to Python's dictionary object, which requires the GIL. Instead, we have
+looked up the node id for each taxon when we created the tasks we pushed onto
+<code>work_q</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">worker</span><span class="p">(</span> <span class="n">work_q</span><span class="p">,</span> <span class="n">done_q</span> <span class="p">)</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;starting worker...&#39;</span> <span class="p">)</span>
+    <span class="k">for</span> <span class="n">task</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span> <span class="n">work_q</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="s1">&#39;STOP&#39;</span> <span class="p">)</span> <span class="p">:</span>
+        <span class="n">D1</span> <span class="o">=</span> <span class="n">T1</span><span class="o">.</span><span class="n">distances</span><span class="p">(</span> <span class="n">task</span> <span class="p">)</span>
+        <span class="n">D2</span> <span class="o">=</span> <span class="n">T2</span><span class="o">.</span><span class="n">distances</span><span class="p">(</span> <span class="n">task</span> <span class="p">)</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">correlation</span><span class="p">(</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span> <span class="p">)</span>
+        <span class="n">done_q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span> <span class="n">r</span> <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;stopping worker...&#39;</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div>
+<p>Now we can set up our thread pool, run it and print the results the threads
+pushed onto <code>done_q</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">threads</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="n">n</span> <span class="p">)</span> <span class="p">:</span>
+    <span class="n">thread</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span> <span class="n">target</span><span class="o">=</span><span class="n">worker</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span> <span class="n">work_q</span><span class="p">,</span> <span class="n">done_q</span> <span class="p">)</span> <span class="p">)</span>
+    <span class="n">thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    <span class="n">threads</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">thread</span> <span class="p">)</span>
+
+<span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span> <span class="p">:</span>
+    <span class="n">thread</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+
+<span class="n">done_q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span> <span class="s1">&#39;STOP&#39;</span> <span class="p">)</span>
+
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span> <span class="n">done_q</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="s1">&#39;STOP&#39;</span> <span class="p">)</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="n">r</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>starting worker...
+starting worker...
+starting worker...
+starting worker...
+stopping worker...
+stopping worker...
+stopping worker...
+stopping worker...
+0.7858568333588076
+0.7826590873988822
+0.7844420298785083
+0.7838968592880762
+0.7832616169597755
+0.7810781477882289
+0.7823715835475968
+0.7832743632827825
+0.7862756657001954
+0.7851411483753257
+0.7828403864806949
+0.7833013061598763
+</code></pre></div>
+<p>Threaded algorithms are difficult to implement, and this is a very minimalist approach.
+It's really only good enough to demonstrate that you can call <code>SuchTree</code> from your worker
+threads without tripping the interpreter lock.</p>
+<p>If you need this capability, you will probably want to study the 
+<a href="https://docs.python.org/3/library/threading.html">documentation</a> carefully.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
