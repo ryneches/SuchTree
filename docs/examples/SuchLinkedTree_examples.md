@@ -11,7 +11,7 @@ rather, have interacted over evolutionary time), you will find yourself with
 two trees of distinct groups of taxa that are linked by a matrix of 
 interaction observations. This is sometimes called a 'dueling trees' problem.
 
-![dueling trees](docs/dueling_trees.png)
+![dueling trees](dueling_trees.png)
 
 If the trees happen to have the same number of taxa, and the interaction 
 matrix happens to be a unit matrix, then you can compute the distance matrix

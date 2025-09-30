@@ -1,3 +1,5 @@
+#!/bin/env python
+
 import os
 import sys
 import subprocess
@@ -59,10 +61,24 @@ def convert_notebooks() :
     for nb_path in NOTEBOOKS_DIR.glob( '*.ipynb' ) :
         output_path = os.path.join( EXAMPLES_DIR, f'{nb_path.stem}.md' )
         print( f'Converting {nb_path} to {output_path}' )
-        body, _ = md_exporter.from_filename( nb_path )
+        body, resources = md_exporter.from_filename( nb_path )
         with open(output_path, 'w' ) as f :
             f.write( f'# {nb_path.stem}\n\n' )
             f.write( body )
+
+        if 'outputs' in resources :
+            # Create a subdirectory for images if needed
+            images_dir = NOTEBOOKS_DIR
+            os.makedirs(images_dir, exist_ok=True)
+            
+            for filename, data in resources[ 'outputs' ].items() :
+                output_file = images_dir / filename
+                # Write binary data for images
+                with open( output_file, 'wb' ) as img_file :
+                    img_file.write(data)
+                print( f'  Saved output: {output_file}' )
+        
+
         notebook_count += 1
     
     print( f'Converted {notebook_count} notebook(s) to Markdown' )
