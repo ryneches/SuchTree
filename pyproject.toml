@@ -35,7 +35,6 @@ local_scheme = "no-local-version"
 version_scheme = "only-version"
 write_to = "SuchTree/__version__.py"
 
-
 # build wheels for amd64 x86_64
 [tool.cibuildwheel.linux]
 before-all = "yum -y install lapack-devel blas-devel atlas-devel"
@@ -45,7 +44,6 @@ skip = "*musllinux* pp*"
 # build wheels for Intel and Apple silicon
 [tool.cibuildwheel.macos]
 archs = "arm64 x86_64"
-skip = "pp*"
 
 # pytest config for testing in place
 [tool.pytest.ini_options]
