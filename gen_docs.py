@@ -23,7 +23,7 @@ def build_package_inplace() :
         # Build extension modules in place without installing
         # This uses the existing setup.py/pyproject.toml configuration
         result = subprocess.run(
-            [ sys.executable, 'setup.py', 'build_ext', '--inplace' ],
+            [ sys.executable, '-m', 'pip', 'install', '--no-build-isolation', '--no-deps', '-e', '.' ],
             check          = True,
             capture_output = True,
             text           = True

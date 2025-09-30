@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../datasets/">
+        <link rel="prev" href="../examples/SuchLinkedTree_examples/">
       
       
-        <link rel="next" href="../paper/">
+        <link rel="next" href="../release_notes/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Release Notes - SuchTree Documentation</title>
+        <title>Example Datasets - SuchTree Documentation</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#release-notes" class="md-skip">
+        <a href="#example-datasets" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Release Notes
+              Example Datasets
             
           </span>
         </div>
@@ -234,9 +234,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../datasets/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -253,11 +255,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../release_notes/" class="md-tabs__link">
         
   
   
@@ -461,28 +461,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../datasets/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Example Datasets
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -498,7 +476,7 @@
   
   
   <span class="md-ellipsis">
-    Release Notes
+    Example Datasets
     
   </span>
   
@@ -511,7 +489,7 @@
   
   
   <span class="md-ellipsis">
-    Release Notes
+    Example Datasets
     
   </span>
   
@@ -532,11 +510,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#release-notes" class="md-nav__link">
+  <a href="#example-datasets" class="md-nav__link">
     <span class="md-ellipsis">
-      Release notes
+      Example datasets
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Example datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hostparasite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Host/Parasite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plantpollinator-visitor-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plant/Pollinator (visitor) interactions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frugivory-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frugivory interactions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -544,6 +555,28 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release Notes
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -661,11 +694,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#release-notes" class="md-nav__link">
+  <a href="#example-datasets" class="md-nav__link">
     <span class="md-ellipsis">
-      Release notes
+      Example datasets
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Example datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hostparasite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Host/Parasite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plantpollinator-visitor-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plant/Pollinator (visitor) interactions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frugivory-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frugivory interactions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -688,23 +754,97 @@
   
 
 
-  <h1>Release Notes</h1>
+  <h1>Example Datasets</h1>
 
-<h3 id="release-notes">Release notes</h3>
-<p>New for SuchTree v1.2</p>
+<h3 id="example-datasets">Example datasets</h3>
+<p>For analysis of ecological interactions, <code>SuchTree</code> is distributed
+with a curated collection of several different examples from the
+literature. Additionally, a collection of simulated interactions with
+various properties, along with an annotated notebook of <code>Python</code> code
+for generating them, is also included. Interactions are registered in
+a JSON object (<code>data/studies.json</code>).</p>
+<h4 id="hostparasite">Host/Parasite</h4>
 <ul>
-<li>Quartet topology tests provided by <code>SuchTree.get_quartet_topology( a, b, c, d )</code></li>
-<li>Optimized, thread-safe bulk quartet topology tests provided by
-  <code>SuchTree.quartet_topologies( [N,4] )</code></li>
-<li>SuchTree now automatically detects and uses NEWICK strings as for initialization</li>
+<li><strong>gopher-louse</strong> Hafner, M.S. &amp; Nadler, S.A. 1988. <em>Phylogenetic trees support the coevolution of parasites and their hosts.</em> Nature 332: 258-259)</li>
+<li><strong>dove-louse</strong> Dale H. Clayton, Sarah E. Bush, Brad M. Goates, and Kevin P. Johnson. 2003. <em>Host defense reinforces host–parasite cospeciation.</em> PNAS. </li>
+<li><strong>sedge-smut</strong> Escudero, Marcial. 2015. <em>Phylogenetic congruence of parasitic
+smut fungi (Anthracoidea, Anthracoideaceae) and their host plants (Carex,
+Cyperaceae): Cospeciation or host-shift speciation?</em> American journal of
+botany.</li>
+<li><strong>fish-worm</strong> Maarten P. M. Vanhove, Antoine Pariselle, Maarten Van Steenberge,
+Joost A. M. Raeymaekers, Pascal I. Hablützel, Céline Gillardin, Bart Hellemans,
+Floris C. Breman, Stephan Koblmüller, Christian Sturmbauer, Jos Snoeks,
+Filip A. M. Volckaert &amp; Tine Huyse. 2015. <em>Hidden biodiversity in an ancient lake: phylogenetic congruence between Lake Tanganyika tropheine cichlids and their monogenean flatworm parasites</em>, Scientific Reports. </li>
 </ul>
-<p>New for SuchTree v1.1</p>
+<h4 id="plantpollinator-visitor-interactions">Plant/Pollinator (visitor) interactions</h4>
+<p>These were originally collected by Enrico Rezende <em>et al.</em> :</p>
+<blockquote>
+<p>Enrico L. Rezende, Jessica E. Lavabre, Paulo R. Guimarães, Pedro Jordano &amp; Jordi Bascompte 
+"<a href="http://www.nature.com/nature/journal/v448/n7156/abs/nature05956.html">Non-random coextinctions in phylogenetically structured mutualistic networks</a>," <em>Nature</em>, 2007</p>
+</blockquote>
 <ul>
-<li>Basic support for support values provided by <code>SuchTree.get_support( node_id )</code></li>
-<li>Relative evolutionary divergence (RED)</li>
-<li>Bipartitions</li>
-<li>Node generators for in-order and preorder traversal</li>
-<li>Summary of leaf relationships via <code>SuchTree.relationships()</code></li>
+<li><strong>arr1</strong>  Arroyo, M.T.K., R. Primack &amp; J.J. Armesto. 1982. <em>Community studies in pollination ecology in the high temperate Andes of central Chile. I. Pollination mechanisms and altitudinal variation.</em> Amer. J. Bot. 69:82-97.</li>
+<li><strong>arr2</strong>  Arroyo, M.T.K., R. Primack &amp; J.J. Armesto. 1982. <em>Community studies in pollination ecology in the high temperate Andes of central Chile. I. Pollination mechanisms and altitudinal variation.</em> Amer. J. Bot. 69:82-97.</li>
+<li><strong>arr3</strong>  Arroyo, M.T.K., R. Primack &amp; J.J. Armesto. 1982. <em>Community studies in pollination ecology in the high temperate Andes of central Chile. I. Pollination mechanisms and altitudinal variation.</em> Amer. J. Bot. 69:82-97.</li>
+<li><strong>bahe</strong>  Barrett, S. C. H., and K. Helenurm. 1987. <em>The Reproductive-Biology of Boreal Forest Herbs.1. Breeding Systems and Pollination.</em> Canadian Journal of Botany 65:2036-2046.</li>
+<li><strong>cllo</strong>  Clements, R. E., and F. L. Long. 1923, Experimental pollination. An outline of the ecology of flowers and insects. Washington, D.C., USA, Carnegie Institute of Washington.</li>
+<li><strong>dihi</strong>  Dicks, LV, Corbet, SA and Pywell, RF 2002. <em>Compartmentalization in plant–insect flower visitor webs.</em> J. Anim. Ecol. 71: 32–43</li>
+<li><strong>dish</strong>  Dicks, LV, Corbet, SA and Pywell, RF 2002. <em>Compartmentalization in plant–insect flower visitor webs.</em> J. Anim. Ecol. 71: 32–43</li>
+<li><strong>dupo</strong>  Dupont YL, Hansen DM and Olesen JM 2003 <em>Structure of a plant-flower-visitor network in the high-altitude sub-alpine desert of Tenerife, Canary Islands.</em> Ecography 26:301-310 </li>
+<li><strong>eol</strong>   Elberling, H., and J. M. Olesen. 1999. <em>The structure of a high latitude plant-flower visitor system: the dominance of flies.</em> Ecography 22:314-323.</li>
+<li><strong>eolz</strong>  Elberling &amp; Olesen unpubl.</li>
+<li><strong>eski</strong>  Eskildsen et al. unpubl.</li>
+<li><strong>herr</strong>  Herrera, J. 1988 <em>Pollination relatioships in southern spanish mediterranean shrublands.</em> Journal of Ecology 76: 274-287.</li>
+<li><strong>hock</strong>  Hocking, B. 1968. <em>Insect-flower associations in the high Arctic with special reference to nectar.</em> Oikos 19:359-388.</li>
+<li><strong>inpk</strong>  Inouye, D. W., and G. H. Pyke. 1988. <em>Pollination biology in the Snowy Mountains of Australia: comparisons with montane Colorado, USA.</em> Australian Journal of Ecology 13:191-210.</li>
+<li><strong>kevn</strong>  Kevan P. G. 1970. <em>High Arctic insect-flower relations: The interrelationships of arthropods and flowers at Lake Hazen, Ellesmere Island, Northwest Territories, Canada.</em> Ph.D. thesis, University of Alberta, Edmonton, 399 pp.</li>
+<li><strong>kt90</strong>  Kato, M., Kakutani, T., Inoue, T. and Itino, T. (1990). <em>Insect-flower relationship in the primary beech forest of Ashu, Kyoto: An overview of the flowering phenology and the seasonal pattern of insect visits.</em> Contrib. Biol. Lab., Kyoto, Univ., 27, 309-375.</li>
+<li><strong>med1</strong>  Medan, D., N. H. Montaldo, M. Devoto, A. Mantese, V. Vasellati, and N. H. Bartoloni. 2002. <em>Plant-pollinator relationships at two altitudes in the Andes of Mendoza, Argentina.</em> Arctic Antarctic and Alpine Research 34:233-241.</li>
+<li><strong>med2</strong>  Medan, D., N. H. Montaldo, M. Devoto, A. Mantese, V. Vasellati, and N. H. Bartoloni. 2002. <em>Plant-pollinator relationships at two altitudes in the Andes of Mendoza, Argentina.</em> Arctic Antarctic and Alpine Research 34:233-241.</li>
+<li><strong>memm</strong>  Memmott J. 1999. <em>The structure of a plant-pollinator food web.</em> Ecology Letters 2:276-280.</li>
+<li><strong>moma</strong>  Mosquin, T., and J. E. H. Martin. 1967. <em>Observations on the pollination biology of plants on Melville Island, N.W.T., Canada.</em> Canadian Field Naturalist 81:201-205.</li>
+<li><strong>mott</strong>  Motten, A. F. 1982. <em>Pollination Ecology of the Spring Wildflower Community in the Deciduous Forests of Piedmont North Carolina.</em> Doctoral Dissertation thesis, Duke University, Duhram, North Carolina, USA; Motten, A. F. 1986. Pollination ecology of the spring wildflower community of a temperate deciduous forest. Ecological Monographs 56:21-42.</li>
+<li><strong>mull</strong>  McMullen 1993</li>
+<li><strong>oflo</strong>  Olesen unpubl.</li>
+<li><strong>ofst</strong>  Olesen unpubl.</li>
+<li><strong>olau</strong>  Olesen unpubl.</li>
+<li><strong>olle</strong>  Ollerton, J., S. D. Johnson, L. Cranmer, and S. Kellie. 2003. <em>The pollination ecology of an assemblage of grassland asclepiads in South Africa.</em> Annals of Botany 92:807-834.</li>
+<li><strong>perc</strong>  Percival, M. 1974. <em>Floral ecology of coastal scrub in sotheast Jamaica.</em> Biotropica, 6, 104-129.</li>
+<li><strong>prap</strong>  Primack, R.B. 1983. <em>Insect pollination in the New Zealand mountain flora.</em> New Zealand J. Bot. 21, 317-333, AB.</li>
+<li><strong>prca</strong>  Primack, R.B. 1983. <em>Insect pollination in the New Zealand mountain flora.</em> New Zealand J. Bot. 21, 317-333. Cass</li>
+<li><strong>prcg</strong>  Primack, R.B. 1983. <em>Insect pollination in the New Zealand mountain flora.</em> New Zealand J. Bot. 21, 317-333. Craigieb.</li>
+<li><strong>ptnd</strong>  Petanidou, T. 1991. <em>Pollination ecology in a phryganic ecosystem.</em> Unp. PhD. Thesis, Aristotelian University, Thessaloniki.</li>
+<li><strong>rabr</strong>  Ramirez, N., and Y. Brito. 1992. <em>Pollination Biology in a Palm Swamp Community in the Venezuelan Central Plains.</em> Botanical Journal of the Linnean Society 110:277-302.</li>
+<li><strong>rmrz</strong>  Ramirez, N. 1989. <em>Biología de polinización en una comunidad arbustiva tropical de la alta Guyana Venezolana.</em> Biotropica 21, 319-330.</li>
+<li><strong>schm</strong>  Schemske, D. W., M. F. Willson, M. N. Melampy, L. J. Miller, L. Verner, K. M. Schemske, and L. B. Best. 1978. <em>Flowering Ecology of Some Spring Woodland Herbs.</em> Ecology 59:351-366.</li>
+<li><strong>smal</strong>  Small, E. 1976. <em>Insect pollinators of the Mer Bleue peat bog of Ottawa.</em> Canadian Field Naturalist 90:22-28. </li>
+<li><strong>smra</strong>  Smith-Ramírez C., P. Martinez, M. Nuñez, C. González and J. J. Armesto 2005 <em>Diversity, flower visitation frequency and generalism of pollinators in temperate rain forests of Chiloé Island,Chile.</em> Botanical Journal of the Linnean Society, 2005, 147, 399–416.</li>
+</ul>
+<h4 id="frugivory-interactions">Frugivory interactions</h4>
+<ul>
+<li><strong>bair</strong>  Baird, J.W. 1980. <em>The selection and use of fruit by birds in an eastern forest.</em> Wilson Bulletin 92: 63-73.</li>
+<li><strong>beeh</strong>  Beehler, B. 1983. <em>Frugivory and polygamy in birds of paradise.</em> Auk, 100: 1-12.</li>
+<li><strong>cacg</strong>  Carlo et al. 2003. <em>Avian fruit preferences across a Puerto Rican forested landscape: pattern consistency and implications for seed removal.</em> Oecologia 134: 119-131</li>
+<li><strong>caci</strong>  Carlo et al. 2003. <em>Avian fruit preferences across a Puerto Rican forested landscape: pattern consistency and implications for seed removal.</em> Oecologia 134: 119-131</li>
+<li><strong>caco</strong>  Carlo et al. 2003. <em>Avian fruit preferences across a Puerto Rican forested landscape: pattern consistency and implications for seed removal.</em> Oecologia 134: 119-131</li>
+<li><strong>cafr</strong>  Carlo et al. 2003. <em>Avian fruit preferences across a Puerto Rican forested landscape: pattern consistency and implications for seed removal.</em> Oecologia 134: 119-131</li>
+<li><strong>crom</strong>  Crome, F.H.J. 1975. <em>The ecology of fruit pigeons in tropical Northern Queensland.</em> Australian Journal of Wildlife Research, 2: 155-185.</li>
+<li><strong>fros</strong>  Frost, P.G.H. 1980. <em>Fruit-frugivore interactions in a South African coastal dune forest.</em> Pages 1179-1184 in: R. Noring (ed.). Acta XVII Congresus Internationalis Ornithologici, Deutsches Ornithologische Gessenshaft, Berlin.</li>
+<li><strong>gen1</strong>  Galetti, M., Pizo, M.A. 1996. <em>Fruit eating birds in a forest fragment in southeastern Brazil.</em> Ararajuba, Revista Brasileira de Ornitologia, 4: 71-79.</li>
+<li><strong>gen2</strong>  Galetti, M., Pizo, M.A. 1996. <em>Fruit eating birds in a forest fragment in southeastern Brazil.</em> Ararajuba, Revista Brasileira de Ornitologia, 4: 71-79.</li>
+<li><strong>hamm</strong>  Hammann, A. &amp; Curio, B. 1999. <em>Interactions among frugivores and fleshy fruit trees in a Philippine submontane rainforest</em></li>
+<li><strong>hrat</strong>  Jordano P. 1985. <em>El ciclo anual de los paseriformes frugívoros en el matorral mediterráneo del sur de España: importancia de su invernada y variaciones interanuales.</em> Ardeola, 32, 69-94.</li>
+<li><strong>kant</strong>  Kantak, G.E. 1979. <em>Observations on some fruit-eating birds in Mexico.</em> Auk, 96: 183-186.</li>
+<li><strong>lamb</strong>  Lambert F. 1989. <em>Fig-eating by birds in a Malaysian lowland rain forest.</em> J. Trop. Ecol., 5, 401-412.</li>
+<li><strong>lope</strong>  Tutin, C.E.G., Ham, R.M., White, L.J.T., Harrison, M.J.S. 1997. <em>The primate community of the Lopé Reserve, Gabon: diets, responses to fruit scarcity, and effects on biomass.</em> American Journal of Primatology, 42: 1-24.</li>
+<li><strong>mack</strong>  Mack, AL and Wright, DD. 1996. <em>Notes on occurrence and feeding of birds at Crater Mountain Biological Research Station, Papua New Guinea.</em> Emu 96: 89-101. </li>
+<li><strong>mont</strong>  Wheelwright, N.T., Haber, W.A., Murray, K.G., Guindon, C. 1984. <em>Tropical fruit-eating birds and their food plants: a survey of a Costa Rican lower montane forest.</em> Biotropica, 16: 173-192.</li>
+<li><strong>ncor</strong>  P. Jordano, unpubl.</li>
+<li><strong>nnog</strong>  P. Jordano, unpubl.</li>
+<li><strong>sapf</strong>  Noma, N. 1997. <em>Annual fluctuations of sapfruits production and synchronization within and inter species in a warm temperate forest on Yakushima Island, Japan.</em> Tropics, 6: 441-449.</li>
+<li><strong>snow</strong>  Snow, B.K., Snow, D.W. 1971. <em>The feeding ecology of tanagers and honeycreepers in Trinidad.</em> Auk, 88: 291-322.</li>
+<li><strong>wes</strong>   Silva, W.R., P. De Marco, E. Hasui, and V.S.M. Gomes, 2002. <em>Patterns of fruit-frugivores interactions in two Atlantic Forest bird communities of South-eastern Brazil: implications for conservation.</em> Pp. 423-435. In: D.J. Levey, W.R. Silva and M. Galetti (eds.) Seed dispersal and frugivory: ecology, evolution and conservation. Wallinford: CAB International.</li>
+<li><strong>wyth</strong>  Snow B.K. &amp; Snow D.W. 1988. <em>Birds and berries, Calton, England.</em></li>
 </ul>
 
 
