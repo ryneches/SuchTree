@@ -49,10 +49,9 @@ plugins:
             show_signature_annotations: true
             show_source: false
             group_by_category: true
-          extra:
-            resolve_aliases: false
-            allow_introspection: true
             show_root_heading: false
-            show_source_link: true
-            source_link_template: "https://github.com/ryneches/suchtree/blob/main/{path}#L{line}"
-            import_cython: true
+            members_order: source
+            docstring_style: google
+            docstring_section_style: table
+            merge_init_into_class: true
+            show_if_no_docstring: false
