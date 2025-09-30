@@ -24,10 +24,13 @@ repo_name: GitHub
 
 nav:
   - Home: index.md
-  - SuchTree Example: examples/SuchTree_examples.md
-  - SuchLinkedTrees Example : examples/SuchLinkedTree_examples.md
+  - Working Example: examples/SuchTree_examples.md
+  - Linked Trees: examples/SuchLinkedTree_examples.md
   - Example Datasets: datasets.md
-  - Release Notes : release_notes.md
+  - Release Notes: release_notes.md
+  - Publication: paper.md
+  - Benchmarks: benchmarks.md
+  - API: SuchTree_API.md
   - API Reference: api.md
 
 markdown_extensions:

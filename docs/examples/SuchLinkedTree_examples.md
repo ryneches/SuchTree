@@ -559,7 +559,7 @@ plot( obj )
 Now that we've gotten through the plotting hampsterdance, we can have a look at the
 structure of this clade and its relationship with the host organisms :
 
-<img src=clade_26971.svg width=500>
+![](clade_26971.svg)
 
 If we're hoping to find an example of coevolution, this is an excellent example of
 what we are not looking for! The Hommola test is not really appropriate for this
@@ -571,3 +571,8 @@ multiple testing effects.
 
 So, we'll need a more sophisticated way to test for coevolution. With `SuchTree` and
 `SuchLinkedTrees` handling the grunt work, we can focus on the those models.
+
+
+```python
+
+```

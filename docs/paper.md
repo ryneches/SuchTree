@@ -46,3 +46,5 @@ In addition to the software itself, the repository includes a collection of 51 c
 
 
 # References
+
+[BibTeX](paper.bib)

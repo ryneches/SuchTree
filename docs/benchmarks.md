@@ -57,7 +57,7 @@ CPU times: user 10.1 s, sys: 0 ns, total: 10.1 s
 Wall time: 10.1 s
 ```
 
-<img src="https://github.com/ryneches/SuchTree/raw/master/docs/nj_vs_ml.png" width=500>
+![](nj_vs_ml.png)
 
 ```python
 from scipy.stats import kendalltau, pearsonr
