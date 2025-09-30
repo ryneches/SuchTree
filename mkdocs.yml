@@ -49,7 +49,7 @@ plugins:
             show_signature_annotations: true
             show_source: false
             group_by_category: true
-          options.extra:
+          extra:
             resolve_aliases: false
             allow_introspection: true
             show_root_heading: false
