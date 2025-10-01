@@ -4,12 +4,6 @@
   --md-accent-fg-color: #ab47bc;
 }
 
-/* Make logo inherit theme text color */
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
-  filter: brightness(0) saturate(100%) invert(100%);
-}
-
 /* Make code blocks more prominent */
 .highlight pre {
   border-radius: 0.5rem;
