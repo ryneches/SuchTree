@@ -1,3 +1,9 @@
+---
+title: SuchTree's API
+subtitle: A somewhat consice description of the core features of SuchTree.
+icon: material/file-document-outline
+---
+
 # SuchTree Class API Reference
 
 ## Overview

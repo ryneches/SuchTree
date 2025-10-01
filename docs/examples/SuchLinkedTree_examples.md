@@ -1,4 +1,8 @@
-# SuchLinkedTree_examples
+---
+title: SuchLinkedTrees, with working examples
+subtitle: Worked examples illustrating some basic applications of SuchLinkedTrees. This file is available as a Jupyter Notebook in the project repository under docs/examples.
+icon: material/notebook-outline
+---
 
 # SuchLinkedTrees
 
@@ -185,7 +189,7 @@ seaborn.jointplot( 'microbe tree distances', 'host tree distances',
 
 
     
-![png](output_12_1.png)
+![png](output_13_1.png)
     
 
 
@@ -379,7 +383,7 @@ seaborn.jointplot( data.n_leafs, data.r, alpha=0.3, size=8 )
 
 
     
-![png](output_21_1.png)
+![png](output_22_1.png)
     
 
 
@@ -481,7 +485,7 @@ seaborn.jointplot( ld['TreeA'], ld['TreeB'] )
 
 
     
-![png](output_25_1.png)
+![png](output_26_1.png)
     
 
 

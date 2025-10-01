@@ -1,4 +1,8 @@
-### Example datasets
+---
+title: Example datasets
+subtitle: Data from the scientific literature that you can use with SuchTree.
+icon: material/bee-flower
+---
 
 For analysis of ecological interactions, `SuchTree` is distributed
 with a curated collection of several different examples from the
@@ -7,7 +11,7 @@ various properties, along with an annotated notebook of `Python` code
 for generating them, is also included. Interactions are registered in
 a JSON object (`data/studies.json`).
 
-#### Host/Parasite
+## Host/Parasite
 
 * **gopher-louse** Hafner, M.S. & Nadler, S.A. 1988. *Phylogenetic trees support the coevolution of parasites and their hosts.* Nature 332: 258-259)
 * **dove-louse** Dale H. Clayton, Sarah E. Bush, Brad M. Goates, and Kevin P. Johnson. 2003. *Host defense reinforces host–parasite cospeciation.* PNAS. 
@@ -20,7 +24,7 @@ Joost A. M. Raeymaekers, Pascal I. Hablützel, Céline Gillardin, Bart Hellemans
 Floris C. Breman, Stephan Koblmüller, Christian Sturmbauer, Jos Snoeks,
 Filip A. M. Volckaert & Tine Huyse. 2015. *Hidden biodiversity in an ancient lake: phylogenetic congruence between Lake Tanganyika tropheine cichlids and their monogenean flatworm parasites*, Scientific Reports. 
 
-#### Plant/Pollinator (visitor) interactions
+## Plant/Pollinator (visitor) interactions
 
 These were originally collected by Enrico Rezende *et al.* :
 
@@ -64,7 +68,7 @@ These were originally collected by Enrico Rezende *et al.* :
 * **smal**	Small, E. 1976. *Insect pollinators of the Mer Bleue peat bog of Ottawa.* Canadian Field Naturalist 90:22-28. 
 * **smra**	Smith-Ramírez C., P. Martinez, M. Nuñez, C. González and J. J. Armesto 2005 *Diversity, flower visitation frequency and generalism of pollinators in temperate rain forests of Chiloé Island,Chile.* Botanical Journal of the Linnean Society, 2005, 147, 399–416.
 
-#### Frugivory interactions
+## Frugivory interactions
 
 * **bair**	Baird, J.W. 1980. *The selection and use of fruit by birds in an eastern forest.* Wilson Bulletin 92: 63-73.
 * **beeh**	Beehler, B. 1983. *Frugivory and polygamy in birds of paradise.* Auk, 100: 1-12.

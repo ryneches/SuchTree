@@ -1,3 +1,9 @@
+---
+title: Benchmarks
+subtitle: Get a general idea of how SuchTree performs.
+icon: material/gauge
+---
+
 ### Benchmarks
 
 `SuchTree` is motivated by the observation that the memory usage of distance

@@ -1,10 +1,26 @@
-site_name: SuchTree Documentation
+repo_url: https://github.com/ryneches/suchtree
+repo_name: GitHub
+site_url: https://suchtree.vort.org
+site_description: A Python library for doing fast, thread-safe computations with phylogenetic trees.
+site_author: Russell Neches
+
+site_name: SuchTree
 theme:
   name: material
   features:
     - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - toc.follow
   palette:
     - scheme: default
       primary: teal
@@ -18,9 +34,23 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/cpu-tree.svg
+  favicon: assets/favicon.png
 
-repo_url: https://github.com/ryneches/suchtree
-repo_name: GitHub
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ryneches/suchtree
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/suchtree/
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
@@ -39,6 +69,13 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
+  - social:
+      cards: true
+      cards_layout_options:
+        background_color: "#009688"
+        color: "#ffffff"
+        font_family: Roboto
+        logo: assets/logo.png
   - mkdocstrings:
       handlers:
         python:

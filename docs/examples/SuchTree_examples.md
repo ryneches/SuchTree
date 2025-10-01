@@ -1,4 +1,8 @@
-# SuchTree_examples
+---
+title: SuchTree, with working examples
+subtitle: Worked examples illustrating some basic applications of SuchTree. This file is available as a Jupyter Notebook in the project repository under docs/examples.
+icon: material/notebook-outline
+---
 
 # SuchTree
 
@@ -94,7 +98,7 @@ ete_tree.render("%%inline", w=120, units="mm", tree_style=ts)
 
 
     
-![png](output_3_0.png)
+![png](output_4_0.png)
     
 
 
@@ -216,7 +220,7 @@ seaborn.clustermap( df, xticklabels=False, cmap='viridis', figsize=(6,6) )
 
 
     
-![png](output_15_1.png)
+![png](output_16_1.png)
     
 
 
@@ -268,7 +272,7 @@ seaborn.clustermap( df, xticklabels=False, cmap='viridis', figsize=(6,6) )
 
 
     
-![png](output_20_1.png)
+![png](output_21_1.png)
     
 
 
@@ -307,7 +311,7 @@ seaborn.clustermap( df, xticklabels=False, cmap='viridis', figsize=(6,6) )
 
 
     
-![png](output_23_1.png)
+![png](output_24_1.png)
     
 
 
@@ -373,7 +377,7 @@ seaborn.jointplot( 'ML', 'neighbor joining', data=df, alpha=0.3, size=6 )
 
 
     
-![png](output_28_1.png)
+![png](output_29_1.png)
     
 
 

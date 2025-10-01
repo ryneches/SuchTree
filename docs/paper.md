@@ -1,5 +1,7 @@
 ---
 title: 'SuchTree: Fast, thread-safe computations with phylogenetic trees'
+subtitle: Our 2018 publication in the Journal of Open Source Software.
+icon: material/script-text-outline
 tags:
 - phylogenetics
 - trees
