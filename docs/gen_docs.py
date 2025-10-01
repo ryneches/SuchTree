@@ -63,7 +63,7 @@ def convert_notebooks() :
         print( f'Converting {nb_path} to {output_path}' )
         body, resources = md_exporter.from_filename( nb_path )
         with open(output_path, 'w' ) as f :
-            f.write( f'# {nb_path.stem}\n\n' )
+            #f.write( f'# {nb_path.stem}\n\n' )
             f.write( body )
 
         if 'outputs' in resources :
