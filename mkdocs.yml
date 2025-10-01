@@ -40,7 +40,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   logo: assets/cpu-tree.svg
-  favicon: assets/favicon.png
+  favicon: assets/cpu-tree.svg
 
 extra:
   social:
@@ -53,7 +53,7 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Home: index.md
+  - Introduction: index.md
   - Working Example: examples/SuchTree_examples.md
   - Linked Trees: examples/SuchLinkedTree_examples.md
   - Example Datasets: datasets.md
@@ -75,7 +75,7 @@ plugins:
         background_color: "#009688"
         color: "#ffffff"
         font_family: Roboto
-        logo: assets/logo.png
+        logo: assets/cpu-tree.svg
   - mkdocstrings:
       handlers:
         python:
