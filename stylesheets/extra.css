@@ -1,0 +1,73 @@
+/* Custom accent colors and styling */
+:root {
+  --md-primary-fg-color: #009688;
+  --md-accent-fg-color: #ab47bc;
+}
+
+/* Make logo inherit theme text color */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+/* Make code blocks more prominent */
+.highlight pre {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.1);
+}
+
+/* Style admonitions with better spacing */
+.admonition {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.05);
+}
+
+/* Improve table styling */
+table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.05);
+}
+
+/* Add subtle animations to navigation */
+.md-nav__link {
+  transition: padding-left 0.2s ease;
+}
+
+.md-nav__link:hover {
+  padding-left: 1rem;
+}
+
+/* Style the API documentation sections */
+.doc-heading {
+  border-left: 4px solid var(--md-accent-fg-color);
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+
+/* Improve inline code appearance */
+code:not(.highlight code) {
+  background-color: rgba(0, 150, 136, 0.1);
+  padding: 0.05rem 0.25rem;
+  border-radius: 0.3rem;
+  font-size: 0.9em;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] code:not(.highlight code) {
+  background-color: rgba(0, 150, 136, 0.2);
+}
+
+/* Hero section styling for home page */
+.hero {
+  text-align: center;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, rgba(0, 150, 136, 0.1), rgba(171, 71, 188, 0.1));
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Improve footer */
+.md-footer {
+  background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+}
