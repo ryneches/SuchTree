@@ -4,6 +4,10 @@ site_url: https://suchtree.vort.org
 site_description: A Python library for doing fast, thread-safe computations with phylogenetic trees.
 site_author: Russell Neches
 
+# Preserve CNAME file for custom domain
+docs_dir: docs
+site_dir: site
+
 site_name: SuchTree
 theme:
   name: material
