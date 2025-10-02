@@ -6,21 +6,6 @@ icon: material/notebook-outline
 
 # SuchTree
 
-There are a lot of packages for working with and manipulating phylogenetic trees
-using python. Rather than compete with packages like `dendropy` and `ete3` on the
-basis of features, `SuchTree` does one thing well -- its memory usage and algorithmic
-complexity linearly with the number of taxa in your tree. If you need to work with
-very large trees, this is very helpful.
-
-Let's have a look at some useful things you can do with trees using the `SuchTree`
-class. First, let's get our modules loaded. I'm going to suppress some warnings 
-
-To run this notebook on an Ubuntu host, you will need the following system
-packages installed for `ete3` to work :
-
-* `python3-pyqt4.qtopengl`
-* `python3-pyqt5.qtopengl`
-
 and python packages :
 
 * `SuchTree`
@@ -32,7 +17,6 @@ and python packages :
 * `seaborn`
 * `fastcluster`
 * `dendropy`
-* `ete3`
 
 and obviously you'll want `jupyter` installed so you can run the notebook server. The
 Internet is full of opinions about how to set up your python environment. You
@@ -47,79 +31,53 @@ I'm going to assume that you are running this notebook out of a local copy of th
 
 
 ```python
-%pylab inline
 %config InlineBackend.figure_format='retina'
 
 from SuchTree import SuchTree, SuchLinkedTrees
+from numpy import zeros, array
 import seaborn
 import pandas
+import toytree
+import random
+import warnings
+
 from scipy.cluster.hierarchy import ClusterWarning
 
 warnings.simplefilter( 'ignore', UserWarning )
 warnings.simplefilter( 'ignore', FutureWarning )
 ```
 
-    Populating the interactive namespace from numpy and matplotlib
-
-
 Let's have a look at some example data. Here is a tree of cichlid fishes
 from my dissertation :
 
 
 ```python
-from ete3 import Tree, TreeStyle, NodeStyle, TextFace
-from numpy import linspace
+tree = toytree.tree( '../../data/bigtrees/host.tree' )
 
-ts = TreeStyle()
-ts.mode = 'r'
-ts.show_leaf_name = True
-ts.branch_vertical_margin = 2
-ts.scale = 1000
-ts.show_leaf_name = False
-ts.show_scale = False
-
-nstyle = NodeStyle()
-nstyle['size'] = 0
-
-ete_tree = Tree( 'data/bigtrees/host.tree' )
-
-for node in ete_tree.traverse() :
-    node.set_style(nstyle)
-    if node.is_leaf :
-        tf = TextFace( node.name.replace('_',' ').replace('\'','') )
-        tf.fsize = 10
-        tf.hz_align = 100
-        node.add_face( tf, 0 )
-
-ete_tree.render("%%inline", w=120, units="mm", tree_style=ts)
+canvas, axes, mark = tree.draw( tree_style='d', tip_labels_align=True )
 ```
 
 
-
-
-    
-![png](output_4_0.png)
-    
-
+<div class="toyplot" id="te2cd2e162416425095abcb75225b4469" style="text-align:center"><svg class="toyplot-canvas-Canvas" xmlns:toyplot="http://www.sandia.gov/toyplot" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="539.152px" height="331.84px" viewBox="0 0 539.152 331.84" preserveAspectRatio="xMidYMid meet" style="background-color:transparent;border-color:#292724;border-style:none;border-width:1.0;fill:rgb(16.1%,15.3%,14.1%);fill-opacity:1.0;font-family:Helvetica;font-size:12px;opacity:1.0;stroke:rgb(16.1%,15.3%,14.1%);stroke-opacity:1.0;stroke-width:1.0" id="t756986dbdc814f2c80d7242d752e85d7"><g class="toyplot-coordinates-Cartesian" id="t45172befdef64a9fa94797de38b5fd18"><clipPath id="t3fdc10967a7f44f5b9be262351ee46b5"><rect x="35.0" y="35.0" width="469.15200000000004" height="261.84"></rect></clipPath><g clip-path="url(#t3fdc10967a7f44f5b9be262351ee46b5)"><g class="toytree-mark-Toytree" id="t05b4d3b53a354f80928be3f7d75473a0"><g class="toytree-Edges" style="stroke:rgb(40.0%,76.1%,64.7%);stroke-opacity:1.0;stroke-linecap:round;stroke-width:2;fill:none"><path d="M 142.5 266.7 L 142.5 275.1 L 187.6 275.1" id="14,0" style=""></path><path d="M 142.5 266.7 L 142.5 258.3 L 178.4 258.3" id="14,1" style=""></path><path d="M 77.5 254.1 L 77.5 241.5 L 229.1 241.5" id="15,2" style=""></path><path d="M 147.6 210.0 L 147.6 224.7 L 289.1 224.7" id="18,3" style=""></path><path d="M 198.6 195.3 L 198.6 207.9 L 235.5 207.9" id="17,4" style=""></path><path d="M 226.4 182.7 L 226.4 191.1 L 240.6 191.1" id="16,5" style=""></path><path d="M 226.4 182.7 L 226.4 174.3 L 251.5 174.3" id="16,6" style=""></path><path d="M 68.2 194.8 L 68.2 157.5 L 214.1 157.5" id="20,7" style=""></path><path d="M 89.1 132.3 L 89.1 140.7 L 159.5 140.7" id="21,8" style=""></path><path d="M 89.1 132.3 L 89.1 123.9 L 154.9 123.9" id="21,9" style=""></path><path d="M 73.5 119.7 L 73.5 107.2 L 144.7 107.2" id="22,10" style=""></path><path d="M 122.1 77.8 L 122.1 90.4 L 211.8 90.4" id="25,11" style=""></path><path d="M 148.5 65.2 L 148.5 73.6 L 243.0 73.6" id="24,12" style=""></path><path d="M 148.5 65.2 L 148.5 56.8 L 224.9 56.8" id="24,13" style=""></path><path d="M 77.5 254.1 L 77.5 266.7 L 142.5 266.7" id="15,14" style=""></path><path d="M 71.2 232.0 L 71.2 254.1 L 77.5 254.1" id="19,15" style=""></path><path d="M 198.6 195.3 L 198.6 182.7 L 226.4 182.7" id="17,16" style=""></path><path d="M 147.6 210.0 L 147.6 195.3 L 198.6 195.3" id="18,17" style=""></path><path d="M 71.2 232.0 L 71.2 210.0 L 147.6 210.0" id="19,18" style=""></path><path d="M 68.2 194.8 L 68.2 232.0 L 71.2 232.0" id="20,19" style=""></path><path d="M 64.4 157.3 L 64.4 194.8 L 68.2 194.8" id="23,20" style=""></path><path d="M 73.5 119.7 L 73.5 132.3 L 89.1 132.3" id="22,21" style=""></path><path d="M 64.4 157.3 L 64.4 119.7 L 73.5 119.7" id="23,22" style=""></path><path d="M 50.5 117.5 L 50.5 157.3 L 64.4 157.3" id="26,23" style=""></path><path d="M 122.1 77.8 L 122.1 65.2 L 148.5 65.2" id="25,24" style=""></path><path d="M 50.5 117.5 L 50.5 77.8 L 122.1 77.8" id="26,25" style=""></path></g><g class="toytree-AlignEdges" style="stroke:rgb(66.0%,66.0%,66.0%);stroke-opacity:0.75;stroke-dasharray:2,4;stroke-linecap:round;stroke-width:2"><path d="M 289.1 275.1 L 187.6 275.1"></path><path d="M 289.1 258.3 L 178.4 258.3"></path><path d="M 289.1 241.5 L 229.1 241.5"></path><path d="M 289.1 224.7 L 289.1 224.7"></path><path d="M 289.1 207.9 L 235.5 207.9"></path><path d="M 289.1 191.1 L 240.6 191.1"></path><path d="M 289.1 174.3 L 251.5 174.3"></path><path d="M 289.1 157.5 L 214.1 157.5"></path><path d="M 289.1 140.7 L 159.5 140.7"></path><path d="M 289.1 123.9 L 154.9 123.9"></path><path d="M 289.1 107.2 L 144.7 107.2"></path><path d="M 289.1 90.4 L 211.8 90.4"></path><path d="M 289.1 73.6 L 243.0 73.6"></path><path d="M 289.1 56.8 L 224.9 56.8"></path></g><g class="toytree-AdmixEdges" style="fill:rgb(0.0%,0.0%,0.0%);fill-opacity:0.0;stroke:rgb(90.6%,54.1%,76.5%);stroke-opacity:0.6;font-size:14px;stroke-linecap:round;stroke-width:5"></g><g class="toytree-Nodes" style="fill:rgb(40.0%,76.1%,64.7%);fill-opacity:1.0;stroke:none;stroke-width:1.5"></g><g class="toytree-TipLabels" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0;font-family:Helvetica;font-size:12px;font-weight:300;vertical-align:baseline;white-space:pre;stroke:none"><g class="toytree-TipLabel" transform="translate(289.135,275.061)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Tropheus_moorii</text></g><g class="toytree-TipLabel" transform="translate(289.135,258.27)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Lobochilotes_labiatus</text></g><g class="toytree-TipLabel" transform="translate(289.135,241.479)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Tanganicodus_irsacae</text></g><g class="toytree-TipLabel" transform="translate(289.135,224.688)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Cyprichromis_coloratus</text></g><g class="toytree-TipLabel" transform="translate(289.135,207.897)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Haplotaxodon_microlepis</text></g><g class="toytree-TipLabel" transform="translate(289.135,191.106)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Perissodus_microlepis</text></g><g class="toytree-TipLabel" transform="translate(289.135,174.315)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Plecodus_straeleni</text></g><g class="toytree-TipLabel" transform="translate(289.135,157.525)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Xenotilapia_flavipinnis</text></g><g class="toytree-TipLabel" transform="translate(289.135,140.734)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Triglachromis_otostigma</text></g><g class="toytree-TipLabel" transform="translate(289.135,123.943)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Reganochromis_calliurus</text></g><g class="toytree-TipLabel" transform="translate(289.135,107.152)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Trematochromis_benthicola</text></g><g class="toytree-TipLabel" transform="translate(289.135,90.3608)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Lepidiolamprologus_profundicola</text></g><g class="toytree-TipLabel" transform="translate(289.135,73.5699)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Neolamprologus_buescheri</text></g><g class="toytree-TipLabel" transform="translate(289.135,56.7789)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Chalinochromis_brichardi</text></g></g></g></g></g></svg><div class="toyplot-behavior"><script>(function()
+{
+var modules={};
+})();</script></div></div>
 
 
 Loading tree data into `SuchTree` is pretty simple -- just give it a path
-to a valid Newick file. Under the hood, `SuchTree` uses `dendropy` for 
-parsing. I figured it was better to introduce another dependency than
-to inflict yet another Newick parser on the world (the Newick file format
-has some slight ambiguities that can lead to annoying incompatibilities).
+to a valid Newick file.
 
 
 ```python
-T = SuchTree( 'data/bigtrees/host.tree' )
+T = SuchTree( '../../data/bigtrees/host.tree' )
 ```
 
-The `SuchTree` object has a dictionary called `leafs` that maps leaf names onto their
+The `SuchTree` object has a dictionary called `leaves` that maps leaf names onto their
 node ids. We'll make extensive use of this as we put the utility through its paces.
 
 
 ```python
-T.leafs
+T.leaves
 ```
 
 
@@ -152,8 +110,6 @@ Here's how to measure distances one at a time :
 
 
 ```python
-import random
-
 a = random.choice( list( T.leafs.values() ) )
 b = random.choice( list( T.leafs.values() ) )
 
@@ -164,9 +120,9 @@ print( 'taxon 2  : %d' % b )
 print( 'distance : %f' % d )
 ```
 
-    taxon 1  : 6
-    taxon 2  : 24
-    distance : 0.446084
+    taxon 1  : 10
+    taxon 2  : 14
+    distance : 0.329240
 
 
 The `distance()` function will accept either node ids (which are integers),
@@ -184,17 +140,17 @@ print( 'taxon 2  : %s' % b )
 print( 'distance : %f' % d )
 ```
 
-    taxon 1  : Lepidiolamprologus_profundicola
-    taxon 2  : Reganochromis_calliurus
-    distance : 0.274808
+    taxon 1  : Neolamprologus_buescheri
+    taxon 2  : Xenotilapia_flavipinnis
+    distance : 0.368439
 
 
 You can loop over all of the distances one at a time to construct a distance matrix...
 
 
 ```python
-D1 = zeros( ( len(T.leafs),len(T.leafs) ) )
-for i,a in enumerate(T.leafs.values()) :
+D1 = zeros( ( len(T.leaves),len(T.leaves) ) )
+for i,a in enumerate(  T.leafs.values() ) :
     for j,b in enumerate( T.leafs.values() ) :
         D1[i,j] = T.distance( a, b )
 ```
@@ -207,14 +163,14 @@ topology as the input tree, which was build with [RAxML](https://github.com/stam
 
 
 ```python
-df = pandas.DataFrame( D1, index=[ i.replace('_',' ') for i in T.leafs.keys() ] )
-seaborn.clustermap( df, xticklabels=False, cmap='viridis', figsize=(6,6) )
+df = pandas.DataFrame( D1, index=[ i.replace('_',' ') for i in T.leaves.keys() ] )
+seaborn.clustermap( df, xticklabels=False, cmap='viridis', figsize=(6,4) )
 ```
 
 
 
 
-    <seaborn.matrix.ClusterGrid at 0x7fa057c9a080>
+    <seaborn.matrix.ClusterGrid at 0x77713876fb30>
 
 
 
@@ -231,8 +187,8 @@ them as integers).
 
 ```python
 D2_list = []
-for i,a in enumerate(T.leafs.values()) :
-    for j,b in enumerate( T.leafs.values() ) :
+for i,a in enumerate(T.leaves.values()) :
+    for j,b in enumerate( T.leaves.values() ) :
         D2_list.append( ( a, b ) )
 D2_array = array( D2_list )
 
@@ -259,14 +215,14 @@ We should get the same distance matrix and clustermap as before.
 
 
 ```python
-df = pandas.DataFrame( D2, index=[ i.replace('_',' ') for i in T.leafs.keys() ] )
-seaborn.clustermap( df, xticklabels=False, cmap='viridis', figsize=(6,6) )
+df = pandas.DataFrame( D2, index=[ i.replace('_',' ') for i in T.leaves.keys() ] )
+seaborn.clustermap( df, xticklabels=False, cmap='viridis', figsize=(6,4) )
 ```
 
 
 
 
-    <seaborn.matrix.ClusterGrid at 0x7fa04c09bf28>
+    <seaborn.matrix.ClusterGrid at 0x7771388435c0>
 
 
 
@@ -288,7 +244,7 @@ programatic queries).
 
 
 ```python
-T3 = SuchTree( 'https://git.io/flbcP' )
+T3 = SuchTree( 'https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre' )
 
 D3_list = []
 for i,a in enumerate(T3.leafs.values()) :
@@ -303,16 +259,20 @@ seaborn.clustermap( df, xticklabels=False, cmap='viridis', figsize=(6,6) )
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    FileNotFoundError                         Traceback (most recent call last)
+
+    Cell In[24], line 1
+    ----> 1 T3 = SuchTree( 'https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre' )
+          3 D3_list = []
+          4 for i,a in enumerate(T3.leafs.values()) :
 
 
-    <seaborn.matrix.ClusterGrid at 0x7fa0440a9400>
+    File SuchTree/MuchTree.pyx:151, in SuchTree.MuchTree.SuchTree.__init__()
 
 
-
-
-    
-![png](output_24_1.png)
-    
+    FileNotFoundError: [Errno 2] No such file or directory: 'https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre'
 
 
 ### Comparing the topologies of two large trees

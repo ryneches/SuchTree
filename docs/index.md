@@ -13,31 +13,36 @@ icon: material/code-block-braces
 ### High-performance sampling of very large trees
 
 So, you have a phylogenetic tree, and you want to do some statistics with it.
-There are lots of packages in Python that let you manipulate
-phylogenies, like [`dendropy`](http://www.dendropy.org/), the tree model
-included in [`scikit-bio`](http://scikit-bio.org/docs/latest/tree.html),
-[`ete3`](http://etetoolkit.org/) and the awesome, shiny new 
-[`toytree`](https://github.com/eaton-lab/toytree). If your tree isn't *too*
-big and your statistical tests doesn't require *too* many traversals, there 
-a lot of great options. If you're working with about a thousand taxa or less,
-you should be able to use any of those packages for your tree.
+There are lots of packages in Python that let you manipulate phylogenies, like
+[`dendropy`](http://www.dendropy.org/), the tree model included in
+[`scikit-bio`](http://scikit-bio.org/docs/latest/tree.html),
+[`ete3`](http://etetoolkit.org/) and the awesome, shiny new
+[`toytree`](https://github.com/eaton-lab/toytree). For trees of modest size and
+statistical methods that don't require *too* many traversals, there a lot of
+great options. If you're working with about a thousand taxa or less, you should
+be able to use any of those packages for your tree.
 
 However, if you are working with trees that include tens of thousands, or
-maybe even millions of taxa, you are going to run into problems. `ete3`,
-`dendropy`, `toytree`, and`scikit-bio`'s `TreeNode` are all designed to give
-you lots of flexibility. You can re-root trees, use different traversal
-schemes, attach metadata to nodes, attach and detach nodes, splice sub-trees
-into or out of the main tree, plot trees for publication figures and do lots
-of other useful things. That power and flexibility comes with a price -- speed.
+perhaps millions of taxa, you will run into problems. `ete3`, `dendropy`,
+`toytree`, and`scikit-bio`'s `TreeNode` are all designed to give you
+lots of flexibility. You can re-root trees, use different traversal
+schemes, attach metadata to nodes, attach and detach nodes, splice
+sub-trees into or out of the main tree, plot trees for publication
+figures and do lots of other useful things. That power and flexibility
+comes with a price : speed.
 
-For trees of moderate size, it is possible to solve the speed issue by
-working with matrix representations of the tree. Unfortunately, these
-representations scale quadratically with the number of taxa in the tree.
-A distance matrix for a tree of 100,000 taxa will consume about 20GB 
-of RAM. If your method performs sampling, then almost every operation
-will be a cache miss. Unless you are very clever about access patterns and
-matrix layout, the performance will be limited by RAM latency, leaving the
-CPU mostly idle.
+For trees of moderate size, it is sometimes possible to solve the speed issue
+by working with a matrix representation of the tree. Unfortunately, these
+representations scale quadratically with the number of taxa in the tree.  For
+example, the distance matrix for a tree of 100,000 taxa contains 10,000,000,000
+elements, which will consume about 20GB of RAM. If your method performs
+sampling on this matrix then almost every operation will be a cache miss.
+Unless you are very clever about access patterns and matrix layout, the
+performance will be limited by RAM latency, leaving the CPU mostly idle. SuchTree
+is designed to solve this problem by representing trees as a highly compact
+object that usually fits into the CPU's L3 cache even for very large trees,
+and employs simple, assembly-language code paths for accessing data. Please
+see the [Benchmarks](benchmarks.md) for a more detailed look at performance.
 
 ### Sampling linked trees
 
@@ -80,19 +85,20 @@ pip install SuchTree
 ```
 
 If you install using `pip`, binary packages
-([`wheels`](https://realpython.com/python-wheels/)) are available for CPython 3.6, 3.7,
-3.8, 3.9, 3.10 and 3.11 on Linux x86_64 and on MacOS with Intel and Apple
-silicon. If your platform isn't in that list, but it is supported by
-[`cibuildwheel`](https://github.com/pypa/cibuildwheel), please file an issue
-to request your platform! I would be absolutely _delighted_ if someone was
-actually running `SuchTree` on an exotic embedded system or a mainframe.
+([`wheels`](https://realpython.com/python-wheels/)) are available for CPython
+3.9, 3.10 and 3.11, 3.12, 3.13 on Linux x86_64 and on MacOS with Intel and
+Apple silicon. If your platform isn't in that list, but it is supported by
+[`cibuildwheel`](https://github.com/pypa/cibuildwheel), please file an issue to
+request your platform! I would be absolutely _delighted_ to help you get
+`SuchTree` deployed on an exotic embedded system or a mainframe.
 
 To install the most recent development version :
 
 ```
 git clone https://github.com/ryneches/SuchTree.git
 cd SuchTree
-./setup.py install
+pip install -r requirements.txt
+pip install .
 ```
 
 To install via conda, first make sure you've got the
@@ -115,63 +121,29 @@ conda install suchtree
 
 ### Basic usage
 
-`SuchTree` will accept either a URL or a file path :
+`SuchTree` will accept URLs, file paths or valid NEWICK strings :
 
 ```python
 from SuchTree import SuchTree
 
 T = SuchTree( 'test.tree' )
 T = SuchTree( 'https://github.com/ryneches/SuchTree/blob/master/data/gopher-louse/gopher.tree' )
+T = SuchTree( '(A,B,(C,D));' )
 ```
 
-The available properties are :
+If you are just starting out, begin with the [Working
+Example](examples/SuchTree_examples.md). If you are interested in working with
+linked trees, you should start with the [Linked
+Trees](examples/SuchLinkedTree_examples.md).
 
-* `length` : the number of nodes in the tree
-* `depth` : the maximum depth of the tree
-* `root` : the id of the root node
-* `leafs` : a dictionary mapping leaf names to their ids
-* `leafnodes` : a dictionary mapping leaf node ids to leaf names
-* `RED` : a dictionary of RED (relative evolutionary divergence) scores for internal nodes, calculated on first access
+For more, check out the [API Documentation](SuchTree_API.md) for how to use
+SuchTree, or the [API Reference](api.md). The API Reference is generated
+automatically after each commit; it's guaranteed to be up-to-date, but not
+necessarily fun to read. 
 
-The available methods of `SuchTree` are :
-
-* `get_parent` : for a given node id or leaf name, return the parent id
-* `get_support` : return the support value, if available
-* `get_children` : for a given node id or leaf name, return the ids of
-the child nodes (leaf nodes have no children, so their child node ids will
-always be -1)
-* `get_leafs` : return an array of ids of all leaf nodes that descend from a node
-* `get_descendant_nodes` : generator for ids of all nodes that descend from a node, including leafs
-* `get_bipartition` : return the two sets of leaf nodes partitioned by a node
-* `bipartitions` : generator of all bipartitions
-* `get_internal_nodes` : return array of internal nodes
-* `get_nodes` : return an array of all nodes
-* `in_order` : generator for an in-order traversal of the tree
-* `pre_order` : generator for a pre-order traversal of the tree
-* `get_distance_to_root` : for a given node id or leaf name, return
-the integrated phylogenetic distance to the root node
-* `mrca` : for a given pair of node ids or leaf names, return the id
-of the nearest node that is parent to both
-* `is_leaf` : returns True if the node is a leaf
-* `is_internal_node` : returns True if the node is an internal node
-* `is_ancestor` : returns 1 if *a* is an ancestor of *b*, -1 if *b* is an ancestor of *a*, or 0 otherwise
-* `distance` : for a given pair of node ids or leaf names, return the
-patristic distance between the pair
-* `distances` : for an (n,2) array of pairs of node ids, return an (n)
-array of patristic distances between the pairs
-* `distances_by_name` for an (n,2) list of pairs of leaf names, return
-an (n) list of patristic distances between each pair
-* `get_quartet_topology` : for a given quartet, return the topology of that quartet
-* `quartet_topologies` : compute the topologies of an array of quartets by id
-* `quartet_topologies_by_name` : compute the topologies of quartets by their taxa names
-* `dump_array` : print out the entire tree (for debugging only! May
-produce pathologically gigantic output.)
-* `adjacency` : build the graph adjacency matrix of the tree
-* `laplacian` : build the Laplacian matrix of the tree
-* `nodes_data` : generator for node data, compatible with `networkx`
-* `edges_data` : generator for edge data, compatible with `networkx`
-* `relationships` : builds a Pandas DataFrame describing relationships among taxa
-
+I highly recommend using SuchTree with [`toytree`](https://eaton-lab.org/toytree/)
+for visualizing trees. Look for more convenient interoperation with `toytree` in
+future releases of SuchTree!
 
 ### Thanks
 

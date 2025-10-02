@@ -5,6 +5,7 @@ from random import sample
 from itertools import combinations
 from collections import deque
 from pathlib import Path
+from urllib.parse import urlparse
 import numpy as np
 cimport numpy as np
 import pandas as pd
@@ -132,17 +133,16 @@ cdef class SuchTree :
         
         # tiny nonzero distance for representing polytomies
         self.epsilon = np.finfo( np.float64 ).eps
-        
-        url_strings = [ 'http://', 'https://', 'ftp://' ]
-        
-        if any( [ tree_input.startswith(x) for x in url_strings ] ) :
+       
+        if urlparse( tree_input ).scheme in ( 'http', 'https', 'ftp' ) :
             t = Tree.get( url=tree_input,
                           schema='newick',
                           preserve_underscores=True,
                           suppress_internal_node_taxa=True )
-        if all( [ '(' in tree_input,
-                  ')' in tree_input,
-                  tree_input.count( '(' ) == tree_input.count( ')' ) ] ) :
+        elif all( [ '(' in tree_input,
+                    ')' in tree_input,
+                    tree_input.count( '(' ) == tree_input.count( ')' ),
+                    tree_input.endswith(';') ] ) :
             t = Tree.get( data=tree_input,
                           schema='newick',
                           preserve_underscores=True,

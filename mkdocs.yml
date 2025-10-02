@@ -64,7 +64,7 @@ nav:
   - Release Notes: release_notes.md
   - Publication: paper.md
   - Benchmarks: benchmarks.md
-  - API: SuchTree_API.md
+  - API Documentation: SuchTree_API.md
   - API Reference: api.md
 
 markdown_extensions:
@@ -73,6 +73,7 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
+  - search
   - social:
       cards: true
       cards_layout_options:
