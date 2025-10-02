@@ -181,6 +181,48 @@
     
     
     
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
     
       <div class="md-header__source">
         <a href="https://github.com/ryneches/suchtree" title="Go to repository" class="md-source" data-md-component="source">
@@ -351,7 +393,7 @@
   
     
   
-  API
+  API Documentation
 
       </a>
     </li>
@@ -713,7 +755,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2h7v5h5v11H6zm2 8v2h8v-2zm0 4v2h5v-2z"/></svg>
   
   <span class="md-ellipsis">
-    API
+    API Documentation
     
       <br>
       <small>A somewhat consice description of the core features of SuchTree.</small>
@@ -835,19 +877,6 @@
 
 
 <h1 id="suchtree">SuchTree</h1>
-<p>There are a lot of packages for working with and manipulating phylogenetic trees
-using python. Rather than compete with packages like <code>dendropy</code> and <code>ete3</code> on the
-basis of features, <code>SuchTree</code> does one thing well -- its memory usage and algorithmic
-complexity linearly with the number of taxa in your tree. If you need to work with
-very large trees, this is very helpful.</p>
-<p>Let's have a look at some useful things you can do with trees using the <code>SuchTree</code>
-class. First, let's get our modules loaded. I'm going to suppress some warnings </p>
-<p>To run this notebook on an Ubuntu host, you will need the following system
-packages installed for <code>ete3</code> to work :</p>
-<ul>
-<li><code>python3-pyqt4.qtopengl</code></li>
-<li><code>python3-pyqt5.qtopengl</code></li>
-</ul>
 <p>and python packages :</p>
 <ul>
 <li><code>SuchTree</code></li>
@@ -859,7 +888,6 @@ packages installed for <code>ete3</code> to work :</p>
 <li><code>seaborn</code></li>
 <li><code>fastcluster</code></li>
 <li><code>dendropy</code></li>
-<li><code>ete3</code></li>
 </ul>
 <p>and obviously you'll want <code>jupyter</code> installed so you can run the notebook server. The
 Internet is full of opinions about how to set up your python environment. You
@@ -869,58 +897,39 @@ that <a href="https://github.com/mwaskom/seaborn/issues/1392">should be fixed</a
 stable release of <code>seaborn</code>.</p>
 <p>I'm going to assume that you are running this notebook out of a local copy of the 
 <a href="https://github.com/ryneches/SuchTree/">SuchTree repository</a> for any local file paths.</p>
-<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
-<span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span><span class="o">=</span><span class="s1">&#39;retina&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span><span class="o">=</span><span class="s1">&#39;retina&#39;</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">SuchTree</span><span class="w"> </span><span class="kn">import</span> <span class="n">SuchTree</span><span class="p">,</span> <span class="n">SuchLinkedTrees</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">array</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">toytree</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.cluster.hierarchy</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClusterWarning</span>
 
 <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span> <span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">UserWarning</span> <span class="p">)</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span> <span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">FutureWarning</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Populating the interactive namespace from numpy and matplotlib
-</code></pre></div>
 <p>Let's have a look at some example data. Here is a tree of cichlid fishes
 from my dissertation :</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">ete3</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tree</span><span class="p">,</span> <span class="n">TreeStyle</span><span class="p">,</span> <span class="n">NodeStyle</span><span class="p">,</span> <span class="n">TextFace</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">linspace</span>
+<div class="highlight"><pre><span></span><code><span class="n">tree</span> <span class="o">=</span> <span class="n">toytree</span><span class="o">.</span><span class="n">tree</span><span class="p">(</span> <span class="s1">&#39;../../data/bigtrees/host.tree&#39;</span> <span class="p">)</span>
 
-<span class="n">ts</span> <span class="o">=</span> <span class="n">TreeStyle</span><span class="p">()</span>
-<span class="n">ts</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span>
-<span class="n">ts</span><span class="o">.</span><span class="n">show_leaf_name</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">ts</span><span class="o">.</span><span class="n">branch_vertical_margin</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">ts</span><span class="o">.</span><span class="n">scale</span> <span class="o">=</span> <span class="mi">1000</span>
-<span class="n">ts</span><span class="o">.</span><span class="n">show_leaf_name</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">ts</span><span class="o">.</span><span class="n">show_scale</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="n">nstyle</span> <span class="o">=</span> <span class="n">NodeStyle</span><span class="p">()</span>
-<span class="n">nstyle</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">ete_tree</span> <span class="o">=</span> <span class="n">Tree</span><span class="p">(</span> <span class="s1">&#39;data/bigtrees/host.tree&#39;</span> <span class="p">)</span>
-
-<span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">ete_tree</span><span class="o">.</span><span class="n">traverse</span><span class="p">()</span> <span class="p">:</span>
-    <span class="n">node</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="n">nstyle</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">is_leaf</span> <span class="p">:</span>
-        <span class="n">tf</span> <span class="o">=</span> <span class="n">TextFace</span><span class="p">(</span> <span class="n">node</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">)</span>
-        <span class="n">tf</span><span class="o">.</span><span class="n">fsize</span> <span class="o">=</span> <span class="mi">10</span>
-        <span class="n">tf</span><span class="o">.</span><span class="n">hz_align</span> <span class="o">=</span> <span class="mi">100</span>
-        <span class="n">node</span><span class="o">.</span><span class="n">add_face</span><span class="p">(</span> <span class="n">tf</span><span class="p">,</span> <span class="mi">0</span> <span class="p">)</span>
-
-<span class="n">ete_tree</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%%</span><span class="s2">inline&quot;</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s2">&quot;mm&quot;</span><span class="p">,</span> <span class="n">tree_style</span><span class="o">=</span><span class="n">ts</span><span class="p">)</span>
+<span class="n">canvas</span><span class="p">,</span> <span class="n">axes</span><span class="p">,</span> <span class="n">mark</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span> <span class="n">tree_style</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="n">tip_labels_align</span><span class="o">=</span><span class="kc">True</span> <span class="p">)</span>
 </code></pre></div>
-<p><img alt="png" src="../output_4_0.png" /></p>
+<div class="toyplot" id="te2cd2e162416425095abcb75225b4469" style="text-align:center"><svg class="toyplot-canvas-Canvas" xmlns:toyplot="http://www.sandia.gov/toyplot" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="539.152px" height="331.84px" viewBox="0 0 539.152 331.84" preserveAspectRatio="xMidYMid meet" style="background-color:transparent;border-color:#292724;border-style:none;border-width:1.0;fill:rgb(16.1%,15.3%,14.1%);fill-opacity:1.0;font-family:Helvetica;font-size:12px;opacity:1.0;stroke:rgb(16.1%,15.3%,14.1%);stroke-opacity:1.0;stroke-width:1.0" id="t756986dbdc814f2c80d7242d752e85d7"><g class="toyplot-coordinates-Cartesian" id="t45172befdef64a9fa94797de38b5fd18"><clipPath id="t3fdc10967a7f44f5b9be262351ee46b5"><rect x="35.0" y="35.0" width="469.15200000000004" height="261.84"></rect></clipPath><g clip-path="url(#t3fdc10967a7f44f5b9be262351ee46b5)"><g class="toytree-mark-Toytree" id="t05b4d3b53a354f80928be3f7d75473a0"><g class="toytree-Edges" style="stroke:rgb(40.0%,76.1%,64.7%);stroke-opacity:1.0;stroke-linecap:round;stroke-width:2;fill:none"><path d="M 142.5 266.7 L 142.5 275.1 L 187.6 275.1" id="14,0" style=""></path><path d="M 142.5 266.7 L 142.5 258.3 L 178.4 258.3" id="14,1" style=""></path><path d="M 77.5 254.1 L 77.5 241.5 L 229.1 241.5" id="15,2" style=""></path><path d="M 147.6 210.0 L 147.6 224.7 L 289.1 224.7" id="18,3" style=""></path><path d="M 198.6 195.3 L 198.6 207.9 L 235.5 207.9" id="17,4" style=""></path><path d="M 226.4 182.7 L 226.4 191.1 L 240.6 191.1" id="16,5" style=""></path><path d="M 226.4 182.7 L 226.4 174.3 L 251.5 174.3" id="16,6" style=""></path><path d="M 68.2 194.8 L 68.2 157.5 L 214.1 157.5" id="20,7" style=""></path><path d="M 89.1 132.3 L 89.1 140.7 L 159.5 140.7" id="21,8" style=""></path><path d="M 89.1 132.3 L 89.1 123.9 L 154.9 123.9" id="21,9" style=""></path><path d="M 73.5 119.7 L 73.5 107.2 L 144.7 107.2" id="22,10" style=""></path><path d="M 122.1 77.8 L 122.1 90.4 L 211.8 90.4" id="25,11" style=""></path><path d="M 148.5 65.2 L 148.5 73.6 L 243.0 73.6" id="24,12" style=""></path><path d="M 148.5 65.2 L 148.5 56.8 L 224.9 56.8" id="24,13" style=""></path><path d="M 77.5 254.1 L 77.5 266.7 L 142.5 266.7" id="15,14" style=""></path><path d="M 71.2 232.0 L 71.2 254.1 L 77.5 254.1" id="19,15" style=""></path><path d="M 198.6 195.3 L 198.6 182.7 L 226.4 182.7" id="17,16" style=""></path><path d="M 147.6 210.0 L 147.6 195.3 L 198.6 195.3" id="18,17" style=""></path><path d="M 71.2 232.0 L 71.2 210.0 L 147.6 210.0" id="19,18" style=""></path><path d="M 68.2 194.8 L 68.2 232.0 L 71.2 232.0" id="20,19" style=""></path><path d="M 64.4 157.3 L 64.4 194.8 L 68.2 194.8" id="23,20" style=""></path><path d="M 73.5 119.7 L 73.5 132.3 L 89.1 132.3" id="22,21" style=""></path><path d="M 64.4 157.3 L 64.4 119.7 L 73.5 119.7" id="23,22" style=""></path><path d="M 50.5 117.5 L 50.5 157.3 L 64.4 157.3" id="26,23" style=""></path><path d="M 122.1 77.8 L 122.1 65.2 L 148.5 65.2" id="25,24" style=""></path><path d="M 50.5 117.5 L 50.5 77.8 L 122.1 77.8" id="26,25" style=""></path></g><g class="toytree-AlignEdges" style="stroke:rgb(66.0%,66.0%,66.0%);stroke-opacity:0.75;stroke-dasharray:2,4;stroke-linecap:round;stroke-width:2"><path d="M 289.1 275.1 L 187.6 275.1"></path><path d="M 289.1 258.3 L 178.4 258.3"></path><path d="M 289.1 241.5 L 229.1 241.5"></path><path d="M 289.1 224.7 L 289.1 224.7"></path><path d="M 289.1 207.9 L 235.5 207.9"></path><path d="M 289.1 191.1 L 240.6 191.1"></path><path d="M 289.1 174.3 L 251.5 174.3"></path><path d="M 289.1 157.5 L 214.1 157.5"></path><path d="M 289.1 140.7 L 159.5 140.7"></path><path d="M 289.1 123.9 L 154.9 123.9"></path><path d="M 289.1 107.2 L 144.7 107.2"></path><path d="M 289.1 90.4 L 211.8 90.4"></path><path d="M 289.1 73.6 L 243.0 73.6"></path><path d="M 289.1 56.8 L 224.9 56.8"></path></g><g class="toytree-AdmixEdges" style="fill:rgb(0.0%,0.0%,0.0%);fill-opacity:0.0;stroke:rgb(90.6%,54.1%,76.5%);stroke-opacity:0.6;font-size:14px;stroke-linecap:round;stroke-width:5"></g><g class="toytree-Nodes" style="fill:rgb(40.0%,76.1%,64.7%);fill-opacity:1.0;stroke:none;stroke-width:1.5"></g><g class="toytree-TipLabels" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0;font-family:Helvetica;font-size:12px;font-weight:300;vertical-align:baseline;white-space:pre;stroke:none"><g class="toytree-TipLabel" transform="translate(289.135,275.061)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Tropheus_moorii</text></g><g class="toytree-TipLabel" transform="translate(289.135,258.27)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Lobochilotes_labiatus</text></g><g class="toytree-TipLabel" transform="translate(289.135,241.479)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Tanganicodus_irsacae</text></g><g class="toytree-TipLabel" transform="translate(289.135,224.688)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Cyprichromis_coloratus</text></g><g class="toytree-TipLabel" transform="translate(289.135,207.897)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Haplotaxodon_microlepis</text></g><g class="toytree-TipLabel" transform="translate(289.135,191.106)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Perissodus_microlepis</text></g><g class="toytree-TipLabel" transform="translate(289.135,174.315)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Plecodus_straeleni</text></g><g class="toytree-TipLabel" transform="translate(289.135,157.525)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Xenotilapia_flavipinnis</text></g><g class="toytree-TipLabel" transform="translate(289.135,140.734)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Triglachromis_otostigma</text></g><g class="toytree-TipLabel" transform="translate(289.135,123.943)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Reganochromis_calliurus</text></g><g class="toytree-TipLabel" transform="translate(289.135,107.152)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Trematochromis_benthicola</text></g><g class="toytree-TipLabel" transform="translate(289.135,90.3608)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Lepidiolamprologus_profundicola</text></g><g class="toytree-TipLabel" transform="translate(289.135,73.5699)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Neolamprologus_buescheri</text></g><g class="toytree-TipLabel" transform="translate(289.135,56.7789)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Chalinochromis_brichardi</text></g></g></g></g></g></svg><div class="toyplot-behavior"><script>(function()
+{
+var modules={};
+})();</script></div></div>
+
 <p>Loading tree data into <code>SuchTree</code> is pretty simple -- just give it a path
-to a valid Newick file. Under the hood, <code>SuchTree</code> uses <code>dendropy</code> for 
-parsing. I figured it was better to introduce another dependency than
-to inflict yet another Newick parser on the world (the Newick file format
-has some slight ambiguities that can lead to annoying incompatibilities).</p>
-<div class="highlight"><pre><span></span><code><span class="n">T</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;data/bigtrees/host.tree&#39;</span> <span class="p">)</span>
+to a valid Newick file.</p>
+<div class="highlight"><pre><span></span><code><span class="n">T</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;../../data/bigtrees/host.tree&#39;</span> <span class="p">)</span>
 </code></pre></div>
-<p>The <code>SuchTree</code> object has a dictionary called <code>leafs</code> that maps leaf names onto their
+<p>The <code>SuchTree</code> object has a dictionary called <code>leaves</code> that maps leaf names onto their
 node ids. We'll make extensive use of this as we put the utility through its paces.</p>
-<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="o">.</span><span class="n">leafs</span>
+<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="o">.</span><span class="n">leaves</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>{&#39;Tropheus_moorii&#39;: 0,
  &#39;Lobochilotes_labiatus&#39;: 2,
@@ -942,9 +951,7 @@ node ids. We'll make extensive use of this as we put the utility through its pac
 in batches. Batches are more efficient because it does each calculation without 
 the interpreter's overhead.</p>
 <p>Here's how to measure distances one at a time :</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
 
 <span class="n">d</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">)</span>
@@ -953,9 +960,9 @@ the interpreter's overhead.</p>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;taxon 2  : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">b</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;distance : </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">d</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>taxon 1  : 6
-taxon 2  : 24
-distance : 0.446084
+<div class="highlight"><pre><span></span><code>taxon 1  : 10
+taxon 2  : 14
+distance : 0.329240
 </code></pre></div>
 <p>The <code>distance()</code> function will accept either node ids (which are integers),
 or taxon names (which are strings).</p>
@@ -968,13 +975,13 @@ or taxon names (which are strings).</p>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;taxon 2  : </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">b</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;distance : </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">d</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>taxon 1  : Lepidiolamprologus_profundicola
-taxon 2  : Reganochromis_calliurus
-distance : 0.274808
+<div class="highlight"><pre><span></span><code>taxon 1  : Neolamprologus_buescheri
+taxon 2  : Xenotilapia_flavipinnis
+distance : 0.368439
 </code></pre></div>
 <p>You can loop over all of the distances one at a time to construct a distance matrix...</p>
-<div class="highlight"><pre><span></span><code><span class="n">D1</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span> <span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="n">D1</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span> <span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span>  <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">:</span>
     <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">:</span>
         <span class="n">D1</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">)</span>
 </code></pre></div>
@@ -982,18 +989,18 @@ distance : 0.274808
 <p>It's worth noting that <code>seaborn</code> is using scipy's <code>cluster.hierarchy</code> functions to build
 those dendrograms from the distance matrix. They aren't going to have exactly the same
 topology as the input tree, which was build with <a href="https://github.com/stamatak/standard-RAxML">RAxML</a>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D1</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
-<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D1</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7fa057c9a080&gt;
+<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x77713876fb30&gt;
 </code></pre></div>
 <p><img alt="png" src="../output_16_1.png" /></p>
 <p>To calculate the distances in a batch, we can use the <code>distances()</code> function,
 which takes an $n \times 2$ array of node ids (make sure your array is representing
 them as integers).</p>
 <div class="highlight"><pre><span></span><code><span class="n">D2_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="p">:</span>
-    <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span> <span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="p">:</span>
         <span class="n">D2_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">)</span> <span class="p">)</span>
 <span class="n">D2_array</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span> <span class="n">D2_list</span> <span class="p">)</span>
 
@@ -1012,10 +1019,10 @@ them as integers).</p>
 <span class="n">D2</span> <span class="o">=</span> <span class="n">D2</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span> <span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
 </code></pre></div>
 <p>We should get the same distance matrix and clustermap as before.</p>
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D2</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
-<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D2</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7fa04c09bf28&gt;
+<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7771388435c0&gt;
 </code></pre></div>
 <p><img alt="png" src="../output_21_1.png" /></p>
 <p>If you want to use taxon names instead, <code>distances_by_name()</code> accepts an $n \times 2$ list
@@ -1025,7 +1032,7 @@ of tuples of taxon names, and looks up the node ids for you.</p>
 the penguins, from the <a href="http://birdtree.org/">Global Phylogeny of Birds</a> (I've
 copied some of their data into a Gist post because their data repository forbids
 programatic queries).</p>
-<div class="highlight"><pre><span></span><code><span class="n">T3</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://git.io/flbcP&#39;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">T3</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre&#39;</span> <span class="p">)</span>
 
 <span class="n">D3_list</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="p">:</span>
@@ -1038,9 +1045,21 @@ programatic queries).</p>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D3</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
 <span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7fa0440a9400&gt;
+<div class="highlight"><pre><span></span><code>---------------------------------------------------------------------------
+
+FileNotFoundError                         Traceback (most recent call last)
+
+Cell In[24], line 1
+----&gt; 1 T3 = SuchTree( &#39;https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre&#39; )
+      3 D3_list = []
+      4 for i,a in enumerate(T3.leafs.values()) :
+
+
+File SuchTree/MuchTree.pyx:151, in SuchTree.MuchTree.SuchTree.__init__()
+
+
+FileNotFoundError: [Errno 2] No such file or directory: &#39;https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre&#39;
 </code></pre></div>
-<p><img alt="png" src="../output_24_1.png" /></p>
 <h3 id="comparing-the-topologies-of-two-large-trees">Comparing the topologies of two large trees</h3>
 <p>So far, we haven't done anything you couldn't do with other phylogenetics packages. 
 <code>SuchTree</code> really shines when you have to do a lot of distance calculations on very
