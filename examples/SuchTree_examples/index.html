@@ -996,7 +996,7 @@ topology as the input tree, which was build with <a href="https://github.com/sta
 </code></pre></div>
 <p><img alt="png" src="../output_16_1.png" /></p>
 <p>To calculate the distances in a batch, we can use the <code>distances()</code> function,
-which takes an $n \times 2$ array of node ids (make sure your array is representing
+which takes an <span class="arithmatex">\(n \times 2\)</span> array of node ids (make sure your array is representing
 them as integers).</p>
 <div class="highlight"><pre><span></span><code><span class="n">D2_list</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="p">:</span>
@@ -1025,7 +1025,7 @@ them as integers).</p>
 <div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7771388435c0&gt;
 </code></pre></div>
 <p><img alt="png" src="../output_21_1.png" /></p>
-<p>If you want to use taxon names instead, <code>distances_by_name()</code> accepts an $n \times 2$ list
+<p>If you want to use taxon names instead, <code>distances_by_name()</code> accepts an <span class="arithmatex">\(n \times 2\)</span> list
 of tuples of taxon names, and looks up the node ids for you.</p>
 <h3 id="loading-data-from-urls">Loading data from URLs</h3>
 <p>SuchTree can also import data from the internets. Here is the distance matrix for 
@@ -1380,6 +1380,12 @@ threads without tripping the interpreter lock.</p>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -832,7 +832,7 @@ observation pairs  : 1008162156
 </ul>
 <p>Then, to calculate the significance of the correlation, it randomly
 permutes the observation table and recalculates the distances and correlations.
-A significance measure (a $p$ value) is estimated based on how likely
+A significance measure (a <span class="arithmatex">\(p\)</span> value) is estimated based on how likely
 the correlation measure on unpermuted observations could belong to the set 
 of correlation measures on permuted observations.</p>
 <p>For each correlation measure, we'd have to do calculate 1,008,162,156 patristic distances
@@ -877,7 +877,7 @@ Pearson&#39;s correlation : r=0.016714, p=0.000000
 <p>Not too bad. The algorithm went through ten iterations, placing ten blocks of
 4096 pairs into each bucket before it converged on our stopping condition after
 testing 2,621,440 pairs (about 0.2% of the possible pairs). Note that the 
-$p$-value we see here is not Hommola's $p$-value -- it doesn't include any
+<span class="arithmatex">\(p\)</span>-value we see here is not Hommola's <span class="arithmatex">\(p\)</span>-value -- it doesn't include any
 information about the topologies of the trees.</p>
 <p>Let's see what the distribution of sampled distances looks like.</p>
 <div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="p">{</span> <span class="s1">&#39;microbe tree distances&#39;</span> <span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeA&#39;</span><span class="p">],</span> 
@@ -1116,7 +1116,7 @@ show a significant correlation above 0.6?</p>
 <p><img alt="png" src="../output_26_1.png" /></p>
 <p>Huh. Well, that looks a lot less interesting than I hoped. This is the
 problem with correlation measures -- they don't test that the data obeys
-their assumptions. In this case, we're using Pierson's $r$, which
+their assumptions. In this case, we're using Pierson's <span class="arithmatex">\(r\)</span>, which
 assumes that the data from the two sources is normally distributed, which
 this clearly is not. If you haven't seen this before, check out
 <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe's quartet</a>;
@@ -1315,6 +1315,12 @@ multiple testing effects.</p>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
