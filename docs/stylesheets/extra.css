@@ -4,6 +4,9 @@
   --md-accent-fg-color: #ab47bc;
 }
 
+/* Resize main logo */
+img[alt=main-logo] { width: 150px; }
+
 /* Make code blocks more prominent */
 .highlight pre {
   border-radius: 0.5rem;
