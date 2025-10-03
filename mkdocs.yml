@@ -69,7 +69,7 @@ nav:
   - Release Notes: release_notes.md
   - Publication: paper.md
   - Benchmarks: benchmarks.md
-  - API Documentation: SuchTree_API.md
+  - API Documentation: api_docs.md
   - API Reference: api.md
 
 markdown_extensions:

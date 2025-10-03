@@ -9,7 +9,7 @@ icon: material/qrcode-scan
 This reference is automatically generated from the [source code](https://github.com/ryneches/SuchTree)
 and docstrings using [`mkdockstrings`](https://mkdocstrings.github.io/). This page will always 
 be up to date to the latest git commit, but you may prefer [documentation written by an actual
-human](SuchTree_API.md) to be somewhat more palatable. 
+human](api_docs.md) to be somewhat more palatable. 
 
 Because `SuchTree` and `SuchLinkedTrees` are written in Cython and compiled into a shared library,
 the `mkdocstrings` is not (yet) able to extract the function implementations for documentation purposes.

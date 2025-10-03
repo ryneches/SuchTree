@@ -10,7 +10,7 @@ icon: material/code-block-braces
  [![Mastodon Follow](https://img.shields.io/mastodon/follow/109294614904147843?domain=ecoevo.social&style=flat&logo=mastodon)](https://ecoevo.social/@ryneches)
 
 
-### High-performance sampling of very large trees
+## High-performance sampling of very large trees
 
 So, you have a phylogenetic tree, and you want to do some statistics with it.
 There are lots of packages in Python that let you manipulate phylogenies, like
@@ -44,7 +44,7 @@ object that usually fits into the CPU's L3 cache even for very large trees,
 and employs simple, assembly-language code paths for accessing data. Please
 see the [Benchmarks](benchmarks.md) for a more detailed look at performance.
 
-### Sampling linked trees
+## Sampling linked trees
 
 Suppose you have more than one group of organisms, and you want to study
 the way their interactions have influenced their evolution. Now, you have
@@ -68,7 +68,7 @@ Maybe you want to get all crazy with some
 [graph kernels](https://github.com/BorgwardtLab/GraphKernels)?
 Well, now you can.
 
-### Installation
+## Installation
 
 `SuchTree` depends on the following packages :
 
@@ -119,7 +119,7 @@ conda install suchtree
 **Note that the conda package name is lower case!**
 
 
-### Basic usage
+## Basic usage
 
 `SuchTree` will accept URLs, file paths or valid NEWICK strings :
 
@@ -136,7 +136,7 @@ Example](examples/SuchTree_examples.md). If you are interested in working with
 linked trees, you should start with the [Linked
 Trees](examples/SuchLinkedTree_examples.md).
 
-For more, check out the [API Documentation](SuchTree_API.md) for how to use
+For more, check out the [API Documentation](api_docs.md) for how to use
 SuchTree, or the [API Reference](api.md). The API Reference is generated
 automatically after each commit; it's guaranteed to be up-to-date, but not
 necessarily fun to read. 
@@ -145,7 +145,15 @@ I highly recommend using SuchTree with [`toytree`](https://eaton-lab.org/toytree
 for visualizing trees. Look for more convenient interoperation with `toytree` in
 future releases of SuchTree!
 
-### Thanks
+## Citing SuchTree
+
+Please cite our 2018 paper in the Journal of Open Source Software :
+
+> Russell Y. Neches, and Camille Scott. "Suchtree: Fast, thread-safe computations with phylogenetic trees." *Journal of Open Source Software* 3, no. 26 (2018): 678.
+
+DOI : [https://doi.org/10.21105/joss.00678](https://doi.org/10.21105/joss.00678)
+
+## Thanks
 
 Special thanks to [@camillescott](https://github.com/camillescott) and 
 [@pmarkowsky](https://github.com/pmarkowsky) for their many helpful

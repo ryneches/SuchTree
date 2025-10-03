@@ -4,12 +4,24 @@ subtitle: Data from the scientific literature that you can use with SuchTree.
 icon: material/bee-flower
 ---
 
-For analysis of ecological interactions, `SuchTree` is distributed
-with a curated collection of several different examples from the
-literature. Additionally, a collection of simulated interactions with
-various properties, along with an annotated notebook of `Python` code
-for generating them, is also included. Interactions are registered in
-a JSON object (`data/studies.json`).
+For analysis of ecological interactions, `SuchTree` is distributed with
+a curated collection of several different co-phylogenetic relationships
+gathered from the literature. Additionally, a collection of simulated
+interactions with various properties, along with an annotated notebook for
+generating them, is also included. Interactions are registered in a JSON object
+(`data/studies.json`).
+
+For convenience, I've given each dataset a short name (e.g., 'gopher-louse')
+suitable for labeling in plots.
+
+If you are aware of any publications with this type of data, please let me
+know! A pull request would be the ideal way to make sure you get some credit
+for telling me about it, but an email or a message on social media would be
+perfectly fine.
+
+If you use any of these datasets in your work, please cite the original authors
+as listed below. If you use SuchTree to analyze the data, please cite the
+[SuchTree paper](http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610).
 
 ## Host/Parasite
 
