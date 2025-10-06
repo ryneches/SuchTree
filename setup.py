@@ -13,6 +13,9 @@ extensions = [ Extension( 'SuchTree.MuchTree', sourcefiles, include_dirs=[numpy.
 extensions = cythonize( extensions, compiler_directives={ 'language_level' : '3' } )
 
 setup(
+    packages = [ 'SuchTree' ],
+    package_data = { 'SuchTree' : [ '*.so', '*.pyd'], },
+    include_package_data=True,
     ext_modules = extensions,
     py_modules = [ 'SuchTree' ],
     long_description=long_description,

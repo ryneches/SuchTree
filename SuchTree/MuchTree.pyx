@@ -12,6 +12,7 @@ import pandas as pd
 from scipy.linalg.cython_lapack cimport dsyev
 from numbers import Integral, Real
 from typing import Any, Union, Dict, Tuple, Generator, Optional
+from numpy.typing import ArrayLike
 
 from warnings import warn
 from SuchTree.exceptions import SuchTreeError, NodeNotFoundError, InvalidNodeError, TreeStructureError
@@ -869,7 +870,7 @@ cdef class SuchTree :
         return self._distance( node_a, node_b )
     
     def distances_bulk( self,
-                        pairs : np.ndarray ) -> np.ndarray :
+                        pairs : ArrayLike ) -> np.ndarray :
         '''
         Calculate distances for multiple node pairs efficiently.
         
@@ -3035,8 +3036,8 @@ cdef class SuchLinkedTrees :
                         query_a[ j, 1 ] = a2
                         query_b[ j, 0 ] = b1
                         query_b[ j, 1 ] = b2
-                distances_a_mv = self.TreeA.distances( query_a )
-                distances_b_mv = self.TreeB.distances( query_b )
+                distances_a_mv = self.TreeA.distances_bulk( query_a )
+                distances_b_mv = self.TreeB.distances_bulk( query_b )
                 distances_a[ i, : ] = distances_a_mv
                 distances_b[ i, : ] = distances_b_mv
                 all_distances_a[ n * i + cycles * n * buckets : n * i + cycles * n * buckets + n ] = distances_a_mv

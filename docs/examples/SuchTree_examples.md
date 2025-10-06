@@ -6,7 +6,19 @@ icon: material/notebook-outline
 
 # SuchTree
 
-and python packages :
+In this article, we'll look at some basic uses of SuchTree's `SuchTree` class :
+
+- Loading tree data from files
+- Inspecting taxa names
+- Calculating patrsitic distances between pairs of taxa
+- Calculating lots of patristic distances
+- Loading tree data from URLs
+- Sampling patristic distances from very large trees
+- Parallel processing with `SuchTree`
+
+As a bonus, we'll also cover plotting trees with `toytree`, which is especiall useful
+in notebook enviornemnts. To run this notebook, you will need to have the following
+python packages installed :
 
 * `SuchTree`
 * `pandas`
@@ -17,17 +29,18 @@ and python packages :
 * `seaborn`
 * `fastcluster`
 * `dendropy`
+* `toytree`
+* `jupyter`
 
-and obviously you'll want `jupyter` installed so you can run the notebook server. The
-Internet is full of opinions about how to set up your python environment. You
-should find one that works for you, but [this guide is as good as any](https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14) to get you started.
+If you want to run this locally, I recommend following the [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
+documentation.
 
-I'm going to start off by loading the required packages and suppressing some warnings
-that [should be fixed](https://github.com/mwaskom/seaborn/issues/1392) in the next
-stable release of `seaborn`.
-
-I'm going to assume that you are running this notebook out of a local copy of the 
-[SuchTree repository](https://github.com/ryneches/SuchTree/) for any local file paths.
+The Internet is full of opinions about how to set up your python environment. You
+should find one that works for you, but [this guide is as good as any](https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14) to get you started. I start off by supressing some warnings that
+come out of scipy's hierarchal clustering function. Feel free to leave them turned on if
+you enjoy pendantic notifications. I'm going to assume that you are running this notebook
+from its locations in a local copy of the [SuchTree repository](https://github.com/ryneches/SuchTree/)
+for any local file paths.
 
 
 ```python

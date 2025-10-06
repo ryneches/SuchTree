@@ -17,7 +17,7 @@ readme = "README.md"
 #readme-content-type = "text/markdown"
 authors = [ { name = "Russell Neches", email = "science@vort.org" } ]
 license = "BSD-3-Clause"
-keywords = ["biology", "bio", "phylogenetics", "phylogeny", "tree"]
+keywords = [ "biology", "bio", "phylogenetics", "phylogeny", "tree" ]
 urls = { "Homepage" = "https://github.com/ryneches/SuchTree" }
 classifiers = [ "Programming Language :: Python :: 3" ]
 dependencies = [
@@ -28,6 +28,9 @@ dependencies = [
     "dendropy"
 ]
 dynamic = ["version"]
+
+[tool.setuptools.package-data]
+SuchTree = [ "*.so", "*.pyd" ]
 
 # Use the __version__ attribute from the package
 [tool.setuptools_scm]

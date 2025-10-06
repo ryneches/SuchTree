@@ -33,7 +33,6 @@ and does not expose the computed distances for analysis. This is where
 
 
 ```python
-%pylab inline
 %config InlineBackend.figure_format='retina'
 
 from SuchTree import SuchTree, SuchLinkedTrees
@@ -42,20 +41,19 @@ import pandas
 from scipy.cluster.hierarchy import ClusterWarning
 from scipy.stats import pearsonr
 
-warnings.simplefilter( 'ignore', UserWarning )
+import warnings
+
+#warnings.simplefilter( 'ignore', UserWarning )
 ```
-
-    Populating the interactive namespace from numpy and matplotlib
-
 
 To get started, we need to initialize two trees and a table of observations
 linking the taxa on the two trees.
 
 
 ```python
-T1 = SuchTree( 'data/bigtrees/host.tree' )
-T2 = SuchTree( 'data/bigtrees/guest.tree')
-LK = pandas.read_csv( 'data/bigtrees/links.csv', index_col=0 )
+T1 = SuchTree( '../../data/bigtrees/host.tree' )
+T2 = SuchTree( '../../data/bigtrees/guest.tree')
+LK = pandas.read_csv( '../../data/bigtrees/links.csv', index_col=0 )
 
 print( 'host tree taxa     : %d' % T1.n_leafs )
 print( 'guest tree taxa    : %d' % T2.n_leafs )
@@ -78,8 +76,8 @@ This is a pretty large dataset, so it takes a bit of time to load.
 %time SLT = SuchLinkedTrees( T1, T2, LK )
 ```
 
-    CPU times: user 8min, sys: 340 ms, total: 8min 1s
-    Wall time: 8min 4s
+    CPU times: user 5min 2s, sys: 167 ms, total: 5min 2s
+    Wall time: 5min 3s
 
 
 
@@ -129,8 +127,52 @@ the standard deviation of the buckets falls bellow `sigma` (default : 0.001).
 %time result = SLT.sample_linked_distances( sigma=0.001, buckets=64, n=4096 )
 ```
 
-    CPU times: user 39.5 s, sys: 40 ms, total: 39.6 s
-    Wall time: 39.8 s
+    CPU times: user 208 μs, sys: 998 μs, total: 1.21 ms
+    Wall time: 972 μs
+
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    Cell In[5], line 1
+    ----> 1 get_ipython().run_line_magic('time', 'result = SLT.sample_linked_distances( sigma=0.001, buckets=64, n=4096 )')
+
+
+    File ~/opt/lib/python3.12/site-packages/IPython/core/interactiveshell.py:2504, in InteractiveShell.run_line_magic(self, magic_name, line, _stack_depth)
+       2502     kwargs['local_ns'] = self.get_local_scope(stack_depth)
+       2503 with self.builtin_trap:
+    -> 2504     result = fn(*args, **kwargs)
+       2506 # The code below prevents the output from being displayed
+       2507 # when using magics with decorator @output_can_be_silenced
+       2508 # when the last Python token in the expression is a ';'.
+       2509 if getattr(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, False):
+
+
+    File ~/opt/lib/python3.12/site-packages/IPython/core/magics/execution.py:1470, in ExecutionMagics.time(self, line, cell, local_ns)
+       1468 if interrupt_occured:
+       1469     if exit_on_interrupt and captured_exception:
+    -> 1470         raise captured_exception
+       1471     return
+       1472 return out
+
+
+    File ~/opt/lib/python3.12/site-packages/IPython/core/magics/execution.py:1434, in ExecutionMagics.time(self, line, cell, local_ns)
+       1432 st = clock2()
+       1433 try:
+    -> 1434     exec(code, glob, local_ns)
+       1435     out = None
+       1436     # multi-line %%time case
+
+
+    File <timed exec>:1
+
+
+    File SuchTree/MuchTree.pyx:3038, in SuchTree.MuchTree.SuchLinkedTrees.sample_linked_distances()
+
+
+    TypeError: Argument 'pairs' has incorrect type (expected numpy.ndarray, got SuchTree.MuchTree._memoryviewslice)
 
 
 
