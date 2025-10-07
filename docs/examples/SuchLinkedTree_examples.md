@@ -76,8 +76,8 @@ This is a pretty large dataset, so it takes a bit of time to load.
 %time SLT = SuchLinkedTrees( T1, T2, LK )
 ```
 
-    CPU times: user 5min 2s, sys: 167 ms, total: 5min 2s
-    Wall time: 5min 3s
+    CPU times: user 4min 57s, sys: 76.5 ms, total: 4min 57s
+    Wall time: 4min 57s
 
 
 
@@ -127,52 +127,8 @@ the standard deviation of the buckets falls bellow `sigma` (default : 0.001).
 %time result = SLT.sample_linked_distances( sigma=0.001, buckets=64, n=4096 )
 ```
 
-    CPU times: user 208 μs, sys: 998 μs, total: 1.21 ms
-    Wall time: 972 μs
-
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    Cell In[5], line 1
-    ----> 1 get_ipython().run_line_magic('time', 'result = SLT.sample_linked_distances( sigma=0.001, buckets=64, n=4096 )')
-
-
-    File ~/opt/lib/python3.12/site-packages/IPython/core/interactiveshell.py:2504, in InteractiveShell.run_line_magic(self, magic_name, line, _stack_depth)
-       2502     kwargs['local_ns'] = self.get_local_scope(stack_depth)
-       2503 with self.builtin_trap:
-    -> 2504     result = fn(*args, **kwargs)
-       2506 # The code below prevents the output from being displayed
-       2507 # when using magics with decorator @output_can_be_silenced
-       2508 # when the last Python token in the expression is a ';'.
-       2509 if getattr(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, False):
-
-
-    File ~/opt/lib/python3.12/site-packages/IPython/core/magics/execution.py:1470, in ExecutionMagics.time(self, line, cell, local_ns)
-       1468 if interrupt_occured:
-       1469     if exit_on_interrupt and captured_exception:
-    -> 1470         raise captured_exception
-       1471     return
-       1472 return out
-
-
-    File ~/opt/lib/python3.12/site-packages/IPython/core/magics/execution.py:1434, in ExecutionMagics.time(self, line, cell, local_ns)
-       1432 st = clock2()
-       1433 try:
-    -> 1434     exec(code, glob, local_ns)
-       1435     out = None
-       1436     # multi-line %%time case
-
-
-    File <timed exec>:1
-
-
-    File SuchTree/MuchTree.pyx:3038, in SuchTree.MuchTree.SuchLinkedTrees.sample_linked_distances()
-
-
-    TypeError: Argument 'pairs' has incorrect type (expected numpy.ndarray, got SuchTree.MuchTree._memoryviewslice)
+    CPU times: user 1min 30s, sys: 15 ms, total: 1min 30s
+    Wall time: 1min 30s
 
 
 
@@ -183,26 +139,28 @@ result
 
 
 
-    {'TreeA': array([0.264332  , 0.21065001, 0.264911  , ..., 0.34968701, 0.265522  ,
-            0.264911  ]),
-     'TreeB': array([0.02564294, 0.31347001, 0.98371613, ..., 0.28150666, 0.17121513,
-            0.20058692]),
-     'n_pairs': 1008162156,
+    {'TreeA': array([0.        , 0.29917303, 0.19928899, ..., 0.37183404, 0.296671  ,
+            0.23811999], shape=(3145728,)),
+     'TreeB': array([0.11925804, 0.11596022, 0.01881482, ..., 0.30879498, 0.90982425,
+            0.03588757], shape=(3145728,)),
+     'n_pairs': 1008162156.0,
      'n_samples': 3145728,
-     'deviation_a': 0.00039790052687749267,
-     'deviation_b': 0.0009455526014789939}
+     'deviation_a': 0.00033290748251602054,
+     'deviation_b': 0.0009917039424180984}
 
 
 
 
 ```python
-print( 'sampled link pairs    : %d' % len(result['TreeA']) )
-print( 'Pearson\'s correlation : r=%f, p=%f' % pearsonr( result['TreeA'],
-                                                         result['TreeB'] ) )
+ab_r = pearsonr( result['TreeA'], result['TreeB'] )
+print( f'sampled link pairs    : { len(result['TreeA']) }' )
+print( f'Pearson\'s correlation : {ab_r.statistic}' )
+print( f'    p-value           : {ab_r.pvalue}' )
 ```
 
     sampled link pairs    : 3145728
-    Pearson's correlation : r=0.016714, p=0.000000
+    Pearson's correlation : 0.01606321237653853
+        p-value           : 1.4775884174772308e-178
 
 
 Not too bad. The algorithm went through ten iterations, placing ten blocks of
@@ -218,14 +176,16 @@ Let's see what the distribution of sampled distances looks like.
 df = pandas.DataFrame( { 'microbe tree distances' : result['TreeA'], 
                          'host tree distances'    : result['TreeB'] } )
 
-seaborn.jointplot( 'microbe tree distances', 'host tree distances',
-                   data=df, alpha=0.3, size=8 )
+seaborn.jointplot( x='microbe tree distances',
+                   y='host tree distances',
+                   data=df, alpha=0.3, linewidth=0, s=1,
+                   marginal_kws={ 'bins': 64, 'linewidth' : 0 } )
 ```
 
 
 
 
-    <seaborn.axisgrid.JointGrid at 0x7f07801c86d8>
+    <seaborn.axisgrid.JointGrid at 0x796a4596bfe0>
 
 
 
@@ -251,14 +211,11 @@ that node behaves as the root. `subset_b()` does the same for the second tree
 
 
 ```python
-SLT.subset_b_size
+print( f'subset A leaves : {SLT.subset_a_size}\nsubset B leaves : {SLT.subset_b_size}' )
 ```
 
-
-
-
-    103446
-
+    subset A leaves : 14
+    subset B leaves : 103446
 
 
 The observations are also masked so that distance calculations are constrained to within that
@@ -267,8 +224,12 @@ clade. The masking operation is extremely efficient, even for very large dataset
 
 ```python
 SLT.subset_b(121)
+print( f'subset B leafs : {SLT.subset_b_size}' )
 SLT.subset_b_leafs
 ```
+
+    subset B leafs : 63
+
 
 
 
@@ -279,6 +240,25 @@ SLT.subset_b_leafs
             22,  42,  44,  78,  96,  98,  76,  80,  82,  52,  70,  46,  72,
             74,  48,  50,  54,  56,  58,  60,  62,  64,  66,  68])
 
+
+
+OK, that's neat. But what if we want to get back to the un-subsetted dataset?
+For this, just pass in the root node for each tree.
+
+
+```python
+print( f'subset A : {SLT.subset_a_size} leaves, subset B : {SLT.subset_b_size} leaves' )
+print( 'resetting root subsets...' )
+
+SLT.subset_a( SLT.TreeA.root_node )
+SLT.subset_b( SLT.TreeB.root_node )
+
+print( f'subset A : {SLT.subset_a_size} leaves, subset B : {SLT.subset_b_size} leaves' )
+```
+
+    subset A : 14 leaves, subset B : 63 leaves
+    resetting root subsets...
+    subset A : 14 leaves, subset B : 103446 leaves
 
 
 So, all we need to do is iterate over the internal nodes of the microbe tree
@@ -307,13 +287,14 @@ for n,nodeid in enumerate( T2.get_internal_nodes() ) :
     progbar.update()
     if SLT.subset_b_size < 10 :
         continue
+    if SLT.subset_n_links < 10 :
+        continue
     if SLT.subset_n_links > 2500 :
         continue
-
-    d = {}
-    d['name']    = 'clade_' + str(nodeid)
-    d['n_links'] = SLT.subset_n_links
-    d['n_leafs'] = SLT.subset_b_size
+    
+    d = { 'name'    : 'clade_' + str(nodeid),
+          'n_links' : SLT.subset_n_links,
+          'n_leafs' : SLT.subset_b_size }
     
     ld = SLT.linked_distances()
     
@@ -326,7 +307,7 @@ data = pandas.DataFrame( data ).dropna()
 
     Chugging through microbime data...
     0% [##############################] 100% | ETA: 00:00:00
-    Total time elapsed: 00:59:38
+    Total time elapsed: 06:39:01
 
 
 Let's see what we've got!
@@ -357,53 +338,53 @@ data.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>n_leafs</th>
-      <th>n_links</th>
       <th>name</th>
-      <th>p</th>
+      <th>n_links</th>
+      <th>n_leafs</th>
       <th>r</th>
+      <th>p</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>105</td>
-      <td>46</td>
       <td>clade_125</td>
-      <td>2.459121e-04</td>
+      <td>46</td>
+      <td>105</td>
       <td>-0.113734</td>
+      <td>2.459121e-04</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>319</td>
-      <td>123</td>
       <td>clade_159421</td>
-      <td>1.014772e-03</td>
+      <td>123</td>
+      <td>319</td>
       <td>-0.037933</td>
+      <td>1.014772e-03</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>63</td>
-      <td>18</td>
       <td>clade_121</td>
-      <td>8.836506e-02</td>
+      <td>18</td>
+      <td>63</td>
       <td>-0.138239</td>
+      <td>8.836506e-02</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>42</td>
-      <td>28</td>
       <td>clade_127</td>
-      <td>1.432212e-02</td>
+      <td>28</td>
+      <td>42</td>
       <td>-0.125883</td>
+      <td>1.432212e-02</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>242</td>
-      <td>87</td>
       <td>clade_158329</td>
-      <td>1.748205e-07</td>
+      <td>87</td>
+      <td>242</td>
       <td>-0.085288</td>
+      <td>1.748205e-07</td>
     </tr>
   </tbody>
 </table>
@@ -413,19 +394,21 @@ data.head()
 
 
 ```python
-seaborn.jointplot( data.n_leafs, data.r, alpha=0.3, size=8 )
+seaborn.jointplot( x='n_leafs', y='r', 
+                   data=data, alpha=0.3, linewidth=0, s=1,
+                   marginal_kws={ 'bins': 64, 'linewidth' : 0 } )
 ```
 
 
 
 
-    <seaborn.axisgrid.JointGrid at 0x7f07803ff128>
+    <seaborn.axisgrid.JointGrid at 0x796a45b7a330>
 
 
 
 
     
-![png](output_22_1.png)
+![png](output_24_1.png)
     
 
 
@@ -461,45 +444,45 @@ data.loc[ ( data.r > 0.6      ) &
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>n_leafs</th>
-      <th>n_links</th>
       <th>name</th>
-      <th>p</th>
+      <th>n_links</th>
+      <th>n_leafs</th>
       <th>r</th>
+      <th>p</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>14799</th>
-      <td>108</td>
-      <td>22</td>
+      <th>7792</th>
       <td>clade_26971</td>
-      <td>5.982235e-33</td>
-      <td>0.681951</td>
-    </tr>
-    <tr>
-      <th>14999</th>
-      <td>103</td>
       <td>22</td>
-      <td>clade_27163</td>
-      <td>5.982235e-33</td>
+      <td>108</td>
       <td>0.681951</td>
+      <td>5.982235e-33</td>
     </tr>
     <tr>
-      <th>15196</th>
-      <td>96</td>
-      <td>20</td>
+      <th>7871</th>
+      <td>clade_27163</td>
+      <td>22</td>
+      <td>103</td>
+      <td>0.681951</td>
+      <td>5.982235e-33</td>
+    </tr>
+    <tr>
+      <th>7955</th>
       <td>clade_27145</td>
-      <td>3.844922e-27</td>
+      <td>20</td>
+      <td>96</td>
       <td>0.680072</td>
+      <td>3.844922e-27</td>
     </tr>
     <tr>
-      <th>15395</th>
-      <td>87</td>
-      <td>17</td>
+      <th>8042</th>
       <td>clade_27061</td>
-      <td>1.621913e-19</td>
+      <td>17</td>
+      <td>87</td>
       <td>0.676366</td>
+      <td>1.621913e-19</td>
     </tr>
   </tbody>
 </table>
@@ -515,34 +498,38 @@ SLT.subset_b( 26971 )
 
 ld = SLT.linked_distances()
 
-seaborn.jointplot( ld['TreeA'], ld['TreeB'] )
+g = seaborn.jointplot( x=ld['TreeA'], y=ld['TreeB'], 
+                       alpha=0.3, linewidth=1, s=18,
+                       marginal_kws={ 'bins': 64, 'linewidth' : 0 } )
+
+g.ax_joint.set_xlabel( 'Host tree distances' )
+g.ax_joint.set_ylabel( 'Guest tree distances' )
+
+print( f'subset A : {SLT.subset_a_size} leaves, subset B : {SLT.subset_b_size} leaves' )
 ```
 
-
-
-
-    <seaborn.axisgrid.JointGrid at 0x7f0780928160>
-
+    subset A : 14 leaves, subset B : 108 leaves
 
 
 
     
-![png](output_26_1.png)
+![png](output_28_1.png)
     
 
 
-Huh. Well, that looks a lot less interesting than I hoped. This is the
-problem with correlation measures -- they don't test that the data obeys
-their assumptions. In this case, we're using Pierson's $r$, which
-assumes that the data from the two sources is normally distributed, which
-this clearly is not. If you haven't seen this before, check out
+Eh. It's clear enough why this this clade gets a high correlation score, but 
+it's not actually very interesting. This is the problem with correlation 
+measures -- they don't test that the data obeys their assumptions. In this 
+case, we're using Pierson's $r$, which assumes that the data from the two 
+sources is normally distributed, which this clearly is not. If you haven't 
+seen this before, check out
 [Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet);
 the gist of his argument is that it's not a good idea to apply any statistic
 without examining the data graphically.
 
-Let's have a look at the trees so we can get a better idea of why this is
-broken. Unfortunately, I don't have a great way of pulling out the subtree
-for plotting yet, so this will require some help from `dendropy`.
+So, let's do that, and have a look at the trees. Unfortunately, `toytree`
+doesn't have a straightforward way of plotting co-phylogenies yet, so this 
+will require some help from `dendropy` and a trip to... R. Sorry about that.
 
 
 ```python
@@ -607,8 +594,9 @@ structure of this clade and its relationship with the host organisms :
 
 ![](clade_26971.svg)
 
-If we're hoping to find an example of coevolution, this is an excellent example of
-what we are not looking for! The Hommola test is not really appropriate for this
+If we're hoping to find an example of coevolution, this is an excellent example of what we are not looking for! 
+
+The Hommola test is not really appropriate for this
 application. The Hommola test is really intended for cases where you have something
 that looks like it might be an example of coevolution, and you would like to measure
 how strong the effect is. We are abusing it somewhat by asking it to distinguish
@@ -617,8 +605,3 @@ multiple testing effects.
 
 So, we'll need a more sophisticated way to test for coevolution. With `SuchTree` and
 `SuchLinkedTrees` handling the grunt work, we can focus on the those models.
-
-
-```python
-
-```
