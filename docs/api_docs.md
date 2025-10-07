@@ -14,6 +14,19 @@ The `SuchTree` class provides high-performance phylogenetic tree manipulation us
 - Multiple tree formats (Newick, URL, file path)
 - Integration with NetworkX and igraph
 
+Some best practices to keep in mind :
+
+1. Use node IDs for performance-critical code
+2. Prefer bulk methods (`distances_bulk`) for multiple calculations
+3. Cache frequently-used properties (like RED values)
+4. Use traversal generators for memory efficiency
+
+The supporting `SuchLinkedTrees` class provides several useful bookkeeping features for working with
+co-phylogeny datasets, most importantly the ability to perform reciprocal masking of one tree by 
+clades in its linked tree. Subset masking is thread-safe, fast and non-destructive. However, please
+note that SuchTree 1.3 is the last release that will include this interface for SuchLinkedTrees. The
+next major release will include a modernized, multi-tree container with a new interface.
+
 ## Initialization
 ```python
 class SuchTree(tree_input: Union[str, Path])
@@ -50,6 +63,40 @@ tree = SuchTree("https://example.com/tree.newick")
 | `leaf_node_ids` | `np.ndarray` | Leaf IDs | `[1, 2, 5, 6]` |
 | `leaf_names` | `list` | Leaf names | `['A', 'B', 'C', 'D']` |
 
+## Example Usage
+
+Here are some examples of operations you can do with SuchTree.
+
+```python
+# Initialize a tree and print some basic properties
+tree = SuchTree("(A:0.1,B:0.2,(C:0.3,D:0.4)E:0.5)F;")
+print(f"Tree depth: {tree.depth}")
+print(f"Leaf names: {tree.leaf_names}")
+
+# Find some node relationships
+node_id = tree.leaves['A']
+parent_id = tree.get_parent(node_id)
+children = tree.get_children(parent_id)
+
+# Distance analysis
+dist = tree.distance('A', 'C')
+dist_matrix = tree.pairwise_distances(['A', 'B', 'C', 'D'])
+
+# Calculate RED values
+red_values = tree.relative_evolutionary_divergence()
+
+# Export tree as a networkx graph (requires networkx)
+nx_graph = tree.to_networkx_graph()
+```
+
+## Error Handling
+
+- `NodeNotFoundError`  : Invalid leaf name
+- `InvalidNodeError`   : Invalid node ID
+- `TreeStructureError` : Invalid tree operations
+- `ValueError`         : Invalid input format
+- `TypeError`          : Incorrect argument type
+
 ## Core Methods
 
 ### Node Relationships
@@ -60,10 +107,10 @@ Get immediate parent node for a given node.
 
 Args:
     node: Node identifier as either integer ID or leaf name string
-    
+
 Returns:
     Integer ID of parent node. Returns -1 if called on root node.
-    
+
 Raises:
     NodeNotFoundError: If leaf name doesn't exist in the tree
     InvalidNodeError: If node ID is out of valid range (0 <= id < tree.size)
@@ -127,9 +174,10 @@ Check if node is internal. Simply returns negation of `is_leaf` but provides cle
 ```python
 is_ancestor(ancestor: Union[int, str], descendant: Union[int, str]) -> int
 ```
-Test ancestral relationship. Returns:  
-- `1` if ancestor of descendant  
-- `-1` if descendant is ancestor  
+Test ancestral relationship. Returns:
+
+- `1` if ancestor of descendant 
+- `-1` if descendant is ancestor 
 - `0` if no direct relationship
 
 ```python
@@ -168,6 +216,18 @@ path_between_nodes(a: Union[int, str], b: Union[int, str]) -> List[int]
 Get node IDs forming the path between two nodes through their common ancestor. Returns list from a -> MRCA -> b.
 
 ### Distance Analysis
+
+SuchTree was originally built to compute patristic (leaf-to-leaf) distances as
+efficiently as possible. You have two choices to make :
+
+- Do you want to use leaf names or leaf IDs?
+- Do you want to to calculate distances for single a pair of leafs, or a table of leaf pairs?
+
+It is important to remember that even if you have two trees with exactly the same
+leaf names, the leafs will have different node IDs if the topologies are different.
+For those cases, it is better to use use the leaf name to ID mappings (`SuchTree.leaves`
+and `SuchTree.leaf_nodes`) to associate your leaf nodes with other data.
+
 ```python
 distance(a: Union[int, str], b: Union[int, str]) -> float
 ```
@@ -176,11 +236,11 @@ Calculate patristic distance between two nodes along the tree.
 Args:
     a: First node identifier (ID or name)
     b: Second node identifier (ID or name)
-    
+
 Returns:
     Sum of branch lengths along the path between nodes via their most recent 
     common ancestor (MRCA)
-    
+
 Raises:
     NodeNotFoundError: If either node name doesn't exist
     InvalidNodeError: If either node ID is invalid
@@ -194,11 +254,6 @@ Example:
 dist = tree.distance("A", "B")
 dist = tree.distance(2, 5)
 ```
-
-```python
-distance_to_root(node: Union[int, str]) -> float
-```
-Calculate total branch length from node to root. Optimized with cumulative distance caching.
 
 ```python
 distances_bulk(pairs: np.ndarray) -> np.ndarray
@@ -216,11 +271,21 @@ pairwise_distances(nodes: list = None) -> np.ndarray
 Generate full distance matrix for specified nodes (all leaves by default). Returns symmetric numpy array.
 
 ```python
+distance_to_root(node: Union[int, str]) -> float
+```
+Calculate total branch length from node to root. Optimized with cumulative distance caching.
+
+```python
 nearest_neighbors(node: Union[int, str], k=1) -> List[Tuple[Union[int, str], float]]
 ```
 Find k nearest neighbors to a node. Can search among specific nodes or all leaves by default.
 
 ### Tree Traversal
+
+SuchTree includes a collection of generators for traversing the tree in
+different ways. They all work the same way, other than the different order
+of traversal.
+
 ```python
 traverse_inorder(include_distances: bool = True) -> Generator
 ```
@@ -281,6 +346,7 @@ traverse_with_distances(from_node: Union[int, str] = None) -> Generator[Tuple[in
 Traversal yielding (node ID, distance to parent, cumulative distance to root).
 
 ### Topological Analysis
+
 ```python
 bipartition(node: Union[int, str], by_id=False) -> frozenset
 bipartitions(by_id=False) -> Generator[frozenset, None, None]
@@ -304,38 +370,4 @@ to_newick(include_support=True, include_distances=True) -> str
 relative_evolutionary_divergence() -> Dict[int, float]
 ```
 
-## Example Usage
 
-```python
-# Initialize and basic properties
-tree = SuchTree("(A:0.1,B:0.2,(C:0.3,D:0.4)E:0.5)F;")
-print(f"Tree depth: {tree.depth}")
-print(f"Leaf names: {tree.leaf_names}")
-
-# Node relationships
-node_id = tree.leaves['A']
-parent_id = tree.get_parent(node_id)
-children = tree.get_children(parent_id)
-
-# Distance analysis
-dist = tree.distance('A', 'C')
-dist_matrix = tree.pairwise_distances(['A', 'B', 'C', 'D'])
-
-# Advanced features
-red_values = tree.relative_evolutionary_divergence()
-nx_graph = tree.to_networkx_graph()
-```
-
-## Error Handling
-Raises specific exceptions:
-- `NodeNotFoundError`: Invalid leaf name
-- `InvalidNodeError`: Invalid node ID
-- `TreeStructureError`: Invalid tree operations
-- `ValueError`: Invalid input format
-- `TypeError`: Incorrect argument type
-
-## Best Practices
-1. Use node IDs for performance-critical code
-2. Prefer bulk methods (`distances_bulk`) for multiple calculations
-3. Cache frequently-used properties (like RED values)
-4. Use traversal generators for memory efficiency

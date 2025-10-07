@@ -16,6 +16,7 @@ icon: material/bullhorn-outline
 - Refactored export methods
 - Stubs for backward compatibility with deprecation warnings
 - Improved test coverage
+- Various bug fixes
 - Verified commits for GitHub, digital attestations for PiPy
 - Renamed `master` to `main`
 - New logo, website and documentation 
