@@ -385,7 +385,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="SuchTree_API/" class="md-tabs__link">
+      <a href="api_docs/" class="md-tabs__link">
         
   
   
@@ -560,6 +560,15 @@
   <a href="#basic-usage" class="md-nav__link">
     <span class="md-ellipsis">
       Basic usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citing-suchtree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citing SuchTree
     </span>
   </a>
   
@@ -751,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SuchTree_API/" class="md-nav__link">
+      <a href="api_docs/" class="md-nav__link">
         
   
   
@@ -859,6 +868,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#citing-suchtree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citing SuchTree
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#thanks" class="md-nav__link">
     <span class="md-ellipsis">
       Thanks
@@ -891,7 +909,7 @@
 <p><img alt="banner" src="assets/banner.png" /></p>
 <p><a href="https://github.com/ryneches/SuchTree/actions"><img alt="Actions Status" src="https://github.com/ryneches/SuchTree/workflows/Build%20wheels/badge.svg" /></a> <a href="https://codecov.io/gh/ryneches/SuchTree"><img alt="codecov" src="https://codecov.io/gh/ryneches/SuchTree/branch/master/graph/badge.svg" /></a> <a href="https://raw.githubusercontent.com/ryneches/SuchTree/master/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-BSD--3-blue.svg" /></a> <a href="http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610"><img alt="JOSS" src="http://joss.theoj.org/papers/23bac1ae69cfaf201203dd52d7dd5610/status.svg" /></a> <a href="https://github.com/ryneches/SuchTree/graphs/traffic"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/ryneches/SuchTree/total?label=downloads&amp;logo=github" /></a> <a href="https://pypistats.org/packages/suchtree"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dd/SuchTree?logo=PyPI" /></a> <a href="https://anaconda.org/bioconda/suchtree"><img alt="Conda Downloads" src="https://img.shields.io/conda/d/bioconda/suchtree" /></a> <img alt="GitHub commits since tagged version" src="https://img.shields.io/github/commits-since/ryneches/SuchTree/latest" />
  <a href="https://ecoevo.social/@ryneches"><img alt="Mastodon Follow" src="https://img.shields.io/mastodon/follow/109294614904147843?domain=ecoevo.social&amp;style=flat&amp;logo=mastodon" /></a></p>
-<h3 id="high-performance-sampling-of-very-large-trees">High-performance sampling of very large trees</h3>
+<h2 id="high-performance-sampling-of-very-large-trees">High-performance sampling of very large trees</h2>
 <p>So, you have a phylogenetic tree, and you want to do some statistics with it.
 There are lots of packages in Python that let you manipulate phylogenies, like
 <a href="http://www.dendropy.org/"><code>dendropy</code></a>, the tree model included in
@@ -921,7 +939,7 @@ is designed to solve this problem by representing trees as a highly compact
 object that usually fits into the CPU's L3 cache even for very large trees,
 and employs simple, assembly-language code paths for accessing data. Please
 see the <a href="benchmarks/">Benchmarks</a> for a more detailed look at performance.</p>
-<h3 id="sampling-linked-trees">Sampling linked trees</h3>
+<h2 id="sampling-linked-trees">Sampling linked trees</h2>
 <p>Suppose you have more than one group of organisms, and you want to study
 the way their interactions have influenced their evolution. Now, you have
 several trees that link together to form a generalized graph.</p>
@@ -941,7 +959,7 @@ package, or node and edge data for building graphs in
 Maybe you want to get all crazy with some 
 <a href="https://github.com/BorgwardtLab/GraphKernels">graph kernels</a>?
 Well, now you can.</p>
-<h3 id="installation">Installation</h3>
+<h2 id="installation">Installation</h2>
 <p><code>SuchTree</code> depends on the following packages :</p>
 <ul>
 <li><code>scipy</code></li>
@@ -976,7 +994,7 @@ conda config --set channel_priority strict
 <div class="highlight"><pre><span></span><code>conda install suchtree
 </code></pre></div>
 <p><strong>Note that the conda package name is lower case!</strong></p>
-<h3 id="basic-usage">Basic usage</h3>
+<h2 id="basic-usage">Basic usage</h2>
 <p><code>SuchTree</code> will accept URLs, file paths or valid NEWICK strings :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">SuchTree</span><span class="w"> </span><span class="kn">import</span> <span class="n">SuchTree</span>
 
@@ -988,14 +1006,20 @@ conda config --set channel_priority strict
 Example</a>. If you are interested in working with
 linked trees, you should start with the <a href="examples/SuchLinkedTree_examples/">Linked
 Trees</a>.</p>
-<p>For more, check out the <a href="SuchTree_API/">API Documentation</a> for how to use
+<p>For more, check out the <a href="api_docs/">API Documentation</a> for how to use
 SuchTree, or the <a href="api/">API Reference</a>. The API Reference is generated
 automatically after each commit; it's guaranteed to be up-to-date, but not
 necessarily fun to read. </p>
 <p>I highly recommend using SuchTree with <a href="https://eaton-lab.org/toytree/"><code>toytree</code></a>
 for visualizing trees. Look for more convenient interoperation with <code>toytree</code> in
 future releases of SuchTree!</p>
-<h3 id="thanks">Thanks</h3>
+<h2 id="citing-suchtree">Citing SuchTree</h2>
+<p>Please cite our 2018 paper in the Journal of Open Source Software :</p>
+<blockquote>
+<p>Russell Y. Neches, and Camille Scott. "Suchtree: Fast, thread-safe computations with phylogenetic trees." <em>Journal of Open Source Software</em> 3, no. 26 (2018): 678.</p>
+</blockquote>
+<p>DOI : <a href="https://doi.org/10.21105/joss.00678">https://doi.org/10.21105/joss.00678</a></p>
+<h2 id="thanks">Thanks</h2>
 <p>Special thanks to <a href="https://github.com/camillescott">@camillescott</a> and 
 <a href="https://github.com/pmarkowsky">@pmarkowsky</a> for their many helpful
 suggestions (and for their patience).</p>

@@ -19,13 +19,6 @@ img[alt=main-logo] { width: 150px; }
   box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.05);
 }
 
-/* Improve table styling */
-table {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.05);
-}
-
 /* Add subtle animations to navigation */
 .md-nav__link {
   transition: padding-left 0.2s ease;
@@ -62,6 +55,182 @@ code:not(.highlight code) {
   background: linear-gradient(135deg, rgba(0, 150, 136, 0.1), rgba(171, 71, 188, 0.1));
   border-radius: 1rem;
   margin-bottom: 2rem;
+}
+
+/* Improve table styling - harmonized with DataFrames */
+table:not(.dataframe) {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.06);
+  margin: 1.5rem 0;
+  font-size: 0.8rem;
+  background: var(--md-default-bg-color);
+}
+
+table:not(.dataframe) thead {
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  color: white;
+}
+
+table:not(.dataframe) thead th {
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: none;
+  white-space: nowrap;
+}
+
+table:not(.dataframe) tbody tr {
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+table:not(.dataframe) tbody tr:hover {
+  background-color: rgba(0, 150, 136, 0.05);
+}
+
+table:not(.dataframe) tbody tr:last-child {
+  border-bottom: none;
+}
+
+table:not(.dataframe) tbody td,
+table:not(.dataframe) tbody th {
+  padding: 0.4rem 0.6rem;
+  border: none;
+  line-height: 1.3;
+}
+
+table:not(.dataframe) tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+/* Dark mode for regular tables */
+[data-md-color-scheme="slate"] table:not(.dataframe) {
+  border-color: var(--md-default-fg-color--light);
+  background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="slate"] table:not(.dataframe) tbody tr:hover {
+  background-color: rgba(0, 150, 136, 0.12);
+}
+
+[data-md-color-scheme="slate"] table:not(.dataframe) tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+/* Compact pandas/polars DataFrame styling */
+.dataframe {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.06);
+  margin: 1.5rem 0;
+  font-size: 0.8rem;
+  background: var(--md-default-bg-color);
+}
+
+.dataframe thead {
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  color: white;
+}
+
+.dataframe thead th {
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: none;
+  white-space: nowrap;
+}
+
+.dataframe tbody tr {
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.dataframe tbody tr:hover {
+  background-color: rgba(0, 150, 136, 0.05);
+}
+
+.dataframe tbody tr:last-child {
+  border-bottom: none;
+}
+
+.dataframe tbody td {
+  padding: 0.4rem 0.6rem;
+  border: none;
+  line-height: 1.3;
+}
+
+/* Index column styling */
+.dataframe tbody th {
+  background-color: rgba(0, 150, 136, 0.06);
+  font-weight: 500;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  border: none;
+  font-size: 0.8rem;
+}
+
+/* Alternating row colors - very subtle */
+.dataframe tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+/* Dark mode adjustments for DataFrames */
+[data-md-color-scheme="slate"] .dataframe {
+  border-color: var(--md-default-fg-color--light);
+  background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="slate"] .dataframe tbody tr:hover {
+  background-color: rgba(0, 150, 136, 0.12);
+}
+
+[data-md-color-scheme="slate"] .dataframe tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+[data-md-color-scheme="slate"] .dataframe tbody th {
+  background-color: rgba(0, 150, 136, 0.12);
+}
+
+/* Numeric column alignment */
+.dataframe tbody td:not(:first-child) {
+  text-align: right;
+}
+
+/* Keep text columns left-aligned */
+.dataframe tbody td[class*="object"],
+.dataframe tbody td[class*="string"] {
+  text-align: left;
+}
+
+/* Responsive table wrapper */
+.dataframe-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  .dataframe {
+    font-size: 0.7rem;
+  }
+  
+  .dataframe thead th,
+  .dataframe tbody td,
+  .dataframe tbody th {
+    padding: 0.35rem 0.5rem;
+  }
 }
 
 /* Improve footer */

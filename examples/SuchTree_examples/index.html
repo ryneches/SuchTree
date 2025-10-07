@@ -387,7 +387,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../SuchTree_API/" class="md-tabs__link">
+      <a href="../../api_docs/" class="md-tabs__link">
         
   
   
@@ -590,9 +590,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-with-multiple-threads" class="md-nav__link">
+  <a href="#parallel-processing-with-suchtree" class="md-nav__link">
     <span class="md-ellipsis">
-      Running with multiple threads
+      Parallel processing with SuchTree
     </span>
   </a>
   
@@ -748,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SuchTree_API/" class="md-nav__link">
+      <a href="../../api_docs/" class="md-nav__link">
         
   
   
@@ -849,9 +849,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-with-multiple-threads" class="md-nav__link">
+  <a href="#parallel-processing-with-suchtree" class="md-nav__link">
     <span class="md-ellipsis">
-      Running with multiple threads
+      Parallel processing with SuchTree
     </span>
   </a>
   
@@ -877,7 +877,19 @@
 
 
 <h1 id="suchtree">SuchTree</h1>
-<p>and python packages :</p>
+<p>In this article, we'll look at some basic uses of SuchTree's <code>SuchTree</code> class :</p>
+<ul>
+<li>Loading tree data from files</li>
+<li>Inspecting taxa names</li>
+<li>Calculating patrsitic distances between pairs of taxa</li>
+<li>Calculating lots of patristic distances</li>
+<li>Loading tree data from URLs</li>
+<li>Sampling patristic distances from very large trees</li>
+<li>Parallel processing with <code>SuchTree</code></li>
+</ul>
+<p>As a bonus, we'll also cover plotting trees with <code>toytree</code>, which is especiall useful
+in notebook enviornemnts. To run this notebook, you will need to have the following
+python packages installed :</p>
 <ul>
 <li><code>SuchTree</code></li>
 <li><code>pandas</code></li>
@@ -888,15 +900,17 @@
 <li><code>seaborn</code></li>
 <li><code>fastcluster</code></li>
 <li><code>dendropy</code></li>
+<li><code>toytree</code></li>
+<li><code>jupyter</code></li>
 </ul>
-<p>and obviously you'll want <code>jupyter</code> installed so you can run the notebook server. The
-Internet is full of opinions about how to set up your python environment. You
-should find one that works for you, but <a href="https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14">this guide is as good as any</a> to get you started.</p>
-<p>I'm going to start off by loading the required packages and suppressing some warnings
-that <a href="https://github.com/mwaskom/seaborn/issues/1392">should be fixed</a> in the next
-stable release of <code>seaborn</code>.</p>
-<p>I'm going to assume that you are running this notebook out of a local copy of the 
-<a href="https://github.com/ryneches/SuchTree/">SuchTree repository</a> for any local file paths.</p>
+<p>If you want to run this locally, I recommend following the <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">Jupyter Lab</a>
+documentation.</p>
+<p>The Internet is full of opinions about how to set up your python environment. You
+should find one that works for you, but <a href="https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14">this guide is as good as any</a> to get you started. I start off by supressing some warnings that
+come out of scipy's hierarchal clustering function. Feel free to leave them turned on if
+you enjoy pendantic notifications. I'm going to assume that you are running this notebook
+from its locations in a local copy of the <a href="https://github.com/ryneches/SuchTree/">SuchTree repository</a>
+for any local file paths.</p>
 <div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span><span class="o">=</span><span class="s1">&#39;retina&#39;</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">SuchTree</span><span class="w"> </span><span class="kn">import</span> <span class="n">SuchTree</span><span class="p">,</span> <span class="n">SuchLinkedTrees</span>
@@ -918,7 +932,7 @@ from my dissertation :</p>
 
 <span class="n">canvas</span><span class="p">,</span> <span class="n">axes</span><span class="p">,</span> <span class="n">mark</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span> <span class="n">tree_style</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="n">tip_labels_align</span><span class="o">=</span><span class="kc">True</span> <span class="p">)</span>
 </code></pre></div>
-<div class="toyplot" id="te2cd2e162416425095abcb75225b4469" style="text-align:center"><svg class="toyplot-canvas-Canvas" xmlns:toyplot="http://www.sandia.gov/toyplot" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="539.152px" height="331.84px" viewBox="0 0 539.152 331.84" preserveAspectRatio="xMidYMid meet" style="background-color:transparent;border-color:#292724;border-style:none;border-width:1.0;fill:rgb(16.1%,15.3%,14.1%);fill-opacity:1.0;font-family:Helvetica;font-size:12px;opacity:1.0;stroke:rgb(16.1%,15.3%,14.1%);stroke-opacity:1.0;stroke-width:1.0" id="t756986dbdc814f2c80d7242d752e85d7"><g class="toyplot-coordinates-Cartesian" id="t45172befdef64a9fa94797de38b5fd18"><clipPath id="t3fdc10967a7f44f5b9be262351ee46b5"><rect x="35.0" y="35.0" width="469.15200000000004" height="261.84"></rect></clipPath><g clip-path="url(#t3fdc10967a7f44f5b9be262351ee46b5)"><g class="toytree-mark-Toytree" id="t05b4d3b53a354f80928be3f7d75473a0"><g class="toytree-Edges" style="stroke:rgb(40.0%,76.1%,64.7%);stroke-opacity:1.0;stroke-linecap:round;stroke-width:2;fill:none"><path d="M 142.5 266.7 L 142.5 275.1 L 187.6 275.1" id="14,0" style=""></path><path d="M 142.5 266.7 L 142.5 258.3 L 178.4 258.3" id="14,1" style=""></path><path d="M 77.5 254.1 L 77.5 241.5 L 229.1 241.5" id="15,2" style=""></path><path d="M 147.6 210.0 L 147.6 224.7 L 289.1 224.7" id="18,3" style=""></path><path d="M 198.6 195.3 L 198.6 207.9 L 235.5 207.9" id="17,4" style=""></path><path d="M 226.4 182.7 L 226.4 191.1 L 240.6 191.1" id="16,5" style=""></path><path d="M 226.4 182.7 L 226.4 174.3 L 251.5 174.3" id="16,6" style=""></path><path d="M 68.2 194.8 L 68.2 157.5 L 214.1 157.5" id="20,7" style=""></path><path d="M 89.1 132.3 L 89.1 140.7 L 159.5 140.7" id="21,8" style=""></path><path d="M 89.1 132.3 L 89.1 123.9 L 154.9 123.9" id="21,9" style=""></path><path d="M 73.5 119.7 L 73.5 107.2 L 144.7 107.2" id="22,10" style=""></path><path d="M 122.1 77.8 L 122.1 90.4 L 211.8 90.4" id="25,11" style=""></path><path d="M 148.5 65.2 L 148.5 73.6 L 243.0 73.6" id="24,12" style=""></path><path d="M 148.5 65.2 L 148.5 56.8 L 224.9 56.8" id="24,13" style=""></path><path d="M 77.5 254.1 L 77.5 266.7 L 142.5 266.7" id="15,14" style=""></path><path d="M 71.2 232.0 L 71.2 254.1 L 77.5 254.1" id="19,15" style=""></path><path d="M 198.6 195.3 L 198.6 182.7 L 226.4 182.7" id="17,16" style=""></path><path d="M 147.6 210.0 L 147.6 195.3 L 198.6 195.3" id="18,17" style=""></path><path d="M 71.2 232.0 L 71.2 210.0 L 147.6 210.0" id="19,18" style=""></path><path d="M 68.2 194.8 L 68.2 232.0 L 71.2 232.0" id="20,19" style=""></path><path d="M 64.4 157.3 L 64.4 194.8 L 68.2 194.8" id="23,20" style=""></path><path d="M 73.5 119.7 L 73.5 132.3 L 89.1 132.3" id="22,21" style=""></path><path d="M 64.4 157.3 L 64.4 119.7 L 73.5 119.7" id="23,22" style=""></path><path d="M 50.5 117.5 L 50.5 157.3 L 64.4 157.3" id="26,23" style=""></path><path d="M 122.1 77.8 L 122.1 65.2 L 148.5 65.2" id="25,24" style=""></path><path d="M 50.5 117.5 L 50.5 77.8 L 122.1 77.8" id="26,25" style=""></path></g><g class="toytree-AlignEdges" style="stroke:rgb(66.0%,66.0%,66.0%);stroke-opacity:0.75;stroke-dasharray:2,4;stroke-linecap:round;stroke-width:2"><path d="M 289.1 275.1 L 187.6 275.1"></path><path d="M 289.1 258.3 L 178.4 258.3"></path><path d="M 289.1 241.5 L 229.1 241.5"></path><path d="M 289.1 224.7 L 289.1 224.7"></path><path d="M 289.1 207.9 L 235.5 207.9"></path><path d="M 289.1 191.1 L 240.6 191.1"></path><path d="M 289.1 174.3 L 251.5 174.3"></path><path d="M 289.1 157.5 L 214.1 157.5"></path><path d="M 289.1 140.7 L 159.5 140.7"></path><path d="M 289.1 123.9 L 154.9 123.9"></path><path d="M 289.1 107.2 L 144.7 107.2"></path><path d="M 289.1 90.4 L 211.8 90.4"></path><path d="M 289.1 73.6 L 243.0 73.6"></path><path d="M 289.1 56.8 L 224.9 56.8"></path></g><g class="toytree-AdmixEdges" style="fill:rgb(0.0%,0.0%,0.0%);fill-opacity:0.0;stroke:rgb(90.6%,54.1%,76.5%);stroke-opacity:0.6;font-size:14px;stroke-linecap:round;stroke-width:5"></g><g class="toytree-Nodes" style="fill:rgb(40.0%,76.1%,64.7%);fill-opacity:1.0;stroke:none;stroke-width:1.5"></g><g class="toytree-TipLabels" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0;font-family:Helvetica;font-size:12px;font-weight:300;vertical-align:baseline;white-space:pre;stroke:none"><g class="toytree-TipLabel" transform="translate(289.135,275.061)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Tropheus_moorii</text></g><g class="toytree-TipLabel" transform="translate(289.135,258.27)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Lobochilotes_labiatus</text></g><g class="toytree-TipLabel" transform="translate(289.135,241.479)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Tanganicodus_irsacae</text></g><g class="toytree-TipLabel" transform="translate(289.135,224.688)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Cyprichromis_coloratus</text></g><g class="toytree-TipLabel" transform="translate(289.135,207.897)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Haplotaxodon_microlepis</text></g><g class="toytree-TipLabel" transform="translate(289.135,191.106)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Perissodus_microlepis</text></g><g class="toytree-TipLabel" transform="translate(289.135,174.315)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Plecodus_straeleni</text></g><g class="toytree-TipLabel" transform="translate(289.135,157.525)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Xenotilapia_flavipinnis</text></g><g class="toytree-TipLabel" transform="translate(289.135,140.734)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Triglachromis_otostigma</text></g><g class="toytree-TipLabel" transform="translate(289.135,123.943)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Reganochromis_calliurus</text></g><g class="toytree-TipLabel" transform="translate(289.135,107.152)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Trematochromis_benthicola</text></g><g class="toytree-TipLabel" transform="translate(289.135,90.3608)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Lepidiolamprologus_profundicola</text></g><g class="toytree-TipLabel" transform="translate(289.135,73.5699)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Neolamprologus_buescheri</text></g><g class="toytree-TipLabel" transform="translate(289.135,56.7789)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Chalinochromis_brichardi</text></g></g></g></g></g></svg><div class="toyplot-behavior"><script>(function()
+<div class="toyplot" id="t2f704d3dcc704c64b636d61ac6f6732f" style="text-align:center"><svg class="toyplot-canvas-Canvas" xmlns:toyplot="http://www.sandia.gov/toyplot" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="539.152px" height="331.84px" viewBox="0 0 539.152 331.84" preserveAspectRatio="xMidYMid meet" style="background-color:transparent;border-color:#292724;border-style:none;border-width:1.0;fill:rgb(16.1%,15.3%,14.1%);fill-opacity:1.0;font-family:Helvetica;font-size:12px;opacity:1.0;stroke:rgb(16.1%,15.3%,14.1%);stroke-opacity:1.0;stroke-width:1.0" id="tbab3d4d8a6fd49ba9ae8404e6c554a95"><g class="toyplot-coordinates-Cartesian" id="tebde7a7d0a8846c5a3c8e8ee4a9f8b1d"><clipPath id="te8370ae2825c4822a5348cad8bab3a1c"><rect x="35.0" y="35.0" width="469.15200000000004" height="261.84"></rect></clipPath><g clip-path="url(#te8370ae2825c4822a5348cad8bab3a1c)"><g class="toytree-mark-Toytree" id="tf456a98bfdbe4bed9df6060e062e89c6"><g class="toytree-Edges" style="stroke:rgb(40.0%,76.1%,64.7%);stroke-opacity:1.0;stroke-linecap:round;stroke-width:2;fill:none"><path d="M 142.5 266.7 L 142.5 275.1 L 187.6 275.1" id="14,0" style=""></path><path d="M 142.5 266.7 L 142.5 258.3 L 178.4 258.3" id="14,1" style=""></path><path d="M 77.5 254.1 L 77.5 241.5 L 229.1 241.5" id="15,2" style=""></path><path d="M 147.6 210.0 L 147.6 224.7 L 289.1 224.7" id="18,3" style=""></path><path d="M 198.6 195.3 L 198.6 207.9 L 235.5 207.9" id="17,4" style=""></path><path d="M 226.4 182.7 L 226.4 191.1 L 240.6 191.1" id="16,5" style=""></path><path d="M 226.4 182.7 L 226.4 174.3 L 251.5 174.3" id="16,6" style=""></path><path d="M 68.2 194.8 L 68.2 157.5 L 214.1 157.5" id="20,7" style=""></path><path d="M 89.1 132.3 L 89.1 140.7 L 159.5 140.7" id="21,8" style=""></path><path d="M 89.1 132.3 L 89.1 123.9 L 154.9 123.9" id="21,9" style=""></path><path d="M 73.5 119.7 L 73.5 107.2 L 144.7 107.2" id="22,10" style=""></path><path d="M 122.1 77.8 L 122.1 90.4 L 211.8 90.4" id="25,11" style=""></path><path d="M 148.5 65.2 L 148.5 73.6 L 243.0 73.6" id="24,12" style=""></path><path d="M 148.5 65.2 L 148.5 56.8 L 224.9 56.8" id="24,13" style=""></path><path d="M 77.5 254.1 L 77.5 266.7 L 142.5 266.7" id="15,14" style=""></path><path d="M 71.2 232.0 L 71.2 254.1 L 77.5 254.1" id="19,15" style=""></path><path d="M 198.6 195.3 L 198.6 182.7 L 226.4 182.7" id="17,16" style=""></path><path d="M 147.6 210.0 L 147.6 195.3 L 198.6 195.3" id="18,17" style=""></path><path d="M 71.2 232.0 L 71.2 210.0 L 147.6 210.0" id="19,18" style=""></path><path d="M 68.2 194.8 L 68.2 232.0 L 71.2 232.0" id="20,19" style=""></path><path d="M 64.4 157.3 L 64.4 194.8 L 68.2 194.8" id="23,20" style=""></path><path d="M 73.5 119.7 L 73.5 132.3 L 89.1 132.3" id="22,21" style=""></path><path d="M 64.4 157.3 L 64.4 119.7 L 73.5 119.7" id="23,22" style=""></path><path d="M 50.5 117.5 L 50.5 157.3 L 64.4 157.3" id="26,23" style=""></path><path d="M 122.1 77.8 L 122.1 65.2 L 148.5 65.2" id="25,24" style=""></path><path d="M 50.5 117.5 L 50.5 77.8 L 122.1 77.8" id="26,25" style=""></path></g><g class="toytree-AlignEdges" style="stroke:rgb(66.0%,66.0%,66.0%);stroke-opacity:0.75;stroke-dasharray:2,4;stroke-linecap:round;stroke-width:2"><path d="M 289.1 275.1 L 187.6 275.1"></path><path d="M 289.1 258.3 L 178.4 258.3"></path><path d="M 289.1 241.5 L 229.1 241.5"></path><path d="M 289.1 224.7 L 289.1 224.7"></path><path d="M 289.1 207.9 L 235.5 207.9"></path><path d="M 289.1 191.1 L 240.6 191.1"></path><path d="M 289.1 174.3 L 251.5 174.3"></path><path d="M 289.1 157.5 L 214.1 157.5"></path><path d="M 289.1 140.7 L 159.5 140.7"></path><path d="M 289.1 123.9 L 154.9 123.9"></path><path d="M 289.1 107.2 L 144.7 107.2"></path><path d="M 289.1 90.4 L 211.8 90.4"></path><path d="M 289.1 73.6 L 243.0 73.6"></path><path d="M 289.1 56.8 L 224.9 56.8"></path></g><g class="toytree-AdmixEdges" style="fill:rgb(0.0%,0.0%,0.0%);fill-opacity:0.0;stroke:rgb(90.6%,54.1%,76.5%);stroke-opacity:0.6;font-size:14px;stroke-linecap:round;stroke-width:5"></g><g class="toytree-Nodes" style="fill:rgb(40.0%,76.1%,64.7%);fill-opacity:1.0;stroke:none;stroke-width:1.5"></g><g class="toytree-TipLabels" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0;font-family:Helvetica;font-size:12px;font-weight:300;vertical-align:baseline;white-space:pre;stroke:none"><g class="toytree-TipLabel" transform="translate(289.135,275.061)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Tropheus_moorii</text></g><g class="toytree-TipLabel" transform="translate(289.135,258.27)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Lobochilotes_labiatus</text></g><g class="toytree-TipLabel" transform="translate(289.135,241.479)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Tanganicodus_irsacae</text></g><g class="toytree-TipLabel" transform="translate(289.135,224.688)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Cyprichromis_coloratus</text></g><g class="toytree-TipLabel" transform="translate(289.135,207.897)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Haplotaxodon_microlepis</text></g><g class="toytree-TipLabel" transform="translate(289.135,191.106)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Perissodus_microlepis</text></g><g class="toytree-TipLabel" transform="translate(289.135,174.315)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Plecodus_straeleni</text></g><g class="toytree-TipLabel" transform="translate(289.135,157.525)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Xenotilapia_flavipinnis</text></g><g class="toytree-TipLabel" transform="translate(289.135,140.734)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Triglachromis_otostigma</text></g><g class="toytree-TipLabel" transform="translate(289.135,123.943)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Reganochromis_calliurus</text></g><g class="toytree-TipLabel" transform="translate(289.135,107.152)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Trematochromis_benthicola</text></g><g class="toytree-TipLabel" transform="translate(289.135,90.3608)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Lepidiolamprologus_profundicola</text></g><g class="toytree-TipLabel" transform="translate(289.135,73.5699)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Neolamprologus_buescheri</text></g><g class="toytree-TipLabel" transform="translate(289.135,56.7789)"><text x="8.0" y="3.066" style="fill:rgb(90.6%,54.1%,76.5%);fill-opacity:1.0">Chalinochromis_brichardi</text></g></g></g></g></g></svg><div class="toyplot-behavior"><script>(function()
 {
 var modules={};
 })();</script></div></div>
@@ -960,9 +974,9 @@ the interpreter's overhead.</p>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;taxon 2  : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">b</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;distance : </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">d</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>taxon 1  : 10
-taxon 2  : 14
-distance : 0.329240
+<div class="highlight"><pre><span></span><code>taxon 1  : 12
+taxon 2  : 26
+distance : 0.388425
 </code></pre></div>
 <p>The <code>distance()</code> function will accept either node ids (which are integers),
 or taxon names (which are strings).</p>
@@ -975,9 +989,9 @@ or taxon names (which are strings).</p>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;taxon 2  : </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">b</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;distance : </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">d</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>taxon 1  : Neolamprologus_buescheri
-taxon 2  : Xenotilapia_flavipinnis
-distance : 0.368439
+<div class="highlight"><pre><span></span><code>taxon 1  : Reganochromis_calliurus
+taxon 2  : Haplotaxodon_microlepis
+distance : 0.270743
 </code></pre></div>
 <p>You can loop over all of the distances one at a time to construct a distance matrix...</p>
 <div class="highlight"><pre><span></span><code><span class="n">D1</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span> <span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
@@ -992,7 +1006,7 @@ topology as the input tree, which was build with <a href="https://github.com/sta
 <div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D1</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
 <span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x77713876fb30&gt;
+<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x70655aabb4d0&gt;
 </code></pre></div>
 <p><img alt="png" src="../output_16_1.png" /></p>
 <p>To calculate the distances in a batch, we can use the <code>distances()</code> function,
@@ -1022,16 +1036,14 @@ them as integers).</p>
 <div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D2</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T</span><span class="o">.</span><span class="n">leaves</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
 <span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x7771388435c0&gt;
+<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x70655a702db0&gt;
 </code></pre></div>
 <p><img alt="png" src="../output_21_1.png" /></p>
 <p>If you want to use taxon names instead, <code>distances_by_name()</code> accepts an <span class="arithmatex">\(n \times 2\)</span> list
 of tuples of taxon names, and looks up the node ids for you.</p>
 <h3 id="loading-data-from-urls">Loading data from URLs</h3>
 <p>SuchTree can also import data from the internets. Here is the distance matrix for 
-the penguins, from the <a href="http://birdtree.org/">Global Phylogeny of Birds</a> (I've
-copied some of their data into a Gist post because their data repository forbids
-programatic queries).</p>
+the penguins, from the <a href="http://birdtree.org/">Global Phylogeny of Birds</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">T3</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre&#39;</span> <span class="p">)</span>
 
 <span class="n">D3_list</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1043,23 +1055,11 @@ programatic queries).</p>
 <span class="n">D3</span> <span class="o">=</span> <span class="n">D3</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span> <span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">D3</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">T3</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">]</span> <span class="p">)</span>
-<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span> <span class="n">df</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>---------------------------------------------------------------------------
-
-FileNotFoundError                         Traceback (most recent call last)
-
-Cell In[24], line 1
-----&gt; 1 T3 = SuchTree( &#39;https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre&#39; )
-      3 D3_list = []
-      4 for i,a in enumerate(T3.leafs.values()) :
-
-
-File SuchTree/MuchTree.pyx:151, in SuchTree.MuchTree.SuchTree.__init__()
-
-
-FileNotFoundError: [Errno 2] No such file or directory: &#39;https://data.vertlife.org/birdtree/PatchClade/Stage2/set10/Spheniscidae.tre&#39;
+<div class="highlight"><pre><span></span><code>&lt;seaborn.matrix.ClusterGrid at 0x70654b07d370&gt;
 </code></pre></div>
+<p><img alt="png" src="../output_24_1.png" /></p>
 <h3 id="comparing-the-topologies-of-two-large-trees">Comparing the topologies of two large trees</h3>
 <p>So far, we haven't done anything you couldn't do with other phylogenetics packages. 
 <code>SuchTree</code> really shines when you have to do a lot of distance calculations on very
@@ -1068,8 +1068,8 @@ large trees.</p>
 but constructed with different methods (<a href="http://www.microbesonline.org/fasttree/"><code>FastTree</code></a> and 
 <a href="https://en.wikipedia.org/wiki/Neighbor_joining"><code>neighbor joining</code></a>). One million random pairs are 
 sampled from each tree, and the distances compared.</p>
-<div class="highlight"><pre><span></span><code><span class="n">T1</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://git.io/flbcM&#39;</span> <span class="p">)</span>
-<span class="n">T2</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://git.io/flbcH&#39;</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">T1</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://raw.githubusercontent.com/ryneches/SuchTree/refs/heads/main/data/bigtrees/ml.tree&#39;</span> <span class="p">)</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;https://raw.githubusercontent.com/ryneches/SuchTree/refs/heads/main/data/bigtrees/nj.tree&#39;</span> <span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;nodes : </span><span class="si">%d</span><span class="s1">, leafs : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span> <span class="n">T1</span><span class="o">.</span><span class="n">length</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">T1</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;nodes : </span><span class="si">%d</span><span class="s1">, leafs : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span> <span class="n">T2</span><span class="o">.</span><span class="n">length</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">T2</span><span class="o">.</span><span class="n">leafs</span><span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
@@ -1087,8 +1087,8 @@ nodes : 108653, leafs : 54327
 
 <span class="o">%</span><span class="n">time</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span> <span class="o">=</span> <span class="n">T1</span><span class="o">.</span><span class="n">distances_by_name</span><span class="p">(</span> <span class="n">pairs</span> <span class="p">),</span> <span class="n">T2</span><span class="o">.</span><span class="n">distances_by_name</span><span class="p">(</span> <span class="n">pairs</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>CPU times: user 15.6 s, sys: 43.2 ms, total: 15.6 s
-Wall time: 15.6 s
+<div class="highlight"><pre><span></span><code>CPU times: user 34.4 s, sys: 142 ms, total: 34.6 s
+Wall time: 34.4 s
 </code></pre></div>
 <p>The <code>distances()</code> function, which uses node ids rather than taxa names,
 would be a little bit faster. However, because the trees have different topologies,
@@ -1096,9 +1096,17 @@ the taxa have different node ids in each tree. <code>SuchTree</code>'s <code>dis
 function untangles the leaf name to leaf node id mappings for you.</p>
 <div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="p">{</span> <span class="s1">&#39;ML&#39;</span> <span class="p">:</span> <span class="n">D1</span><span class="p">,</span> <span class="s1">&#39;neighbor joining&#39;</span> <span class="p">:</span> <span class="n">D2</span> <span class="p">}</span> <span class="p">)</span>
 
-<span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="s1">&#39;ML&#39;</span><span class="p">,</span> <span class="s1">&#39;neighbor joining&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">6</span> <span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;ML&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;neighbor joining&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
+                       <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                       <span class="n">marginal_kws</span><span class="o">=</span><span class="p">{</span> <span class="s1">&#39;bins&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;linewidth&#39;</span> <span class="p">:</span> <span class="mi">0</span> <span class="p">}</span> <span class="p">)</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">ax_joint</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.0</span> <span class="p">]</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.axisgrid.JointGrid at 0x7fa02a460668&gt;
+<div class="highlight"><pre><span></span><code>[&lt;matplotlib.axis.XTick at 0x70654bdfad50&gt;,
+ &lt;matplotlib.axis.XTick at 0x70654bc6aae0&gt;,
+ &lt;matplotlib.axis.XTick at 0x70654bc6b530&gt;,
+ &lt;matplotlib.axis.XTick at 0x70654bc6b3b0&gt;,
+ &lt;matplotlib.axis.XTick at 0x70654bc7e2a0&gt;]
 </code></pre></div>
 <p><img alt="png" src="../output_29_1.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">spearmanr</span><span class="p">,</span> <span class="n">kendalltau</span><span class="p">,</span> <span class="n">pearsonr</span>
@@ -1111,145 +1119,169 @@ function untangles the leaf name to leaf node id mappings for you.</p>
 Kendall&#39;s tau : 0.824
 Pearson&#39;s r   : 0.969
 </code></pre></div>
-<h3 id="running-with-multiple-threads">Running with multiple threads</h3>
+<h3 id="parallel-processing-with-suchtree">Parallel processing with SuchTree</h3>
 <p>Another advantage of <code>SuchTree</code>'s support for performing batches of distance 
 calculations is that these calculations can run outside of Python's 
 <a href="https://lbolla.info/blog/2013/12/23/python-threads-cython-gil">global interpreter lock</a>.
-This makes it possible to parallelize with <a href="https://docs.python.org/2/library/threading.html">Threads</a>.
-Python's <code>Thread</code> has less overhead than the
-<a href="https://docs.python.org/2/library/multiprocessing.html">multiprocessing</a> package's
-<code>Process</code>, and <code>Thread</code> objects can access the same memory. </p>
+This makes it possible to parallelize with Python's <a href="https://docs.python.org/2/library/threading.html"><code>Threads</code></a>
+or <a href="https://docs.python.org/2/library/multiprocessing.html"><code>multiprocessing</code></a> libraries. On 
+most Unix-like operating systems, <code>multiprocessing.Pool</code> uses a
+copy-on-write scheme for data shared by jobs. Internally, SuchTree stores tree topology
+data as an immutable block of memory, so no copying will take place.</p>
+<p>For better or worse, Python gives users a lot of different strategies for parallel processing.
+SuchTree is designed to work seamlessly with all of them.</p>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Parallelism</th>
+<th>Memory</th>
+<th>Overhead</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Threading</td>
+<td>No (GIL)</td>
+<td>Shared</td>
+<td>Low</td>
+<td>I/O bound</td>
+</tr>
+<tr>
+<td>ProcessPoolExecutor</td>
+<td>Yes</td>
+<td>Copied</td>
+<td>High (pickle)</td>
+<td>Small data</td>
+</tr>
+<tr>
+<td><strong>Pool with fork</strong></td>
+<td><strong>Yes</strong></td>
+<td><strong>Shared (CoW)</strong></td>
+<td><strong>Minimal</strong></td>
+<td><strong>Immutable data</strong></td>
+</tr>
+<tr>
+<td>Pool with spawn</td>
+<td>Yes</td>
+<td>Copied</td>
+<td>High (pickle)</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table>
 <p><code>SuchTree</code> intentionally does not allow the user to alter trees once they are created,
 and so distance calculations are always thread safe. This makes it possible to use only 
-<em>one</em> instance of a tree for all threads, which ought to give you the best chance of
-keeping it within L3 cache.</p>
+<em>one</em> instance of a tree for all threads (or processes or subinterpreters or whatever
+parallel processing scheme you choose). This gives you best chance of keeping the data
+within the CPU's L3 cache for maximum performance.</p>
 <p>First, let's create a Cython function that calls <code>SuchTree</code> outside of the GIL.</p>
 <div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">load_ext</span> <span class="n">Cython</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="o">%%</span><span class="n">cython</span>
 <span class="k">import</span><span class="w"> </span><span class="nn">cython</span>
+<span class="k">from</span><span class="w"> </span><span class="nn">libc.math</span><span class="w"> </span><span class="k">cimport</span> <span class="n">sqrt</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">correlation</span><span class="p">(</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">x</span><span class="p">,</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">y</span> <span class="p">)</span> <span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">correlation</span><span class="p">(</span><span class="n">double</span><span class="p">[:]</span> <span class="n">x</span><span class="p">,</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">y</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span> <span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s">&#39;Arrays must have the same length&#39;</span> <span class="p">)</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">2</span> <span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s">&#39;Arrays must have at least 2 elements&#39;</span> <span class="p">)</span>
     <span class="k">return</span> <span class="n">_correlation</span><span class="p">(</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="p">)</span>
 
 <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+<span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+<span class="nd">@cython</span><span class="o">.</span><span class="n">cdivision</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
 <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">_correlation</span><span class="p">(</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">x</span><span class="p">,</span> <span class="n">double</span><span class="p">[:]</span> <span class="n">y</span> <span class="p">)</span> <span class="k">nogil</span> <span class="p">:</span>
     <span class="k">cdef</span><span class="w"> </span><span class="kt">int</span> <span class="nf">n</span><span class="w"> </span><span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span>
-    <span class="k">cdef</span><span class="w"> </span><span class="kt">int</span> <span class="nf">i</span><span class="w"> </span><span class="o">=</span> <span class="mf">0</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">int</span> <span class="nf">i</span>
     <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">r</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
     <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">xbar</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
     <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">ybar</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
     <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">sx</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
     <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">sy</span><span class="w"> </span><span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">cdef</span><span class="w"> </span><span class="kt">double</span> <span class="nf">dx</span><span class="p">,</span> <span class="nf">dy</span>
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span>
+<span class="w">    </span><span class="c"># Compute means</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
         <span class="n">xbar</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
         <span class="n">ybar</span> <span class="o">+=</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">xbar</span> <span class="o">/=</span> <span class="n">n</span>
     <span class="n">ybar</span> <span class="o">/=</span> <span class="n">n</span>
 
-    <span class="c"># compute standard deviation of x and y</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">sx</span> <span class="o">+=</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">xbar</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">xbar</span><span class="p">)</span>
-        <span class="n">sy</span> <span class="o">+=</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">ybar</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">ybar</span><span class="p">)</span>
+    <span class="c"># Compute standard deviations and correlation in one pass</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">dx</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">xbar</span>
+        <span class="n">dy</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">ybar</span>
+        <span class="n">sx</span> <span class="o">+=</span> <span class="n">dx</span> <span class="o">*</span> <span class="n">dx</span>
+        <span class="n">sy</span> <span class="o">+=</span> <span class="n">dy</span> <span class="o">*</span> <span class="n">dy</span>
+        <span class="n">r</span> <span class="o">+=</span> <span class="n">dx</span> <span class="o">*</span> <span class="n">dy</span>
 
-    <span class="n">sx</span> <span class="o">=</span> <span class="p">(</span> <span class="n">sx</span> <span class="o">/</span> <span class="n">n</span> <span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-    <span class="n">sy</span> <span class="o">=</span> <span class="p">(</span> <span class="n">sy</span> <span class="o">/</span> <span class="n">n</span> <span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">sx</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">sx</span><span class="p">)</span>
+    <span class="n">sy</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">sy</span><span class="p">)</span>
 
-    <span class="c"># compute r, the correlation coefficient between the two arrays</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">r</span> <span class="o">+=</span> <span class="p">(((</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">xbar</span><span class="p">)</span><span class="o">/</span><span class="n">sx</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">ybar</span><span class="p">)</span><span class="o">/</span><span class="n">sy</span><span class="p">));</span>
-    <span class="n">r</span> <span class="o">/=</span> <span class="p">(</span><span class="n">n</span><span class="p">);</span>
-    <span class="k">return</span> <span class="n">r</span>
+    <span class="c"># Handle zero variance case</span>
+    <span class="k">if</span> <span class="n">sx</span> <span class="o">==</span> <span class="mf">0.0</span> <span class="ow">or</span> <span class="n">sy</span> <span class="o">==</span> <span class="mf">0.0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">0.0</span>
+
+    <span class="k">return</span> <span class="n">r</span> <span class="o">/</span> <span class="p">(</span><span class="n">sx</span> <span class="o">*</span> <span class="n">sy</span><span class="p">)</span>
 </code></pre></div>
-<p>Let's set up two queues, one for uncompleted tasks, which we'll call <code>work_q</code>,
-and one for finished results, which we'll call <code>done_q</code>. The worker threads will
-pop tasks from the <code>work_q</code>, do some work, and push the results into the <code>done_q</code>.</p>
-<p>Let's also push sentinels at the end of the <code>work_q</code> so the workers have a convenient
-way to know when to shut down.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">threading</span><span class="w"> </span><span class="kn">import</span> <span class="n">Thread</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">queue</span><span class="w"> </span><span class="kn">import</span> <span class="n">Queue</span>
+<p>Next, we'll load use <code>Pool.map()</code> from Python's <code>multiprocessing</code> library to run our processes in parallel.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">multiprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pool</span>
 
-<span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># number of threads</span>
-<span class="n">m</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1"># number of work units</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>   <span class="c1"># number of processes</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">12</span>  <span class="c1"># number of work units</span>
+<span class="n">v</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T1</span><span class="o">.</span><span class="n">leaves</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span>
 
-<span class="n">work_q</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">()</span>
-<span class="n">done_q</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">()</span>
 
-<span class="n">v</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">T1</span><span class="o">.</span><span class="n">leafs</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">worker_task</span><span class="p">(</span> <span class="n">args</span> <span class="p">)</span> <span class="p">:</span>
+    <span class="n">block_idx</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">T1_leafs</span><span class="p">,</span> <span class="n">T2_leafs</span> <span class="o">=</span> <span class="n">args</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span> <span class="n">block_idx</span> <span class="p">)</span>  <span class="c1"># Different seed per block</span>
+
+    <span class="n">pairs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="mi">100000</span> <span class="p">)</span> <span class="p">:</span>
+        <span class="n">pairs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">T1_leafs</span><span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">],</span>
+                        <span class="n">T2_leafs</span><span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+
+    <span class="n">task</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span> <span class="n">pairs</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span> <span class="p">)</span>
+    <span class="n">D1</span> <span class="o">=</span> <span class="n">T1</span><span class="o">.</span><span class="n">distances</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+    <span class="n">D2</span> <span class="o">=</span> <span class="n">T2</span><span class="o">.</span><span class="n">distances</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">correlation</span><span class="p">(</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span> <span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;building work blocks...&#39;</span> <span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="n">m</span> <span class="p">)</span> <span class="p">:</span>
-    <span class="n">pairs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="mi">100000</span> <span class="p">)</span> <span class="p">:</span>
-        <span class="n">pairs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">T1</span><span class="o">.</span><span class="n">leafs</span><span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="n">v</span> <span class="p">)</span> <span class="p">],</span>
-                        <span class="n">T2</span><span class="o">.</span><span class="n">leafs</span><span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span> <span class="n">v</span> <span class="p">)</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
-    <span class="n">work_q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span> <span class="n">array</span><span class="p">(</span> <span class="n">pairs</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span> <span class="p">)</span> <span class="p">)</span>
+<span class="n">work_items</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="nb">dict</span><span class="p">(</span><span class="n">T1</span><span class="o">.</span><span class="n">leaves</span><span class="p">),</span> <span class="nb">dict</span><span class="p">(</span><span class="n">T2</span><span class="o">.</span><span class="n">leaves</span><span class="p">)</span> <span class="p">)</span> 
+               <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="p">]</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="n">n</span> <span class="p">)</span> <span class="p">:</span>
-    <span class="n">work_q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span> <span class="s1">&#39;STOP&#39;</span> <span class="p">)</span> <span class="c1"># sentinel elements, one for each worker</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;processing...&#39;</span> <span class="p">)</span>
+<span class="k">with</span> <span class="n">Pool</span><span class="p">(</span> <span class="n">processes</span><span class="o">=</span><span class="n">n</span> <span class="p">)</span> <span class="k">as</span> <span class="n">pool</span> <span class="p">:</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">map</span><span class="p">(</span> <span class="n">worker_task</span><span class="p">,</span> <span class="n">work_items</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Results :&#39;</span> <span class="p">)</span>
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>building work blocks...
-</code></pre></div>
-<p>The worker process takes the two queues as arguments, and returns <code>True</code>
-when it completes successfully.</p>
-<p>Note that we're not using <code>distances_by_name()</code> because it requires a call
-to Python's dictionary object, which requires the GIL. Instead, we have
-looked up the node id for each taxon when we created the tasks we pushed onto
-<code>work_q</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">worker</span><span class="p">(</span> <span class="n">work_q</span><span class="p">,</span> <span class="n">done_q</span> <span class="p">)</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;starting worker...&#39;</span> <span class="p">)</span>
-    <span class="k">for</span> <span class="n">task</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span> <span class="n">work_q</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="s1">&#39;STOP&#39;</span> <span class="p">)</span> <span class="p">:</span>
-        <span class="n">D1</span> <span class="o">=</span> <span class="n">T1</span><span class="o">.</span><span class="n">distances</span><span class="p">(</span> <span class="n">task</span> <span class="p">)</span>
-        <span class="n">D2</span> <span class="o">=</span> <span class="n">T2</span><span class="o">.</span><span class="n">distances</span><span class="p">(</span> <span class="n">task</span> <span class="p">)</span>
-        <span class="n">r</span> <span class="o">=</span> <span class="n">correlation</span><span class="p">(</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span> <span class="p">)</span>
-        <span class="n">done_q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span> <span class="n">r</span> <span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;stopping worker...&#39;</span> <span class="p">)</span>
-    <span class="k">return</span> <span class="kc">True</span>
-</code></pre></div>
-<p>Now we can set up our thread pool, run it and print the results the threads
-pushed onto <code>done_q</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">threads</span> <span class="o">=</span> <span class="p">[]</span>
+processing...
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="n">n</span> <span class="p">)</span> <span class="p">:</span>
-    <span class="n">thread</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span> <span class="n">target</span><span class="o">=</span><span class="n">worker</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span> <span class="n">work_q</span><span class="p">,</span> <span class="n">done_q</span> <span class="p">)</span> <span class="p">)</span>
-    <span class="n">thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-    <span class="n">threads</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">thread</span> <span class="p">)</span>
-
-<span class="k">for</span> <span class="n">thread</span> <span class="ow">in</span> <span class="n">threads</span> <span class="p">:</span>
-    <span class="n">thread</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
-
-<span class="n">done_q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span> <span class="s1">&#39;STOP&#39;</span> <span class="p">)</span>
-
-<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span> <span class="n">done_q</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="s1">&#39;STOP&#39;</span> <span class="p">)</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span> <span class="n">r</span> <span class="p">)</span>
+Results :
+0.7835680969259644
+0.7848744370724512
+0.7844003849954652
+0.7850059312425519
+0.7828163187067951
+0.7839538411961768
+0.783997570675356
+0.7853124277733835
+0.7865262108378938
+0.7851786514073134
+0.7847794533814942
+0.7842134015490633
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>starting worker...
-starting worker...
-starting worker...
-starting worker...
-stopping worker...
-stopping worker...
-stopping worker...
-stopping worker...
-0.7858568333588076
-0.7826590873988822
-0.7844420298785083
-0.7838968592880762
-0.7832616169597755
-0.7810781477882289
-0.7823715835475968
-0.7832743632827825
-0.7862756657001954
-0.7851411483753257
-0.7828403864806949
-0.7833013061598763
-</code></pre></div>
-<p>Threaded algorithms are difficult to implement, and this is a very minimalist approach.
-It's really only good enough to demonstrate that you can call <code>SuchTree</code> from your worker
-threads without tripping the interpreter lock.</p>
-<p>If you need this capability, you will probably want to study the 
-<a href="https://docs.python.org/3/library/threading.html">documentation</a> carefully.</p>
+<p>Adapting algorithms to parallel processing is a complex topic, and this is only a toy example.
+Hopefully it is useful, but don't take this as the final word. SuchTree is designed to sidestep
+many of the problems commonly encountered in parallel computing, but that doesn't mean you won't
+discover problems anyway!</p>
 
 
 

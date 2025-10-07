@@ -387,7 +387,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../SuchTree_API/" class="md-tabs__link">
+      <a href="../../api_docs/" class="md-tabs__link">
         
   
   
@@ -675,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SuchTree_API/" class="md-nav__link">
+      <a href="../../api_docs/" class="md-nav__link">
         
   
   
@@ -781,8 +781,7 @@ extends the Mantel test in this paper here :</p>
 Unfortunately, the version in <code>scikit-bio</code> does not scale to very large trees,
 and does not expose the computed distances for analysis. This is where 
 <code>SuchLinkedTrees</code> can help.</p>
-<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
-<span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span><span class="o">=</span><span class="s1">&#39;retina&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span><span class="o">=</span><span class="s1">&#39;retina&#39;</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">SuchTree</span><span class="w"> </span><span class="kn">import</span> <span class="n">SuchTree</span><span class="p">,</span> <span class="n">SuchLinkedTrees</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span>
@@ -790,15 +789,15 @@ and does not expose the computed distances for analysis. This is where
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.cluster.hierarchy</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClusterWarning</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">pearsonr</span>
 
-<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span> <span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">UserWarning</span> <span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Populating the interactive namespace from numpy and matplotlib
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+
+<span class="c1">#warnings.simplefilter( &#39;ignore&#39;, UserWarning )</span>
 </code></pre></div>
 <p>To get started, we need to initialize two trees and a table of observations
 linking the taxa on the two trees.</p>
-<div class="highlight"><pre><span></span><code><span class="n">T1</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;data/bigtrees/host.tree&#39;</span> <span class="p">)</span>
-<span class="n">T2</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;data/bigtrees/guest.tree&#39;</span><span class="p">)</span>
-<span class="n">LK</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span> <span class="s1">&#39;data/bigtrees/links.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">T1</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;../../data/bigtrees/host.tree&#39;</span> <span class="p">)</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="n">SuchTree</span><span class="p">(</span> <span class="s1">&#39;../../data/bigtrees/guest.tree&#39;</span><span class="p">)</span>
+<span class="n">LK</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span> <span class="s1">&#39;../../data/bigtrees/links.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span> <span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;host tree taxa     : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">T1</span><span class="o">.</span><span class="n">n_leafs</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;guest tree taxa    : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">T2</span><span class="o">.</span><span class="n">n_leafs</span> <span class="p">)</span>
@@ -814,8 +813,8 @@ taxa in the second tree matches the DataFrame columns.</p>
 <p>This is a pretty large dataset, so it takes a bit of time to load.</p>
 <div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">time</span> <span class="n">SLT</span> <span class="o">=</span> <span class="n">SuchLinkedTrees</span><span class="p">(</span> <span class="n">T1</span><span class="p">,</span> <span class="n">T2</span><span class="p">,</span> <span class="n">LK</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>CPU times: user 8min, sys: 340 ms, total: 8min 1s
-Wall time: 8min 4s
+<div class="highlight"><pre><span></span><code>CPU times: user 4min 57s, sys: 76.5 ms, total: 4min 57s
+Wall time: 4min 57s
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="n">n_links</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">LK</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">sum</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;total observations : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">n_links</span> <span class="p">)</span>
@@ -853,26 +852,28 @@ between randomly chosen observations. It stops when the standard deviation of
 the standard deviation of the buckets falls bellow <code>sigma</code> (default : 0.001).</p>
 <div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">time</span> <span class="n">result</span> <span class="o">=</span> <span class="n">SLT</span><span class="o">.</span><span class="n">sample_linked_distances</span><span class="p">(</span> <span class="n">sigma</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">buckets</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">4096</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>CPU times: user 39.5 s, sys: 40 ms, total: 39.6 s
-Wall time: 39.8 s
+<div class="highlight"><pre><span></span><code>CPU times: user 1min 30s, sys: 15 ms, total: 1min 30s
+Wall time: 1min 30s
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="n">result</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>{&#39;TreeA&#39;: array([0.264332  , 0.21065001, 0.264911  , ..., 0.34968701, 0.265522  ,
-        0.264911  ]),
- &#39;TreeB&#39;: array([0.02564294, 0.31347001, 0.98371613, ..., 0.28150666, 0.17121513,
-        0.20058692]),
- &#39;n_pairs&#39;: 1008162156,
+<div class="highlight"><pre><span></span><code>{&#39;TreeA&#39;: array([0.        , 0.29917303, 0.19928899, ..., 0.37183404, 0.296671  ,
+        0.23811999], shape=(3145728,)),
+ &#39;TreeB&#39;: array([0.11925804, 0.11596022, 0.01881482, ..., 0.30879498, 0.90982425,
+        0.03588757], shape=(3145728,)),
+ &#39;n_pairs&#39;: 1008162156.0,
  &#39;n_samples&#39;: 3145728,
- &#39;deviation_a&#39;: 0.00039790052687749267,
- &#39;deviation_b&#39;: 0.0009455526014789939}
+ &#39;deviation_a&#39;: 0.00033290748251602054,
+ &#39;deviation_b&#39;: 0.0009917039424180984}
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;sampled link pairs    : </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeA&#39;</span><span class="p">])</span> <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;Pearson</span><span class="se">\&#39;</span><span class="s1">s correlation : r=</span><span class="si">%f</span><span class="s1">, p=</span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">pearsonr</span><span class="p">(</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeA&#39;</span><span class="p">],</span>
-                                                         <span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeB&#39;</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">ab_r</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeA&#39;</span><span class="p">],</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeB&#39;</span><span class="p">]</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;sampled link pairs    : </span><span class="si">{</span><span class="w"> </span><span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeA&#39;</span><span class="p">])</span><span class="w"> </span><span class="si">}</span><span class="s1">&#39;</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;Pearson</span><span class="se">\&#39;</span><span class="s1">s correlation : </span><span class="si">{</span><span class="n">ab_r</span><span class="o">.</span><span class="n">statistic</span><span class="si">}</span><span class="s1">&#39;</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;    p-value           : </span><span class="si">{</span><span class="n">ab_r</span><span class="o">.</span><span class="n">pvalue</span><span class="si">}</span><span class="s1">&#39;</span> <span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>sampled link pairs    : 3145728
-Pearson&#39;s correlation : r=0.016714, p=0.000000
+Pearson&#39;s correlation : 0.01606321237653853
+    p-value           : 1.4775884174772308e-178
 </code></pre></div>
 <p>Not too bad. The algorithm went through ten iterations, placing ten blocks of
 4096 pairs into each bucket before it converged on our stopping condition after
@@ -883,10 +884,12 @@ information about the topologies of the trees.</p>
 <div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="p">{</span> <span class="s1">&#39;microbe tree distances&#39;</span> <span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeA&#39;</span><span class="p">],</span> 
                          <span class="s1">&#39;host tree distances&#39;</span>    <span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;TreeB&#39;</span><span class="p">]</span> <span class="p">}</span> <span class="p">)</span>
 
-<span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="s1">&#39;microbe tree distances&#39;</span><span class="p">,</span> <span class="s1">&#39;host tree distances&#39;</span><span class="p">,</span>
-                   <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">8</span> <span class="p">)</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;microbe tree distances&#39;</span><span class="p">,</span>
+                   <span class="n">y</span><span class="o">=</span><span class="s1">&#39;host tree distances&#39;</span><span class="p">,</span>
+                   <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                   <span class="n">marginal_kws</span><span class="o">=</span><span class="p">{</span> <span class="s1">&#39;bins&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;linewidth&#39;</span> <span class="p">:</span> <span class="mi">0</span> <span class="p">}</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.axisgrid.JointGrid at 0x7f07801c86d8&gt;
+<div class="highlight"><pre><span></span><code>&lt;seaborn.axisgrid.JointGrid at 0x796a4596bfe0&gt;
 </code></pre></div>
 <p><img alt="png" src="../output_13_1.png" /></p>
 <p>Well... that's... something? In this case, we are looking at the entire microbiome
@@ -900,20 +903,42 @@ community. This is what <code>SuchLinkedTrees</code> really designed to do.</p>
 host organisms), and masks the data within the <code>SuchLinkedTrees</code> instance so that
 that node behaves as the root. <code>subset_b()</code> does the same for the second tree 
 (usually, the guest organisms).</p>
-<div class="highlight"><pre><span></span><code><span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;subset A leaves : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_a_size</span><span class="si">}</span><span class="se">\n</span><span class="s1">subset B leaves : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span><span class="si">}</span><span class="s1">&#39;</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>103446
+<div class="highlight"><pre><span></span><code>subset A leaves : 14
+subset B leaves : 103446
 </code></pre></div>
 <p>The observations are also masked so that distance calculations are constrained to within that
 clade. The masking operation is extremely efficient, even for very large datasets.</p>
 <div class="highlight"><pre><span></span><code><span class="n">SLT</span><span class="o">.</span><span class="n">subset_b</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;subset B leafs : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span><span class="si">}</span><span class="s1">&#39;</span> <span class="p">)</span>
 <span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_leafs</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>array([122, 124,   6,   4,   0,   2,  18, 118, 120,   8,  14,  16,  10,
+<div class="highlight"><pre><span></span><code>subset B leafs : 63
+
+
+
+
+
+array([122, 124,   6,   4,   0,   2,  18, 118, 120,   8,  14,  16,  10,
         12,  32,  34, 116,  26,  28,  30,  36,  86, 102, 104, 110, 112,
        114,  24,  38,  40,  84,  88,  90,  92,  94, 100, 106, 108,  20,
         22,  42,  44,  78,  96,  98,  76,  80,  82,  52,  70,  46,  72,
         74,  48,  50,  54,  56,  58,  60,  62,  64,  66,  68])
+</code></pre></div>
+<p>OK, that's neat. But what if we want to get back to the un-subsetted dataset?
+For this, just pass in the root node for each tree.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;subset A : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_a_size</span><span class="si">}</span><span class="s1"> leaves, subset B : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span><span class="si">}</span><span class="s1"> leaves&#39;</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;resetting root subsets...&#39;</span> <span class="p">)</span>
+
+<span class="n">SLT</span><span class="o">.</span><span class="n">subset_a</span><span class="p">(</span> <span class="n">SLT</span><span class="o">.</span><span class="n">TreeA</span><span class="o">.</span><span class="n">root_node</span> <span class="p">)</span>
+<span class="n">SLT</span><span class="o">.</span><span class="n">subset_b</span><span class="p">(</span> <span class="n">SLT</span><span class="o">.</span><span class="n">TreeB</span><span class="o">.</span><span class="n">root_node</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;subset A : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_a_size</span><span class="si">}</span><span class="s1"> leaves, subset B : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span><span class="si">}</span><span class="s1"> leaves&#39;</span> <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>subset A : 14 leaves, subset B : 63 leaves
+resetting root subsets...
+subset A : 14 leaves, subset B : 103446 leaves
 </code></pre></div>
 <p>So, all we need to do is iterate over the internal nodes of the microbe tree
 (which we can get from <code>SuchTree</code>'s <code>get_internal_nodes()</code> function), subset
@@ -937,13 +962,14 @@ them.</p>
     <span class="n">progbar</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">:</span>
         <span class="k">continue</span>
+    <span class="k">if</span> <span class="n">SLT</span><span class="o">.</span><span class="n">subset_n_links</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">:</span>
+        <span class="k">continue</span>
     <span class="k">if</span> <span class="n">SLT</span><span class="o">.</span><span class="n">subset_n_links</span> <span class="o">&gt;</span> <span class="mi">2500</span> <span class="p">:</span>
         <span class="k">continue</span>
 
-    <span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">d</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>    <span class="o">=</span> <span class="s1">&#39;clade_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nodeid</span><span class="p">)</span>
-    <span class="n">d</span><span class="p">[</span><span class="s1">&#39;n_links&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">SLT</span><span class="o">.</span><span class="n">subset_n_links</span>
-    <span class="n">d</span><span class="p">[</span><span class="s1">&#39;n_leafs&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span>    <span class="p">:</span> <span class="s1">&#39;clade_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nodeid</span><span class="p">),</span>
+          <span class="s1">&#39;n_links&#39;</span> <span class="p">:</span> <span class="n">SLT</span><span class="o">.</span><span class="n">subset_n_links</span><span class="p">,</span>
+          <span class="s1">&#39;n_leafs&#39;</span> <span class="p">:</span> <span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span> <span class="p">}</span>
 
     <span class="n">ld</span> <span class="o">=</span> <span class="n">SLT</span><span class="o">.</span><span class="n">linked_distances</span><span class="p">()</span>
 
@@ -955,7 +981,7 @@ them.</p>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>Chugging through microbime data...
 0% [##############################] 100% | ETA: 00:00:00
-Total time elapsed: 00:59:38
+Total time elapsed: 06:39:01
 </code></pre></div>
 <p>Let's see what we've got!</p>
 <div class="highlight"><pre><span></span><code><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -978,63 +1004,65 @@ Total time elapsed: 00:59:38
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>n_leafs</th>
-      <th>n_links</th>
       <th>name</th>
-      <th>p</th>
+      <th>n_links</th>
+      <th>n_leafs</th>
       <th>r</th>
+      <th>p</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>105</td>
-      <td>46</td>
       <td>clade_125</td>
-      <td>2.459121e-04</td>
+      <td>46</td>
+      <td>105</td>
       <td>-0.113734</td>
+      <td>2.459121e-04</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>319</td>
-      <td>123</td>
       <td>clade_159421</td>
-      <td>1.014772e-03</td>
+      <td>123</td>
+      <td>319</td>
       <td>-0.037933</td>
+      <td>1.014772e-03</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>63</td>
-      <td>18</td>
       <td>clade_121</td>
-      <td>8.836506e-02</td>
+      <td>18</td>
+      <td>63</td>
       <td>-0.138239</td>
+      <td>8.836506e-02</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>42</td>
-      <td>28</td>
       <td>clade_127</td>
-      <td>1.432212e-02</td>
+      <td>28</td>
+      <td>42</td>
       <td>-0.125883</td>
+      <td>1.432212e-02</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>242</td>
-      <td>87</td>
       <td>clade_158329</td>
-      <td>1.748205e-07</td>
+      <td>87</td>
+      <td>242</td>
       <td>-0.085288</td>
+      <td>1.748205e-07</td>
     </tr>
   </tbody>
 </table>
 </div>
 
-<div class="highlight"><pre><span></span><code><span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="n">data</span><span class="o">.</span><span class="n">n_leafs</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">8</span> <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;n_leafs&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> 
+                   <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                   <span class="n">marginal_kws</span><span class="o">=</span><span class="p">{</span> <span class="s1">&#39;bins&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;linewidth&#39;</span> <span class="p">:</span> <span class="mi">0</span> <span class="p">}</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.axisgrid.JointGrid at 0x7f07803ff128&gt;
+<div class="highlight"><pre><span></span><code>&lt;seaborn.axisgrid.JointGrid at 0x796a45b7a330&gt;
 </code></pre></div>
-<p><img alt="png" src="../output_22_1.png" /></p>
+<p><img alt="png" src="../output_24_1.png" /></p>
 <p>Are there any clades that are big enough to to be interesting that
 show a significant correlation above 0.6?</p>
 <div class="highlight"><pre><span></span><code><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span> <span class="p">(</span> <span class="n">data</span><span class="o">.</span><span class="n">r</span> <span class="o">&gt;</span> <span class="mf">0.6</span>      <span class="p">)</span> <span class="o">&amp;</span>
@@ -1060,45 +1088,45 @@ show a significant correlation above 0.6?</p>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>n_leafs</th>
-      <th>n_links</th>
       <th>name</th>
-      <th>p</th>
+      <th>n_links</th>
+      <th>n_leafs</th>
       <th>r</th>
+      <th>p</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>14799</th>
-      <td>108</td>
-      <td>22</td>
+      <th>7792</th>
       <td>clade_26971</td>
-      <td>5.982235e-33</td>
-      <td>0.681951</td>
-    </tr>
-    <tr>
-      <th>14999</th>
-      <td>103</td>
       <td>22</td>
-      <td>clade_27163</td>
-      <td>5.982235e-33</td>
+      <td>108</td>
       <td>0.681951</td>
+      <td>5.982235e-33</td>
     </tr>
     <tr>
-      <th>15196</th>
-      <td>96</td>
-      <td>20</td>
+      <th>7871</th>
+      <td>clade_27163</td>
+      <td>22</td>
+      <td>103</td>
+      <td>0.681951</td>
+      <td>5.982235e-33</td>
+    </tr>
+    <tr>
+      <th>7955</th>
       <td>clade_27145</td>
-      <td>3.844922e-27</td>
+      <td>20</td>
+      <td>96</td>
       <td>0.680072</td>
+      <td>3.844922e-27</td>
     </tr>
     <tr>
-      <th>15395</th>
-      <td>87</td>
-      <td>17</td>
+      <th>8042</th>
       <td>clade_27061</td>
-      <td>1.621913e-19</td>
+      <td>17</td>
+      <td>87</td>
       <td>0.676366</td>
+      <td>1.621913e-19</td>
     </tr>
   </tbody>
 </table>
@@ -1109,22 +1137,30 @@ show a significant correlation above 0.6?</p>
 
 <span class="n">ld</span> <span class="o">=</span> <span class="n">SLT</span><span class="o">.</span><span class="n">linked_distances</span><span class="p">()</span>
 
-<span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="n">ld</span><span class="p">[</span><span class="s1">&#39;TreeA&#39;</span><span class="p">],</span> <span class="n">ld</span><span class="p">[</span><span class="s1">&#39;TreeB&#39;</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span> <span class="n">x</span><span class="o">=</span><span class="n">ld</span><span class="p">[</span><span class="s1">&#39;TreeA&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">ld</span><span class="p">[</span><span class="s1">&#39;TreeB&#39;</span><span class="p">],</span> 
+                       <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+                       <span class="n">marginal_kws</span><span class="o">=</span><span class="p">{</span> <span class="s1">&#39;bins&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;linewidth&#39;</span> <span class="p">:</span> <span class="mi">0</span> <span class="p">}</span> <span class="p">)</span>
+
+<span class="n">g</span><span class="o">.</span><span class="n">ax_joint</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span> <span class="s1">&#39;Host tree distances&#39;</span> <span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">ax_joint</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span> <span class="s1">&#39;Guest tree distances&#39;</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;subset A : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_a_size</span><span class="si">}</span><span class="s1"> leaves, subset B : </span><span class="si">{</span><span class="n">SLT</span><span class="o">.</span><span class="n">subset_b_size</span><span class="si">}</span><span class="s1"> leaves&#39;</span> <span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&lt;seaborn.axisgrid.JointGrid at 0x7f0780928160&gt;
+<div class="highlight"><pre><span></span><code>subset A : 14 leaves, subset B : 108 leaves
 </code></pre></div>
-<p><img alt="png" src="../output_26_1.png" /></p>
-<p>Huh. Well, that looks a lot less interesting than I hoped. This is the
-problem with correlation measures -- they don't test that the data obeys
-their assumptions. In this case, we're using Pierson's <span class="arithmatex">\(r\)</span>, which
-assumes that the data from the two sources is normally distributed, which
-this clearly is not. If you haven't seen this before, check out
+<p><img alt="png" src="../output_28_1.png" /></p>
+<p>Eh. It's clear enough why this this clade gets a high correlation score, but 
+it's not actually very interesting. This is the problem with correlation 
+measures -- they don't test that the data obeys their assumptions. In this 
+case, we're using Pierson's <span class="arithmatex">\(r\)</span>, which assumes that the data from the two 
+sources is normally distributed, which this clearly is not. If you haven't 
+seen this before, check out
 <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe's quartet</a>;
 the gist of his argument is that it's not a good idea to apply any statistic
 without examining the data graphically.</p>
-<p>Let's have a look at the trees so we can get a better idea of why this is
-broken. Unfortunately, I don't have a great way of pulling out the subtree
-for plotting yet, so this will require some help from <code>dendropy</code>.</p>
+<p>So, let's do that, and have a look at the trees. Unfortunately, <code>toytree</code>
+doesn't have a straightforward way of plotting co-phylogenies yet, so this 
+will require some help from <code>dendropy</code> and a trip to... R. Sorry about that.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">dendropy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tree</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">tempfile</span><span class="w"> </span><span class="kn">import</span> <span class="n">NamedTemporaryFile</span>
 
@@ -1174,8 +1210,8 @@ Done.
 <p>Now that we've gotten through the plotting hampsterdance, we can have a look at the
 structure of this clade and its relationship with the host organisms :</p>
 <p><img alt="" src="../clade_26971.svg" /></p>
-<p>If we're hoping to find an example of coevolution, this is an excellent example of
-what we are not looking for! The Hommola test is not really appropriate for this
+<p>If we're hoping to find an example of coevolution, this is an excellent example of what we are not looking for! </p>
+<p>The Hommola test is not really appropriate for this
 application. The Hommola test is really intended for cases where you have something
 that looks like it might be an example of coevolution, and you would like to measure
 how strong the effect is. We are abusing it somewhat by asking it to distinguish
@@ -1183,8 +1219,6 @@ coevolution from a background of other kinds of interactions, to say nothing of 
 multiple testing effects.</p>
 <p>So, we'll need a more sophisticated way to test for coevolution. With <code>SuchTree</code> and
 <code>SuchLinkedTrees</code> handling the grunt work, we can focus on the those models.</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
 
 
 
