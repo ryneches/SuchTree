@@ -1,4 +1,3 @@
-
 [build-system]
 requires = [ "setuptools",
              "setuptools_scm",
@@ -42,7 +41,7 @@ write_to = "SuchTree/__version__.py"
 [tool.cibuildwheel.linux]
 before-all = "yum -y install lapack-devel blas-devel atlas-devel"
 archs = "aarch64 x86_64"
-skip = "*musllinux* pp*"
+skip = "*musllinux*"
 
 # build wheels for Intel and Apple silicon
 [tool.cibuildwheel.macos]
