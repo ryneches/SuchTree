@@ -28,6 +28,11 @@ dependencies = [
 ]
 dynamic = ["version"]
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["SuchTree*"]
+exclude = ["SuchTree.tests*", "tests*"]
+
 [tool.setuptools.package-data]
 SuchTree = [ "*.so", "*.pyd" ]
 
