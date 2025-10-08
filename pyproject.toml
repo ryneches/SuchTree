@@ -36,6 +36,7 @@ SuchTree = [ "*.so", "*.pyd" ]
 local_scheme = "no-local-version"
 version_scheme = "only-version"
 write_to = "SuchTree/__version__.py"
+write_to_template = "__version__ = '{version}'\n"
 
 # build wheels for amd64 x86_64
 [tool.cibuildwheel.linux]
