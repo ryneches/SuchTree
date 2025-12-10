@@ -143,7 +143,7 @@ cdef class SuchTree :
         elif all( [ '(' in tree_input,
                     ')' in tree_input,
                     tree_input.count( '(' ) == tree_input.count( ')' ),
-                    tree_input.endswith(';') ] ) :
+                    tree_input.strip().endswith(';') ] ) :
             t = Tree.get( data=tree_input,
                           schema='newick',
                           preserve_underscores=True,
