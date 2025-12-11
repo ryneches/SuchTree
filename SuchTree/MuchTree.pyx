@@ -134,7 +134,10 @@ cdef class SuchTree :
         
         # tiny nonzero distance for representing polytomies
         self.epsilon = np.finfo( np.float64 ).eps
-       
+        
+        if isinstance( tree_input, Path ) :
+            tree_input = str(tree_input)
+        
         if urlparse( tree_input ).scheme in ( 'http', 'https', 'ftp' ) :
             t = Tree.get( url=tree_input,
                           schema='newick',
@@ -149,7 +152,7 @@ cdef class SuchTree :
                           preserve_underscores=True,
                           suppress_internal_node_taxa=True )
         else :
-            t = Tree.get( file=open(tree_input),
+            t = Tree.get( file=open(str(tree_input)),
                           schema='newick',
                           preserve_underscores=True,
                           suppress_internal_node_taxa=True )
