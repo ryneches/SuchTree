@@ -1201,7 +1201,48 @@ cdef class SuchTree :
         '''
         for node_id in self.get_internal_nodes():
             yield self.bipartition(node_id, by_id=by_id)
+    
+    def quartet_distances( self,
+                           a : Union[ int, str ],
+                           b : Union[ int, str ], 
+                           c : Union[ int, str ],
+                           d : Union[ int, str ] ) -> dict :
+        '''
+        Conveinence function for obtaning the pairwise distances within a
+        quartet.
+
+        Args
+            ( a, b, c, d ) : Four nodes (IDs or names) forming the quartet
+        
+        Returns
+            dictionary : A dirctionary mapping frozensets of node pairs to
+                         patristic distances, in the form
+
+                         { frozenset( a, b ) : float,
+                           frozenset( a, c ) : float,
+                           frozenset( a, d ) : float,
+                           frozenset( b, c ) : float,
+                           frozenset( b, d ) : float,
+                           frozenset( c, d ) : float }
+        
+        Raises
+            NodeNotFoundError : If any leaf name is not found
+            InvalidNodeError  : if any node ID is out of bounds
+        '''
+        # Input validation deligated to distance()
+        
+        return { frozenset( ( x, y ) ) : self.distance( x, y )
+                 for x,y in combinations( [ a, b, c, d ], 2 ) }
    
+    def quartet_data( self, quartets ) :
+
+        # get quartet topologies
+        topologies = self.quartet_topologies_bulk( quartets )
+        
+        # get quartet diameters
+        distances  = [ sum( self.quartet_distances( a, b, c, d ).values() ) for a,b,c,d in quartets ]
+        
+
     def quartet_topology( self,
                           a : Union[ int, str ],
                           b : Union[ int, str ], 
@@ -1213,10 +1254,11 @@ cdef class SuchTree :
         Renamed from get_quartet_topology() for consistency.
         
         Args
-            ( a, b ), ( c, d ) : Four nodes (IDs or names) forming the quartet
+            ( a, b, c, d ) : Four nodes (IDs or names) forming the quartet
             
         Returns
             frozenset : Topology as frozenset of two frozensets representing sister pairs
+                        in the form ( w, x ), ( y, z )
             
         Raises
             NodeNotFoundError : If any leaf name is not found
@@ -1258,7 +1300,8 @@ cdef class SuchTree :
             [ [ a, b, c, d ], [ e, f, g, h ], ... ]
         '''
         # FIXME : This function should be merged with quartet_topologies_bulk
-        #         so that it works the same way as quartet_topology
+        #         so that it has the same behavior with names and node_ids as
+        #         quartet_topology()
         Q = np.array( [ [ self.leaves[a],
                           self.leaves[b],
                           self.leaves[c],
